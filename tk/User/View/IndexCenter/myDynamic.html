@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>{#$config.IndexName#} - 用户中心 - {#$pageName#}</title>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/user.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+</head>
+<body>
+<!--头部-->
+{#include file="Index@Common/TplUserHeader" /#}
+<!--头部-end-->
+
+<!-- 个人中心 -->
+<div class="w-main">
+    <!-- 面包屑导航 -->
+    {#include file="IndexCenter/TplCrumbs" /#}
+    <!-- 面包屑导航END -->
+
+    <div class="u-content clearfix">
+        <!-- 左侧导航 -->
+        {#include file="IndexCenter/TplPersonalNav" /#}
+        <!-- 左侧导航END -->
+        <div class="u-right-wrap">
+            <!--动态内容-->
+            <div class="u-right">
+                <!-- 最近动态 -->
+                <div class="ur-base-panel g-panel content">
+                    <div class="panel-head">
+                        <h3 class="head-name">最新动态</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="ur-state-panel-list">
+                            {#if condition="$result"#}
+                            {#volist name='result' id='vo' #}
+                            <li class="clearfix">
+                                <div class="left">
+                                    <span class="ur-user"><img class="ur-user-photo" src="{#$userPic#}" alt="头像" width="42" height="42" /></span>
+                                    <span class="state-context">{#$vo.Content#}</span>
+                                </div>
+                                <cite class="timer">{#$vo.LoadTime#}</cite>
+                            </li>
+                            {#/volist#}
+                            {#else /#}
+                            <li class="clearfix">暂无记录</li>
+                            {#/if#}
+                        </ul>
+                    </div>
+                    <div class="u-paginator">{#$page#}</div>
+                </div>
+            </div>
+            <!--最近动态结束-->
+        </div>
+</div>
+<!-- 个人中心END -->
+</div>
+<script type="text/javascript">
+    $(function(){
+        var idName='{#$function#}';
+        if(idName!='' || idName!='undefined'){
+            $('#'+idName).addClass('active');
+        }
+    });
+</script>
+<!--footer-->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+<script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+<![endif]-->
+{#include file="Index@Common/secondFooter" /#}
+<!--footer-end-->
+</body>
+</html>

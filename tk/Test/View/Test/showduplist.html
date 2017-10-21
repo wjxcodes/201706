@@ -1,0 +1,66 @@
+<table cellpadding="5" cellspacing="0" class="list" border="1">
+<tr><td height="5" colspan="2" class="topTd" ></td></tr>
+{#volist name="testList" id="testL" #}
+<tr>
+    <td class="tRight" style="width:100px">
+        {#if condition="$testL.CheckBox eq 0"#}<input type="checkbox" name="duplicateL[]" value="{#$testL.TestID#}">{#/if#}
+    试题预览：</td>
+    <td class="tLeft"><div style="height:120px;width:430px;overflow:auto;">
+    <p>{#$testL.TestID#}【题文】{#$testL.Test|default='无'#}</p>
+    </div></td>
+</tr>
+{#/volist#}
+{#volist name="testListR" id="testR" #}
+<tr>
+    <td class="tRight" style="width:100px">
+        {#if condition="$testR.CheckBox eq 0"#}<input type="checkbox" name="duplicateR[]" value="{#$testR.TestID#}">{#/if#}
+    试题预览：</td>
+    <td class="tLeft"><div style="height:120px;width:430px;overflow:auto;">
+    <p>{#$testR.TestID#}【题文】{#$testR.Test|default='无'#}</p>
+    </div></td>
+</tr>
+{#/volist#}
+<tr>
+    <td colspan="2">
+        <div class="impBtn hMargin duplicate"><input type="button" value="确定" class="dupli"/></div>
+    </td>
+</tr>
+<tr><td height="5" colspan="2" class="bottomTd" ></td></tr>
+</table>
+<script type="text/javascript">
+$(document).ready(function(){
+    //去除重复标记
+    $('.dupli').live('click',function(){
+        var duplicateL='';
+        var duplicateR='';
+        if($('[name="duplicateL[]"]').length>0){
+            $('[name="duplicateL[]"]').each(function(){
+                if($(this).attr('checked')=='checked'){
+                    duplicateL += $(this).val()+',';
+                }
+            });
+        }
+        if($('[name="duplicateR[]"]').length>0){
+            $('[name="duplicateR[]"]').each(function(){
+                if($(this).attr('checked')=='checked'){
+                    duplicateR += $(this).val()+',';
+                }
+            });
+        }
+        if(duplicateL=='' && duplicateR==''){
+            alert('请选择重复试题！');
+            return;
+        }
+        jInfo('标记中请稍候。。。','标记数据');
+        $.post(U('Test/Test/removeMark'),{'DuplicateL':duplicateL,'DuplicateR':duplicateR,'times':Math.random()},
+                function(data){
+            jClose();
+            //权限验证
+            if(checkPower(data)=='error'){
+                return false;
+            }
+            $('body').append(data['data']);
+        });
+    })
+});
+</script>

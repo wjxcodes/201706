@@ -1,0 +1,93 @@
+[ 2017-09-30T16:40:16+08:00 ] 222.134.133.242 /Home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-09-30T16:45:14+08:00 ] 182.97.212.213 /Home/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-30T17:58:55+08:00 ] 115.60.62.252 /Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-09-30T17:58:55+08:00 ] 115.60.62.252 /Home/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: loadMode E:\www\www\tk\Runtime\Cache\Home\f0afa10c0e61a07a18e1a0a8382d8919.php 第 155 行.
+NOTIC: [8] Undefined variable: useAction E:\www\www\tk\Runtime\Cache\Home\f0afa10c0e61a07a18e1a0a8382d8919.php 第 159 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-30T17:58:55+08:00 ] 115.60.62.252 /Home/Index/content.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-09-30T17:58:55+08:00 ] 115.60.62.252 /Home/Index/getDocList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: tid E:\www\www\tk\Home\Controller\IndexController.class.php 第 1594 行.
+NOTIC: [8] Undefined index: area E:\www\www\tk\Home\Controller\IndexController.class.php 第 1595 行.
+NOTIC: [8] Undefined index: page E:\www\www\tk\Home\Controller\IndexController.class.php 第 1597 行.
+NOTIC: [8] Undefined index: grade E:\www\www\tk\Home\Controller\IndexController.class.php 第 1599 行.
+NOTIC: [8] Undefined index: key E:\www\www\tk\Home\Controller\IndexController.class.php 第 1600 行.
+NOTIC: [8] Undefined index: oldkey E:\www\www\tk\Home\Controller\IndexController.class.php 第 1601 行.
+NOTIC: [2] assert(): Assertion failed E:\www\www\tk\Common\Tool\coreseek\api\sphinxapi.php 第 707 行.
+

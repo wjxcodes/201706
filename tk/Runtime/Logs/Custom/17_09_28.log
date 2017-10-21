@@ -1,0 +1,40 @@
+[ 2017-09-28T17:45:48+08:00 ] 222.134.133.242 /Custom/CustomTestStore/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-28T18:02:04+08:00 ] 222.134.133.242 /Custom/CustomTestStore/customNav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-28T18:04:45+08:00 ] 222.134.133.242 /Custom/CustomTestStore/customNav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-28T20:13:20+08:00 ] 222.134.133.242 /Custom/CustomTestStore/customNav?session=7C7079A645748B98C35709A52FC64D&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+

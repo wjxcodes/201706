@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<TITLE>『{#$Think.config.WLN_WEB_NAME#}管理平台』</TITLE>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/zjadmin/css/style.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" />
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+<!--基础文件，分别是jQuery基库和拖拽UI插件-->
+<script src="__PUBLIC__/plugin/jquery.ui.draggable.js{#$Think.config.WLN_UPDATE_FILE_DATE#}" type="text/javascript"></script>
+<script src="__PUBLIC__/plugin/testOperation.js{#$Think.config.WLN_UPDATE_FILE_DATE#}" type="text/javascript"></script>
+<!-- 对话框核心JS文件和对应的CSS文件-->
+<script src="__PUBLIC__/plugin/alert/jquery.alerts.js{#$Think.config.WLN_UPDATE_FILE_DATE#}" type="text/javascript"></script>
+<link href="__PUBLIC__/plugin/alert/jquery.alerts.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="__PUBLIC__/plugin/ueditor/ueditor.config.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/ueditor/ueditor.all.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/editor.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script LANGUAGE="JavaScript">
+//指定当前组模块URL地址 
+var URL = '__URL__';
+var APP     =     '__APP__';
+var PUBLIC = '__PUBLIC__';
+var softdog=0;
+{#if condition="$Think.config.openKeysoft eq 1"#}
+softdog=1;
+{#/if#}
+</script>
+<script type="text/javascript" src="__PUBLIC__/zjadmin/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+</HEAD>
+
+<body>
+{#if condition="$Think.config.openKeysoft eq 1"#}
+<div style="display:none;"><embed id="s_simnew31"  type="application/npsyunew3-plugin" hidden="true"> </embed></div>
+{#/if#}
+<div id="loader" >页面加载中...</div>

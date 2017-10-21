@@ -1,0 +1,118 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">{#$pageName#} [ <A HREF="javascript:history.go(-1);">返回上一页</A> ]</div>
+<!--  功能操作区域  -->
+<div class="operate">
+    {#html:imageBtn name="revert" value="刷新" class="btflush" style="impBtn hMargin fLeft shadow" /#}
+
+    <!-- 查询区域 -->
+    <FORM id="form1" METHOD="POST" ACTION="{#:U('Custom/CustomTestTaskList/overGroup')#}">
+    <div class="fRig">
+        <div class="fLeft"><span id="key"><INPUT id="name" TYPE="text" NAME="name" value="{#$Think.request.name#}" title="用户名查询" class="medium" ></span></div>
+        {#html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /#}
+        {#html:imageBtn name="adv" value="高级" id="showText" style="impBtn hMargin fLeft shadow" /#}
+    </div>
+    <!-- 高级查询区域 -->
+    <div id="searchM" class=" none search cBoth">
+        <TABLE border="0" cellpadding="1" cellspacing="3" width="100%">
+        <TR>
+            <TD class="tRight" width="60">用户名：</TD>
+            <TD><INPUT TYPE="text" NAME="UserName" class="small" value="{#$Think.request.UserName#}" ></TD>
+            <TD class="tRight" width="60">日期：</TD>
+            <TD width="200"><INPUT TYPE="text" NAME="Start" class="small inputDate" value="{#$Think.request.Start#}"> - 
+            <INPUT TYPE="text" NAME="End" class="small inputDate" value="{#$Think.request.End#}">
+            </TD>
+            <TD class="tRight" width="80">所属学科：</TD>
+            <TD><SELECT class="medium bLeft" NAME="SubjectID">
+                <option value="">选择</option>
+                {#volist name="subjectArray" id="vo"#}
+                    <optgroup label='{#$vo.SubjectName#}'>
+                    {#volist name="vo['sub']" id="item"#}
+                        <option value="{#$item.SubjectID#}" >　　{#$item.SubjectName#}</option>
+                    {#/volist#}
+                    </optgroup>
+                {#/volist#}
+            </SELECT></TD>
+        </TR>
+
+        </TABLE>
+    </div>
+        </FORM>
+</div>
+<!-- 功能操作区域结束 -->
+
+<!-- 列表显示区域  -->
+<div class="list" >
+<div id="result" class="result none"></div>
+<!-- Think 系统列表组件开始 -->
+<table id="checkList" class="list" cellpadding="5" cellspacing="0" border="1">
+    <tr><td height="5" colspan="10" class="topTd" ></td></tr>
+    <tr class="row" style="text-align:center">
+        <th width="8"><input type="checkbox" id="CheckAll" tag="checkList"></th>
+        <th width="">用户编号</th>
+        <th width="">真实姓名</th>
+        <th width="">用户名</th>
+        <th width="">所属学科</th>
+        <th width="">剩余金额</th>
+        <th width="">过期次数</th>
+        <th width="">操作</th>
+
+    </tr>
+    {#volist name="list" id="node" #}
+        <tr class="row lists" jl='' id='userCz_{#$node.UserID#}'>
+        <td style="text-align:center"><input type="checkbox" class="key" value="{#$node.ListID#}"></td>
+        <td style="text-align:center">{#$node.UserID#}</td>
+        <td style="text-align:center">{#$node.RealName#}</td>
+        <td style="text-align:center">{#$node.UserName#}</td>
+        <td style="text-align:center">{#$node.SubjectName#}</td>
+        <td style="text-align:center" >{#$node.Cz#}</td>
+        <td style="text-align:center">{#$node.Total#}</td>
+        <td style="text-align:center">
+            <a href="#" UserName="{#$node.UserName#}" userID='{#$node.UserID#}' Total='{#$node.Total#}' class='delPoint'>扣除分值</a>&nbsp;
+            <a href="{#:U('Custom/CustomTestTaskList/showUserList',array('UserName'=>$node['UserName'],'Start'=>$node['start'],'End'=>$node['end']))#}"  UserName="{#$node.UserName#}">查看该用户记录</a>&nbsp;
+        </td>
+        </tr>
+    {#/volist#}
+    <tr><td height="5" colspan="10" class="bottomTd"></td></tr>
+</table>
+<input type='hidden' name='startTime' id='startTime' value='{#$start#}'>
+<input type='hidden' name='endTime' id='endTime' value='{#$end#}'>
+<!-- Think 系统列表组件结束 -->
+</div>
+<!-- 功能操作区域结束 -->
+<!-- Think 系统列表组件结束 -->
+</div>
+<script>
+$('.delPoint').click(function(){
+    var userName=$(this).attr('UserName');
+    var total=$(this).attr('Total');
+    var userID=$(this).attr('userID');
+    var start=$('#startTime').val();
+    var end=$('#endTime').val();
+    $.post(U('Custom/CustomTestTaskList/delPoint'),{'UserName':userName,'Total':total,'start':start,'end':end},function(data){
+        var msg=data['data'];
+        if(msg['status']=='success'){
+            alert('扣分成功！');
+            $('#userCz_'+userID+'').remove();
+        }else{
+            alert('扣分失败！');
+        }
+    })
+})
+</script>
+<!--  分页显示区域 -->
+<div class="page">{#$page#}</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<form id="hiddenform" action="?" method="post" style="display:none">
+<input name="id" id="testidlist" value=""/>
+</form>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

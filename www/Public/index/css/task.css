@@ -1,0 +1,92 @@
+/*题库任务大厅css*/
+
+/*字体图标*/
+@font-face{font-family:'iconfont';src:url('../font/iconfont.eot');src:url('../font/iconfont.eot?#iefix') format('embedded-opentype'),url('../font/iconfont.woff') format('woff'),url('../font/iconfont.ttf') format('truetype'),url('../font/iconfont.svg#iconfont') format('svg');}
+.iconfont{font-family:"iconfont"!important;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:0}
+
+/*返回大厅*/
+.task-info-top-handle{width:130px;text-align:center;float:right;}
+.task-info-top-handle .link{display:inline-block;}
+.task-info-top-handle .ti-show-more{margin-top:10px;}
+.task-info-top-handle .ti-show-more:hover{color:#e20;}
+.task-info-top-handle .back{display:inline-block;font-size:14px;color:#4F8EE6;border:solid 1px #4F8EE6;padding:8px 10px;margin-top:40px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-webkit-transition:background-color .2s,color .2s;transition:background-color .2s,color .2s;}
+.task-info-top-handle .back:hover{background-color:#4F8EE6;color:#fff;}
+.task-info-container{border:#ddd solid 1px;background-color:#fff;padding:20px 20px;}
+.task-info-img{float:left;width:120px;padding-top:15px;}
+.task-info-intro{float:left;width:665px;margin-left:24px;border-right:#ddd solid 1px}
+.task-info-intro .ti-title{font-size:20px}
+.ti-context-container{display:block;-webkit-transition:height 0.5s;transition:height 0.5s;}
+.ti-context-container .ti-context{min-height:60px;background-color:#fff;overflow:hidden;}
+.ti-context-container .ti-context .ti-context-inner{-webkit-transition:height 0.5s;transition:height 0.5s;padding-bottom:10px;line-height:1.8em;}
+.ti-context-container .ti-context img{max-width:98%;}
+.ti-context-container{border:#ddd solid 1px;border-top:none;padding:30px;}
+.task-info-intro  .ti-show-more{text-indent:0;display:inline-block;margin-top:10px;color:#4F8EE6;}
+.task-info-intro .ti-status{padding-top:10px;}
+.task-info-intro .ti-status .ti-statistics{padding-left:20px;}
+.task-info-intro .ti-status .ti-statistics span{color:#777;padding-left:10px;}
+.task-info-intro .ti-status .ti-statistics .iconfont{font-size:17px;color:#777;margin-right:5px;}
+.task-info-intro .ti-status .ti-reward b{font-weight:600;font-size:22px}
+.task-info-intro .ti-status .ti-reward{color:#fc7533}
+.task-info-intro .ti-join{margin-top:20px;}
+.task-info-intro .ti-join .nor-btn{min-width:200px;height:48px;line-height:48px;padding:0 1.5em;}
+
+/*任务列表页banner*/
+.task-list-banner{padding-bottom:22px;}
+.tl-main-banner{padding-top:10px;}
+.tl-sml-banner{overflow:hidden;margin-top:22px}
+.tl-sml-banner a{float:left;width:319px;margin-left:21px;}
+.tl-sml-banner a img{display:block;}
+
+/*申请任务列表*/
+.task-tab-container{margin-top:12px;padding:0px}
+.task-tab-container .task-tab-hd{border:1px solid #ddd;}
+.task-tab-container .task-tab-hd ul{background-color:#f7f7f7;height:40px;}
+.task-tab-container .task-tab-hd li{height:40px;line-height:40px;text-align:center;width:100px;border-right:1px solid #e2e2e2;float:left;cursor:pointer;}
+.task-tab-container .task-tab-hd li:hover{color:#4F8EE6;}
+.task-tab-container .task-tab-hd li.on{color:#4F8EE6;margin-top:-1px;border-top:2px solid #4F8EE6;background-color:#fff;line-height:38px;cursor:default;}
+.task-tab-bd{min-height:350px}
+.task-tab-bd .tt-bd-list{margin-top:15px;}
+.task-tab-bd .tt-bd-list-inner{table-layout:fixed;width:100%;text-align:center;margin:0 auto;}
+.task-tab-bd .tt-bd-list th{background-color:#fff;color:#4F8EE6;font-size:16px;padding:8px 0 20px;}
+.task-tab-bd .tt-bd-list th:first-child span{border:none;}
+.task-tab-bd .tt-bd-list th span{display:block;width:100%;line-height:1em;text-align:center;border-left:1px solid #ddd;margin-right:-1px;}
+.task-tab-bd .tt-bd-list tr:nth-child(2n){background-color:#f1f1f1;}
+.task-tab-bd .tt-bd-list td{line-height:40px;}
+
+/*列表页*/
+.task-list-wrap{padding:18px;}
+
+/*列表筛选*/
+.sort-order-container{height:40px;background-color:#fafafa;border:1px solid #e6e6e6;}
+.sort-order-container span{float:left;width:100px;height:40px;line-height:40px;text-align:center;border-right:1px solid #e6e6e6;cursor:pointer;}
+.sort-order-container span:hover{color:#4F8EE6;}
+.sort-order-container span.on{background-color:#fff;color:#4F8EE6;cursor:default;}
+.sort-order-container span .iconfont{color:#b6b6b6;margin-left:4px;}
+.sort-order-container span.on .iconfont{color:#4F8EE6;}
+
+/*任务记录列表*/
+.task-list{}
+.task-list .tl-item{padding:20px;border-top:1px dashed #ccc;}
+.task-list .tl-item:hover{background-color:#fbfbfb;}
+.task-list .tl-item:first-child{border:none;}
+.task-list .tl-item-img{float:left;}
+.tl-intro-container{float:left;width:600px;margin-left:30px}
+.tl-intro-container .tl-item-title a{color:#333;font-size:18px;padding-bottom:10px;}
+.tl-intro-container .tl-item-title a:hover{color:#FF7F02;}
+.tl-intro-container .tli-context{text-indent:2em;padding-top:9px;height:6em;color:#333;overflow:hidden}
+.task-list .tl-handle{float:right;max-width:170px;word-spacing:nowrap;}
+.task-list .tl-handle .reward{display:block;text-align:right;color:#666;}
+.task-list .tl-handle .reward b{font-size:20px;font-weight:500;color:#FF7F02;}
+.task-list .tl-handle .nor-btn{display:block;width:108px;font-size:12px;margin-left:auto;margin-top:15px;line-height:30px;}
+.task-list .tl-handle .status{text-align:right;padding-top:20px;color:#777;}
+.task-list .tl-handle .status span{padding-left:10px;}
+.task-list .tl-handle .status .iconfont{font-size:15px;font-weight:800;margin-right:2px;vertical-align:top;}
+
+/*任务记录列表-end*/
+
+/*qq群*/
+.wln-qq-group{background-color:#fff;margin-bottom:20px;}
+.wln-qq-group .my-task{padding:0.3em 1em;}
+.wln-qq-group table,.wln-qq-group tr,.wln-qq-group td{text-align:center;border:1px solid #eee;padding:5px;}
+.wln-qq-group .group-site{text-align:center;padding:10px 15px 0;float:left;}
+.wln-qq-group .group-site b{line-height:2em;font-weight:500;}

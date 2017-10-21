@@ -1,0 +1,230 @@
+<style>
+{#if condition="$edit.DfStyle eq 1"#}
+.kgdf{display:none;}
+{#else/#}
+.zgdf{display:none;}
+{#/if#}
+</style>
+<TABLE class="list" cellpadding="5" cellspacing="0" border="1">
+<tr><td height="5" colspan="3" class="topTd" ></td></tr>
+<TR>
+    <TD class="tRight" style="width:100px">试题预览：</TD>
+    <TD class="tLeft" colspan="2"><div style="height:200px;width:430px;overflow:auto;">
+    <p>【题文】{#$edit.Test|default='无</p>'#}
+    <p><font color="red">【答案】</font>{#$edit.Answer|default='无</p>'#}
+    <p><font color="red">【解析】</font>{#$edit.Analytic|default='无</p>'#}
+    <p><font color="red">【备注】</font>{#$edit.Remark|default='无</p>'#}
+    </div></TD>
+</TR>
+<TR>
+    <TD colspan="3"><div style="height:250px;overflow:auto;">
+    <TABLE class="list" cellpadding="5" cellspacing="0" border="1">
+        <TR>
+    <TD class="tRight" style="width:100px"><span class="blue">试题审核：</span></TD>
+    <TD class="tLeft" colspan="2">
+        <label><input name="IfTest" type="radio" class="IfTest IfShow" value="1" {#if condition="$content.iftest eq 1"#}checked="checked" {#/if#}/>试题有错</label>
+        <label><input name="IfTest" type="radio" class="IfTest IfShow" value="0" {#if condition="$content.iftest eq 0"#}checked="checked" {#/if#}/>试题无错</label>
+        <div><textarea cols="50" rows="3" class="TestContent ShowContent {#if condition="$content.iftest eq 0"#} none{#/if#}">{#$content.test#}</textarea></div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">知识点：</TD>
+    <TD class="tLeft" colspan="2"><div id="klinput"></div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:100px"><span class="blue">知识点审核：</span></TD>
+    <TD class="tLeft" colspan="2">
+        <label><input name="IfKl" type="radio" class="IfKl IfShow" value="1" {#if condition="$content.ifknowledge eq 1"#}checked="checked" {#/if#}/>知识点缺少或有错</label>
+        <label><input name="IfKl" type="radio" class="IfKl IfShow" value="0" {#if condition="$content.ifknowledge eq 0"#}checked="checked" {#/if#}/>知识点全面</label>
+        <div class="ShowContent {#if condition="$content.ifknowledge eq 0"#} none{#/if#}">
+            <SELECT id="knowledge" class="knowledge bLeft" NAME="KlID">
+            <option value="">请选择</option>
+            </SELECT> <div class="impBtn addkl" style="display:inline;padding:3px 0px;">添加</div>
+            <textarea cols="50" rows="3" class="KlContent">{#$content.knowledge#}</textarea>
+        </div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">章节：</TD>
+    <TD class="tLeft" colspan="2"><div id="cpinput"></div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:100px"><span class="blue">章节审核：</span></TD>
+    <TD class="tLeft" colspan="2">
+        <label><input name="IfChapter" type="radio" class="IfChapter IfShow" value="1" {#if condition="$content.ifchapter eq 1"#}checked="checked" {#/if#}/>章节缺少或有错</label>
+        <label><input name="IfChapter" type="radio" class="IfChapter IfShow" value="0" {#if condition="$content.ifchapter eq 0"#}checked="checked" {#/if#}/>章节全面</label>
+        <div class=" ShowContent {#if condition="$content.ifchapter eq 0"#} none{#/if#}">
+            <SELECT id="chapter" class="chapter bLeft" NAME="ChapterID">
+            <option value="">请选择</option>
+            </SELECT> <div class="impBtn addcp" style="display:inline;padding:3px 0px;" >添加</div>
+            <div>
+            <textarea cols="50" rows="3" class="ChapterContent">{#$content.chapter#}</textarea></div>
+        </div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">专题：</TD>
+    <TD class="tLeft" ><div>{#$edit.SpecialName#}</div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:100px"><span class="blue">专题审核：</span></TD>
+    <TD class="tLeft" colspan="2">
+        <label><input name="IfSpecial" type="radio" class="IfSpecial IfShow" value="1" {#if condition="$content.ifspecial eq 1"#}checked="checked" {#/if#}/>专题有错</label>
+        <label><input name="IfSpecial" type="radio" class="IfSpecial IfShow" value="0" {#if condition="$content.ifspecial eq 0"#}checked="checked" {#/if#}/>专题正确</label>
+        <div class=" ShowContent {#if condition="$content.ifspecial eq 0"#} none{#/if#}">
+            <SELECT id="special" class="large bLeft" NAME="SpecialID">
+            <option value="">请选择</option>
+            </SELECT><div class="impBtn addsp" style="display:inline;padding:3px 0px;">添加</div>
+            <textarea cols="50" rows="3" class="SpecialContent">{#$content.special#}</textarea></div>
+        </div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight tTop" style="width:80px">打分模式：</TD>
+    <TD class="tLeft" colspan="2"><label><INPUT TYPE="radio" id="kg" disabled="disabled" class="DfStyle bLeft" check='raido' warning="请选择打分模式" NAME="DfStyle" value="0" {#if condition="($edit.DfStyle eq '0') or ($edit.DfStyle eq '')"#}checked="checked"{#/if#}> 客观打分</label> <label><INPUT id="zg" TYPE="radio" disabled="disabled" class="DfStyle bLeft" NAME="DfStyle" value="1" {#eq name="edit.DfStyle" value="1"#}checked="checked"{#/eq#}> 主观打分</label> </TD>
+</TR>
+<TR style="background-color:#efefef;font-weight:bold;" class="zgdf">
+    <TD class="tCenter tTop" colspan='3'>
+    试题打分
+    </TD>
+</TR>
+<TR class="zgdf">
+    <TD class="tRight" style="width:80px">难度值：</TD>
+    <TD class="tLeft" colspan="2"><INPUT type="text" disabled="disabled" value="{#$edit.Diff#}" name="Diff" id="Diff" /> （0-1之间 最多4位小数）</TD>
+</TR>
+
+{#if condition="mark_array"#}
+    <input name="xttimes" id="xttimes" value="{#$times#}" type="hidden"/>
+    <TR style="background-color:#efefef;font-weight:bold;" class="kgdf">
+        <TD class="tCenter tTop" colspan='3'>
+        {#if condition="$times>1"#}
+            {#for start="1" end="$times+1"#}
+                <span id="xt{#$i#}" {#eq name="i" value="1"#} class="xtcurrent xt_title" {#else/#} class="xt xt_title"{#/eq#}>小题{#$i#}打分</span>
+            {#/for#}
+        {#else/#}
+        试题打分
+        {#/if#}
+        </TD>
+    </TR>
+    {#for start="1" end="$times+1" name="ii"#}
+        {#volist name="mark_array" id="vo" key="j"#}
+            <TR class="kgdf xt_con_{#$ii#} xt_con {#neq name="ii" value="1"#}none{#/neq#}">
+                <TD class="tRight" style="width:80px">{#$vo.MarkName#}：</TD>
+                <TD class="tLeft" >
+                    {#volist name="vo.MarkListx" id="item"#}
+                    {#$item[1]#} {#volist name="edit.Markx.$ii" id="mk"#}{#if condition="$mk eq $item[3]"#}<font color="red">√</font>{#/if#}{#/volist#}<br/> 
+                    {#/volist#}
+                </TD>
+                <TD width="80">{#eq name="vo.Style" value="1"#}(辅助参数){#else/#}(主要参数){#/eq#}</TD>
+            </TR>
+        {#/volist#}
+    {#/for#}
+{#/if#}
+
+<TR>
+    <TD class="tRight" style="width:100px"><span class="blue">打分审核：</span></TD>
+    <TD class="tLeft" colspan='2'>
+        <label><input name="IfDiff" type="radio" class="IfDiff IfShow" value="1" {#if condition="$content.ifdiff eq 1"#}checked="checked" {#/if#}/>打分有误</label>
+        <label><input name="IfDiff" type="radio" class="IfDiff IfShow" value="0" {#if condition="$content.ifdiff eq 0"#}checked="checked" {#/if#}/>打分准确无误</label>
+        <div><textarea cols="50" rows="3" class="DiffContent ShowContent {#if condition="$content.ifdiff eq 0"#} none{#/if#}">{#$content.diff#}</textarea></div>
+    </TD>
+</TR>
+    </table></div>
+    </TD>
+</TR>
+
+<TR>
+    <TD style="width:80px">&nbsp;</TD>
+    <TD class="center" colspan='2'><div style="width:85%;margin:5px">
+        <INPUT TYPE="hidden" id="code" name="code" value="{#$edit.code#}">
+        <INPUT TYPE="hidden" id="wtid" name="wtid" value="{#$edit.WTID#}">
+        <INPUT TYPE="hidden" id="TestID" name="TestID" value="{#$edit.TestID#}">
+    <div class="impBtn fLeft"><INPUT tag='form1' id="datasave" u='{#:U('Teacher/TestCheck/save')#}' TYPE="button" value="保存" class="save imgButton mysubmit"></div>
+    <div class="impBtn fLeft m-l10"><INPUT TYPE="reset" class="reset imgButton" value="清空" ></div>
+    </div></TD>
+</TR>
+<tr><td height="5" colspan="3" class="bottomTd" ></td></tr>
+</TABLE>
+<script src='__PUBLIC__/teacher/js/common1.js'></script>
+<script language="javascript">
+$(document).bind("selectstart",function(){return false;});
+
+    var s='{#$edit.SubjectID#}';
+    var p='{#$edit.SpecialID#}';
+    var k='{#$edit.KlID#}';
+    var c='{#$edit.ChapterID#}';
+
+    var input='<div>#str# <input class="kl" name="kl[]" type="hidden" value="#value#"/></div>';
+    var inputcp='<div>#str# <input class="cp" name="cp[]" type="hidden" value="#value#"/></div>';
+    if(s){
+        $('#knowledge').html('<option value="">加载中。。。</option>');
+        $('#chapter').html('<option value="">加载中。。。</option>');
+        var urlPrefix = U('Teacher/Test/getdata?');
+        $.get(urlPrefix+"s="+s+"&l=k",function(data){
+            if(backLogin(data)=='error'){
+                return false;
+            };
+            $('#knowledge').html('<option value="">请选择</option>'+data['data']);
+        },'json');
+        $.get(urlPrefix+"s="+s+"&l=c",function(data){
+            if(backLogin(data)=='error'){
+                return false;
+            };
+            $('#chapter').html('<option value="">请选择</option>'+data['data']);
+        },'json');
+        if(k!='0'){
+            $.get(urlPrefix+"s="+s+"&l=kl&id="+k,function(result){
+                if(backLogin(result)=='error'){
+                    return false;
+                };
+                var data = result['data'];
+                if(data){
+                    for(var i=0;i<data.length;i++){
+                        var xx=input.replace('#value#',data[i]['KlID']).replace('#str#',data[i]['KlName']);
+                        if($('#klinput').html().indexOf('value="'+data[i]['KlID']+'"')==-1){
+                            $('#klinput').append(xx);
+                        }
+                    }
+                    $('.delhang').css({'padding':'0px 5px','cursor':'pointer','color':'#f00'});
+                }
+            },'json');
+        }
+        if(c!='0'){
+            $.get(U("Teacher/Test/getdata?s="+s+"&l=cl&id="+c),function(result){
+                if(backLogin(result)=='error'){
+                    return false;
+                };
+                var data = result['data'];
+                if(data){
+                    for(var i=0;i<data.length;i++){
+                        var xx=inputcp.replace('#value#',data[i]['ChapterID']).replace('#str#',data[i]['ChapterName']);
+                        if($('#cpinput').html().indexOf('value="'+data[i]['ChapterID']+'"')==-1){
+                            $('#cpinput').append(xx);
+                        }
+                    }
+                    $('.delhang').css({'padding':'0px 5px','cursor':'pointer','color':'#f00'});
+                }
+            },'json');
+        }
+    }
+    //审核切换事件
+    $('.IfShow').live('click',function(){
+        if($(this).attr('checked')=='checked'){
+            if($(this).val()=='1'){
+                $(this).parent().parent().find('.ShowContent').css({'display':'block'});
+            }else{
+                $(this).parent().parent().find('.ShowContent').css({'display':'none'});
+            }
+        }
+    });
+    $('#special').html('<option value="">加载中。。。</option>');
+    $.get(U("Teacher/Test/getdata?s="+s+"&l=p"),function(data){
+        if(backLogin(data)=='error'){
+                return false;
+        };
+        $('#special').html('<option value="">请选择</option>'+data['data']);
+    },'json');
+</script>

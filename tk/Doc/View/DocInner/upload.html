@@ -1,0 +1,408 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+    <script type="text/javascript" src="__PUBLIC__/plugin/uploadify/jquery.uploadify.min.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/plugin/uploadify/uploadify.css">
+<style>
+.sful{width:500px;margin:0px;padding:0px;}
+.sful li{float:left;width:150px;list-style-type:none;margin:0px;padding:0px;}
+.sfred{color:red;}
+.sfblack{color:black;}
+#fileQueue{height:200px;}
+</style>
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content">
+<!--  功能操作区域  -->
+<div class="title">{#$pageName#} [ <A HREF="__URL__">返回列表</A> ]</div>
+<!-- 功能操作区域结束 -->
+<div id="result" class="result none"></div>
+<!-- 内容显示区域  -->
+<FORM METHOD="POST" action="" id="form1" enctype="multipart/form-data">
+<TABLE cellpadding="5" cellspacing="0"  class="list" border="1">
+<tr><td height="5" colspan="2" class="topTd" ></td></tr>
+<TR>
+    <TD class="tRight" width="100">上传文件地址：</TD>
+    <TD class="tLeft" >
+        /work
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" width="100">提取文件方式：</TD>
+    <TD class="tLeft" >
+        <label><input class="getstyle" checked='checked' type="radio" name="getstyle" value="0" /> 提取知识点 </label>
+        <label><input class="getstyle" type="radio" name="getstyle" value="1" /> 不提取知识点 </label>
+        <label><input class="getstyle" type="radio" name="getstyle" value="2" /> 按章节上传 </label>
+    </TD>
+</TR>
+<TR>
+    <TD colspan="2">
+        <table cellpadding=3 cellspacing=3 border="1" class="noborder param param1 none"><TR>
+            <TD class="tRight" width="100" height="35">所属年份：</TD>
+            <TD class="tLeft" >
+                <select name="DocYear" id="DocYear">
+                <option value="">请选择</option>
+                {#for start="$thisYear" end="1990" comparison="gt" step="-1" name="vo"#}
+                    <option value="{#$vo#}" {#eq name="vo" value="$edit.DocYear"#}selected="selected"{#/eq#}> {#$vo#}</option>
+                {#/for#}
+                </select>
+            </TD>
+        </TR>
+        <TR>
+            <TD class="tRight" width="100" height="35">所属学科：</TD>
+            <TD class="tLeft" ><SELECT id="SubjectID" class="large bLeft" NAME="SubjectID">
+            <option value="">请选择</option>
+            {#if condition="$subjectArray"#}
+            {#volist name="subjectArray" id="vo"#}
+                <optgroup label='{#$vo.SubjectName#}'>
+                {#if condition="$vo['sub']"#}
+                {#volist name="vo['sub']" id="item"#}
+                    <option value="{#$item.SubjectID#}" {#eq name="item.SubjectID" value="$edit.SubjectID"#}selected="selected"{#/eq#}>　　{#$item.SubjectName#}</option>
+                {#/volist#}
+                {#/if#}
+               </optgroup>
+            {#/volist#}
+            {#else/#}
+                <option value="0">请添加学科</option>
+            {#/if#}
+            </SELECT></TD>
+        </TR>
+        <TR>
+            <TD class="tRight" width="100">所属年级：</TD>
+            <TD class="tLeft" >
+                <select name="DocGrade" class="DocGrade" id="grade">
+                    <option value="">请选择学科</option>
+                    {#volist name="grade" id='gvo'#}
+                        <option value="{#$gvo.GradeID#}" {#eq name="gvo.GradeID" value="$edit.GradeID"#}selected="selected"{#/eq#}>{#$gvo.GradeName#}</option>
+                    {#/volist#}
+                </select>
+            </TD>
+        </TR>
+        <TR>
+            <TD class="tRight" width="100" height="35">所属类型：</TD>
+            <TD class="tLeft" ><SELECT id="TypeID" class="large bLeft" NAME="TypeID">
+            <option value="">请选择</option>
+            {#if condition="$doctypeArray"#}
+            {#volist name="doctypeArray" id="vo"#}
+                <option value="{#$vo.TypeID#}" {#eq name="vo.TypeID" value="$edit.TypeID"#}selected="selected"{#/eq#}>{#$vo.TypeName#}</option>
+            {#/volist#}
+            {#else/#}
+                <option value="0">请添加属性</option>
+            {#/if#}
+            </SELECT></TD>
+        </TR>
+        <TR>
+            <TD class="tRight tTop">是否测试：</TD>
+            <TD class="tLeft"><label><INPUT TYPE="radio" class="bLeft IfTest" NAME="IfTest" value="0"> 不测试</label> <label><INPUT TYPE="radio" class="bLeft IfTest" NAME="IfTest" value="1" checked="checked" > 测试</label> </TD>
+        </TR>
+        <TR>
+            <TD class="tRight" width="100">所属省份：</TD>
+            <TD class="tLeft" ><ul class="sful">
+            {#if condition="$areaArray"#}
+            {#volist name="areaArray" id="vo"#}
+                <li><label><input class="AreaID" name="AreaID[]" type="checkbox" value="{#$vo.AreaID#}" > {#$vo.AreaName#}</label></li>
+            {#/volist#}
+            {#else/#}
+                <li>请添加省份</li>
+            {#/if#}
+            </ul></TD>
+        </TR>
+        <tr>
+        <td class="tRight tTop">文档来源：</td>
+        <td class="tLeft">
+            {#volist name='docSource' id='source'#}
+                <label>
+                    <input type="radio" class="bLeft" name="SourceID1" class='SourceID1' value="{#$source.SourceID#}"
+                    {#if condition="($edit.SourceID eq '') and ($source.IfDefault eq '1')"#}checked="checked"{#elseif condition="$edit.SourceID eq $source.SourceID" #}checked="checked"{#/if#}
+                    > {#$source.SourceName#}
+                </label> 
+            {#/volist#}
+        </td>
+    </tr>
+        </table>
+        <table cellpadding=3 cellspacing=3 border="1" style="border:0px;" class="noborder param param2 none"><TR>
+            <TD class="tRight" width="100" height="35">所属年份：</TD>
+            <TD class="tLeft" >
+                <select name="DocYear2" id="DocYear2">
+                <option value="">请选择</option>
+                {#for start="$thisYear" end="1990" comparison="gt" step="-1" name="vo"#}
+                    <option value="{#$vo#}" {#eq name="vo" value="$edit.DocYear"#}selected="selected"{#/eq#}> {#$vo#}</option>
+                {#/for#}
+                </select>
+            </TD>
+        </TR>
+        <TR>
+            <TD class="tRight" width="100" height="35">所属学科：</TD>
+            <TD class="tLeft" ><SELECT id="SubjectID2" class="large bLeft" NAME="SubjectID2">
+            <option value="">请选择</option>
+            {#if condition="$subjectArray"#}
+            {#volist name="subjectArray" id="vo"#}
+                <optgroup label='{#$vo.SubjectName#}'>
+                {#if condition="$vo['sub']"#}
+                {#volist name="vo['sub']" id="item"#}
+                    <option value="{#$item.SubjectID#}" {#eq name="item.SubjectID" value="$edit.SubjectID"#}selected="selected"{#/eq#}>　　{#$item.SubjectName#}</option>
+                {#/volist#}
+                {#/if#}
+               </optgroup>
+            {#/volist#}
+            {#else/#}
+                <option value="0">请添加学科</option>
+            {#/if#}
+            </SELECT></TD>
+        </TR>
+        <TR>
+            <TD class="tRight" width="100">所属年级：</TD>
+            <TD class="tLeft" >
+                <select name="DocGrade2" class="DocGrade2" id="searchgrade">
+                    <option value="">请选择学科</option>
+                    {#volist name="grade" id='gvo'#}
+                        <option value="{#$gvo.GradeID#}" {#eq name="gvo.GradeID" value="$edit.GradeID"#}selected="selected"{#/eq#}>{#$gvo.GradeName#}</option>
+                    {#/volist#}
+                </select>
+            </TD>
+        </TR>
+        <TR>
+            <TD class="tRight" width="100" height="35">所属类型：</TD>
+            <TD class="tLeft" ><SELECT id="TypeID2" class="large bLeft" NAME="TypeID2">
+            <option value="">请选择</option>
+            {#if condition="$doctypeArray"#}
+            {#volist name="doctypeArray" id="vo"#}
+                <option value="{#$vo.TypeID#}" {#eq name="vo.TypeID" value="$edit.TypeID"#}selected="selected"{#/eq#}>{#$vo.TypeName#}</option>
+            {#/volist#}
+            {#else/#}
+                <option value="0">请添加属性</option>
+            {#/if#}
+            </SELECT></TD>
+        </TR>
+        <TR class="none">
+            <TD class="tRight tTop">是否测试：</TD>
+            <TD class="tLeft"><label><INPUT TYPE="radio" class="bLeft IfTest2" NAME="IfTest2" value="0" checked="checked"> 不测试</label> <label><INPUT TYPE="radio" class="bLeft IfTest2" NAME="IfTest2" value="1" > 测试</label> </TD>
+        </TR>
+        <TR>
+            <TD class="tRight" width="100" height="35">所属章节：</TD>
+            <TD class="tLeft" ><SELECT id="searchchapter" class="chapter bLeft selectChapter" NAME="ChapterID">
+                <option value="">请选择</option>
+                </SELECT> <div class="impBtn" style="display:inline;padding:3px 0px;"><input id="addcp" name="addcp" class="add imgButton" type="button" value="添加"/></div>
+                <div id="cpinput"></div>
+            </TD>
+        </TR>
+        <tr>
+        <td class="tRight tTop">文档来源：</td>
+        <td class="tLeft">
+            {#volist name='docSource' id='source'#}
+                <label>
+                    <input type="radio" class="bLeft" name="SourceID2" class='SourceID2' value="{#$source.SourceID#}"
+                    {#if condition="($edit.SourceID eq '') and ($source.IfDefault eq '1')"#}checked="checked"{#elseif condition="$edit.SourceID eq $source.SourceID" #}checked="checked"{#/if#}
+                    > {#$source.SourceName#}
+                </label> 
+            {#/volist#}
+        </td>
+    </tr>
+        </table>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" width="100">上传文件：</TD>
+    <TD class="tLeft" ><table border="0" style="border:0px;margin:1px;padding:1px;"><tr style="border:0px;margin:1px;padding:1px;">
+        <td style="border:0px;margin:1px;padding:1px;"><input type="file" name="file_upload" id="file_upload" multiple="true" /></td>
+        <td style="border:0px;margin:1px;padding:1px;"><a href="javascript:void(0);" onclick="uploadfile()" class="btn">上传</a></td>
+        <td style="border:0px;margin:1px;padding:1px;"><a href="javascript:jQuery('#file_upload').uploadify('cancel','*')" class="btn">取消上传</a></td>
+        </tr></table>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" width="100">上传队列：</TD>
+    <TD class="tLeft" ><div id="queue"></div></TD>
+</TR>
+<TR>
+    <TD class="tRight" width="100">上传结果：</TD>
+    <TD class="tLeft" ><div id="resulttt"></div></TD>
+</TR>
+<tr><td height="5" colspan="2" class="bottomTd" ></td></tr>
+</TABLE>
+</FORM>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+
+<script>
+    $(function(){
+        var upUrl=U('Public/uploadify?s={#$tkey#}&u={#$userName#}');
+        $("#file_upload").uploadify({
+            'formData'    : {'m':Math.random()},
+            'swf'     : '__PUBLIC__/plugin/uploadify/uploadify.swf',
+            'uploader'     : upUrl,
+            'cancelImg'    : '__PUBLIC__/plugin/uploadify/cancel.png',
+            'queueID'        : 'queue',
+            'fileTypeExt'       : '*.doc;*.docx;*.xls;*.xlsx', //允许文件上传类型,和fileDesc一起使用.
+            'fileTypeDesc'      : '*.doc;*.docx;*.xls;*.xlsx',  //将不允许文件类型,不在浏览对话框的出现.
+            'buttonImage' : '__PUBLIC__/plugin/uploadify/select.jpg',
+            'buttonText'  : '上传',
+            'mothod'        : 'post',
+            'auto'          : false,
+            'multi'         : true,
+            'onUploadSuccess':function(file, data, response){
+                if(data.indexOf('Warning')!=-1 && data.indexOf('Content-Length')!=-1){
+                    alert('文件大小超出限制');
+                }else if(data.indexOf('Warning')!=-1){
+                    alert(data);
+                }else if(data=='type error'){
+                    alert('您上传的文件类型有误！请上传*.doc,*.docx,*.xls,*.xlsx;文件');
+                }else if(data==''){
+                    alert('文件检测失败，请检查文档内容。');
+                }else{
+                    var arr=data.split('|');
+                    if(data.indexOf('error')!=-1){$('#resulttt').append('<div class="sfred">'+arr[1]+'</div>');}
+                    else if(data.indexOf('success')!=-1){$('#resulttt').append('<div class="sfblack">'+arr[1]+'--上传成功</div>');}
+                }
+            }
+        });
+        $('.getstyle').live('click',function(){
+            $('.param').each(function(){
+                $(this).css({'display':'none'});
+            });
+            $('.param'+$(this).val()).css({'display':'block'});
+        });
+    });
+    function uploadfile(){
+            var chapterid=getD();
+            var tt=getT();
+            if(tt=='2' && chapterid==''){
+                alert('请添加章节！');
+                return;
+            }
+            $('#file_upload').uploadify('settings','formData',{'t':getT(),'y':getY(),'b':getB(),'p':getP(),'r':getA(),'c':getC(),'cp':getD(),'gd':getGD(),'ds':getDocSource(),'x':Math.random()});jQuery('#file_upload').uploadify('upload','*');
+    }
+    function getT(){
+        var output='';
+        $('.getstyle').each(function(){
+            if($(this).attr('checked')=='checked'){
+                output = $(this).val();
+            }
+        });
+        return output;
+    }
+    function getY(){
+        var tt=getT();
+        if(tt=='1'){
+            return $('#DocYear').val();
+        }else if(tt=='2'){
+            return $('#DocYear2').val();
+        }
+        return '';
+    }
+    function getB(){
+        var tt=getT();
+        if(tt=='1'){
+            return $('#SubjectID').val();
+        }else if(tt=='2'){
+            return $('#SubjectID2').val();
+        }
+        return '';
+    }
+    function getP(){
+        var tt=getT();
+        if(tt=='1'){
+            return $('#TypeID').val();
+        }else if(tt=='2'){
+            return $('#TypeID2').val();
+        }
+        return '';
+    }
+    function getA(){
+            var areaid='';
+            $('.AreaID').each(function(){
+                if($(this).attr('checked')=='checked'){
+                    areaid+='#'+$(this).val();
+                }
+            });
+            if(areaid.length>0) areaid=areaid.substr(1);
+            return areaid;
+    }
+    function getD(){
+            var chapterid='';
+            $('.cp').each(function(){
+                chapterid+='#'+$(this).val();
+            });
+            if(chapterid.length>0) chapterid=chapterid.substr(1);
+            
+            return chapterid;
+    }
+    function getC(){
+        var output='';
+        var tt=getT();
+        if(tt=='1'){
+            $('.IfTest').each(function(){
+                if($(this).attr('checked')=='checked'){
+                    output = $(this).val();
+                }
+            });
+        }else if(tt=='2'){
+            $('.IfTest2').each(function(){
+                if($(this).attr('checked')=='checked'){
+                    output = $(this).val();
+                }
+            });
+        }
+        return output;
+    }
+    //获取文档来源
+    function getDocSource(){
+        var output='';
+        var tt=getT();
+        if(tt=='1'){
+           output=$('input[name="SourceID1"]:checked').val();
+        }else if(tt=='2'){
+           output=$('input[name="SourceID2"]:checked').val();
+        }
+        return output;
+    } 
+    //获取年级
+    function getGD(){
+        var output='';
+        var tt=getT();
+        if(tt=='1'){
+            return $('.DocGrade').val();
+        }else if(tt=='2'){
+            return $('.DocGrade2').val();
+        }
+        return output;
+    }
+    //添加章节考点
+    $('#addcp').live('click',function(){
+        if($('.selectChapter').last().val().indexOf('c')==-1){
+            alert('请选择正确的数据');
+            return false;
+        }
+        
+        var cid=$('.selectChapter').last().val().replace('c','');
+        var xx_s="";
+        $('.selectChapter').each(function(){
+            xx_s+=' >> '+$(this).find("option:selected").text();
+        });
+        var inputcp='<div>#str# <span class="delhang">x</span><input class="cp" name="cp[]" type="hidden" value="#value#"/></div>';
+        var xx=inputcp.replace('#value#',cid).replace('#str#',xx_s.replace(/┉/g,'').replace('┝',''));
+        
+        if($('#cpinput').html().indexOf('value="'+cid+'"')==-1 && $('#cpinput').html().indexOf('value='+cid+'')==-1){
+            $('#cpinput').append(xx);
+            $('.delhang').css({'padding':'0px 5px','cursor':'pointer','color':'#f00'});
+        }
+    });
+    $('.delhang').live('click',function(){
+            $(this).parent().remove();
+    });
+    $('.delhang').live('mouseover',function(){
+            $(this).css({'background-color':'#f00','color':'#fff'});
+    });
+    $('.delhang').live('mouseout',function(){
+            $(this).css({'background-color':'#fff','color':'#f00'});
+    });
+//一次触发所有ajax请求
+$('#SubjectID').subjectSelectChange('__URL__',{'style':'getMoreData','list':'grade'});
+$('#SubjectID2').subjectSelectChange('__URL__',{'style':'getMoreData','list':'grade,chapter','search':'search'});
+$('.selectChapter').chapterSelectChange('__URL__');
+</script>
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

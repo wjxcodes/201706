@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{#$pageName#} - {#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}"/>
+    <meta name="description" content="{#$config.Description#}"/>
+    <link type="text/css" href="__PUBLIC__/default/css/common1.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/default/css/manTopic.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('img,.tcClose,.mormal_success,.ico_dh,.ico_dt,.msgleft,.mormal_error');</script>
+    <![endif]-->
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script>
+        var mark='doc';
+        var local = "{#:U('Index/sj')#}";
+    </script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/paper.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+</head>
+<body>
+<div id="rightdiv" style="position:relative; width: 790px;">
+    <input type="hidden" name="showDocID" value="{#$showDocID#}" id="showDocID">
+    <input type="hidden" name="showSubjectID" value="{#$showSubjectID#}" id="showSubjectID">
+
+<div id="righttop">
+    <div id="categorylocation">
+        <span class="nowPath">当前位置：</span>> <span id="loca_text"></span> > 手工出题 > 按试卷出题
+    </div>
+</div>
+<div>
+    <div id="papernav" style="position:relative;">
+        <div id="barbg"></div>
+        <div id="bartitle">
+                    <span class="nav_current" id="paperlisthandler">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                        <tr>
+                            <td><a id="paperlisticon"></a></td>
+                            <td class="pointer"><a>试卷列表</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </span>
+        </div>
+    </div>
+    <div id="switchbox" style="position: relative;background-color:#fff;">
+        <div id="paperlistbox" style="display: block;">
+            <div id="paperlist_top" style="z-index:10;">
+                <div id="paperchoice">
+                    <div id="filterbox">
+                        <div class="filterbox_li">
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="45">年级：</td>
+                                    <td><span id="questypegrade">数据载入中请稍候...</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="filterbox_li">
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="45">类型：</td>
+                                    <td><span id="questypeselect">数据载入中请稍候...</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="filterbox_li">
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="45">省份：</td>
+                                    <td><span id="quesareaselect">数据载入中请稍候...</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="filterbox_li" style="background:none">
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="60">关键字：</td>
+                                    <td>
+                                        <input id="keyword" type="text" autocomplete="off" maxlength="40"/>
+                                        <input id='keepKeyWord' type='hidden' value=''>
+                                        <a id="searchsubmit">搜索</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="list_px">
+                <div id="doc_px">
+                    <span>排序：</span><a href="#" class="button button_current" type="0">默认</a><a href="#" type="ydown" class="button">年份<b></b></a><a href="#" type="tdown" class="button">更新时间<b></b></a>
+                </div>
+                <div id="paperlistinfo">共<a id="quescount"></a>份试卷
+                    <a class="prev_page" title="上一页"></a>
+                        <span id="pagebox" class="tspan">
+                        <a id="curpage"></a>
+                        <a id="selectpageicon" style="display: inline-block;"></a>
+                        /<a id="pagecount"></a></span>
+                    <a class="next_page" title="下一页"></a>
+                </div>
+            </div>
+            <div id="paperlist_content" style="z-index:1;"></div>
+            <div id="pagelistbox"></div>
+        </div>
+        <div id="paperviewbox" style="position: relative; display: none;"></div>
+    </div>
+</div>
+</div>
+
+<script type="text/javascript" src="__PUBLIC__/default/js/manual.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+{#include file="Home@Public/bottom"/#}
+</body>
+</html>

@@ -1,0 +1,28 @@
+<div class="footer">
+    <div class="ftop">
+        <a target="_blank" href="http://www.tk.com">题库</a> -
+        <a target="_blank" href="http://www.tk.com/bottom/gywz.htm">关于我们</a> -
+        <!--<a target="_blank" href="#">价格体系</a> --->
+        <a href="javascript:void(0)" onclick="AddFavorite('{#$config.IndexName#}','http://www.tk.com{#:U('Index')#}');">收藏本站</a> -
+        {#$Think.config.WLN_STATISTICAL_CODE.HOME#}
+    </div>
+    <div class="fbottom">
+        Copyright © 2000-2017, tk.COM, All Rights Reserved<br/>
+        智慧云题库系统V{#$Think.config.WLN_VERSION#} （软著登字第0693456号）<br/>
+    </div>
+</div>
+<script type="text/javascript">
+    function AddFavorite(title, url) {
+        try {
+            window.external.addFavorite(url, title);
+        }
+        catch (e) {
+            try {
+                window.sidebar.addPanel(title, url, "");
+            }
+            catch (e) {
+                alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+            }
+        }
+    }
+</script>

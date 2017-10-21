@@ -1,0 +1,284 @@
+{#// 加载头部公共文件 #}
+{#include file="Public/header" /#}
+<link rel="stylesheet" href="__PUBLIC__/teacher/css/originalityAudit.css"/>
+
+<div id="sug-box">
+    <div class="sug-box-bg"></div>
+    <div class="sug-con">
+        <h4><span id="alertTitle"></span><a id="closeBtn" class="close-btn" title="关闭窗口" href="javascript:void(0)">×</a></h4>
+        <div id="alertZone">
+            
+        </div>
+    </div>
+    <div id="suggestion" style="display:none;">
+        <div class='alertInnerZone'>
+            <textarea id="sug_txt" rows="10" cols="30" name="content" style="color: rgb(153, 153, 153);"></textarea>
+            <p width="100%"><a href="" class="submit-btn">提交</a><a href="" class="cancel-btn">取消</a></p>
+        </div>
+    </div>
+</div>
+<div class="box-con">
+    <div class="testpapertitle">
+        <div class="fl">
+            <div class="tit">{#$template.Title#}</div>
+            <div class="mintitle">
+                <span>试卷类型：{#$template.DocType#}</span>  | 
+                <!-- <span>适用省份：湖北省</span>  | 
+                  <span>试卷年份：2016年</span>   | -->
+                <span>生成模板日期:{#$template.AddTime|date="Y/m/d",####}</span>  | 
+                <span>题数：{#$template.testnum#}</span>
+            </div>
+        </div>
+        <div class="fr test-comment" id="test-comment">
+            <a href="#">完成审核</a>
+        </div>
+    </div>
+    <!-- <div class="tsetcon-title">第一部分（选择题）</div> -->
+    <div class="smallclassification">
+        {#volist name="list" id="node" key="k"#}
+            <div class="smalltitle">{#:formatString('num2Chinese',$k)#}、{#$types[$node['typeid']]['TypesName']#}</div>
+            {#foreach name="node['data']" item='record'#}
+                <div class="testpaperbody">
+                    <p class="tit">{#$record['Test']#}</p>
+                    <div class="explain">
+                        <table>
+                            <tr>
+                                <th>【答案】</th>
+                                <td> {#$record['Answer']#}</td>
+                            </tr>
+                            <tr>
+                                <th>【解析】</th>
+                                <td>{#$record['Analytic']#}</td>
+                            </tr>
+                            <tr>
+                                <th>【知识点】</th>
+                                <td> 2015～2016学年河北省衡水武邑中学、唐山一中高三第一次联合考试地理</td>
+                            </tr>
+                            <!-- <tr>
+                                <th>【备注】</th>
+                                <td> 2015～2016唐山一中高三第一次联合考试地理</td>
+                            </tr> -->
+                        </table>
+                    </div>
+                    <div class="handle">
+                        <a href="#" class="explain-btn">查看解析</a>
+                        <div class="shenhe"><!-- <a href="" class="pass">通过</a> --><a href="" class="nopass" ttid="{#$record.TTID#}">点评/建议</a></div>
+                    </div>
+                    <div class="nopass-hide" ttid="{#$record.TTID#}" style='display:none;'>
+                        <div style="height:100%;">
+                            <span>点评/建议：</span>
+                            <input class="opinion" type="text" placeholder="请点评该题，阐述该题的优缺点" value="">
+                            <div class="alternate">
+                            </div>
+                        </div>
+                        <div class="choose-btn">
+                            <a href="#" class="btn-pass-hide hold">保存</a>
+                            <a href="#" class="btn-pass-hide cancel">取消</a>
+                        </div>
+                    </div>
+                </div>
+            {#/foreach#}
+        {#/volist#}
+    </div>
+</div>
+<input type="hidden" id='aid' value="{#$aid#}">
+<script src='__PUBLIC__/teacher/js/common1.js'></script>
+<script>
+    //不通过
+    $('.nopass').live('click', function(){
+        var that = $(this);
+        var nopass = that.parents('.handle').next();
+        if(nopass.css('display') != 'none'){
+            nopass.toggle();
+            return false;
+        }
+        if(nopass.find('.testContentSeg').length > 0){
+            nopass.toggle();
+            return false;
+        }
+        var ttid = that.attr('ttid');
+        var html = that.html();
+        that.html('加载中');
+        $.get(U("Teacher/OriginalityAudit/getUnselectedTests?id="+ttid), function(result){
+            that.html(html);
+            //权限验证
+            if(backLogin(result)=='error'){
+                return false;
+            };
+            var auditTest = result['data'][1];
+            var alternate = nopass.find('.alternate');
+            var suggestion = '', reserveTest = atid = 0;
+            if(auditTest){
+                suggestion = auditTest['TestAuditSuggestion'];
+                reserveTest = auditTest['ReserveTest'];
+                atid = auditTest['ATID'];
+            }
+            alternate.prev().val(suggestion);
+            alternate.html(loadOtherTest(result['data'][0], reserveTest, atid));
+            nopass.toggle();
+        });
+        return false;
+    });
+
+    $(function(){
+        $(".handle .explain-btn").toggle(function(){
+            $(this).parents(".handle").siblings(".explain").show();
+            $(this).html("收起");
+            },function(){
+            $(this).parents(".handle").siblings(".explain").hide();
+            $(this).html("查看解析");
+        });
+    });
+
+
+    $(function(){
+        $(".testpaperbody .handle .shenhe .look").toggle(function(){
+            $(this).parent(".shenhe").parent(".handle").siblings(".pass-comment").show();
+            $(this).html("收起点评");
+            },function(){
+            $(this).parents(".shenhe").parents(".handle").siblings(".pass-comment").hide();
+            $(this).html("查看点评");
+        });
+    });
+
+    // 弹出留言
+    $(function(){
+        $("#test-comment").click(function(){
+            var plane = $('#suggestion');
+            $('#alertZone').html(plane.html()).css({
+                'width' : 'auto',
+                'overflow-y' : 'hidden'
+            });
+            $('#alertTitle').html('完成审核');
+            $("#sug-box").css({"display":"block", 'position':'relative'});
+            $('.sug-con').css({
+                'width' : '500px',
+                'height' : '220px',
+                'top' : '200px',
+                'left' : '50%'
+            });
+            return false;
+        });
+        $(".cancel-btn").live('click', function(){
+            $("#sug-box").css("display","none");
+            return false;
+        });
+        $(".close-btn").live('click', function(){
+            $("#sug-box").css("display","none");
+            return false;
+        });
+    });
+
+
+    //显示备选试题内容
+    $('.lookingFor').live('click', function(){
+        var that = $(this);
+        var order = that.attr('order');
+        var content = $('#'+that.attr('testid'));
+        $('#alertTitle').html('备选试题'+order);
+        var width = $('body').width()-200;
+        var height = $(window).height()-100;
+        $('#sug-box').css('position','fixed');
+        $('.sug-con').css({
+            'width' : width,
+            'height' : height,
+            'top' : '50px',
+            'left' : '350px'
+        });
+        var zone = $('#alertZone');
+        zone.parent().css('overflow','hidden');
+        zone.css({
+            'overflow-y' : 'auto',
+            'overflow-x' : 'auto',
+            'width' : zone.parent().width(),
+            'height' : zone.parent().height()-40
+        }).html(content.html());
+        $("#sug-box").css("display","block");
+        return false;
+    });
+
+    $('.nopass-hide .cancel').live('click', function(){
+        $(this).parents('.nopass-hide').prev().find('.nopass').trigger('click');
+    });
+
+    //不通过保存
+    $('.nopass-hide .hold').live('click', function(){
+        var that = $(this);
+        var _parent = that.parents('.nopass-hide');
+        var suggestion = _parent.find('.opinion').val();
+        var checked = _parent.find('input[name="ReserveTest"]:checked');
+        var testid = (checked.length > 0) ? checked.val() : 0;
+        if('' == suggestion && 0 == testid){
+            _parent.find('.cancel').trigger('click');
+            return false;
+        }
+        var data = {
+            'suggestion' : suggestion,
+            'testid' : testid,
+            'atid' : _parent.find('.atid').val(),
+            'aid' : $("#aid").val(),
+            'ttid' : _parent.attr('ttid')
+        }
+        var html = that.html();
+        that.html('加载中');
+        $.post(U("Teacher/OriginalityAudit/auditTestSave"), data, function(result){
+            that.html(html);
+            //权限验证
+            if(backLogin(result)=='error'){
+                return false;
+            };
+            _parent.find('.atid').val(result['data']);
+            _parent.find('.cancel').trigger('click');
+            alert('保存成功！');
+        });
+        return false;
+    });
+
+    $('.nopass-hide .alternate input').live('click', function(){
+        var that = $(this);
+        var checked = that.attr("checked");
+        if(!checked){
+            checked = false;
+        }
+        that.attr('checked', checked).siblings('input').attr('checked', false);
+    })
+
+    $('.submit-btn').live('click', function(){
+        if(!window.confirm('完成审核将使数据不能再进行修改，确认完成？')){
+            return false;
+        }
+        var that = $(this);
+        var id = $('#aid').val();
+        var data = {
+            'id' : id,
+            'suggestion' : $('#sug_txt').val()
+        };
+        $.post(U("Teacher/OriginalityAudit/completeAudit"), data, function(result){
+            //权限验证
+            if(backLogin(result)=='error'){
+                return false;
+            };
+            $('.sug-con #closeBtn').trigger('click');
+            alert('审核完成！');
+        });
+        return false;
+    });
+
+    function loadOtherTest(data, reserveTest, atid){
+        var html = '<input type="hidden" class="atid" value="'+atid+'"/>';
+        for(var i=0; i<data.length; i++){
+            var val = data[i];
+            var checked = '';
+            if(reserveTest == val.TestID){
+                checked = " checked='checked'";
+            }
+            html += '<input type="checkbox"'+checked+' name="ReserveTest" value="'+val.TestID+'" id="test'+val.TestID+'"/>';
+            html += '<a href="#" title="查看该题" testid="testContent'+val.TestID+'" order="'+(i+1)+'" class="lookingFor">备选试题'+(i+1)+'</a>';
+            html += '<div style="display:none;" id="testContent'+val.TestID+'"><div class="testContent"><p class="testContentTitle"><strong>题文：</strong></p><p class="testContentSeg">'+val.Test+"</p><p class='testContentTitle'><strong>答案：</strong></p><p class='testContentSeg'>"+val.Answer+"</p><p class='testContentTitle'><strong>解析：</strong></p><p class='testContentSeg'>"+val.Analytic+"</p></div></div>";
+        }
+        return html;
+    }
+</script>
+
+{#// 加载尾部公共文件 #}
+{#include file="Public/ends" /#}

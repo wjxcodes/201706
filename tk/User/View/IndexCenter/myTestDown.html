@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#} - 用户中心 - {#$pageName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/user.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+</head>
+<body>
+<!--头部-->
+{#include file="Index@Common/TplUserHeader" /#}
+<!--头部-end-->
+
+<!-- 个人中心 -->
+<div class="w-main">
+    <!-- 面包屑导航 -->
+    {#include file="IndexCenter/TplCrumbs" /#}
+    <!-- 面包屑导航END -->
+
+    <div class="u-content clearfix">
+        <!-- 左侧导航 -->
+        {#include file="IndexCenter/TplPersonalNav" /#}
+        <!-- 左侧导航END -->
+        <div class="u-right-wrap">
+            <div class="u-right" id="myDownC">
+                <!-- 历史下载 -->
+                <div class="u-record-panel content g-tab">
+                    <div class="tab-head">
+                        <h3 class="tab-title">历史下载</h3>
+                    </div>
+                    <div class="tab-nav-wrap">
+                        <ul class="tab-nav">
+                            <li data-href=".record-l-panel1" class="dated on" id="all">
+                                <a href="javascript:;">全部时间</a> <i class="active-icon"></i>
+                            </li>
+                            <li data-href=".record-l-panel2" class="dated" id="today">
+                                <a href="javascript:;">今天</a> <i class="active-icon"></i>
+                            </li>
+                            <li data-href=".record-l-panel3" class="dated" id="yestoday">
+                                <a href="javascript:;">昨天</a>
+                                <i class="active-icon"></i>
+                            </li>
+                            <li data-href=".record-l-panel4" class="dated" id="curweek">
+                                <a href="javascript:;">本周</a>
+                                <i class="active-icon"></i>
+                            </li>
+                            <li data-href=".record-l-panel5" class="dated" id="curmonth">
+                                <a href="javascript:;">本月</a>
+                                <i class="active-icon"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-body">
+                        <div class="tab-panel record-l-panel1 on" >
+                            <table class="g-table g-table-bordered record-table">
+                                <thead>
+                                <tr>
+                                    <th align="center" width="40">编号</th>
+                                    <th align="center" width="80">
+                                        <select name="subject" class="subject">
+                                            {#foreach name="subject" item="sj"#}
+                                            <option value="{#$sj.SubjectID#}" {#if condition="$sj['SubjectID'] eq $SubjectID" #} selected="selected" {#/if#}>{#$sj.SubjectName#}</option>
+                                            {#/foreach#}
+                                        </select>
+                                    </th>
+                                    <th align="left">试卷名称</th>
+                                    <th align="left" width="50">点值</th>
+                                    <th align="left" width="80">日期</th>
+                                    <th align="center" width="100">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody id="myDownListC"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="u-paginator" id="pagelistbox"></div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="__PUBLIC__/index/js/myTestAbout.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+        <script type="text/javascript">
+    $(document).ready(function(){
+        var idName='{#$function#}';
+        if(idName!='' || idName!='undefined'){
+            $('#'+idName).addClass('active');
+        }
+        $.indexMyTestAbout.myDownInit();
+    });
+</script>
+    </div>
+    <!-- 个人中心END -->
+</div>
+<!--footer-->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+<script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+<![endif]-->
+{#include file="Index@Common/secondFooter" /#}
+<!--footer-end-->
+</body>
+</html>

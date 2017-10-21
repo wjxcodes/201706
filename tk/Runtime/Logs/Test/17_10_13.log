@@ -1,0 +1,990 @@
+[ 2017-10-13T18:00:48+08:00 ] 115.60.62.97 /Test/Test/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined index: KlName E:\www\www\tk\Manage\Model\KnowledgeModel.class.php 第 271 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 26 E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1443 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 302 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1205 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 3 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 4 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 5 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 6 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 7 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 8 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 9 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 10 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 11 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 12 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 13 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 14 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 15 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 16 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 17 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 18 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 19 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 20 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 21 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 22 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 23 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 24 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 25 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 26 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 27 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 28 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 29 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 30 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 31 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 32 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 33 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 34 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 35 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 36 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 37 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 38 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 39 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 40 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 41 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 42 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 43 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 44 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 45 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 46 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 47 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 50 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 51 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 75 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 76 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 77 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 52 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 53 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 54 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 55 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 56 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 57 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 58 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 59 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 60 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 63 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 64 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 88 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 89 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 90 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 65 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 66 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 67 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 68 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 69 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 70 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 71 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 72 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 73 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 74 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 96 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 78 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 79 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 80 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 81 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 82 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 83 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 84 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 85 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 86 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 87 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 91 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 92 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 93 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 94 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 95 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 97 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 98 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 99 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 100 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 101 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 102 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 103 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 104 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 105 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 106 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 107 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 108 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 109 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 110 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 111 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 112 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 113 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 114 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 115 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 116 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 117 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 91 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 238 行.
+NOTIC: [8] Undefined index: SkillName E:\www\www\tk\Manage\Model\SkillModel.class.php 第 243 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1143 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 149 E:\www\www\tk\Manage\Model\CapacityModel.class.php 第 239 行.
+NOTIC: [8] Undefined index: CapacityName E:\www\www\tk\Manage\Model\CapacityModel.class.php 第 244 行.
+
+[ 2017-10-13T18:00:52+08:00 ] 115.60.62.97 /Test/Test/editIntro/id/9464371/0.9165809012496575/?_=1507888852597
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: send E:\www\www\tk\Runtime\Cache\Test\1cd7cfdd3d12c240945dc5eb9cfde883.php 第 103 行.
+NOTIC: [8] Undefined variable: real E:\www\www\tk\Runtime\Cache\Test\1cd7cfdd3d12c240945dc5eb9cfde883.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-10-13T18:00:52+08:00 ] 115.60.62.97 /Test/Test/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined index: KlName E:\www\www\tk\Manage\Model\KnowledgeModel.class.php 第 271 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 26 E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1443 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 302 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1205 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 3 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 4 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 5 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 6 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 7 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 8 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 9 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 10 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 11 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 12 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 13 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 14 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 15 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 16 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 17 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 18 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 19 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 20 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 21 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 22 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 23 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 24 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 25 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 26 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 27 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 28 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 29 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 30 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 31 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 32 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 33 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 34 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 35 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 36 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 37 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 38 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 39 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 40 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 41 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 42 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 43 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 44 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 45 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 46 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 47 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 50 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 51 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 75 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 76 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 77 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 52 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 53 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 54 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 55 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 56 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 57 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 58 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 59 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 60 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 63 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 64 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 88 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 89 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 90 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 65 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 66 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 67 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 68 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 69 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 70 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 71 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 72 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 73 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 74 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 96 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 78 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 79 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 80 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 81 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 82 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 83 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 84 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 85 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 86 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 87 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 91 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 92 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 93 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 94 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 95 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 97 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 98 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 99 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 100 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 101 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 102 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 103 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 104 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 105 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 106 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 107 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 108 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 109 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 110 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 111 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 112 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 113 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 114 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 115 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 116 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 117 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 91 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 238 行.
+NOTIC: [8] Undefined index: SkillName E:\www\www\tk\Manage\Model\SkillModel.class.php 第 243 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1143 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 148 E:\www\www\tk\Manage\Model\CapacityModel.class.php 第 239 行.
+NOTIC: [8] Undefined index: CapacityName E:\www\www\tk\Manage\Model\CapacityModel.class.php 第 244 行.
+
+[ 2017-10-13T18:00:56+08:00 ] 115.60.62.97 /Test/Test/editIntro/id/9464369/0.07718909198393242/?_=1507888856565
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: send E:\www\www\tk\Runtime\Cache\Test\1cd7cfdd3d12c240945dc5eb9cfde883.php 第 103 行.
+NOTIC: [8] Undefined variable: real E:\www\www\tk\Runtime\Cache\Test\1cd7cfdd3d12c240945dc5eb9cfde883.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-13T18:00:56+08:00 ] 115.60.62.97 /Test/Test/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined index: KlName E:\www\www\tk\Manage\Model\KnowledgeModel.class.php 第 271 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 26 E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1443 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 302 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1205 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 3 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 4 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 5 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 6 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 7 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 8 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 9 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 10 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 11 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 12 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 13 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 14 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 15 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 16 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 17 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 18 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 19 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 20 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 21 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 22 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 23 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 24 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 25 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 26 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 27 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 28 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 29 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 30 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 31 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 32 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 33 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 34 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 35 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 36 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 37 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 38 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 39 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 40 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 41 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 42 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 43 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 44 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 45 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 46 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 47 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 50 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 51 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 75 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 76 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 77 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 52 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 53 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 54 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 55 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 56 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 57 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 58 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 59 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 60 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 63 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 64 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 88 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 89 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 90 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 65 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 66 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 67 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 68 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 69 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 70 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 71 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 72 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 73 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 74 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 96 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 78 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 79 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 80 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 81 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 82 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 83 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 84 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 85 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 86 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 87 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 91 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 92 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 93 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 94 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 95 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 97 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 98 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 99 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 100 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 101 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 102 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 103 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 104 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 105 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 106 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 107 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 108 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 109 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 110 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 111 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 112 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 113 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 114 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 115 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 116 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 117 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 91 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 238 行.
+NOTIC: [8] Undefined index: SkillName E:\www\www\tk\Manage\Model\SkillModel.class.php 第 243 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1143 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 149 E:\www\www\tk\Manage\Model\CapacityModel.class.php 第 239 行.
+NOTIC: [8] Undefined index: CapacityName E:\www\www\tk\Manage\Model\CapacityModel.class.php 第 244 行.
+
+[ 2017-10-13T18:00:59+08:00 ] 115.60.62.97 /Test/Test/editIntro/id/9464368/0.6553687441119362/?_=1507888859749
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: send E:\www\www\tk\Runtime\Cache\Test\1cd7cfdd3d12c240945dc5eb9cfde883.php 第 103 行.
+NOTIC: [8] Undefined variable: real E:\www\www\tk\Runtime\Cache\Test\1cd7cfdd3d12c240945dc5eb9cfde883.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-10-13T18:00:59+08:00 ] 115.60.62.97 /Test/Test/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined index: KlName E:\www\www\tk\Manage\Model\KnowledgeModel.class.php 第 271 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 26 E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1443 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 302 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1205 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 3 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 4 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 5 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 6 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 7 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 8 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 9 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 10 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 11 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 12 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 13 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 14 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 15 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 16 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 17 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 18 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 19 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 20 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 21 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 22 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 23 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 24 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 25 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 26 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 27 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 28 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 29 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 30 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 31 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 32 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 33 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 34 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 35 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 36 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 37 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 38 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 39 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 40 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 41 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 42 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 43 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 44 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 45 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 46 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 47 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 50 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 51 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 75 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 76 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 77 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 52 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 53 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 54 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 55 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 56 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 57 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 58 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 59 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 60 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 63 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 64 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 88 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 89 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 90 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 65 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 66 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 67 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 68 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 69 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 70 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 71 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 72 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 73 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 74 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 96 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 78 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 79 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 80 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 81 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 82 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 83 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 84 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 85 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 86 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 87 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 91 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 92 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 93 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 94 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 95 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 97 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 98 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 99 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 100 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 101 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 102 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 103 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 104 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 105 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 106 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 107 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 108 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 109 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 110 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 111 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 112 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 113 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 114 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 115 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 116 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 117 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 91 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 238 行.
+NOTIC: [8] Undefined index: SkillName E:\www\www\tk\Manage\Model\SkillModel.class.php 第 243 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1143 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 149 E:\www\www\tk\Manage\Model\CapacityModel.class.php 第 239 行.
+NOTIC: [8] Undefined index: CapacityName E:\www\www\tk\Manage\Model\CapacityModel.class.php 第 244 行.
+
+[ 2017-10-13T18:01:09+08:00 ] 115.60.62.97 /Test/Test/editIntro/id/9464372/0.13644974854791347/?_=1507888869597
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: send E:\www\www\tk\Runtime\Cache\Test\1cd7cfdd3d12c240945dc5eb9cfde883.php 第 103 行.
+NOTIC: [8] Undefined variable: real E:\www\www\tk\Runtime\Cache\Test\1cd7cfdd3d12c240945dc5eb9cfde883.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-10-13T18:01:09+08:00 ] 115.60.62.97 /Test/Test/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined index: KlName E:\www\www\tk\Manage\Model\KnowledgeModel.class.php 第 271 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 26 E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1443 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 302 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1205 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 3 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 4 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 5 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 6 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 7 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 8 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 9 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 10 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 11 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 12 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 13 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 14 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 15 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 16 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 17 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 18 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 19 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 20 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 21 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 22 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 23 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 24 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 25 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 26 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 27 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 28 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 29 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 30 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 31 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 32 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 33 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 34 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 35 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 36 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 37 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 38 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 39 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 40 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 41 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 42 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 43 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 44 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 45 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 46 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 47 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 50 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 51 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 75 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 76 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 77 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 52 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 53 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 54 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 55 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 56 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 57 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 58 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 59 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 60 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 63 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 64 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 88 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 89 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 90 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 65 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 66 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 67 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 68 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 69 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 70 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 71 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 72 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 73 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 74 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 96 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 78 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 79 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 80 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 81 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 82 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 83 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 84 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 85 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 86 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 87 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 91 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 92 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 93 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 94 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 95 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 97 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 98 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 99 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 100 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 101 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 102 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 103 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 104 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 105 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 106 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 107 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 108 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 109 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 110 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 111 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 112 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 113 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 114 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 115 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 116 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 117 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 91 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 238 行.
+NOTIC: [8] Undefined index: SkillName E:\www\www\tk\Manage\Model\SkillModel.class.php 第 243 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1143 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 149 E:\www\www\tk\Manage\Model\CapacityModel.class.php 第 239 行.
+NOTIC: [8] Undefined index: CapacityName E:\www\www\tk\Manage\Model\CapacityModel.class.php 第 244 行.
+
+[ 2017-10-13T18:01:18+08:00 ] 115.60.62.97 /Test/Test/editIntro/id/9464373/0.5122628177092949/?_=1507888878877
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: send E:\www\www\tk\Runtime\Cache\Test\1cd7cfdd3d12c240945dc5eb9cfde883.php 第 103 行.
+NOTIC: [8] Undefined variable: real E:\www\www\tk\Runtime\Cache\Test\1cd7cfdd3d12c240945dc5eb9cfde883.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-10-13T18:01:19+08:00 ] 115.60.62.97 /Test/Test/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined index: KlName E:\www\www\tk\Manage\Model\KnowledgeModel.class.php 第 271 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 26 E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1443 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 302 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1205 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 3 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 4 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 5 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 6 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 7 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 8 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 9 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 10 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 11 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 12 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 13 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 14 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 15 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 16 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 17 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 18 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 19 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 20 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 21 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 22 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 23 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 24 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 25 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 26 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 27 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 28 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 29 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 30 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 31 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 32 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 33 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 34 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 35 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 36 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 37 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 38 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 39 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 40 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 41 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 42 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 43 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 44 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 45 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 46 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 47 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 50 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 51 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 75 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 76 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 77 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 52 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 53 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 54 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 55 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 56 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 57 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 58 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 59 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 60 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 63 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 64 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 88 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 89 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 90 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 65 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 66 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 67 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 68 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 69 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 70 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 71 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 72 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 73 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 74 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 96 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 78 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 79 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 80 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 81 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 82 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 83 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 84 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 85 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 86 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 87 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 91 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 92 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 93 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 94 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 95 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 97 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 98 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 99 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 100 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 101 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 102 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 103 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 104 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 105 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 106 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 107 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 108 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 109 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 110 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 111 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 112 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 113 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 114 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 115 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 116 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 117 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 92 E:\www\www\tk\Manage\Model\SkillModel.class.php 第 238 行.
+NOTIC: [8] Undefined index: SkillName E:\www\www\tk\Manage\Model\SkillModel.class.php 第 243 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1143 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 148 E:\www\www\tk\Manage\Model\CapacityModel.class.php 第 239 行.
+NOTIC: [8] Undefined index: CapacityName E:\www\www\tk\Manage\Model\CapacityModel.class.php 第 244 行.
+

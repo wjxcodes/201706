@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+<title>问卷调查 - {#$config.IndexName#}</title>
+<meta content="text/html; charset=UTF-8" http-equiv=Content-Type>
+<link rel="stylesheet" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}">
+<link rel="stylesheet" href="__PUBLIC__/index/css/style.css{#$Think.config.WLN_UPDATE_FILE_DATE#}">
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('input,a,img,div,span');</script>
+    <![endif]-->
+<script>
+    var local= "{#:U('Feedback/index')#}";
+</script>
+<script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js"></script>
+</head>
+<body>
+{#include file="Common/top"/#}
+
+<!-- 面包屑导航 -->
+<div class="w1000 crumbs-wrap">
+    <div class="g-crumbs">
+        <b class="now-path">当前位置：</b>
+        <a href="/">首页</a>>
+        <a href="javascript:;">问卷调查</a>
+    </div>
+</div>
+<!-- 面包屑导航 end-->
+<!-- banner -->
+<div class="banner-area w1000">
+    <img src="__PUBLIC__/index/imgs/in-page/wln-bn.jpg" alt="万方题库云平台">
+    <h1>问卷调查</h1>
+</div>
+<!-- banner end-->
+
+<div class="w1000 clearfix">
+<div class="box">
+<div class="nr_box wjdc_nr_box" id="ex-nr-01">
+<form id="form3" method="post">
+<div class="content">
+  <div class="cont">
+    <div>
+        <h3><span>1.</span>您认为组卷系统的网站界面如何</h3>
+        <ul class="options">
+          <li><input type="radio" name="Visual" value="0" id="Visual0"/><label for="Visual0">A.美观大方</label></li>
+          <li><input type="radio" name="Visual" value="1" id="Visual1"/><label for="Visual1">B.视觉一般</label></li>
+          <li><input type="radio" name="Visual" value="2" id="Visual2"/><label for="Visual2">C.效果较差</label></li>
+        </ul>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><span>2.</span>您登录后，首页显示内容是否有效？</h3>
+        <ul class="options">
+          <li class="yes"><input type="radio" name="DisplayValid" value="0" id="DisplayValid0" /><label for="DisplayValid0">A.是</label></li>
+          <li class="no"><input type="radio" name="DisplayValid" value="1" id="DisplayValid1" /><label for="DisplayValid1">B.不全是（建议）</label></li>
+          <li class="no"><input type="radio" name="DisplayValid" value="2" id="DisplayValid2" /><label for="DisplayValid2">C.全部不是（建议）</label></li>
+        </ul>
+    </div>
+    <div class="sugg">
+      <span>建议：</span><textarea rows="2" cols="60" name="DisplayValidSugg"></textarea>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><b>*</b><span>3.</span>组卷的各选题方式中，您认为哪个较实用？（可多选）</h3>
+        <ul class="options">
+          <li><input type="checkbox" name="SearchMethods[]" value="0" id="SearchMethods0" /><label for="SearchMethods0">A.按知识点选题</label></li>
+          <li><input type="checkbox" name="SearchMethods[]" value="1" id="SearchMethods1" /><label for="SearchMethods1">B.按章节选题</label></li>
+          <li><input type="checkbox" name="SearchMethods[]" value="2" id="SearchMethods2" /><label for="SearchMethods2">C.按试卷选题</label></li>
+          <li><input type="checkbox" name="SearchMethods[]" value="3" id="SearchMethods3" /><label for="SearchMethods3">D.按关键词选题</label></li>
+          <li><input type="checkbox" name="SearchMethods[]" value="4" id="SearchMethods4" /><label for="SearchMethods4">E.智能选题</label></li>
+          <li><input type="checkbox" name="SearchMethods[]" value="5" id="SearchMethods5" /><label for="SearchMethods5">F.双向细目表模板选题</label></li>
+        </ul>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><b>*</b><span>4.</span>您认为根据最新考试大纲划分系统的知识点目录是否合理？</h3>
+        <ul class="options">
+          <li  class="yes"><input type="radio" name="KLCatalog" value="0" id="KLCatalog0" /><label for="KLCatalog0">A.合理</label></li>
+          <li  class="no"><input type="radio" name="KLCatalog" value="1" id="KLCatalog1" /><label for="KLCatalog1">B.不合理，不够满意（建议）</label></li>
+        </ul>
+    </div>
+    <div class="sugg">
+      <span>建议：</span><textarea rows="2" cols="60" name="KLCatalogSugg"></textarea>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><b>*</b><span>5.</span>章节选题中，能否满足同步教学课时训练的需求?</h3>
+        <ul class="options">
+          <li  class="yes"><input type="radio" name="MeetDemand" value="0" id="MeetDemand0" /><label for="MeetDemand0">A.能</label></li>
+          <li  class="no"><input type="radio" name="MeetDemand" value="1" id="MeetDemand1" /><label for="MeetDemand1">B.不能（建议）</label></li>
+        </ul>
+    </div>
+    <div class="sugg">
+      <span>建议：</span><textarea rows="2" cols="60" name="MeetDemandSugg"></textarea>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><span>6.</span>智能选题中，可以分题设分、可以添加选做试题，您认为实用吗？</h3>
+        <ul class="options">
+          <li  class="yes"><input type="radio" name="SetScore" value="0" id="SetScore0" /><label for="SetScore0">A.实用</label></li>
+          <li  class="no"><input type="radio" name="SetScore" value="1" id="SetScore1" /><label for="SetScore1">B.不实用（建议）</label></li>
+        </ul>
+    </div>
+    <div class="sugg">
+      <span>建议：</span><textarea rows="2" cols="60" name="SetScoreSugg"></textarea>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><span>7.</span>您对智能组卷的等待时间满意吗？</h3>
+        <ul class="options">
+          <li><input type="radio" name="WaitTime" value="0" id="WaitTime0" /><label for="WaitTime0">A.满意</label></li>
+          <li><input type="radio" name="WaitTime" value="1" id="WaitTime1" /><label for="WaitTime1">B.有点慢</label></li>
+          <li><input type="radio" name="WaitTime" value="2" id="WaitTime2" /><label for="WaitTime2">C.太慢了</label></li>
+        </ul>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><b>*</b><span>8.</span>按照往年各种测试类型的试题难度、考点、题型等排序，提供相对应的双向细目表模板组卷，您认为有必要吗？</h3>
+        <ul class="options">
+          <li  class="yes"><input type="radio" name="TwoTemp" value="0" id="TwoTemp0" /><label for="TwoTemp0">A.很有必要</label></li>
+          <li  class="yes"><input type="radio" name="TwoTemp" value="1" id="TwoTemp1" /><label for="TwoTemp1">B.无所谓</label></li>
+          <li  class="no"><input type="radio" name="TwoTemp" value="2" id="TwoTemp2" /><label for="TwoTemp2">C.没有必要（原因）</label></li>
+        </ul>
+    </div>
+    <div class="sugg">
+      <span>原因：</span><textarea rows="2" cols="60" name="TwoTempSugg"></textarea>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><span>9.</span>您对试卷预览中版式满意吗？</h3>
+        <ul class="options">
+          <li><input type="radio" name="TypeSet" value="0" id="TypeSet0" /><label for="TypeSet0">A.满意</label></li>
+          <li><input type="radio" name="TypeSet" value="1" id="TypeSet1" /><label for="TypeSet1">B.不满意</label></li>
+        </ul>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><span>10.</span>您在下载时，遇到什么问题了吗?</h3>
+        <ul class="options">
+          <li><input type="radio" name="DownProblem" value="0" id="DownProblem0" /><label for="DownProblem0">A.很流畅</label></li>
+          <li><input type="radio" name="DownProblem" value="1" id="DownProblem1" /><label for="DownProblem1">B.不知道如何下载</label></li>
+         <li><input type="radio" name="DownProblem" value="2" id="DownProblem2" /><label for="DownProblem2">C.无法下载</label></li>
+        </ul>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><span>11.</span>您对系统生成的试题分析结果满意吗？</h3>
+        <ul class="options">
+          <li   class="yes"><input type="radio" name="TestAnalysis" value="0" id="TestAnalysis0" /><label for="TestAnalysis0">A.满意</label></li>
+          <li  class="no"><input type="radio" name="TestAnalysis" value="1" id="TestAnalysis1" /><label for="TestAnalysis1">B.不满意（原因）</label></li>
+        </ul>
+    </div>
+    <div class="sugg">
+      <span>原因：</span><textarea rows="2" cols="60" name="TestAnalysisSugg"></textarea>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><span>12.</span>您对系统生成的答题卡满意吗？</h3>
+        <ul class="options">
+          <li  class="yes"><input type="radio" name="AnswerCard" value="0" id="AnswerCard0" /><label for="AnswerCard0">A.满意</label></li>
+          <li  class="no"> <input type="radio" name="AnswerCard" value="1" id="AnswerCard1" /><label for="AnswerCard1">B.不满意（原因）</label></li>
+        </ul>
+    </div>
+    <div class="sugg">
+      <span>原因：</span><textarea rows="2" cols="60" name="AnswerCardSugg"></textarea>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><span>13.</span>您对系统留作业的流程满意吗？</h3>
+        <ul class="options">
+          <li  class="yes"><input type="radio" name="HomeWork" value="0" id="HomeWork0" /><label for="HomeWork0">A.满意</label></li>
+          <li  class="no"><input type="radio" name="HomeWork" value="1" id="HomeWork1" /><label for="HomeWork1">B.不满意（原因）</label></li>
+        </ul>
+    </div>
+    <div class="sugg">
+      <span>原因：</span><textarea rows="2" cols="60" name="HomeWorkSugg"></textarea>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><b>*</b><span>14.</span>您一天最多能下载多少次已组好的试卷？</h3>
+        <ul class="options">
+          <li><input type="radio" name="DownNum" value="0" id="DownNum0" /><label for="DownNum0">A.1-5次</label></li>
+          <li><input type="radio" name="DownNum" value="1" id="DownNum1" /><label for="DownNum1">B.5-10次</label></li>
+          <li><input  type="radio" name="DownNum" value="2" id="DownNum2" /><label for="DownNum2">C.10次以上</label></li>
+        </ul>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><span>15.</span>如果提供按整套试卷下载的功能，您愿意使用吗？</h3>
+        <ul class="options">
+          <li  class="yes"><input type="radio" name="CompleteDown" value="0" id="CompleteDown0" /><label for="CompleteDown0">A.愿意</label></li>
+          <li  class="yes"><input type="radio" name="CompleteDown" value="1" id="CompleteDown1" /><label for="CompleteDown1">B.即使付费也愿意</label></li>
+          <li  class="no"><input  type="radio" name="CompleteDown" value="2" id="CompleteDown2" /><label for="CompleteDown2">C.不愿意（原因）</label></li>
+        </ul>
+    </div>
+   <div class="sugg">
+      <span>原因：</span><textarea rows="2" cols="60" name="CompDownSugg"></textarea>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><span>16.</span>原创试题，您认为有时效性吗？</h3>
+        <ul class="options">
+          <li><input type="radio" name="OrigPre" value="0" id="OrigPre0" /><label for="OrigPre0">A.有</label></li>
+          <li><input type="radio" name="OrigPre" value="1" id="OrigPre1" /><label for="OrigPre1">B.无所谓</label></li>
+          <li><input  type="radio" name="OrigPre" value="2" id="OrigPre2" /><label for="OrigPre2">C.没有</label></li>
+        </ul>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><span>17.</span>如果提供个人免费自建题库的功能，你愿意自建题库吗?</h3>
+        <ul class="options">
+          <li  class="yes"><input type="radio" name="PerQuesBank" value="0" id="PerQuesBank0" /><label for="PerQuesBank0">A.愿意</label></li>
+          <li  class="no"><input type="radio" name="PerQuesBank" value="1" id="PerQuesBank1" /><label for="PerQuesBank1">B.不愿意（原因）</label></li>
+        </ul>
+    </div>
+     <div class="sugg">
+      <span>原因：</span><textarea rows="2" cols="60" name="PerQuesBankSugg"></textarea>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><span>18.</span>您是否愿意有偿为本系统及时提供名校考试资源，建立长期合作关系？</h3>
+        <ul class="options">
+          <li  class="yes"><input type="radio" name="LongTimeCoop" value="0" id="LongTimeCoop0" /><label for="LongTimeCoop0">A.愿意</label></li>
+          <li  class="no"><input type="radio" name="LongTimeCoop" value="1" id="LongTimeCoop1" /><label for="LongTimeCoop1">B.不愿意（原因）</label></li>
+        </ul>
+    </div>
+    <div class="sugg">
+      <span>原因：</span><textarea rows="2" cols="60" name="LongTimeCoopSugg"></textarea>
+    </div>
+  </div>
+  <div class="cont">
+    <div>
+        <h3><b>*</b><span>19.</span>综合意见：不少50字</h3>
+        <p><span>提示</span>：从系统使用流畅度、系统功能、试题选题、试题内容质量、试题类型等方面阐述意见</p>
+    </div>
+    <div class="sugg" style="display:block;">
+     <span>意见：</span><textarea  rows="3" cols="60" name="CompreSugg"></textarea>
+    </div>
+  </div>
+  <div><input type="button" id="submit01" value="提交反馈" /></div>
+  </div>
+</form>
+</div>
+</div>
+</div>
+<script>
+$('input,textarea').live('click',function(){
+        $('html,body').animate({
+        scrollTop: ($(this).offset().top-Math.ceil($(window).height()/2)+Math.ceil($(window).height()*0.1))
+    }, 300);
+});
+//带建议的才出现建议输入框，否则不显示
+$("input").click(function(){
+    var classname=$(this).parent().attr('class');
+    if(classname=='yes'){
+        $(this).parent().parent().parent().siblings().css({"display":"none"});
+     }
+    if(classname=='no'){
+        $(this).parent().parent().parent().siblings().css({"display":"block"});
+    }
+});
+$(document).ready(function(){
+    $('#submit01').click(function(){
+        if(!$('[name="SearchMethods[]"]:checked').val()){
+            alert('组卷方式不能为空');
+            return false;
+        }
+        if(!$('[name="KLCatalog"]:checked').val()){
+            alert('请选择知识点目录是否合理');
+            return false;
+        }
+        if(!$('[name="MeetDemand"]:checked').val()){
+            alert('请选择是否满足同步教学需求');
+            return false;
+        }
+        if(!$('[name="TwoTemp"]:checked').val()){
+            alert('请选择双向细目表组卷是否有必要');
+            return false;
+        }
+        if(!$('[name="DownNum"]:checked').val()){
+            alert('请选择你的下载次数');
+            return false;
+        }
+        if($("[name='CompreSugg']").val()==''){
+            alert('综合意见不能为空');
+            return false;
+        }
+        $.ajax({
+            type: "POST",
+            cache: false,
+            url: U('Index/Feedback/saveFeedback'),
+            data:$("#form3").serialize(),
+            success: function(data){
+                if(data=='success'){
+                    //跳转到Home下
+                    layer.open({type:0,shift:0,title:'提示',content:'<div>您的反馈提交成功，感谢您的参与，祝您生活愉快！</div>',yes:function(){window.location.href=U('/Home','',false)}});
+                }else{
+                    layer.open({type:0,shift:0,title:'提示',content:'<div>您的反馈提交失败！</div>'});
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown){
+                alert( "反馈失败！请重试。" );
+            }
+        });
+    })
+    $('#msgboxyes .normal_no').live('click',function(){
+                location.href="/";
+                //CloseWebPage();
+    });
+    //点击确定后，关闭当前页面
+    function CloseWebPage(){
+        if (navigator.userAgent.indexOf("MSIE") > 0) {
+            if (navigator.userAgent.indexOf("MSIE 6.0") > 0) {
+                window.opener = null;
+                window.close();
+            } else {
+                window.open('', '_top');
+                window.top.close();
+            }
+        }else if (navigator.userAgent.indexOf("Firefox") > 0) {
+            window.location.href = 'about:blank ';
+        } else {
+            window.opener = null;
+            window.open('','_self','');
+            window.close();
+        }
+    }
+});
+</script>
+{#include file="Common/footer"/#}

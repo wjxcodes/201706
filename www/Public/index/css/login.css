@@ -1,0 +1,130 @@
+html, body {
+    background-color: #fff;
+    font-size: 14px;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_1460517468_3161957.eot'); /* IE9*/
+  src: url('http://at.alicdn.com/t/font_1460517468_3161957.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('http://at.alicdn.com/t/font_1460517468_3161957.woff') format('woff'), /* chrome、firefox */
+  url('http://at.alicdn.com/t/font_1460517468_3161957.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('http://at.alicdn.com/t/font_1460517468_3161957.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0
+}
+.top-logo-wrap {
+    max-width:960px;
+    _width:960px;
+    margin:0 auto;
+    padding: 25px 0;
+    *zoom:1;
+}
+.second-footer-wrap {
+    background-color: #fff;
+}
+.login-page-wrap {
+    background-color: #4b88e6;
+}
+.lf-login-wrap {
+    *width:250px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 30px;
+    transition:none;
+}
+.login-page-content {
+    width: 980px;
+    height: 560px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../imgs/account/login_bg.png) 0 48% no-repeat;
+}
+.lf-login-wrap {
+    float: right;
+    margin-top: 86px;
+}
+.respw {
+    width: 980px;
+    margin: 0 auto;
+}
+/*身份选择*/
+.lf-login-userid{
+    padding:10px 0 0 6px;
+}
+.lf-login-userid label{
+    margin-right:15px;
+}
+.lf-login-userid label input{
+    margin-right:2px;
+}
+/*页面标题*/
+.page-title {
+    float: left;
+    margin: 5px 0 0 15px;
+    padding-left: 15px;
+    border-left: 2px solid #ddd;
+    font-size: 26px;
+    color: #888;
+}
+@media screen and (max-width:960px) {
+    .respw {
+        width: 290px;
+        padding: 0 15px;
+    }
+    .hidden-x {
+        display: none !important;
+    }
+    .visible-x {
+        display: block !important;
+    }
+    .login-page-wrap {
+        background-color: #fff;
+    }
+    .top-logo-wrap {
+        padding: 0;
+    }
+    .top-logo-wrap h1 {
+        float: none;
+        margin: 0;
+        padding:0;
+        border:none;
+        font-size: 20px;
+        color: #fff;
+        background-color: #4f8ee6;
+        border-bottom:1px solid #4b88e6 ;
+        line-height: 2.6em;
+        text-align: center;
+        -webkit-box-shadow: 0 3px 3px rgba(3, 26, 62, 0.18);
+        box-shadow: 0 3px 3px rgba(3, 26, 62, 0.18);
+    }
+    .lf-login-item {
+        width: auto;
+    }
+    .lf-login-btn .login-big-btn {
+        width: 100%;
+    }
+    .lf-login-wrap {
+        float: none;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    .login-page-content {
+        height: auto;
+        background: #fff;
+    }
+    .second-footer-wrap .footer-box .copyright,.second-footer-wrap .footer-box .copyright a{
+        font-size:0.9em;
+        color:#999
+    }
+}
+@media screen and (max-width:320px) {
+    .respw {
+        width: 298px;
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,137 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">{#$pageName#}</div>
+<!--  功能操作区域  -->
+<div class="operate">
+    {#html:imageBtn name="revert" value="刷新" class="btflush" style="impBtn hMargin fLeft shadow" /#}
+    
+    <!-- 查询区域 -->
+    <FORM METHOD="POST" ACTION="__URL__">
+    <div class="fRig">
+        <div class="fLeft"><span id="key"><INPUT id="name" TYPE="text" NAME="name" placeholder="请输入模板名称" value="{#$Think.request.name#}" title="模板查询" class="medium" ></span></div>
+        {#html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /#}
+        {#html:imageBtn name="adv" value="高级" id="showText" style="impBtn hMargin fLeft shadow" /#}
+    </div>
+        <div id="searchM" class=" none search cBoth">
+        <TABLE border="0" cellpadding="1" cellspacing="3" width="100%">
+        <TR>
+            <TD class="tRight" width="80">用户名：</TD>
+            <TD width="80"><INPUT TYPE="text" NAME="UserName" class="small" value="{#$Think.request.UserName#}"></TD>
+            <TD class="tRight" width="80">模板名称：</TD>
+            <TD width="80"><INPUT TYPE="text" NAME="TempName" class="small" value="{#$Think.request.TempName#}"></TD>
+            <td class="tRight" width="50">学科：</td>
+            <td>
+                <select class="normal bLeft" id='subject' name="SubjectID">
+                    <option value="0">请选择学科</option>
+                    {#if condition="$subjectArray"#}
+                        {#volist name="subjectArray" id="vo"#}
+                            <optgroup label="{#$vo.SubjectName#}">
+                            {#if condition="$vo['sub']"#}
+                                {#volist name="vo['sub']" id="item"#}
+                                    <option value="{#$item.SubjectID#}" {#eq name="item.SubjectID" value="$Think.request.SubjectID"#}selected="selected"{#/eq#}>　　{#$item.SubjectName#}</option>
+                                {#/volist#}
+                            {#/if#}
+                            </optgroup>
+                        {#/volist#}
+                    {#else/#}
+                        <option value="0">请添加学科</option>
+                    {#/if#}
+                </select>
+            </td>
+            <td class="tRight" width="75">文档属性：</td>
+            <td>
+                <select class="normal bLeft" id='docFrom' name="docFrom">
+                    <option value="0">选择属性</option>
+                    {#volist name="docFrom" id="node"#}
+                        <option value="{#$key#}" {#eq name="Think.request.docFrom" value="$key"#}selected="selected"{#/eq#}>{#$node#}</option>
+                    {#/volist#}
+                </select>
+            </td>
+        </TR>
+
+        </TABLE>
+    </div>
+        </FORM>
+</div>
+<!-- 功能操作区域结束 -->
+
+<!-- 列表显示区域  -->
+<div class="list" >
+<div id="result" class="result none"></div>
+<!-- Think 系统列表组件开始 -->
+<table id="checkList" class="list" cellpadding="5" cellspacing="0" border="1">
+    <tr><td height="5" colspan="13" class="topTd" ></td></tr>
+    <tr class="row" >
+        <th width="8"><input type="checkbox" id="CheckAll" tag="checkList"></th>
+        <th width="5%">编号</th>
+        <th>用户名</th>
+        <th>文档名称</th>
+        <th>学科</th>
+        <th>文档属性</th>
+        <th>审核状态</th>
+        <th>是否分享</th>
+        <th>时间</th>
+        <th>操作</th>
+    </tr>
+    {#volist name="list" id="node" #}
+        <tr class="row lists" jl=''>
+        <td><input type="checkbox" class="key" value="{#$node.UDID#}"></td>
+        <td>{#$node.AssociateID#}</td>
+        <td>{#$node.UserName#}</td>
+        <td>{#$node.Title#}</td>
+        <td>{#$node.SubjectName#}</td>
+        <td>{#$node.docFrom#}</td>
+        <td>{#eq name="node.CheckStatus" value="0"#}<font color="red">未通过审核</font>{#else/#}审核通过{#/eq#}</td>
+        <td>{#eq name="node.IfShare" value="0"#}<font color="red">不分享</font>{#else/#}分享{#/eq#}</td>
+        <td>{#$node.AddTime|date|date="Y-m-d H:i:s",####}</td>
+        <td>
+            <a href="{#:U('Doc/DocDown/showMsg',array('id'=>$node[AssociateID]))#}" class="showmsg" thisid="{#$node.AssociateID#}">查看详情</a>&nbsp;
+            {#eq name="node.CheckStatus" value="0"#}<a href="{#:U('User/UserDynamic/check',array('id'=>$node[UDID],'checkStatus'=>1))#}" thisid="{#$node.UDID#}">审核通过</a>{#else/#}<a href="{#:U('User/UserDynamic/check',array('id'=>$node[UDID],'checkStatus'=>0))#}" thisid="{#$node.UDID#}">审核不通过</a>{#/eq#}&nbsp;
+        </td>
+        </tr>
+    {#/volist#}
+    <tr><td height="5" colspan="13" class="bottomTd"></td></tr>
+</table>
+<!-- Think 系统列表组件结束 -->
+</div>
+<!--  分页显示区域 -->
+<div class="page">{#$page#}</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+<script>
+    $('.system').click(function(){
+        exchange('__URL__',$(this));
+    })
+    $('.check').click(function(){
+        var stop=0;
+        if($('input[class="key"]:checked').length<1){
+            alert('请选择操作项');
+            return false;
+        }
+        $('input[class="key"]:checked').each(function(){
+            if($(this).parent().parent().find('.status').find('a:visible').attr('status')==1){
+                alert('您选择的数据中存在系统模板，请重试！');
+                stop=1;
+                return false;
+            }
+            if($(this).parent().parent().find('.status').find('a:visible').length<1){
+                alert('作业模板不能修改为系统模板！');
+                stop=1;
+                return false;
+            }
+        })
+        if(stop==1){
+            return false;
+        }
+        valueChanges('__URL__',$('table'));
+    })
+</script>
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

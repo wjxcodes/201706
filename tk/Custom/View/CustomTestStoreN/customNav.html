@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#} 用户中心</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/user.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/u-custom.css" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <!--<script type="text/javascript" src="js/layer/layer.js"></script>-->
+
+
+</head>
+<body>
+
+<!--头部-->
+{#include file="Index@Common/TplUserHeader" /#}
+<!--头部-end-->
+
+<!-- 个人中心 -->
+<div class="w-main">
+    <!-- 面包屑导航 -->
+    {#include file="User@IndexCenter/TplCrumbs" /#}
+
+    <!-- 面包屑导航END -->
+
+    <div class="u-content clearfix">
+        <!-- 左侧导航 -->
+        {#include file="User@IndexCenter/TplPersonalNav" /#}
+        <!-- 左侧导航END -->
+
+        <div class="u-right-wrap">
+            <div class="u-right">
+                <!--添加试题-->
+                <div class="ur-base-panel g-panel content">
+                    <div class="panel-head">
+                        <h3 class="head-name">添加试题</h3>
+                    </div>
+                    <div class="panel-body upload-content">
+                        <table class="upload-table-layout">
+                            <tbody>
+                            <tr>
+                                <td class="upload-area-warp">
+                                    <div class="upload-box">
+                                        <div class="icon icon-xie"></div>
+                                        <h3 class="upload-title">原创单题上传</h3>
+                                        <div class="upload-btn"><a class="nor-btn" href="{#:U('Custom/CustomTestStoreN/add')#}">立即上传</a></div>
+                                        <div class="ua-context">
+                                            不拼数量拼质量，<br/>
+                                            好的试题要收藏。
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="upload-area-warp">
+                                    <div class="upload-box">
+                                        <div class="icon icon-paizhao"></div>
+                                        <h3 class="upload-title">图片拍照上传</h3>
+                                        <div class="upload-btn"><a class="nor-btn" href="{#:U('Custom/CustomTestStoreN/photograph')#}">立即上传</a></div>
+                                        <div class="ua-context">
+                                            懒得打字不要紧，<br/>
+                                            轻松拍照快速传。
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="upload-area-warp">
+                                    <div class="upload-box">
+                                        <div class="icon icon-doc"></div>
+                                        <h3 class="upload-title">文档上传</h3>
+                                        <div class="upload-btn"><a class="nor-btn" href="{#:U('Custom/CustomTestStoreN/docList')#}">立即上传</a></div>
+                                        <div class="ua-context">
+                                            单题入库太麻烦？<br/>
+                                            一键上传最省心。
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 添加试题END -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 个人中心END -->
+
+</div>
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery.cookie.js"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/userCenter.js"></script>
+<script type="text/javascript">
+    var idName='customNav';
+    $(function(){
+        //试题上传content高度
+        !function(){
+            //上传方式-鼠标滑过效果
+            $(".upload-box").on({
+                mouseenter: function () {
+                    var $this = $(this);
+                    $this.find(".upload-btn").show();
+                    $this.find(".ua-context").hide();
+                },
+                mouseleave: function () {
+                    var $this = $(this);
+                    $this.find(".upload-btn").hide();
+                    $this.find(".ua-context").show();
+                }
+            })
+
+        }()
+        if(idName!='' || idName!='undefined'){
+            $('#'+idName).addClass('active');
+        }
+    })
+
+
+    $(function(){
+        $.userData.init();
+    })
+</script>
+<!--footer-->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+<script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+<![endif]-->
+
+
+{#include file="Index@Common/secondFooter" /#}
+<!--footer-end-->
+
+</body>
+</html>

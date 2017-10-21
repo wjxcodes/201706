@@ -1,0 +1,116 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title><?php echo ($pageName); ?> - <?php echo ($config["IndexName"]); ?></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="<?php echo ($config["Keyword"]); ?>" />
+    <meta name="description" content="<?php echo ($config["Description"]); ?>" />
+    <link type="text/css" href="/Public/default/css/common1.css<?php echo (C("WLN_UPDATE_FILE_DATE")); ?>" rel="stylesheet" />
+    <link type="text/css" href="/Public/default/css/manTopic.css<?php echo (C("WLN_UPDATE_FILE_DATE")); ?>" rel="stylesheet" />
+    <script type="text/javascript" src="/Public/plugin/jquery-1.8.0.min.js"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="/Public/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('a,img,div,span');</script>
+    <![endif]-->
+    <script>
+        var mark='search';
+        var local='<?php echo U('Index/gjz');?>';
+    </script>
+    <script type="text/javascript" src="/Public/default/js/common.js<?php echo (C("WLN_UPDATE_FILE_DATE")); ?>"></script>
+    <script type="text/javascript" src="/Public/default/js/paper.js<?php echo (C("WLN_UPDATE_FILE_DATE")); ?>"></script>
+</head>
+<body>
+<div id="rightdiv" style="position:relative;overflow-y: auto; width: 790px;">
+    <div id="topdiv"></div>
+    <div id="righttop">
+        <div id="categorylocation">
+            <span class="nowPath">当前位置：</span>
+            >
+                <span id="loca_text">
+                    <span></span>
+                    > 手工出题 > 按关键词搜索
+                </span>
+        </div>
+    </div>
+
+    <div id="searchbox">
+        <div id="searchborder" style="position:relative;">
+            <div style="margin-bottom:8px;">
+                <div class="searchcondition">
+                    题型：
+                    <span id="questypebox">数据加载中请稍候...</span>
+                </div>
+                <div class="searchcondition">
+                    难度系数：
+                    <span id="quesdiffbox">数据加载中请稍候...</span>
+                </div>
+                <div class="searchcondition">
+                    日期：
+                    <span id="questimebox">数据加载中请稍候...</span>
+                </div>
+            </div>
+            <table border="0" cellpadding="0" cellspacing="0" width="368px">
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input id="keyword" type="text" autocomplete="off" maxlength="40"/>
+                        <input id='keepKeyWord' type='hidden' value=''>
+                    </td>
+                    <td align="right">
+                        <a id="searchsubmit">搜索</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div style="position:relative;z-index:10;">
+        <div id="searchinfo" style="z-index:1000;">
+            搜索"
+            <a id="keywordtext"></a>
+            "的结果：共
+            <a id="quescount">0</a>
+            道题
+            服务器端用时：
+            <a id="elapsedtime">0</a>
+            毫秒
+            <a class="prev_page" title="上一页"></a>
+            当前第
+            <a id="curpage">1</a>
+            <a id="selectpageicon" style="display: inline-block;"></a>
+            /
+            <a id="pagecount"> <font color="#00a0e9">0</font>
+            </a>
+            页
+            <a class="next_page" title="下一页"></a>
+        </div>
+        <div id="list_px">
+            <span>排序：</span>
+            <a href="#" class="button button_current" type="weight">默认</a>
+            <a href="#" type="pdown" class="button">
+                人气 <b></b>
+            </a>
+            <a href="#" type="ddown" class="button">
+                难易度 <b></b>
+            </a>
+            <a href="#" type="tdown" class="button">
+                上传时间
+                <b></b>
+            </a>
+        </div>
+    </div>
+    <div id="searchresult" style="height: 72px;">
+        <div id="queslistbox" style="z-index:5;"></div>
+        <div id="pagelistbox" style="z-index:1;">
+            <div class="pagebox"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/Public/default/js/manual.js<?php echo (C("WLN_UPDATE_FILE_DATE")); ?>"></script>
+<div style="display:none;">
+    <?php echo (C("WLN_STATISTICAL_CODE.HOME")); ?>
+</div>
+</body>
+</html>

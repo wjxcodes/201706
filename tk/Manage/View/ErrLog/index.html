@@ -1,0 +1,116 @@
+{#// 加载头部公共文件 #}
+{#include file="Public/header" /#}
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">{#$pageName#} 【<a href="{#:U('ErrLog/del')#}" id='del' onclick="return window.confirm('确认删除最近的数据？');">删除历史数据</a>】</div>
+<!--  功能操作区域  -->
+<div class="operate">
+    {#html:imageBtn name="revert" value="刷新" class="btflush" style="impBtn hMargin fLeft shadow" /#}
+    <!-- 查询区域 -->
+    <FORM id="form1" METHOD="POST" ACTION="{#:U('ErrLog/index')#}">
+    <div class="fRig">
+        <div class="fLeft"><span id="key"><INPUT id="name" TYPE="text" NAME="groupName" value="{#$Think.request.name#}" title="分组查询" class="medium" ></span></div>
+        {#html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /#}
+        {#html:imageBtn name="adv" value="高级" id="showText" style="impBtn hMargin fLeft shadow" /#}
+    </div>
+    <!-- 高级查询区域 -->
+    <div id="searchM" class=" none search cBoth">
+        <TABLE border="0" cellpadding="1" cellspacing="3" width="100%">
+        <TR>
+            <TD class="tRight" width="60">表名：</TD>
+            <TD>
+                <INPUT TYPE="text" NAME="tableName" class="medium" id='tableNameSearch' value="{#$Think.request.tableName#}" title='未选中[所有日志]时该查询仅搜索当前页面'>
+            </TD>
+            <TD class="tRight" width="60">日期：</TD>
+            <TD width="350"><INPUT TYPE="text" NAME="start" class="medium inputTime" value="{#$Think.request.start#}"> - 
+            <INPUT TYPE="text" NAME="end" class="medium inputTime" value="{#$Think.request.end#}">
+            </TD>
+        </TR>
+        </TABLE>
+    </div>
+        </FORM>
+</div>
+<!-- 功能操作区域结束 -->
+
+<!-- 列表显示区域  -->
+<div class="list" >
+<div id="result" class="result none"></div>
+<!-- Think 系统列表组件开始 -->
+<table id="checkList" class="list" cellpadding="5" cellspacing="0" border="1">
+    <tr><td height="5" colspan="8" class="topTd" ></td></tr>
+    <tr class="row" >
+        <th width="7"><input type="checkbox" id="CheckAll" tag="checkList"></th>
+        <th width="50">编号</th>
+        <th>分组</th>
+        <th>时间</th>
+        <th>描述</th>
+    </tr>
+    {#volist name="fileDate" id="node" #}
+        <tr class="row" jl=''>
+            <td rowspan="5"><input type="checkbox" class="key" value="{#$i#}"></td>
+            <td rowspan="5" align="center">{#$node['ErrorID']#}</td>
+            <td>{#$node['Url']#}</td>
+            <td>{#$node['AddTime']|date="Y-m-d H:i:s",####}</td>
+            <td>{#$node['Description']#}</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="background-color:#cdd;"><strong>参数：</strong></td>
+        </tr>
+        <tr class="row lists" jl=''>
+            <td colspan="3">
+                <div class='tableDiv' style="overflow:auto;width:600px;">{#$node['Params']#}</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="background-color:#cdd;"><strong>执行语句：</strong></td>
+        </tr>
+        <tr class="row lists" jl=''>
+            <td colspan="3">
+                <div class='tableSearch tableDiv' style="overflow:auto;width:600px;">{#$node['SqlContent']#}</div>
+            </td>
+        </tr>
+        <tr><td height='15' colspan="5"></td></tr>
+    {#/volist#}
+    <tr><td height="5" colspan="7" class="bottomTd"></td></tr>
+</table>
+<!-- Think 系统列表组件结束 -->
+</div>
+<!--  分页显示区域 -->
+<div class="page">{#$page#}</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<script>
+    $('#checkList tr').each(function(){
+        var that = $(this);
+        that.find('.tableDiv').each(function(){
+            $(this).width(that.width()-300);
+        });
+    });
+    $('#tableNameSearch').blur(function(){
+        var that = $(this);
+        var val = that.val();
+        var all = $('#all');
+        if(val != '' && all.attr('checked')){
+            $('#form1').submit();
+            return false;
+        }
+        $('.lists').each(function(){
+            var list = $(this);
+            list.find('td .tableSearch').each(function(){
+                var text = $(this).html();
+                if(text.indexOf(val) >= 0 || val == ''){
+                    list.show();
+                }else{
+                    list.hide();
+                }
+            });
+        });
+    });
+</script>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Public/ends" /#}

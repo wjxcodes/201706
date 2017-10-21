@@ -1,0 +1,27 @@
+2017-08-10 09:03:11 致命的运行时错误(E_ERROR) Call to a member function url_setopt() on a non-object E:\www\www\tk\User\Controller\IndexController.class.php 1139 
+2017-08-10 09:47:26 编译时语法解析错误(E_PARSE) syntax error, unexpected ';' E:\www\www\tk\User\Controller\IndexController.class.php 1142 
+2017-08-10 09:57:17 编译时语法解析错误(E_PARSE) syntax error, unexpected 'curl_setopt' (T_STRING) E:\www\www\tk\User\Controller\IndexController.class.php 1142 
+2017-08-10 09:59:04 编译时语法解析错误(E_PARSE) syntax error, unexpected '$output' (T_VARIABLE) E:\www\www\tk\User\Controller\IndexController.class.php 1143 
+2017-08-10 10:00:20 编译时语法解析错误(E_PARSE) syntax error, unexpected '$output' (T_VARIABLE) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:20 编译时语法解析错误(E_PARSE) syntax error, unexpected '$output' (T_VARIABLE) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:21 编译时语法解析错误(E_PARSE) syntax error, unexpected '$output' (T_VARIABLE) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:21 编译时语法解析错误(E_PARSE) syntax error, unexpected '$output' (T_VARIABLE) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:21 编译时语法解析错误(E_PARSE) syntax error, unexpected '$output' (T_VARIABLE) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:21 编译时语法解析错误(E_PARSE) syntax error, unexpected '$output' (T_VARIABLE) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:21 编译时语法解析错误(E_PARSE) syntax error, unexpected '$output' (T_VARIABLE) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:21 编译时语法解析错误(E_PARSE) syntax error, unexpected '$output' (T_VARIABLE) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:39 编译时语法解析错误(E_PARSE) syntax error, unexpected '$data' (T_VARIABLE) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:39 编译时语法解析错误(E_PARSE) syntax error, unexpected '$data' (T_VARIABLE) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:40 编译时语法解析错误(E_PARSE) syntax error, unexpected '$data' (T_VARIABLE) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:40 编译时语法解析错误(E_PARSE) syntax error, unexpected '$data' (T_VARIABLE) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:40 编译时语法解析错误(E_PARSE) syntax error, unexpected '$data' (T_VARIABLE) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:47 编译时语法解析错误(E_PARSE) syntax error, unexpected 'curl_exec' (T_STRING) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:48 编译时语法解析错误(E_PARSE) syntax error, unexpected 'curl_exec' (T_STRING) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:48 编译时语法解析错误(E_PARSE) syntax error, unexpected 'curl_exec' (T_STRING) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:49 编译时语法解析错误(E_PARSE) syntax error, unexpected 'curl_exec' (T_STRING) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:49 编译时语法解析错误(E_PARSE) syntax error, unexpected 'curl_exec' (T_STRING) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:49 编译时语法解析错误(E_PARSE) syntax error, unexpected 'curl_exec' (T_STRING) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:49 编译时语法解析错误(E_PARSE) syntax error, unexpected 'curl_exec' (T_STRING) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-10 10:00:49 编译时语法解析错误(E_PARSE) syntax error, unexpected 'curl_exec' (T_STRING) E:\www\www\tk\User\Controller\IndexController.class.php 1144 
+2017-08-11 13:49:25 致命的运行时错误(E_ERROR) Call to a member function saveCode() on a non-object E:\www\www\tk\User\Controller\IndexController.class.php 1182 
+2017-10-07 14:26:28 编译时语法解析错误(E_PARSE) syntax error, unexpected ')' E:\web\www\tk\User\Api\UserApi.class.php 130 

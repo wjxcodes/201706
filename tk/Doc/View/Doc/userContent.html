@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>{#$title#} - {#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$title#}"/>
+    <meta name="description" content="{#$title#},{#$config.Description#}"/>
+    <link rel="stylesheet" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}"/>
+    <link rel="stylesheet" href="__PUBLIC__/index/css/style.css{#$Think.config.WLN_UPDATE_FILE_DATE#}"/>
+</head>
+<body>
+{#include file="Index@Common/top"/#}
+<!-- 面包屑导航 -->
+<div class="w1000 crumbs-wrap">
+    <div class="g-crumbs">
+        <b class="now-path">当前位置：</b>
+        <a href="/">首页</a> >
+        <a href="{#:U('Doc/Doc/user')#}">用户资源</a> >
+        <span>{#$title#}</span>
+    </div>
+</div>
+<!-- 面包屑导航 end-->
+<!-- banner -->
+<div class="banner-area w1000">
+    <img src="__PUBLIC__/index/imgs/in-page/wln-bn.jpg" alt="智慧云题库云平台">
+    <h1>用户资源</h1>
+</div>
+<!-- banner end-->
+<div class='w1000'>
+    <div class='box'>
+        <!-- 试卷内容 -->
+        <div class="testpapercontent">
+            <div class="testpaper-top clearfix">
+                <div class="left testpaper-title">
+                    <h1>{#$doc['docname']#}</h1>
+                    <div class="explain">
+                        <span>试卷类型：{#$doc['typename']#}</span>
+                        |
+                        <span>用户：{#$doc['username']#}</span>
+                        |
+                        <!-- <span>试卷年份：{#$doc['docyear']#}年</span>
+                    |-->
+                        <span>下载日期:{#$doc['loadtime']#}</span>
+                        |
+                        <span>题数：{#$doc['testCount']#}</span>
+                    </div>
+                </div>
+                <div class="right testpaperdown">
+                    <a class="nor-btn" href="javascript:;">下载试题</a>
+                    <input type="hidden" value='{#$doc['testCount']#}' id='testCount'/>
+                    <input type="hidden" id='did' value='{#$doc['did']#}'/>
+                    <input type="hidden" id='username' value='{#$doc['orginalUserName']#}'/>
+                    <input type="hidden" name='subjectid' value='{#$doc['subjectid']#}' id='docSubejctId'/>
+                    <form id='download' action='/Doc/Doc/addRecord' method="post">
+                        <input type="hidden" name='did' value=''/>
+                        <input type="hidden" name='keys' value=''/>
+                    </form>
+                </div>
+            </div>
+
+            <div class="classification">
+                {#if condition='empty($content)'#}
+                <div class="classificationtit" style="padding:50px 0;">该试卷暂不提供预览！</div>
+                {#else/#}
+                {#assign name='partOrder' value='1'/#}
+                {#assign name='testOrder' value='1'/#}
+                {#foreach name='content' item='node' key='part'#}
+                    {#if condition="$doc['subjectid'] neq 12"#}
+                        <div class="classificationtit">{#$node['info'][2]#}</div>
+                    {#/if#}
+                    <div class="smallclassification">
+                        {#foreach name='node["questypehead"]' item='node2' key='type'#}
+                        <div class="smalltitle">{#:formatString('num2Chinese',$testOrder++)#}、{#$node2[2]#}</div>
+                        {#foreach name='node2[5]' item='test'#}
+                        <div class="testpaperbody-wrap">
+                            <div class="testpaperbody f-roman">{#$data[$test[0]]['testold']#}</div>
+                        </div>
+                        {#/foreach#}
+                        {#/foreach#}
+                    </div>
+                {#/foreach#}
+                {#/if#}
+            </div>
+        </div>    <!-- 试卷内容 end -->
+    </div>
+</div>
+{#include file="Index@Common/footer" /#}
+<script src="__PUBLIC__/default/js/paper.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script src="__PUBLIC__/index/js/loginBox.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script>
+    var result = new Object({#$result#});
+    var Types = {#$types#};
+    $('.testpaperdown').click(function(){
+        $.post(U('Doc/Doc/addRecord'),{
+            'did' : $('#did').val(),
+            'username' : $('#username').val()
+        },function(result){
+            var data = result['data'];
+            if(data.indexOf('success') >= 0){
+                downloadWord(data);
+            }else if(data.indexOf('login') >= 0){
+                $('.topLoginButton').trigger('click');
+                $.indexCommon = $.extend($.indexCommon, {
+                    loginCallBack : function(status){
+                        if(status === 1){
+                            $('.testpaperdown').trigger('click');
+                        }
+                    }
+                });
+            }else{
+                alert(data);
+                $('.closeBtn').trigger('click');
+            }
+        });
+    });
+
+    function downloadWord(data){
+        data = data.replace('success|', '');
+        var form = $('#download');
+        form.find('input[name="keys"]').val(data);
+        form.find('input[name="did"]').val($('#did').val());
+        form.submit();
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {#include file="Common:head"/#}
+</head>
+
+<body>
+<div id="wrapper">
+{#include file="Common:header"/#}
+<div id="content" class="w980 mc pt90 pb20">
+<div class="box02 mb20">
+<!--标题-->
+<div class="zt_title">
+    <div class="fl pt20 pl20">正在加载试题，请稍候...</div>
+    <a class="an01 fr" href="{#:U('MyExercise/index')#}" style="margin-top: 15px;margin-right: 20px;"><span class="an_left"></span><div class="an_cen"><span style=" float:left; margin-top:5px; margin-right:5px;"><img src="__PUBLIC__/newAat/images/ico_jj.png"></span>返回我的练习</div><span class="an_right"></span></a>
+</div>
+<!--一以下为试题-->
+<div id="test">
+</div>
+<div class="pagination" style="display: block;padding-bottom: 20px;"></div>
+<!--右侧快捷按钮-->
+<div id="db_dh_box" style="display: none;">
+    <a class="an_go_top" href="javascript:;"></a>
+</div>
+</div>
+</div>
+<div id="footer">
+    {#include file="Common:footer"/#}
+</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    var AatTestCollect = {
+        klID : '{#$kl_id#}',
+        klName : '{#$kl_name#}',
+        init:function(){
+            this.ajaxPage(this.klID,1);//分页显示
+            this.testCollectDel();//取消收藏
+            this.showTop(this.klName);//显示头部
+            this.goPage();//分页跳转
+        },
+        //分页内容
+        ajaxPage:function(klID,p){
+            var self = this;
+            //服务器返回的题目json数据并解析
+            $.post(U('TestCollect/returnTestList'),{'id':klID,'p':p,times:Math.random()}, function (e) {
+                if (e.status !== 1) {
+                    $('.zt_title div:first-child').html(e.data);
+                } else {
+                    //显示页面生成页面数据
+                    self.showData(e.data);
+                }
+            });
+        },
+        //分页跳转
+        goPage:function(){
+            var self = this;
+            //Ajax 分页
+            $(document).on('click','.ajax_page_class', function(){
+                self.ajaxPage(self.klID,$(this).attr('data'));
+            });
+        },
+        showData:function(e) {
+            //显示试题
+            this.showTest(e);
+            $('.pagination').html(e.show);
+            //查看解析
+            $('.see_analysis').click(function(){
+                var str = $(this).children('.an_cen').children('font');
+                str.text(str.text()=='隐藏解析'?'查看解析':'隐藏解析');
+                $(this).parent().parent().next().toggle(300);
+            });
+        },
+
+        showTop:function(klName) {
+            $('.zt_title div:first-child').html('收藏记录：'+klName);
+            $('.kzt_title').show();
+            //显示右侧向上按钮和答题卡
+            this.goTop();
+        },
+
+        testCollectDel:function() {
+            $(document).on('click', '.collect_test', function () {
+                var data = {};
+                data['id'] = $(this).attr('data');
+                data['times'] = Math.random();
+                $.ajax({
+                    type: 'POST',
+                    cache: false,
+                    data: data,
+                    url: U('TestCollect/del'),
+                    success: function (e) {
+                        if (e.status == 1) {
+                            alert(e.data);
+                        } else {
+                            //删除成功
+                            $('#s_test_id_' + data['id']).hide("slow",function(){alert(e.data);});
+
+                        }
+                    }
+                });
+            })
+        },
+
+        showTest:function(e) {
+            var t_content = '';
+            $.each(e.test, function (i, test) {
+                //一道试题所有内容Html t_content
+                var t_test_id = test.TestID;
+                //大题
+                t_content += '<div class="st_box" id="s_test_id_'+t_test_id+'"><div class="st_tm_box"><div class="title">'+
+                        '<span class="ico_th fl">'+(e.first+i)+'</span>'+
+                        '<span class="tit">'+test.Test+'</span><div class="bjjt"></div></div></div>';
+                t_content += '<div class="dt_box dt_box_wdt"><div class="xx_wdt_da"><font color="#27a152">正确答案：</font>'+test.Answer+'</div>';
+                t_content += '<div class="dt_box dt_box_xzt">'+
+                        '<div class="cz_an_box fr"><a class="an_jc" href="javascript:;" style="display: none;" data="' + t_test_id + '">我要纠错</a>'+
+                        '<a class="an_sc collect_test" href="javascript:;" data="' + t_test_id +  '">取消收藏</a>'+
+                        '<a class="an02 fr an_jx see_analysis" href="javascript:;"><span class="an_left"></span><div class="an_cen"><font color="#7e7e7e" class="fl mr5">查看解析</font><span style="margin-top:3px" class="fl"><img src="__PUBLIC__/newAat/images/ico_jt01.png"></span></div><span class="an_right"></span></a>'+
+                        '</div><div class="clear"></div></div>';
+                //以下为试题解析知识点和来源
+                t_content += '<div class="dan_box" style="display: none;"><div class="dan_box_nr"><div class="title"><span class="an_left"></span><span class="an_cen">答案解析</span><span class="an_right"></span></div>'+
+                        test.Analytic+'</div>'+
+                        '<div class="dan_box_nr dan_box_kd" style="display:none;"><div class="title"><span class="an_left"></span><span class="an_cen">考点</span><span class="an_right"></span></div>'+
+                        '<p><a href="#"><font color="#00a0e9">知识点1</font></a><a href="#"><font color="#00a0e9">知识点2</font></a></p></div>'+
+                        '<div class="dan_box_nr"><div class="title"><span class="an_left"></span><span class="an_cen">试题来源</span><span class="an_right"></span></div>'+
+                        test.FavName+'</div></div>';
+
+                t_content += '</div></div>';
+
+            });
+            $('#test').html(t_content);
+        },
+
+        goTop:function(){
+            var bottom = $(document).height()-$(window).height()-107;
+            $('#db_dh_box').css({'bottom':bottom,'_bottom':bottom}).show();
+            $(window).resize(function(){
+                bottom = $(document).height()-$(window).height()-107;
+                bottom = bottom>0?bottom:0;
+                $('#db_dh_box').css({'bottom':bottom,'_bottom':bottom}).show();
+            });
+            $(window).scroll(function(){
+                bottom = $(document).height()-$(window).height()-107-$(window).scrollTop();
+                bottom = bottom>0?bottom:0;
+                $('#db_dh_box').css({'bottom':bottom,'_bottom':bottom}).show();
+            });
+            //页面滚动
+            $('#db_dh_box .an_go_top').click(function(){$('html,body').animate({scrollTop : 0}, 300);});
+            $('#db_dh_box .an_ctb02').click(function(){$('html,body').animate({scrollTop : $(document).height()}, 300);});
+        }
+    };
+    AatTestCollect.init();
+});
+
+
+</script>
+
+</body>
+</html>

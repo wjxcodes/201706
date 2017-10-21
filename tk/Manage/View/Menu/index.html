@@ -1,0 +1,64 @@
+{#// 加载头部公共文件 #}
+{#include file="Public/header" /#}
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">{#$pageName#} [<a href="{#:U('Menu/check')#}">未添加菜单列表</a>] [<a href="{#:U('Menu/updateCache')#}">更新缓存</a>]</div>
+<!--  功能操作区域  -->
+<div class="operate">
+    {#html:imageBtn name="add" value="新增" class="btadd" style="impBtn hMargin fLeft shadow" /#}
+    {#html:imageBtn name="edit" value="编辑" class="btedit" style="impBtn hMargin fLeft shadow" /#}
+    {#html:imageBtn name="delete" value="删除" class="btdelete" style="impBtn hMargin fLeft shadow" /#}
+    {#html:imageBtn name="revert" value="刷新" class="btflush" style="impBtn hMargin fLeft shadow" /#}
+</div>
+<!-- 功能操作区域结束 -->
+
+<!-- 列表显示区域  -->
+<div class="list" >
+<div id="result" class="result none"></div>
+<!-- Think 系统列表组件开始 -->
+<table id="checkList" class="list" cellpadding="5" cellspacing="0" border="1">
+    <tr><td height="5" colspan="7" class="topTd" ></td></tr>
+    <tr class="row" >
+        <th width="8"><input type="checkbox" id="CheckAll" tag="checkList"></th>
+        <th width="10%">编号</th>
+        <th>名称</th>
+        <th>Url</th>
+        <th>序号</th>
+        <th>描述</th>
+        <th>操作</th>
+    </tr>
+    {#volist name="menuArray" id="node" #}
+        <tr class="row lists" jl=''>
+        <td><input type="checkbox" class="key" value="{#$node.MenuID#}"></td>
+        <td>{#$node.MenuID#}</td>
+        <td><a href="#" class="btedit" thisid="{#$node.MenuID#}">{#$node.MenuName#}</a></td>
+        <td>{#$node.MenuUrl#}</td>
+        <td>{#$node.MenuOrder#}</td>
+        <td>{#$node.Description#}</td>
+        <td><a href="#" class="btedit" thisid="{#$node.MenuID#}">编辑</a>&nbsp;</td>
+        </tr>
+        {#volist name="node['sub']" id="sub" #}
+            <tr class="row lists" jl=''>
+            <td><input type="checkbox" class="key" value="{#$sub.MenuID#}"></td>
+            <td>{#$sub.MenuID#}</td>
+            <td>　　<a href="#" class="btedit" thisid="{#$sub.MenuID#}">{#$sub.MenuName#}</a></td>
+            <td>{#$sub.MenuUrl#}</td>
+            <td>{#$sub.MenuOrder#}</td>
+            <td>{#$sub.Description#}</td>
+            <td><a href="#" class="btedit" thisid="{#$sub.MenuID#}">编辑</a>&nbsp;</td>
+            </tr>
+        {#/volist#}
+    {#/volist#}
+    <tr><td height="5" colspan="7" class="bottomTd"></td></tr>
+</table>
+<!-- Think 系统列表组件结束 -->
+</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Public/ends" /#}

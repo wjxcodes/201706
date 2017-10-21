@@ -1,0 +1,338 @@
+<div id="wrap">
+    <div class='top_nr_box'>
+        <div class="main_right">
+            <div class="main_right_title"><span></span>属性标注</div>
+                <table border="0" align="center" cellpadding="5" cellspacing="0" class="listFrame" style="">
+                    <tr>
+                        <td style="width:65px;" align="right" class="tRight" >知识点：</td>
+                        <td class="tLeft" >
+                            <select id="knowledge" class="knowledge bLeft selectKnowledge" name="KlID">
+                                <option value="">请选择</option>
+                            </select>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="tRight" colspan="2">
+                            <div id="knowledgeList" class="klinput"></div>
+                        </td>
+                    </tr>
+                    <tr class='addButton'>
+                        <td></td>
+                        <td align="right">
+                            <div class="impBtn" style="display:inline;padding:3px 0px;">
+                                <input id="addkl" name="addkl" class="add imgButton" type="button" value="添加">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="tRight">章&nbsp;&nbsp;节：</td>
+                        <td class="tLeft" >
+                            <select id="chapter" class="chapter selectChapter bLeft" name="ChapterID">
+                                <option value="">请选章节，避免超纲</option>
+                            </select> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="tRight" colspan="2">
+                            <div id="chapterList" class='cpinput'></div>
+                        </td>
+                    </tr>
+                    <tr class='addButton'>
+                        <td></td>
+                        <td align="right">
+                            <div class="impBtn" style="display:inline;padding:3px 0px;">
+                                <input id="addcp" name="addcp" class="add imgButton" type="button" value="添加"/>
+                            </div>&nbsp;&nbsp;
+                            <div class="impBtn" style="display:inline;padding:3px 0px;">
+                                <a id="adddcp" style="cursor:pointer;">系统提示</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:65px;" align="right" class="tRight" >技能：</td>
+                        <td class="tLeft" >
+                            <select id="skill" class="sk bLeft selectSkill" name="SkillID[]">
+                                <option value="">请选择</option>
+                            </select>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="tRight" colspan="2">
+                            <div id="skillList" class="skillinput"></div>
+                        </td>
+                    </tr>
+                    <tr class='addButton'>
+                        <td></td>
+                        <td align="right">
+                            <div class="impBtn" style="display:inline;padding:3px 0px;">
+                                <input id="addSkill" name="addSkill" class="add imgButton" type="button" value="添加">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:65px;" align="right" class="tRight" >能力：</td>
+                        <td class="tLeft" >
+                            <select id="capacity" class="cc bLeft selectCapacity" name="CapacityID[]">
+                                <option value="">请选择</option>
+                            </select>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="tRight" colspan="2">
+                            <div id="capacityList" class="capacityinput"></div>
+                        </td>
+                    </tr>
+                    <tr class='addButton'>
+                        <td></td>
+                        <td align="right">
+                            <div class="impBtn" style="display:inline;padding:3px 0px;">
+                                <input id="addCapacity" name="addCapacity" class="add imgButton" type="button" value="添加">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="tRight">专&nbsp;&nbsp;题：</td>
+                        <td class="tLeft" >
+                            <select id="special" class="bLeft" name="SpecialID">
+                                <option value="">请选择</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <input name="xttimes" id="xttimes" value="{#$times#}" type="hidden"/>
+                <input name="xttimes3" id="xttimes3" value="{#$times#}" type="hidden"/>
+
+                <div class="main_right_title">
+                    <span></span>试题打分
+                    <div class="dfms_box">
+                        <label style='color:red;'>
+                            <input type="radio" id="kg" class="DfStyle bLeft" check='raido' warning="请选择打分模式" name="DfStyle" value="0" {#if condition="($edit['DfStyle'] eq '0') or ($edit['DfStyle'] eq '')"#}checked="checked"{#/if#}> 客观打分
+                        </label> 
+                        <label>
+                            <input id="zg" type="radio" class="DfStyle bLeft" name="DfStyle" value="1" {#eq name="edit.DfStyle" value="1"#}checked="checked"{#/eq#}> 主观打分
+                        </label>
+                    </div>
+                </div>
+
+                <table border="0" align="center" cellpadding="5" cellspacing="0" class="listFrame zgdf" style="">
+                    <tr>
+                        <td align="right" class="tRight" >难度值：</td>
+                        <td class="tLeft" >
+                            <input type="text" value="{#$edit.Diff#}" name="Diff" id="Diff" style="width:80px" />(0-1之间 最多4位小数)
+                        </td>
+                    </tr>
+                </table>
+        {#if condition="markArray"#}
+        <table border="0" align="center" cellpadding="5" cellspacing="0" class="listFrame kgdf" style="">
+            {#if condition="$times>1"#}
+                <tr>
+                    <td colspan="2" align="center">
+                        {#for start="1" end="$times+1"#}
+                            <span id="xt{#$i#}" {#eq name="i" value="1"#} class="xtcurrent xt_title" {#else/#} class="xt xt_title"{#/eq#}>小题{#$i#}</span>
+                        {#/for#}
+                    </td>
+                </tr>
+            {#/if#}
+            {#for start="1" end="$times+1" name="ii"#}
+                {#volist name="markArray" id="vo" key="j"#}
+                <tr class="xt_con_{#$ii#} xt_con {#neq name="ii" value="1"#}none{#/neq#}">
+                    <td align="right" class="tRight" style="width:120px;">
+                        {#eq name="vo.Style" value="0"#}
+                        <font color="red" title='红色为必选项'>{#$vo.MarkName#}：</font>
+                        {#else/#}
+                        {#$vo.MarkName#}：
+                        {#/eq#}
+                    </td>
+                    <td class="tLeft" ><select id="xt_select_{#$ii#}_{#$j#}" class="mark bLeft" NAME="Mark[]" style="max-width: 150px;">
+                    <option value="">请选择</option>
+                    {#volist name="vo.MarkListx" id="item"#}
+                    <option value="{#$item[3]#}" {#volist name="edit.Markx.$ii" id="mk"#}{#if condition="$mk eq $item[3]"#}selected="selected"{#/if#}{#/volist#}>{#$item[1]#}</option>
+                    {#/volist#}
+                    </select></td>
+                </tr>
+                {#/volist#}
+            {#/for#}
+            </table>
+        {#/if#}
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="an_box">
+            <tr>
+                <td align="center">
+                    <input type="hidden" id="code" name="code" value="{#$securityCode#}">
+                    <input type="hidden" id="TestID" name="TestID" value="{#$edit.TestID#}">
+                    <div class="impBtn fLeft">
+                        <input tag='form1' id="datasave" u="{#:U('Test/Test/save')#}" type="button" value="保存" class="save imgButton mysubmit">
+                    </div>
+                    <div class="impBtn fLeft m-l10"></div>
+                </td>
+            </tr>
+        </table>
+        </div>
+        <div class="main_left">
+        <div class="styl_box">
+        <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+            {#if condition="$errorInfo neq ''"#}
+            <tr>
+                <td width="90" align="center"><strong><font color='red'>意见</font></strong></td>
+                <td width="89%">{#$errorInfo#}</td>
+            </tr>
+            {#/if#}
+            <tr>
+                <td width="90" align="center"><strong>题文</strong></td>
+                <td width="89%">{#$edit.Test#}</td>
+            </tr>
+            <tr>
+                <td align="center"><strong>答案</strong></td>
+                <td>{#$edit.Answer#}</td>
+            </tr>
+            <tr>
+                <td align="center"><strong>解析</strong></td>
+                <td>{#$edit.Analytic#}</td>
+            </tr>
+            <tr>
+                <td align="center"><strong>题型</strong></td>
+                <td class="tLeft" >
+                    <select id="types" class="bLeft" name="TypesID" check='Require' warning="所属题型不能为空">
+                        <option value="">请选择</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center"><strong>备注</strong></td>
+                <td>{#$edit.Remark#}</td>
+            </tr>
+            <tr>
+                <td align="center"><strong>用户自评分值：</strong></td>
+                <td><input type="text" name='Score' id="score" value='{#$edit.Score#}' style="width:180px;">&nbsp;<font color='red'>带小题的分值用英文逗号分开</font></td>
+            </tr>
+            <tr>
+                <td align="center"><strong>测试类型</strong></td>
+                <td class="tLeft" >
+                    <label>
+                        <input type="radio" class="choose bLeft"  check='raido' warning="请选择测试类型" name="IfChoose" value="0" {#if condition="($edit.IfChoose eq '0') or ($edit.IfChoose eq '')"#}checked="checked"{#/if#}> 非选择题
+                    </label>
+                    <label>
+                        <input type="radio" class="choose bLeft" name="IfChoose" value="3" {#eq name="edit.IfChoose" value="3"#}checked="checked"{#/eq#}> 单选题
+                    </label> 
+                    <label>
+                        <input type="radio" class="choose bLeft" name="IfChoose" value="2" {#eq name="edit.IfChoose" value="2"#}checked="checked"{#/eq#}> 多选题
+                    </label> 
+                    <label>
+                        <input type="radio" class="choose bLeft" name="IfChoose" value="1" {#eq name="edit.IfChoose" value="1"#}checked="checked"{#/eq#}> 复合题（带小题）
+                    </label> 
+                    <div id="showxt" style="display:none">
+                        <input name="addt" id="addt" type="button" value="增加小题" style="cursor:pointer" /> 
+                        <input name="delt" id="delt" type="button" value="删除小题" style="cursor:pointer" /> 
+                        <input name="deltall" id="deltall" type="button" value="清空小题" style="cursor:pointer" />
+                        <div id="xt" style="width:100%;overflow-y:auto;max-height:100px;">
+                            <p class='xtList'>小题1：
+                                <label>
+                                    <input type="radio" class="choose1 bLeft" check='raido' warning="请选择测试类型" name="IfChoose1" value="0" checked="checked"> 非选择题
+                                </label>
+                                <label>
+                                    <input type="radio" class="choose1 bLeft" name="IfChoose1" value="3"> 单选题
+                                </label> 
+                                <label>
+                                    <input type="radio" class="choose1 bLeft" name="IfChoose1" value="2"> 多选题
+                                </label> 
+                            </p>
+                        </div>
+                    </div>
+                 </td>
+            </tr>
+            <tr>
+                <td align="center"><strong>选项宽度</strong><br/><a id="getWidth" style="cursor:pointer;">计算宽度</a><br/><span id="widthCon"></span></TD>
+                <td class="tLeft" >
+                    <div id="showwidth" >
+                        <div id="wd" style="width:100%;overflow-y:auto;max-height:100px;">
+                            {#volist name="optionWidth" id="ow" key="j"#}
+                                <p class="optionwidth_{#$j#} optionwidth">
+                                    {#if condition="$edit.IfChoose eq '1'"#}小题{#$j#}：{#/if#}
+                                    <label>
+                                        <input type="text" class="optionwidth{#$j#} bLeft"  warning="请填入选项宽度" size="2" name="optionwidth{#$j#}" value="{#$ow#}" >
+                                    </label> 
+                                </p>
+                            {#/volist#}
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center"><strong>选项数量</strong></td>
+                <td class="tLeft" >
+                    <div id="shownum" >
+                        <div id="num" style="width:100%;overflow-y:auto;max-height:100px;">
+                            {#volist name="optionNum" id="onum" key="k"#}
+                                <p class="optionnum_{#$k#} optionnum">
+                                    {#if condition="$edit.IfChoose eq '1'" #}小题{#$k#}：{#/if#}
+                                    <label>
+                                        <input type="text" class="optionnum{#$k#} bLeft"  warning="请填入选项宽度" name="optionnum{#$k#}" size="2" value="{#$onum#}" >
+                                    </label>
+                                </p>
+                            {#/volist#}
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        </div>
+        </div>
+    </div>
+    <div class="bottom_nr_box">
+        <input type="hidden" id="DocID" name="DocID" value="{#$edit.DocID#}">
+        <input type="hidden" id="WorkID" name="WorkID" value="{#$wid#}">
+        <div class="title">试卷编号及名称：[{#$doc.DocID#}] {#$doc.DocName#}&nbsp; <a href="{#:U('Test/Test/index',array('DocID'=>$doc[DocID]))#}" class='lookAllTest' title='所有试题编辑完成后查看'>查看全部试题</a></div>
+    </div>
+</div>
+<script language="javascript">
+    var optionWidth='{#$optionwidth#}';//未使用
+    var subjectID='{#$edit.SubjectID#}';
+    var specialID='{#$edit.SpecialID#}';
+    var typeID='{#$edit.TypesID#}';
+    var skillID='{#$edit.SkillID#}';
+    var capacityID='{#$edit.CapacityID#}';
+    var knowID='{#$edit.KlID#}';
+    var chapID='{#$edit.ChapterID#}';
+    if("{#$act#}"=='edit'){
+        $('#knowledge').allSelectLoad('__URL__',{"style":"getMoreData","list":"knowledgeList,chapterList,special,types,knowledge,chapter,capacity,capacityList,skill,skillList","subjectID":subjectID,"idList":{
+        "knowledgeList":knowID,"skillList":skillID,"capacityList":capacityID,"chapterList":chapID,"special":specialID,"types":typeID,"knowledge":"0","chapter":"0","capacity":"0","skill":"0"}})
+    }
+    //写入小题结构
+    if("{#$edit.IfChoose#}"==1){
+        $('#showxt').css({'display':'block'});
+        var str='';
+        var tmp_i=1;
+        {#volist name="chooseList" id="vo"#}
+            str+='<p class="xtList">小题'+tmp_i+
+                '：<label><input type="radio" class="choose'+tmp_i+' bLeft"  check="raido" warning="请选择测试类型" name="IfChoose'+tmp_i+ '" value="0" {#if condition="($vo.IfChoose eq '0') or ($vo.IfChoose eq '')"#}checked="checked"{#/if#}> 非选择题</label> '+
+        '<label><input type="radio" class="choose'+tmp_i+' bLeft" name="IfChoose'+tmp_i+'" value="3" {#eq name="vo.IfChoose" value="3"#}checked="checked"{#/eq#}> 单选题</label> '+
+        '<label><input type="radio" class="choose'+tmp_i+' bLeft" name="IfChoose'+tmp_i+'" value="2" {#eq name="vo.IfChoose" value="2"#}checked="checked"{#/eq#}> 多选题</label> '+
+        '</p>';
+        tmp_i++;
+        {#/volist#}
+        $('#xt').empty().html(str);
+    }
+    //初始化打分方式
+    {#if condition="$edit['DfStyle'] eq 1"#}
+        $('.zgdf').show();
+        $('.kgdf').hide();
+    {#else/#}
+        $('.zgdf').hide();
+        $('.kgdf').show();
+    {#/if#}
+    $.testOperation.addTestWidthNum();
+    $.testOperation.delTestWidthNum();
+    $.testOperation.clearAllWidthNum();
+    $.testOperation.testChooseChange();
+    // $.testOperation.resize();
+    $(function(){
+        $.newEdit.initBox();
+        $(window).resize(function(){
+            $.newEdit.initBox();
+        });
+    });
+</script>

@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#} 用户中心</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/user.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/u-custom.css" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/tips.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/json2.min.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/paper.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/ueditor/ueditor.config.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/ueditor/ueditor.all.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/editor.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/customTestN.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/formatTest.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+</head>
+<body>
+
+<!--头部-->
+{#include file="Index@Common/TplUserHeader" /#}
+<!--头部-end-->
+
+<!-- 个人中心 -->
+<div class="w-main">
+    <!-- 面包屑导航 -->
+    {#include file="User@IndexCenter/TplCrumbs" /#}
+
+    <!-- 面包屑导航END -->
+
+    <div class="u-content clearfix">
+        <!--添加试题-->
+        <div class="build-test-panel content g-panel">
+            <div class="panel-head">
+                <h3 class="head-name">单题上传</h3>
+                <span class="head-handle"><a class="link" href="{#:U('Custom/CustomTestStoreN/customNav')#}">返回</a></span>
+            </div>
+            <form action="{#:U('Custom/CustomTestStoreN/save')#}" method="post" id='test-form'>
+                <input type="hidden" name='verifyCode' id='verifyCode' value='{#$verifyCode#}'/>
+                <input type="hidden" name='TestID' value='{#$testid#}' id='testid'/>
+                <input type="hidden" name='TTID' id='ttid'/>
+                <div class="panel-body build-test-content">
+                    <dl class="test-edit-item clearfix">
+                        <dt class="item-title">题文：</dt>
+                        <dd class="test-edit-content loreEditor" style='width:95%;'>
+                            <div class='editContainersTest editContainers' title='题文'></div>
+                        </dd>
+                    </dl>
+                    <dl class="test-edit-item clearfix">
+                        <dt class="item-title">答案：</dt>
+                        <dd class="test-edit-content loreEditor" style='width:95%;'>
+                            <div class='editContainersAnswer editContainers' title='答案'></div>
+                        </dd>
+                    </dl>
+                    <dl class="test-edit-item clearfix">
+                        <dt class="item-title">解析：</dt>
+                        <dd class="test-edit-content loreEditor" style='width:95%;'>
+                            <div class='editContainersAnalytic editContainers' title='解析'></div>
+                        </dd>
+                    </dl>
+
+                    <div class="edit-test-attr-site g-panel">
+                        <div class="panel-head">
+                            <h3 class="head-name">试题属性</h3><a class="link left toggleAttributes" href="javascript:;">隐藏 <i class="iconfont">&#xe607;</i></a>
+                        </div>
+                        <div class="panel-body edit-test-attr-body">
+                            <div class="g-form edit-test-attr-form" action="">
+                                <div class="g-control-group">
+                                    <label class="item-title" for="">年级：</label>
+                                    <select id="grade" class="w120" name="GradeID">
+                                        <option value="">请选择</option>
+                                    </select>
+                                    <label class="item-title" for="">题型：</label>
+
+                                    <select id="types" class="w120" name="TypesID">
+                                        <option value="">请选择</option>
+                                    </select>
+                                </div>
+
+                                <div class="g-control-group">
+                                    <label class="item-title" for="">难度：</label>
+                                    <span>
+                                        <label class="checked" for="radio1"  title="0.801-0.999"><input name='diff' value='0.801' type="radio" id='radio1'/>容易</label>
+                                        <label for="radio2" title="0.601-0.800"><input  name='diff' value='0.601' type="radio" id='radio2'/>较易</label>
+                                        <label for="radio3" title="0.501-0.600"><input  name='diff' value='0.501' type="radio" id='radio3'/>一般</label>
+                                        <label for="radio4" title="0.301-0.500"><input  name='diff' value='0.301' type="radio" id='radio4'/>较难</label>
+                                        <label for="radio5" title="0.001-0.300"><input  name='diff' value='0.001' type="radio" id='radio5'/>困难</label>
+                                    </span>
+
+                                </div>
+
+                                <div class="g-control-group">
+                                    <label class="item-title" for="">试卷来源：</label>
+                                    <input type="text" name='source' id='source' class='w600'/>
+                                </div>
+
+                                <div class="g-control-group knowledge-select-change-container">
+                                    <label class="item-title" for="">知识点：</label>
+                                    <select id="knowledge" class="selection bLeft w120">
+                                        <option value="">请选择</option>
+                                    </select> 
+                                    <a class="g-btn btn-primary btn-m append" >添加</a>
+                                </div>
+                                <div class="g-control-group">
+                                    <ul class="lore-context-site knowledge-select-change-container-inputs"></ul>
+                                </div>
+
+                                <div class="g-control-group chapter-select-change-container">
+                                    <label class="item-title" for="">章节：</label>
+                                    <select id="chapter" class="selection bLeft w120" name="ChapterID">
+                                        <option value="">请选择</option>
+                                    </select> 
+                                    <a class="g-btn btn-primary btn-m append" >添加</a>
+                                </div>
+                                <div class="g-control-group">
+                                    <!--章节容器-->
+                                    <ul class="lore-context-site chapter-select-change-container-inputs"></ul>
+                                </div>
+
+                                <div class="g-control-group">
+                                    <label class="item-title" for="">备注：</label>
+                                    <textarea name="" id="" cols="70" rows="3"></textarea>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="g-controls attr-btn-group">
+                        <a class="g-btn btn-primary btn-l" href="" id='save'>保存</a>
+                        <a class="g-btn btn-primary btn-l" href="" id='format'>格式化试题</a>
+                        <span class="g-help-in helper">不包含小题的试题无需格式化</span>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <!-- 添加试题END -->
+    </div>
+
+    <!-- 个人中心END -->
+
+</div>
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery.cookie.js"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/wlnBase.js"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/userCenter.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".toggleAttributes").each(function(){
+            var e=$(this);
+            var panelBody = e.closest(".edit-test-attr-site").find(".panel-body");
+            e.click(function(){
+                if(panelBody.is(":visible")){
+                    panelBody.slideUp();
+                    e.html('展开 <i class="iconfont">&#xe607;</i>');
+
+                }else{
+                    panelBody.slideDown();
+                    e.html('收起 <i class="iconfont">&#xe61f;</i>');
+                }
+            });
+        });
+        // $.myTestFav.init();
+        // $.formBeautify.init();
+    })
+    var types = new Object({#$types#});
+
+    $(document).ready(function(){
+        var data = new Object({#$data#});
+        var originality = '{#$originality#}';
+        originality = originality?JSON.parse(originality):{'ttID':false};
+        var url = '__URL__';
+        if(url.indexOf('/')===0){
+            url = url.substring(1);
+        }
+        var ifImage = false;
+        var act = '{#$act#}';
+        $.customTestStoreTestAdd.init(data,originality,url,ifImage, act);
+    });
+</script>
+<!--footer-->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+<script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+<![endif]-->
+{#include file="Index@Common/secondFooter" /#}
+<!--footer-end-->
+
+</body>
+</html>

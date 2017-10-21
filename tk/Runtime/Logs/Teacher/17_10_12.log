@@ -1,0 +1,59 @@
+[ 2017-10-12T13:53:15+08:00 ] 115.60.59.122 /Teacher/TaskB/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Teacher\Manage\TaskBManage.class.php 第 27 行.
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Teacher\Manage\TaskBManage.class.php 第 33 行.
+NOTIC: [8] Undefined index: DocID E:\www\www\tk\Teacher\Manage\TaskBManage.class.php 第 37 行.
+NOTIC: [8] Undefined index: CheckName E:\www\www\tk\Teacher\Manage\TaskBManage.class.php 第 41 行.
+NOTIC: [8] Undefined index: WorkID E:\www\www\tk\Teacher\Manage\TaskBManage.class.php 第 45 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Teacher\Manage\TaskBManage.class.php 第 53 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Teacher\Manage\TaskBManage.class.php 第 53 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Teacher\Manage\TaskBManage.class.php 第 75 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 47 行.
+NOTIC: [8] Undefined index: DocID E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 56 行.
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 58 行.
+NOTIC: [8] Undefined index: CheckName E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 60 行.
+NOTIC: [8] Undefined index: WorkID E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 62 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 66 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 67 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 68 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 69 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 70 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 71 行.
+NOTIC: [8] Undefined index: oldChecker E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 106 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 132 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 132 行.
+NOTIC: [8] Undefined index: oldChecker E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 106 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Teacher\59a72c12a2ace4bac1526dd936ae5494.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+

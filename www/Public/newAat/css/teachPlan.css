@@ -1,0 +1,33 @@
+
+/*导学案预览*/
+.guide_preview .tempname{ text-align:center; font-size:24px; font-weight:bold; padding:15px 10px 10px 10px}
+.guide_preview .temphead { margin:20px 0px 15px 0px; background:#CDF0FF; padding:10px 0px}
+.guide_preview .temphead .tempforum span{ font-size:16px;font-weight:bold;padding-left:20px;}
+.guide_preview .tempdesc{ text-align:center; padding:10px; line-height:22px}
+
+.guide_preview .lorequestion {/* padding:0px 10px; */line-height:28px}
+.guide_preview .temptext{ font-size: 14px; margin-bottom:5px;}
+
+.guide_preview .temptext .title{margin-bottom:8px;padding:15px; border-top:1px solid #d7d7d7;}
+.guide_preview .temptext .dan_box .title{margin-bottom:2px;padding:15px 0px 2px 15px; border-top:none;}
+.guide_preview .tempbox .tempmemu{ background:#f5f5f5; padding:4px 0px 4px 20px; font-weight:bold; line-height:24px; margin-bottom:15px}
+/*导学案知识*/
+.guide_preview .lorecontent{ padding:15px 10px; line-height:28px; border:#ccc dashed 1px; margin:0 10px 20px 10px;}
+.guide_preview .lorecontent .temptext-ans-box{border-bottom:1px dotted #C7C7C7;margin-bottom:5px}
+.guide_preview .temptext-ans{ font-size: 14px; margin-bottom:5px}
+.guide_preview .temptext-ans .ans-icon{color:#27a152;margin-right:10px}
+.guide_preview .temptextHandle{padding:10px;overflow:hidden;line-height:1em;}
+.guide_preview .temptextHandle .ans-btn:hover{text-decoration: none;opacity: .85;filter:alpha(opacity=85)}
+.guide_preview .temptextHandle .ans-btn{padding:5px 25px;border-radius: 3px;border:1px solid #0097dc;float:right;color:#fff; background-color:#00a0e9;border-color:#0097dc;-webkit-transition:all .2s;-moz-transition:all .2s;-o-transition:all .2s;transition:all .2s;}
+.guide_preview .temptextHandle .on{color:#00a0e9;background-color:#fff;border-color:#21B2F4}
+/*导学案与其他测试题区别*/
+.guide_preview .temptext .icoNum,.st_tm_box .icoNum{float: left;font-size:24px; font-weight: bold;color:#00a0e9;padding-right:6px;font-family:"Myriad Pro";}
+.subTest .st_tm_box .icoNum{font-size:16px;font-family:arial,sans-serif;}
+.st_wt_box p{font-size:14px;}
+.subTest{padding:0 10px;}
+.subTest .dt_box_xzt,.subTest .dt_box_wdt{border-bottom:none;}
+.subTest .st_tm_box:first-child .title{border-top:none;}
+.subTest .dan_box{margin:0 -10px;border-bottom:none;}
+.an_jc ,.an_sc {line-height:17px;}
+.dt_box_xzt .xx_xzt_da{height:auto;}
+.dt_box_xzt{height:auto;}

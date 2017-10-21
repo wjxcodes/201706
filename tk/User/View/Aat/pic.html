@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {#include file="Aat@Common:head"/#}
+    <link href="__PUBLIC__/newAat/css/avatar.css{#:C(WLN_UPDATE_FILE_DATE)#}" rel="stylesheet" type="text/css" />
+    <script src="__PUBLIC__/plugin/uploadify/jquery.uploadify.min.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+    <script src="__PUBLIC__/plugin/imgareaselect/jquery.imgareaselect.pack.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/plugin/uploadify/uploadify.css{#:C(WLN_UPDATE_FILE_DATE)#}" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/plugin/imgareaselect/imgareaselect-animated.css{#:C(WLN_UPDATE_FILE_DATE)#}" />
+</head>
+<body>
+<div id="wrapper">
+    {#include file="Aat@Common:header"/#}
+    <div id="content" class="w980 mc pt90 pb20">
+        <div class="box02 mb20">
+            <div class="zt_title">
+                <div class="fl pt20 pl20">个人中心</div>
+            </div>
+            <div class="title02">修改头像</div>
+            <div class="sctx_box">
+                <div class="sctx_title">
+                    <h5>请选择上传方式</h5>
+                    <p class="smtext">请选择新的照片，文件小于2M，支持图片格式为jpg，png，gif。</p>
+                    <input type="file" id="fileUpload"/>
+                    <div class="clear"></div></div>
+                <div class="sctxyl_box" style="display: none;">
+                    <h5>设置个人头像</h5>
+                    <p class="smtext">按个人喜好，随意拉动和调整方格的大小直至满意为止，然后按下方的保存按键即可。</p>
+                    <div>
+                        <div class="txxq_box fl" id="originBox"><img id="originImg" src="" alt="头像裁剪"/></div>
+                        <div class="txyl_box fl">
+                            <div class="txyl01" id="prevBox"><img id="prevImg" src="" alt="头像预览" /></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="sctx_an">
+                        <p class="smtext" style="color: darkred;display: none;" id="errorMsg"></p>
+                        <p class="smtext" style="display: none;" id="infoMsg"></p>
+                        <a class="an01 fl" href="javascript:;" id="avatarSave"><span class="an_left"></span><div class="an_cen">保存头像</div><span class="an_right"></span></a>
+                        <a class="cxsc_an" href="javascript:;" id="resetUpload"><font color="#0081cb">重新上传</font></a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <input type="hidden" id="key" value="{#$key#}"/>
+            <input type="hidden" id="username" value="{#$username#}"/>
+        </div>
+        <div id="footer">
+            {#include file="Aat@Common:footer"/#}
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var AatUserPic = {
+            picPath:'',//临时文件路径
+            positionJson:{},//准备存放图片数据的变量，便于传回裁剪坐标
+            init:function(){
+                this.avatarUpload();//定义uploadify上传
+                this.avatarSave();//头像选区
+            },
+            //头像上传
+            avatarUpload:function(){
+                var self = this;
+                var key = $('#key').val();//上传验证安全码
+                var username = $('#username').val();//用户名
+                var fileUpload = $('#fileUpload');
+                fileUpload.uploadify({
+                    'buttonText': '上传图片',
+                    'auto': true,
+                    'removeCompleted' : false,
+                    'swf': '/Public/plugin/uploadify/uploadify.swf',
+                    'uploader': U('User/Aat/avatarUpload?key=' + key + '&username=' + username),
+                    'method': 'post',
+                    'multi': false,
+                    'fileTypeDesc': '请上传.jpg;*.png;*.gif;类型文件',
+                    'fileTypeExts': '*.gif; *.jpg; *.png',
+                    'fileSizeLimit': '5120',
+                    'onSelectError': function (file, errorCode, errorMsg) {
+                        switch (errorCode) {
+                            case -110:
+                                alert('请上传小于' + fileUpload.uploadify('settings', 'fileSizeLimit') + "k的图片！");
+                                break;
+                        }
+                    },
+                    'onUploadSuccess': function (file, data, response) {
+                        //每次成功上传后执行的回调函数，从服务端返回数据到前端
+                        data = eval('(' + data + ')');//格式化json字符串为json对象
+                        if(data.data){
+                            fileUpload.uploadify('disable', true);  //(上传成功后)'disable'禁止再选择图片
+                            picPath = data.data.picPath;
+                            $('.sctxyl_box').show();
+                            self.avatarSelectArea(data);
+                        }else{
+                            alert('您上传的图片不正确，请重新上传！');
+                            return;
+                        }
+
+                    }
+                });
+            },
+            //头像选区
+            avatarSelectArea:function(e){
+                if (e.status == 0) {
+                    alert(e.data);
+                    window.location.reload();
+                }
+                var self = this;
+                var originW = e.data.width;//存储原图的宽高，用于计算
+                var originH = e.data.height;
+                var frameW = 420;  //原图的缩略图固定宽度，作为一个画布，限定宽度，高度自适应，保证了原图比例
+                var frameH = Math.round(frameW*originH/originW);//根据原图宽高比和画布固定宽计算画布高，即originImg加载上传图后的高。此处不能简单用.height()获取，有DOM加载的延迟
+                var prevFrameW = 150;  //预览图容器的高宽，宽度固定，高为需要裁剪的宽高比决定
+                var prevFrameH = 150;
+                var rangeX = 1;  //初始缩放比例
+                var rangeY = 1;
+                var prevImgW = prevFrameW;  //初始裁剪预览图宽高
+                var prevImgH = prevFrameW;
+                var originImg = $('#originImg');//画布
+                var prevImg = $('#prevImg');//预览图
+
+                $('#originBox').height(frameH).width(frameW);
+                $('#prevBox').height(prevFrameH).width(prevFrameW);
+                originImg.attr('src', e.data.picPath).height(frameH).width(frameW);//显示已上传的图片，此时图片已在服务器上
+
+                //准备好数据后，开始配置imgAreaSelect使得图片可选区
+                originImg.imgAreaSelect({
+                    //配置imgAreaSelect
+                    handles: true,   //选区样式，四边上4个方框
+                    fadeSpeed: 300, //选区阴影建立和消失的渐变
+                    aspectRatio: '1:1', //比例尺
+                    'minHeight': 100,
+                    x1: 0, y1: 0, x2: 150, y2: 150,
+                    onInit:function(){
+                        prevImg.attr('src', e.data.picPath).css({
+                            'width':frameW,
+                            'height':frameH,
+                            'margin-left':0,
+                            'margin-top':0
+                        });
+                    },
+                    onSelectChange: function (img, selection) {
+                        //选区改变时的触发事件
+                        //selection包括x1,y1,x2,y2,width,height几个量，分别为选区的偏移和高宽
+                        rangeX = selection.width / frameW;  //依据选取高宽和画布高宽换算出缩放比例
+                        rangeY = selection.height / frameH;
+                        prevImgW = prevFrameW / rangeX; //根据缩放比例和预览图容器高宽得出预览图的高宽
+                        prevImgH = prevFrameH / rangeY;
+                        //实时调整预览图预览裁剪后效果
+                        prevImg.css({
+                            'width': Math.round(prevImgW) + 'px',
+                            'height': Math.round(prevImgH) + 'px',
+                            'margin-left': '-' + Math.round((prevFrameW / selection.width) * selection.x1) + 'px',
+                            'margin-top': '-' + Math.round((prevFrameH / selection.height) * selection.y1) + 'px'
+                        });
+                    },
+                    onSelectEnd: function (img, selection) {
+                        //放开选区后的触发事件
+                        //计算实际对于原图的裁剪坐标
+                        self.positionJson.x1 = Math.round(originW * selection.x1 / frameW);
+                        self.positionJson.y1 = Math.round(originH * selection.y1 / frameH);
+                        self.positionJson.width = Math.round(rangeX * originW);
+                        self.positionJson.height = Math.round(rangeY * originH);
+                    }
+                });
+            },
+            //保存头像,重新上传
+            avatarSave:function(){
+                var self = this;
+                $('#avatarSave').click(function(){
+                    var width = self.positionJson.width;
+                    var height = self.positionJson.height;
+                    var x1 = self.positionJson.x1;
+                    var y1 = self.positionJson.y1;
+                    $('#infoMsg').html('正在提交请稍候...').show();
+                    $('#errorMsg').hide();
+                    if($('#originImg').attr('src') == ''){
+                        $('#infoMsg').hide();
+                        $('#errorMsg').html('请先上传头像！').show().effect('shake');
+                        return false;
+                    }
+                    if (!self.positionJson.width) {
+                        $('#infoMsg').hide();
+                        $('#errorMsg').html('请先移动虚线框裁剪头像！').show().effect('shake');
+                        return false;
+                    }
+                    $.post(U('User/Aat/avatarSave'), {picPath: picPath, width: width, height: height, x1: x1, y1: y1}, function (e) {
+                        if (e.status == 1) {
+                            window.location.href = U('User/Aat/index');
+                        } else {
+                            $('#infoMsg').hide();
+                            $('#errorMsg').html(e.data).show().effect('shake');
+                            return false;
+                        }
+                    });
+                });
+                $('#resetUpload').click(function(){
+                    $.post(U('User/Aat/avatarTpmDel'),{picPath:picPath},function(e){
+                        window.location.reload();
+                    });
+                });
+            }
+        };
+        AatUserPic.init();
+    });
+</script>
+</body>
+</html>

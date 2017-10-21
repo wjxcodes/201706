@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#}-用户中心</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/user.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/u-custom.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/u-test.css" rel="stylesheet" />
+</head>
+<body>
+
+<!--头部-->
+{#include file="Index@Common/TplUserHeader" /#}
+<!--头部-end-->
+
+<!-- 个人中心 -->
+<div class="w-main">
+    <!-- 面包屑导航 -->
+    {#include file="User@IndexCenter/TplCrumbs" /#}
+
+    <!-- 面包屑导航END -->
+
+    <div class="u-content clearfix">
+        <!-- 左侧导航 -->
+
+        <div class="myTest-left knowledgeTreeWrap" data-offset-spy="0">
+            <div class="knowledge-tree-wrap">
+                <div class="knowledge-tree">
+                    <div class="knowledge-title">
+                        <i class="iconfont">&#xe616;</i>
+                        <span class="name" title='所有知识点' id="allknowledge" class='target' val="0" style='cursor: pointer;'>知识点目录</span>
+                    </div>
+
+                    <div class="tree-content-site">
+                        <ul class="root-tree" id='treecon'>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- 左侧导航END -->
+
+        <div class="myTest-right">
+
+            <!--添加试题-->
+            <div class="my-test-panel g-panel">
+                <div class="panel-head">
+                    <h3 class="head-name">校本试题</h3>
+                    <span class="head-handle"><a class="link" href="">返回</a></span>
+                </div>
+                <div class="panel-body my-test-content">
+                    <div class="filter-group my-test-filter" id='filterbox'>
+                    </div>
+
+                    <div class="my-test-content-wrap" id='queslistbox'>
+                    </div>
+
+                    <div class="u-paginator" id='pagediv'>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 添加试题END -->
+
+        </div>
+    </div>
+
+    <!-- 个人中心END -->
+
+</div>
+<div class="testBasket-wrap packUp">
+    <div class="testBasket">
+        <div class="testBasket-title">
+            <span class="tit">校本试题</span><a id="emptybasket" class="empty-basket" href="javascript:void(0);">清空</a>
+        </div>
+        <div id="quescountdetail" class="testType-count">
+            <table>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+        <!-- 统计 -->
+        <div class="test-total">
+            共 <span class="ques-count" id='quescount'>0</span> 题
+        </div>
+        <!-- 统计END -->
+        <div class="testPaper-view">
+            <a class="basket-menu g-btn btn-primary" target='_blank' href="{#:U('Home/Index/main',array('u'=>'Index_zuJuan'))#}">试卷预览</a>
+        </div>
+    </div>
+</div>
+<div class="basket-Fold on">收起</div>
+
+<!-- 组卷试题篮子END -->
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/customTestListN.js"></script>
+<script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/default/js/paper.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/artTemplate-3.0.3.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/template.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery.cookie.js"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/userCenter.js"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/unionSearch.js{#$Think.config.WLN_UPDATE_FILE_DATE#}1111"></script>
+
+<div class="hidden">
+    <div class="add-test-content" id="tplAddTest" >
+    </div>
+</div>
+
+<script type='text/html' id='selectionTemplate'>
+
+    <dl class="filter-item clearfix">
+        <dt class="left item-title">题型：</dt>
+        <dd class="left radio" id='questypeselect'>
+            <label class="checked target" for="typesradio00">全部</label><input id="typesradio00" name="radio0"  type="radio"/>
+            <%
+                var data = datas['data'][1];  
+                for(var i in data){ 
+            %>
+                    <label for="typesradio<%= i+1 %>" class="target" val="<%=data[i]['TypesID'] %>"><%=data[i]['TypesName'] %></label><input id="radio<%= i %>" name="typesradio<%= i+1 %>"  type="radio"/>
+            <%  } %>
+        </dd>
+    </dl>
+    <dl class="filter-item clearfix">
+        <dt class="left item-title">难度：</dt>
+        <dd class="left radio" id='quesdiffselect'>
+            <label class="checked target"  for="diffradio0">全部</label><input id="diffradio0"  name="radio01" type="radio"/>
+            <% var data = datas['data'][2]; %>
+            <% for(var i in data){ %>
+                <label for="diffradio<%= i+1 %>" class="target" val="<%=data[i]['DiffID'] %>" title='<%= data[i]['DiffArea'] %>'><%=data[i]['DiffName'] %></label><input id="diffradio<%= i+1 %>" name="radio<%= i %>"  type="radio"/>
+            <% } %>
+        </dd>
+    </dl>
+</script>
+
+<script type='text/html' id='treeTemplate'>
+    <% 
+        for(var i=0;i<datas['data'][3].length;i++){
+            var data = datas['data'][3][i];
+    %>
+        <li>
+            <i class="<%= (data['sub'] ? 'tree-parent-icon iconfont showChildTree' : 'tree-child-icon') %>"><%= (data['sub'] ? '+' : '·') %></i>
+            <a href="#" class="tree-parent treeTarget" p="knowledge" val="<%=data['KlID']%>"><%=data['KlName']%></a>
+            <% if(data['sub']){  %>
+                <ul class="">
+                    <% 
+                        for(var j=0;j<data['sub'].length;j++){
+                    %>
+                        <li>
+                            <i class="<%= (data['sub'][j]['sub'] ? 'tree-parent-icon showChildTree' : 'showChildTree') %>"><%= (data['sub'][j]['sub'] ? '+' : '·') %></i>
+                            <a href="#" class="tree-parent tree-item-active treeTarget" p="knowledge" val="<%=data['sub'][j]['KlID']%>"><%=data['sub'][j]['KlName']%></a>
+                            <% if(data['sub'][j]['sub']){ %>
+                                <ul class="">
+                                    <% 
+                                        for(var k=0;k<data['sub'][j]['sub'].length;k++){
+                                    %>
+                                        <li>
+                                            <i class="tree-child-icon">·</i>
+                                            <a href="javascript:;"  class="treeTarget" p="knowledge" val="<%=data['sub'][j]['sub'][k]['KlID']%>"><%=data['sub'][j]['sub'][k]['KlName']%></a>
+                                        </li>
+                                    <% } %>
+                                </ul>
+                            <% } %>
+                        </li>
+                    <% } %>
+                </ul>
+            <% } %>
+        </li>
+    <% } %>
+</script>
+
+<script type='text/html' id='template'>
+    <% 
+        if(typeof(datas) === 'string'){ 
+    %>
+            <div class="test-item-head clearfix"><%= datas %></div>
+    <%
+        }else{
+            for(var k in datas[0]){
+                var data = datas[0][k];
+    %>
+        <div class="u-test-item g-test-item">       
+            <div class="test-item-head clearfix">
+                <div class="left test-base-info">
+                    <h4 class="test-title f-roman"><%= (data['docname'] ? data['docname'] : '未填写') %></h4>
+                    <div class="test-attr-site">
+                        <span class="test-attr"><b>题号：</b><%= data['testid'].replace(/^c/, '') %></span>
+                        <span class="test-attr"><b>题型：</b><%= data['typesname'] %></span>
+                        <span class="test-attr"><b>难度：</b><%= data['diffxing'] %></span>
+                    </div>
+                </div>
+                <span class="right timer"><%= data['firstloadtime'] %></span>
+            </div>
+
+            <div class="test-item-body f-roman">
+                <%=data['test']%>
+                <div class="test-answer-content" id='testid<%= data['testid'] %>'></div>
+            </div>
+
+            <div class="test-item-footer clearfix">
+                <div class="left">
+                    <a class="g-btn deletion"  title="删除试题" childnum='<%= (data['testnum'] == 0 ? 1 : data['testnum']) %>' testid='<%= data['testid'] %>' verify='<%= data['verify'] %>'><i class="iconfont">&#xe60b;</i>删除</a>
+                    <a class="g-btn customTestEdit"  title="修改试题" testid='<%= data['testid'] %>'><i class="iconfont">&#xe606;</i>编辑</a>
+                    <a class="g-btn otherContent" href="javascript:;" tid='<%= data['testid'] %>'>显示解析</a>
+                </div>
+                <div class="right">
+                    <% 
+                        var parentClassName='',classname='addquessel1',nextClassName='selmore1';
+                        if(editData.ifhavetest(data['testid'])){
+                            classname='delques1';
+                            parentClassName = 'added';
+                            nextClassName = ''
+                        }
+                        if(data['status'] == 1){
+                    %>  
+                        <span href="javascript:;" class="add-test-group <%=parentClassName%>">
+                            <span class="add-test-paper g-btn <%= classname %>"  qdname="<%= data['diffname'] %>" qdid="<%= data['diff'] %>" qyisselect="<%= data['typesisselect']%>" qyname="<%= data['typesname'] %>" qyid="<%= data['typesid'] %>" childnum="<%= (data['testnum'] == 0 ? 1 : data['testnum']) %>" quesid="<%= data['testid'] %>" classify="1" id="quesselect<%= data['testid'] %>"> <i class="iconfont">加入试卷</i>
+                            </span> <i class="iconfont g-btn select-arrow <%= nextClassName %>" testid="<%= data['testid'] %>" id="selmore<%= data['testid'] %>" qyid="<%= data['typesid'] %>" childnum="<%= (data['testnum'] == 0 ? 1 : data['testnum']) %>"></i>
+                        </span>
+                            
+                    <% }else if(data['status'] == -1){ %>
+                            <div class="quesmenu"><div class="stateoptimizfailure" title='<%= data['ErrorMsg'] %>'>试题优化失败</div></div>
+                    <% }else if(data['schedule'] == 0 && data['iflock'] == 0){ %>
+                        <div class="my-test-check-state">
+                            <div class="state-progress"></div>
+                            <div class="check-state-item">
+                                <span class="current">试题优化中</span>
+                                <span class="">优化标引中</span>
+                                <span class="">审核中…</span>
+                            </div>
+                        </div>
+                    <% }else if(data['schedule'] == 0){ %>
+                        <div class="my-test-check-state">
+                            <div class="state-progress state2"></div>
+                            <div class="check-state-item">
+                                <span class="current">试题优化中</span>
+                                <span class="current">优化标引中</span>
+                                <span class="">审核中…</span>
+                            </div>
+                        </div>
+                    <% }else if(data['schedule'] == 1){ %>
+                        <div class="my-test-check-state">
+                            <div class="state-progress state3"></div>
+                            <div class="check-state-item">
+                                <span class="current">试题优化中</span>
+                                <span class="current">优化标引中</span>
+                                <span class="current">&nbsp;&nbsp;审核中…</span>
+                            </div>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    <% }} %>
+</script>
+
+<script type='text/html' id='otherContent'>
+    <div class="answer-item">
+        <h3 class="tit"> <b>答案</b></h3>
+        <div class="answer-context f-roman"><%= datas['data'][1]['answer'] %></div>
+    </div>
+    <div class="answer-item">
+        <h3 class="tit"> <b>解析</b>
+        </h3>
+        <div class="answer-context f-roman"><%= datas['data'][1]['analytic'] %></div>
+    </div>
+    <div class="answer-item">
+        <h3 class="tit">
+            <b>知识点</b>
+        </h3>
+        <div class="answer-context f-roman">
+            <div>
+                <%= (datas['data'][1]['kllist'] || '无') %>
+            </div>
+
+        </div>
+    </div>
+    <div class="answer-item">
+        <h3 class="tit">
+            <b>备注</b>
+        </h3>
+        <div class="answer-context f-roman"><%= (datas['data'][1]['remark'] || '无') %></div>
+    </div>
+</script>
+
+
+<script type='text/html' id='originalityTemplate'>
+    <div class="submission-content">
+        <table class="g-table g-table-bordered submission-table">
+            <thead>
+            <tr>
+                <th width="30">题号</th>
+                <th width="80">题型</th>
+                <th>主干知识点</th>
+                <th width="60">分值</th>
+                <th width="75">正答率预估</th>
+                <th width="90">加入原创</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{each testTemplate as value i}}
+            <tr>
+                <td><span class="blue">{{#value.testNum}}</span></td>
+                <td>{{#value.typeName}}</td>
+                <td>{{#value.knowledge.klName}}</td>
+                <td>{{#value.score}}</td>
+                <td>{{#value.rightPercent}}</td>
+                <td class="join">
+                    <p class="f-yahei join-num">
+                        已有
+                        <span class="blue">{{value.userNum.have}}</span>
+                        人参与<br />
+                        余
+                        <span class="red">{{value.userNum.leave}}</span>
+                        名席位
+                    </p>
+                    <p class="f-yahei join-check">
+                        <label class="g-radio" for="ttID{{value.ttID}}">
+                            <input type="radio" {{if value.userNum.leave==0}}disabled{{/if}}
+                                  value="{{value.ttID}}" data-testID="{{testID}}" class="ttID" name="ttID" id="ttID{{value.ttID}}" />
+                            加入投稿
+                        </label>
+                    </p>
+                </td>
+            </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        var foldTarget = $(".basket-Fold");
+        var basket = $(".testBasket-wrap");
+        var basketW = $(".testBasket-wrap").outerWidth();
+        foldTarget.live("click",function(){
+            var e = $(this);
+            if (e.hasClass("on")) {
+                basket.css({
+                    "right":- basketW +"px"
+                });
+                e.removeClass("on").text("校本试题");
+            }else{
+                basket.css({
+                    "right":"0"
+                });
+                e.addClass("on").text("收起");
+            }
+
+        })
+    })
+    $(function(){
+        //试题上传content高度
+        !function(){
+            //上传方式-鼠标滑过效果
+            $(".upload-box").on({
+                mouseenter: function () {
+                    var $this = $(this);
+                    $this.find(".upload-btn").show();
+                    $this.find(".ua-context").hide();
+                },
+                mouseleave: function () {
+                    var $this = $(this);
+                    $this.find(".upload-btn").hide();
+                    $this.find(".ua-context").show();
+                }
+            })
+
+        }()
+    })
+
+    var Types = new Object({#$types#});
+
+    $(function(){
+        $.myTestFav.init();
+        $.CustomTestList.init();
+    })
+
+    //校本题库
+
+</script>
+<!--footer-->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+<script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+<![endif]-->
+
+
+{#include file="Index@Common/secondFooter" /#}
+<!--footer-end-->
+
+</body>
+</html>

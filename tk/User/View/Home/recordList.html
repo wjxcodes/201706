@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>组卷历史存档</title>
+    <meta id="keywordsmeta" name="keywords" content="在线组卷系统,存档,组卷记录">
+    <meta id="descriptmeta" name="description" content="在线组卷系统组卷历史存档">
+    <link type="text/css" href="__PUBLIC__/default/css/common.css" rel="stylesheet">
+    <link type="text/css" href="__PUBLIC__/default/css/user.css" rel="stylesheet">
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+</head>
+<body>
+    <div id="righttop">
+        <div id="categorylocation">
+            <span class="nowPath">当前位置：</span>
+            &gt;
+            <span id="loca_text">
+                <span></span>
+                &gt; <a href="{#:U('Home/info')#}" style="cursor: pointer;text-decoration:none;">用户档案</a> &gt; 奖励记录
+            </span>
+        </div>
+    </div>
+    <div id='recordListBox' style="overflow:hidden;overflow-y:auto">
+    <div id="divbox" class="sc_list_box g-tab">
+        <div id="paperinfod" class="tab-list-top">
+            <div class="tab-list-head f-yahei"> <b>奖励记录</b>
+                <a href="javascript:;" class="current">金币</a>
+                <!--<a href="javascript:;" class="">金币</a>-->
+            </div>
+            <div class="tab-nav clearfix">
+                <a class="nor-btn active" href=".paperlistbox-tab-panel1">全部</a>
+<!--                <a class="nor-btn" href=".paperlistbox-tab-panel2">收入</a>
+                <a class="nor-btn" href=".paperlistbox-tab-panel3">支出</a>
+                <a class="nor-btn" href=".paperlistbox-tab-panel4">已经过期</a>
+                <a class="nor-btn" href=".paperlistbox-tab-panel5">冻结</a>-->
+            </div>
+        </div>
+        <div id="paperlistbox" class="tab-body">
+            <div class="tab-panel active paperlistbox-tab-panel1">
+                <table class="table awards-list-content" border="0" cellspacing="0" width="100%" >
+                    <tbody id="recordAllList">
+                        <tr>
+                            <th align="center" width="50">编号</th>
+                            <th align="center" width="160">来源/用途</th>
+                            <th align="left" width="120">积分变化</th>
+                            <th align="left" width="160">日期</th>
+                        </tr>
+                        <tr>
+                            <td colspan="5" align="center">暂无奖励记录</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+<!--            <div class="tab-panel paperlistbox-tab-panel2" >
+                <table class="table awards-list-content" border="0" cellspacing="0" width="100%">
+                    <tbody>
+                        <tr>
+                            <th align="center" width="50">编号</th>
+                            <th align="center">来源/用途</th>
+                            <th align="left">积分变化</th>
+                            <th align="left" width="160">日期</th>
+                            <th align="center" width="200">备注</th>
+                        </tr>
+                        <tr>
+                            <td align="center">1</td>
+                            <td align="left">2河南联通话费50元自动充值 官方快充</td>
+                            <td align="center">
+                                <span class="awards-num plus-num">+4</span>
+                            </td>
+                            <td align="center">2015年11月7日 12:43:35</td>
+                            <td align="center">做任务</td>
+                        </tr>
+                        <tr>
+                            <td align="center">2</td>
+                            <td align="left">河南联通话费50元自动充值 官方快充</td>
+                            <td align="center">
+                                <span class="awards-num minus-num">-50</span>
+                            </td>
+                            <td align="center">2015年11月7日 12:43:35</td>
+                            <td align="center">做任务</td>
+                        </tr>
+                        <tr>
+                            <td align="center">3</td>
+                            <td align="left">河南联通话费50元自动充值 官方快充</td>
+                            <td align="center">
+                                <span class="awards-num plus-num">+4</span>
+                            </td>
+                            <td align="center">2015年11月7日 12:43:35</td>
+                            <td align="center">做任务</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" align="center">暂无奖励记录</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-panel paperlistbox-tab-panel3" >
+                <table class="table awards-list-content" border="0" cellspacing="0" width="100%">
+                    <tbody id='recordAllList'>
+                        <tr>
+                            <th align="center" width="50">编号</th>
+                            <th align="center">来源/用途</th>
+                            <th align="left">积分变化</th>
+                            <th align="left" width="160">日期</th>
+                            <th align="center" width="200">备注</th>
+                        </tr>
+                        <tr>
+                            <td align="center">1</td>
+                            <td align="left">3河南联通话费50元自动充值 官方快充</td>
+                            <td align="center">
+                                <span class="awards-num plus-num">+4</span>
+                            </td>
+                            <td align="center">2015年11月7日 12:43:35</td>
+                            <td align="center">做任务</td>
+                        </tr>
+                        <tr>
+                            <td align="center">2</td>
+                            <td align="left">河南联通话费50元自动充值 官方快充</td>
+                            <td align="center">
+                                <span class="awards-num minus-num">-50</span>
+                            </td>
+                            <td align="center">2015年11月7日 12:43:35</td>
+                            <td align="center">做任务</td>
+                        </tr>
+                        <tr>
+                            <td align="center">3</td>
+                            <td align="left">河南联通话费50元自动充值 官方快充</td>
+                            <td align="center">
+                                <span class="awards-num plus-num">+4</span>
+                            </td>
+                            <td align="center">2015年11月7日 12:43:35</td>
+                            <td align="center">做任务</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" align="center">暂无奖励记录</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-panel paperlistbox-tab-panel4" >
+                <table class="table awards-list-content" border="0" cellspacing="0" width="100%">
+                    <tbody>
+                        <tr>
+                            <th align="center" width="50">编号</th>
+                            <th align="center">来源/用途</th>
+                            <th align="left">积分变化</th>
+                            <th align="left" width="160">日期</th>
+                            <th align="center" width="200">备注</th>
+                        </tr>
+                        <tr>
+                            <td align="center">1</td>
+                            <td align="left">4河南联通话费50元自动充值 官方快充</td>
+                            <td align="center">
+                                <span class="awards-num plus-num">+4</span>
+                            </td>
+                            <td align="center">2015年11月7日 12:43:35</td>
+                            <td align="center">做任务</td>
+                        </tr>
+                        <tr>
+                            <td align="center">2</td>
+                            <td align="left">河南联通话费50元自动充值 官方快充</td>
+                            <td align="center">
+                                <span class="awards-num minus-num">-50</span>
+                            </td>
+                            <td align="center">2015年11月7日 12:43:35</td>
+                            <td align="center">做任务</td>
+                        </tr>
+                        <tr>
+                            <td align="center">3</td>
+                            <td align="left">河南联通话费50元自动充值 官方快充</td>
+                            <td align="center">
+                                <span class="awards-num plus-num">+4</span>
+                            </td>
+                            <td align="center">2015年11月7日 12:43:35</td>
+                            <td align="center">做任务</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" align="center">暂无奖励记录</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-panel paperlistbox-tab-panel5" >
+                <table class="table awards-list-content" border="0" cellspacing="0" width="100%">
+                    <tbody>
+                        <tr>
+                            <th align="center" width="50">编号</th>
+                            <th align="center">来源/用途</th>
+                            <th align="left">积分变化</th>
+                            <th align="left" width="160">日期</th>
+                            <th align="center" width="200">备注</th>
+                        </tr>
+                        <tr>
+                            <td align="center">1</td>
+                            <td align="left">5河南联通话费50元自动充值 官方快充</td>
+                            <td align="center">
+                                <span class="awards-num plus-num">+4</span>
+                            </td>
+                            <td align="center">2015年11月7日 12:43:35</td>
+                            <td align="center">做任务</td>
+                        </tr>
+                        <tr>
+                            <td align="center">2</td>
+                            <td align="left">河南联通话费50元自动充值 官方快充</td>
+                            <td align="center">
+                                <span class="awards-num minus-num">-50</span>
+                            </td>
+                            <td align="center">2015年11月7日 12:43:35</td>
+                            <td align="center">做任务</td>
+                        </tr>
+                        <tr>
+                            <td align="center">3</td>
+                            <td align="left">河南联通话费50元自动充值 官方快充</td>
+                            <td align="center">
+                                <span class="awards-num plus-num">+4</span>
+                            </td>
+                            <td align="center">2015年11月7日 12:43:35</td>
+                            <td align="center">做任务</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" align="center">暂无奖励记录</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>-->
+        </div>
+        <div style="z-index: 1; display: block;" id="pagelistbox">
+            <!--<div class="pagebox">
+                <span class="disabled">首页</span>
+                <span class="disabled">末页</span>
+            </div>-->
+        </div>
+    </div>
+    </div>
+</body>
+    <script>
+// 通用tab切换
+    $(function(){
+        $('.g-tab .tab-nav a').each(function () {
+            var e = $(this);
+            var trigger = e.closest('.g-tab').attr("data-toggle");
+            if (trigger == "hover") {
+                e.mouseover(function () {
+                    $showtabs(e);
+                });
+                e.click(function () {
+                    return false;
+                });
+            } else {
+                e.click(function () {
+                    $showtabs(e);
+                    return false;
+                });
+            }
+        });
+
+        $showtabs = function (e) {
+            var detail = e.attr("href");
+            e.closest('.g-tab .tab-nav').find("a").removeClass("active");
+            e.closest('.g-tab').find(".tab-body .tab-panel").removeClass("active");
+            e.addClass("active");
+            $(detail).addClass("active");
+        };
+    })
+    jQuery.RecordList = {
+             init:function(){
+                 this.initBoxHeight();
+                 this.bindEvent();
+                 this.loadOrder(1);
+             },
+             initBoxHeight:function(){
+                 var a = $(window).width();
+                 var b = $(window).height()-60;
+                 if(a<790) a=790;
+                 $("#recordListBox").width(a).height(b);
+             },
+             initEmpty:function(){
+                 var tmpStr='<div class="ly_list_box">'+
+                            '<p class="list_ts">没有您的相关奖励记录...</p>'+
+                            '</div>';
+                 $('#recordAllList').html(tmpStr);
+             },
+             bindEvent:function(){
+                 $("#pagelistbox a").live("click",function(){
+                     $.RecordList.loadOrder($(this).attr('page'));
+                 });
+             },
+             loadOrder:function(page){
+                 $('#recordAllList').html($.myCommon.loading());
+                 $.post(U('User/Home/getRecordList'),{'page':page,'times':Math.random()}, function(data) {
+                     if(data['data'][0]!='success'){
+                         $.RecordList.initEmpty();
+                         return false;
+                     }
+                     var tmpStr='<tr>'+
+                            '<th align="center" width="50">编号</th>'+
+                            '<th align="center" width="180">来源/用途</th>'+
+                            '<th align="left" width="100">积分变化</th>'+
+                            '<th align="left" width="180">日期</th>'+
+                            '</tr>';
+                     for(var i in data['data'][1]){
+                         var temp = data['data'][1][i];
+                         tmpStr+='<tr>'+
+                            '<td align="center" width="50">'+temp['PayID']+'</td>'+
+                            '<td align="center">'+temp['PayName']+'</td>'+
+                            '<td align="center"><span class="awards-num plus-num">'+temp['PayMoney']+'</span> 金币</td>'+
+                            '<td align="center" >'+temp['AddTime']+'</td>'+
+                            '</tr>';
+                     }
+                     $('#recordAllList').html(tmpStr);
+                     $.myPage.showPage(data['data'][2],data['data'][3],page,0);
+                 });
+             }
+        }
+        $(function(){
+            $.RecordList.init();
+            $(window).on('resize',function(){
+                $.RecordList.initBoxHeight();
+            });
+        });
+</script>
+</html>

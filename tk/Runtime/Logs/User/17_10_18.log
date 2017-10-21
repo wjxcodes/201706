@@ -1,0 +1,77 @@
+[ 2017-10-18T14:47:31+08:00 ] 127.0.0.1 /User/Index/passport/url/Statistics.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2017-10-18T14:47:39+08:00 ] 127.0.0.1 /User/Index/passportLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+NOTIC: [8] Undefined offset: 0 E:\web\www\tk\User\Model\UserModel.class.php 第 484 行.
+NOTIC: [8] Undefined variable: defaultGroup E:\web\www\tk\User\Model\UserModel.class.php 第 496 行.
+NOTIC: [8] Undefined variable: defaultGroup E:\web\www\tk\User\Model\UserModel.class.php 第 500 行.
+NOTIC: [8] Undefined index: ChargeMode E:\web\www\tk\User\Model\UserModel.class.php 第 421 行.
+NOTIC: [8] Undefined index: phone E:\web\www\tk\User\Model\UserModel.class.php 第 430 行.
+NOTIC: [2] preg_replace(): No ending delimiter '/' found E:\web\www\tk\Common\Model\ApiDbModel.class.php 第 196 行.
+
+[ 2017-10-18T18:55:58+08:00 ] 127.0.0.1 /User/Index/passport/url/Statistics.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000960s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001312s ]
+
+[ 2017-10-18T18:56:05+08:00 ] 127.0.0.1 /User/Index/passportLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+NOTIC: [8] Undefined offset: 0 E:\web\www\tk\User\Model\UserModel.class.php 第 484 行.
+NOTIC: [8] Undefined variable: defaultGroup E:\web\www\tk\User\Model\UserModel.class.php 第 496 行.
+NOTIC: [8] Undefined variable: defaultGroup E:\web\www\tk\User\Model\UserModel.class.php 第 500 行.
+NOTIC: [8] Undefined index: ChargeMode E:\web\www\tk\User\Model\UserModel.class.php 第 421 行.
+NOTIC: [8] Undefined index: phone E:\web\www\tk\User\Model\UserModel.class.php 第 430 行.
+

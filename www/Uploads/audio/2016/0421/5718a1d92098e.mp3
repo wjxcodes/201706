@@ -1,0 +1,329 @@
+{
+    "data": {
+        "style": "智能练习",
+        "test": [
+            {
+                "doc_id": 11611,
+                "if_choose": 1,
+                "number": 3,
+                "right_answer": "【小题】D
+【小题】C
+",
+                "sub": {
+                    "1": {
+                        "answer_id": "289624-188812-3-1-3",
+                        "if_choose": "3",
+                        "order": "1",
+                        "sub_answer": "",
+                        "sub_options": [
+                            "A.<st1:chsdate Year="2013" Month="3" Day="21" IsLunarDate="False" IsROCDate="False" w:st="on">3月21日</st1:chsdate>",
+                            "B.<st1:chsdate Year="2013" Month="6" Day="22" IsLunarDate="False" IsROCDate="False" w:st="on">6月22日</st1:chsdate>",
+                            "C.<st1:chsdate Year="2013" Month="9" Day="23" IsLunarDate="False" IsROCDate="False" w:st="on">9月23日</st1:chsdate>",
+                            "D.<st1:chsdate Year="2013" Month="12" Day="22" IsLunarDate="False" IsROCDate="False" w:st="on">12月22日</st1:chsdate>"
+                        ],
+                        "sub_title": "该时间最有可能是"
+                    },
+                    "2": {
+                        "answer_id": "289624-188812-3-2-3",
+                        "if_choose": "3",
+                        "order": "2",
+                        "sub_answer": "",
+                        "sub_options": [
+                            "A.15时",
+                            "B.16时",
+                            "C.17时",
+                            "D.18时"
+                        ],
+                        "sub_title": "A点的日落时刻为"
+                    }
+                },
+                "test_id": 188812,
+                "test_title": "<p>下图中A、B两点分别是晨线、昏线与北纬30度纬线圈的交点。</p>
+<p><img src="http://182.92.3.219/Uploads/word/2014/0928/54277eb72f6ff799801.files/image013.jpg" style="vertical-align:middle;" /></p>",
+                "test_type": 119
+            },
+            {
+                "doc_id": 16228,
+                "if_choose": 1,
+                "number": 4,
+                "right_answer": "【小题】B
+【小题】C
+",
+                "sub": {
+                    "1": {
+                        "answer_id": "289624-266936-4-1-3",
+                        "if_choose": "3",
+                        "order": "1",
+                        "sub_answer": "",
+                        "sub_options": [
+                            "A.地形以高原丘陵为主",
+                            "B.河流径流量小，季节变化大、年际变化小",
+                            "C.陡崖相对高度可能为850米",
+                            "D.图中山峰和城市的相对高差为900—1000米"
+                        ],
+                        "sub_title": "根据图示信息，说法正确的是"
+                    },
+                    "2": {
+                        "answer_id": "289624-266936-4-2-3",
+                        "if_choose": "3",
+                        "order": "2",
+                        "sub_answer": "",
+                        "sub_options": [
+                            "A.偏北风&nbsp;&nbsp;&nbsp; 雨雪、降温",
+                            "B.偏南风&nbsp;&nbsp;&nbsp; 气压降低、天气晴朗",
+                            "C.偏南风&nbsp;&nbsp;&nbsp; 雨雪、降温",
+                            "D.偏北风&nbsp;&nbsp;&nbsp; 气压降低、天气晴朗"
+                        ],
+                        "sub_title": "此时图中城市的风向及24—36小时之间城市可能的天气状况为"
+                    }
+                },
+                "test_id": 266936,
+                "test_title": "<p>读我国2014年1月13西北某地等高线和等压线分布图，图中天气系统移动速度为120km／天，回答问题。</p>
+<p><img src="http://182.92.3.219/Uploads/word/2015/0119/54bca0d446536981872.files/image002.png" style="vertical-align:middle;" /></p>",
+                "test_type": 119
+            },
+            {
+                "answer": "",
+                "answer_id": "289624-327603-5-0-3",
+                "doc_id": 20218,
+                "if_choose": 3,
+                "number": 5,
+                "right_answer": "C
+",
+                "test_id": 327603,
+                "test_options": [
+                    "A.纽约人吹着风扇吃午饭",
+                    "B.挪威人在峡湾享受午夜阳光",
+                    "C.珀斯街影投向东南",
+                    "D.该地点位于北京的西北方"
+                ],
+                "test_title": "某地是我国重要的人工多层经济林区。右图为该地“某日太阳处在最高位置时的示意图”，此时北京时间为12：40，树影遮挡地被植物的面积在一年中达到正午时的最大。读图，回答下题。</p>
+<p><img src="http://182.92.3.219/Uploads/word/2015/0422/553737e6d1b91317419.files/image006.png" style="vertical-align:middle;" /></p>
+<p>图示时刻发生的事情可能的是",
+                "test_type": 119
+            },
+            {
+                "doc_id": 6562,
+                "if_choose": 1,
+                "number": 6,
+                "right_answer": "【小题】A
+【小题】B
+",
+                "sub": {
+                    "1": {
+                        "answer_id": "289624-104953-6-1-3",
+                        "if_choose": "3",
+                        "order": "1",
+                        "sub_answer": "",
+                        "sub_options": [
+                            "A.气压差大",
+                            "B.海拔高",
+                            "C.台风影响大",
+                            "D.地面摩擦力大"
+                        ],
+                        "sub_title": "上图所示两区域风力较大的共同原因是"
+                    },
+                    "2": {
+                        "answer_id": "289624-104953-6-2-3",
+                        "if_choose": "3",
+                        "order": "2",
+                        "sub_answer": "",
+                        "sub_options": [
+                            "A.热量",
+                            "B.水分",
+                            "C.地形",
+                            "D.洋流"
+                        ],
+                        "sub_title": "导致两区域陆地自然环境差异较大的主导因素是"
+                    }
+                },
+                "test_id": 104953,
+                "test_title": "<p>下面两幅景观图示意位于我国温带的风力电场。读图回答下题。</p>
+<p><img src="http://182.92.3.219/Uploads/word/2014/0630/53b124675431d161990.files/image002.jpg" style="vertical-align:middle;" /></p>",
+                "test_type": 119
+            },
+            {
+                "doc_id": 48321,
+                "if_choose": 1,
+                "number": 7,
+                "right_answer": "【小题】A
+【小题】A
+",
+                "sub": {
+                    "1": {
+                        "answer_id": "289624-733873-7-1-3",
+                        "if_choose": "3",
+                        "order": "1",
+                        "sub_answer": "",
+                        "sub_options": [
+                            "A.北半球中纬度",
+                            "B.北半球低纬度",
+                            "C.南半球中纬度",
+                            "D.南半球低纬度"
+                        ],
+                        "sub_title": "图示区域大部分位于"
+                    },
+                    "2": {
+                        "answer_id": "289624-733873-7-2-3",
+                        "if_choose": "3",
+                        "order": "2",
+                        "sub_answer": "",
+                        "sub_options": [
+                            "A.a点地势高,自转线速度大",
+                            "B.b点地势低,自转线速度大",
+                            "C.a点地势低,自转线速度大",
+                            "D.b点地势高,自转线速度大"
+                        ],
+                        "sub_title": "图中a、b两点纬度相同,但地球自转的线速度明显不同,原因是"
+                    }
+                },
+                "test_id": 733873,
+                "test_title": "<p>下图是地球表面自转线速度等值线分布图。读图回答试题。</p>
+<p><img src="http://182.92.3.219/Uploads/word/2014/0815/53ed63eba1c88399679.files/image024.jpg" style="vertical-align:middle;" /></p>",
+                "test_type": 119
+            },
+            {
+                "doc_id": 3229,
+                "if_choose": 1,
+                "number": 8,
+                "right_answer": "【小题】A
+【小题】B
+【小题】C
+",
+                "sub": {
+                    "1": {
+                        "answer_id": "289624-42444-8-1-3",
+                        "if_choose": "3",
+                        "order": "1",
+                        "sub_answer": "",
+                        "sub_options": [
+                            "A.合肥",
+                            "B.长沙",
+                            "C.南昌",
+                            "D.武汉"
+                        ],
+                        "sub_title": "以下城市不会出现“清明时节雨纷纷”诗句描述现象的是"
+                    },
+                    "2": {
+                        "answer_id": "289624-42444-8-2-3",
+                        "if_choose": "3",
+                        "order": "2",
+                        "sub_answer": "",
+                        "sub_options": [
+                            "A.纬度",
+                            "B.地形",
+                            "C.海陆位置",
+                            "D.锋面"
+                        ],
+                        "sub_title": "造成图中甲地降雨开始线与降雨终止线密集的因素主要是"
+                    },
+                    "3": {
+                        "answer_id": "289624-42444-8-3-3",
+                        "if_choose": "3",
+                        "order": "3",
+                        "sub_answer": "",
+                        "sub_options": [
+                            "A.地形雨",
+                            "B.台风雨",
+                            "C.锋面雨",
+                            "D.对流雨"
+                        ],
+                        "sub_title": "整体来说,图示区域的降雨多属于"
+                    }
+                },
+                "test_id": 42444,
+                "test_title": "<p>读我国局部地区春雨时间分布示意图,回答问题。</p>
+<p><img src="http://182.92.3.219/Uploads/word/2014/0529/5386d2db06b43456835.files/image002.jpg" style="vertical-align:middle;" /></p>
+<p>注:实线为降雨开始线,虚线为降雨终止线,图中数字代表月份,数字后面的上、中、下分别表示上旬、中旬、下旬。</p>",
+                "test_type": 119
+            },
+            {
+                "answer": "",
+                "answer_id": "289624-6351-9-0-3",
+                "doc_id": 315,
+                "if_choose": 3,
+                "number": 9,
+                "right_answer": "D
+",
+                "test_id": 6351,
+                "test_options": [
+                    "A.甲——流速慢——沉积作用——仓储用地",
+                    "B.乙——流速快——侵蚀作用——住宅用地",
+                    "C.乙——流速慢——沉积作用——交通(港口)用地",
+                    "D.甲——流速快——侵蚀作用——水利设施(防洪堤)用地"
+                ],
+                "test_title": "图1为某河段景观素描图,图2为该河段河曲水流速度等值线分布(①&gt;②)示意图。读图完成试题。</p>
+<p><img src="http://182.92.3.219/Uploads/word/2014/0115/52d5f35d00000.files/image006.jpg" style="vertical-align:middle;" /></p>
+<p>图1</p>
+<p><img src="http://182.92.3.219/Uploads/word/2014/0115/52d5f35d00000.files/image008.jpg" style="vertical-align:middle;" /></p>
+<p>图2</p>
+<p>有关河曲地段水流速度、外力作用和土地利用类型的组合,正确的是",
+                "test_type": 119
+            },
+            {
+                "doc_id": 18120,
+                "if_choose": 1,
+                "number": 10,
+                "right_answer": "【小题】C
+【小题】B
+【小题】C
+",
+                "sub": {
+                    "1": {
+                        "answer_id": "289624-295992-10-1-3",
+                        "if_choose": "3",
+                        "order": "1",
+                        "sub_answer": "",
+                        "sub_options": [
+                            "A.该区域位于北半球",
+                            "B.该季节太阳直射点位于南半球",
+                            "C.同纬度陆地气温低于海洋",
+                            "D.该季节北印度洋上洋流逆时针旋转"
+                        ],
+                        "sub_title": "下列说法正确是"
+                    },
+                    "2": {
+                        "answer_id": "289624-295992-10-2-3",
+                        "if_choose": "3",
+                        "order": "2",
+                        "sub_answer": "",
+                        "sub_options": [
+                            "A.30°N-40°N大陆西岸",
+                            "B.30°S-40°S大陆西岸",
+                            "C.40°N-60°N大陆西岸",
+                            "D.40°S-60°S大陆西岸"
+                        ],
+                        "sub_title": "关于M地气候分布的大体范围是"
+                    },
+                    "3": {
+                        "answer_id": "289624-295992-10-3-3",
+                        "if_choose": "3",
+                        "order": "3",
+                        "sub_answer": "",
+                        "sub_options": [
+                            "A.地形",
+                            "B.洋流",
+                            "C.热量",
+                            "D.水分"
+                        ],
+                        "sub_title": "影响M、N两地自然带更替的主要因素是"
+                    }
+                },
+                "test_id": 295992,
+                "test_title": "<p>图为世界某半球某区域等温线分布图，读图回答下题：</p>
+<p><img src="http://182.92.3.219/Uploads/word/2015/0321/550cd3a28142b927737.files/image001.png" style="vertical-align:middle;" /></p>",
+                "test_type": 119
+            }
+        ],
+        "time": "0",
+        "type": [
+            {
+                "TypesAmount": 8,
+                "TypesID": 119,
+                "TypesName": "单选题"
+            }
+        ]
+    },
+    "info": "success",
+    "status": 1
+}

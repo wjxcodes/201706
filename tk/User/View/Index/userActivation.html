@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/register.css" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js"></script>
+</head>
+<body class="bg-white">
+    <!--首页头部-->
+    {#include file="Index@Common/secondTop" /#}
+    <!--首页头部-end-->
+    <div class="form-wrap bg-f8f8f8">
+        <div class="form-container w1000">
+            <!-- 注册反馈信息 -->
+            <div class="feedback-msg-container">
+                <div class="fb-msg-title">
+                    {#eq name="status" value="0"#}
+                    <i class="iconfont" style="color:#FF0000;">&#xe634;</i>
+                    <span class="msg" style="color:#FF0000;">{#$info#}</span>
+                    {#else/#}
+                    <i class="iconfont">&#xe631;</i>
+                    <span class="msg">{#$info#}</span>
+                    {#/eq#}
+                </div>
+                <div class="fb-msg-content">
+                    <div class="fb-msg-btn">
+                        <a href="{#:U('Index/Index/index')#}" class="nor-btn">进入首页</a>
+                        <!--<a href="" class="nor-btn">进入个人中心</a>-->
+                    </div>
+                </div>
+            </div>
+            <!-- 注册反馈信息 -->
+        </div>
+    </div>
+    <!--footer-->
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/index/js/pingtai.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/common.js"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+    <![endif]-->
+    {#include file="Index@Common/secondFooter" /#}
+    <!--footer-end-->
+    

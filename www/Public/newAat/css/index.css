@@ -1,0 +1,229 @@
+@charset "utf-8";
+html{height:100%;min-height:100%;min-width:1000px;overflow:auto;}
+#wrapper{background:#8ea2af url(../images/bj_big.jpg) no-repeat top center;}
+.top_nav{ width:100%;height:33px}
+#head{margin-bottom:50px;padding-top:50px;}
+.head_01{ height:34px; position:absolute; right:0; top:25px; right:25px}
+.head_02{width:375px; position:relative}
+.head_02 .bb_box a{ display:block; position:absolute; width:110px; background:#00e275; text-align:center; color:#FFF; font-size:18px; height:32px; line-height:32px;-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;filter:alpha(opacity=90);-moz-opacity:0.9; opacity:0.9; right:-120px; bottom:3px; text-decoration:none}
+.head_02 .bb_box .verBtn:hover{opacity:1;filter:alpha(opacity=100);}
+.head_03{ width:975px; text-align:center; padding-top:15px; height:28px; }
+.logo_img{ display:block;width:208px; height:208px;margin:0 auto; margin-bottom:25px; background:url(../images/logopn.png) no-repeat}
+a.logo_img:hover{ background:url(../images/logopn_on.png) no-repeat}
+.userid{margin-top:0}
+
+/*导航训练*/
+#index_nav{height:175px}
+#index_nav a{width:240px;margin-right:5px;height:175px;display:block;filter:alpha(opacity=60);text-decoration:none;color:#000;}
+#index_nav .index_nav01{background-color:rgba(250,101,103,0.6);background-color:#fff}
+#index_nav .index_nav02{background-color:rgba(127,161,42,0.6);background-color:#fff}
+#index_nav .index_nav03{background-color:rgba(252,201,84,0.6);background-color:#fff}
+#index_nav .index_nav04{background-color:rgba(20,158,237,0.6);background-color:#fff}
+.nav_a .nav_ico{width:83px;height:80px; display:block; margin:0 auto; margin-top:30px; position:relative}
+.nav_a .nav_bt{ font-size:20px; color:#000;font-family:"微软雅黑"; display:block;position:relative; padding-top:15px; text-align:center}
+
+#index_sub{height:140px; width:700px; margin:0 auto; margin-bottom:10px}
+#index_sub a{ width:130px; height:110px; display:block; text-decoration:none; background:url(../images/line_img.png) no-repeat 130px -0px; border:#FF9 solid 0; padding-right:10px; padding-top:28px}
+#index_sub a .nav_ico{ background: url(../images/pd-ico.png) no-repeat; display:block;  width:61px; margin:0 auto; height:55px; margin-bottom:12px}
+#index_sub a .nav_bt{ font-size:14px; color:#fff; font-family:"微软雅黑";letter-spacing:0}
+#index_sub .index_sub01 .nav_ico{ background-position: 3px -130px}
+#index_sub a.index_sub01:hover .nav_ico{ background-position:3px -200px}
+#index_sub .index_sub02 .nav_ico{ background-position: -77px -130px}
+#index_sub a.index_sub02:hover .nav_ico{ background-position:-77px -200px}
+#index_sub .index_sub03 .nav_ico{ background-position: -152px -127px}
+#index_sub a.index_sub03:hover .nav_ico{ background-position:-152px -197px}
+#index_sub .index_sub04 .nav_ico{ background-position: -233px -128px}
+#index_sub a.index_sub04:hover .nav_ico{ background-position:-233px -198px}
+#index_sub .index_sub05 .nav_ico{ background-position: -318px -128px}
+#index_sub a.index_sub05:hover .nav_ico{ background-position:-318px -198px}
+#index_sub .index_sub05{ background:none}
+
+/*------header------*/
+
+/*app*/
+.phoneapp{ height:34px; color:#fff; width:72px; height:36px; background:url(../images/pd-ico.png) no-repeat -398px 0; padding-left:32px}
+.phoneapp a{ color:#eee; font-family:"微软雅黑"; font-size:14px; line-height:34px; text-decoration:none}
+.phoneapp a:hover{ color:#fff}
+/*用户中心菜单*/
+.dlxx{ position:relative}
+.dlxx01{ color:#FFF; height:34px; line-height:34px}
+.userid{ cursor:pointer}
+.dlxx01 .ico_jt01{ width:10px; height:10px; background:url(../images/pd-ico.png) no-repeat -198px -130px; margin-top:12px}
+.dlxx01 .ico_jt02{ width:10px; height:10px; background:url(../images/pd-ico.png) no-repeat -169px -129px; margin-top:12px}
+#dlxx_box{ position:absolute; width:222px; height:179px; background:url(../images/pd-ico.png) no-repeat 0 -316px; top:34px; left:0; z-index:999; padding-top:20px}
+#dlxx_box li{  height:42px; line-height:42px; font-size:14px}
+#dlxx_box .li01 a{color:#fff; text-decoration:none; display:block; width:222px; height:42px}
+#dlxx_box .li02 a,#dlxx_box .li03 a,#dlxx_box .li04 a{ color:#fff; text-decoration:none; display:block; width:222px; height:42px;background:url(../images/pd-ico.png) no-repeat  0 -615px}
+#dlxx_box .dlxx_ico{ float:left; width:20px; height:20px; background:url(../images/pd-ico.png) no-repeat;margin-left:25px;  margin-top:11px; margin-right:15px}
+#dlxx_box .ico_01{ background-position: -30px -122px}
+#dlxx_box .ico_02{ background-position: -65px -123px}
+#dlxx_box .ico_03{ background-position: -97px -121px}
+#dlxx_box .ico_04{ background-position: -132px -121px}
+#dlxx_box li a:hover{background:url(../images/pd-ico.png) no-repeat  0 -562px}
+/*------header------end*/
+
+/*------弹出框------ end*/
+/*新用户信息完善弹出块 14-05-07 hyq*/
+.xxws{ width:328px}
+.xxws .top_cen { width:312px; text-align:center;font-size:22px; }
+.xxws .bot_cen{ width:312px}
+.Option{border:1px solid #c5c8cd;background-color: #ebebeb; width:265px; padding:0; overflow:hidden; padding:15px 0 15px 10px}
+.Option li{ float:left; padding:5px 3px; margin-right:10px; font-size:14px; color:#555}
+.Option .this { background:#00a0e9; color:#fff}
+.Option .on { background:#dcdcdc; color:#000}
+.Option02{ padding-top:0; height:100px; overflow-y:scroll}
+.Option02 li{ float:none}
+/*完善信息*/
+#wanshan{ width:277px; margin:0 auto; padding-top:20px; }
+#wanshan .inputs input{text-indent: 10px;}
+#wanshan .wbk01{ width:275px}
+#wanshan #submit01,#wanshan #submit02{ width:277px}
+#wanshan .nicknameB{width:80px;height:42px;float:right;background-color:#029fe8;color:#ffffff;cursor:pointer;border:0;padding:0 10px 0 0;margin-left: 10px;}
+#wanshan .nicknameC{width:130px;height:42px;float:right;background-color:#029fe8;color:#ffffff;cursor:pointer;border:0;padding:0 10px 0 0;margin-left: 10px;}
+/*新用户信息完善弹出块 end*/
+
+/*自适应训练弹出块 14-05-07 hyq*/
+.znlx .tsxx{ text-align:center; padding:80px 10px}
+.znlx .tsxx p{ font-size:22px; line-height:38px; color:#555}
+.znlx .an03{ margin:0 auto}
+.znlx .an03 a{ letter-spacing:2px; color:#fff; text-decoration:none}
+.znlx .bd{ padding-top:10px;width:115px; margin:0 auto; padding-bottom:10px}
+/*自适应训练弹出块 end*/
+
+/*进阶测试弹出块 14-05-09 hyq*/
+.jjts .zj{ padding-bottom:10px}
+.jjts .ejcd{ text-align:center; padding:90px 0 80px 0}
+.jjts .ejcd a{ width:255px; height:70px; margin:0 20px; display:inline-block; background:#00a0e9;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px; font-size:24px; color:#fff; text-decoration:none; font-family:"微软雅黑"; line-height:70px; text-align:center}
+.jjts .ejcd a:hover,.jjts .ejcd a:focus{background-color:#009ae0}
+.jjts .title_bz{ width:690px; margin:0 auto}
+.jjts .list_zsd{ width:670px; margin:0 auto;height:270px;overflow-y:auto;padding-right:10px}
+.yxzsd{ width:690px; margin:0 auto}
+.yxzsd .title{ font-size:14px; padding-top:10px; padding-bottom:12px}
+.yxzsd .title span{ color:#009ae0}
+.yxzsd_box{ overflow:auto; display:block; _zoom:1}
+.yxzsd_box span{ font-size:12px;border:#bce8f1 solid 1px; color:#3a87ad; float:left; margin:0 8px 10px 0; white-space:nowrap; padding:4px 8px 4px 7px; background:#d9edf7 ;text-decoration:none; cursor:pointer}
+.yxzsd_box span a{ display:inline-block; width:9px; height:9px; background:url(../images/ico_gb01.jpg); margin-left:6px}
+.yxzsd_box span a:hover{ display:inline-block; width:9px; height:9px; background:url(../images/ico_gb02.jpg)}
+
+/*整卷练习弹出块*/
+.testPaperC .tabPanel{padding: 10px 15px 0 15px;overflow-x: hidden}
+.testPaperC .title_bz{padding-top: 0}
+.testPaperC .list_zsd{height:270px;margin:0 auto;overflow-y:auto;padding-right: 15px}
+.testPaperC .checkbox{margin-right: 10px}
+.testPaperC .zsd_bt{width: 90%}
+.testPaperC .errorMsg{color: #b40504;text-align: center;display: none}
+.testPaperC .szxt_box{height:270px;margin:0 auto;overflow-y:auto;padding-right: 15px}
+.testPaperC .szxt_box li{ display:block; _zoom:1; height:19px; padding:7px 0}
+.testPaperC .ico_time{ background:url(../images/pd-ico.png) no-repeat 0 -121px; margin-right:8px; width:19px; height:19px; float:left}
+.testPaperC .submitMsg{position: relative; width: 60%;margin: 150px auto 0}
+.testPaperC .diff{height:270px; margin: 0 auto}
+.testPaperC .list_stlb01{ width:770px}
+.testPaperC .ss_box{ height:41px; }
+.testPaperC .ss_box select{width:80px;height: 31px;line-height: 29px; margin-right: 8px;padding: 5px 5px}
+.testPaperC .ss_box .sswbk{ height:29px; margin-right:8px; line-height:29px;width: 150px;padding-left: 5px}
+/*整卷练习弹出块 end*/
+
+/*目标测试习弹出块 14-05-07 hyq*/
+.mbcs .zj{ padding-bottom:10px}
+.mbcs .tsxx{ text-align:center; padding:80px 10px 60px 10px}
+.mbcs .tsxx p{ font-size:22px; line-height:38px; color:#555}
+.mbcs .an03{ margin:0 auto}
+.mbcs .an03 a{ letter-spacing:2px; color:#fff; text-decoration:none}
+.mbcs .bd{ padding-top:10px;width:115px; margin:0 auto; padding-bottom:10px}
+.mbcs .hkbox_nav{ width:130px}
+.mbcs .title_bz{ width:690px; margin:0 auto}
+.mbcs .list_zsd{ width:670px; margin:0 auto}
+.mbcs .list_stlb01{ width:690px}
+.mbcs .tjmu_box{ height:23px; width:700px; background:#ebebeb; display:block; margin:0 auto; font-size:13px; color:#888; text-align:center; line-height:23px; text-decoration:none; cursor:pointer}
+.mbcs .tjmu_box span{ font-size:16px; height:10px; width:10px; display:inline-block; background:url(../images/ico_tj.png) no-repeat; margin-right:2px }
+.mbcs .tjmu_box:hover{ background:#e8e8e8}
+/*目标测试弹出块 end*/
+
+/*专项测试*/
+.specialC{padding: 5px 0 5px 15px;overflow-x: hidden}
+.specialC .errorMsg{color: #b40504;text-align: center;display: none}
+.specialC .submitMsg{position: relative; display: none; width: 50%;margin: 5px auto 0}
+.specialC .list_zsd{height:350px;margin:0 auto;overflow-y:auto;padding-right: 15px}
+.specialC .zsd_bt{width: 450px}
+.specialC .lidj02 .zsd_bt{width: 435px}
+.specialC .lidj03 .zsd_bt{width: 410px}
+/*------弹出框------ end*/
+/*滑动条*/
+.hk{padding-left: 130px;height:100px}
+.hkbg{width:344px; position:relative; height:45px;  float:left; margin-top:50px}
+.hkline{width:180px; position: absolute; height:11px;  z-index:88}
+.hkblock{position: absolute; width:10px; height:17px; top:-4px;z-index:99; left:175px}
+.hkbox_nav{width:100px; height:36px; float:left; font-weight:bold; font-size:14px; color:#555; margin-top:47px}
+.hkbox{ width:62px; height:30px; background:url(../images/hkbox.jpg) no-repeat; text-align:center; line-height:25px; font-size:13px;position:absolute; top:-35px;left:140px; z-index:55; color:#888}
+.hk_sz{ position:absolute; left:0; top:-20px; font-size:13px; width:344px; color:#555}
+.hk_sz p{overflow:hidden;height:25px;margin-top:35px}
+
+/*footer*/
+.foot {border-top:none}
+.foot div, .foot div a { color: #fff}
+
+
+/*------浏览器版本检测------*/
+#explorer{margin:0;background:#ffc;padding:5px 5px 3px 20px;color:#f00;font-weight:bold;text-align:center}
+#explorer a{display:inline-block;width:46px;height:46px;margin-top:5px;margin-right:20px;border:1px solid #ffc}
+#explorer a:hover{ border:1px solid #fc6}
+#explorer #ie{background:url(../images/ico.png) 0 0}
+#explorer #firefox{background:url(../images/ico.png) -70px 0}
+#explorer #chrome{background:url(../images/ico.png) -145px 0}
+#explorer #sogou{background:url(../images/ico.png) -220px 0}
+/*------浏览器版本检测------ end*/
+
+/*------内容块------*/
+/*login*/
+.box01{width:328px;margin:0 auto}
+.box01 .top{background:url(../images/box01_top.png) no-repeat top center;font-size:22px;font-family:"微软雅黑";color:#666;text-align:center;height:20px;padding-top:14px}
+.box01 .zj{background:url(../images/box01_re.png) repeat-y;padding-bottom:25px}
+/*reg*/
+.box02{margin:0 auto}
+.box02 .top{height:53px;border-bottom:#b7b7b7 solid 1px}
+.box02 .top .top_left{width:8px;height:53px;background:url(../images/box02_top_left.png) no-repeat}
+.box02 .top .top_right{width:8px;height:53px;background:url(../images/box02_top_right.png) no-repeat}
+.box02 .top .top_cen{height:53px;background:#fafafa;line-height:53px;color:#666666}
+.box02 .zj{background:#fafafa;padding-bottom:20px}
+.box02 .bot{height:9px;overflow:hidden}
+.box02 .bot .bot_left{width:8px;height:9px;background:url(../images/box02_bot_left.png) no-repeat}
+.box02 .bot .bot_right{width:8px;height:9px;background:url(../images/box02_bot_right.png) no-repeat}
+.box02 .bot .bot_cen{height:9px;background:#fafafa}
+
+/*------内容块------ end*/
+/*表单信息*/
+
+/*登陆前*/
+#dlzc{ width:150px;overflow:hidden;margin:0 auto}
+#dlzc a.dlzc_an{ width:65px; height:65px; line-height:65px; text-align:center; background:url(../images/pd-ico.png) no-repeat 0 -168px; font-size:15px; color:#283a43; text-decoration:none}
+#dlzc a.dlzc_an:hover,#dlzc a.this{ background:url(../images/pd-ico.png) no-repeat -83px -168px; color:#d8dcde}
+
+/*登录*/
+#login{width:267px; z-index: 0; margin:0 auto}
+.login_box{position:relative; padding-bottom:30px}
+.wjmm{ margin-top:2px}
+.wjmm a{ font-size:14px; color:#fff; }
+#login label,.serviceTerm{ color:#fff}
+#login .inputs input{background: #fff url(../images/login-sprite.png) no-repeat; font-size:14px; border:none;text-indent:10px;*text-indent:0}
+#login .inputs input:focus{background-color: #fff;border-color: #e8c291;outline: none;-moz-box-shadow: 0 0 0 1px #e8c291 inset;-webkit-box-shadow: 0 0 0 1px #e8c291 inset;box-shadow: 0 0 0 1px #e8c291 inset}
+.login_username{background-position: 5px -5px !important}
+.login_password{background-position: 5px -54px !important}
+.ico_this{ position:absolute; width:22px; height:11px; background:url(../images/pd-ico.png) no-repeat -184px -75px}
+.login_box .ico_this{ left:110px; bottom:19px}
+
+/*注册*/
+#zhuce{width:267px; z-index: 0; margin:0 auto}
+.zhuce_box{position:relative; padding-bottom:14px}
+#zhuce .inputs input{background:#fff;font-size:14px;border:none;text-indent:10px;*text-indent:0}
+.zhuce_box .an03 a{ letter-spacing:2px}
+.zhuce_box .ico_this{ left:195px; bottom:19px}
+.serviceTerm{ color:#00A0E9}
+.serviceTerm:hover{text-decoration: underline;color:#00A0E9}
+
+/*找回密码*/
+.get_password_box,.set_password_box{position: relative;padding-bottom: 25px}
+.get_password_box form,.set_password_box form{width: 267px;z-index: 0;margin: 0 auto}
+.get_password_box form input,.set_password_box form input{font-size:14px; border:none;text-indent: 10px;background-color: #ffffff}
+.get_password_box .s_verify,.set_password_box .s_verify{width: 50%}
+.get_password_box .verify_image,.set_password_box .verify_image{margin-bottom: 10px;height: 40px;width: 90px;vertical-align: middle;border: none;cursor: pointer}
+.set_password_box .s_username{cursor: pointer}

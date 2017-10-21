@@ -1,0 +1,111 @@
+{#include file="Public/header" /#}
+<script language="javascript">
+    $(document).ready(function () {
+        $('.save').click(function(){
+            var url = $(this).attr('url');
+            var goUrl = $(this).attr('goUrl');
+            var id = $('#id').val();//ID
+            var name = $('#name').val();//错误处理名称
+            var sPreg = $('#sPreg').val();//搜索正则
+            var rPreg = $('#rPreg').val();//替换正则
+            var refusePreg = $('#refusePreg').val();//排除正则
+            var no = $('#no').val();
+            if(!name||!sPreg||!rPreg||!no){
+                alert('请填写完整数据！');
+                return false;
+            }
+            if(!/^[1-9]\d*$/.test(no)){
+                alert('开始试题编号请填写数字！');
+                return false;
+            }
+            $.post(url,{id:id,name:name,sPreg:sPreg,refusePreg:refusePreg,rPreg:rPreg,no:no},function(e){
+                //权限验证
+                if(checkPower(e)=='error'){
+                    return false;
+                }
+                if(e.status == 1){
+                    location.href = goUrl;
+                }else{
+                    alert(e.data);
+                }
+            });
+        });
+        $('.reset').click(function(){
+            var name = $('#name').val('');
+            var sPreg = $('#sPreg').val('');
+            var rPreg = $('#rPreg').val('');
+            var no = $('#no').val('');
+        });
+    });
+</script>
+<!-- 主页面开始 -->
+<div id="main" class="main">
+    <!-- 主体内容  -->
+    <div class="content">
+        <!--  功能操作区域  -->
+        <div class="title">{#$pageName#} [ <A HREF="{#:U('ProcError/pregList')#}">返回正则列表</A> ]</div>
+        <!-- 功能操作区域结束 -->
+        <!-- 内容显示区域  -->
+        <TABLE class="list">
+            <tr>
+                <td height="5" colspan="2" class="topTd"></td>
+            </tr>
+            <TR>
+                <TD class="tRight">正则名称：</TD>
+                <TD class="tLeft">
+                    <input type="text" class="large" id="name" value="{#$preg[PregName]#}"/>
+                    <input type="hidden" id="id" value="{#$preg[PregID]#}"/>
+                    * 例如：数学-处理选项中i标签问题
+                </TD>
+            </TR>
+            <TR>
+                <TD class="tRight">搜索表达式：</TD>
+                <TD class="tLeft">
+                    <textarea class="large" id="sPreg">{#$preg[SearchPreg]#}</textarea>
+                    * <span style="color: red;">注意：前后要写/</span> 例如：/([A-D])[\s　]*(<i[^>]*>)[\s　]*\./i
+                </TD>
+            </TR>
+            <TR>
+                <TD class="tRight">替换表达式：</TD>
+                <TD class="tLeft">
+                    <textarea class="large" id="rPreg">{#$preg[ReplacePreg]#}</textarea>
+                    * 例如：$1.$2
+                </TD>
+            </TR>
+            <TR>
+                <TD class="tRight">排除正则：</TD>
+                <TD class="tLeft">
+                    <textarea class="large" id="refusePreg">{#$preg[RefusePreg]#}</textarea>
+                    <span style="color: red;">注意：前后要写/</span> 例如：/&lt;i&gt;/ 为空则不应用排除规则
+                </TD>
+            </TR>
+            <TR>
+                <TD class="tRight" width="100">开始试题序号：</TD>
+                <TD class="tLeft">
+                    <input type="text" class="large" id="no" value="{#$preg[StartNo]#}" />
+                    * 例如：1231
+                </TD>
+            </TR>
+            <TR>
+                <TD></TD>
+                <TD class="center">
+                    <div style="width:85%;margin:5px">
+                        <div class="impBtn fLeft">
+                            <input url="{#:U('ProcError/editPreg')#}" goUrl="{#:U('ProcError/pregList')#}" type="button" value="保存" class="save imgButton mysubmit" />
+                        </div>
+                        <div class="impBtn fLeft m-l10"><INPUT TYPE="reset" class="reset imgButton" value="清空">
+                        </div>
+                    </div>
+                </TD>
+            </TR>
+            <tr>
+                <td height="5" colspan="2" class="bottomTd"></td>
+            </tr>
+        </TABLE>
+        <!-- 列表显示区域结束 -->
+    </div>
+    <!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Public/ends" /#}

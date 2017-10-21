@@ -1,0 +1,163 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+<!-- 主页面开始 -->
+<style>
+.addstu_list2_l1 {
+    float: left;
+    width: 200px;
+}
+.addstu_list2_l2 {
+    float: left;
+    margin-left: 20px;
+    width: 200px;
+}
+.addstu_list2_l2 ul {
+    background-color: #ededed;
+    border: 1px solid #aaa;
+    height: 120px;
+    list-style-type: none;
+    margin: 0;
+    padding: 3px 10px;
+    width: 180px;
+}
+.addstu_list2_l2 ul li {
+    color: #999;
+    display: block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+}
+.error_list2_l2 ul li {
+    color: red;
+    display: block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;  
+}
+.error_list2_l2 {
+    float: left;
+    margin-left: 20px;
+    width: 200px;
+}
+#successResult li {
+    color: green;
+    display: block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+}
+.addstu_textarea {
+    border: 1px solid #aaa;
+    font-size: 14px;
+    height: 120px;
+    line-height: 20px;
+    padding: 3px 10px;
+    width: 180px;
+}
+</style>
+<div id="main" class="main">
+    <!-- 主体内容  -->
+    <div class="content">
+        <!--  功能操作区域  -->
+        <div class="title">{#$pageName#} [ <a href="__URL__">返回列表</a> ]</div>
+        <!-- 功能操作区域结束 -->
+        <div id="result" class="result none"></div>
+        <!-- 内容显示区域  -->
+        <form method="POST" action="" id="form1" enctype="multipart/form-data">
+
+            <table cellpadding="5" cellspacing="0" class="list" border="1">
+                <tr>
+                    <td height="5" colspan="2" class="topTd"></td>
+                </tr>
+                <tr>
+                    <td class="tright" width="100">分组名：</td>
+                    <td class="tLeft">
+                       {#$groupMsg.GroupName#}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tright tTop">描述：</td>
+                    <td class="tLeft">
+                        <div class="addstu_list2_l1">
+                            <div>请输入用户名，每行一个</div>
+                            <textarea class="addstu_textarea" id='UserName' name='UserName'></textarea>
+                        </div>
+                        <div class="addstu_list2_l2">
+                            <div>参考范例</div>
+                            <ul>
+                                <li>jiaokeyuan07@Manage.com </li>
+                                <li>2687704@qq.com</li>
+                                <li>13931033893</li>
+                                <li>kyw23@163.com</li>
+                                <li>9117174@qq.com</li>
+                                <li>15231195317</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr id='returnMsg' style='display:none;'>
+                    <td class="tright tTop">加入结果：</td>
+                    <td class="tLeft">
+                        <div class="addstu_list2_l1">
+                            <div>加入成功：</div>
+                            <ul id='successResult'>
+                            </ul>
+                        </div>
+                        <div class="error_list2_l2">
+                            <div>加入失败：</div>
+                            <ul id='errorResult'>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="center">
+                        <div style="width:85%;margin:5px">
+                            <input type='hidden' name='GroupID' id='GroupID' value='{#$groupMsg.GroupID#}'>
+                            <div class="impBtn fLeft"><input TYPE="button" value="保存" class=" imgButton ajaxSub"></div>
+                            <div class="impBtn fLeft m-l10"><input TYPE="reset" class="reset imgButton" value="清空">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="5" colspan="2" class="bottomTd"></td>
+                </tr>
+            </table>
+        </form>
+        <!-- 列表显示区域结束 -->
+    </div>
+    <!-- 主体内容结束 -->
+</div>
+<script>
+   $('.ajaxSub').live('click',function(){
+    var nameText=$('#UserName').val();
+    var GroupID=$('#GroupID').val();
+    var i=0,j=0;
+    var errorMsg='';
+    var successMsg='';
+    $.post(
+       U('User/UserCustomGroup/updateUserCustomGroup'),
+       {'UserName':nameText,'GroupID':GroupID},
+       function(msg){
+            //权限验证
+            if(checkPower(msg)=='error'){
+                return false;
+            }
+            var data=msg['data'];
+            $('#returnMsg').show();
+            for(i in data['errorName']){
+                errorMsg+='<li>'+data['errorName'][i]+'</li>'
+            }
+            for(j in data['successName']){
+                successMsg+='<li>'+data['successName'][j]+'</li>'
+            }
+            $('#successResult').html(successMsg);
+            $('#errorResult').html(errorMsg);
+       })
+   })
+</script>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

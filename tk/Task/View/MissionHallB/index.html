@@ -1,0 +1,171 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+    <!-- 主体内容  -->
+    <div class="content" >
+    <div class="title">{#$pageName#}</div>
+        <!--  功能操作区域  -->
+        <div class="operate">
+            {#html:imageBtn name="add" value="新增" class="btadd" style="impBtn hMargin fLeft shadow" /#}
+            {#html:imageBtn name="edit" value="编辑" class="btedit" style="impBtn hMargin fLeft shadow" /#}
+            {#html:imageBtn name="delete" value="删除" class="btdelete" style="impBtn hMargin fLeft shadow" /#}
+            {#html:imageBtn name="revert" value="刷新" class="btflush" style="impBtn hMargin fLeft shadow" /#}
+            <FORM id="form1" METHOD="POST" ACTION="__URL__">
+                <input type="hidden" id="formOrder" name="order" value="{#$order#}">
+                <div class="fRig" >
+                    <div class="fLeft"><span id="key"><INPUT id="name" TYPE="text" NAME="Title1" value="{#$Think.request.Title1#}" title="用户组权限名查询" class="medium" ></span></div>
+                    {#html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /#}
+                    {#html:imageBtn name="adv" value="高级" id="showText" style="impBtn hMargin fLeft shadow" /#}
+                </div>
+                <!-- 高级查询区域 -->
+                <div id="searchM" class=" none search cBoth" {#if condition="$block"#}style="display:block;"{#/if#}>
+                    <TABLE border="0" cellpadding="1" cellspacing="3" width="100%">
+                        <TR>
+                            <TD class="tRight" width="80">任务标题：</TD>
+                            <TD ><INPUT id="name" TYPE="text" NAME="Title2" value="{#$Think.request.Title2#}" title="用户组权限名查询" size="50" class="medium" ></TD>
+                            <!-- <TD class="tRight" width="80">任务描述：</TD>
+                            <TD >
+                            <textarea name="Description" rows="4" cols="50" >{#$Think.request.Description#}</textarea> -->
+                            <TD class="tRight" width="80">任务类型：</TD>
+                            <TD >
+                                <select name="Type">
+                                    <option value="">不限</option>
+                                    {#foreach name="level" item="tasktype" key="key"#}
+                                    <option value="{#$key#}" {#if condition="$Think.request.Type == $key"#}selected="selected" {#/if#}>{#$tasktype#}</option>
+                                    {#/foreach#}
+                                </select>
+                            </TD>
+                            <TD class="tRight" width="80">任务学科：</TD>
+                            <TD >
+                                <select name="Subject">
+                                    <option value="">不限</option>
+                                    {#foreach name="subject" item="sj" key="key"#}
+                                        <option value="{#$key#}" 
+                                        {#if condition="$Think.request.Subject == $key"#}
+                                            selected="selected" 
+                                        {#/if#}>
+                                            {#$sj#}
+                                        </option>
+                                    {#/foreach#}
+                                </select>
+                            </TD>
+                            <!-- <TD class="tRight" width="80">任务进度：</TD>
+                            <TD ><INPUT TYPE="text" NAME="progress" class="small" value="{#$Think.request.progress#}"></TD> -->
+                            <TD class="tRight" width="80">结束时间：</TD>
+                            <TD >
+                                <select name="end">
+                                    <option value="">不限</option>
+                                    <option value="1" {#if condition="$Think.request.end == 1"#}selected="selected" {#/if#}>即将开始</option>
+                                    <option value="2" {#if condition="$Think.request.end == 2"#}selected="selected" {#/if#}>一周内结束</option>
+                                    <option value="3" {#if condition="$Think.request.end == 3"#}selected="selected" {#/if#}>一月内结束</option>
+                                    <option value="4" {#if condition="$Think.request.end == 4"#}selected="selected" {#/if#}>一月以后结束</option>
+                                </select>
+                            </TD>
+                            <TD class="tRight" width="80">奖励类型：</TD>
+                            <TD ><select name="rewardType">
+                                <option value="">不限</option>
+                                <option value="1" {#if condition="$Think.request.rewardType == 1"#}selected="selected" {#/if#}>积分</option>
+                                <option value="2" {#if condition="$Think.request.rewardType == 2"#}selected="selected" {#/if#}>现金</option>
+                                </select>
+                            </TD>
+                        </TR>
+                        <TR>
+                        <TD class="tRight tTop">章节版本：
+                        </TD>
+                        <TD class="ChapterID" colspan="10">
+                        {#php#}
+                            foreach($chapter as $cp){
+                                echo '<input type="checkbox" name="ChapterID[]" id="c'.$cp['ChapterID'].'" value="'.$cp['ChapterID'].'"';
+                                if(in_array($cp['ChapterID'],$chapterWhere)) {
+                                    echo 'checked="checked"';
+                                }
+                                echo '><label for="c'.$cp['ChapterID'].'">'.$cp['ChapterName'].'</label>';
+                            }
+                        {#/php#}
+                        </TD>
+                        </TR>
+                    </TABLE>
+                </div>
+            </FORM>
+        </div>
+        <!-- 功能操作区域结束 -->
+
+        <!-- 列表显示区域  -->
+        <div class="list" >
+            <div id="result" class="result none"></div>
+            <!-- Think 系统列表组件开始 -->
+            <table id="checkList" class="list" cellpadding="5" cellspacing="0" border="1">
+                <tr><td height="5" colspan="15" class="topTd" ></td></tr>
+                <tr class="row" >
+                    <th><input type="checkbox" id="CheckAll" tag="checkList"></th>
+                    <th>任务编号</th>
+                    <th>任务名称</th>
+                    <th>任务类型</th>
+                    <th>参与限制</th>
+                    <th>任务地址</th>
+                    <th>奖励类型</th>
+                    <th>奖励数量</th>
+                    <th width="40px">学科</th>
+                    <th>章节版本</th>
+                    <th>参与人数</th>
+                    <th>任务等级</th>
+                    <th>发布人(最后一次修改)</th>
+                    <th onclick="javascript:$('#formOrder').val({#$order#}-1);$('#form1').submit();" style="cursor:pointer" title="点击排序">有效期（结束时间）</th>
+                    <th width='60'>操作</th>
+                </tr>
+                {#foreach name="mhtasks" item="task"#}
+                <tr class="row lists" jl=''>
+                    <td><input type="checkbox" class="key" value="{#$task.MHTID#}"></td>
+                    <td><a href="#" class="btedit" thisid="{#$task.MHTID#}">{#$task.MHTID#}</a></td>
+                    <td>{#$task.Title#}&nbsp;&nbsp;{#$task.Hot#}</td>
+                    <td>{#$task.Type#}</td>
+                    <td>{#$task.Limit#}</td>
+                    <td>{#$task.Url#}</td>
+                    <td>{#$task.RewardType#}</td>
+                    <td>{#$task.Reward#}</td>
+                    <td>{#$task.SubjectName#}</td>
+                    <td>{#$task.ChapterName#}</td>
+                    <td>{#$task.Num#}</td>
+                    <td>{#$level[$task['Level']]|default='未添加'#}</td>
+                    <td>{#$task.RealName#}({#$task.AdminName#})</td>
+                    <td>{#$task.EndTime#}</td>
+                    <td>
+                        <a href="{#:U('Task/MissionHallB/info',array('id'=>$task['MHTID']))#}">详情</a><br/>
+                        <a href="{#:U('Task/MissionHallB/recordList',array('id'=>$task['MHTID']))#}">领取记录</a><br/>
+                        <a href="#" class="btedit" thisid="{#$task.MHTID#}">编辑</a><br/>
+                        <a href="#" class="btdelete" thisid="{#$task.MHTID#}">删除</a>
+                    </td>
+                </tr>
+                {#/foreach#}
+                <tr><td height="5" colspan="15" class="bottomTd"></td></tr>
+            </table>
+            <!-- Think 系统列表组件结束 -->
+        </div>
+        <!--  分页显示区域 -->
+        <div class="page">{#$page#}</div>
+        <!-- 列表显示区域结束 -->
+    </div>
+    <!-- 主体内容结束 -->
+</div>
+<script>
+//学科选择版本
+$('select[name=Subject]').live('change',function(){
+    var Obj = {};
+    Obj['SubjectID'] = $(this).val();
+    $.post(U('Task/MissionHallB/getChapterBySubjectID'),Obj,function(data){
+        var optStr = '' ;
+        $.each(data.data,function(i,value){
+            optStr += '<input type="checkbox" name="ChapterID[]" id="c'+value.ChapterID+'" value="'+
+                    value.ChapterID+'"><label for="c'+value.ChapterID+'">'+value.ChapterName+'</label>';
+        });
+        $('.ChapterID').html(optStr);
+    },'json');
+});
+{#if condition="$Think.request.Subject"#}
+$('select[name=Subject]').val({#$Think.request.Subject#});
+{#/if#}
+</script>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

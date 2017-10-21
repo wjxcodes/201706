@@ -1,0 +1,73 @@
+{#include file="Public/header" /#}
+<script language="javascript">
+    $(document).ready(function () {
+        $('.add').click(function(){
+            location.href=$(this).attr('url');
+        });
+        $('.delete').click(function(){
+            var self = $(this);
+            var id = self.attr('data');
+            var url = self.attr('url');
+            $.post(url,{id:id},function(e){
+                //权限验证
+                if (checkPower(e) == 'error') {
+                    return false;
+                }
+                self.parent().parent().remove();
+                alert(e.data);
+            });
+        });
+    });
+</script>
+<!-- 主页面开始 -->
+<div id="main" class="main">
+    <!-- 主体内容  -->
+    <div class="content">
+        <!--  功能操作区域  -->
+        <div class="title">{#$pageName#} [ <A HREF="{#:U('ProcError/index')#}">返回错误处理</A> ]</div>
+        <div class="operate">
+            <!-- 查询区域 -->
+            <div class="impBtn hMargin fLeft shadow">
+                <input type="button" class="add imgButton" value="新增" url="{#:U('ProcError/addPreg')#}">
+            </div>
+        </div>
+        <!-- 功能操作区域结束 -->
+        <!-- 内容显示区域  -->
+            <table id="checkList" border="1" class="list" >
+                <tr>
+                    <td height="5" colspan="7" class="topTd"></td>
+                </tr>
+                <tr class="row">
+                    <th width="8"><input type="checkbox" id="CheckAll" tag="checkList"></th>
+                    <th width="100">名称</th>
+                    <th>搜索表达式</th>
+                    <th>替换表达式</th>
+                    <th>排除正则</th>
+                    <th width="100">开始试题编号</th>
+                    <th width="100">操作</th>
+                </tr>
+                {#volist name="list" id="node" #}
+                <tr class="row">
+                    <td><input type="checkbox" class="key" value="{#$node.PregID#}"></td>
+                    <td>{#$node.PregName#}</td>
+                    <td>{#$node.SearchPreg#}</td>
+                    <td>{#$node.ReplacePreg#}</td>
+                    <td>{#$node[RefusePreg]?$node[RefusePreg]:'无'#}</td>
+                    <td>{#$node.StartNo#}</td>
+                    <td>
+                        <a href="{#:U('ProcError/editPreg','id='.$node[PregID])#}" class="edit">编辑</a>
+                        <a href="javascript:;" data="{#$node[PregID]#}" url="{#:U('ProcError/deletePreg')#}" class="delete">删除</a>
+                    </td>
+                </tr>
+                {#/volist#}
+                <tr>
+                    <td height="5" colspan="7" class="bottomTd"></td>
+                </tr>
+            </table>
+        <!-- 列表显示区域结束 -->
+    </div>
+    <!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Public/ends" /#}

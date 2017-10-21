@@ -1,0 +1,9 @@
+2017-06-02 11:18:10 致命的运行时错误(E_ERROR) Call to undefined function curl_init() E:\www\www\tk\Common\Common\function.php 279 
+2017-06-02 11:21:13 致命的运行时错误(E_ERROR) Call to undefined function curl_init() E:\www\www\tk\Common\Common\function.php 279 
+2017-09-19 15:02:49 致命的运行时错误(E_ERROR) Call to undefined method SphinxClient::SetSelect() E:\web\www\tk\Common\Model\IndexModel.class.php 607 
+2017-09-19 15:03:39 致命的运行时错误(E_ERROR) Call to undefined method SphinxClient::SetSelect() E:\web\www\tk\Common\Model\IndexModel.class.php 607 
+2017-09-19 16:10:26 致命的运行时错误(E_ERROR) Call to undefined method SphinxClient::SetSelect() E:\web\www\tk\Common\Model\IndexModel.class.php 607 
+2017-09-19 17:12:00 致命的运行时错误(E_ERROR) Call to undefined method SphinxClient::SetSelect() E:\web\www\tk\Common\Model\IndexModel.class.php 607 
+2017-09-19 17:15:33 致命的运行时错误(E_ERROR) Call to undefined method SphinxClient::SetSelect() E:\web\www\tk\Common\Model\IndexModel.class.php 607 
+2017-09-19 17:15:37 致命的运行时错误(E_ERROR) Call to undefined method SphinxClient::SetSelect() E:\web\www\tk\Common\Model\IndexModel.class.php 561 
+2017-09-19 17:15:42 致命的运行时错误(E_ERROR) Call to undefined method SphinxClient::SetSelect() E:\web\www\tk\Common\Model\IndexModel.class.php 607 

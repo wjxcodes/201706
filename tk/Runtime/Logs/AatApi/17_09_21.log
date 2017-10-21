@@ -1,0 +1,2452 @@
+[ 2017-09-21T15:11:41+08:00 ] 14.130.228.78 /AatApi/Aat-Default-checkUpdate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-21T15:11:45+08:00 ] 14.130.228.78 /AatApi/Aat-Default-ajaxSubject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-21T15:11:45+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:11:45+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:11:45+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:11:51+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:11:51+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:11:51+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:11:58+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:11:58+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:11:58+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:11:59+08:00 ] 14.130.228.78 /AatApi/MyHomework/getClasses
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:12:04+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:12:04+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:12:04+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:12:05+08:00 ] 14.130.228.78 /AatApi/MyHomework/getClasses
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:12:42+08:00 ] 14.130.228.78 /AatApi/Aat-Default-checkUpdate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-21T15:12:44+08:00 ] 14.130.228.78 /AatApi/Aat-Default-ajaxSubject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-21T15:12:44+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:12:44+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:12:44+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:17:15+08:00 ] 14.130.228.78 /AatApi/Aat-Default-checkUpdate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-21T15:17:17+08:00 ] 14.130.228.78 /AatApi/Aat-Default-ajaxSubject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-09-21T15:17:17+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:17:17+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:17:17+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:17:52+08:00 ] 14.130.228.78 /AatApi/MyHomework/getClasses
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:20:08+08:00 ] 14.130.228.78 /AatApi/Aat-Default-checkUpdate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-21T15:20:10+08:00 ] 14.130.228.78 /AatApi/Aat-Default-ajaxSubject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-21T15:20:10+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:20:10+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:20:10+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:20:16+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:20:16+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:20:16+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:20:29+08:00 ] 14.130.228.78 /AatApi/MyHomework/getClasses
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:20:35+08:00 ] 14.130.228.78 /AatApi/MyHomework/getClassInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 570 行.
+NOTIC: [2] Division by zero E:\www\www\tk\Aat\Api\ClassApi.class.php 第 575 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 576 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 576 行.
+
+[ 2017-09-21T15:23:39+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:23:39+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:23:40+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:24:01+08:00 ] 14.130.228.78 /AatApi/PushTest/checkCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+
+[ 2017-09-21T15:24:14+08:00 ] 14.130.228.78 /AatApi/PushTest/checkCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+
+[ 2017-09-21T15:26:01+08:00 ] 14.130.228.78 /AatApi/Aat-Default-checkUpdate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-09-21T15:26:02+08:00 ] 14.130.228.78 /AatApi/Aat-Default-ajaxSubject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-21T15:26:03+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:26:03+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:26:03+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:26:54+08:00 ] 14.130.228.78 /AatApi/default/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\User\Model\UserModel.class.php 第 484 行.
+NOTIC: [2] preg_replace(): No ending delimiter '/' found E:\www\www\tk\Common\Model\ApiDbModel.class.php 第 196 行.
+
+[ 2017-09-21T15:26:54+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:26:55+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:26:55+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:27:00+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:27:01+08:00 ] 14.130.228.78 /AatApi/MyHomework/getClasses
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:27:02+08:00 ] 14.130.228.78 /AatApi/MyHomework/getClassInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 570 行.
+NOTIC: [2] Division by zero E:\www\www\tk\Aat\Api\ClassApi.class.php 第 575 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 576 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 576 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 570 行.
+NOTIC: [2] Division by zero E:\www\www\tk\Aat\Api\ClassApi.class.php 第 575 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 576 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 576 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 570 行.
+NOTIC: [2] Division by zero E:\www\www\tk\Aat\Api\ClassApi.class.php 第 575 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 576 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 576 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 570 行.
+NOTIC: [2] Division by zero E:\www\www\tk\Aat\Api\ClassApi.class.php 第 575 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 576 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 576 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 570 行.
+NOTIC: [2] Division by zero E:\www\www\tk\Aat\Api\ClassApi.class.php 第 575 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 576 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 576 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 570 行.
+NOTIC: [2] Division by zero E:\www\www\tk\Aat\Api\ClassApi.class.php 第 575 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 576 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Aat\Api\ClassApi.class.php 第 576 行.
+
+[ 2017-09-21T15:27:07+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:27:07+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:27:07+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:27:10+08:00 ] 14.130.228.78 /AatApi/PushTest/checkCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+
+[ 2017-09-21T15:27:11+08:00 ] 14.130.228.78 /AatApi/Default/ajaxKl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: sub E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 79 行.
+NOTIC: [8] Undefined offset: 1941 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1456 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1459 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1465 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1468 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1473 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1486 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1491 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1497 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1500 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1503 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1513 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1517 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1523 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1528 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1530 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1539 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1544 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1551 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1944 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 2778 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1455 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1577 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1583 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1589 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1595 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1601 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1607 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1613 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1576 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1556 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1561 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1566 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1571 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1555 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1620 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1621 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1622 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1623 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1619 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1625 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1626 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1627 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1628 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1629 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1630 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1631 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1632 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1633 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1634 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1940 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 2775 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 2788 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 2805 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 2806 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 2807 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 2808 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 2809 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 2810 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1624 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+
+[ 2017-09-21T15:27:29+08:00 ] 14.130.228.78 /AatApi/Default/ajaxGetTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: subjectID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 92 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+NOTIC: [8] Undefined offset: 1941 E:\www\www\tk\Common\Model\IndexModel.class.php 第 219 行.
+NOTIC: [8] Undefined index: AatTestStyle E:\www\www\tk\Common\Model\IndexModel.class.php 第 267 行.
+NOTIC: [8] Undefined index: diff E:\www\www\tk\Common\Model\IndexModel.class.php 第 978 行.
+NOTIC: [8] Undefined index: diffid E:\www\www\tk\Common\Model\IndexModel.class.php 第 978 行.
+NOTIC: [8] Undefined index: diffname E:\www\www\tk\Common\Model\IndexModel.class.php 第 978 行.
+NOTIC: [8] Undefined index: typesname E:\www\www\tk\Common\Model\IndexModel.class.php 第 982 行.
+NOTIC: [8] Undefined index: subjectname E:\www\www\tk\Common\Model\IndexModel.class.php 第 983 行.
+NOTIC: [8] Undefined index: specialname E:\www\www\tk\Common\Model\IndexModel.class.php 第 984 行.
+NOTIC: [8] Undefined index: klnameonly E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: klnameall E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: kllist E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: chaptername E:\www\www\tk\Common\Model\IndexModel.class.php 第 989 行.
+NOTIC: [8] Undefined index: gradename E:\www\www\tk\Common\Model\IndexModel.class.php 第 993 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 600 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\AatApi\Controller\DefaultController.class.php 第 306 行.
+
+[ 2017-09-21T15:27:30+08:00 ] 14.130.228.78 /AatApi/ApiExercise/getTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: ifShowID E:\www\www\tk\AatApi\Controller\ExerciseController.class.php 第 166 行.
+NOTIC: [8] Undefined index: testfilter E:\www\www\tk\Common\Model\IndexModel.class.php 第 153 行.
+NOTIC: [8] Undefined index: AatTestStyle E:\www\www\tk\Common\Model\IndexModel.class.php 第 267 行.
+NOTIC: [8] Undefined index: diff E:\www\www\tk\Common\Model\IndexModel.class.php 第 978 行.
+NOTIC: [8] Undefined index: typesname E:\www\www\tk\Common\Model\IndexModel.class.php 第 982 行.
+NOTIC: [8] Undefined index: subjectname E:\www\www\tk\Common\Model\IndexModel.class.php 第 983 行.
+NOTIC: [8] Undefined index: specialname E:\www\www\tk\Common\Model\IndexModel.class.php 第 984 行.
+NOTIC: [8] Undefined index: klnameonly E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: klnameall E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: chaptername E:\www\www\tk\Common\Model\IndexModel.class.php 第 989 行.
+NOTIC: [8] Undefined index: gradename E:\www\www\tk\Common\Model\IndexModel.class.php 第 993 行.
+NOTIC: [8] Undefined offset: 1941 E:\www\www\tk\Manage\Model\KlStudyModel.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 1941 E:\www\www\tk\Manage\Model\KlStudyModel.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 1941 E:\www\www\tk\Manage\Model\KlStudyModel.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 1941 E:\www\www\tk\Manage\Model\KlStudyModel.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 1941 E:\www\www\tk\Manage\Model\KlStudyModel.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 1941 E:\www\www\tk\Manage\Model\KlStudyModel.class.php 第 55 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined offset: 371357 E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 216 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined offset: 75722 E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 216 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined offset: 25137 E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 216 行.
+NOTIC: [8] Undefined index: c E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 315 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 322 行.
+NOTIC: [8] Undefined index: c E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 340 行.
+NOTIC: [8] Undefined index: c E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 418 行.
+NOTIC: [8] Undefined index: Width E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1592 行.
+NOTIC: [8] Undefined index: Score E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1593 行.
+NOTIC: [8] Undefined index: IfFormat E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1594 行.
+NOTIC: [8] Undefined index: OptionWidth E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1595 行.
+NOTIC: [8] Undefined index: OptionNum E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1596 行.
+NOTIC: [8] Undefined index: IfAddNum E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1597 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined offset: 109184 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 268 行.
+NOTIC: [8] Undefined offset: 109184 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 268 行.
+NOTIC: [8] Undefined offset: 371357 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 219 行.
+NOTIC: [8] Undefined offset: 75722 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 219 行.
+NOTIC: [8] Undefined offset: 25137 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 219 行.
+NOTIC: [8] Undefined index: Width E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1592 行.
+NOTIC: [8] Undefined index: Score E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1593 行.
+NOTIC: [8] Undefined index: IfFormat E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1594 行.
+NOTIC: [8] Undefined index: OptionWidth E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1595 行.
+NOTIC: [8] Undefined index: OptionNum E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1596 行.
+NOTIC: [8] Undefined index: IfAddNum E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1597 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined offset: 25449 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 268 行.
+NOTIC: [8] Undefined offset: 25449 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 268 行.
+NOTIC: [8] Undefined index: Width E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1592 行.
+NOTIC: [8] Undefined index: Score E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1593 行.
+NOTIC: [8] Undefined index: IfFormat E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1594 行.
+NOTIC: [8] Undefined index: OptionWidth E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1595 行.
+NOTIC: [8] Undefined index: OptionNum E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1596 行.
+NOTIC: [8] Undefined index: IfAddNum E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1597 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined offset: 99513 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 268 行.
+NOTIC: [8] Undefined offset: 99513 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 268 行.
+NOTIC: [8] Undefined offset: 99513 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 268 行.
+NOTIC: [8] Undefined index: ss E:\www\www\tk\AatApi\Controller\ExerciseController.class.php 第 188 行.
+NOTIC: [8] Undefined offset: 124 E:\www\www\tk\AatApi\Controller\ExerciseController.class.php 第 275 行.
+
+[ 2017-09-21T15:27:37+08:00 ] 14.130.228.78 /AatApi/Exercise/doClose
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+
+[ 2017-09-21T15:27:38+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:27:38+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:27:39+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:28:28+08:00 ] 14.130.228.78 /AatApi/PushTest/checkCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+
+[ 2017-09-21T15:28:31+08:00 ] 14.130.228.78 /AatApi/Default/ajaxGetTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: subjectID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 92 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+NOTIC: [8] Undefined index: AatTestStyle E:\www\www\tk\Common\Model\IndexModel.class.php 第 267 行.
+NOTIC: [8] Undefined index: diff E:\www\www\tk\Common\Model\IndexModel.class.php 第 978 行.
+NOTIC: [8] Undefined index: diffid E:\www\www\tk\Common\Model\IndexModel.class.php 第 978 行.
+NOTIC: [8] Undefined index: diffname E:\www\www\tk\Common\Model\IndexModel.class.php 第 978 行.
+NOTIC: [8] Undefined index: typesname E:\www\www\tk\Common\Model\IndexModel.class.php 第 982 行.
+NOTIC: [8] Undefined index: subjectname E:\www\www\tk\Common\Model\IndexModel.class.php 第 983 行.
+NOTIC: [8] Undefined index: specialname E:\www\www\tk\Common\Model\IndexModel.class.php 第 984 行.
+NOTIC: [8] Undefined index: klnameonly E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: klnameall E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: kllist E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: chaptername E:\www\www\tk\Common\Model\IndexModel.class.php 第 989 行.
+NOTIC: [8] Undefined index: gradename E:\www\www\tk\Common\Model\IndexModel.class.php 第 993 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 595 行.
+NOTIC: [8] Undefined variable: docId E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 600 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined index: typesIDs E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 602 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\AatApi\Controller\DefaultController.class.php 第 306 行.
+
+[ 2017-09-21T15:28:33+08:00 ] 14.130.228.78 /AatApi/ApiExercise/getTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: ifShowID E:\www\www\tk\AatApi\Controller\ExerciseController.class.php 第 166 行.
+NOTIC: [8] Undefined index: testfilter E:\www\www\tk\Common\Model\IndexModel.class.php 第 153 行.
+NOTIC: [8] Undefined index: AatTestStyle E:\www\www\tk\Common\Model\IndexModel.class.php 第 267 行.
+NOTIC: [8] Undefined index: diff E:\www\www\tk\Common\Model\IndexModel.class.php 第 978 行.
+NOTIC: [8] Undefined index: typesname E:\www\www\tk\Common\Model\IndexModel.class.php 第 982 行.
+NOTIC: [8] Undefined index: subjectname E:\www\www\tk\Common\Model\IndexModel.class.php 第 983 行.
+NOTIC: [8] Undefined index: specialname E:\www\www\tk\Common\Model\IndexModel.class.php 第 984 行.
+NOTIC: [8] Undefined index: klnameonly E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: klnameall E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: chaptername E:\www\www\tk\Common\Model\IndexModel.class.php 第 989 行.
+NOTIC: [8] Undefined index: gradename E:\www\www\tk\Common\Model\IndexModel.class.php 第 993 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 378 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: duplicate E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 214 行.
+NOTIC: [8] Undefined index: c E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 315 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 322 行.
+NOTIC: [8] Undefined index: c E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 340 行.
+NOTIC: [8] Undefined index: c E:\www\www\tk\Test\Model\TestRealQueryModel.class.php 第 418 行.
+NOTIC: [8] Undefined offset: 85636 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 219 行.
+NOTIC: [8] Undefined offset: 355121 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 219 行.
+NOTIC: [8] Undefined offset: 764704 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 219 行.
+NOTIC: [8] Undefined offset: 370405 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 219 行.
+NOTIC: [8] Undefined offset: 405617 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 219 行.
+NOTIC: [8] Undefined offset: 98869 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 219 行.
+NOTIC: [8] Undefined offset: 97355 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 219 行.
+NOTIC: [8] Undefined offset: 764688 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 219 行.
+NOTIC: [8] Undefined offset: 96672 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 219 行.
+NOTIC: [8] Undefined offset: 349512 E:\www\www\tk\Test\Model\TestRealModel.class.php 第 219 行.
+NOTIC: [8] Undefined index: ss E:\www\www\tk\AatApi\Controller\ExerciseController.class.php 第 188 行.
+NOTIC: [8] Undefined offset: 82 E:\www\www\tk\AatApi\Controller\ExerciseController.class.php 第 275 行.
+
+[ 2017-09-21T15:28:35+08:00 ] 14.130.228.78 /AatApi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:28:38+08:00 ] 14.130.228.78 /AatApi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:28:40+08:00 ] 14.130.228.78 /AatApi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:28:41+08:00 ] 14.130.228.78 /AatApi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:28:54+08:00 ] 14.130.228.78 /AatApi/Exercise/doClose
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+
+[ 2017-09-21T15:28:56+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:28:56+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:28:56+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:28:58+08:00 ] 14.130.228.78 /AatApi/PushTest/checkCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+
+[ 2017-09-21T15:29:00+08:00 ] 14.130.228.78 /AatApi/PushTest/getTestPaperStyle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+
+[ 2017-09-21T15:29:02+08:00 ] 14.130.228.78 /AatApi/Default/ajaxDoc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: subjectID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 92 行.
+NOTIC: [8] Undefined index: year E:\www\www\tk\AatApi\Controller\DefaultController.class.php 第 505 行.
+NOTIC: [8] Undefined index: search E:\www\www\tk\AatApi\Controller\DefaultController.class.php 第 506 行.
+NOTIC: [8] Undefined index: matches E:\www\www\tk\Common\Model\IndexModel.class.php 第 1105 行.
+NOTIC: [8] Undefined variable: tmpArr E:\www\www\tk\Common\Model\IndexModel.class.php 第 1173 行.
+
+[ 2017-09-21T15:29:07+08:00 ] 14.130.228.78 /AatApi/Default/ajaxDoc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: subjectID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 92 行.
+NOTIC: [8] Undefined index: year E:\www\www\tk\AatApi\Controller\DefaultController.class.php 第 505 行.
+NOTIC: [8] Undefined index: search E:\www\www\tk\AatApi\Controller\DefaultController.class.php 第 506 行.
+NOTIC: [8] Undefined offset: 59046 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined offset: 59122 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined offset: 58883 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined offset: 59023 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined index: startNo E:\www\www\tk\Common\Tool\WLNPage.class.php 第 70 行.
+
+[ 2017-09-21T15:29:11+08:00 ] 14.130.228.78 /AatApi/Default/ajaxDoc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: subjectID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 92 行.
+NOTIC: [8] Undefined index: year E:\www\www\tk\AatApi\Controller\DefaultController.class.php 第 505 行.
+NOTIC: [8] Undefined index: search E:\www\www\tk\AatApi\Controller\DefaultController.class.php 第 506 行.
+NOTIC: [8] Undefined offset: 51846 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined offset: 51779 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined offset: 51778 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined offset: 51780 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined index: startNo E:\www\www\tk\Common\Tool\WLNPage.class.php 第 70 行.
+
+[ 2017-09-21T15:32:01+08:00 ] 14.130.228.78 /AatApi/Aat-Default-checkUpdate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-21T15:32:04+08:00 ] 14.130.228.78 /AatApi/Aat-Default-ajaxSubject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-21T15:32:04+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:32:04+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:32:06+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:32:07+08:00 ] 14.130.228.78 /AatApi/PushTest/checkCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+
+[ 2017-09-21T15:32:07+08:00 ] 14.130.228.78 /AatApi/PushTest/getTestPaperStyle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+
+[ 2017-09-21T15:32:40+08:00 ] 14.130.228.78 /AatApi/Default/ajaxDoc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: subjectID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 92 行.
+NOTIC: [8] Undefined index: year E:\www\www\tk\AatApi\Controller\DefaultController.class.php 第 505 行.
+NOTIC: [8] Undefined index: search E:\www\www\tk\AatApi\Controller\DefaultController.class.php 第 506 行.
+NOTIC: [8] Undefined offset: 59046 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined offset: 59122 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined offset: 58883 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined offset: 59023 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined index: startNo E:\www\www\tk\Common\Tool\WLNPage.class.php 第 70 行.
+
+[ 2017-09-21T15:33:03+08:00 ] 14.130.228.78 /AatApi/Default/ajaxDoc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: subjectID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 92 行.
+NOTIC: [8] Undefined index: year E:\www\www\tk\AatApi\Controller\DefaultController.class.php 第 505 行.
+NOTIC: [8] Undefined index: search E:\www\www\tk\AatApi\Controller\DefaultController.class.php 第 506 行.
+NOTIC: [8] Undefined offset: 51846 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined offset: 51779 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined offset: 51778 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined offset: 51780 E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 171 行.
+NOTIC: [8] Undefined index: startNo E:\www\www\tk\Common\Tool\WLNPage.class.php 第 70 行.
+
+[ 2017-09-21T15:33:23+08:00 ] 14.130.228.78 /AatApi/Aat-Default-checkUpdate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-09-21T15:33:25+08:00 ] 14.130.228.78 /AatApi/Aat-Default-ajaxSubject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-09-21T15:33:25+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:33:25+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:33:25+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:33:27+08:00 ] 14.130.228.78 /AatApi/PushTest/checkCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+
+[ 2017-09-21T15:33:27+08:00 ] 14.130.228.78 /AatApi/PushTest/getTestPaperStyle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+
+[ 2017-09-21T15:45:37+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 27 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-09-21T15:45:37+08:00 ] 14.130.228.78 /AatApi/AddUserInfo/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+
+[ 2017-09-21T15:45:37+08:00 ] 14.130.228.78 /AatApi/ApiUser/userInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: AatApi E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: password E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 706 行.
+NOTIC: [8] Undefined index: userID E:\www\www\tk\AatApi\Controller\BaseController.class.php 第 133 行.
+

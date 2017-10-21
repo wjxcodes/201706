@@ -1,0 +1,10 @@
+[ 2017-10-20T13:28:19+08:00 ] 127.0.0.1 /Statistics/Index/home.html?times=0.8144802768019062&_=1508477297600
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#}-用户中心</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/u-test.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/user.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js"></script>
+
+</head>
+<body>
+    <!--头部-->
+    {#include file="Index@Common/TplUserHeader" /#}
+    <!--头部-end-->
+    <!-- 个人中心 -->
+    <div class="w-main" id="myTestCommentC">
+        <!-- 面包屑导航 -->
+        {#include file="IndexCenter/TplCrumbs" /#}
+        <!-- 面包屑导航END -->
+        <div class="u-content clearfix">
+            <!-- 左侧导航 -->
+            {#include file="IndexCenter/TplPersonalNav" /#}
+            <!-- 左侧导航END -->
+            <div class="u-right-wrap">
+                <div class="u-right">
+                    <!-- 评价记录 -->
+                    <div class="u-record-panel content g-tab" id="myTestCommentList">
+                        <div class="tab-head">
+                            <h3 class="tab-title">试题评论</h3>
+                        </div>
+                        <div class="tab-nav-wrap">
+                            <ul class="tab-nav">
+                                <li data-href=".record-l-panel1" class="comment on" id="all">
+                                    <a href="javascript:;">全部评论</a>
+                                    <i class="active-icon"></i>
+                                </li>
+                                <li data-href=".record-l-panel2"class="comment" id="my">
+                                    <a href="javascript:;">我的评论</a>
+                                    <i class="active-icon"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-body">
+                            <div class="tab-panel record-l-panel1 on" >
+                                <div class="comment-test-content" id="commentBox">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-paginator" id="pagelistbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 个人中心END -->
+    <!--试题详情-->
+    <div id="commentDetailTest" class="hidden">
+        <div class="test-detail-msg-content">
+            <div class="u-test-item g-test-item">
+                <div class="test-item-head clearfix">
+                    <div class="left test-base-info">
+                        <h4 class="test-title f-roman">黑龙江省双鸭山市第一中学2014-2015学年高二下学期期末考试语文</h4>
+                        <div class="test-attr-site">
+                            <span class="test-attr"><b>题号：</b>446237</span>
+                            <span class="test-attr"><b>题型：</b>作文</span>
+                            <span class="test-attr"><b>难度：</b><i class="test-diff-icon i-star-s"><a class="star-a"></a><a class="star-a"></a><a class="star-b"></a><a class="star-c"></a><a class="star-c"></a></i></span>
+                        </div>
+                    </div>
+                    <span class="right timer">2015/07/23</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--试题详情END-->
+    <!--试题操作弹出框END-->
+    <script type="text/javascript" src="__PUBLIC__/index/js/myTestAbout.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var idName='{#$function#}';
+            if(idName!='' || idName!='undefined'){
+                $('#'+idName).addClass('active');
+            }
+            $.indexMyTestAbout.myTestCommentInit();
+        });
+    </script>
+    <!--footer-->
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+    <![endif]-->
+    {#include file="Index@Common/secondFooter" /#}
+    <!--footer-end-->
+</body>
+</html>

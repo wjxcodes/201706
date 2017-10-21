@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html>
+<head>
+    <title>提示信息</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link type="text/css" href="__PUBLIC__/default/css/common1.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/default/css/index.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('input,a,img,div,span');</script>
+    <![endif]-->
+</head>
+<body>
+    {#include file="Home@Index:header"/#}
+    <div class="main">
+        <div class="mtop">
+            <div class="tsxx">
+                <div class="t">
+                    <div class="t_nr">
+                        <span class="t_nr_text">
+                            <span class="{#$icon#}"></span>
+                            {#$msg_detail#}
+                        </span>
+                    </div>
+                </div>
+                <div class="b">
+                    {#if condition="$auto_redirect"#}
+                    <p>
+                        您可以选择
+                        <a href="{#$Think.server.php_self#}">[重试]</a>
+                        <a target="_top" href="{#$jumpUrl#}">[返回]</a>
+                        或者
+                        <a target="_top" href="{#:U('Index/index')#}">[回到首页]</a>
+                    </p>
+                    <p>
+                        将在 <font color="#00a0ea" style="padding:0 5px" id="spanSeconds">{#$waitSecond#}</font>
+                        秒后自动返回...
+                    </p>
+                    {#/if#}
+                </div>
+
+            </div>
+        </div>
+        {#include file="Home@Index:footer"/#}
+    </div>
+    {#if condition="$auto_redirect"#}
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script language="JavaScript">
+<!--
+var seconds = {#$waitSecond#};
+var defaultUrl = "{#$jumpUrl#}";
+var alertWindow='';
+{#literal#}
+onload = function()
+{
+  if (defaultUrl == 'javascript:history.go(-1)' && window.history.length == 0)
+  {
+   // document.getElementById('redirectionMsg').innerHTML = '';
+    return;
+  }
+
+    alertWindow=window.setInterval(redirection, 1000);
+}
+function redirection()
+{
+  if (seconds <= 0)
+  {
+    window.clearInterval(alertWindow);
+    return;
+  }
+  seconds --;
+  document.getElementById('spanSeconds').innerHTML = seconds;
+
+  if (seconds == 0)
+  {
+    window.clearInterval(alertWindow);
+    window.parent.location.href = defaultUrl;
+  }
+}
+function InitDivHeight() {
+    var mainwidth=$(window).width();
+    var mainheight=$(window).height() - 2 - $('.header').height();
+    var height = mainheight < 550 ? 550 : mainheight;
+    var width=mainwidth < 960 ? 960 : mainwidth;
+    var topwidth=(mainwidth > 960 ? 960 : mainwidth) < 600 ? 600 : (mainwidth > 960 ? 960 : mainwidth);
+    $(".main").css({ 'height': height ,'width':width});
+    $('.top').css({'width':topwidth});
+    $('.header').css({'width':width});
+    $('.footer').css({'width':topwidth});
+}
+InitDivHeight();
+$(window).bind("resize",function() {InitDivHeight();});
+//-->
+</script>
+    {#/literal#}
+{#/if#}
+</body>
+</html>

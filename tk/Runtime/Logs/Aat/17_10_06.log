@@ -1,0 +1,1136 @@
+[ 2017-10-06T02:16:44+08:00 ] 111.206.36.145 /Aat/Default/ajaxSubject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: userName E:\www\www\tk\Aat\Controller\BaseController.class.php 第 155 行.
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Aat\Controller\BaseController.class.php 第 155 行.
+NOTIC: [8] Undefined index: userName E:\www\www\tk\Aat\Controller\BaseController.class.php 第 155 行.
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Aat\Controller\BaseController.class.php 第 155 行.
+NOTIC: [8] Undefined index: _csrf E:\www\www\tk\Common\Controller\DefaultController.class.php 第 255 行.
+NOTIC: [8] Undefined index: userName E:\www\www\tk\Aat\Controller\BaseController.class.php 第 155 行.
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Aat\Controller\BaseController.class.php 第 155 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Aat\Controller\BaseController.class.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 190 行.
+
+[ 2017-10-06T02:16:44+08:00 ] 111.206.36.145 /Aat/Default/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T07:44:52+08:00 ] 223.96.145.35 /Aat?session=BA7148DFF6564BDEB4D12392136389B&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T09:14:07+08:00 ] 218.58.110.107 /Aat/PersonalReport/index.html?session=28E9ABDDF43C4B3FDCBE8B4D96A6&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T09:44:28+08:00 ] 115.181.144.206 /Aat?session=9001CBF40199EA1DA185CB6F66&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T10:03:14+08:00 ] 183.47.203.65 /Aat?session=788745F9B4AF9BD472D014AEDF3F&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T10:03:20+08:00 ] 183.47.203.65 /Aat/MyHomework/index.html?session=788745F9B4AF9BD472D014AEDF3F&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T10:13:21+08:00 ] 183.47.203.54 /Aat?session=F6B0119433B9B6D992E2725F06&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T10:14:16+08:00 ] 183.47.203.54 /Aat?session=28AFD8AB21A4B57864C913E2860C51&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T10:14:52+08:00 ] 183.47.203.54 /Aat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+NOTIC: [8] Undefined index: url E:\www\www\tk\Aat\Controller\DefaultController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 12 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 14 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 15 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 17 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 19 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 20 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 21 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 23 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 24 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 26 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 28 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 30 行.
+NOTIC: [8] Use of undefined constant URL_PATHINFO_DEPR - assumed 'URL_PATHINFO_DEPR' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 36 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 40 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 41 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 42 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 43 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 44 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 45 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 46 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-06T10:14:52+08:00 ] 183.47.203.54 /Aat/Default/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-06T10:14:53+08:00 ] 183.47.203.54 /Aat/Default/ajaxSubject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-06T10:14:53+08:00 ] 183.47.203.54 /Aat/AddUserInfo/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-10-06T10:14:56+08:00 ] 183.47.203.54 /Aat/PushTest/checkCondition.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-10-06T10:14:59+08:00 ] 183.47.203.54 /Aat/Chapter/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+NOTIC: [2] Missing argument 2 for Aat\Api\ChapterApi::check() E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 19 行.
+NOTIC: [2] Missing argument 3 for Aat\Api\ChapterApi::check() E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 19 行.
+NOTIC: [8] Undefined variable: username E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 26 行.
+NOTIC: [8] Undefined variable: subjectID E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 26 行.
+
+[ 2017-10-06T10:15:00+08:00 ] 183.47.203.54 /Aat/Default/ajaxSubject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-06T10:15:00+08:00 ] 183.47.203.54 /Aat/Chapter/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+NOTIC: [2] Missing argument 2 for Aat\Api\ChapterApi::check() E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 19 行.
+NOTIC: [2] Missing argument 3 for Aat\Api\ChapterApi::check() E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 19 行.
+NOTIC: [8] Undefined variable: username E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 26 行.
+NOTIC: [8] Undefined variable: subjectID E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 26 行.
+
+[ 2017-10-06T10:15:00+08:00 ] 183.47.203.54 /Aat/Default/ajaxGrade.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-10-06T10:15:17+08:00 ] 183.47.203.54 /Aat/Chapter/index.html?_csrf=972bd6de24d4f8ba6be71b3ecfc81fbc&_=1507256107971
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-06T10:15:17+08:00 ] 183.47.203.54 /Aat/Chapter/getType.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 302 行.
+
+[ 2017-10-06T10:15:18+08:00 ] 183.47.203.54 /Aat/Chapter/getBook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+NOTIC: [8] Undefined index: ChapterPic E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 81 行.
+
+[ 2017-10-06T10:15:25+08:00 ] 183.47.203.54 /Aat/Default/ajaxSubject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-06T10:15:25+08:00 ] 183.47.203.55 /Aat/AddUserInfo/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-10-06T10:15:25+08:00 ] 183.47.203.55 /Aat/AddUserInfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-10-06T10:15:31+08:00 ] 183.47.203.54 /Aat/PersonalReport/index.html?session=28AFD8AB21A4B57864C913E2860C51&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 12 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 14 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 15 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 17 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 19 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 20 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 21 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 23 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 24 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 26 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 28 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 30 行.
+NOTIC: [8] Use of undefined constant URL_PATHINFO_DEPR - assumed 'URL_PATHINFO_DEPR' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 36 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 40 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 41 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 42 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 43 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 44 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 45 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\a2346ee05c7f74e00e9bab79879ae0c3.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-06T10:15:37+08:00 ] 183.47.203.54 /Aat/Default/ajaxSubject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-06T10:15:37+08:00 ] 183.47.203.54 /Aat/PersonalReport/returnScoreInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-10-06T10:15:37+08:00 ] 183.47.203.54 /Aat/PersonalReport/returnKlInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+NOTIC: [8] Undefined offset: 1791 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1795 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1790 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1801 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1814 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1800 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1822 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1830 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1833 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1821 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1838 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1844 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1837 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1848 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1849 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1850 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1851 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1847 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1853 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1854 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1855 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1856 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1946 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1852 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 2831 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1858 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1859 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1860 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1861 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1862 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1863 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1864 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1865 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1866 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1867 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1868 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1857 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1870 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1878 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1869 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1888 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1891 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1887 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1895 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1901 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1894 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1911 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1912 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1913 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1910 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1916 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1917 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1918 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1914 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 1920 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1923 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1926 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1931 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1934 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1937 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 1919 E:\www\www\tk\Aat\Model\UserTestKlModel.class.php 第 104 行.
+
+[ 2017-10-06T10:15:38+08:00 ] 183.47.203.54 /Aat/PersonalReport/returnCapacityInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+NOTIC: [8] Undefined index: UserTestCapacity E:\www\www\tk\Common\Common\function.php 第 475 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 156 行.
+
+[ 2017-10-06T10:15:38+08:00 ] 183.47.203.54 /Aat/PersonalReport/returnKlsInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-10-06T10:15:38+08:00 ] 183.47.203.54 /Aat/PersonalReport/returnSkillInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+NOTIC: [8] Undefined index: UserTestSkill E:\www\www\tk\Common\Common\function.php 第 475 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 156 行.
+
+[ 2017-10-06T10:16:25+08:00 ] 183.47.203.55 /Aat/Default/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+NOTIC: [8] Undefined index: url E:\www\www\tk\Aat\Controller\DefaultController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 12 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 14 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 15 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 17 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 19 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 20 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 21 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 23 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 24 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 26 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 28 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 30 行.
+NOTIC: [8] Use of undefined constant URL_PATHINFO_DEPR - assumed 'URL_PATHINFO_DEPR' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 36 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 40 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 41 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 42 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 43 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 44 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 45 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 46 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-06T10:16:25+08:00 ] 183.47.203.54 /Aat/Default/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-06T10:16:26+08:00 ] 183.47.203.55 /Aat/Default/ajaxSubject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-06T10:16:26+08:00 ] 183.47.203.54 /Aat/AddUserInfo/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-10-06T10:16:26+08:00 ] 183.47.203.54 /Aat/AddUserInfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-10-06T11:45:22+08:00 ] 223.96.69.241 /Aat/MyHomework/index.html?session=A62FC7100447AAF50548262A7BD0&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T11:52:59+08:00 ] 61.179.66.75 /Aat?session=767FDC27F4BDA8C15BD92A9255F2&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T11:53:42+08:00 ] 183.47.203.73 /Aat/PersonalReport/index.html?session=C6471271427EAA21008AA399C89&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T11:54:18+08:00 ] 61.179.66.75 /Aat/Default/ajaxSubject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-06T11:54:18+08:00 ] 61.179.66.75 /Aat/Default/ajaxGrade.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-10-06T11:54:18+08:00 ] 61.179.66.75 /Aat/Chapter/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+NOTIC: [2] Missing argument 2 for Aat\Api\ChapterApi::check() E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 19 行.
+NOTIC: [2] Missing argument 3 for Aat\Api\ChapterApi::check() E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 19 行.
+
+[ 2017-10-06T11:54:25+08:00 ] 61.179.66.75 /Aat/Default/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+NOTIC: [8] Undefined index: url E:\www\www\tk\Aat\Controller\DefaultController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 12 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 14 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 15 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 17 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 19 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 20 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 21 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 23 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 24 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 26 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 28 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 30 行.
+NOTIC: [8] Use of undefined constant URL_PATHINFO_DEPR - assumed 'URL_PATHINFO_DEPR' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 36 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 40 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 41 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 42 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 43 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 44 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 45 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 46 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-06T11:54:25+08:00 ] 61.179.66.75 /Aat/Default/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-06T11:54:26+08:00 ] 61.179.66.75 /Aat/Default/ajaxSubject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-06T11:54:26+08:00 ] 61.179.66.75 /Aat/AddUserInfo/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-10-06T11:54:30+08:00 ] 61.179.66.75 /Aat/Default/ajaxSubject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-06T11:54:30+08:00 ] 61.179.66.75 /Aat/Chapter/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+NOTIC: [2] Missing argument 2 for Aat\Api\ChapterApi::check() E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 19 行.
+NOTIC: [2] Missing argument 3 for Aat\Api\ChapterApi::check() E:\www\www\tk\Aat\Api\ChapterApi.class.php 第 19 行.
+
+[ 2017-10-06T11:54:30+08:00 ] 61.179.66.75 /Aat/Default/ajaxGrade.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-10-06T13:29:53+08:00 ] 111.16.112.14 /Aat?session=CC154D7748FD896F08CAD8B9F85&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T14:00:58+08:00 ] 112.227.75.76 /Aat?session=5E90FE92D33493682B5D9B1EB04A38&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T14:30:17+08:00 ] 223.96.67.206 /Aat?session=8F9A6CC7A8474F22A2A924521D8CCAF&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T15:06:22+08:00 ] 223.96.66.60 /Aat/MyHomework/index.html?session=07F0E67A82054DE99E60F1C1C19717F&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T15:06:27+08:00 ] 223.96.66.60 /Aat/MyExercise/index.html?session=07F0E67A82054DE99E60F1C1C19717F&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T15:06:31+08:00 ] 223.96.66.60 /Aat?session=07F0E67A82054DE99E60F1C1C19717F&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T15:51:55+08:00 ] 119.181.243.80 /Aat/PersonalReport/index.html?session=56F7A17952D441AF9E15B7F9B817757&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T15:52:21+08:00 ] 119.181.243.80 /Aat/MyExercise/index.html?session=56F7A17952D441AF9E15B7F9B817757&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T15:53:52+08:00 ] 119.181.243.80 /Aat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+NOTIC: [8] Undefined index: url E:\www\www\tk\Aat\Controller\DefaultController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 12 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 14 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 15 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 17 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 19 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 20 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 21 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 23 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 24 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 26 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 28 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 30 行.
+NOTIC: [8] Use of undefined constant URL_PATHINFO_DEPR - assumed 'URL_PATHINFO_DEPR' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 36 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 40 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 41 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 42 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 43 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 44 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 45 行.
+NOTIC: [8] Use of undefined constant WLN_AAT_USER_AUTH_KEY - assumed 'WLN_AAT_USER_AUTH_KEY' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 46 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Aat\f1e256b4e6b03e2193eef0b1e8b1e0e4.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-06T15:53:52+08:00 ] 119.181.243.80 /Aat/Default/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-06T15:53:53+08:00 ] 119.181.243.80 /Aat/Default/ajaxSubject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: SubjectID E:\www\www\tk\Aat\Api\PushTestApi.class.php 第 190 行.
+
+[ 2017-10-06T15:53:53+08:00 ] 119.181.243.80 /Aat/AddUserInfo/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-10-06T15:53:53+08:00 ] 119.181.243.80 /Aat/AddUserInfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-06T15:53:53+08:00 ] 119.181.243.80 /Aat/Default/ajaxArea.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-10-06T15:53:53+08:00 ] 119.181.243.80 /Aat/Default/ajaxGrade.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Controller\PowerLayerController.class.php 第 1112 行.
+
+[ 2017-10-06T16:12:55+08:00 ] 27.195.4.35 /Aat?session=E467BA2FA1154FA1A80C8C01EB5B293&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T16:18:20+08:00 ] 124.239.251.33 /Aat/MyHomework/index.html?session=B3DF2FF640ED947249BC2D48815&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T16:18:28+08:00 ] 124.239.251.33 /Aat?session=B3DF2FF640ED947249BC2D48815&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T17:30:44+08:00 ] 223.96.68.96 /Aat?session=1F3B0865D9B64856A9356D3EA3BAA17&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T18:34:08+08:00 ] 1.180.237.237 /Aat/MyHomework/index.html?session=275EBEC4E6B84978B779255099C03AF&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T18:37:53+08:00 ] 1.180.237.226 /Aat?session=27696394F40B38D6B9D1DBB30B89&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T19:06:15+08:00 ] 1.180.237.250 /Aat/MyExercise/index.html?session=2E9C4F398476C8A47892BD31AA6E&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T19:51:37+08:00 ] 39.75.56.160 /Aat?session=166A25BFCA4255B3CD432DA10EA43&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T20:34:41+08:00 ] 111.37.190.166 /Aat/MyHomework/index.html?session=51F73F243E7242E49DC6C338CDEB824&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+
+[ 2017-10-06T21:00:16+08:00 ] 112.227.144.49 /Aat?session=4EC6FC3F55BA4F5393F9151CC60FE32&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+NOTIC: [8] Undefined offset: 2 E:\www\www\tk\Common\Controller\CommonController.class.php 第 337 行.
+

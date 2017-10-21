@@ -1,0 +1,5 @@
+{#foreach name='list' item='rs'#}
+    <tr><td>{#:formatString('hiddenUserName',$rs['UserName'])#}</td>
+    <td>{#if condition="$rs['count'] lt 1 "#}1{#else /#}{#$rs.count#}{#/if#}</td>
+    <td>{#$rs.AddTime|date="Y-m-d H:i:s",####}</td></tr>
+{#/foreach#}

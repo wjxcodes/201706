@@ -1,0 +1,469 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content">
+<!--  功能操作区域  -->
+<div class="title">{#$pageName#} [ <A HREF="{#:U('Custom/CustomTest/index')#}">返回列表</A> ]</div>
+<!-- 功能操作区域结束 -->
+<div id="result" class="result none"></div>
+<!-- 内容显示区域  -->
+<FORM METHOD="POST" action="" id="form1">
+<TABLE cellpadding="5" cellspacing="0" class="list" border="1">
+<tr><td height="5" colspan="7" class="topTd" ></td></tr>
+<TR>
+    <TD class="tRight" width="100">编号：</TD>
+    <TD class="tLeft" >{#$edit.TestID#} 【{#$edit.Status#}】
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight tTop">试题内容：</TD>
+    <TD class="tLeft">
+        <div class='editContainers'> </div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight tTop">备注：</TD>
+    <TD class="tLeft">
+        <textarea class=" bLeft" cols="90" rows="5"  name='remark' id='remark'>{#$edit.Remark#}</textarea>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight tTop">来源：</TD>
+    <TD class="tLeft">
+        <div>
+        <input type='text' name='Source' value='{#$edit.Source#}' width="100" id="source">
+        </div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" >所属学科：</TD>
+    <TD class="tLeft" ><SELECT id="SubjectID" class="medium bLeft" NAME="SubjectID" check='Require' warning="所属学科不能为空">
+    <option value="">请选择</option>
+    {#if condition="$subjectArray"#}
+    {#volist name="subjectArray" id="vo"#}
+        <optgroup label="{#$vo.SubjectName#}">
+        {#if condition="$vo['sub']"#}
+        {#volist name="vo['sub']" id="item"#}
+            <option value="{#$item.SubjectID#}" {#eq name="item.SubjectID" value="$edit.SubjectID"#}selected="selected"{#/eq#}>　　{#$item.SubjectName#}</option>
+        {#/volist#}
+        {#/if#}
+        </optgroup>
+    {#/volist#}
+    {#else/#}
+        <option value="0">请添加学科</option>
+    {#/if#}
+    </SELECT></TD>
+</TR>
+<TR>
+    <TD class="tRight" width="100">所选年级：</TD>
+    <TD class="tLeft" >  
+        <select name='GradeID' id='grade'>
+            <option value=''>-请选择-</option>
+            {#volist name='grade' id='vo'#}
+            <option value='{#$vo.GradeID#}' {#eq name="vo.GradeID" value="$edit.GradeID" #}selected="selected"{#/eq#}>{#$vo.GradeName#}</option>
+            {#/volist#}
+        </select>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight tTop">试题类型：</TD>
+    <TD class="tLeft">
+        <select name='TypesID' id='types'>
+            <option value=''>-请选择-</option>
+        </select>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight tTop">试题难度：</TD>
+    <TD class="tLeft">
+        <label class="difficulty" title="0.801-0.999"><input type="radio" name='diff' value='0.801'/>容易</label>
+        <label class="difficulty" title="0.601-0.800"><input type="radio" name='diff' value='0.601'/>较易</label>
+        <label class="difficulty" title="0.501-0.600"><input type="radio" name='diff' value='0.501'/>一般</label>
+        <label class="difficulty" title="0.301-0.500"><input type="radio" name='diff' value='0.301'/>较难</label>
+        <label class="difficulty" title="0.001-0.300"><input type="radio" name='diff' value='0.001'/>困难</label>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">测试类型：</TD>
+    <TD class="tLeft" >
+        <label><INPUT TYPE="radio" class="choose bLeft"  check='raido' warning="请选择测试类型" NAME="IfChoose" value="0" {#if condition="($edit.IfChoose eq '0') or ($edit.IfChoose eq '')"#}checked="checked"{#/if#}> 非选择题</label>
+        <label><INPUT TYPE="radio" class="choose bLeft" NAME="IfChoose" value="3" {#eq name="edit.IfChoose" value="3"#}checked="checked"{#/eq#}> 单选题</label> 
+        <label><INPUT TYPE="radio" class="choose bLeft" NAME="IfChoose" value="2" {#eq name="edit.IfChoose" value="2"#}checked="checked"{#/eq#}> 多选题</label> 
+        <label><INPUT TYPE="radio" class="choose bLeft" NAME="IfChoose" value="1" {#eq name="edit.IfChoose" value="1"#}checked="checked"{#/eq#}> 复合题（带小题）</label> 
+        <div id="showxt" style="display:none">
+            <input name="addt" id="addt" type="button" value="增加小题" style="cursor:pointer" /> <input name="delt" id="delt" type="button" value="删除小题" style="cursor:pointer" /> <input name="deltall" id="deltall" type="button" value="清空小题" style="cursor:pointer" />
+            <div id="xt" style="width:100%;overflow-y:auto;max-height:100px;"><p class='xtList'>小题1：<label><INPUT TYPE="radio" class="choose1 bLeft" check='raido' warning="请选择测试类型" NAME="IfChoose1" value="0" checked="checked"> 非选择题</label>
+            <label><INPUT TYPE="radio" class="choose1 bLeft" NAME="IfChoose1" value="3"> 单选题</label> 
+            <label><INPUT TYPE="radio" class="choose1 bLeft" NAME="IfChoose1" value="2"> 多选题</label> 
+            </p></div>
+        </div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">选项宽度：<br/><a id="getWidth" style="cursor:pointer;">计算宽度</a><br/><span id="widthCon"></span></TD>
+    <TD class="tLeft" >
+        <div id="showwidth" >
+            <div id="wd" style="width:100%;overflow-y:auto;max-height:100px;">
+                {#volist name="optionwidth" id="ow" key="j"#}
+                <p class="optionwidth_{#$j#} optionwidth">{#if condition="$edit.IfChoose eq '1'"#}小题{#$j#}：{#/if#}<label><INPUT TYPE="text" class="optionwidth{#$j#} bLeft"  warning="请填入选项宽度" size="2" NAME="optionwidth{#$j#}" value="{#$ow#}" ></label> </p>
+                {#/volist#}
+            </div>
+        </div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">选项数量：</TD>
+    <TD class="tLeft" >
+        <div id="shownum" >
+            <div id="num" style="width:100%;overflow-y:auto;max-height:100px;">
+                {#volist name="optionnum" id="onum" key="k"#}
+                <p class="optionnum_{#$k#} optionnum">{#if condition="$edit.IfChoose eq '1'" #}小题{#$k#}：{#/if#}<label><INPUT TYPE="text" class="optionnum{#$k#} bLeft"  warning="请填入选项宽度" NAME="optionnum{#$k#}" size="2" value="{#$onum#}" ></label> </p>
+                 {#/volist#}
+            </div>
+        </div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">知识点：</TD>
+    <TD class="tLeft" ><SELECT id="knowledge" class="knowledge bLeft selectKnowledge" NAME="KlID">
+    <option value="">请选择</option>
+    </SELECT> <div class="impBtn" style="display:inline;padding:3px 0px;"><input id="addkl" name="addkl" class="add imgButton" type="button" value="添加"></div>
+    <div id="knowledgeList" class="klinput"></div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">章节：</TD>
+    <TD class="tLeft" ><SELECT id="chapter" class="chapter bLeft selectChapter" NAME="ChapterID">
+    <option value="">请选择</option>
+    </SELECT> <div class="impBtn" style="display:inline;padding:3px 0px;"><input id="addcp" name="addcp" class="add imgButton" type="button" value="添加"/></div> <div class="impBtn" style="display:inline;padding:3px 0px;"><a id="adddcp" style="cursor:pointer;">载入默认章节</a></div>
+    <div id="chapterList" class='cpinput'></div>
+    </TD>
+</TR>
+
+<TR>
+    <TD class="tRight" style="width:80px">技能：</TD>
+    <TD class="tLeft" ><SELECT id="skill" class="skill bLeft selectSkill" NAME="SkillID">
+    <option value="">请选择</option>
+    </SELECT> <div class="impBtn" style="display:inline;padding:3px 0px;"><input id="addskill" name="addskill" class="add imgButton" type="button" value="添加"/></div> <!-- <div class="impBtn" style="display:inline;padding:3px 0px;"><a id="adddcp" style="cursor:pointer;">载入默认章节</a></div> -->
+    <div id="skillList" class='skillinput'></div>
+    </TD>
+</TR>
+
+<TR>
+    <TD class="tRight" style="width:80px">能力：</TD>
+    <TD class="tLeft" ><SELECT id="capacity" class="capacity bLeft selectCapacity" NAME="CapacityID">
+    <option value="">请选择</option>
+    </SELECT> <div class="impBtn" style="display:inline;padding:3px 0px;"><input id="addcapacity" name="addcapacity" class="add imgButton" type="button" value="添加"/></div> <!-- <div class="impBtn" style="display:inline;padding:3px 0px;"><a id="adddcp" style="cursor:pointer;">载入默认章节</a></div> -->
+    <div id="capacityList" class='capacityinput'></div>
+    </TD>
+</TR>
+
+<TR>
+    <TD class="tRight tTop">添加：</TD>
+    <TD class="tLeft">{#$edit.AddTime|date="Y-m-d H:i:s",####}
+    </TD>
+</TR>
+<TR>
+    <TD style="width:80px">&nbsp;</TD>
+    <TD class="center"><div style="width:85%;margin:5px">
+        <INPUT TYPE="hidden" id="TestID" name="TestID" value="{#$edit.TestID#}">
+        <INPUT TYPE="hidden" name="act" value="{#$act#}">
+        <INPUT TYPE="hidden" name="UserName" id='UserName' value="{#$edit.UserName#}">
+        <INPUT TYPE="hidden" name="UserID" id='UserID' value="{#$edit.UserID#}">
+    <div class="impBtn fLeft "><INPUT TYPE="button" class="reset imgButton" id="formatTest" value="格式化试题" ></div>
+    <div class="impBtn fLeft m-l10"><INPUT tag='form1'  TYPE="button" value="保存" id='saveTest' class="save imgButton "></div>
+    </div></TD>
+</TR>
+</TABLE>
+</FORM>
+<!-- 列表显示区域结束 -->
+</div>
+<script src="__PUBLIC__/plugin/ueditor/ueditor.config.js{#$Think.config.WLN_UPDATE_FILE_DATE#}" type="text/javascript"></script>
+<script src="__PUBLIC__/plugin/ueditor/ueditor.all.js{#$Think.config.WLN_UPDATE_FILE_DATE#}" type="text/javascript"></script>
+<script src="__PUBLIC__/plugin/editor.js{#$Think.config.WLN_UPDATE_FILE_DATE#}" type="text/javascript"></script>
+<script src="__PUBLIC__/plugin/formatTest.js{#$Think.config.WLN_UPDATE_FILE_DATE#}" type="text/javascript"></script>
+<script>
+//一次触发所有ajax请求
+$(document).ready(function(){
+    var subjectID='{#$edit.SubjectID#}';
+    var specialID='{#$edit.SpecialID#}';
+    var typeID='{#$edit.TypesID#}';
+    var knowID='{#$edit.KlID#}';
+    var chapID='{#$edit.ChapterID#}';
+    var capID='{#$edit.CapacityID#}';
+    var skillID='{#$edit.SkillID#}';
+    var diff='{#$edit.Diff#}';
+    if("edit"=='edit'){
+        $('#knowledge').allSelectLoad('__URL__',{"style":"getMoreData","list":"knowledgeList,chapterList,skillList,capacityList,types,knowledge,chapter,skill,capacity","subjectID":subjectID,"idList":{
+        "knowledgeList":knowID,"chapterList":chapID,"skillList":skillID,"capacityList":capID,"types":typeID,"knowledge":"0","chapter":"0","skill":"1","capacity":"1"}});
+        $('.difficulty input').each(function(){
+        if($(this).val() == diff){
+            $(this).attr('checked',true);
+        }
+        });
+    }
+    //写入小题结构
+    if("{#$edit.IfChoose#}"==1){
+        $('#showxt').css({'display':'block'});
+        var str='';
+        var tmp_i=1;
+        {#volist name="chooseList" id="vo"#}
+            str+='<p>小题'+tmp_i+'：<label><INPUT TYPE="radio" class="choose'+tmp_i+' bLeft"  check="raido" warning="请选择测试类型" NAME="IfChoose'+tmp_i+'" value="0" {#if condition="($vo.IfChoose eq '0') or ($vo.IfChoose eq '')"#}checked="checked"{#/if#}> 非选择题</label> '+
+        '<label><INPUT TYPE="radio" class="choose'+tmp_i+' bLeft" NAME="IfChoose'+tmp_i+'" value="3" {#eq name="vo.IfChoose" value="3"#}checked="checked"{#/eq#}> 单选题</label> '+
+        '<label><INPUT TYPE="radio" class="choose'+tmp_i+' bLeft" NAME="IfChoose'+tmp_i+'" value="2" {#eq name="vo.IfChoose" value="2"#}checked="checked"{#/eq#}> 多选题</label> '+
+        '</p>';
+        tmp_i++;
+        {#/volist#}
+        $('#xt').empty().html(str);
+    }
+    //添加试题宽度
+    $.testOperation.addTestWidthNum();
+    $.testOperation.delTestWidthNum();
+    $.testOperation.clearAllWidthNum();
+    $.testOperation.testChooseChange();
+    $.testOperation.resize();
+    //载入默认章节
+    var input='<div>#str# <span class="delhang">x</span><input class="kl" name="kl[]" type="hidden" value="#value#"/></div>';
+    var inputcp='<div>#str# <span class="delhang">x</span><input class="cp" name="cp[]" type="hidden" value="#value#"/></div>';
+    var inputskill='<div>#str# <span class="delhang">x</span><input class="skill" name="skill[]" type="hidden" value="#value#"/></div>';
+    var inputcapacity='<div>#str# <span class="delhang">x</span><input class="capacity" name="capacity[]" type="hidden" value="#value#"/></div>';
+
+    function autoAddAttr(name,input,tag){
+        if(name == 'Skill'){
+            if($('.select'+name).last().val().indexOf(tag)==-1){
+                    alert('请选择正确的技能');
+                    return false;
+                }
+        }
+        if(name == 'Capacity'){
+            if($('.select'+name).last().val().indexOf(tag)==-1){
+                    alert('请选择正确的能力');
+                    return false;
+                }
+        }
+        var kid=$('.select'+name).last().val().replace(tag,'');
+        var xx_s="";
+        $('.select'+name).each(function(){
+            xx_s+=' >> '+$(this).find("option:selected").text();
+        });
+        var xx=input.replace('#value#',kid).replace('#str#',xx_s.replace(/┉/g,'').replace('┝',''));
+        var obj='#'+name.toLowerCase()+'List';
+        if($(obj).html().indexOf('value="'+kid+'"')==-1 && $(obj).html().indexOf('value='+kid+'')==-1){
+            $(obj).append(xx);
+            $('.delhang').css({'padding':'0px 5px','cursor':'pointer','color':'#f00'});
+        }
+    }
+    $('#addskill').live('click',function(){
+        autoAddAttr('Skill',inputskill,'t');
+    });
+    $('#addcapacity').live('click',function(){
+        autoAddAttr('Capacity',inputcapacity,'t');
+    });
+
+    $('#adddcp').live('click',function(){
+        var result='';
+        $('.kl').each(function(){
+            result += $(this).val()+",";
+        });
+        var kl=result.substring(0, result.length-1);
+        var testid=$('#TestID').val();
+        $.get(U('Test/Test/getchapter?kl='+kl+'&id='+testid+'&'+Math.random()),function(msg){
+            //权限验证
+            if(checkPower(msg)=='error'){
+                return false;
+            }
+            var data = msg['data'];
+            if(data){
+                var flag=0;
+                for(var i=0;i<data.length;i++){
+                    var xx=inputcp.replace('#value#',data[i]['ChapterID']).replace('#str#',data[i]['ChapterName']);
+                    if($('.cpinput').html().indexOf('value="'+data[i]['ChapterID']+'"')==-1 && $('.cpinput').html().indexOf("value='"+data[i]['ChapterID']+"'")==-1 && $('.cpinput').html().indexOf('value='+data[i]['ChapterID']+' ')==-1){
+                        $('.cpinput').append(xx);
+                        flag=1;
+                    }
+                }
+                $('.delhang').css({'padding':'0px 5px','cursor':'pointer','color':'#f00'});
+                if(!flag){
+                    alert('默认章节已经全部载入！');
+                }
+            }else{
+                alert('暂无对应章节！');
+            }
+        },'json');
+    });
+    $('#addcp').live('click',function(){
+        //if($('.chapter').last().val().indexOf('c')==-1){
+        //    alert('请选择正确的数据');
+        //    return false;
+        //}
+        if(!$('.selectChapter:eq(1)').val()){
+            alert('请选择正确的章节');
+            return false;
+        }
+        
+        var cid=$('.selectChapter').last().val().replace('c','');
+        var tmp_position=0;
+        if(!cid){
+            tmp_position=1;
+            cid=$('.selectChapter').last().prev().val().replace('c','');
+        }
+        var xx_s="";
+        $('.selectChapter').each(function(i){
+            if(!(tmp_position==1 && $('.selectChapter').length==(i+1)))
+            xx_s+=' >> '+$(this).find("option:selected").text();
+        });
+        var xx=inputcp.replace('#value#',cid).replace('#str#',xx_s.replace(/┉/g,'').replace('┝',''));
+        
+        if($('#chapterList').html().indexOf('value="'+cid+'"')==-1 && $('#chapterList').html().indexOf('value='+cid+'')==-1){
+            $('#chapterList').append(xx);
+            $('.delhang').css({'padding':'0px 5px','cursor':'pointer','color':'#f00'});
+        }
+    });
+    $('#addkl').live('click',function(){
+        if($('.selectKnowledge').last().val().indexOf('t')==-1){
+            alert('请选择正确的知识点');
+            return false;
+        }
+        
+        var kid=$('.selectKnowledge').last().val().replace('t','');
+        var xx_s="";
+        $('.selectKnowledge').each(function(){
+            xx_s+=' >> '+$(this).find("option:selected").text();
+        });
+        var xx=input.replace('#value#',kid).replace('#str#',xx_s.replace(/┉/g,'').replace('┝',''));
+        
+        
+        if($('#knowledgeList').html().indexOf('value="'+kid+'"')==-1 && $('#knowledgeList').html().indexOf('value='+kid+'')==-1){
+            $('#knowledgeList').append(xx);
+            $('.delhang').css({'padding':'0px 5px','cursor':'pointer','color':'#f00'});
+        }
+    });
+
+    $('.delhang').live('click',function(){
+            $(this).parent().remove();
+    });
+    $('.delhang').live('mouseover',function(){
+            $(this).css({'background-color':'#f00','color':'#fff'});
+    });
+    $('.delhang').live('mouseout',function(){
+            $(this).css({'background-color':'#fff','color':'#f00'});
+    });
+})
+    var data = new Object({#$data#});
+    $.Editor.init(U('Index/upload?dir=customTest'),'.editContainers');
+    $.Editor.createContent(data['Test']);
+    $.Editor.createSolution(data['Answer']);
+    $.Editor.createAnalyze(data['Analytic']);
+    $('#SubjectID').subjectSelectChange('__URL__',{'style':'getMoreData','list':'grade,types,knowledge,chapter','ifConfirm':'1'});
+    $('.selectChapter').chapterSelectChange('__URL__');
+    $('.selectKnowledge').knowledgeSelectChange('__URL__');
+//form表单验证
+$('#saveTest').click(function(){
+    var can='';
+    var table={};
+    FormatTextManager.isForamt = false;
+    for(var editor in $.Editor.instance){
+            var editor = $.Editor.instance[editor];
+            var name = editor.getOpt('textarea');
+            table[name]=editor.getContent().replace(/\r\n|\r|\n/g, '');
+            if(name =='Test' && !editor.hasContents()){
+                alert('试题题文内容不能为空！');
+                can='yes';
+                 false;
+            }
+            if(name =='Answer' && !editor.hasContents()){
+                alert('试题答案不能为空！');
+                can='yes';
+                return false;
+            }
+            
+    }
+    if(can=='yes'){
+        return false;
+    }
+    table['TestID']=$('#TestID').val(); //试题ID
+    
+    if(!$('#SubjectID').val()){
+        alert('试题所在年级不能为空！');
+        return false;
+    }
+    table['SubjectID']=$('#SubjectID').val(); //学科
+    
+    if(!$('#grade').val()){
+        alert('试题所在年级不能为空！');
+        return false;
+    }
+    table['GradeID']=$('#grade').val(); //年级
+    
+    if(!$('#types').val()){
+        alert('试题所在题型不能为空！');
+        return false;
+    }
+    table['TypesID']=$('#types').val(); //题型
+    
+    if(!$("input[name='diff']:checked").val()){
+        alert('试题难度不能为空！');
+        return false;
+    }
+    table['Diff']=$("input[name='diff']:checked").val() //难度
+    table['Source']=$("#source").val() //来源
+    table['Remark']=$("#remark").val() //备注
+    table['UserName']=$("#UserName").val() //用户名
+    table['UserID']=$("#UserID").val() //用户ID
+    
+    table['KlID'] = [];
+    var knowledge = $(".kl");
+    knowledge.each(function(){
+        table['KlID'].push($(this).val());  //知识点
+    });
+    table['ChapterID'] = [];
+    var chapter = $(".cp");
+    chapter.each(function(){
+        table['ChapterID'].push($(this).val()); //章节
+    });
+
+    table['SkillID'] = [];
+    var skill = $('.skill:not(select)');
+    skill.each(function(){
+        table['SkillID'].push($(this).val()); //技能
+    });
+
+    table['CapacityID'] = [];
+    var capacity = $('.capacity:not(select)');
+    capacity.each(function(){
+        table['CapacityID'].push($(this).val()); //能力
+    });
+
+    FormatTextManager.types=$('#types');
+    if(FormatTextManager.formatContent()){
+        alert(FormatTextManager.err);  
+        return false;
+    }
+    var msg=FormatTextManager.getTopic();
+    table['attributes']=msg;
+    console.log(table);
+    $.post(U('Custom/CustomTest/save'),{'data':table},function(data){
+        //console.log(data);return false;
+        var msg=data;
+        if(msg['data']!='success'){
+            alert(msg['data']);
+        }else{
+            window.location.href = U('Custom/CustomTest/index');
+        }
+    })
+})
+$('#formatTest').click(function(){
+    FormatTextManager.isForamt = true;
+    FormatTextManager.types=$('#types');
+    if(FormatTextManager.formatContent()){
+        alert(FormatTextManager.err);   
+    }
+})
+</script>
+<!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>组卷历史存档</title>
+    <meta id="keywordsmeta" name="keywords" content="在线组卷系统,存档,组卷记录">
+    <meta id="descriptmeta" name="description" content="在线组卷系统组卷历史存档">
+    <link type="text/css" href="__PUBLIC__/default/css/common.css" rel="stylesheet">
+    <link type="text/css" href="__PUBLIC__/default/css/user.css" rel="stylesheet">
+        <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js"></script>
+    </head>
+<body>
+    <div id="righttop">
+        <div id="categorylocation">
+            <span class="nowPath">当前位置：</span>
+            &gt;
+            <span id="loca_text">
+                <span></span>
+                &gt; <a href="{#:U('Home/info')#}" style="cursor: pointer;text-decoration:none;">用户档案</a> &gt; 用户头衔介绍
+            </span>
+        </div>
+    </div>
+
+    <div id="divbox" class="sc_list_box g-tab">
+        <div id="paperinfod" class="tab-list-top">
+            <div class="tab-list-head f-yahei"> <b>用户等级权限介绍</b> <span class="my-head">我的等级：<cite>{#$thisLevelMsg.LevelName#}</cite></span>
+            </div>
+        </div>
+        <div id="paperlistbox">
+            <div class="ul-table-container">
+                <table class="ul-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <span>用户头衔</span>
+                            </th>
+                            {#volist name='levelList' id='level'#}
+                            <th>
+                                <span>{#$level.LevelName#}</span>
+                            </th>
+                            {#/volist#}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span>经验值</span>
+                            </td>
+                            {#volist name='levelList' id='level' key='i'#}
+                            <td><span>{#$level.LevelExpMin#}~{#if condition="$level.LevelExpMax eq 0"#}点以上{#else/#}{#$level.LevelExpMax#}点{#/if#}</span> </td>
+                            {#/volist#}
+                        </tr>
+                        {#volist name="valueList" id="value"#}
+                            <tr>
+                            <td>
+                                <span>{#$value.name#}</span>
+                            </td>
+                            {#volist name="value['list']" id="item"#}
+                                <td>
+                                    <span>
+                                        {#$item#}
+                                    </span>
+                                 </td>
+                            {#/volist#}
+                            </tr>
+                        {#/volist#}
+                       <!-- <tr>
+                            <td>
+                                <span>高效同步课堂</span>
+                            </td>
+                            <td>
+                                <span>
+                                    <i class="iconfont true"></i>
+                                    &nbsp;
+                                </span>
+                            </td>
+                            <td>
+                                <span>
+                                    <i class="iconfont true"></i>
+                                    &nbsp;
+                                </span>
+                            </td>
+                            <td>
+                                <span>
+                                    <i class="iconfont true"></i>
+                                    &nbsp;
+                                </span>
+                            </td>
+                            <td>
+                                <span>
+                                    <i class="iconfont false"></i>
+                                    &nbsp;
+                                </span>
+                            </td>
+                            <td>
+                                <span>
+                                    <i class="iconfont true"></i>
+                                    &nbsp;
+                                </span>
+                            </td>
+                            <td>
+                                <span>
+                                    <i class="iconfont true"></i>
+                                    &nbsp;
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="ul-table-price">
+                            <td>
+                                <span>价格</span>
+                            </td>
+                            <td>
+                                <span></span>
+                            </td>
+                            <td>
+                                <span></span>
+                            </td>
+                            <td>
+                                <span></span>
+                            </td>
+                            <td>0</td>
+                            <td>
+                                <span>
+                                    <s>原价:50 元/月</s>
+                                    <br>优惠价:10 元/月</span>
+                            </td>
+                            <td>
+                                <span>
+                                    <s>原价:100 元/月</s>
+                                    <br>优惠价:20 元/月</span>
+                            </td>
+                        </tr>-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

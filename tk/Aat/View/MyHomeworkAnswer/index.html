@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {#include file="Common:head"/#}
+    <script type="text/javascript" src="__PUBLIC__/plugin/bigImage.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+</head>
+
+<body>
+<div id="wrapper">
+{#include file="Common:header"/#}
+<div id="content" class="w980 mc pt90 pb20">
+<div class="box02 mb20">
+<!--标题-->
+<div class="zt_title">
+    <div class="fl pt20 pl20">正在加载作业，请稍候...</div>
+    <a class="an01 fr" href="{#:U('MyHomework/index')#}" style="margin-top: 15px;margin-right: 20px;"><span class="an_left"></span><div class="an_cen"><span style=" float:left; margin-top:5px; margin-right:5px;"><img src="__PUBLIC__/newAat/images/ico_jj.png"></span>返回我的作业</div><span class="an_right"></span></a>
+</div>
+<!--tab题型-->
+<div class="tabnav01 tabnav02" style="display: none;">
+    <div class="left_an sub_an" style="display: none;"><a href="javascript:;"></a></div>
+    <div class="right_an sub_an" style="display: none;"><a href="javascript:;"></a></div>
+    <div class="tabnr_01">
+    </div>
+</div>
+<!--提醒介绍-->
+<div class="this_tab_title" style="display: none;">
+</div>
+<!--一以下为试题-->
+<div id="test">
+</div>
+<!--右侧快捷按钮-->
+<div id="db_dh_box" style="display: none;">
+    <a class="an_go_top" href="javascript:;"></a>
+    <a class="an_ctb02" href="javascript:;" style="display: none;">答题卡</a>
+</div>
+<!--以下是答题卡-->
+<div class="dtk_box" style="display: none;">
+    <div class="th_box">
+        <div></div>
+        <div class="clear"></div>
+    </div>
+    <div class="th_sm">
+        <span class="fl"></span>
+        <span class="fr sm_ys">
+        <span><b class="ys_lv"></b><font>做对</font></span>
+        <span><b class="ys_hong"></b><font>做错</font></span>
+        <span><b class="ys_hui"></b><font>未做</font></span>
+        <span><b class="ys_lan"></b><font>无法判断对错</font></span>
+        </span>
+    </div>
+</div>
+</div>
+</div>
+<div id="footer">
+    {#include file="Common:footer"/#}
+</div>
+</div>
+<div id="kl_video"></div>
+<div id="correction" title="试题纠错" style="display:none;">
+    <p id="errorDoAmount"></p>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+    var AatMyHomeworkAnswer = {
+        init:function(){
+            this.getMyHomeworkAnswerData();
+            this.testCollectSave();
+            $('#test').on('click','.st_box img',function(){
+                $(this).bigImage();
+            });
+        },
+        getMyHomeworkAnswerData:function(){
+            var self = this;
+            //服务器返回的题目json数据并解析
+            $.post(U('MyHomeworkAnswer/returnTestList'),{'id':'{#$send_id#}',times:Math.random()}, function (e) {
+                if (e.status !== 1) {
+                    $('.zt_title div:first-child').html(e.data);
+                } else {
+                    //顺序不能改变
+                    //1显示页面做题统计，试题等数据信息 需要先调用showData生成页面数据
+                    self.showData(e.data);
+                    //2显示标题和信息栏、Tab、右侧向上和答题卡
+                    self.showTop(e.data);
+                    //6收藏试题
+                    self.testCollectSave();
+                    //视频播放
+                    self.playVideo();
+                }
+            });
+        },
+        showData:function(e) {
+            var self = this;
+            //现实不同题型的父类Div
+            $.each(e.type,function(i,type){
+//                var str = '<div data="'+type.TypesID+'" class="test_'+type.TypesID+'" style="display:none;"></div>';
+//                $('#test').append(str);
+            });
+            //显示试题
+            self.showTest(e);
+            //查看解析
+            $('.see_analysis').click(function(){
+                var str = $(this).children('.an_cen').children('font');
+                str.text(str.text()=='隐藏解析'?'查看解析':'隐藏解析');
+                $(this).parent().parent().next().toggle(300);
+            });
+            //做题统计答题卡
+            self.showAnalysis(e);
+        },
+
+        showTop:function(e) {
+            var self = this;
+            var check_time = e.CheckTime?(' 审批时间：'+e.CheckTime):'';
+            var score = e.CheckTime?(' 分数：'+e.Score+'分'):'';
+            $('.zt_title div:first-child').html(e.SubjectName+'作业 '+ e.UserName+'于'+ e.LoadTime+'发布'+check_time+score);
+            $('.kzt_title').show();
+            //显示题型Tab
+            self.showTestTab(e);
+            //显示右侧向上按钮和答题卡
+            self.goTop();
+            //试题纠错
+            $('.an_jc').on('click',function(){
+                var testID=$(this).attr('data');
+                AatCommon.correction(testID,false);
+            })
+        },
+
+        testCollectSave:function() {
+            $(document).on('click', '.collect_test', function () {
+                var testID = $(this).attr('data');
+                AatCommon.testCollectSave(testID);
+            })
+        },
+
+        showTest:function(e) {
+            var totalNum=0; //试题序号
+            $.each(e.test, function (i, test) {
+                //一道试题所有内容Html t_content
+                var t_content = '';
+                //var t_num = test.number;
+                var t_num = totalNum+1;//试题序号
+                var t_test_id = test.test_id;
+                var t_title = test.test_title;
+                if(!t_title){
+                    //如果t_title没有值则跳出循环
+                    return true;
+                }
+                var t_type = test.test_type;
+                if (test.if_choose == 1) {
+                    //复合题
+                    t_content += '<div class="tw_box">' +
+                            '<div class="title">'+
+                            '<span class="ico_tw fl">'+t_num+'-'+(t_num+parseInt(test.testNum)-1)+'题</span>'+
+                            '<span class="fl tit">'+''+'</span>' +
+                            '</div>'+
+                            '<div class="nr_box">'+t_title+'</div>' +
+                            '</div>';
+                    if(typeof(test.sub) != 'undefined'){
+                        $.each(test.sub, function (sub_i, sub_test) {
+                            t_content += '<div class="st_box">' +
+                                    '<div class="st_tm_box">' +
+                                    '<div class="title">'+
+                                    '<span class="ico_th fl">'+(t_num-1+parseInt(sub_test.order))+'</span>'+
+                                    '<span class="tit">'+sub_test.sub_title+'</span>' +
+                                    '<div class="bjjt"></div>' +
+                                    '</div>' +
+                                    '</div>';
+                            if (sub_test.if_choose > 1) {
+                                //复合体中选择题
+                                if(sub_test.sub_options[0] != 'A'){
+                                    t_content += '<div class="st_wt_box">';
+                                    $.each(sub_test.sub_options,function(op_i,op){
+                                        t_content += '<p><span class="st_wt_bt">'+op.substr(0,1)+'.</span>'+op.substr(2)+'</p>';
+                                    });
+                                    t_content += '</div>';
+                                }
+                                t_content += '<div class="dt_box dt_box_xzt">' +
+                                        '<div class="fl xx_xzt_da">';
+                                var answer = sub_test.sub_answer ? sub_test.sub_answer : '空';
+                                t_content +=    '正确答案：<font color="#27a152">'+sub_test.sub_right_answer+'</font>，' +
+                                        '您的答案为 <font color="#00a0e9">'+answer+'</font> ，'+
+                                        '<font color="#69be83" style="display: '+(sub_test.if_right == 2 ? 'inline' : 'none')+';"><strong>回答正确！</strong></font>'+
+                                        '<font color="#fe7676" style="display:'+(sub_test.if_right == 2 ? 'none' : 'inline')+';"><strong>回答错误！</strong></font>' +
+                                        '</div>'+
+                                        '<div class="fr cz_an_box">' +
+                                        '<a class="an_jc" href="#" data="' + t_test_id + '">我要纠错</a>'+
+                                        '<a class="an_sc collect_test" href="javascript:;" data="' + t_test_id + '">收藏本题</a>'+
+                                        '<a class="an02 fr an_jx see_analysis" href="javascript:;">' +
+                                        '<span class="an_left"></span><div class="an_cen"><font color="#7e7e7e" class="fl mr5">查看解析</font><span style="margin-top:3px" class="fl"><img src="__PUBLIC__/newAat/images/ico_jt01.png"></span></div><span class="an_right"></span>' +
+                                        '</a>'+
+                                        '</div>' +
+                                        '<div class="clear"></div>' +
+                                        '</div>';
+                            }else if(sub_test.if_choose == 0){
+                                //复合体中大题
+                                t_content += '<div class="dt_box dt_box_wdt">' +
+                                        '<div class="xx_wdt_da">' +
+                                        '<font color="#27a152">正确答案：</font>'+
+                                        sub_test.sub_right_answer+
+                                        '</div>'+
+                                        '<div class="xx_wdt_da">' +
+                                        '<font color="#00a0e9">你的答案：</font>'+(sub_test.sub_answer?sub_test.sub_answer:'<font color="#00a0e9">空</font>')+
+                                        '</div>'+
+                                        '<div class="dt_box dt_box_xzt">'+
+                                        '<div class="cz_an_box fr">' +
+                                        '<a class="an_jc" href="javascript:;" data="'+ t_test_id +'">我要纠错</a>'+
+                                        '<a class="an_sc collect_test" href="javascript:;" data="' + t_test_id + '">收藏本题</a>'+
+                                        '<a class="an02 fr an_jx see_analysis" href="javascript:;">' +
+                                        '<span class="an_left"></span><div class="an_cen"><font color="#7e7e7e" class="fl mr5">查看解析</font><span style="margin-top:3px" class="fl"><img src="__PUBLIC__/newAat/images/ico_jt01.png"></span></div><span class="an_right"></span>' +
+                                        '</a>'+
+                                        '</div>' +
+                                        '<div class="clear"></div>' +
+                                        '</div>';
+                            }
+                            //以下为试题解析知识点和来源
+                            t_content +=        '<div class="dan_box" style="display: none;">' +
+                                    '<div class="dan_box_nr">' +
+                                    '<div class="title">' +
+                                    '<span class="an_left"></span><span class="an_cen">答案解析</span><span class="an_right"></span>' +
+                                    '</div>'+
+                                    sub_test.sub_analytic+
+                                    '</div>'+
+                                    '<div class="dan_box_nr dan_box_kd" style="display:block;">' +
+                                    '<div class="title">' +
+                                    '<span class="an_left"></span><span class="an_cen">考查考点</span><span class="an_right"></span>' +
+                                    '</div>'+
+                                    '<p>'+(test.kl_list?test.kl_list:'[暂无]')+'</p>' +
+                                    '</div>'+
+                                    '<div class="dan_box_nr">' +
+                                    '<div class="title">' +
+                                    '<span class="an_left"></span><span class="an_cen">试题来源</span><span class="an_right"></span>' +
+                                    '</div>'+
+                                    test.doc_name+
+                                    '</div>' +
+                                    '</div>';
+                            t_content +=    '</div>';
+                        });
+                    }
+                } else if (test.if_choose == 2||test.if_choose == 3) {
+                    t_content += '<div class="st_box">' +
+                            '<div class="st_tm_box">' +
+                            '<div class="title">'+
+                            '<span class="ico_th fl">'+t_num+'</span>'+
+                            '<span class="tit">'+test.test_title+'</span>' +
+                            '<div class="bjjt"></div>' +
+                            '</div>' +
+                            '</div>';
+                    if(test.test_options[0] != 'A'){
+                        t_content += '<div class="st_wt_box">';
+                        $.each(test.test_options,function(op_i,op){
+                            var option = [op.substr(0,1),op.substr(2)];
+                            t_content += '<p><span class="st_wt_bt">'+option[0]+'.</span>'+option[1]+'</p>';
+                        });
+                        t_content += '</div>';
+                    }
+                    t_content += '<div class="dt_box dt_box_xzt">' +
+                            '<div class="fl xx_xzt_da">';
+                    //试题作答情况
+                    var answer = test.answer ? test.answer : '空';
+                    t_content +=    '正确答案：<font color="#27a152">'+test.right_answer+'</font>，' +
+                            '您的答案为 <font color="#00a0e9">'+answer+'</font> ，'+
+                            '<font color="#69be83" style="display: '+(test.if_right == 2 ? 'inline' : 'none')+';"><strong>回答正确！</strong></font>'+
+                            '<font color="#fe7676" style="display:'+(test.if_right == 2 ? 'none' : 'inline')+';"><strong>回答错误！</strong></font>' +
+                            '</div>'+
+                            '<div class="fr cz_an_box">' +
+                            '<a class="an_jc" href="#" data="' + t_test_id +'">我要纠错</a>'+
+                            '<a class="an_sc collect_test" href="javascript:;" data="' + t_test_id + '">收藏本题</a>'+
+                            '<a class="an02 fr an_jx see_analysis" href="javascript:;">' +
+                            '<span class="an_left"></span><div class="an_cen"><font color="#7e7e7e" class="fl mr5">查看解析</font><span style="margin-top:3px" class="fl"><img src="__PUBLIC__/newAat/images/ico_jt01.png"></span></div><span class="an_right"></span>' +
+                            '</a>'+
+                            '</div>' +
+                            '<div class="clear"></div>' +
+                            '</div>';
+                    //以下为试题解析知识点和来源
+                    t_content += '<div class="dan_box" style="display: none;">' +
+                            '<div class="dan_box_nr">' +
+                            '<div class="title">' +
+                            '<span class="an_left"></span><span class="an_cen">答案解析</span><span class="an_right"></span>' +
+                            '</div>'+
+                            test.analytic+
+                            '</div>'+
+                            '<div class="dan_box_nr dan_box_kd" style="display:block;">' +
+                            '<div class="title">' +
+                            '<span class="an_left"></span><span class="an_cen">考察考点</span><span class="an_right"></span>' +
+                            '</div>'+
+                            '<p>'+(test.kl_list?test.kl_list:'[暂无]')+'</p>' +
+                            '</div>'+
+                            '<div class="dan_box_nr">' +
+                            '<div class="title">' +
+                            '<span class="an_left"></span><span class="an_cen">试题来源</span><span class="an_right"></span>' +
+                            '</div>'+
+                            test.doc_name+
+                            '</div>' +
+                            '</div>';
+                    t_content += '</div>';
+                } else {
+                    //大题
+                    t_content += '<div class="st_box">' +
+                            '<div class="st_tm_box">' +
+                            '<div class="title">'+
+                            '<span class="ico_th fl">'+t_num+'</span>'+
+                            '<span class="tit">'+test.test_title+'</span>' +
+                            '<div class="bjjt"></div>' +
+                            '</div>' +
+                            '</div>';
+                    t_content +=    '<div class="dt_box dt_box_wdt">' +
+                            '<div class="xx_wdt_da">' +
+                            '<font color="#27a152">正确答案：</font>'+test.right_answer+
+                            '</div>'+
+                            '<div class="xx_wdt_da">' +
+                            '<font color="#00a0e9">你的答案：</font>'+(test.answer?test.answer:'<font color="#00a0e9">空</font>')+
+                            '</div>'+
+                            '<div class="dt_box dt_box_xzt">'+
+                            '<div class="cz_an_box fr">' +
+                            '<a class="an_jc" href="javascript:;"  data="' + t_test_id +'">我要纠错</a>'+
+                            '<a class="an_sc collect_test" href="javascript:;" data="' + t_test_id + '">收藏本题</a>'+
+                            '<a class="an02 fr an_jx see_analysis" href="javascript:;">' +
+                            '<span class="an_left"></span><div class="an_cen"><font color="#7e7e7e" class="fl mr5">查看解析</font><span style="margin-top:3px" class="fl"><img src="__PUBLIC__/newAat/images/ico_jt01.png"></span></div><span class="an_right"></span>' +
+                            '</a>'+
+                            '</div>' +
+                            '<div class="clear"></div>' +
+                            '</div>';
+                    //以下为试题解析知识点和来源
+                    t_content +=        '<div class="dan_box" style="display: none;">' +
+                            '<div class="dan_box_nr">' +
+                            '<div class="title">' +
+                            '<span class="an_left"></span><span class="an_cen">答案解析</span><span class="an_right"></span>' +
+                            '</div>'+
+                            test.analytic+
+                            '</div>'+
+                            '<div class="dan_box_nr dan_box_kd" style="display:none;">' +
+                            '<div class="title">' +
+                            '<span class="an_left"></span><span class="an_cen">考查考点</span><span class="an_right"></span>' +
+                            '</div>'+
+                            '<p>'+(test.kl_list?test.kl_list:'[暂无]')+'</p>' +
+                            '</div>'+
+                            '<div class="dan_box_nr">' +
+                            '<div class="title">' +
+                            '<span class="an_left"></span><span class="an_cen">试题来源</span><span class="an_right"></span>' +
+                            '</div>'+
+                            test.doc_name+
+                            '</div>' +
+                            '</div>';
+                    t_content += '</div>';
+                }
+                totalNum+=parseInt(test.testNum);
+                $('#test').append(t_content);
+            });
+        },
+        showTestTab:function(e){
+            var str = '试题数量：';
+            $.each(e.type,function(i,k){
+                var amount = k.TypesAmount;
+                str += '<span data="'+ k.TypesID+'">'+ k.TypesName+'['+amount+']</span> ';
+            });
+            $('.tabnr_01').html(str);
+            $('.tabnav01').show();
+            if($('.tabnr_01').width()>958){
+                $('.tabnav02 .right_an').show();
+            }
+            $('.tabnav02 .right_an').mouseover(function(){
+                $('.tabnav02 .left_an').show();
+                move_time = setInterval(function(){
+                    var left = parseInt($('.tabnr_01').css('left'))-10;
+                    if(left >= -($('.tabnr_01').width()-958)){
+                        $('.tabnr_01').css('left',left);
+                        if(left + ($('.tabnr_01').width()-958)<10){
+                            $('.tabnav02 .right_an').hide();
+                        }
+                    }
+                },50);
+            }).mouseout(function(){
+                clearInterval(move_time);
+            });
+            $('.tabnav02 .left_an').mouseover(function(){
+                $('.tabnav02 .right_an').show();
+                move_time = setInterval(function(){
+                    var left = parseInt($('.tabnr_01').css('left'))+10;
+                    if(left <= 0 ){
+                        $('.tabnr_01').css('left',left);
+                        if(left > -10){
+                            $('.tabnav02 .left_an').hide();
+                        }
+                    }
+                },50);
+            }).mouseout(function(){
+                clearInterval(move_time);
+            });
+            $('.tabnr_01 a:first-child').addClass('this');
+            $('#test div:first-child').show();
+            $('.tabnr_01 a').click(function(){
+                //试题显示转变
+                $('#test').children().hide();
+                $('#test div[data='+$(this).attr('data')+']').show();
+                //Tab转换
+                $('.tabnr_01 a').removeClass('this');
+                $(this).addClass('this');
+            });
+        },
+
+        goTop:function(){
+            var bottom = $(document).height()-$(window).height()-107;
+            $('#db_dh_box').css({'bottom':bottom,'_bottom':bottom}).show();
+            $(window).resize(function(){
+                bottom = $(document).height()-$(window).height()-107;
+                bottom = bottom>0?bottom:0;
+                $('#db_dh_box').css({'bottom':bottom,'_bottom':bottom}).show();
+            });
+            $(window).scroll(function(){
+                bottom = $(document).height()-$(window).height()-107-$(window).scrollTop();
+                bottom = bottom>0?bottom:0;
+                $('#db_dh_box').css({'bottom':bottom,'_bottom':bottom}).show();
+            });
+            //show显示答题卡按钮
+            $('#db_dh_box .an_ctb02').show();
+            //页面滚动
+            $('#db_dh_box .an_go_top').click(function(){$('html,body').animate({scrollTop : 0}, 300);});
+            $('#db_dh_box .an_ctb02').click(function(){$('html,body').animate({scrollTop : $(document).height()}, 300);});
+        },
+
+        showAnalysis:function(e){
+            var str = '';
+            var totalNum=0;
+            $.each(e.exercise_info,function(i,k){
+                var num = k.OrderID==0? k.Number: k.Number+'('+ k.OrderID+')';
+                var color;
+                if(k.IfRight == -1){
+                    color = '';
+                }else if(k.IfRight == 0){
+                    color = 'th_yz';
+                }else if(k.IfRight == 1){
+                    color = 'th_cw';
+                }else if(k.IfRight == 2){
+                    color = 'th_zq';
+                }
+                totalNum++;
+                str += '<a class="'+color+'" href="javascript:;">'+ totalNum +'</a>';
+            });
+            $('.dtk_box .th_box div:first-child').html(str);
+            $('.dtk_box .th_sm .fl').html('总共 <strong>'+ e.exercise_info_amount.all+'</strong> 小题，正确<strong><font color="#69BE83"> '+e.exercise_info_amount.right+
+                    ' </font></strong> 道题，错误<strong><font color="#FE7676"> '+e.exercise_info_amount.wrong+
+                    ' </font></strong> 道题，未做<strong><font color="#AAAAAA"> '+e.exercise_info_amount.undo+
+                    ' </font></strong> 道题，无法判断对错<strong><font color="#00A0E9"> '+e.exercise_info_amount.un_judge+
+                    ' </font></strong> 道题');
+
+            $('.dtk_box').show();
+        },
+        dialogButtonDisable:function(disable) {
+            var button = $('.ui-dialog-buttonpane button');
+            if (disable === true) {
+                button.addClass('ui-state-disabled');
+                button.attr('disabled', 'disabled');
+            } else {
+                button.removeAttr('disabled');
+                button.removeClass('ui-state-disabled');
+            }
+        },
+        playVideo:function(){
+            AatCommon.initVideo();
+        }
+    };
+    AatMyHomeworkAnswer.init();
+});
+
+
+
+</script>
+
+</body>
+</html>

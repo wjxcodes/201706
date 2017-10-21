@@ -1,0 +1,1305 @@
+[ 2017-10-11T10:11:00+08:00 ] 115.60.59.155 /Statistics/Index/home.html?times=0.6234029595961379&_=1507687858703
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T10:11:07+08:00 ] 140.207.185.111 /Statistics/Index/home.html?times=0.6234029595961379&_=1507687858703
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: return E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 395 行.
+NOTIC: [2] Missing argument 4 for Common\Controller\SystemLayerController::showSuccessMsg(), called in E:\www\www\tk\Common\Controller\SystemLayerController.class.php on line 401 and defined E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 231 行.
+NOTIC: [8] Undefined variable: displayContent E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 249 行.
+ERR: 模板不存在:../tk/Statistics/View/Index/home.html
+
+[ 2017-10-11T10:19:35+08:00 ] 115.60.59.155 /Statistics/Index/home.html?times=0.2490489181927411&_=1507688375841
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T10:19:39+08:00 ] 115.60.59.155 /Statistics/Index/home.html?times=0.3186941357746349&_=1507688380839
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T10:19:44+08:00 ] 140.207.128.193 /Statistics/Index/home.html?times=0.2490489181927411&_=1507688375841
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: return E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 395 行.
+NOTIC: [2] Missing argument 4 for Common\Controller\SystemLayerController::showSuccessMsg(), called in E:\www\www\tk\Common\Controller\SystemLayerController.class.php on line 401 and defined E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 231 行.
+NOTIC: [8] Undefined variable: displayContent E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 249 行.
+ERR: 模板不存在:../tk/Statistics/View/Index/home.html
+
+[ 2017-10-11T10:19:44+08:00 ] 115.60.59.155 /Statistics/Index/home.html?times=0.6629421129182407&_=1507688385839
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T10:19:50+08:00 ] 112.65.193.14 /Statistics/Index/home.html?times=0.3186941357746349&_=1507688380839
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: return E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 395 行.
+NOTIC: [2] Missing argument 4 for Common\Controller\SystemLayerController::showSuccessMsg(), called in E:\www\www\tk\Common\Controller\SystemLayerController.class.php on line 401 and defined E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 231 行.
+NOTIC: [8] Undefined variable: displayContent E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 249 行.
+ERR: 模板不存在:../tk/Statistics/View/Index/home.html
+
+[ 2017-10-11T10:19:58+08:00 ] 115.60.59.155 /Statistics/Index/home.html?times=0.15464393125959597&_=1507688399354
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-10-11T10:21:14+08:00 ] 140.207.185.111 /Statistics/Index/home.html?times=0.6629421129182407&_=1507688385839
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: return E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 395 行.
+NOTIC: [2] Missing argument 4 for Common\Controller\SystemLayerController::showSuccessMsg(), called in E:\www\www\tk\Common\Controller\SystemLayerController.class.php on line 401 and defined E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 231 行.
+NOTIC: [8] Undefined variable: displayContent E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 249 行.
+ERR: 模板不存在:../tk/Statistics/View/Index/home.html
+
+[ 2017-10-11T10:21:28+08:00 ] 115.60.59.155 /Statistics/Index/home.html?times=0.4995642092321335&_=1507688489467
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T10:21:43+08:00 ] 140.207.185.111 /Statistics/Index/home.html?times=0.4995642092321335&_=1507688489467
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: return E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 395 行.
+NOTIC: [2] Missing argument 4 for Common\Controller\SystemLayerController::showSuccessMsg(), called in E:\www\www\tk\Common\Controller\SystemLayerController.class.php on line 401 and defined E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 231 行.
+NOTIC: [8] Undefined variable: displayContent E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 249 行.
+ERR: 模板不存在:../tk/Statistics/View/Index/home.html
+
+[ 2017-10-11T10:23:49+08:00 ] 101.226.66.178 /Statistics/Index/home.html?times=0.2490489181927411&_=1507688375841
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: return E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 395 行.
+NOTIC: [2] Missing argument 4 for Common\Controller\SystemLayerController::showSuccessMsg(), called in E:\www\www\tk\Common\Controller\SystemLayerController.class.php on line 401 and defined E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 231 行.
+NOTIC: [8] Undefined variable: displayContent E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 249 行.
+ERR: 模板不存在:../tk/Statistics/View/Index/home.html
+
+[ 2017-10-11T10:23:54+08:00 ] 101.226.33.239 /Statistics/Index/home.html?times=0.3186941357746349&_=1507688380839
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: return E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 395 行.
+NOTIC: [2] Missing argument 4 for Common\Controller\SystemLayerController::showSuccessMsg(), called in E:\www\www\tk\Common\Controller\SystemLayerController.class.php on line 401 and defined E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 231 行.
+NOTIC: [8] Undefined variable: displayContent E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 249 行.
+ERR: 模板不存在:../tk/Statistics/View/Index/home.html
+
+[ 2017-10-11T10:50:04+08:00 ] 222.134.133.242 /Statistics/Index/home.html?times=0.189815784804523&_=1507690205112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T10:50:09+08:00 ] 222.134.133.242 /Statistics/Index/home.html?times=0.5243317459244281&_=1507690210109
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T10:50:14+08:00 ] 222.134.133.242 /Statistics/Index/home.html?times=0.9981506639160216&_=1507690215111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T11:26:16+08:00 ] 115.60.59.155 /Statistics/StatisticsB/menuList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T11:26:18+08:00 ] 115.60.59.155 /Statistics/StatisticsB/userAnswer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 851 行.
+NOTIC: [8] Undefined variable: params E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 887 行.
+NOTIC: [8] Undefined variable: data E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 891 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 45 行.
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 54 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 56 行.
+NOTIC: [8] Undefined index: Start E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 58 行.
+NOTIC: [8] Undefined index: End E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 59 行.
+NOTIC: [8] Undefined variable: list E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 90 行.
+NOTIC: [8] Undefined variable: page E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T11:26:23+08:00 ] 115.60.59.155 /Statistics/StatisticsB/userAnswer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 857 行.
+NOTIC: [8] Undefined index: mode E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 866 行.
+NOTIC: [8] Undefined property: Aat\Model\UserAnswerRecordModel::$methods E:\www\www\tk\Common\Model\BaseModel.class.php 第 63 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\www\www\tk\Common\Model\BaseModel.class.php 第 63 行.
+ERR: Common\Model\BaseModel:statUserAnswer方法不存在！
+
+[ 2017-10-11T13:49:52+08:00 ] 115.60.59.155 /Statistics/StatisticsB/menuList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-11T13:50:00+08:00 ] 115.60.59.155 /Statistics/StatisticsB/homeWorkList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 99 行.
+NOTIC: [8] Undefined index: teacherName E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 105 行.
+NOTIC: [8] Undefined index: num E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 109 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 113 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 117 行.
+NOTIC: [8] Undefined index: doTime E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 121 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 128 行.
+NOTIC: [8] Undefined variable: map E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 129 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 44 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 53 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 56 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 62 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 63 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 70 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 71 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 81 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 79 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 73 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 71 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 57 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-11T13:50:16+08:00 ] 115.60.59.155 /Statistics/StatisticsB/summerWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 206 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given E:\www\www\tk\Common\Controller\DefaultController.class.php 第 227 行.
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given E:\www\www\tk\Common\Controller\DefaultController.class.php 第 227 行.
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given E:\www\www\tk\Common\Controller\DefaultController.class.php 第 227 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-11T13:50:31+08:00 ] 115.60.59.155 /Statistics/StatisticsB/userWorkInfo/id/82.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant SendID - assumed 'SendID' E:\www\www\tk\Runtime\Cache\Statistics\061933b078d1477852b6d11bdea602be.php 第 59 行.
+NOTIC: [8] Array to string conversion E:\www\www\tk\Runtime\Cache\Statistics\061933b078d1477852b6d11bdea602be.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-11T13:50:36+08:00 ] 115.60.59.155 /Statistics/StatisticsB/workAnswerInfo/sid/ArraySendID.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+ERR: 1054:Unknown column 'ArraySendID' in 'where clause'
+ [ SQL语句 ] : SELECT `SendID`,`WorkID`,`SubjectID` FROM `zj_user_send_work` WHERE ( SendID=ArraySendID ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-11T13:50:41+08:00 ] 115.60.59.155 /Statistics/StatisticsB/menuList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T13:50:59+08:00 ] 115.60.59.155 /Statistics/StatisticsB/areaSchoolUserList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: noSchool E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 814 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Statistics\91ca40750e0bf89a267115c904ab6747.php 第 42 行.
+NOTIC: [8] Undefined variable: td E:\www\www\tk\Runtime\Cache\Statistics\91ca40750e0bf89a267115c904ab6747.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T13:51:03+08:00 ] 115.60.59.155 /Statistics/StatisticsB/areaSchoolUserList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 722 行.
+NOTIC: [8] Undefined index: sub E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 747 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 747 行.
+NOTIC: [8] Undefined index: sub E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 768 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 768 行.
+NOTIC: [8] Undefined index: sub E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 768 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 768 行.
+NOTIC: [8] Undefined index: countNum E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 785 行.
+NOTIC: [8] Undefined index: countNum E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 787 行.
+NOTIC: [8] Undefined index: countNum E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 785 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Statistics\91ca40750e0bf89a267115c904ab6747.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-11T15:05:06+08:00 ] 115.60.59.155 /Statistics/Index/home.html?times=0.346785784626092&_=1507705507215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-11T16:47:20+08:00 ] 115.60.59.155 /Statistics/StatisticsB/menuList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-10-11T16:47:23+08:00 ] 115.60.59.155 /Statistics/StatisticsB/menuList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-11T16:47:25+08:00 ] 115.60.59.155 /Statistics
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p E:\www\www\tk\Statistics\Controller\IndexController.class.php 第 18 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../tk/Statistics/View/Public/bottom.html): failed to open stream: No such file or directory E:\www\www\main\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: Statmszz E:\www\www\tk\Runtime\Cache\Statistics\13872c5a1c19a98270524ceddae8d340.php 第 94 行.
+NOTIC: [8] Undefined index: Statmszz E:\www\www\tk\Runtime\Cache\Statistics\13872c5a1c19a98270524ceddae8d340.php 第 94 行.
+NOTIC: [8] Undefined index: Statmszz E:\www\www\tk\Runtime\Cache\Statistics\13872c5a1c19a98270524ceddae8d340.php 第 94 行.
+NOTIC: [8] Undefined index: Statmszz E:\www\www\tk\Runtime\Cache\Statistics\13872c5a1c19a98270524ceddae8d340.php 第 94 行.
+NOTIC: [8] Undefined index: Statmszz E:\www\www\tk\Runtime\Cache\Statistics\13872c5a1c19a98270524ceddae8d340.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-11T16:47:25+08:00 ] 115.60.59.155 /Statistics
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p E:\www\www\tk\Statistics\Controller\IndexController.class.php 第 18 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../tk/Statistics/View/Public/bottom.html): failed to open stream: No such file or directory E:\www\www\main\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Statmszz E:\www\www\tk\Runtime\Cache\Statistics\13872c5a1c19a98270524ceddae8d340.php 第 94 行.
+NOTIC: [8] Undefined index: Statmszz E:\www\www\tk\Runtime\Cache\Statistics\13872c5a1c19a98270524ceddae8d340.php 第 94 行.
+NOTIC: [8] Undefined index: Statmszz E:\www\www\tk\Runtime\Cache\Statistics\13872c5a1c19a98270524ceddae8d340.php 第 94 行.
+NOTIC: [8] Undefined index: Statmszz E:\www\www\tk\Runtime\Cache\Statistics\13872c5a1c19a98270524ceddae8d340.php 第 94 行.
+NOTIC: [8] Undefined index: Statmszz E:\www\www\tk\Runtime\Cache\Statistics\13872c5a1c19a98270524ceddae8d340.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-11T16:47:55+08:00 ] 115.60.59.155 /Statistics/StatisticsB/menuList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-11T16:47:59+08:00 ] 115.60.59.155 /Statistics/StatisticsB/userAnswer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 851 行.
+NOTIC: [8] Undefined variable: params E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 887 行.
+NOTIC: [8] Undefined variable: data E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 891 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 45 行.
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 54 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 56 行.
+NOTIC: [8] Undefined index: Start E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 58 行.
+NOTIC: [8] Undefined index: End E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 59 行.
+NOTIC: [8] Undefined variable: list E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 90 行.
+NOTIC: [8] Undefined variable: page E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-11T16:48:02+08:00 ] 115.60.59.155 /Statistics/StatisticsB/homeWorkList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 99 行.
+NOTIC: [8] Undefined index: teacherName E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 105 行.
+NOTIC: [8] Undefined index: num E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 109 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 113 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 117 行.
+NOTIC: [8] Undefined index: doTime E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 121 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 128 行.
+NOTIC: [8] Undefined variable: map E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 129 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 44 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 53 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 56 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 62 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 63 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 70 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 71 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 81 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 79 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 73 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 71 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 57 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-11T16:48:04+08:00 ] 115.60.59.155 /Statistics/StatisticsB/userAnswer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 851 行.
+NOTIC: [8] Undefined variable: params E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 887 行.
+NOTIC: [8] Undefined variable: data E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 891 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 45 行.
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 54 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 56 行.
+NOTIC: [8] Undefined index: Start E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 58 行.
+NOTIC: [8] Undefined index: End E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 59 行.
+NOTIC: [8] Undefined variable: list E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 90 行.
+NOTIC: [8] Undefined variable: page E:\www\www\tk\Runtime\Cache\Statistics\7fa073b4fabbea8ec9a9cbbb25aef105.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-11T16:48:07+08:00 ] 115.60.59.155 /Statistics/StatisticsB/userAnswer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 857 行.
+NOTIC: [8] Undefined index: mode E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 866 行.
+NOTIC: [8] Undefined property: Aat\Model\UserAnswerRecordModel::$methods E:\www\www\tk\Common\Model\BaseModel.class.php 第 63 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\www\www\tk\Common\Model\BaseModel.class.php 第 63 行.
+ERR: Common\Model\BaseModel:statUserAnswer方法不存在！
+
+[ 2017-10-11T16:48:12+08:00 ] 115.60.59.155 /Statistics/StatisticsB/homeWorkList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 99 行.
+NOTIC: [8] Undefined index: teacherName E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 105 行.
+NOTIC: [8] Undefined index: num E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 109 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 113 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 117 行.
+NOTIC: [8] Undefined index: doTime E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 121 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 128 行.
+NOTIC: [8] Undefined variable: map E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 129 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 44 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 53 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 56 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 62 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 63 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 70 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 71 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 81 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 79 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 73 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 71 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 57 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-11T16:48:51+08:00 ] 115.60.59.155 /Statistics/StatisticsB/homeWorkList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 99 行.
+NOTIC: [8] Undefined index: teacherName E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 105 行.
+NOTIC: [8] Undefined index: num E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 109 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 113 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 117 行.
+NOTIC: [8] Undefined index: doTime E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 121 行.
+NOTIC: [8] Undefined variable: map E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 129 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 44 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 53 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 56 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 62 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 63 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 70 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 71 行.
+NOTIC: [8] Undefined offset: 56 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 55 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T16:48:52+08:00 ] 115.60.59.155 /Statistics/StatisticsB/homeWorkList/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 99 行.
+NOTIC: [8] Undefined index: teacherName E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 105 行.
+NOTIC: [8] Undefined index: num E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 109 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 113 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 117 行.
+NOTIC: [8] Undefined index: doTime E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 121 行.
+NOTIC: [8] Undefined variable: map E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 129 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 44 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 53 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 56 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 62 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 63 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 70 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 71 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 33 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 32 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 26 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 25 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 21 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 20 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 17 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-11T16:48:52+08:00 ] 115.60.59.155 /Statistics/StatisticsB/homeWorkList/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 99 行.
+NOTIC: [8] Undefined index: teacherName E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 105 行.
+NOTIC: [8] Undefined index: num E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 109 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 113 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 117 行.
+NOTIC: [8] Undefined index: doTime E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 121 行.
+NOTIC: [8] Undefined variable: map E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 129 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 44 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 53 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 56 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 62 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 63 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 70 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 71 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 9 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 4 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 3 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-11T16:48:57+08:00 ] 115.60.59.155 /Statistics/StatisticsB/homeWorkList/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 99 行.
+NOTIC: [8] Undefined index: teacherName E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 105 行.
+NOTIC: [8] Undefined index: num E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 109 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 113 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 117 行.
+NOTIC: [8] Undefined index: doTime E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 121 行.
+NOTIC: [8] Undefined variable: map E:\www\www\tk\Statistics\Manage\StatisticsBManage.class.php 第 129 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 44 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 53 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 56 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 62 行.
+NOTIC: [8] Undefined index: workStyle E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 63 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 70 行.
+NOTIC: [8] Undefined index: workType E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 71 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 33 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 32 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 26 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 25 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 21 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 20 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+NOTIC: [8] Undefined offset: 17 E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 102 行.
+NOTIC: [8] Use of undefined constant WorkID - assumed 'WorkID' E:\www\www\tk\Runtime\Cache\Statistics\e4771b75b337ec1c8404537edfd4dc63.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

@@ -1,0 +1,147 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title> 图片上传- 组卷系统 - 智慧云题库云平台</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="组卷,题库">
+    <meta name="description" content="组卷,题库">
+    <link type="text/css" href="/Public/default/css/common1.css<?php echo (C("WLN_UPDATE_FILE_DATE")); ?>" rel="stylesheet">
+    <link type="text/css" href="/Public/default/css/customTest.css<?php echo (C("WLN_UPDATE_FILE_DATE")); ?>" rel="stylesheet">
+    <script type="text/javascript" src="/Public/plugin/jquery-1.8.0.min.js<?php echo (C("WLN_UPDATE_FILE_DATE")); ?>"></script>
+    <script type="text/javascript" src="/Public/plugin/tips.js<?php echo (C("WLN_UPDATE_FILE_DATE")); ?>"></script>
+    <script type="text/javascript" src="/Public/plugin/json2.min.js<?php echo (C("WLN_UPDATE_FILE_DATE")); ?>"></script>
+    <script type="text/javascript" src="/Public/default/js/common.js<?php echo (C("WLN_UPDATE_FILE_DATE")); ?>"></script>
+    <script type="text/javascript" src="/Public/default/js/customTest.js<?php echo (C("WLN_UPDATE_FILE_DATE")); ?>"></script>
+    <script type="text/javascript" src="/Public/plugin/uploadify/jquery.uploadify.min.js<?php echo C(WLN_UPDATE_FILE_DATE);?>"></script>
+    <script type="text/javascript" src="/Public/plugin/imgareaselect/jquery.imgareaselect.pack.js<?php echo C(WLN_UPDATE_FILE_DATE);?>"></script>
+    <link rel="stylesheet" type="text/css" href="/Public/plugin/uploadify/uploadify.css<?php echo C(WLN_UPDATE_FILE_DATE);?>" />
+    <link rel="stylesheet" type="text/css" href="/Public/plugin/imgareaselect/imgareaselect-animated.css<?php echo C(WLN_UPDATE_FILE_DATE);?>" />
+    <link href="/Public/newAat/css/avatar.css<?php echo C(WLN_UPDATE_FILE_DATE);?>" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="righttop">
+    <div id="categorylocation">
+        <span class="nowPath">当前位置：</span>&gt; <span id="loca_text"> <a
+            href="<?php echo U('Custom/CustomTestStore/index');?>">校本题库</a></span>
+    </div>
+</div>
+<div class="custom-content" id="divbox" style="position: relative">
+    <form action="" method="post" id='test-form'>
+    <table class="upload-paizhao-layout">
+    <tbody>
+        <tr >
+            <td class="upload-pic-warp">
+            <div class="upload-pic-box">
+                <div class="select-pic f-yahei">
+                    网页上传：请上传小于2M的图片，支持：jpg、png、gif格式
+                    <input type="file" id="fileUpload"/>
+                </div>
+                <ul class="upload-pic-list" id="imgTestList">
+                </ul>
+                <input type="hidden" id="key" value="<?php echo ($key); ?>"/>
+                <input type="hidden" id="username" value="<?php echo ($username); ?>"/>
+            </div>
+            </td>
+            <td  class="upload-erweima-warp">
+            <div class="erweima-warp">
+                <h5>手机上传：扫描二维码，拍照上传</h5>
+                <div class="erweima-wrap">
+                    <img src="" alt="扫二维码，拍照上传" class="qrCode"/>
+                </div>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+    <table cellpadding="5" cellspacing="0" class="" border="0" style="width: 100%;" >
+        <tbody>
+        <tr>
+            <td colspan='2' style='padding:0px;'>
+                <!-- 试题属性-显示/隐藏 -->
+                <div class="test-type-btn-wrap">
+                    <span class="tt-tit">试题属性（选填）</span><a class="tt-btn toggleAttributes f12" href="javascript:;">隐藏</a>
+                </div>
+                <!-- 试题属性-显示/隐藏 -end -->
+            </td>
+        </tr>
+        <tr class="selItem">
+            <td align="right" class="tRight" style="width:80px">年级：</td>
+            <td class="tLeft">
+                <select id="grade" class="large bLeft" name="GradeID">
+                    <option value="">请选择</option>
+                </select>
+            </td>
+        </tr>
+        <tr class="selItem">
+            <td align="right" class="tRight" style="width:80px">题型：</td>
+            <td class="tLeft">
+                <select id="types" class="large bLeft" name="TypesID" check="Require" warning="所属题型不能为空">
+                    <option value="">请选择</option>
+                </select>
+            </td>
+        </tr>
+        <tr class="zgdf">
+            <td align="right" class="tRight" style="width:80px">难度值：</td>
+            <td class="tLeft">
+                <label class="difficulty" title="0.801-0.999"><input type="radio" name='diff' value='0.801'/>容易</label>
+                <label class="difficulty" title="0.601-0.800"><input type="radio" name='diff' value='0.601'/>较易</label>
+                <label class="difficulty" title="0.501-0.600"><input type="radio" name='diff' value='0.501'/>一般</label>
+                <label class="difficulty" title="0.301-0.500"><input type="radio" name='diff' value='0.301'/>较难</label>
+                <label class="difficulty" title="0.001-0.300"><input type="radio" name='diff' value='0.001'/>困难</label>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="tRight" style="width:80px">试题来源：</td>
+            <td class="tLeft">
+                <span class='boxlist_sel'><input type="text" name='source' id='source'/></span>
+
+            </td>
+        </tr>
+        <tr class="selItem">
+            <td align="right" class="tRight" style="width:80px">知识点：</td>
+            <td class="tLeft knowledge-select-change-container">
+                <select id="knowledge" class="selection bLeft"><option value="">请选择</option>
+                </select>
+                <span class='append'>添加</span>
+                <div id="klinput" class='inputs'>
+                </div>
+            </td>
+        </tr>
+        <tr class="selItem">
+            <td align="right" class="tRight" style="width:80px">章节：</td>
+            <td class="tLeft chapter-select-change-container">
+                <select id="chapter" class="selection bLeft" name="ChapterID">
+                </select>
+                <span class='append'>添加</span>
+                <div id="cpinput" class='inputs'></div>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="tRight" style="width:80px">备注：</td>
+            <td class="tLeft">
+                <textarea name="Remark" id="remark" rows="5" style='width:90%;resize:horizontal;'></textarea>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+        <div class="upload-btn submitBtn">
+            <a id="saveImgTest" class="nor-btn" href="javascript:;" style="width: 180px;height: 40px;line-height: 40px;">立即上传</a>
+        </div>
+    </form>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        var data = new Object('<?php echo ($data); ?>');
+        var originality = '<?php echo ($originality); ?>';
+        originality = originality?JSON.parse(originality):{'ttID':false};
+        var url = '/Custom/CustomTestStore';
+        var username = "<?php echo ($username); ?>";
+        var ifImage = true;
+        //因为图片上传不做编辑，所有直接add
+        $.customTestStoreTestAdd.init(data,originality,url,ifImage,'add');
+        $.ImageTest.init(username);
+    });
+</script>
+</html>

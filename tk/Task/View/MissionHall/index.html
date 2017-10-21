@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$typeName#} - {#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/task.css" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js"></script>
+</head>
+<body class="bg-white">
+    <!--首页头部-->
+    {#include file="Index@Common/top" /#}
+    <!--首页头部-end-->
+    <!-- 任务大厅 -->
+    <div class="gray-wrap bg-f8f8f8">
+        <div class="w1000">
+            <!-- 任务banner图 -->
+            <div class="task-list-banner">
+                <div class="tl-main-banner">
+                    <img src="__PUBLIC__/index/imgs/task/task-top-bn.jpg" alt="" />
+                </div>
+                <!-- <div class="tl-sml-banner hide">
+                    <a href="/Index-MissionHall-taskDetails" style="margin-left:0">
+                        <img src="__PUBLIC__/index/imgs/task/active-bn_1.jpg" alt="" />
+                    </a>
+                    <a href="/Index-MissionHall-taskDetails">
+                        <img src="__PUBLIC__/index/imgs/task/active-bn_2.jpg" alt="" />
+                    </a>
+                    <a href="/Index-MissionHall-taskDetails">
+                        <img src="__PUBLIC__/index/imgs/task/active-bn_3.jpg" alt="" />
+                    </a>
+                </div> -->
+            </div>
+            <!-- 任务banner图 end-->
+            <!-- 题库QQ教师群 -->
+                <div class="wln-qq-group w1000">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td width="188"><img src="__PUBLIC__/index/imgs/task/qq-group-tit.jpg" alt="题库兼职群" /></td>
+                                <td>
+                                    <span class="group-site"><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=763344042a2b95e637639b52cc841637518f795024fdb5bb5eb69c3c1dba7ef"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="题库兼职教师培训群" title="题库兼职教师培训群"></a><br /><b>群: 122345433</b></span>                                </td>
+                                <td class="hide"><a href="javascript:;">更多 +</a></td>
+                                {#if condition="$isLogin"#}
+                                <td><a class="nor-btn my-task" href="{#:U('Home/index/main', array('u'=>'User_Home_myTask'))#}" target="_blank">任务列表</a></td>
+                                {#/if#}
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 题库QQ教师群 end-->
+            <div class="task-list-wrap bg-white">
+                <!-- 任务列表 -->
+                <div class="screen-task-container">
+                    <table width="100%" class="screening">
+                        <tr>
+                            <th width="100">任务学科：</th>
+                            <td>
+                                <a class='{#if condition="empty($subjectWhere)"#}this{#/if#}' href="{#:U('MissionHall/index',
+                                array('type'=>$type,'progress'=>$progress,'end'=>$end,'rewardType'=>$rewardType,'subject'=>''))#}">全部</a>
+                                {#foreach name="subject" item="sj"#}
+                                <a class='{#if condition="$subjectWhere !='' && $subjectWhere == $sj['SubjectID']"#}this{#/if#}' 
+                                href="{#:U('MissionHall/index',
+                                array('type'=>$type,'progress'=>$progress,'end'=>$end,'rewardType'=>$rewardType,'subject'=>$sj['SubjectID']))#}">{#$sj.SubjectName#}</a>
+                                {#/foreach#}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th width="100">任务类型：</th>
+                            <td>
+                                <a class='' href="{#:U('MissionHall/index',
+                                array('type'=>0,'progress'=>$progress,'end'=>$end,'rewardType'=>$rewardType,'subject'=>$subjectWhere))#}">全部</a>
+                                {#foreach name="taskTypes" item="tasktype" key="key"#}
+                                <a class='' href="{#:U('MissionHall/index',
+                                array('type'=>$key,'progress'=>$progress,'end'=>$end,'rewardType'=>$rewardType,'subject'=>$subjectWhere))#}">{#$tasktype#}</a>
+                                {#/foreach#}
+                            </td>
+                        </tr>
+                        <!-- <tr>
+                            <th>任务进度：</th>
+                            <td>
+                                <a class='' href="">全部</a>
+                                <a class='' href="">未开始</a>
+                                <a class='' href="">进行中</a>
+                                <a class='' href="">已完成</a>
+                            </td>
+                        </tr> -->
+                        <tr>
+                            <th>结束时间：</th>
+                            <td>
+                                <a class='' href="{#:U('MissionHall/index',
+                                array('type'=>$type,'progress'=>$progress,'end'=>0,'rewardType'=>$rewardType,'subject'=>$subjectWhere))#}">全部</a>
+                                <a class='' href="{#:U('MissionHall/index',
+                                array('type'=>$type,'progress'=>$progress,'end'=>1,'rewardType'=>$rewardType,'time'=>$time,'hot'=>$hot,'reward'=>$reward,'subject'=>$subjectWhere))#}">即将开始</a>
+                                <a class='' href="{#:U('MissionHall/index',
+                                array('type'=>$type,'progress'=>$progress,'end'=>2,'rewardType'=>$rewardType,'subject'=>$subjectWhere))#}">一周以内</a>
+                                <a class='' href="{#:U('MissionHall/index',
+                                array('type'=>$type,'progress'=>$progress,'end'=>3,'rewardType'=>$rewardType,'subject'=>$subjectWhere))#}">一月以内</a>
+                                <a class='' href="{#:U('MissionHall/index',
+                                array('type'=>$type,'progress'=>$progress,'end'=>4,'rewardType'=>$rewardType,'subject'=>$subjectWhere))#}">长期有效</a>
+                            </td>
+                        </tr>
+                        <tr id="paixv">
+                            <th>奖励形式：</th>
+                            <td>
+                                <a class='' href="{#:U('MissionHall/index',
+                                array('type'=>$type,'progress'=>$progress,'end'=>$end,'rewardType'=>0,'subject'=>$subjectWhere))#}">全部</a>
+                                <a class='' href="{#:U('MissionHall/index',
+                                array('type'=>$type,'progress'=>$progress,'end'=>$end,'rewardType'=>1,'subject'=>$subjectWhere))#}">积分</a>
+                                <a class='' href="{#:U('MissionHall/index',
+                                array('type'=>$type,'progress'=>$progress,'end'=>$end,'rewardType'=>2,'subject'=>$subjectWhere))#}">现金</a>
+                                <a class='' href="{#:U('MissionHall/index',
+                                array('type'=>$type,'progress'=>$progress,'end'=>$end,'rewardType'=>3,'subject'=>$subjectWhere))#}">金币</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- 排序 -->
+                    <div class="sort-order-container" >
+                        <span class="" onClick='window.location.href="{#:U('MissionHall/index',
+                                array('type'=>$type,'progress'=>$progress,'end'=>$end,'rewardType'=>$rewardType,'time'=>0,'hot'=>"",'reward'=>"",'subject'=>$subjectWhere))#}#paixv"'>默认排序</span>
+                        <span class="order-element" orderName='time' order='{#$time#}'>
+                            按时间 <i class="iconfont"></i>
+                        </span>
+                        <span class="order-element" orderName='hot' order='{#$hot#}'>
+                            按热度 <i class="iconfont"></i>
+                        </span>
+                        <span class="order-element" orderName='reward' order='{#$reward#}'>
+                            按奖励
+                            <i class="iconfont"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 任务列表 -->
+                <!-- 任务列表 end-->
+                <div class="task-list">
+                     <ul>
+                        {#if condition="empty($result)"#}
+                        <li class="clearfix tl-item">
+                            <div class='data-empty' style="height:350px;"></div>
+                        </li>
+                        {#/if#}
+                        {#foreach name='result' item='rs'#}
+                        <li class="tl-item">
+                        <div class="clearfix">
+                            <img class="tl-item-img" src="{#$rs.Img#}" alt="" />
+                            <div class="tl-intro-container">
+                                <h3 class="tl-item-title" style="display:inline">
+                                <a class="" href="{#:U('MissionHall/taskDetails',array('id'=>$rs['MHTID']))#}" target='_blank'>
+                                {#$rs.Title#}
+                                {#if condition='$rs.Hot neq 0'#}
+                                <font color='red'>【置顶】</font>
+                                {#/if#}
+                                </a>
+                                </h3>（{#$rs.subjectName#}&nbsp;{#$rs.levelName#}&nbsp;）
+                                <div class="tli-context" style='text-indent: 0em;'>
+                                    {#$rs.Description#}
+                                </div>
+                            </div>
+                            <div class="tl-handle">
+                            <span class="reward"><b>{#$rs.Reward#}</b></span>
+                                <a class="nor-btn" href="{#:U('MissionHall/taskDetails',array('id'=>$rs['MHTID']))#}" target='_blank'>查看详情</a>
+                                <div class="status">
+                                    <span>
+                                        <i class="iconfont">&#xe630;</i>
+                                        {#$rs.Num#}人
+                                    </span>
+                                    <span>
+                                        <i class="iconfont">&#xe62d;</i>
+                                        {#$rs.EndDay#}
+                                    </span>
+                                </div>
+                            </div>
+                            </div>
+                        </li>
+                        {#/foreach#}
+                    </ul>
+
+                    <!-- 分页 -->
+                    <div class="page-wrap">
+                      <div class="page-box">
+                      {#$pages#}
+                      </div>
+                    </div>
+                </div>
+                <!-- 任务列表 -->
+            </div>
+        </div>
+    </div>
+    <!-- 任务大厅-end-->
+    <script>
+    $(document).ready(function(){
+        $('.screening').find('tr').eq(1).find('td a').eq({#$type#}).addClass('this');
+        $('.screening').find('tr').eq(2).find('td a').eq({#$end#}).addClass('this');
+        $('.screening').find('tr').eq(3).find('td a').eq({#$rewardType#}).addClass('this');
+        var hrefUrl = getUrl();
+        var splitStr = "{#php#}echo C('URL_PATHINFO_DEPR');{#/php#}";
+        $('.sort-order-container .order-element').each(function(){
+            var that = $(this);
+            if(that.attr('order') == 1){
+                that.find('i').html('&#xe62f;');
+            }else{
+                that.find('i').html('&#xe62e;');
+            }
+            that.click(function(){//点击排序
+                var order = that.attr('order');
+                var href  = '';
+                if(order == ''){
+                    order = 1;
+                }else{
+                    order = (order == 1) ? 0 : 1;
+                }
+                href += that.attr('orderName') + splitStr + order;
+                window.location.href = hrefUrl + splitStr + href; 
+            });
+        });
+        $('.nor-btn').live('click', function(){
+            $(this).parents('a').trigger('click');
+        })
+    });
+    
+    function getUrl(){
+        var type = '{#$type#}';
+        var subject = '{#$subjectWhere#}';
+        var end = '{#$end#}';
+        var rewardType = '{#$rewardType#}';
+        var url = [];
+        if(type && type != 0){
+            url.push('type='+type);
+        }
+        if(subject && subject > 0){
+            url.push('subject='+subject);
+        }
+        if(end && end != 0){
+            url.push('end='+end);
+        }
+        if(rewardType && rewardType != 0){
+            url.push('rewardType='+rewardType);
+        }
+        return U('Task/MissionHall/index?'+url.join('&'));
+    }
+    </script>
+    <!--footer-->
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery.SuperSlide.2.1.1.js"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+    <![endif]-->
+    {#include file="Index@Common/footer" /#}
+    <!--footer-end-->
+    

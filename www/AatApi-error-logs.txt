@@ -1,0 +1,1 @@
+2017-09-11 16:24:19 编译时语法解析错误(E_PARSE) syntax error, unexpected '。md5' (T_STRING), expecting ',' or ';' E:\www\www\tk\AatApi\Controller\BaseController.class.php 49 

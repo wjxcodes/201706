@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>{#$pageName#} - {#$config.IndexName#}</title>
+    <meta name="keywords" content="公告列表页" />
+    <meta name="description" content="公告列表页" />
+    <link type="text/css" href="__PUBLIC__/default/css/common1.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/default/css/index.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+</head>
+<body>
+<div id="righttop">
+    <div id="categorylocation">
+        <span class="nowPath">当前位置：</span>
+        >
+        <span id="loca_text">系统公告 > 公告列表</span>
+    </div>
+</div>
+
+<div id="divbox" style="overflow-x: hidden;">
+    <div class="content_01" id="xtgg" style="margin-bottom:10px;overflow:hidden;overflow-y:auto;">
+        <div class="title">
+            <span class="fl">系统公告</span>
+            <a class="more fr" href="{#:U('Home/Index/content')#}">返回首页</a>
+        </div>
+        <div class="nr_box list_con">
+            {#volist name="buffer" id="vo"#}
+            <p>
+                <a href="{#:U('Index/newsCon?id='.$vo['NewID'])#}" style='color:#{#$vo.Color#}'>{#$vo.NewTitle#}</a>
+                <span>{#$vo.LoadDate|date="Y-m-d H:i:s",####}</span>
+            </p>
+            {#/volist#}
+        </div>
+    </div>
+    <div style="z-index: 1; display: block;" id="pagelistbox">
+        <div class="pagebox">
+            <span class="disabled">首页</span>
+            <span class="current">1</span>
+            <span class="disabled">末页</span>
+        </div>
+    </div>
+</div>
+<div style="display:none;">
+    <iframe id="paperurl" src="#" width="0" height="0" frameborder="0"></iframe>
+</div>
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+<script>var local='{#:U('Index/main')#}';</script>
+<script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script>
+    //显示分页
+    var page='{#$page#}';
+    $('.pagebox a').live('click',function(){
+        GotoPage(parseInt($(this).attr('page')));
+    });
+    function GotoPage(num){
+        page=num;
+        location.href=U('Index/newsList?page='+page);//获取试题
+    }
+    function InitDivXdBox(){
+        $("#xtgg").height($(window).height()-$('#righttop').height()-$('#pagelistbox').height()-30);
+    }
+    $(window).resize(function() {
+        InitDivXdBox();
+    });
+    InitDivXdBox();
+    $(document).ready(function(){
+        $.myPage.showPage('{#$count#}','{#$pagesize#}',page,0);
+    });
+</script>
+{#include file="Public/bottom"/#}
+</body>
+</html>

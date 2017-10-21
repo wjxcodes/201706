@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#} - 用户中心 - {#$pageName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/user.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+</head>
+<body>
+<!--头部-->
+{#include file="Index@Common/TplUserHeader" /#}
+<!--头部-end-->
+
+<!-- 个人中心 -->
+<div class="w-main">
+    <!-- 面包屑导航 -->
+    {#include file="IndexCenter/TplCrumbs" /#}
+    <!-- 面包屑导航END -->
+
+    <div class="u-content clearfix">
+        <!-- 左侧导航 -->
+        {#include file="IndexCenter/TplPersonalNav" /#}
+        <!-- 左侧导航END -->
+        <div class="-u-right-wrap">
+            <div class="u-right">
+                <!-- 基本信息 -->
+                <div class="u-record-panel g-panel content">
+                    <div class="panel-head">
+                        <h3 class="head-name">{#$titleName#}</h3>
+                        <p class="user-own-level">
+                            我的权限：
+                            <span class="s-icon">{#$groupName#}</span>
+                        </p>
+                    </div>
+
+                    <div class="panel-body">
+                        <table class="g-table g-table-bordered level-info-table" id="userLevelTable">
+                            <thead>
+                            <tr>
+                                <th>
+                                    <span>网站功能</span>
+                                </th>
+                                <th>
+                                    <span>{#$header[1]#}</span>
+                                </th>
+                                <th>
+                                    <span>{#$header[2]#}</span>
+                                </th>
+                                <th>
+                                    <span>{#$header[3]#}</span>
+                                </th>
+                                <th>
+                                    <span>{#$header[4]#}</span>
+                                </th>
+                                <th>
+                                    <span>{#$header[5]#}</span>
+                                </th>
+                                <th>
+                                    <span>{#$header[6]#}</span>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {#foreach name='list' item='record'#}
+                            <tr>
+                                <td>
+                                    <span>
+                                        {#if condition="$record[0] eq 'Y'"#} <i class="iconfont true">&#xe603;</i>
+                                        {#elseif condition="$record[0] eq 'N'"/#} <i class="iconfont false">&#xe604;</i>
+                                        {#else/#}
+                                            {#$record[0]#}
+                                    {#/if#}
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                        {#if condition="$record[1] eq 'Y'"#}
+                                        <i class="iconfont true">&#xe603;</i>
+                                        {#elseif condition="$record[1] eq 'N'"/#}
+                                        <i class="iconfont false">&#xe604;</i>
+                                        {#else/#}
+                                            {#$record[1]#}
+                                    {#/if#}
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                        {#if condition="$record[2] eq 'Y'"#}
+                                        <i class="iconfont true true">&#xe603;</i>
+                                        {#elseif condition="$record[2] eq 'N'"/#}
+                                        <i class="iconfont false">&#xe604;</i>
+                                        {#else/#}
+                                            {#$record[2]#}
+                                    {#/if#}
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                        {#if condition="$record[3] eq 'Y'"#}
+                                        <i class="iconfont true true">&#xe603;</i>
+                                        {#elseif condition="$record[3] eq 'N'"/#}
+                                        <i class="iconfont false">&#xe604;</i>
+                                        {#else/#}
+                                            {#$record[3]#}
+                                    {#/if#}
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                        {#if condition="$record[4] eq 'Y'"#}
+                                        <i class="iconfont true true">&#xe603;</i>
+                                        {#elseif condition="$record[4] eq 'N'"/#}
+                                        <i class="iconfont false">&#xe604;</i>
+                                        {#else/#}
+                                            {#$record[4]#}
+                                    {#/if#}
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                        {#if condition="$record[5] eq 'Y'"#}
+                                        <i class="iconfont true true">&#xe603;</i>
+                                        {#elseif condition="$record[5] eq 'N'"/#}
+                                        <i class="iconfont false">&#xe604;</i>
+                                        {#else/#}
+                                            {#$record[5]#}
+                                    {#/if#}
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                        {#if condition="$record[6] eq 'Y'"#}
+                                        <i class="iconfont true true">&#xe603;</i>
+                                        {#elseif condition="$record[6] eq 'N'"/#}
+                                        <i class="iconfont false">&#xe604;</i>
+                                        {#else/#}
+                                            {#$record[6]#}
+                                    {#/if#}
+                                    </span>
+                                </td>
+                            </tr>
+                            {#/foreach#}
+                            <tr class="ul-table-price">
+                                <td>
+                                    <span>价格</span>
+                                </td>
+                                <td>
+                                    <span></span>
+                                </td>
+                                <td>
+                                    <span></span>
+                                </td>
+                                <td>
+                                    <span></span>
+                                </td>
+                                <td>0</td>
+                                <td>
+                                    <span>
+                                        <s>原价：￥50/月</s>
+                                        <br />
+                                        优惠价：￥10/月
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                        <s>原价：￥100/月</s>
+                                        <br />
+                                        优惠价：￥20/月
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>操作</span>
+                                </td>
+                                <td>
+                                    <span></span>
+                                </td>
+                                <td>
+                                    <span></span>
+                                </td>
+                                <td>
+                                    <span></span>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <a class="goToBuy g-btn btn-primary btn-l" href="javascript:">购买</a>
+                                </td>
+                                <td>
+                                    <a class="goToBuy g-btn btn-primary btn-l" href="javascript:">购买</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 个人中心END -->
+</div>
+<script type="text/javascript">
+    var idName='{#$function#}';
+    $(function(){
+        if(idName!='' || idName!='undefined'){
+            $('#'+idName).addClass('active');
+        }
+    });
+    //支付链接跳转
+    $(document).on('click','.goToBuy',function(){
+        window.open(U('User/Index/operOrder'));
+    });
+</script>
+<!--footer-->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+<script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+<![endif]-->
+{#include file="Index@Common/secondFooter" /#}
+<!--footer-end-->

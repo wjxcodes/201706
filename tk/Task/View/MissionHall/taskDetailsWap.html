@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{#$config.Description#}">
+    <title>{#$info.Title#} - 任务大厅  - {#$config.IndexName#}</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="__PUBLIC__/index/m-css/base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}">
+    <link rel="stylesheet" href="__PUBLIC__/index/m-css/task.css{#$Think.config.WLN_UPDATE_FILE_DATE#}">
+
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="__PUBLIC__/index/m-css/layouts/side-menu-old-ie.css{#$Think.config.WLN_UPDATE_FILE_DATE#}">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="__PUBLIC__/index/m-css/layouts/side-menu.css{#$Think.config.WLN_UPDATE_FILE_DATE#}">
+    <!--<![endif]-->
+    
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+</head>
+<body>
+<div id="layout">
+     {#include file="Index@Common/wapSideNav" /#}
+     <div id="main" class="">
+         {#include file="Index@Common/wapHeader" /#}
+        <div class="content">
+            <!-- 任务banner图 -->
+            <div class="task-list-banner">
+                <div class="task-banner"><img src="__PUBLIC__/index/m-imgs/task/task-top-bn.jpg" alt=""/></div>
+            </div>
+            <!-- 任务banner图 end-->
+            <!-- 任务详情 -->
+            <!--任务描述-->
+            <div class="task-info-container clearfix">
+                <div class="task-info-intro">
+                    <h1 class="ti-title">{#$info.Title#}</h1>
+                    <div class="ti-context-container">
+                        <div class="ti-context">
+                            <div class="ti-context-inner">
+                                <img src="{#$info.Img#}" alt=""/>
+                                {#$info.Description#}
+                            </div>
+                        </div>
+                        <div class="ti-show-more-wrap">
+                        </div>
+                    </div>
+                    <div class="ti-handle">
+                        <div class="ti-status">
+                            <span class="ti-reward">{#$info.RewardType#}：<b>{#$info.Reward#}</b></span>
+                            <span class="ti-statistics">
+                                <span class="ti-people-num"><i class="iconfont">&#xe630;</i>{#$info.personNum#}人</span>
+                                <span class="ti-day-num"><i class="iconfont">&#xe628;</i>{#$info.EndTime#}</span>
+                            </span>
+                        </div>
+                        <div class="ti-join">
+                                ({#$info.subjectName#}&nbsp;{#$info.levelName#}&nbsp;)
+                        {#if condition='$isReceived nheq true'#}
+                        <a href="javascript:;" class="nor-btn pure-button pure-button-disabled">{#$isReceived#}</a>
+                        {#else/#}
+                        <a href="javascript:join();" class="nor-btn pure-button pure-button-primary">立即参加</a>
+                        {#/if#}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--参加任务列表-->
+            <div class="task-tab-container">
+                <div class="task-tab-hd">
+                        <span style='width:100%; color:#333; cursor:default;'>参与列表</span>
+                </div>
+                <div class="task-tab-bd">
+                    <div class="tt-bd-container">
+                        <div class="tt-bd-list">
+                            <table class="tt-bd-list-inner" width='100%'>
+                                <tr>
+                                    <th><span>用户名</span></th>
+                                    <th><span>参与次数</span></th>
+                                    <th><span>申请时间</span></th>
+                                </tr>
+                                <tr><td colspan="3">
+                                     <div class="page-wrap">
+                                         <a href="javascript:;" class="list-show-more lsm" onclick="getMore()">查看更多</a>
+                                     </div>
+                                 </td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--参加任务列表-end-->
+            <!-- 任务详情-end-->
+            <!--footer-->
+            {#include file="Index@Common/wapFooter" /#}
+            <div class="side-bar">
+                <a href="{#:U('/Task','',false)#}" class="back-listpage" style="display:block">返回<br>列表</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+    var context = $('.ti-context-inner');
+    var height = context.outerHeight();
+    var divHeight = context.parent().height();
+    // 查看任务详情
+    $('#showMore').live('click', function(){
+        var that = $(this);
+        if(context.parent().height() < height){
+            that.html('收起<i class="iconfont">&#xe617;</i>');
+            context.parent().animate({"height":height+30},500);
+            context.parent().slideDown();
+        }else{
+            that.html('查看全部<i class="iconfont">&#xe618;</i>');
+            context.parent().animate({"height":divHeight},500);
+        }
+    });
+    if(height > divHeight){
+        $('.ti-show-more-wrap').html('<a href="javascript:;" class="ti-show-more" id="showMore">查看全部<i class="iconfont">&#xe618;</i></a>');
+    }
+})
+var page = 1;
+function getMore(){
+    $('.lsm'+status).text('数据加载中...');
+    $.post(U('Task/MissionHall/taskRecordsAjax'),{id:{#$info.MHTID#},p:page},function(data){
+        if(!data['data']){
+            $('.lsm').text('无更多数据').removeAttr('onClick');
+            if(page == 1){
+                $('.tt-bd-list').eq(0).html('<div class="tl-item-empty data-empty"></div>');
+            }
+            page = 1;
+        }else{
+            $('.tt-bd-list').eq(0).find('.page-wrap').parents('tr').before(data['data']);
+            $('.lsm').text('查看更多');
+            page++;
+            if(page > parseInt(data['count'])){
+                $('.lsm').text('无更多数据').removeAttr('onClick');
+            }
+        }
+        
+    },'json');
+}
+getMore();
+function join(){
+    $.post(U('Task/MissionHall/receiveTask'),{'MHTID':{#$info.MHTID#}},function(data){
+        if(data.data.status == 0){//请登录
+            if(confirm('未登陆，现在登陆吗？')){
+                window.location.href= U('/Home','',false);
+            }
+        }else if(data.data.status == 1){//已参与
+            alert(data.data.title);
+            $('#btn').attr({'href':'javascript:;'}).css({'background':'#ccc','border':'#ccc 1px solid'});
+        }else if(data.data.status == 2){//成功
+            if(data.data.link){
+                if(!confirm('申请成功!立即做任务拿奖励\r\n选择取消返回任务大厅')){
+                    window.location.href= U('/Task','',false);
+                    return;
+                }
+                var url = data.data.link;
+                url = url.substring(1);
+                var host = U('Home/Index/main');
+                if(url.indexOf('Teacher') == 0){
+                    host = U('Teacher/Index/index');
+                }
+                window.location.href= host+'/u/_'+url.replace(/\//g,'_');
+            }else{
+                alert('申请成功，任务已在审核中！');
+                window.location.href= U('/Task','',false);
+            }
+        }
+    });
+}
+</script>
+<!--响应式菜单-->
+<script src="__PUBLIC__/index/m-js/ui.js"></script>
+</body>
+</html>

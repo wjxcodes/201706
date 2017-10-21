@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#} 用户中心</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/user.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/u-custom.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/u-test.css" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/tips.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/customTestN.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+
+</head>
+<body>
+
+<!--头部-->
+{#include file="Index@Common/TplUserHeader" /#}
+<!--头部-end-->
+
+<!-- 个人中心 -->
+<div class="w-main">
+    <!-- 面包屑导航 -->
+    {#include file="User@IndexCenter/TplCrumbs" /#}
+
+    <!-- 面包屑导航END -->
+
+    <div class="u-content clearfix">
+        <!--添加试题-->
+        <div class="build-test-panel content g-panel">
+            <div class="panel-head">
+                <h3 class="head-name">文档上传</h3>
+                <span class="head-handle"><a class="link" href="{#:U('Custom/CustomTestStoreN/customNav')#}">返回</a></span>
+            </div>
+            <div class="panel-body build-test-content">
+
+                <form class="g-form add-doc-site uploadForm" action="{#:U('Custom/CustomTestStoreN/docUpload')#}" target="editDocFrame" method="post"
+                      enctype="multipart/form-data">
+                    <div class="g-control-group">
+                        <label for="">添加文档：</label>
+                        <input class="file-input" type="file" name="doc"/>
+                        <a class="g-btn btn-primary btn-l uploadButton" href="">上传</a>
+                    </div>
+                </form>
+
+                <div class="u-record-panel upload-record-panel g-tab">
+                    <div class="clearfix">
+                        <ul class="tab-nav left">
+                            <li class="target-handler">
+                                <a href="{#:U('Custom/CustomTestStoreN/docList', array('status'=>0))#}">待审核</a>
+                                <i class="active-icon"></i>
+                            </li>
+                            <li class="target-handler">
+                                <a href="{#:U('Custom/CustomTestStoreN/docList', array('status'=>1))#}">审核中</a>
+                                <i class="active-icon"></i>
+                            </li>
+                            <li data-href=".record-l-panel3" class="target-handler">
+                                <a href="{#:U('Custom/CustomTestStoreN/docList', array('status'=>2))#}">审核完成</a>
+                                <i class="active-icon"></i>
+                            </li>
+                            <li data-href=".record-l-panel4" class="target-handler">
+                                <a href="{#:U('Custom/CustomTestStoreN/docList', array('status'=>3))#}">审核失败</a>
+                                <i class="active-icon"></i>
+                            </li>
+                        </ul>
+                        <div class="right search-site">
+                            <form class="g-form" action="{#:U('Custom/CustomTestStoreN/docList')#}" method="post">
+                                <div class="g-control-group">
+                                    <input name="status" value="0" type="hidden">
+                                    <input class="search-input" type="text" name="title" id="" value='{#$Think.request.title#}'/><a class="g-btn btn-primary" href="" id='searchBtn'>搜索</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-body">
+                        <div class="tab-panel record-l-panel1 on" >
+                            <table class="g-table g-table-bordered record-table">
+                                <thead>
+                                <tr>
+                                    <th align="center" width="40">编号</th>
+                                    <th align="center">文档名称</th>
+                                    <th align="left" width="50">学科</th>
+                                    <th align="left" width="80">最后编辑时间</th>
+                                    <th align="left" width="80">上传时间</th>
+                                    <th align="left" width="80">审核</th>
+                                    <th align="left" width="135">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                 {#if condition="count($list) eq 0"#}
+                                    <tr>
+                                        <td style='height:33px;line-height:33px;' colspan="{#if condition='$status eq 0'#}7{#else/#}6{#/if#}" align="center">暂无数据</td>
+                                    </tr>
+                                 {#else/#}
+                                    {#foreach name='list' item='record'#}
+                                        <tr duid="{#$record.DUID#}" class='list-area-content'>
+                                            <td align="center">{#$record.DUID#}</td>
+                                            {#if condition="$record.Status eq 1 or $record.Status eq 2"#}
+                                            <td align="left" width="*">{#$record.Title|default="无"#}</td>
+                                            {#else/#}
+                                            <td align="left" width="*">
+                                                <a href='#' title='点击修改文档名' class="modityTitle">{#$record.Title|default="无"#}</a>
+                                            </td>
+                                            {#/if#}
+                                            <td align="center">{#$subjects[$record['SubjectID']]|default="暂无"#}</td>
+                                            <td align="center">
+                                                <span class="timer">{#$record.ModifiedTime|date="Y-m-d H:i:s",####}</span>
+                                            </td>
+                                            <td align="center">
+                                                <span class="timer">{#$record.AddTime|date="Y-m-d H:i:s",####}</span>
+                                            </td>
+                                            
+                                            <td align="center">
+                                                {#if condition='$status eq 0'#}<a class="g-btn btn-primary submitCheck" href="">提交审核</a>{#/if#}
+                                            </td>
+                                            
+                                            <td align="center">
+                                                <span class="handle">
+                                                    <a href="javascript:;" class='link download'>下载</a>
+                                                    {#if condition="$record.Status eq 0 or $record.Status eq 3"#}
+                                                    |
+                                                    <a href="javascript:;" class="link edit">修改</a>
+                                                    |
+                                                    <a href="javascript:;" class="link del">删除</a>
+                                                    {#/if#}
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    {#/foreach#}
+                                 {#/if#}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="u-paginator">
+                        {#$count#} 条记录 {#$page#}/ {#:ceil($count / $prepage)#} 页
+                        {#foreach name='pagtion' item='record'#}
+                            {#if condition='!empty($record["c"])'#}
+                                <span class="current">{#$record['n']#}</span>
+                            {#else/#}
+                                <a href="{#$record['a']#}">{#$record['n']#}</a>
+                            {#/if#}
+                        {#/foreach#}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 添加试题END -->
+    </div>
+
+    <iframe scrolling="no" style="display:none;" id="editDocFrame" name="editDocFrame" frameborder="0"></iframe>
+    
+    <!--文档编辑弹出框-->
+    <div id="editDoc" class="hidden">
+        <div class="edit-doc-content">
+            <form class="g-form g-form-aligned" id='uploadForm%duid%' action="{#:U('Custom/CustomTestStoreN/docUpload')#}" target="editDocFrame" method="post"  enctype="multipart/form-data">
+                <input name="id" value="%id%" type="hidden">
+                <div class="g-control-group">
+                    <label for="">文档编号：</label><span class="">%duid%</span>
+                </div>
+                <div class="g-control-group">
+                    <label for="">文档名称：</label>%docname%
+                </div>
+                <div class="g-control-group">
+                    <label for="">替换文件：</label><input type="file" name="doc" id=""/>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!--文档编辑弹出框END-->
+
+    <!-- 个人中心END -->
+
+</div>
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery.cookie.js"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/wlnBase.js"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/userCenter.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        showTip();
+        $('.g-tab .tab-nav li').unbind('click');
+    });
+    var showTip =function(){
+        $.CustomTestStore.showTip('您当前正在编辑协同命制试题,新上传文档将标注为原创题文档！');
+    };
+    var status = "{#$status#}";
+    if(!status){
+        status = 1;
+    }
+    var targetHandler = $('.target-handler');
+    targetHandler.eq(status).addClass('on');
+
+    $('.page-nav').change(function(){
+        var that = $(this);
+        var val = that.val();
+        var href = that.parent().prev().find('a').attr('href');
+        href = href.replace(/-p-(\d+)-/g, '-p-'+val+'-');
+        window.location.href=href;
+    });
+
+    //编辑文档名称
+    $('.modityTitle').live('click', function(){
+        var that = $(this);
+        //隐藏其他的文本框
+        that.parents('tr').siblings('tr').find('.modityTitleSave').trigger('click');
+        var title = that.html();
+        that.parent().html("<input type='text' title='"+title+"' style='width:80%;' class='modityTitleText' value='"+title+"' maxlength='100'><button class='modityTitleSave'>保存</button>");
+        return false;
+    })
+
+    //编辑文档名称保存
+    $('.modityTitleSave').live('click', function(){
+        var that = $(this);
+        var text = that.prev();
+        var title = text.attr('title');
+        var val = text.val();
+        if(title != val){
+            if(val == ''){
+                alert('文档名不能为空！');
+                text.val(title);
+                return false;
+            }
+            var data = {
+                'id' : that.parents('tr').attr('duid'),
+                'docname' : val
+            }
+            $.post(U('Custom/CustomTestStoreN/docNameUpdate'), data, function(result){
+                if($.myCommon.backLogin(result)==false){
+                    return false;
+                }
+                that.parent().html("<a href='#' title='点击修改文档名' class='modityTitle'>"+val+"</a>");
+            });
+        }else{
+            that.parent().html("<a href='#' title='点击修改文档名' class='modityTitle'>"+val+"</a>");
+        }
+    });
+    
+    //提交管理员进行审核
+    $('.submitCheck').live('click', function(){
+        if(!window.confirm('确定将文档提交至管理员审核文档？')){
+            return false;
+        }
+        var _parent = $(this).parents('tr');
+        var id = _parent.attr('duid');
+        $.post(U('Custom/CustomTestStoreN/submitCheck'), {'id':id}, function(result){
+            if($.myCommon.backLogin(result)==false){
+                return false;
+            }
+            alert('文档已提交审核，请耐心等待！');
+            _parent.remove();
+        });
+    })
+
+    $('#searchBtn').click(function(){
+        var index = 0;
+        targetHandler.each(function(){
+            if($(this).hasClass('on')){
+                index = $(this).index();
+            }
+        });
+        var form = $(this).parents('form');
+        form.find('input[name="status"]').val(index);
+        form.submit();
+        return false;
+    });
+    
+    //修改文档
+    $('.edit').live('click', function(){
+        var _parent = $(this).parents('tr');
+        var docname = _parent.find('td').eq(1).find('a').html();
+        var html = $('#editDoc').html();
+        var id = _parent.attr('duid');
+        html = html.replace(/%duid%/g, id).replace('%docname%', docname).replace('%id%', _parent.attr('duid'));
+        layer.open({
+            type : 1,
+            title : '修改文档',
+            area : ['500px', '300px'],
+            btn : ['保存','取消'],
+            content : html,
+            yes : function(){ 
+                var form = $('#uploadForm'+id);
+                if(repeatUploadLock){
+                    return false;
+                }
+                if(form.find('input[name="doc"]').val() == ''){
+                    alert('请选择文档');
+                    return false;
+                }
+                repeatUploadLock = true;
+                form.submit();
+            },
+            cancel :function(){ layer.closeAll(); }
+        });
+    });
+
+    $('.download').live('click', function(){
+        var _parent = $(this).parents('tr');
+        window.location.href = U('Custom/CustomTestStoreN/wordDownload?id='+_parent.attr('duid'));
+    });
+
+    //删除文档
+    $('.del').live('click', function(){
+        if(!window.confirm('确定要删除该文档？')){
+            return false;
+        }
+        var that = $(this);
+        var _parent = that.parents('tr');
+        var data = {
+            'id' : _parent.attr('duid')
+        };
+        $.post(U('Custom/CustomTestStoreN/docDel'), data, function(result){
+            if($.myCommon.backLogin(result)==false){
+                return false;
+            }
+            alert('删除成功！');
+            _parent.remove();
+        });
+        return false;
+    });
+
+    var repeatUploadLock = false;
+    //文档上传验证
+    $('.uploadButton').live('click', function(){
+        if(repeatUploadLock){
+            return false;
+        }
+        var that = $(this);
+        if(that.prev().val() == ''){
+            alert('请选择文档');
+            return false;
+        }
+        repeatUploadLock = true;
+        that.parents('form').submit();
+        that.prev().val('');
+        return false;
+    });
+
+    $(document).click(function(e){
+        e = e || event;
+        var element = e.target || e.srcElement;
+        var mark = null;
+        while(element){
+            if(element.className == 'modityTitleSave' || element.className == 'modityTitleText'){
+                mark = element;
+                break;
+            }
+            element = element.parentNode;
+        }
+        var modityTitleSaveEle = $('.modityTitleSave');
+        if(!mark && modityTitleSaveEle.length > 0){
+            var prev = modityTitleSaveEle.prev();
+            prev.val(prev.attr('title'));
+            modityTitleSaveEle.trigger('click');
+        }
+    });
+
+    function uploadCb(data){
+        repeatUploadLock = false;
+        $('#editDocFrame').attr('src', '');
+        data = data[0];
+        if(typeof data === 'string'){
+            alert(data);
+            layer.closeAll();
+        }else{
+            var obj = null;
+            var list = $('.list-area-content');
+            list.each(function(){
+                var that = $(this);
+                if(that.attr('duid') == data['DUID']){
+                    obj = that;
+                    return;
+                }
+            });
+            if(0 == list.length){
+                window.location.href=U('Custom/CustomTestStoreN/docList');
+                return;
+            }
+            if(!obj){
+                list = list.eq(0);
+                obj = list.clone();
+                list.before(obj);
+            }else{
+                layer.closeAll();
+            }
+            flushList(obj, data);
+            alert('保存成功！');
+        }
+    }
+
+    var subjects = new Object({#$subjectsJSON#})
+    function flushList(obj, data){
+        obj.attr('duid', data['DUID']);
+        var td = obj.find('td');
+        td.eq(0).html(data['DUID']);
+        if(!data['Title']){
+            data['Title'] = '无';
+        }
+        td.eq(1).find('a').html(data['Title']);
+        td.eq(2).html(subjects[data['SubjectID'].toString()]);
+        td.eq(3).find('span').html(data['IsTpl']?'是':'否');
+        td.eq(4).find('span').html(data['ModifiedTime']);
+        td.eq(5).find('span').html(data['AddTime']);
+    }
+</script>
+<!--footer-->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+<script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+<![endif]-->
+
+
+{#include file="Index@Common/secondFooter" /#}
+<!--footer-end-->
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!--登录注册头部-->
+{#include file="Index@Common/topBar" /#}
+<!--logo-->
+<div class="bg-white">
+    <div class="top-logo-wrap w1000" style="padding:15px 0 20px">
+    <a class="top-logo" href="/">
+        <img src="__PUBLIC__/index/imgs/publ/logo.png" alt="题库logo"/>
+    </a>
+    <h1 class="usercenter-page-title">{#$title#}</h1>
+    <div class="has-account hide topLogin">我已经注册，现在就
+        <!--<a class="link topLoginButton" href="javascript:;">登录</a>-->
+        <a class="link" href="{#:U('Index/Index/index')#}">登录</a>
+    </div>
+</div>
+</div>
+
+<!--登录注册头部-end-->

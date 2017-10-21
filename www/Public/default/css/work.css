@@ -1,0 +1,415 @@
+/*
+ * @description: 智能组卷-学情评价/作业模块-css
+ * @author demo
+ */
+
+/*班级信息*/
+.myClass .dataInfo { background-color: #FFF; border: 1px solid #E3E3E3; border-top: none; }
+.myClass .dataInfo .classInfo { padding: 15px 10px 10px 20px; }
+.myClass .dataInfo .classInfo div { margin: 20px 0px; }
+.myClass .dataInfo .classInfo div span { font-family: "Microsoft YaHei"; }
+.myClass .dataInfo .classInfo div span:first-child { display: inline-block; font-size: 14px; font-weight: bold; width: 80px; border-right: 1px solid  #D9D9D9; margin-right: 15px; }
+.myClass .dataInfo .classInfo div span:nth-child(2) { color: #888; transition: color 0.2s; }
+.myClass .dataInfo .classInfo div span:nth-child(2):hover { color: #2B2B2B; }
+.myClass .dataInfo .classInfo div span.btn_normal { color: #00A0E9; margin-left: 15px; cursor: pointer; }
+.myClass .dataInfo .classInfo div span.btn_normal:hover { color: #10AFF7; }
+.myClass .dataInfo .classInfo div.exit { }
+.myClass .dataInfo .classInfo div.exit span { display: inline-block; font-size: 14px; font-weight: normal; margin-right: 15px; width: 90px; height: 30px; line-height: 30px; text-align: center; color: #FFF; background-color: #00A0E9; border-radius: 3px; cursor: pointer; border: none; }
+.myClass .dataInfo .classInfo div.exit span:hover { background-color: #10AFF7; color: #FFF; }
+
+
+/**/
+
+/*学生信息-教师信息*/
+.myClass .dataInfo .addHelp { padding-top: 20px; margin-left: 15px; overflow: hidden; }
+.myClass .dataInfo .addHelp  .addTeaBtn { float: right; }
+.myClass .dataInfo .addHelp .fl div { margin: 0px 0px 15px 15px; color: #888; }
+.myClass .dataInfo .addHelp .fl div.tit { font-size: 16px; color: #000; font-weight: bold; font-family: "Microsoft YaHei" }
+.myClass .dataInfo .addHelp .fr { height: 60px; padding-top: 30px; margin-right: 10px; padding-left: 20px; border-left: 1px dotted #e3e3e3; }
+.myClass .dataInfo .addHelp .fr a { float: right; background-color: #00A0E9; color: #FFF; margin-right: 10px; padding: 8px 10px; cursor: pointer; border-radius: 3px; transition: all 0.3s; }
+.myClass .dataInfo .addHelp .fr a:hover { background: #10AFF7; }
+
+/*学生信息-添加学生帐号弹出框*/
+#addStudiv .addStuDes { margin-top: -7px; margin-bottom: 5px; line-height: 20px; height: 20px; color: #888; font-size: 12px; }
+#addStudiv .addStuMain { padding-top: 28px; position: relative; overflow: hidden; }
+#addStudiv .addStu_tit { position: absolute; top: 0px; left: 0px; z-index: 999; display: block; overflow: hidden; list-style-type: none; margin: 0px; padding: 0px; }
+#addStudiv .addStu_tit li { text-align: center; float: left; width: 120px; height: 28px; line-height: 28px; border: 1px solid #E3E3E3; background-color: #F6F6F6; color: #333; cursor: pointer; margin-left: -1px; }
+#addStudiv .addStu_tit li:first-child { margin-left: 0px; }
+#addStudiv .addStu_tit li:hover { color: #00A0E9; }
+#addStudiv .addStu_tit li.current { background-color: #FFF; color: #00A0E9; border-bottom: 0px; }
+#addStudiv .addStu_con { z-index: 998; border: 1px solid #E3E3E3; padding: 15px; width: 450px; overflow: hidden; }
+#addStudiv .addStu_con .addStu_list1 .addStu_list1_h2 { margin-top: 10px; }
+#addStudiv .addStu_con .addStu_list1 .addStu_list1_h2 table { border-collapse: collapse; float: left; }
+#addStudiv .addStu_con .addStu_list1 .addStu_list1_h2 .addStu_upload { float: left; margin-left: 20px; }
+#addStudiv .addStu_con .addStu_list2, #addStudiv .addStu_con .addStu_list3 { display: none; }
+#addStudiv .addStu_con .addStu_list2 .addStu_list2_l1 { width: 200px; float: left; }
+#addStudiv .addStu_con .addStu_list2 .addStu_list2_l1 div, #addStudiv .addStu_con .addStu_list2 .addStu_list2_l2 div { line-height: 25px; height: 25px; }
+#addStudiv .addStu_con .addStu_list2 .addStu_list2_l1 .addStu_textarea { padding: 3px 10px; line-height: 20px; font-size: 14px; width: 180px; height: 120px; }
+#addStudiv .addStu_con .addStu_list2 .addStu_list2_l2 { margin-left: 20px; width: 200px; float: left; }
+#addStudiv .addStu_con .addStu_list2 .addStu_list2_l2 ul { width: 180px; height: 120px; border: 1px solid #aaa; margin: 0px; padding: 3px 10px; background-color: #ededed; list-style-type: none; }
+#addStudiv .addStu_con .addStu_list2 .addStu_list2_l2 ul li { font-size: 14px; color: #999; line-height: 20px; height: 20px; display: block; }
+#addStudiv .addStu_downexcel { cursor: pointer; color:#00A0E9;}
+#addStudiv .addStu_downexcel:hover{text-decoration:underline;color: #1CB1F5;}
+
+/*班级动态*/
+.myClass .dataInfo .dynamicInfo { }
+.myClass .dataInfo .dynamicInfo ul { margin: 0px; padding: 0px; list-style-type: none; }
+.myClass .dataInfo .dynamicInfo ul li { line-height: 24px; padding-left: 25px; padding: 13px 25px; border-bottom: 1px dotted #CCC; overflow: hidden; }
+.myClass .dataInfo .dynamicInfo ul li:hover { background: #F5F5F5; }
+.myClass .dataInfo .dynamicInfo ul li .loadTime { margin-left: 10px; color: #bbb; }
+.myClass .dataInfo .dynamicInfo ul li .u_id, .myClass .dataInfo .dynamicInfo ul li .c_id, .myClass .dataInfo .dynamicInfo ul li .w_id { margin: 5px; color: #00A0E9; }
+.myClass .dataInfo .dynamicMore { background: #F1F1F1; color: #00A0E9; height: 36px; line-height: 36px; text-align: center; margin: 20px 10px 20px 10px; border-radius: 3px; cursor: default; }
+.myClass .dataInfo .dynamicMore:hover { background: #eee; color: #1CB1F5; }
+
+/*添加班级弹出窗*/
+#classdiv .addnewclass, #classdiv .addoldclass { width: 244px; float: left; margin: 10px 10px; overflow: hidden; }
+#classdiv .tit { display: block; overflow: hidden; font-size: 14px; line-height: 30px; height: 30px; padding-left: 15px; background-color: #00A0E9; color: #FFF; }
+#classdiv .con { padding: 10px; border: 1px solid #E3E3E3; }
+#classdiv .con .condiv { margin-bottom: 15px; font-size: 14px; }
+#classdiv .con .condiv .l_tit { font-size: 14px; }
+#classdiv .con .condiv .l_selectschool { background-color: #00A0E9; padding: 2px 6px; cursor: pointer; color: #FFF; border-radius: 2px; display: inline-block; }
+#classdiv .con .condiv .l_selectschool:hover { background-color: #10AFF7; }
+#classdiv .con .l_addclass .bgbt, #classdiv .con .l_insertclass .bgbt { display: inline-block; }
+.l_addclass, .l_insertclass { display: block; overflow: hidden; text-align: center; }
+.l_addclass a, .l_insertclass a { padding: 0 30px; }
+#classdiv .con .l_des { color: #999; padding: 0px; font-size: 12px; margin: 0px; margin-top: 10px; height: auto; }
+#classdiv .con .l_des p { font-size: 14px; padding: 0px; margin: 0px; margin-bottom: 7px; height: auto; }
+
+/*添加班级弹出框->选择学校弹出框*/
+.schoollist .myarea { background-color: #efefef; padding: 10px; border: 1px solid #ccc; margin: 0px; list-style-type: none; margin-bottom: 10px; overflow: hidden; }
+.schoollist ul { padding: 0px; margin: 0px; list-style-type: none; overflow: hidden; }
+.schoollist ul li { color: #555; font-size: 14px; text-align: center; display: inline-block; *display: inline; padding: 2px 6px; border-radius: 2px; margin: 1px; zoom: 1; }
+.schoollist ul li:hover { cursor: pointer; }
+.schoollist ul li.current { background-color: #009FE9; color: #fff; }
+.schoollist .schoolbtn { border-top: 1px solid #ccc; padding-top: 10px; margin-top: 10px; text-align: right; }
+.schoollist .schoolbtn .addschoolbtn { margin-right: 15px; float: right; }
+.schoollist .schoolbtn .delschoolbtn { margin-right: 15px; float: right; }
+.schoollist .myschool { text-align: left; overflow-y: scroll; height: 100px; padding-top: 1px; }
+.schoollist .myschool ul { text-align: left; }
+.schoollist .myschool ul li { float: left; width: 33%; margin: 0px; padding: 0px; line-height: 23px; height: 23px; overflow: hidden; }
+.searchschool, .insertschool { margin-bottom: 5px; font-size: 14px; height: 35px; line-height: 35px; overflow: hidden; }
+.searchschool .btn_normal, .insertschool .btn_normal, .searchschoolbtn a { color: #009FE9; cursor: pointer; }
+.searchschool .btn_normal:hover, .insertschool .btn_normal:hover { text-decoration: underline; }
+.insertschool { display: none; }
+#searchschoolval, #insertschoolval { line-height: 20px; height: 20px; }
+.txt_input { width: 150px; line-height: 20px; height: 20px; }
+
+/*批改作业-布置作业导航栏*/
+
+/*布置作业*/
+.emptyWork { background-color: #FFF; margin: 0px 8px 10px 8px; }
+.emptyWork .emptyWrap { margin: 0px auto; width: 450px; text-align: center; }
+.emptyWrap h1 { font-family: "Microsoft YaHei"; margin: 0px; font-weight: normal; }
+.emptyWrap div { margin-top: 10px; }
+.emptyWrap .des { color: #AAA; }
+.emptyWrap .des a { color: #AAA; }
+.emptyWrap .selectStyle a { display: inline-block; width: 80px; text-align: center; background: #009FE9; height: 29px; line-height: 29px; margin-right: 10px; color: #FFF; border-radius: 3px; }
+.emptyWrap .selectStyle a:hover { background-color: #10AFF7; }
+#addwork_edit_name { height: 22px; width: 310px; line-height: 22px; }
+
+/*作业详情*/
+.cwNav { height: 50px; line-height: 50px; padding: 10px 30px; }
+.cwNav .fl div { float: left; margin-right: 15px; }
+.cwNav .fl div b { float: left; width: 10px; height: 10px; margin-top: 18px; margin-right: 5px; }
+.cwNav .fl div b.cwHui { border: #ddd 2px solid; }
+.cwNav .fl div b.cwHong { border: #F00 2px solid; }
+.cwNav .fl div b.cwLan { border: #57c2f2 2px solid; }
+.cwNav .fl div b.cwLv { border: #69be83 2px solid; }
+.cwNav .fl div span { float: left; }
+.cwNav .fr { padding-left: 40px; margin-right: 20px; overflow: hidden; border-left: 1px solid #E3E3E3; }
+.cwNav .fr a { padding: 8px 10px; background-color: #009FE9; color: #FFF; border-radius: 3px; cursor: pointer; }
+.cwNav .fr a:hover { background-color: #10AFF7; }
+.workSpan { text-align: center; padding-top: 10px; }
+.workSpan span { font-size: 10px; margin-right: 10px; display: inline-block; height: 20px; width: 20px; line-height: 20px; margin-bottom: 10px; text-align: center; }
+.num_red { border: 2px solid #fe7676; }
+.num_normal { border: 2px solid #69be83; }
+.num_gray { border: 2px solid #DDDDDD; }
+.num_blue { border: 2px solid #57C2F2; }
+
+
+
+.commentCon { text-align: center; margin-bottom: 25px; }
+.commentCon table { border: none; width: 100%; }
+.line { color: #CCC; }
+.CommentArea { color: #333; padding: 10px; font-size: 14px; border: 1px solid #CCC; height: 120px; }
+.commentTit { padding: 0px 10px; font-size: 16px; }
+.commentTit b { color: #009FE9; }
+#commentdiv .normal_btn { overflow: hidden; }
+.oneComment { text-align: left; }
+.oneComment div { padding-left: 16px; }
+.oneComment .commentTit { font-size: 16px; font-weight: bold; font-family: "Microsoft YaHei"; margin-top: 10px; margin-bottom: 10px; }
+.oneComment ul { height: 50px; overflow-y: auto; margin: 0px; padding: 0px; }
+.oneComment li { display: inline-block; *display: inline; zoom: 1; padding: 2px; margin-right: 5px; cursor: pointer; margin-left: -5px; }
+.oneComment li.disable { filter: alpha(opacity=38); -moz-opacity: 0.38; -khtml-opacity: 0.38; opacity: 0.38; }
+.oneComment li input { vertical-align: bottom; }
+
+
+.workList .dataInfo { display: none; background-color: #FFF; border-top: 1px solid #E3E3E3; border-left: 1px solid #E3E3E3; border-right: 1px solid #E3E3E3; margin-top: -1px; }
+.workList .tableInfo .error { padding: 5px 30px; font-size: 16px; text-align: left; }
+.workList .dataInfo2 { padding-top: 30px; }
+
+.workInfo .workInfoTit { text-align: center; padding-bottom: 10px; }
+.workInfo table { border: 1px solid #E3E3E3; margin: 0px auto; }
+.workInfo table td { border: 1px solid #E3E3E3; text-align: center; padding: 7px 5px; text-align: center; }
+.workInfo table td.workInfoContent { text-align: left; padding-left: 20px; }
+.workInfo table td.workInfoContent .workSpan { text-align: left; }
+
+
+.workStudentList { padding: 15px 20px 10px 20px; margin-bottom: 15px; border-bottom: 1px solid #E3E3E3; }
+.workStudentList ul { padding: 0px; margin: 0px; }
+.workStudentList li { display: inline-block; *display: inline; zoom: 1; background-color: #DFF1FB; color: #009FE9; padding: 5px 10px; margin: 0px 10px 10px 0px; border-radius: 2px; border: 1px solid #FFF; cursor: pointer; transition: all 0.3s; }
+.workStudentList li.undo { background-color: #FFD8D8; color: #F00; cursor: auto; cursor: not-allowed; }
+.workStudentList li.comment { background-color: #D3FFE9; color: #00BA57; }
+.workStudentList li:hover { filter: alpha(opacity=70); -moz-opacity: 0.7; -khtml-opacity: 0.7; opacity: 0.7; }
+.studentWorkDetail { padding: 0px 20px 10px 20px; }
+.studentWorkDetail .noExist { text-align: left; font-size: 16px; }
+
+/*作业内容*/
+.workbox { margin-bottom: 10px; border: 1px solid #ccc; padding: 10px; }
+.workbox p{margin:0;}
+.workbox .workbody { line-height:1.8em; }
+.workbox .workanswer { margin-top: 10px; line-height:1.8em; }
+.workbox .workanalytic { line-height: 22px; }
+.right_answer { border-bottom: 1px dashed #DDD; padding: 15px 0; }
+.student_answer { border-bottom: 1px dashed #DDD; padding: 15px 0; background: #E5E5E5; }
+.workindex { color: #57c2f2; }
+
+/*学情评价开始*/
+
+/*学情评价-公共样式-start*/
+#workBox .teacher {padding-left: 115px; padding-bottom: 20px; overflow: hidden; overflow-y: auto; }
+#workBox .teacher .righttop { padding: 15px 0px 15px 0px; }
+#workBox .teacher .dataInfo { margin: 10px 0; width: 100%; zoom: 1; height: 400px; }
+#workBox .teacher .dataInfo .infoLeft, .homeWorkReportClass .dataInfo .infoRight { width: 49%; border: 1px solid #E5E5E5; overflow: hidden; height: 395px; background: #FFF; }
+#workBox .teacher .dataInfo .infoLeft .leftTop, .homeWorkReportClass .dataInfo .infoRight .rightTop { font: 16px/35px "Microsoft YaHei"; height: 35px; text-indent: 16px; padding-top: 10px; }
+#workBox .teacher .dataInfo .infoLeft .leftInfo { width: 90%; height: 86%; margin: 0 auto; }
+#workBox .teacher .dataInfo .infoRight .rightInfo { width: 90%; height: 80%; margin: 0 auto; }
+#workBox .teacher .dataInfo .infoLeft .leftInfo .noData, .homeWorkReportClass .dataInfo .infoRight .rightInfo .noData { font-family: "Microsoft YaHei"; }
+.classList { padding-top: 0px; }
+.ico_Helpexplain{background:url(../image/pd-ico.png) -705px -24px;width:20px; height:20px; }
+#workBox .teacher .dataInfo .leftTop,#workBox .teacher .dataInfo .rightTop{ position:relative}
+#workBox .teacher .dataInfo .leftTop .Helpexplain,#workBox .teacher .dataInfo .rightTop .Helpexplain{ position:absolute; width:20px; height:20px; right:12px; top:19px; }
+
+/*学生列表*/
+.teacher .classStudent { padding: 10px 0px 15px 0px; background: #FFF; border-bottom: 1px solid #C5C8CC; }
+.teacher .classStudent .studentTit { font: 16px/35px "Microsoft YaHei"; height: 35px; text-indent: 16px; }
+.teacher .classStudent .studentInfo { padding: 6px 0px; overflow: hidden; min-height: 36px; width: 100% }
+.teacher .classStudent .studentInfo .noStudent { height: 36px; line-height: 36px; text-align: center; color: #CCC; font-size: 16px; }
+.studentInfo ul { list-style-type: none; padding: 0px; margin: 0px; }
+.studentInfo ul li {margin: 5px 0px 5px 10px; padding: 3px 12px; float: left; line-height: 30px; text-align: center; height: 30px;color: #b5b5b5; cursor: default; background-color: #F2F2F2;}
+.studentInfo ul li:hover { color: #FFF; background: #b5b5b5; }
+.studentInfo ul li.click{ color: #009FE9; cursor: pointer; background: #DFF1FB;}
+.studentInfo ul li.click:hover { background: #009FE9; color: #FFF; }
+.studentInfo ul li.hover{background: #009FE9;color: #FFF;}
+
+#studentList{background: rgb(255, 255, 255);border: 1px solid rgb(227, 227, 227);max-height: 150px;_height:150px;overflow:hidden;overflow-y:auto;margin-bottom:10px;}
+#studentList .studentTit{font: 16px/35px "Microsoft YaHei"; height: 35px; text-indent: 20px;padding: 10px 0px 0px 0px;}
+#studentList .message{float: right;margin-right: 15px;right: 15px;color: #888;font-size: 13px;}
+#studentList .studentItem{padding: 6px 0px;overflow: hidden;min-height: 36px;width: 100%;}
+.studentItem ul{list-style-type: none;padding: 0;margin: 0;}
+.studentItem ul li{margin: 5px 0px 5px 10px;padding: 3px 12px;float: left;line-height: 30px;text-align: center;height: 30px;color: #b5b5b5;cursor: default;background-color: #F2F2F2;}
+.studentItem ul li.click{color: #009FE9;cursor: pointer;background: #DFF1FB;}
+.studentItem ul li:hover{color: #FFF;background: #b5b5b5;}
+.studentItem ul li.click:hover{background: #009FE9;color: #FFF;}
+.studentItem ul li.hover{background: #009FE9;color: #FFF;}
+
+
+/*学情评价-公共样式-end*/
+
+/*学生个人界面*/
+.homeWorkReportClass .student { margin: 0 auto; width: 96%; }
+.homeWorkReportClass .student .studentInfo { background: #FFF; padding-bottom: 20px; border: 1px solid #E3E3E3; }
+.homeWorkReportClass .student .studentInfo .studentTit { font: 16px/35px "Microsoft YaHei"; height: 35px; text-indent: 20px; padding: 10px 0px 15px 0px; }
+.homeWorkReportClass .student .studentInfo table { margin-left: 20px; color: #999; }
+.homeWorkReportClass .student .studentInfo table tr td { padding-left: 20px; border-right: 1px dotted #ccc; }
+.homeWorkReportClass .student .studentInfo table tr td:first-child { padding-left: 0; }
+.homeWorkReportClass .student .studentInfo a.back { text-decoration: none; cursor: pointer; color: #009FE9; }
+
+/*教师信息*/
+.teacherinfo table { border: #ddd solid 1px }
+
+/*考点列表*/
+.homeWorkReportClass .student .klInfo { margin: 10px 0px; background: #FFF; border: 1px solid #E3E3E3; }
+.homeWorkReportClass .student .klInfo ul { padding: 0px; margin: 0px; list-style: none; }
+.homeWorkReportClass .student .klInfo li { cursor: pointer; line-height: 50px; color: #000; list-style: none; text-indent: 10px; height: 50px; border-bottom: 1px dotted #E3E3E3; }
+.homeWorkReportClass .student .klInfo li:hover { background-color: #F5F5F5; }
+
+.homeWorkReportClass .student .klInfo li.title { border-bottom: 1px solid #E3E3E3; }
+.homeWorkReportClass .student .klInfo li.title:hover { background-color: #FFF; cursor: default; }
+.homeWorkReportClass .student .klInfo li.title .zsdBt { text-indent: 30px; }
+.homeWorkReportClass .student .klInfo li .zsdBt { width: 49%; text-indent: 10px; }
+.homeWorkReportClass .student .klInfo .klLf .zsdBt { text-indent: 10px; }
+.homeWorkReportClass .student .klInfo .klList .startBox { width: 16%; text-align: center; }
+.homeWorkReportClass .startBox span { float: left; width: 20px; height: 20px; display: block; background: url(../image/piclist1.gif) no-repeat; margin: 15px auto; }
+.homeWorkReportClass .startBox .start { width: 100px; margin: 0 auto; }
+.homeWorkReportClass .startBox .start_01 { background-position: -218px -75px; }
+.homeWorkReportClass .startBox .start_02 { background-position: -242px -75px; }
+.homeWorkReportClass .startBox .start_03 { background-position: -266px -75px; }
+.homeWorkReportClass .klInfo .icoZd { width: 20px; height: 20px; margin: 14px 0px 0px 15px; background: url(../image/piclist1.gif) no-repeat; }
+.homeWorkReportClass .klLf .icoZd { margin-left: 35px; }
+.homeWorkReportClass .klInfo .icoZd_01 { background-position: -104px -75px; }
+.homeWorkReportClass .klInfo .icoZd_02 { background-position: -162px -75px; }
+.homeWorkReportClass .klInfo .icoZd_03 { background-position: -186px -75px; }
+.homeWorkReportClass .klList .rightBox { width: 16%; text-align: center; }
+.homeWorkReportClass .rightBox .cenBox { width: 50px; margin: 0 auto; }
+
+/*练习动态学情分析-start*/
+.exerciseReportClass .studentCheck { background: #009FE9; color: #FFF; }
+.exerciseReportClass .classExercise .classExerciseTit { *position: relative; *width: 100%; background-color: #FFF; margin: 10px 0px; height: 40px; line-height: 40px; text-indent: 16px; border-bottom: 1px solid #C5C8CC; font: 16px/35px "Microsoft YaHei"; }
+.classExerciseTit #pagediv { *position: absolute; display: inline-block; right: 12px; color: #999999; *top: 0px; border-left: #ddd solid 1px; height: 40px; padding-right: 10px; }
+#pagediv #quescount, #pagediv #curpage, #pagediv .tspan { display: inline; }
+#pagediv #curpage, #pagediv #pagecount { color: #009FE9; }
+.exerciseReportClass .classExercise .classExerciseInfo { background-color: #FFF; min-height: 60px; }
+.exerciseReportClass .classExerciseInfo .noExercise { height: 60px; text-align: center; font-size: 16px; color: #CCC; line-height: 60px; border-bottom: 1px solid #C5C8CC; }
+.exerciseReportClass .classExerciseInfo ul { list-style-type: none; margin: 0px; padding: 0px; }
+.exerciseReportClass .classExerciseInfo ul li { display: block; padding: 10px 10px 10px 16px; height: 60px; color: #888; border-bottom: 1px solid #C5C8CC; }
+.exerciseReportClass .classExerciseInfo ul li:hover { background-color: #FFFAF0; }
+.exerciseReportClass .classExerciseInfo ul li .exerciseStyle { color: #009FE9; }
+.exerciseReportClass .classExerciseInfo ul li p { margin-bottom: 0px; }
+.exerciseReportClass .classExerciseInfo .anBox { height: 35px; padding-top: 10px; }
+.exerciseReportClass .classExerciseInfo ul li .exerciseInfo { margin: auto; width: 100%; height: 35px; line-height: 35px; background-color: #009FE9; color: #FFF; padding:5px 10px; border-radius: 2px; }
+.exerciseReportClass .classExerciseInfo .exerciseInfo:hover {opacity: .9;filter:alpha(opacity=90)}
+.teacher #pagelistbox { padding: 3px 5px 3px 0; *padding-top: 6px; text-align: right; height: 30px; margin: 10px 20px 0 0; }
+.content .testInfo { overflow-y: auto; overflow-x: hidden; max-height: 600px; min-height: 300px; }
+.workbox:hover { border: 1px solid #009FE9; }
+.exerciseReportClass #workBox .teacher { padding-bottom: 0px; }
+.teacher .classExercise { margin-right: 20px; }
+.teacher .classMargin { margin-right: 20px; }
+.classStudent .message { float: right; margin-right: 15px; right: 15px; color: #888; font-size: 13px }
+
+/*写评语-start*/
+.commentBox{padding:0 10px 20px;}
+.commentBox .tit{width:300px;margin:0 auto;text-align: center;padding:20px 0;}
+.commentBox .tit span{display: inline-block;background: #fff;margin-bottom:-10px;padding:0 8px;}
+.commentBox .tit b{display: block;height:1px;background: #aaa;}
+.funcCon{height:30px;padding-top:20px}
+.funcCon h5{ margin:0;font-weight: normal;color:#00a0e9;font-size:12px;margin-top:4px}
+.funcCon .quickComment{float: left;}
+.funcCon .quickComment select{width:198px;border:1px solid #ccc;display: inline-block;font-family:"Microsoft Yahei";color:#666;border-radius:2px;}
+.funcCon .customComment{float: right;margin-right:10px;position:relative;cursor:default;}
+.funcCon .customComment .intro .show{display: inline-block;width:12px;height:12px;background:url(../image/comment/plus.png) 0 0 no-repeat;vertical-align:-2px;margin-left:3px;}
+.funcCon .recordComment .intro .show{display: inline-block;width:9px;height:6px;background:url(../image/comment/arrow.jpg) 0 0 no-repeat;margin-left:3px;}
+.funcCon .recordComment{float: right;cursor:default;position:relative;}
+	/*animate*******/
+.funcCon .customComment .intro span,.funcCon .recordComment .intro span{transition: all .3s;}
+.funcCon .customComment .intro .hover{transform:rotate(135deg);transition: all .3s;}
+.funcCon .recordComment .intro .hover{transform:rotate(180deg);transition: all .3s;}
+	/*animate ******/
+/*自定义评语*/
+.customCon,.recordCon{padding:10px;padding-top:28px; background: #fff; border-radius: 2px;border:1px solid #eee; box-shadow: 1px 1px 3px #aaa;position:absolute;top:32px;left:-225px;z-index:10;}
+.customCon .topArrow,.recordCon .topArrow{width:100%;height:14px;position:absolute;top:-14px;right:0px;}
+.customCon .topArrow span,
+.recordCon .topArrow span{display: inline-block;margin-left:297px;width:16px;height:14px;background:url(../image/comment/topArrow.jpg) 0 0 no-repeat;}
+.recordCon .topArrow span{margin-left:332px;}
+.customCon .topArrow b,.recordCon .topArrow b{display: inline-block;width:15px;height:15px;position:absolute;right:6px;top:21px; background:url(../image/an_gb02.jpg) -2px -2px no-repeat;}
+.customCon .topArrow b:hover,.recordCon .topArrow b:hover{opacity:0.8;filter:alpha(opacity=80);}
+.customCon .conList{min-height:100px;max-height: 160px;overflow:hidden;}
+.customCon .conList{*width:365px;}
+.customCon .listItem{color:#666;font-size:12px;white-space: nowrap;font-family:"Microsoft Yahei";padding:0 5px;}
+.customCon .listItem input{font-family:"Microsoft Yahei"; height:14px; line-height:1em;text-indent: 1px;margin:3px 5px; padding:4px;border-radius:2px;width:270px;}
+.customCon .listItem a{font-size:12px;padding:0 5px;color:#999;}
+.customCon .listItem a:hover{color:#00a0e9;}
+.customCon .addItem{padding:6px;text-align: center;}
+.customCon .addItem a{font-family:"Microsoft Yahei";color:#00a0e9;}
+.customCon .addItem a:hover{color:#00a0e9;}
+.customCon .tips{color:#bbb;font-size:12px;font-family:"Microsoft Yahei"}
+/*评语记录*/
+.recordCon ul,.recordCon li,.recordCon h6,.recordCon em,.recordCon b,.recordCon p,.recordCon span{padding:0;margin:0;font-style: normal;font-weight:normal;font-size:12px;font-family:"Microsoft Yahei";font-size:12px;}
+.recordCon h6{color:#009fe9;}
+.recordCon .bd li{padding:9px 5px;border-top:1px dotted #aaa;}
+.recordCon .bd li:first-child{border-top:none;}
+.recordCon p{color:#888;margin-top:2px;}
+.recordCon em{font-weight: bold;}
+.recordCon{left:-286px;z-index:11;}
+.recordCon .conList{width:336px;min-height:100px;max-height:180px;overflow:hidden; overflow-y:auto;border:1px #ccc solid;border-radius:4px;border-top-right-radius:0;border-bottom-right-radius:0;}
+.recordCon .conList .bd{display: inline-block; padding:8px;background: #f8f8f8;}
+.recordCon .conList .bd .tips{text-align: center;font-size:12px;color:#bbb;}
+.recordCon .conList .ctrl{display: inline-block;width:20px;vertical-align:15px;}
+.recordCon .conList .ctrl a{display: block;width:20px;height:12px;text-indent: 100px;overflow:hidden;border:1px solid #f5f5f5;border-radius:2px; background: #fff url(../image/comment/arrow.png) 0 0 no-repeat;}
+.recordCon .conList .ctrl a:active{background-color: #f1f1f1;border-color:#ddd;box-shadow:none}
+.recordCon .conList .ctrl a.prev{background-position: 3px -31px;transition:all .2s;margin-bottom:20px;}
+.recordCon .conList .ctrl a.next{background-position: 3px -20px;transition:all .2s;}
+.recordCon .conList .ctrl a.prev:hover{border-color:#eee;background-position: 3px -10px;box-shadow: 0 1px 2px #aaa}
+.recordCon .conList .ctrl a.next:hover{border-color:#eee;background-position: 3px 2px;box-shadow: 0 1px 2px #aaa}
+.recordCon .conList .recTit span{display: inline-block;width:238px;margin-right:15px;overflow: hidden;text-overflow:ellipsis;}
+/*编辑评语*/
+.editCommentBox{width:480px;margin:50px auto 0;}
+.editCommentBox textarea{width:100%;height:100px;margin-left:-3px;}
+.editCommentBox .ctrl{text-align: right;margin-top:5px;}
+.editCommentBox .ctrl .statis{color:#999;font-size:12px;margin-right:10px}
+.editCommentBox .ctrl .statis b{color:#00a0e9;font-weight: normal;}
+.editCommentBox .back:hover{opacity:0.8;filter:alpha(opacity=80);}
+.editCommentBox .back{display: inline-block;width:26px;height:20px;vertical-align:-2px;background:url(../image/comment/back.jpg) 0 0 no-repeat;}
+/*批改作业-end*/
+
+/*练习动态学情分析-end*/
+
+/*学情评价-end*/
+/*-------------------------------------下面是new-page-------------------------------------*/
+/*批改作业-*/
+/*reset*/
+.mg ul,.mg li,.mg p,.mg h4{margin:0;padding:0}
+
+/*layout*/
+/*背景色*/
+.bg-blue{background-color:#03a0e9;}
+.bg-green{background-color:#31bc75;}
+.bg-orange{background:#f5c864;}
+.bg-gray{background:#bebebe;}
+/*边框颜色*/
+.bc-gray{border-color:#e2e2e2 }
+.bc-red{border-color:#fa726a }
+.bc-blue{border-color:#03a0e9 }
+.bc-orange{border-color:#ffa500}
+.bc-green{border-color:#30bb73}
+/*margin*/
+.ml10{margin-left:10px;}
+/*小标签*/
+.s-tag{display:inline-block;padding:3px 5px;border-radius:2px;color:#fff;font-size:12px;font-weight:400;margin-right:5px;line-height:1}
+/*批改作业*/
+.mg-jc-li .jc-li-item{position:relative;border-left-width:5px;border-left-style:solid;margin-bottom:10px;}
+.jc-li-info{margin-right:210px;background:#ffffff;overflow:hidden}
+.jc-li-item .item{display:inline-block;padding:20px 2%;float:left;}
+.jc-li-info .item-idx{width:42%}
+.jc-li-info .item-time{width:30%;margin-top:18px}
+.jc-li-info .item-stat{width:16%;text-align:center}
+.jc-li-item .jc-li-btn{height:100%;position:absolute;top:0;right:0;width:200px;margin-left:-100%;background:#ffffff;float:right;text-align:center;white-space:nowrap}
+.jc-li-btn .jc-btn{display:inline-block;padding:0 20px;margin-top:60px;border-width:2px;
+    border-style:solid;border-radius:12px;height:21px;line-height:21px;font-weight:600;-webkit-transition:all .2s;-moz-transition:all .2s;-o-transition:all .2s;transition:all .2s;}
+.jc-li-btn .check-btn{color:#ffa500;border-color:#f5c864;}
+.jc-li-btn .see-btn{color:#30bb73;border-color:#30bb73;}
+.jc-li-btn .down-btn{color:#02a0e9;border-color:#02a0e9;}
+/*hover*/
+.jc-li-btn .jc-btn:hover{box-shadow:0 1px 2px rgba(0,0,0,0.2);color:#fff}
+.jc-li-btn .check-btn:hover{background-color:#f5c864;}
+.jc-li-btn .see-btn:hover{background-color:#30bb75;}
+.jc-li-btn .down-btn:hover{background-color:#02a0e9;}
+.item-idx .idx-tit{font-size:16px;font-family:Arial,"microsoft yahei",sans-serif;font-weight:400;line-height:1.5;padding-bottom:8px}
+.item-idx .idx-item{overflow:hidden;position:relative;margin-top:12px;height:18px}
+.item-idx .idx-item .tit{width:60px;position:absolute;top:0;left:0}
+.item-idx .idx-item .status-bar{height:11px;display:block;margin:3px 44px 0 44px;background-color:#F2F2F2;}
+.item-idx .idx-item .status-num{width:60px;text-align:right;margin-left:-100%;position:absolute;top:0;right:0;}
+.item-idx .status-bar{display:inline-block;border-radius:5px;overflow:hidden;}
+.item-idx .status-bar i{text-indent:9999px;display:block;width:50%;height:11px;border-radius:5px}
+
+/*开始截止时间*/
+.item-time .t{font-size:12px;border-radius:10px;height:21px;line-height:21px;text-align:center;width:150px;margin:0 auto;margin-top:14px;}
+.item-time .t-blue{background:#ddf1fa;color:#02a0eb}
+.item-time .t-gray{background:#f2f2f2;color:#b1b1b1}
+.item-time .t-red{background:#f9e6df;color:#e75a50}
+
+/*此作业的统计信息*/
+.item-stat{}
+.item-stat .pct-num{color:#00A0E9;font-size:52px;margin-top:-8px}
+.item-stat .pct-num sub{font-size:14px;vertical-align:baseline;}
+.item-stat .pct-blue{width:85px;margin:0 auto;text-align:center;font-size:14px;border-radius:11px;height:22px;line-height:22px;background:#ddf1fa;color:#02a0eb}
+.item-stat .test-total{margin-top:12px;}
+
+/*批改作业 end*/
+/*批改作业-班级作业*/
+/*切换*/
+.cw-tab{height:50px;}
+.cw-tab ul{height:50px;overflow:hidden}
+.cw-tab ul li{float:left;padding:0 15px;background:#eee; font-size:16px;color:#555;border-right:1px solid #ccc; height:50px;overflow:hidden}
+.cw-tab ul li.on{color:#555;border-right:1px solid #ccc; height:50px;overflow:hidden}
+/*批改作业-班级作业 end*/

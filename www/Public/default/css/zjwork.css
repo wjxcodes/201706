@@ -1,0 +1,383 @@
+/*-星图标-*/
+
+/*
+.icon-star{ display:inline-block;width:144px;height:25px;background:url("../image/icon-star.png") 0 0 no-repeat}
+.icon-star-9{background-position:0 -38px}
+.icon-star-8{background-position:0 -76px}
+.icon-star-7{background-position:0 -114px}
+.icon-star-6{background-position:0 -152px}
+.icon-star-5{background-position:0 -180px}
+.icon-star-4{background-position:0 -228px}
+.icon-star-3{background-position:0 -266px}
+.icon-star-2{background-position:0 -304px}
+.icon-star-1{background-position:0 -342px}
+.icon-star-10{background-position:0 0}
+*/
+
+/*-小星图标-*/
+
+.sml-icon-star{display:inline-block;width:74px;height:14px;background:url("../image/sml-icon-star.png") 0 0 no-repeat}
+.sml-icon-star-9{background-position:0 -20px}
+.sml-icon-star-8{background-position:0 -40px}
+.sml-icon-star-7{background-position:0 -60px}
+.sml-icon-star-6{background-position:0 -80px}
+.sml-icon-star-5{background-position:0 -100px}
+.sml-icon-star-4{background-position:0 -120px}
+.sml-icon-star-3{background-position:0 -140px}
+.sml-icon-star-2{background-position:0 -155px}
+.sml-icon-star-1{background-position:0 -180px}
+.sml-icon-star-10{background-position:0 0}
+.star-score{font-size:20px;color:#ffa500;margin-left:10px;line-height:1.4}
+.score sub{font-size:14.7px;color:#ffa500;bottom:0;height:20px}
+
+/*-星图标-end-*/
+
+/*批改作业*/
+.mg-jc-li .jc-li-item{position:relative;border-left-width:5px;border-left-style:solid;margin-bottom:10px;background-color:#fff}
+.jc-li-item-table{table-layout:fixed;width:100%;}
+.jc-li-item-table .item-idx-td{padding:15px 20px;}
+.jc-li-item-table .item-time-td{padding:15px;width:180px}
+.jc-li-item-table .item-stat-td{padding:15px 20px;width:100px}
+.jc-li-item-table .item-stat{text-align:center}
+.jc-li-btn-td{border-left:3px solid #EFEFEF;width:200px}
+.jc-li-btn{text-align:center;white-space:nowrap}
+.item-idx-td .item-idx .idx-tit{font-size:16px;padding-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-wrap:break-word;overflow:hidden;-webkit-box-pack:center;}
+.item-idx-td .item-idx .idx-tit a{cursor:pointer;color:#02a0e9;}
+.item-idx-td .item-idx .idx-tit a:hover{color:#1DB8FF;}
+.item-idx-td .item-idx .idx-item{overflow:hidden;position:relative;margin-top:12px;height:18px}
+.item-idx-td .item-idx .idx-item .tit{width:60px;position:absolute;top:0;left:0}
+.item-idx-td .item-idx .idx-item .status-bar{border-radius:5px;overflow:hidden;height:11px;display:block;margin:5px 44px 0 44px;background-color:#F2F2F2;}
+.item-idx-td .item-idx .idx-item .status-num{width:60px;text-align:right;margin-left:-100%;position:absolute;top:0;right:0;}
+.item-idx-td .item-idx .status-bar i{text-indent:9999px;display:block;width:50%;height:11px;border-radius:5px}
+
+/*开始截止时间*/
+.item-time .t{font-size:12px;border-radius:10px;height:21px;line-height:21px;text-align:center;width:150px;margin:0 auto;margin-top:14px;}
+.item-time .t-blue{background:#ddf1fa;color:#02a0eb}
+.item-time .t-gray{background:#f2f2f2;color:#b1b1b1}
+.item-time .t-red{background:#f9e6df;color:#e75a50}
+
+/*此作业的统计信息*/
+.item-stat .pct-num{color:#00A0E9;font-size:52px;line-height:1}
+.item-stat .pct-num sub{font-size:14.7px;vertical-align:baseline;}
+.item-stat .pct-blue{width:85px;margin:0 auto;text-align:center;font-size:14.7px;border-radius:11px;height:22px;line-height:22px;background:#ddf1fa;color:#02a0eb}
+.item-stat .test-total{margin-top:12px;}
+
+/*新增加的样式*/
+#workBox{overflow-x:hidden;overflow-y:auto;}
+#assignedWork .emptyBox{background:#FFF;}
+#assignedWork .emptyBox .emptyWrap{margin:0px auto;width:500px;text-align:center;}
+#assignedWork .emptyBox .emptyWrap h1{font-size:25px;font-family:"Microsoft YaHei";font-weight:normal;margin-bottom:10px;}
+#assignedWork .emptyBox .emptyWrap .assignWork  a{display:inline-block;width:110px;text-align:center;background:#009FE9;height:29px;line-height:29px;color:#FFF;border-radius:3px;}
+#assignedWork .emptyBox .emptyWrap .assignWork  a:hover{opacity:0.85;filter:alpha(opacity=85);box-shadow:0 1px 1px rgba(0,0,0,.3);transition:all .2s;}
+
+/*批改作业 end*/
+
+/*批改作业-班级作业*/
+.mg-classWork-wrap{padding-bottom: 30px;}
+/*切换*/
+.cw-tab-container{border:1px #ddd solid;background-color:#fff;overflow:hidden;display:none;}
+.cw-tab{height:50px;}
+.cw-tab ul{height:50px;overflow:hidden;border:1px solid #ddd;border-bottom:none;background-color:#F6F6F6;}
+.cw-tab ul li{float:left;background:#F6F6F6;font-size:16px;color:#555;border-right:1px solid #ddd;height:50px;line-height:50px;overflow:hidden}
+.cw-tab ul li a:hover{color:#00a0e9}
+.cw-tab ul li a{display:block;padding:0 25px;color:#555;border-top:3px #F6F6F6 solid;border-bottom:1px solid #ddd;height:46px}
+.cw-tab ul li.on a{color:#00a0e9;border-color:#00a0e9;border-bottom-color:#fff;overflow:hidden;background-color:#fff}
+
+/*tab-container-答题情况*/
+
+/*详情列表*/
+.cw-details{}
+.cw-table{table-layout:fixed;width:100%}
+.cw-table .cw-tr{border-top:1px dotted #ddd}
+.cw-table .cw-tr:first-child{border:none}
+.cw-table .cw-tr:hover{background-color:#f6f6f6}
+
+/*详情列表标题*/
+.cw-thead-tr th{padding:6px 0;text-align:center;border-bottom:1px solid #ddd;border-top:1px solid #ddd}
+.cw-thead-tr th span{border-right:1px solid #ddd;padding:4px 20px;margin-right:-1px;display:block}
+.cw-table .cw-th-name{width:140px}
+.cw-table .cw-th-info{}
+.cw-table .cw-th-percent{width:120px}
+.cw-table .cw-th-handle{width:236px}
+
+/*详情列表内容*/
+.cw-table .cw-td-name{text-align:center}
+.cw-table .cw-td-info{padding:10px;font-size:0}
+
+/*当前项*/
+.cw-table .cw-td-percent{text-align:center}
+.cw-table .cw-td-handle{text-align:center;height:100%;}
+.cw-table .cw-td-handle .Ced{cursor:default;}
+/*tab-container-作业详情*/
+.cw-ques-mini-nav{padding:15px}/*题号导航*/
+.cw-ques-mini-nav .ques-index-box{padding:10px;border:1px solid #ddd;}/*题号导航*/
+.cw-stu-list-box{padding:15px 10px;}
+.cw-stu-list-box a,.cw-stu-list-box b{font-size:14.7px;min-width:60px;text-align:center;display:inline-block;padding:4px 10px;cursor:default;margin:6px;border:1px solid #FFF;}
+.cw-stu-list-box a{color:#00a0e9;background-color:#caecff;cursor:pointer}
+.cw-stu-list-box a.on{background-color:#00a0e9;color:#fff}
+.cw-stu-list-box b{font-weight:500;color:#888;background-color:#ececec}
+.cw-stu-list-box a:hover,.cw-stu-list-box b:hover{opacity:.80;filter:alpha(opacity=80)}
+
+/*作业详情-试题*/
+.cw-ques-text{padding:10px 0}
+.cw-ques-text .ques-body{padding:10px 23px}
+.cw-ques-text .cq-tit{padding:5px 30px;font-size:16px;border-bottom:1px solid #e3e3e3;border-top:1px solid #e3e3e3;background-color:#f7f7f7;font-family:Arial,sans-serif}
+.cw-ques-text .cq-tit .cq-num{color:#666;font-size:20px;font-style:italic;margin:0 5px 0 0}
+
+/*作业详情-试题-批改作业&批改导学案*/
+.test-list{margin:10px 0;background-color: #f1f1f1;}
+.test-list .temp{background-color: #f1f1f1;}
+.test-list .temp .ques-body,.test-list .temp .subtemp{min-height:70px;padding:20px 0 0;margin:0 0 13px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;background-color: #fff;}
+.test-list .temp div.ques-body:first-child{border-top:none;margin-top: 0;}
+.test-list .temp .subtemp .subtemp-title{color:#FF7600;border-left:2px solid #FF7600;background-color: #F7F7F7;padding-left:23px;line-height:2em;}
+/*小题*/
+.test-list .subtest, .test-list .answer, .test-list .analytic, .test-list .questext,.test-list .subtemp .loreanswer,.test-list .subtemp .lore {
+    padding: 10px 0;
+    margin: 0 23px;
+    overflow: hidden;
+}
+.test-list .answer,.qi-answer{font-size:14.7px;color:#566675;}
+.test-list .analytic,.qi-explain{font-size:14.7px;color:#566675}
+.test-list .subtest .quesindex, .test-list .questext .quesindex {
+    display: inline-block;
+    line-height: 24px;
+    font-size: 18px;
+    color: #484848;
+    margin-right:6px;
+    padding-left: 6px;
+    padding-right: 4px;
+    border-left: 2px solid #00a0e9;
+    border-top-right-radius:12px;
+    border-bottom-right-radius:12px;
+    background-color: #F3F3F3;
+    font-weight: 600;
+}
+.test-list .cq-tit {
+    position: relative;
+    margin-bottom: -1px;
+    margin-top: -14px;
+    padding: 5px 20px;
+    font-size: 16px;
+    color: #00a0e9;
+    font-weight: 600;
+    border-left: 4px #00a0e9 solid;
+    background-color: #E9F7FF
+}
+.test-list .cq-tit .cq-num{color:#00a0e9;font-size:17px;margin:0 5px 0 0}
+.test-list .site-tit,.qi-item-tit,.qi-answer a.tit,.qi-explain a.tit{font-size:15px;margin-bottom:6px;color:#FFA632;font-family: 'microsoft yahei',sans-serif}
+/*作业详情-试题-评分/评价*/
+.cw-ques-cite-box{padding:13px;margin:10px 20px 30px;}
+.cite-face-true{border:1px solid #bae1bf;background-color:#ebf9eb}
+.cite-face-true .dotted-line{border-bottom:2px dotted #bbe0c1;margin:0 -8px;}
+.cite-face-false{border:1px solid #f3d9c5;background-color:#fff2ec}
+.cite-face-false .dotted-line{border-bottom:2px dotted #f3d9c5;margin:0 -8px;}
+.cq-stu-answer{padding:10px}
+.cq-stu-answer .tit{color:#6e4c3d}
+.cq-stu-answer .cq-sa-context{color:#6e4c3d;margin-bottom:8px;}
+.cq-teacher-comment{padding:15px 0 10px}
+.cq-teacher-comment .tit{margin-right:6px}
+.cq-teacher-comment .cq-tc-score{color:#6e4c3d;overflow:hidden}
+.cq-teacher-comment .cq-tc-score .tit{float: left;line-height:2}
+.cq-teacher-comment .cq-tc-score .icon-star{float:left}
+.cq-teacher-comment .cq-tc-score .star-score{float:left;cursor:default}
+.cq-teacher-comment .cq-tc-score .sml-icon-star{text-indent:-999px;overflow:hidden;vertical-align:text-top}
+.cq-teacher-comment .cq-tc-text{color:#6e4c3d}
+
+/*作业详情-end*/
+
+/*错题排行*/
+.cw-table .cw-th-test-num{width:100px}
+.cw-table .cw-th-test-num .iconfont,.cw-table .cw-th-error-num .iconfont{font-size:12px;margin-left:2px}
+.cw-table .cw-th-test-num a,.cw-table .cw-th-error-num a{color:#333}
+.cw-table .cw-th-test-num a:hover,.cw-table .cw-th-error-num a:hover{color:#00a0e9}
+.cw-table .cw-th-error-rate{width:100px}
+.cw-table .cw-th-test-type{width:160px}
+.cw-table .cw-th-handle-2{width:140px}
+.item-idx-td .item-idx .idx-item .status-bar{border-radius:5px;overflow:hidden;height:11px;display:block;margin:5px 44px 0 44px;background-color:#F2F2F2;}
+.item-idx-td .item-idx .idx-item .status-num{width:60px;text-align:right;margin-left:-100%;position:absolute;top:0;right:0;}
+.item-idx-td .item-idx .status-bar i{text-indent:9999px;display:block;width:50%;height:11px;border-radius:5px}
+.cw-td-error-num .err-num-bar{border-radius:5px;overflow:hidden;height:11px;display:block;margin:15px 100px 15px 14px;background-color:#F2F2F2;}
+.cw-td-error-num .err-num-bar i{text-indent:-999px;display:block;width:40%;height:11px;border-radius:5px}
+.cw-td-error-num .error-status{position:absolute;top:-5px;right:10px}
+.cw-td-test-num{text-align:center}
+.cw-td-error-num{position:relative}
+.cw-td-error-rate{text-align:center}
+.cw-td-test-type{text-align:center}
+.cw-td-handle-2{text-align:center}
+.cw-th-choose{width:50px;}
+.cw-td-choose{text-align:center;}
+
+/*错题排行-end*/
+
+/*-----------------快速批阅弹出框-----------------*/
+.msg-fast-mark{overflow:visible}
+.mark-left{width:190px;height:100%;background-color:#F7F7F7;border-right:1px #E8E8E8 solid;float:left;margin-right:-100%;margin-left:10px}
+.mark-right{background-color:#fff;margin-left:214px;margin-right:25px;}
+/*题号导航*/
+.mr-ques-wrap{max-height:110px;overflow:auto;margin:10px 0;border:1px solid #eee;}
+/*批阅&快速批阅题型层次*/
+.mr-ques-details{background-color: #f5f5f5;/*padding:0 0 10px*/}
+.mr-ques-details .qi-text{background:#fff;padding:10px 15px;margin-bottom:15px;}
+.mr-ques-details .sub-test-wrap{background:#fff;padding:10px 15px;margin-top:15px}
+/*搜索*/
+.ml-search{padding-bottom:15px}
+.ml-search .tit{font-size:18px;text-align:center;padding:15px 0 10px}
+.ml-search-box{}
+.ml-search-box .search-border .search-btn:active{-moz-transform:scale(0.9);-ms-transform:scale(0.9);-o-transform:scale(0.9);-webkit-transform:scale(0.9);transform:scale(0.9);opacity:.7}
+.ml-search-box .search-border:hover,.ml-search-box .search-border .search-btn:hover{border-color:#00a0e9;color:#00a0e9;}
+.ml-search-box .search-border{display:block;width:158px;margin:0 auto;height:29px;background-color:#fff;border:1px solid #bbb;border-radius:14px;overflow:hidden}
+.ml-search-box .search-border .txt-input{width:108px;height:18px;padding:6px 0 6px 16px;border:none;float:left;color:#555;}
+.ml-search-box .search-border .search-btn{float:left;width:30px;height:30px;line-height:30px;text-align:center;font-size:18px;color:#999;transition:all .1s ease-in-out}
+
+/*学生列表*/
+.stu-list-box{height:250px;overflow-x:hidden;overflow-y:auto;}
+.stu-list-box .stu-list{}
+.stu-list-box .stu-list li{border:1px solid #f5f5f5;border-left-width:3px;padding:5px 10px;position:relative;cursor:default}
+.stu-list-box .stu-list li:hover{background-color:#E8E8E8;border-right-color:#E8E8E8;}
+.stu-list-box .stu-list li.on{color:#00a0e9;border-right-color:#fff;border-left-color:#00a0e9;border-top-color:#E8E8E8;border-bottom-color:#E8E8E8;background-color:#fff;margin-right:-1px;}
+.stu-list-box .stu-list .icon-photo{font-size:16px;line-height:1;color:#aaa;padding-right:6px;}
+.stu-list-box .stu-list .stu-test-stat{position:absolute;top:5px;right:10px;color:#aaa;font-family:Arial,"microsoft yahei",sans-serif;}
+.stu-list-box .stu-list .stu-test-stat b{color:#00a0e9;font-weight:500}
+.stu-list-box .stu-list .stu-test-stat i{color:#bbb;letter-spacing:0}
+
+/*作业题号集合*/
+.ques-index-box{max-height:110px;overflow:hidden;padding:15px 10px 0;font-size:0;overflow-y:auto;}
+.mr-ques-bar{margin:15px 0 15px 0;height:1px;background-color:#ddd;text-align:center;}
+.mr-ques-bar .slide-btn{display:inline-block;padding:0 15px;margin-top:-8px;font-size:10px;color:#fff;background-color:#ccc;border-radius:9px;}
+
+/*对应题目详情*/
+.mr-ques-scroll-wrap{overflow:auto;border:1px solid #eee}
+.ques-item-wrap{overflow:hidden;overflow-y:auto;}
+.ques-item-wrap .sub-test{padding-top:10px;}
+.ques-item-wrap .sub-test-title{color:#00a0e9;padding-right:10px;}
+/*.ques-item-wrap .qi-answer,.ques-item-wrap .qi-explain{padding-top:20px}*/
+.qi-item-context{padding-bottom:15px}
+.ques-item-wrap .testwrap-num{border-left:2px solid #00a0e9;}
+/*题目标签切换*/
+.ques-details-tab{position:relative;overflow:hidden;font-size:0;padding-bottom:13px;background-color:#fff}
+.ques-details-tab .toggle{position:absolute;right:19px;top:0;overflow:hidden;font-size:0}
+.ques-details-tab a {
+    display: inline-block;
+    font-size: 13px;
+    margin-left: 15px;
+    padding: 0 16px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 13px;
+    color: #888;
+    border: 1px solid #ECECEC;
+}
+.ques-details-tab b {
+    display: inline-block;
+    font-family:'Microsoft Yahei',sans-serif;
+    font-size: 16px;
+    margin-left: 15px;
+    height: 26px;
+    line-height: 26px;
+    color: #8C8C8C;
+    font-weight:400;
+    letter-spacing: 7px
+}
+.ques-details-tab a:hover {
+    color: #FFB94B;
+    border-color: #FFB94B;
+}
+.ques-details-tab a.on {
+    color: #fff;
+    border-color: #FFB94B;
+    background-color: #FFB94B
+}
+/*.ques-body .on,.qi-answer a.tit,.qi-explain a.tit{display:inline-block;font-size:14.7px;margin-left:0px;padding:0 15px;height:26px;line-height:26px;border-radius:13px;color:#888;border:1px solid #ddd;background-color:#eee}
+.ques-body .on{color:#fff;border-color:#00a0e9;background-color:#00a0e9}*/
+.ques-details-tab .judgeOrder{max-height:65px;_height:65px;padding-left:15px;margin-top:5px;overflow: hidden;overflow-y:auto;}
+/*复合题小题切换*/
+.compound-test-tab-wrap { overflow: hidden; padding-bottom: 4px;position: relative; }
+.compound-test-tab-wrap .compound-prev, .compound-test-tab-wrap .compound-next { position: absolute; bottom:2px; z-index: 10; height: 37px; line-height: 37px; width: 18px; font-size: 20px; font-weight: 600; font-family: 'Simsun', sans-serif; color: #00a0e9; text-align: center; cursor: pointer; }
+.compound-test-tab-wrap .unable{color:#aaa;}
+.compound-test-tab-wrap .compound-prev { left: 100px; }
+.compound-test-tab-wrap .compound-next { right: 0; }
+.compound-test-tab-wrap .site-tit {font-size:16px;position: absolute; bottom: 6px; left: 0; z-index: 10; width: 90px; padding-left: 10px; line-height: 26px; text-align: center;color: #FD9B01;font-weight:500 }
+.compound-test-tab{position:relative;overflow:hidden;margin:0 19px 0 119px;height:36px;background-color:#fff}
+.compound-test-tab span{display:inline-block;height:22px;height:22px;font-size:13px;line-height:22px;color:#777;text-align: center;}
+.compound-test-tab .bc-gray.check{background-color:#e2e2e2;color:#FFF;}
+.compound-test-tab .bc-blue.check{background-color:#03a0e9;color:#FFF;}
+.compound-test-tab .bc-red.check{background-color:#fa726a;color:#FFF;}
+.compound-test-tab .bc-green.check{background-color:#30bb73;color:#FFF;}
+.compound-test-tab .bc-orange.check{background-color:#ffa500;color:#FFF;}
+/*
+.compound-test-tab span.check{background-color: #1DB8FF;border-color: #00a0e9;color:#fff}
+.compound-test-tab span.current{color:#fff;cursor:default;}
+*/
+.compound-test-tab .sub-test-tab{position:absolute;left:0;top:0;height:36px;}
+
+.compound-test-tab a:hover{color:#00a0e9;}
+/*评价&分数*/
+.mr-comment{padding:0px 8px 15px;border-top:1px dotted #ccc;margin:0 -8px;}
+.mr-comment .mr-c-star{height:26px;padding:15px}
+.mr-comment .mr-c-star .tit{float:left;font-size:18px;font-weight:normal}
+.mr-comment .mr-c-star .icon-star{float:left;}
+.mr-comment .mr-c-star .star-score{float:left}
+ /*评语*/
+.mr-c-text{padding:5px;border:1px solid #DDDDDD;background-color:#fff}
+.mr-c-text:hover{border-color:#ffa500}
+.mr-c-text textarea{width:100%;border:none;height:55px}
+.mr-c-text-done{padding:0 20px;max-height:100px;overflow:auto}
+
+/*底部按钮*/
+.qm-btm-btn{padding:20px 15px 15px;text-align:right}
+.qm-btm-btn .qm-btn{display:inline-block;height:40px;font-size:17px;line-height:38px;width:138px;color:#fff;text-align:center;overflow:hidden;background:url("../image/msg-btn-1.png") 1px 0 no-repeat}
+.qm-btm-btn .qm-btn i{font-size:20px;margin-right:5px}
+.qm-btm-btn .btn-next,.qm-btm-btn .nextBtn{background-position:-147px 0}
+.qm-btm-btn .btn-unable{background-position:-294px 0;cursor:default}
+.qm-btm-btn .btn-done:hover{background-position:1px -47px}
+.qm-btm-btn .btn-next:hover,.qm-btm-btn .nextBtn:hover{background-position:-147px -47px}
+.qm-btm-btn .btn-unable:hover{background-position:-294px -47px}
+
+/*-----------------快速批阅弹出框-end-----------------*/
+
+/*-----------------试题详情弹出框-----------------*/
+.msg-ques-details{background-color:#fff;margin:20px 25px 0}
+
+/*-----------------试题详情弹出框-end-----------------*/
+
+/*-----------------错题排行详情弹出框-----------------*/
+.cw-choice-ques-status{margin:0 15px;padding:25px 0}
+.cw-choice-ques-status .choice-item-fours .radio-item{cursor:default;width:50px;height:50px;border:2px #888 solid;margin:0 auto;border-radius:50%;text-align:center;line-height:50px;font-size:18px}
+.cw-choice-ques-status .true,.cw-choice-ques-status .true .radio-item{color:#00a0e9;border-color:#00a0e9}
+.cw-choice-ques-status .choice-item-fours{display:inline-block;*display:inline;*zoom:1;width:24%;text-align:center}
+
+/*-----------------错题排行详情弹出框-end-----------------*/
+
+/*批改作业-班级作业 end*/
+
+/*作业评论*/
+.commentCon{text-align:left;margin-bottom:25px;}
+.commentArea{width:430px;color:#333;padding:10px;font-size:14.7px;border:1px solid #CCC;height:120px;}
+.commentTit{padding:0px 10px;font-size:16px;}
+.commentTit b{color:#009FE9;}
+#commentdiv .normal_btn{overflow:hidden;}
+.commentCon div{padding-left:16px;}
+.commentCon .commentTit{font-size:16px;font-weight:bold;font-family:"Microsoft YaHei";margin-top:10px;margin-bottom:10px;}
+.commentCon ul{height:50px;overflow-y:auto;margin:0px;padding:0px;}
+.commentCon li{display:inline-block;*display:inline;zoom:1;padding:2px;margin-right:5px;cursor:pointer;}
+.commentCon li.disable{filter:alpha(opacity=38);-moz-opacity:0.38;-khtml-opacity:0.38;opacity:0.38;}
+.commentCon li input{vertical-align:middle;}
+
+/*作业详细*/
+.workInfo .workInfoTit{text-align:center;padding-bottom:10px;}
+.workInfo table{width:100%;margin-bottom:15px;border:1px solid #E3E3E3}
+.workInfo table td{border:1px solid #E3E3E3;text-align:center;padding:7px 5px;}
+.workInfo table td.workInfoContent{text-align:left;padding-left:20px;}
+.workInfo table td.workInfoContent .workSpan{text-align:left;}
+
+/*下载作业弹出框*/
+.checkspan input[type="radio"]{vertical-align:-2px;margin-right:3px}
+
+/*快速批阅*/
+.quick-mr-ques-details .qi-answer,.quick-mr-ques-details .qi-explain{display:none}
+
+/*新加样式*/
+.case-category{position: relative;margin-bottom: 2px;}
+.case-category:hover{border-color:#00a0e9;transition: all .2s;}
+.case-category cite{display: inline-block;margin:5px;font-size:13px;color:#fff;padding:0 3px;border:2px solid #30BB73;height:21px;line-height: 21px;background: #30BB73;}
+.case-category .inline{display: inline}

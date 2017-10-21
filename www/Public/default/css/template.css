@@ -1,0 +1,137 @@
+#wizardbox h1{font-size:15px;color:#9a9a9a;margin:5px 0 5px 0;float:left;border-top:#b3b7b8 solid 7px;width:32%;padding-top:8px;}
+.questypehead{clear:both;margin:15px auto;}
+
+/*编辑试卷-弹出框*/
+.h450{height:350px;overflow:hidden;overflow-y:auto;}
+
+/*添加新题型弹出框*/
+.msgW{width:584px;}
+.msgW1{width:478px;}
+.test_boxlist{height:auto;margin:5px;background:#f4f4f4;padding:5px 0px}
+.addtypes{position:absolute;left:75%;border-radius:3px;border:1px solid #c1c1c1;width:100px;height:20px;margin:0px auto;}
+.addtypes_box{overflow:hidden;}
+.addtypes_box_name{display:inline-block;height:35px;width:80px;line-height:35px;text-align:right;padding-right:10px;color:#767676;}
+.addtypes_box_scorename{display:inline-block;width:80px;float:left;line-height:35px;clear:both;}
+.addtypes_box_testname{display:inline-block;float:left;width:75px;line-height:35px;clear:both;}
+.addtypes_box_scorename label{display:inline-block;float:left;width:75px;line-height:35px;}
+.addtypes_numbox_name{display:inline-block;width:70px;height:35px;line-height:35px;float:left;clear:both;}
+.editTypeMsg .boxlist_sel select{width:134px;height:21px;line-height:21px;}
+.editTypeMsg .boxlist_sel .tips{font-size:12px;color:#999;margin-left:6px}
+.boxlist_sel input.editPaperIpt{width:371px;float:left;height:24px;line-height:24px;background:#fcfcfc;font-size:14px}
+.boxlist_sel textarea.editPaperText{width:364px;float:left;margin-left:4px;font-size:14px;line-height:24px;background:#fcfcfc;padding-left:5px;resize:vertical;}
+.addtypes_box_name,.boxlist_sel{vertical-align:middle;*vertical-align:auto;display:inline-block;*display:inline;zoom:1;}
+.boxlist_sel .smalltest,.boxlist_sel .boxscore,.boxlist_sel .boxtestchooseltotal{width:28px;text-align:center;text-indent:0;}
+.boxlist_whereposition{display:inline-block;}
+
+/*考查范围*/
+.boxtest_score{display:inline-block;padding:6px;width:500px;}
+.boxtest_score select,.addknowledge-wrap select{max-width:130px;display:inline-block;margin-right:4px;margin-bottom:3px;}
+.boxtest_score p{display:inline-block;*display:inline;zoom:1;margin:0 18px 6px 0;}
+.box_testchoose{display:inline-block;margin-left:10px;}
+.addknowledge-wrap{padding:8px;display:block;border:1px solid #d1d1d1;border-top:none;border-bottom:none;background:#fcfcfc;}
+
+/*添加知识点*/
+.add-knowledge-box{display:block;padding:15px 10px 0;background-color:#fcfcfc;border-right:1px solid #ccc;border-left:1px solid #ccc;}
+.add-knowledge-box select{width:150px;display:inline-block;margin-right:4px;margin-bottom:6px;}
+
+/*所选知识点*/
+#knowledgelist_box{width:504px;overflow:hidden;margin-top:10px;}
+.knowledgemsg{display:inline-block;margin-top:5px;width:470px;overflow:hidden;border:1px solid #F0F0F0;}
+.knowledgemsg div{display:block;}
+.knowledgemsg div:hover{background:#62B15E;}
+
+/*试题数量*/
+.testnumlist{margin:7px;margin-left:2px;font-size:0px;}
+.testnumlist_box{display:inline-block}
+
+/*操作*/
+.addknowledge{color:#00a0e9;display:inline-block;margin-left:8px;cursor:pointer;margin-bottom:8px;}
+.addchapter{width:50px;color:#00a0e9;padding:3px;margin-left:5px;white-space:nowrap;cursor:pointer;}
+.delknowledge{display:inline-block;background:#e00;color:#fff;cursor:pointer;margin-left:5px;width:15px;height:15px;line-height:15px;text-align:center;border-radius:2px}
+.tab_conbox{margin:0;padding:0;border:1px solid #d1d1d1;border-top:none;background:#fcfcfc}
+.tab_conbox p{font:13px/1.8 \5b8b\4f53,sans-serif;margin:0;}
+.tab_con{padding:0;margin:0;display:none;padding:0 12px 10px;font-size:14px;line-height:1.5em;overflow:auto;height:120px;}
+.tabs{margin:0;padding:0;height:22px;border-bottom:1px solid #d1d1d1;border-left:1px solid #d1d1d1;width:100%;}
+.tabs li{height:21px;line-height:21px;float:left;border:1px solid #d1d1d1;border-left:none;margin-bottom:-1px;background:#eee;overflow:hidden;}
+.tabs li a{display:block;padding:0 7px;outline:none;font-size:12px;color:#888}
+.tabs li a:hover{background:#dff1fa;color:#00a0e9}
+.tabs .thistab,.tabs .thistab a,.tabs .thistab a:hover{background:#fcfcfc;border-bottom:1px solid #fcfcfc;color:#00a0e9;}
+.boxloading{display:inline-block;margin-left:20px;padding-left:34px;background:url(../image/loading.gif) left center no-repeat;height:24px;line-height:24px}
+input.radiotype{height:auto;line-height:auto;}
+.difflist_box{line-height:24px;}
+
+/*模板选择第二步*/
+
+/*2014年9月3日添加*/
+#dir2 .dir{text-align:center;}
+#dir2 .dir a{cursor:pointer;display:inline-block}
+
+/*模板头部设置*/
+.titleset{margin-bottom:10px}
+.tempName{font-size:14px;text-align:left;background:#edeef0;line-height:24px;padding:10px;font-weight:bold;color:#555;text-indent:10px}
+.maintitle{font-size:24px;margin:0 auto;padding:10px 0px 5px 0px;font-weight:bold;margin-bottom:10px;border:#ccc dashed 1px;}
+.subtitle{font-size:16px;margin:0 auto;font-weight:bold;margin-bottom:10px;border:#ccc dashed 1px;}
+
+/*注意事项*/
+.zysx{margin-top:10px;padding-left:10px;border:#ccc dashed 1px;}
+.settestmsg{padding:10px;cursor:pointer;}
+.notice{font-size:16px;text-align:left;padding-top:8px;font-size:14px;color:#999}
+
+/*题型区块*/
+.paperpart{border:#f6c863 solid 1px;margin-bottom:20px;_overflow:hidden;_position:relative;zoom:1;}
+.parthead{font-size:18px;margin:0px auto;clear:both;position:relative;zoom:1;}
+
+/*试题设置*/
+.partmenu{position:absolute;top:0px;right:0px;overflow:hidden;background:#990000;width:155px;height:25px;border-left:#ffcc00 solid 1px;border-bottom:#ffcc00 solid 1px;zoom:1;}
+.addquestype{color:#fff;font-size:12px;font-weight:bold;line-height:18px;height:18px;float:left;background:url(../image/piclist2.gif) no-repeat -780px -10px #990000;text-indent:25px;margin-top:3px;}
+.editpart{color:#fff;font-size:12px;font-weight:bold;line-height:18px;height:18px;overflow:hidden;float:left;padding:0px;background:url(../image/piclist2.gif) no-repeat -780px -64px #990000;text-indent:25px;margin-left:5px;margin-top:3px;}
+
+/*题型名称*/
+.partname{font-weight:bold;background:#fdf8ec;color:#d17100}
+.partheaddes{text-align:left;color:#d38149;background:#fdf8ec;padding:0px;padding-bottom:10px;padding-left:10px;}
+
+/*试题主体*/
+.partbody{min-height:30px;padding:0px 10px;zoom:1;}
+
+/*题型操作*/
+.typepart{clear:both;overflow:auto}
+.testType{float:left;clear:left;padding-top:10px;text-align:left;}
+.testType .tit{float:left;margin-right:10px;margin-top:3px}
+.typeset_left a{border-radius:3px;border:1px solid #c1c1c1;vertical-align:middle;height:17px;margin-right:10px;padding:2px 5px 2px 5px;display:block;width:52px;_width:65px;haslayout:0;}
+.typeset_left{float:left;}
+.typeset_left a .showtext{display:inline-block;}
+.typeset_left a .icoimg{background:url(../image/piclist1.gif) -14px -247px;display:block;width:18px;height:14px;float:left;margin-right:2px}
+.typeset_left a .hide{background:url(../image/piclist1.gif) -14px -266px;}
+.typeset{float:right;clear:right;display:block;margin:0px auto;padding-bottom:10px;padding-top:10px;}
+.typeset a{border-radius:3px;border:1px solid #c1c1c1;vertical-align:middle;height:17px;margin-right:10px;padding:2px 5px 2px 5px;}
+.typeset .addtest{border-color:#ff652a;background-color: #ff652a;line-height:16px;height:16px;color:#fff;padding:2px 10px;font-family:"Microsoft Yahei",sans-serif}
+.typeset .addtest:hover{opacity:.9;filter:alpha(opacity=90)}
+/*试题详细说明&操作*/
+.order{width:80px;}
+.nums{width:35px;}
+.rounds{width:380px;}
+.rounds span{font-size:12px;}
+.scores{width:90px;}
+.diff{width:35px;}
+.testchoose{width:100px;}
+.set{width:200px;}
+.testset{clear:both;margin:15px auto;border-collapse:collapse;width:100%;_width:97%;}
+.testset a{border-radius:3px;border:1px solid #c1c1c1;vertical-align:middle;height:17px;margin-right:10px;padding:2px 3px;}
+.testset td,.testset th{min-width:35px;height:30px;border:1px solid #c1c1c1;text-align:center;}
+
+/*第三步试卷预览*/
+#dir3{text-align:center;}
+#dir3 .dir3TestTypes{margin:4px;clear:both;text-align:left;}
+.dir3Tempname{font-size:14px;text-align:left;background:#edeef0;line-height:24px;padding:10px;font-weight:bold;color:#555;margin-bottom:10px;}
+.dir3Maintitle{font-size:24px;margin:0 auto;padding:10px 0px 5px 0px;font-weight:bold;margin-bottom:10px;}
+.dir3Subtitle{font-size:16px;margin:0 auto;font-weight:bold;margin-bottom:10px;}
+.dir3Notice{font-size:16px;text-align:left;padding-top:8px;font-size:14px;color:#999}
+.dir3Typepart{clear:both;}
+.dir3Partheadnum{clear:both;}
+.dir3Partheadnum span{font-weight:bold;font-size:18px;margin:0 auto;}
+.dir3TypeName li{text-align:left;border-bottom:solid 1px #dcdcdc;margin-bottom:10px;}
+.dir3MinHeig{line-height:30px;}
+.dir3MinHeig li{padding-left:20px;}
+.dir3MinHeig:hover{border:1px solid #C0C0C0;}
+.choosetext{text-align:left;}
+.dir3Partheaddes{text-align:left;color:#000;padding:10px 0px 5px 0px}

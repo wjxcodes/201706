@@ -1,0 +1,30 @@
+<div class="login-form-container">
+    <form action="" class="lf-login-wrap" id="login">
+        <div class="lf-login-item"> <i class="iconfont">&#xe606;</i>
+            <input type="text" name="userName" id="userName" placeholder="用户名/邮箱/手机号"/>
+        </div>
+        <div class="lf-login-item"> <i class="iconfont">&#xe607;</i>
+            <input type="password" name="password" id="passWord" placeholder="登录密码"/>
+        </div>
+        <div class="lf-login-msg" style="display:none">
+            <i class="iconfont">&#xe619;</i>
+            <span class="errorMsg"></span>
+        </div>
+        <div class="lf-login-other clearfix">
+            <label class="auto-login" for="ifSave">
+                <input type="checkbox" name="ifSave" id="ifSave"/>
+                下次自动登录
+            </label>
+            <a class="find-password" id="zuJuan" href="{#:U('User/Index/getPassword')#}">找回密码</a>
+            <a class="find-password hide" id="tiFen" href="{#:U('Aat/Default/getPasswordIndex')#}">找回密码</a>
+        </div>
+        <div class="lf-login-btn">
+            <input class="login-big-btn nor-btn" type="button" value="登录" id="loginSubmit" />
+        </div>
+        <div class="lf-reg-btn">
+            还没有账户，
+            <a class="register" href="javaScript:void(0);">免费注册</a>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>{#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/default/css/common1.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/default/css/index.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script>
+        var local='{#:U('Index/main')#}';
+        var mark='register';
+        var invit='{#$invit#}';
+    </script>
+</head>
+<body>
+    {#include file="header"/#}
+    <div class="main">
+        <div class="pt50">
+            <div class="loginReg">
+                <div class="t">
+                    <div class="tit"> <font style="font-size:24px" face="微软雅黑,黑体" color="#666666">用户注册</font><a class="regIntro pointer">注册说明</a>
+                    </div>
+                    <div class="bd">
+                        <div id="loginMsg" style="color:#555555; text-align:left; padding-top:80px; font-size:18px; font-family:微软雅黑,黑体; display:none"></div>
+                        <form id="loginform">
+                            <fieldset id="inputs" >
+                                <input id="UserName" type="text" class="wbk01" placeholder="请填写手机号">
+                                <input id="phoneCode" type="text" class="wbk01 phoneCode"  placeholder="请输入验证码" data-rule="require" data-display="验证码" name="verify" style="width:120px;" />
+                                <input type="button" value="获取短信验证码" id="sendPhoneCode" class="pointer getPhoneRand" style="cursor:pointer;margin:0 0 10px 20px;height:44px;width:125px;" >
+                                <input id="Password" type="password" class="wbk01 Password none" placeholder="请填写6-18位密码" value="">
+                                <input id="Passworda" type="text" class="wbk01 Password"  placeholder="请填写6-18位密码">
+                                <input id="Password1" type="password" class="wbk01 Password none" placeholder="请再次填写6-18位密码" value="">
+                                <input id="Password1a" type="text" class="wbk01 Password" placeholder="请再次填写6-18位密码">
+                                <!--
+                                 {#if condition="$invit eq '1'"#}
+                                <input id="InvitName" type="text"  class="wbk01 wbk03"  value="请填写邀请码">
+                                {#/if#}
+                                <label for="checkboxAgree" class="regCheckbox">
+                                    <input type="checkbox"  name="checkboxAgree" id="checkboxAgree" checked="checked"/>
+                                    <span style="color:#2b2b2b;cursor:pointer;">已经阅读并同意</span>
+                                    <a class="serviceTerm" href="javascript:;" style="color:#0096f5;">服务条款</a>
+                                </label> -->
+                                <div class="invite tc"><span class="service"><label for="checkboxAgree" class="regCheckbox readAgree"><input type="checkbox"  name="checkboxAgree" id="checkboxAgree" />已经阅读并同意</label><a class="serviceTerm" href="javascript:;"> 服务条款</a></span><!--<a class="getInvite" title="获取邀请码" href="{#:U('Index/Index/operProcedure')#}">获取邀请码</a>--></div>
+
+
+                                <div style="width:290px; padding-top:5px; height:30px;">
+                                    <div style="float:right">
+                                        <input type="button"  value="注册" id="zcsubmit"/>
+                                        <input type="button" id="reset" value="重填" style="padding:4px;"></div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {#include file="footer"/#}
+    </div>
+    <script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/index.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('input,a,img,div,span');</script>
+    <![endif]-->
+</body>
+</html>

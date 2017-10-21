@@ -1,0 +1,4 @@
+2017-10-07 19:02:05 致命的运行时错误(E_ERROR) Class 'School\Model\StatisticsModel' not found E:\web\www\tk\School\Model\StatisticsHomeModel.class.php 8 
+2017-10-07 19:03:05 致命的运行时错误(E_ERROR) Class 'School\Model\SchoolModel' not found E:\web\www\tk\School\Model\StatisticsHomeModel.class.php 8 
+2017-10-07 19:03:06 致命的运行时错误(E_ERROR) Class 'School\Model\SchoolModel' not found E:\web\www\tk\School\Model\StatisticsHomeModel.class.php 8 
+2017-10-07 19:05:24 致命的运行时错误(E_ERROR) Class 'School\Model\SchoolModel' not found E:\web\www\tk\School\Model\StatisticsHomeModel.class.php 8 

@@ -1,0 +1,640 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/zjadmin/css/newedit.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" />
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content" >
+<!-- 列表显示区域  -->
+<div class="list" >
+<div id="result" class="result none"></div>
+<!-- Think 系统列表组件开始 -->
+<table id="checkList" class="list" cellpadding="5" cellspacing="0" border="1">
+    <tr><td height="5" colspan="8" class="topTd" ></td></tr>
+    <tr class="row" >
+        <th width="8"><input type="checkbox" id="CheckAll" tag="checkList"></th>
+        <th width="40">编号</th>
+        <th width="80">错误</th>
+        <th width="400">试题及来源</th>
+        <th width="100">学科/题型/类型/年级/专题/难度</th>
+        <th width="100">知识点</th>
+        <th width="200">章节</th>
+        <th width="100">操作</th>
+    </tr>
+    {#volist name="list" id="node" #}
+        <tr class="row lists" jl=''>
+        <td><input type="checkbox" class="key" value="{#$node.TestID#}"></td>
+        <td>
+        {#neq name="node.ReplaceID" value=""#}<font color="red">已替换</font><br />{#/neq#}
+        {#$node.TestID#}({#$key+1#})<div id="status{#$node.TestID#}">{#eq name="node.Status" value="0"#}<span class="btlock" thisid="{#$node.TestID#}">正常</span>{#else/#}<span class="btcheck" thisid="{#$node.TestID#}"><font color="red">锁定</font></span>{#/eq#}</div>
+        {#neq name="node.Duplicate" value="0"#}<a href="javascript:void(0)" class="showDuplicate" thisid="{#$node.Duplicate#}"><font color="red">重复</font></a><br />{#/neq#}
+        </td>
+        <td id="error{#$node.TestID#}"><font color="red">{#$node.error|default="<font color='black'>无</font>"#}</font></td>
+        <td width="400">
+            <div class="text_source">
+                <span>来源：</span>
+                {#$node.DocID#}:{#$node.DocName#}
+            </div>
+            <div class="testdivbak">
+                <a href="javascript:void(0);" class="nowedit" thisid="{#$node.TestID#}">
+                    <p>{#$node.Test|default="无"#}</p>
+                </a>
+            </div>
+            <div>
+                {#eq name="node.Duplicate" value="0"#}
+                    <span>【<strong>审核意见</strong>】：</span>
+                    {#eq name="testInfo[$node['TestID']].test.IfRight" value="0"#}
+                        <font color="green">√</font>
+                    {#else/#}
+                        <font color="red">{#$testInfo[$node['TestID']].test.Content#}</font>
+                    {#/eq#}
+                    <br />
+                    <span>
+                        <label>
+                            <input type="radio" {#$testInfo[$node['TestID']].test.Checked#}  name="evaluation[{#$testInfo[$node['TestID']].WTID#}]['test']" value="1" class='correctAudit'/>正确
+                        </label>
+                        <label>
+                            <input type="radio" name="evaluation[{#$testInfo[$node['TestID']].WTID#}]['test']" {#$testInfo[$node['TestID']].test.Checked2#}  value="2" class='incorrectAudit'/>错误
+                        </label><br>
+                        <textarea name="evaluation[{#$testInfo[$node['TestID']].WTID#}]['test']['Suggestion']" class='incorrectText' style='width:150px; height:60px;{#if condition="$testInfo[$node['TestID']]['test']['Checked'] neq '' "#}display:none;{#/if#}'>{#$testInfo[$node['TestID']].test.Suggestion#}</textarea>
+                    </span>
+                {#/eq#}
+            </div>
+        </td>
+        <td>
+            {#$node.SubjectName|default="<font color='red'>无</font>"#}<br/>
+            <span id="types{#$node.TestID#}">{#$node.TypesName|default="<font color='red'>无</font>"#}</span><br/>
+            <span id="choose{#$node.TestID#}">{#eq name="node.IfChoose" value="0"#}非选择题{#/eq#}{#eq name="node.IfChoose" value="1"#}复合题{#/eq#}{#eq name="node.IfChoose" value="2"#}多选题{#/eq#}{#eq name="node.IfChoose" value="3"#}单选题{#/eq#}</span><br/>
+            <span id="grade{#$node.TestID#}">{#$node.GradeName|default="<font color='red'>无</font>"#}</span><br/>
+            <div>
+                <span class="red">专题审核</span><br />
+                <span id="special{#$node.TestID#}">{#$node.SpecialName|default="<font color='red'>无</font>"#}</span><br/>
+
+                {#eq name="node.Duplicate" value="0"#}
+                    <span>【<strong>审核意见</strong>】：</span>
+                    {#eq name="testInfo[$node['TestID']].special.IfRight" value="0"#}
+                        <font color="green">√</font>
+                    {#else/#}
+                        <font color="red">{#$testInfo[$node['TestID']].special.Content#}</font>
+                    {#/eq#}
+                    <br />
+                    <span>
+                        <label>
+                            <input type="radio" {#$testInfo[$node['TestID']].special.Checked#}  name="evaluation[{#$testInfo[$node['TestID']].WTID#}]['special']" value="1"  class='correctAudit' />正确
+                        </label><br />
+                        <label>
+                            <input type="radio" name="evaluation[{#$testInfo[$node['TestID']].WTID#}]['special']" {#$testInfo[$node['TestID']].special.Checked2#} value="2"  class='incorrectAudit'/>错误
+                        </label><br />
+                        <textarea name="evaluation[{#$testInfo[$node['TestID']].WTID#}]['special']['Suggestion']" class='incorrectText' style='width:150px; height:60px;{#if condition="$testInfo[$node['TestID']]['special']['Checked'] neq ''"#}display:none;{#/if#}'>{#$testInfo[$node['TestID']].special.Suggestion#}</textarea>
+                    </span>
+                {#/eq#}
+            </div>
+            <div>
+                <span  class="red">难度审核</span><br />
+                <span id="diff{#$node.TestID#}">{#$node.Diff|default="<font color='red'>无</font>"#}</span><br />
+                {#eq name="node.Duplicate" value="0"#}
+                    <span>【<strong>审核意见</strong>】：</span>
+                    {#eq name="testInfo[$node['TestID']].diff.IfRight" value="0"#}
+                        <font color="green">√</font>
+                    {#else/#}
+                        <font color="red">{#$testInfo[$node['TestID']].diff.Content#}</font>
+                    {#/eq#}
+                    <br />
+                    <span>
+                        <label>
+                            <input type="radio" {#$testInfo[$node['TestID']].diff.Checked#}  name="evaluation[{#$testInfo[$node['TestID']].WTID#}]['diff']" value="1"  class='correctAudit'/>正确
+                        </label><br />
+                        <label>
+                            <input type="radio" name="evaluation[{#$testInfo[$node['TestID']].WTID#}]['diff']" {#$testInfo[$node['TestID']].diff.Checked2#} value="2"  class='incorrectAudit'/>错误
+                        </label><br>
+                        <textarea name="evaluation[{#$testInfo[$node['TestID']].WTID#}]['diff']['Suggestion']" class='incorrectText' style='width:150px; height:60px;{#if condition="$testInfo[$node['TestID']]['diff']['Checked'] neq '' "#}display:none;{#/if#}'>{#$testInfo[$node['TestID']].diff.Suggestion#}</textarea>
+                    </span>
+                {#/eq#}
+            </div>
+        </td>
+        <td id="knowledge{#$node.TestID#}">
+            <div>
+                {#$node.KlName|default="<font color='red'>无</font>"#}
+            </div>
+            <div>
+                {#eq name="node.Duplicate" value="0"#}
+                    <span>【<strong>审核意见</strong>】：</span>
+                    {#eq name="testInfo[$node['TestID']].knowledge.IfRight" value="0"#}
+                        <font color="green">√</font>
+                    {#else/#}
+                        <font color="red">{#$testInfo[$node['TestID']].knowledge.Content#}</font>
+                    {#/eq#}
+                    <br />
+                    <span>
+                        <label>
+                            <input type="radio" {#$testInfo[$node['TestID']].knowledge.Checked#}  name="evaluation[{#$testInfo[$node['TestID']].WTID#}]['knowledge']" value="1"  class='correctAudit'/>正确
+                        </label>
+                        <label>
+                            <input type="radio" name="evaluation[{#$testInfo[$node['TestID']].WTID#}]['knowledge']" {#$testInfo[$node['TestID']].knowledge.Checked2#}  value="2"  class='incorrectAudit'/>错误
+                        </label><br/>
+                        <textarea name="evaluation[{#$testInfo[$node['TestID']].WTID#}]['knowledge']['Suggestion']" class='incorrectText' style='width:150px; height:60px;{#if condition="$testInfo[$node['TestID']]['knowledge']['Checked'] neq '' "#}display:none;{#/if#}'>{#$node.knowledge.Suggestion#}</textarea>
+                    </span>
+                {#/eq#}
+            </div>
+        </td>
+        <td id="chapter{#$node.TestID#}">
+            <div>
+                {#$node.ChapterName|default="<font color='red'>无</font>"#}
+            </div>
+            <div>
+                {#eq name="node.Duplicate" value="0"#}
+                    <span>【<strong>审核意见</strong>】：</span>
+                    {#eq name="testInfo[$node['TestID']].chapter.IfRight" value="0"#}
+                        <font color="green">√</font>
+                    {#else/#}
+                        <font color="red">{#$testInfo[$node['TestID']].chapter.Content#}</font>
+                    {#/eq#}
+                    <br />
+                    <span>
+                        <label>
+                            <input type="radio" {#$testInfo[$node['TestID']].chapter.Checked#}  name="evaluation[{#$testInfo[$node['TestID']].WTID#}]['chapter']" value="1"  class='correctAudit'/>正确
+                        </label>
+                        <label>
+                            <input type="radio" name="evaluation[{#$testInfo[$node['TestID']].WTID#}]['chapter']" {#$testInfo[$node['TestID']].chapter.Checked2#} value="2"  class='incorrectAudit'/>错误
+                        </label><br />
+                        <textarea name="evaluation[{#$testInfo[$node['TestID']].WTID#}]['chapter']['Suggestion']" class='incorrectText' style='width:150px; height:60px;{#if condition="$testInfo[$node['TestID']]['chapter']['Checked'] neq '' "#}display:none;{#/if#}'>{#$testInfo[$node['TestID']].chapter.Suggestion#}</textarea>
+                    </span>
+                {#/eq#}
+            </div>
+        </td>
+        <td>
+        【<a href="javascript:void(0);" class="comment" thisid="{#$testInfo[$node['TestID']].WTID#}">评价保存</a>】<br />
+        【<a href="javascript:void(0);" class="showTest" thisid="{#$node[TestID]#}" thiswid="{#$workID#}">修改试题</a>】<br />
+        【<a href="{#:U('Test/Test/replace',array('TestID'=>$node[TestID]))#}">替换试题</a>】
+        </td>
+        </tr>
+    {#/volist#}
+    <tr><td height="5" colspan="8" class="bottomTd"></td></tr>
+</table>
+<!-- Think 系统列表组件结束 -->
+</div>
+<!--  分页显示区域 -->
+<div class="page">{#$page#}</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<form id="hiddenform" action="?" method="post" style="display:none">
+<input name="id" id="testidlist" value=""/>
+</form>
+<!-- 主页面结束 -->
+<script src="__PUBLIC__/zjadmin/js/newEdit.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script>
+var currentUrl=U('Test');
+$(document).ready(function(){
+    $(document).bind("selectstart",function(){return false;});
+    $.newEdit.init();
+    $('.correctAudit').each(function(){
+        $(this).click(function(){
+            $(this).parent().siblings('.incorrectText').hide().val('');
+        }); 
+    });
+    $('.incorrectAudit').each(function(){
+        $(this).click(function(){
+            $(this).parent().siblings('.incorrectText').show();
+        }); 
+    });
+    $(".comment").live('click',function(){
+        var keyValue = $(this).attr('thisid');
+        var test='';
+        var testText='';
+        var knowledge='';
+        var knowledgeText='';
+        var chapter='';
+        var chapterText='';
+        var special='';
+        var specialText='';
+        var diff='';
+        var diffText='';
+        var name='evaluation['+keyValue+']["test"]';
+        if($('[name="evaluation['+keyValue+'][\'test\']"]').length>0){
+            $('[name="evaluation['+keyValue+'][\'test\']"]').each(function(){
+                if($(this).attr('checked')=='checked'){
+                     test= $(this).val();
+                }
+            });
+            testText = $('[name="evaluation['+keyValue+'][\'test\'][\'Suggestion\']"]').val();
+        }
+        if($('[name="evaluation['+keyValue+'][\'knowledge\']"]').length>0){
+            $('[name="evaluation['+keyValue+'][\'knowledge\']"]').each(function(){
+                if($(this).attr('checked')=='checked'){
+                     knowledge= $(this).val();
+                }
+            });
+            knowledgeText = $('[name="evaluation['+keyValue+'][\'knowledge\'][\'Suggestion\']"]').val();
+        }
+        if($('[name="evaluation['+keyValue+'][\'chapter\']"]').length>0){
+            $('[name="evaluation['+keyValue+'][\'chapter\']"]').each(function(){
+                if($(this).attr('checked')=='checked'){
+                    chapter= $(this).val();
+                }
+            });
+            chapterText = $('[name="evaluation['+keyValue+'][\'chapter\'][\'Suggestion\']"]').val();
+        }
+        if($('[name="evaluation['+keyValue+'][\'special\']"]').length>0){
+            $('[name="evaluation['+keyValue+'][\'special\']"]').each(function(){
+                if($(this).attr('checked')=='checked'){
+                    special= $(this).val();
+                }
+            });
+            specialText = $('[name="evaluation['+keyValue+'][\'special\'][\'Suggestion\']"]').val();
+        }
+        if($('[name="evaluation['+keyValue+'][\'diff\']"]').length>0){
+            $('[name="evaluation['+keyValue+'][\'diff\']"]').each(function(){
+                if($(this).attr('checked')=='checked'){
+                     diff= $(this).val();
+                }
+            });
+            diffText = $('[name="evaluation['+keyValue+'][\'diff\'][\'Suggestion\']"]').val();
+        }
+        var data = {
+            "test":test,
+            'testText':testText,
+            "knowledge":knowledge,
+            'knowledgeText':knowledgeText,
+            "chapter":chapter,
+            'chapterText':chapterText,
+            "special":special,
+            'specialText':specialText,
+            "diff":diff,
+            'diffText':diffText,
+            "WTID":keyValue
+        }
+        $.post(U('Teacher/TaskB/saveCheckResult'),data,function(data){
+            //权限验证
+            if(checkPower(data)=='error'){
+                return false;
+            }
+            alert(data['data']);
+        });
+    });
+    $('.showTest').live('click',function(){
+        jInfo('加载中请稍候。。。','加载数据');
+        //获取数据
+        var id=$(this).attr('thisid');
+        var workID=$(this).attr('thiswid');
+        $.get(U('Test/Test/edit?id='+id+'&workID='+workID),function(msg){
+            jClose();
+            //权限验证
+            if(checkPower(msg)=='error'){
+                return false;
+            }
+            var data=msg['data'];
+                jFrame(data,'编辑试题：编号'+id,'','1000px');
+        });
+    });
+    //获取与之相关的重复试题列表[重复功能]
+    $('.showDuplicate').live('click',function(){
+        var a=$(this).attr('thisid');
+        jInfo('加载中请稍候。。。','加载数据');
+        //获取数据
+        $.post(U('Test/Test/duplicateList'),{'duplicate':a,'times':Math.random()}, function(data){
+            jClose();
+            //权限验证
+            if(checkPower(data)=='error'){
+                return false;
+            }
+            jFrame(data['data'],'清除重复');
+        });
+    });
+    //修改框事件
+    // $('.selectChapter').chapterSelectChange('__URL__');
+    // $('.selectKnowledge').knowledgeSelectChange('__URL__');
+
+    /*$('#subject').change(function(){
+     $('#klinput').html('');
+     if($(this).val()!=''){
+     $.get(U("__URL__/getdata?s="+$(this).val()+"&l=p"),function(data){
+     $('#special').html('<option value="">请选择</option>'+data);
+     });
+     $.get(U("__URL__/getdata?s="+$(this).val()+"&l=t"),function(data){
+     $('#types').html('<option value="">请选择</option>'+data);
+     });
+     $.get(U("__URL__/getdata?s="+$(this).val()+"&l=k"),function(data){
+     $('#knowledge').html('<option value="">请选择</option>'+data);
+     });
+     }else{
+     $('#types').html('<option value="">请选择</option>');
+     $('#knowledge').html('<option value="">请选择</option>');
+     $('#special').html('<option value="">请选择</option>');
+     }
+     });*/
+    // $('#addkl').live('click',function(){
+    //     if($('.selectKnowledge').last().val().indexOf('t')==-1){
+    //         alert('请选择正确的知识点');
+    //         return false;
+    //     }
+
+    //     var kid=$('.selectKnowledge').last().val().replace('t','');
+    //     var xx_s="";
+    //     $('.selectKnowledge').each(function(){
+    //         xx_s+=' >> '+$(this).find("option:selected").text();
+    //     });
+    //     var xx=input.replace('#value#',kid).replace('#str#',xx_s.replace(/┉/g,'').replace('┝',''));
+
+
+    //     if($('#knowledgeList').html().indexOf('value="'+kid+'"')==-1 && $('#knowledgeList').html().indexOf('value='+kid+'')==-1){
+    //         $('#knowledgeList').append(xx);
+    //         $('.delhang').css({'padding':'0px 5px','cursor':'pointer','color':'#f00'});
+    //     }
+    // });
+    // $('#addcp').live('click',function(){
+    //     //if($('.selectChapter').last().val().indexOf('c')==-1){
+    //     //    alert('请选择正确的数据');
+    //     //    return false;
+    //     //}
+    //     if(!$('.selectChapter:eq(1)').val()){
+    //         alert('请选择正确的数据');
+    //         return false;
+    //     }
+
+    //     var cid=$('.selectChapter').last().val().replace('c','');
+    //     var tmp_position=0;
+    //     if(!cid){
+    //         tmp_position=1;
+    //         cid=$('.selectChapter').last().prev().val().replace('c','');
+    //     }
+    //     var xx_s="";
+    //     $('.selectChapter').each(function(i){
+    //         if(!(tmp_position==1 && $('.selectChapter').length==(i+1)))
+    //             xx_s+=' >> '+$(this).find("option:selected").text();
+    //     });
+    //     var xx=inputcp.replace('#value#',cid).replace('#str#',xx_s.replace(/┉/g,'').replace('┝',''));
+
+    //     if($('#chapterList').html().indexOf('value="'+cid+'"')==-1 && $('#chapterList').html().indexOf('value='+cid+'')==-1){
+    //         $('#chapterList').append(xx);
+    //         $('.delhang').css({'padding':'0px 5px','cursor':'pointer','color':'#f00'});
+    //     }
+    // });
+    // //载入默认章节
+    // $('#adddcp').live('click',function(){
+    //     var result='';
+    //     $('.kl').each(function(){
+    //         result += $(this).val()+",";
+    //     });
+    //     var kl=result.substring(0, result.length-1);
+    //     var testid=$('#TestID').val();
+    //     $.get('__MODULE__-Test-getchapter-kl-'+kl+'-id-'+testid+'-'+Math.random(),function(msg){
+    //         //权限验证
+    //         if(checkPower(msg)=='error'){
+    //             return false;
+    //         }
+    //         var data=msg['data'];
+    //         if(data){
+    //             var flag=0;
+    //             for(var i=0;i<data.length;i++){
+    //                 var xx=inputcp.replace('#value#',data[i]['ChapterID']).replace('#str#',data[i]['ChapterName']);
+    //                 if($('#chapterList').html().indexOf('value="'+data[i]['ChapterID']+'"')==-1 && $('#chapterList').html().indexOf("value='"+data[i]['ChapterID']+"'")==-1 && $('#chapterList').html().indexOf('value='+data[i]['ChapterID']+' ')==-1){
+    //                     $('#chapterList').append(xx);
+    //                     flag=1;
+    //                 }
+    //             }
+    //             $('.delhang').css({'padding':'0px 5px','cursor':'pointer','color':'#f00'});
+    //             if(!flag){
+    //                 alert('默认章节已经全部载入！');
+    //             }
+    //         }else{
+    //             alert('暂无对应章节！');
+    //         }
+    //     },'json');
+    // });
+    // $('.delhang').live('click',function(){
+    //     $(this).parent().remove();
+    // });
+    // $('.delhang').live('mouseover',function(){
+    //     $(this).css({'background-color':'#f00','color':'#fff'});
+    // });
+    // $('.delhang').live('mouseout',function(){
+    //     $(this).css({'background-color':'#fff','color':'#f00'});
+    // });
+    // $('.xt_title').live('click',function(){
+    //     var idx = $(this).attr('id').replace('xt','');
+    //     changext(idx);
+    // });
+    
+    // //客观主观切换
+    // $('#kg').live('click',function(){
+    //     $('.zgdf').hide();
+    //     $('.kgdf').show();
+    //     changext(1);
+    // });
+    // $('#zg').live('click',function(){
+    //     $('.kgdf').hide();
+    //     $('.zgdf').show();
+    // });
+
+    // /*切换选项卡*/
+    // function changext(idx){
+    //     $('.xt_con').hide();
+    //     $('.xt_con').addClass('none');
+    //     $('.xt_con_'+idx).removeClass('none');
+    //     $('.xt_con_'+idx).show();
+    //     $('.xt_title').removeClass('xtcurrent');
+    //     $('.xt_title').removeClass('xt');
+    //     $('.xt_title').addClass('xt');
+    //     $('#xt'+idx).addClass('xtcurrent');
+    // }
+
+    // $('#Diff').live('keydown',function(e){
+    //     if(e.keyCode==13){
+    //         $('#datasave').click(); //处理事件
+    //     }
+    // });
+    // var y=0;
+    // $('#getWidth').live('click',function(){
+    //     y=1;
+    //     var testid=$('#TestID').val();
+    //     $.post("__MODULE__-Test-getOptionWidth",{'id':testid,'style':1,'m':Math.random()},function(msg){
+    //         //权限验证
+    //         if(checkPower(msg)=='error'){
+    //             return false;
+    //         }
+    //         var data=msg['data'];
+    //         if(data){
+    //             var output=new Array();
+    //             if(data.length==1){
+    //                 output[0]='选项长度：'+data[0];
+    //                 $('.optionwidth:eq(0) input').val(data[0][1]);
+    //                 $('.optionnum:eq(0) input').val(data[0][0]);
+    //             }else{
+    //                 for(var i in data){
+    //                     data[i][1]+'<br/>选项'+(parseInt(i)+1)+'数量：'+data[i][0];
+    //                     $('.optionwidth:eq('+i+') input').val(data[i][1]);
+    //                     $('.optionnum:eq('+i+') input').val(data[i][0]);
+    //                 }
+    //             }
+    //             $('#widthCon').html(output.join('<br/>'));
+    //         }else{
+    //             alert('获取宽度失败！');
+    //         }
+    //         y=0;
+    //     },'json');
+    // });
+    // var x=0;
+    // var sdata=0;
+    // $('#datasave').live('click',function(){
+    //     if(x){
+    //         alert('正在提交请稍候。。。');
+    //         return false;
+    //     }
+    //     sdata=0;
+    //     if($('#types').val()==''){
+    //         alert('请选择题型');
+    //         $('#types').focus();
+    //         return false;
+    //     }
+    //     /*if($('#klinput').html()==''){
+    //      alert('请添加知识点');
+    //      $('#knowledge').focus();
+    //      return false;
+    //      }*/
+    //     //主观客观打分
+    //     if($('#kg').attr('checked')=='checked'){
+    //         var fs=0;
+    //         var tmp_arr=new Array();
+    //         var xttimes=parseInt($(".mark").length)/parseInt($('#xttimes').val());
+    //         $(".mark").each(function(i){
+    //             if($(this).val()){
+    //                 tmp_arr=$(this).val().split("|");
+    //                 if(tmp_arr[1]>-1 && tmp_arr[1]<4) fs+=parseInt(tmp_arr[1]);
+    //             }
+    //             if((i+1)%xttimes==0 && i!=0){
+    //                 if(fs<4 || fs>12){
+    //                     alert('请选择正确的打分数据');
+    //                     sdata=1;
+    //                     return false;
+    //                 }
+    //                 fs=0;
+    //             }
+    //         });
+    //     }else{
+    //         var xsdiff=$('#Diff').val();
+    //         if(xsdiff<0 || xsdiff>=1){
+    //             alert('请填入正确的难度值');
+    //             $('#Diff').focus();
+    //             return false;
+    //         }
+    //     }
+
+    //     if(sdata){
+    //         return false;
+    //     }
+    //     x=1;
+    //     if(x){
+    //         var testid=$('#TestID').val();
+    //         var typesid=$('#types').val();
+
+    //         var kl='';
+    //         if($('.kl').length>0){
+    //             $('.kl').each(function(){
+    //                 kl += $(this).val()+",";
+    //             });
+    //             kl=kl.substring(0, kl.length-1);
+    //         }
+    //         var cp='';
+    //         if($('.cp').length>0){
+    //             $('.cp').each(function(){
+    //                 cp += $(this).val()+",";
+    //             });
+    //             cp=cp.substring(0, cp.length-1);
+    //         }
+
+    //         var specialid=$('#special').val();
+    //         var docid=$('#DocID').val();
+
+    //         var mark='';
+    //         if($('.mark').length>0){
+    //             $('.mark').each(function(){
+    //                 mark += $(this).val()+",";
+    //             });
+    //             mark=mark.substring(0, mark.length-1);
+    //         }
+
+    //         var choose='';
+    //         if($('.choose').length>0){
+    //             $('.choose').each(function(){
+    //                 if($(this).attr('checked')=='checked'){
+    //                     choose = $(this).val();
+    //                 }
+    //             });
+    //         }
+    //         var chooselist='';
+    //         var optionwidth='';
+    //         var optionnum='';
+    //         var choose_arr=new Array();
+    //         var result;
+    //         var optionwidtharr=new Array();
+    //         var optionnumarr=new Array();
+    //         //复合题
+    //         if(choose==1){
+    //             for(var ii=1;ii<50;ii++){
+    //                 result=-1;
+    //                 $('.choose'+ii).each(function(){
+    //                     if($(this).attr('checked')=='checked'){
+    //                         result = $(this).val();
+    //                     }
+    //                 });
+    //                 if(result==-1) break;
+    //                 optionwidtharr[ii-1]=$('.optionwidth'+ii).val();
+    //                 optionnumarr[ii-1]=$('.optionnum'+ii).val();
+    //                 choose_arr[ii-1]=result;
+    //             }
+    //             chooselist=choose_arr.join(',');
+    //             optionwidth=optionwidtharr.join(',');
+    //             optionnum=optionnumarr.join(',');
+    //         }else{
+    //             optionwidth=$('.optionwidth1').val();
+    //             optionnum=$('.optionnum1').val();
+    //         }
+    //         var status='';
+    //         if($('.status').length>0){
+    //             $('.status').each(function(){
+    //                 if($(this).attr('checked')=='checked'){
+    //                     status = $(this).val();
+    //                 }
+    //             });
+    //         }
+    //         var remark=$('#Remark').val();
+
+    //         var dfstyle='';
+    //         if($('.DfStyle').length>0){
+    //             $('.DfStyle').each(function(){
+    //                 if($(this).attr('checked')=='checked'){
+    //                     dfstyle = $(this).val();
+    //                 }
+    //             });
+    //         }
+
+    //         var diff=$('#Diff').val();
+    //         //提交数据
+    //         $.ajax({
+    //             type: "POST",
+    //             cache: false,
+    //             url: U("Test/save"),
+    //             data: "TestID="+testid+"&TypesID="+typesid+"&kl="+kl+"&cp="+cp+"&SpecialID="+specialid+"&DocID="+docid+"&Mark="+mark+"&Status="+status+"&Remark="+remark+"&DfStyle="+dfstyle+"&Diff="+diff+'&IfChoose='+choose+'&ChooseList='+chooselist+'&OptionWidth='+optionwidth+'&OptionNum='+optionnum,
+    //             success: function(msg){
+    //                 //权限验证
+    //                 if(checkPower(msg)=='error'){
+    //                     return false;
+    //                 }
+    //                 alert( "保存数据成功！" );
+    //                 x=0;
+    //                 $('#popup_container').remove();
+    //                 $("#popup_overlay").remove();
+    //             },
+    //             error: function(XMLHttpRequest, textStatus, errorThrown){
+    //                 x=0;
+    //                 alert( "保存数据失败！请重试。" );
+    //             }
+    //         });
+    //     }
+    // });
+});
+</script>
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

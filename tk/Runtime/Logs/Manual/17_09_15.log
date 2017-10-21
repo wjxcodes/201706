@@ -1,0 +1,937 @@
+[ 2017-09-15T08:57:22+08:00 ] 222.134.133.242 /Manual/Index/zsd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-15T08:57:22+08:00 ] 222.134.133.242 /Manual/Index/getZsdInit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+
+[ 2017-09-15T09:03:00+08:00 ] 222.134.133.242 /Manual/Index/zsd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-15T09:03:00+08:00 ] 222.134.133.242 /Manual/Index/getZsdInit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+
+[ 2017-09-15T09:03:10+08:00 ] 222.134.133.242 /Manual/Index/zsd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-15T09:03:10+08:00 ] 222.134.133.242 /Manual/Index/getZsdInit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+
+[ 2017-09-15T09:03:26+08:00 ] 222.134.133.242 /Manual/Index/zsd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-15T09:03:26+08:00 ] 222.134.133.242 /Manual/Index/getZsdInit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+
+[ 2017-09-15T09:17:36+08:00 ] 222.134.133.242 /Manual/Index/zsd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015624s ]
+
+[ 2017-09-15T09:17:36+08:00 ] 222.134.133.242 /Manual/Index/getZsdInit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+
+[ 2017-09-15T09:17:50+08:00 ] 222.134.133.242 /Manual/Index/zsd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-15T09:17:50+08:00 ] 222.134.133.242 /Manual/Index/getZsdInit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+
+[ 2017-09-15T09:20:27+08:00 ] 222.134.133.242 /Manual/Index/zsd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-15T09:20:27+08:00 ] 222.134.133.242 /Manual/Index/getZsdInit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+
+[ 2017-09-15T09:30:06+08:00 ] 222.134.133.242 /Manual/Index/sj/docID/60230/subjectID/30.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-15T09:30:06+08:00 ] 222.134.133.242 /Manual/Index/getDocTest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatTestStyle E:\www\www\tk\Common\Model\IndexModel.class.php 第 267 行.
+NOTIC: [8] Undefined index: subjectname E:\www\www\tk\Common\Model\IndexModel.class.php 第 983 行.
+NOTIC: [8] Undefined index: specialname E:\www\www\tk\Common\Model\IndexModel.class.php 第 984 行.
+NOTIC: [8] Undefined index: klnameonly E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: klnameall E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: kllist E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: chaptername E:\www\www\tk\Common\Model\IndexModel.class.php 第 989 行.
+NOTIC: [8] Undefined index: gradename E:\www\www\tk\Common\Model\IndexModel.class.php 第 993 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+
+[ 2017-09-15T09:30:06+08:00 ] 222.134.133.242 /Manual/Index/getDocInit/id/30/times/0.20811418420635164.html?_=1505439008799
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-09-15T09:31:17+08:00 ] 222.134.133.242 /Manual/Index/singleDown/id/950378.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined variable: ipGroupList E:\www\www\tk\Common\Api\PowerApi.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\www\www\tk\Common\Api\PowerApi.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-15T09:31:23+08:00 ] 222.134.133.242 /Manual/Index/getDocTest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: AatTestStyle E:\www\www\tk\Common\Model\IndexModel.class.php 第 267 行.
+NOTIC: [8] Undefined index: subjectname E:\www\www\tk\Common\Model\IndexModel.class.php 第 983 行.
+NOTIC: [8] Undefined index: specialname E:\www\www\tk\Common\Model\IndexModel.class.php 第 984 行.
+NOTIC: [8] Undefined index: klnameonly E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: klnameall E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: kllist E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: chaptername E:\www\www\tk\Common\Model\IndexModel.class.php 第 989 行.
+NOTIC: [8] Undefined index: gradename E:\www\www\tk\Common\Model\IndexModel.class.php 第 993 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+
+[ 2017-09-15T09:31:23+08:00 ] 222.134.133.242 /Manual/Index/getDocInit/id/30/times/0.020093310857191682.html?_=1505439085257
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-15T09:31:29+08:00 ] 222.134.133.242 /Manual/Index/singleDown/id/950365.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: ipGroupList E:\www\www\tk\Common\Api\PowerApi.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\www\www\tk\Common\Api\PowerApi.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-09-15T09:31:32+08:00 ] 222.134.133.242 /Manual/Index/getDocTest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatTestStyle E:\www\www\tk\Common\Model\IndexModel.class.php 第 267 行.
+NOTIC: [8] Undefined index: subjectname E:\www\www\tk\Common\Model\IndexModel.class.php 第 983 行.
+NOTIC: [8] Undefined index: specialname E:\www\www\tk\Common\Model\IndexModel.class.php 第 984 行.
+NOTIC: [8] Undefined index: klnameonly E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: klnameall E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: kllist E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: chaptername E:\www\www\tk\Common\Model\IndexModel.class.php 第 989 行.
+NOTIC: [8] Undefined index: gradename E:\www\www\tk\Common\Model\IndexModel.class.php 第 993 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+
+[ 2017-09-15T09:31:32+08:00 ] 222.134.133.242 /Manual/Index/getDocInit/id/30/times/0.6794913609046489.html?_=1505439094672
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-15T09:34:44+08:00 ] 218.58.136.18 /Manual/Index/zj.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-15T10:08:22+08:00 ] 222.134.133.242 /Manual/Index/singleDown/id/950375.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: ipGroupList E:\www\www\tk\Common\Api\PowerApi.class.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\www\www\tk\Common\Api\PowerApi.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-15T10:08:25+08:00 ] 222.134.133.242 /Manual/Index/getDocTest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: AatTestStyle E:\www\www\tk\Common\Model\IndexModel.class.php 第 267 行.
+NOTIC: [8] Undefined index: subjectname E:\www\www\tk\Common\Model\IndexModel.class.php 第 983 行.
+NOTIC: [8] Undefined index: specialname E:\www\www\tk\Common\Model\IndexModel.class.php 第 984 行.
+NOTIC: [8] Undefined index: klnameonly E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: klnameall E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: kllist E:\www\www\tk\Common\Model\IndexModel.class.php 第 985 行.
+NOTIC: [8] Undefined index: chaptername E:\www\www\tk\Common\Model\IndexModel.class.php 第 989 行.
+NOTIC: [8] Undefined index: gradename E:\www\www\tk\Common\Model\IndexModel.class.php 第 993 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1598 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+NOTIC: [8] Undefined index: IfDoc E:\www\www\tk\Doc\Model\HandleWordModel.class.php 第 1694 行.
+
+[ 2017-09-15T10:08:25+08:00 ] 222.134.133.242 /Manual/Index/getDocInit/id/30/times/0.10031519527547061.html?_=1505441307980
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-15T10:50:18+08:00 ] 222.134.133.242 /Manual/Index/zsd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-09-15T10:50:19+08:00 ] 222.134.133.242 /Manual/Index/getZsdInit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+
+[ 2017-09-15T10:56:49+08:00 ] 222.134.133.242 /Manual/Index/zsd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-15T10:56:49+08:00 ] 222.134.133.242 /Manual/Index/getZsdInit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+
+[ 2017-09-15T12:10:01+08:00 ] 115.60.58.108 /Manual/Index/sj.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: docID E:\www\www\tk\Manual\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Undefined index: subjectID E:\www\www\tk\Manual\Controller\IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-15T12:10:02+08:00 ] 115.60.58.108 /Manual/Index/getDocInit/id/13/times/0.035529094063933064.html?_=1505448598814
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-15T12:12:38+08:00 ] 115.60.58.108 /Manual/Index/zsd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-09-15T12:12:38+08:00 ] 115.60.58.108 /Manual/Index/getZsdInit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+
+[ 2017-09-15T17:46:03+08:00 ] 14.130.228.78 /Manual/Index/sj.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: docID E:\www\www\tk\Manual\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Undefined index: subjectID E:\www\www\tk\Manual\Controller\IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-15T17:46:04+08:00 ] 14.130.228.78 /Manual/Index/getDocInit/id/22/times/0.8952262895181775.html?_=1505468800908
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-15T17:54:14+08:00 ] 14.130.228.78 /Manual/Index/sj.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: docID E:\www\www\tk\Manual\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Undefined index: subjectID E:\www\www\tk\Manual\Controller\IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-15T17:54:14+08:00 ] 14.130.228.78 /Manual/Index/getDocInit/id/22/times/0.19088508398272097.html?_=1505469291557
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+

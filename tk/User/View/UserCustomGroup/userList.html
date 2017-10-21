@@ -1,0 +1,102 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+<style>
+    input[value="批量编辑"] {
+        width:100px;
+    }
+</style>
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">{#$pageName#}[ <A HREF="javascript:history.go(-1);">返回上一页</A> ]</div>
+<!--  功能操作区域  -->
+<div class="operate">
+    {#html:imageBtn name="edit" value="批量编辑" class="bteditArr" style="impBtn hMargin fLeft shadow" /#}
+    {#html:imageBtn name="revert" value="刷新" class="btflush" style="impBtn hMargin fLeft shadow" /#}
+    <!-- 查询区域 -->
+    <FORM METHOD="POST" ACTION="{#:U('UserCustomGroup/userList',array('id'=>$id))#}">
+    <div class="fRig">
+        <div class="fLeft"><span id="key"><INPUT id="name" TYPE="text" NAME="name" value="{#$Think.request.name#}" title="用户名查询" class="medium" ></span></div>
+        {#html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /#}
+        {#html:imageBtn name="adv" value="高级" id="showText" style="impBtn hMargin fLeft shadow" /#}
+    </div>
+    <!-- 高级查询区域 -->
+    <div id="searchM" class=" none search cBoth">
+        <TABLE border="0" cellpadding="1" cellspacing="3" width="100%">
+        <TR>
+            <TD class="tRight" width="60">用户名：</TD>
+            <TD><INPUT TYPE="text" NAME="UserName" class="small" value="{#$Think.request.UserName#}" ></TD>
+            <TD class="tRight" width="80">真实姓名：</TD>
+            <TD><INPUT TYPE="text" NAME="RealName" class="small" value="{#$Think.request.RealName#}"></TD>
+        </TR>
+        </TABLE>
+    </div>
+        </FORM>
+</div>
+<!-- 功能操作区域结束 -->
+
+<!-- 列表显示区域  -->
+<div class="list" >
+<div id="result" class="result none"></div>
+<!-- Think 系统列表组件开始 -->
+<table id="checkList" class="list" cellpadding="5" cellspacing="0" border="1">
+    <tr><td height="5" colspan="13" class="topTd" ></td></tr>
+    <tr class="row tCenter" >
+        <th width="8"><input type="checkbox" id="CheckAll" tag="checkList"></th>
+        <th width="8%">编号</th>
+        <th width="12%">用户</th>
+        <th>性别</th>
+        <th>用户信息</th>
+        <th>所属学科</th>
+        <th width="20%">所属组</th>
+        <th>权限截止时间</th>
+        <th width="5%">点值</th>
+        <th width="5%">状态</th>
+        <th>登录状态</th>
+        <th>操作</th>
+    </tr>
+    {#volist name="list" id="node" #}
+        <tr class="row lists tCenter" jl=''>
+        <td><input type="checkbox" class="key" value="{#$node.UserID#}"></td>
+        <td>{#$node.UserID#}( {#$node.OrderNum#} )</td>
+        <td>
+        {#$node.UserName#}( {#$node.RealName#} ) 【{#eq name="node.IfTeacher" value="0"#}学生{#else/#}教师{#/eq#}</td>
+        <td>{#eq name="node.Sex" value="0"#}男{#else/#}女{#/eq#}</td>
+        <td style='text-align:left'>
+            电话：{#$node.Phonecode#}<br/>
+            邮箱：{#$node.Email#}<br/>
+            地址：{#$node.Address#}<br/>
+        </td>
+        <td>{#eq name="node.SubjectName" value=""#}<span style="color:red">未设置</span>{#else/#}{#$node.SubjectName#}{#/eq#}</td>
+        <td align="left">
+        {#$node.UserGroup#}
+        自定义分组：{#eq name="node.CustomGroup" value="0"#}未设置{#else/#}{#$node.UserCustomGroup#}{#/eq#}
+        </td>
+        <td>{#eq name="node.EndTime" value="0"#}未设置{#else/#}{#$node.EndTime|date="Y-m-d",####}{#/eq#}</td>
+        <td>{#$node.Cz#}</td>
+        <td>{#eq name="node.Status" value="0"#}<a href="{#:U('UserCustomGroup/locked',array('id'=>$node['UserID']))#}">正常</a>{#else/#}<a href="{#:U('UserCustomGroup/locked',array('id'=>$node['UserID'],'status'=>0))#}"><font color="red">锁定</font></a>{#/eq#}</td>
+        <td style="text-align:left">
+            注册时间:{#$node.LoadDate|date="Y-m-d H:i:s",####}<br/>
+            登录IP:{#$node.LastIP#}<br/>
+            最后时间:{#eq name="node.LastTime" value="0"#}未登录{#else/#}{#$node.LastTime|date="Y-m-d H:i:s",####}{#/eq#}
+        </td>
+        <td>
+            <a href="{#:U('User/edit',array('id'=>$node[UserID]))#}">编辑</a>&nbsp;
+            <a href="{#:U('UserCustomGroup/remove',array('UserID'=>$node[UserID]))#}">从分组中移除</a>&nbsp;
+        </td>
+        </tr>
+    {#/volist#}
+    <tr><td height="5" colspan="13" class="bottomTd"></td></tr>
+</table>
+<!-- Think 系统列表组件结束 -->
+</div>
+<!--  分页显示区域 -->
+<div class="page">{#$totalMsg#}</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

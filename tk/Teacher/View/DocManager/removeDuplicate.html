@@ -1,0 +1,346 @@
+{#// 加载头部公共文件 #}
+{#include file="Public/header" /#}
+<style>
+     .btlock,.btunlock{
+        cursor: pointer;
+        text-decoration: underline;
+    } 
+</style>
+<!--基础文件，分别是jQuery基库和拖拽UI插件-->
+<script src="__PUBLIC__/plugin/jquery.ui.draggable.js" type="text/javascript"></script>
+
+<!-- 对话框核心JS文件和对应的CSS文件-->
+<script src="__PUBLIC__/plugin/template.js" type="text/javascript"></script>
+<script src="__PUBLIC__/plugin/alert/jquery.alerts.js" type="text/javascript"></script>
+<link href="__PUBLIC__/plugin/alert/jquery.alerts.css" rel="stylesheet" type="text/css" media="screen" />
+<script src='__PUBLIC__/teacher/js/common1.js'></script>
+<script language="javascript">
+    var docid = {#$docid#};
+    var isDumplate = {#$in#};
+    var page = 1;
+    var countPage = 1;
+    $(document).ready(function(){
+        $('.nowedit').live('click',function(){
+                var a=$(this).attr('thisid');
+                jInfo('加载中请稍候。。。','加载数据');
+                //获取数据
+                $.post(U('Teacher/DocManager/showDuplicate'),{'id':a,'in':isDumplate,'times':Math.random()}, function(data){
+                    jClose();
+                    //权限验证
+                    if(backLogin(data)=='error'){
+                        return false;
+                    }
+                    jFrame(data['data'],'编辑试题：编号'+a);
+                });
+        });
+        $('.showedit').live('click',function(){
+            var a=$(this).attr('thisid');
+            jInfo('加载中请稍候。。。','加载数据');
+            //获取数据
+            $.post(U('Teacher/DocManager/showDuplicate'),{'id':a,'in':1,'times':Math.random()}, function(data){
+                jClose();
+                //权限验证
+                if(backLogin(data)=='error'){
+                    return false;
+                }
+                jFrame(data['data'],'试题展示：编号'+a);
+            });
+        });
+
+        //标记重复
+        $('.btlock').live('click',function(){
+            var keyValue = $(this).attr('thisid');
+            var name='duplicate'+keyValue+'[]';
+            var duplicate='';
+            if($('[name="'+name+'"]').length>0){
+                $('[name="'+name+'"]').each(function(){
+                    if($(this).attr('checked')=='checked'){
+                        duplicate += $(this).val()+',';
+                    }
+                });
+            }
+            if(duplicate==''){
+                alert('请选择重复试题！');
+                return;
+            }
+            if(!keyValue){
+                alert('请选择标记项！');
+                return false;
+            }
+            jInfo('标记中请稍候。。。','标记数据');
+            $.post(U('Teacher/DocManager/mark'),{'docid':docid, 'Duplicate':duplicate,'id':keyValue,'times':Math.random()}, function(data){
+                jClose();
+                //权限验证
+                if(backLogin(data)=='error'){
+                    return false;
+                }
+                $('body').append(data['data']);
+            });
+        });
+        //取消标记重复
+        $('.btunlock').live('click',function(){
+            var keyValue = $(this).attr('thisid');
+            var name='duplicate'+keyValue+'[]';
+            var duplicate='';
+            if($('[name="'+name+'"]').length>0){
+                $('[name="'+name+'"]').each(function(){
+                    if($(this).attr('checked')=='checked'){
+                        duplicate += $(this).val()+',';
+                    }
+                });
+            }
+            if(duplicate==''){
+                alert('请选择要取消的重复试题！');
+                return;
+            }
+            if(!keyValue){
+                alert('请选择取消标记项！');
+                return false;
+            }
+            jInfo('取消标记中请稍候。。。','取消标记数据');
+            $.post(U('Teacher/DocManager/mark'),{'docid':docid,'Duplicate':duplicate,'id':keyValue,'style':'unlock','times':Math.random()}, function(data){
+                jClose();
+                //权限验证
+                if(backLogin(data)=='error'){
+                    return false;
+                }
+                $('body').append(data['data']);
+            });
+        });
+
+        $('.appendToHere span').click(function(){
+            loadTest();
+        });
+        $('#removeDuplidate').click(function(){
+            var num = $("#rdNum").val();
+            if(!num){
+                num = 3;
+            }
+            Cookie.Set('DUPLICATE_TEACHER', num);
+            loadTest();
+        });
+    });
+    var template = new Template();
+    function loadTest(){
+        Cookie.Set('DUPLICATE_TEACHER', $('#rdNum').val());
+        var num = 0;
+        $('.record').each(function(){
+            num++;
+        });
+        if(!page){
+            return false;
+        }
+        var prepage = Cookie.Get('DUPLICATE_TEACHER');
+        jInfo('数据加载中....','正在查询');
+        $.post(U('Teacher/DocManager/duplicateTest'),
+            {'docid' : docid , 'in' : isDumplate, 'page' : num, 'prepage' : prepage},
+            function(data){
+                if(backLogin(data)=='error'){
+                    jClose();
+                    return false;
+                }
+                countPage = data['data']['countPage'];
+                var result = data['data']['list'];
+                if(result && result.length > 0){
+                    $('.appendToHere').before(template.setParams(['datas','page']).render($('#template').html(), result, page++));
+                }else{
+                    $('.appendToHere span').html('该试卷暂无试题').off('click');
+                }
+                jClose();
+                if(num+result.length >= countPage){ //试题加载完毕
+                    $('.appendToHere span').html('试题已全部加载完毕').off('click');
+                    page = false;
+                }
+            }
+        );
+    }
+
+    //以下为模板使用函数
+    function getTest(html){
+        if(!html){
+            return '<p>无</p>';
+        }
+        return '<p>'+html;
+    }
+
+    function getCheckbox(dataDuplicate, duplicate, duplicateTestId, testId){
+        var str = '<input type="checkbox" value="'+ duplicateTestId+'" name="duplicate'+testId+'[]"';
+        if(dataDuplicate!=0 && (duplicate == dataDuplicate || dataDuplicate==duplicateTestId)){
+            str += ' checked="checked"';
+        }
+        return str + '/>';
+    }
+
+</script>
+
+<script type='text/html' id='template'>
+    <tr>
+        <td colspan="6" height='20' align="center" style='background-color:#cde;'>
+            第&nbsp;<%= page %>&nbsp;部分数据</td>
+    </tr>
+    <% 
+        for(var i=0; i<datas.length; i++) {
+            var data = datas[i];
+    %>
+            <tr class="row record" jl=''>
+                <td><%= data.TestID %></td>
+                <td width="300">
+                    <div class="text_source2">
+                        来源：
+                        <a href="<%= U('Teacher/DocManager/index?DocID') %>=<%= data.DocID %>" title="<%= data.DocID %>:<%= data.DocName %>"><%= data.DocID %>:<%= data.DocName %></a>
+                    </div>
+                    <div class="testdivbak2" style='width:240px; overflow:auto;'>
+                        <a href="javascript:void(0);" class="nowedit" thisid="<%= data.TestID %>">
+                            <%= getTest(data.Test) %></a>
+                    </div>
+                </td>
+
+                <!--输出第一道相似题-->
+                <td>
+                    <% 
+                        if(data.duplicate && data.duplicate[0] && data.duplicate[0]['testid'] != 0){ 
+                            var duplicateTest = data.duplicate[0];
+                            var checked = '';
+                            if(data.Duplicate!=0 && (data.Duplicate == duplicateTest.testid || data.Duplicate == duplicateTest.duplicate )){
+                                checked = ' checked="checked"';
+                            }
+                    %>
+                            <div class="text_source2">
+                                <input type="checkbox" value="<%= duplicateTest.testid %>" name="duplicate<%= data.TestID %>[]"<%= checked %>/>
+                                来源：
+                                <span title="<%= duplicateTest.docid %>:<%= duplicateTest.docname %>"><%= duplicateTest.docid %>:<%= duplicateTest.docname %></span>
+                            </div>
+                            <div class="testdivbak2" style='width:240px; overflow:auto;'>
+                                <a href="javascript:void(0);" class="showedit" thisid="<%= duplicateTest.testid %>">
+                                    <%= getTest(duplicateTest.test) %></a>
+                            </div>
+                    <% }else{ %>
+                        无
+                    <% } %></td>
+                <!--------end 输出第一道相似题----------->
+
+                <!--------输出第二道相似题--------------->
+                <td>
+                    <% 
+                        if(data.duplicate && data.duplicate[1] && data.duplicate[1]['testid'] != 0){ 
+                            var duplicateTest = data.duplicate[1];
+                            var checked = '';
+                            if(data.Duplicate!=0 && (data.Duplicate == duplicateTest.testid || data.Duplicate == duplicateTest.duplicate )){
+                                checked = ' checked="checked"';
+                            }
+                    %>
+                        <div class="text_source2">
+                            <input type="checkbox" value="<%= duplicateTest.testid %>" name="duplicate<%= data.TestID %>[]"<%= checked %>/>
+                            来源：
+                            <span title="<%= duplicateTest.docid %>:<%= duplicateTest.docname %>"><%= duplicateTest.docid %>:<%= duplicateTest.docname %></span>
+                        </div>
+                        <div class="testdivbak2" style='width:240px; overflow:auto;'>
+                            <a href="javascript:void(0);" class="showedit" thisid="<%= duplicateTest.testid %>">
+                                <%= getTest(duplicateTest.test) %></a>
+                        </div>
+                    <% }else{ %>
+                        无
+                    <% } %></td>
+                <!-----------end 输出第二道相似题---------->
+
+                <td>
+                    <div class="">
+                        <p>
+                            <% if(data.duplicate && data.duplicate.ids){ %>
+                                <% 
+                                    for(var test in data.duplicate.ids){
+                                        test = data.duplicate.ids[test];
+                                %>
+                                    <%= getCheckbox(data.Duplicate,test.duplicate, test.testid, data.TestID) %>
+                                    <a href="javascript:void(0);" class="showedit" thisid="<%= test.testid %>"><%= test.testid %></a>
+                                    <br/>
+                                <% } %>
+                            <% } %></p>
+                    </div>
+                </td>
+                <td id="duplicate<%= data.TestID %>">
+                    <% if(data.duplicate && data.duplicate[0] && data.duplicate[0]['testid'] != 0){ %>
+                        <% if(data.Duplicate == 0){ %>
+                            <span class="btlock" thisid="<%= data.TestID %>">标记</span>
+                        <% }else{ %>
+                            <span class="btunlock"  thisid="<%= data.TestID %>"> <font color="red">取消</font>
+                            </span>
+                        <% } %>
+                        &nbsp;&nbsp;
+                        <br/>
+                    <% } %></td>
+            </tr>
+    <% 
+        }
+    %></script>
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+    <!-- 主体内容  -->
+    <div class="content" >
+        <div class="title">{#$pageName#}</div>
+        <!--  功能操作区域  -->
+        <!-- 功能操作区域结束 -->
+
+        <!-- 列表显示区域  -->
+        <div class="list" id='content'>
+            <div id="result" class="result none"></div>
+            <div class="operate" style='width:100%;'>
+                <div style='float:right;'>
+                    提示：仅当“当前试题”与重复试题 <strong class='red'>完全重复</strong>
+                    时， <strong class='red'>选中重复试题</strong>
+                    后，点击
+                    <strong class='red'>标记</strong>
+                    。若不完全重复，
+                    <strong class='red'>请勿</strong>
+                    标记重复。
+                </div>
+            </div>
+            <div class="operate" style='width:100%;'>
+                <div style='float:right;'>
+                    页面为分页显示，当前页面试题去重完成后，请点击底部<strong class='red'>加载更多试题</strong>。
+                </div>
+            </div>
+            <div>每页题数：<input type="text" id='rdNum' value='3' style='width:50px;'> <button id='removeDuplidate'>排重</button></div>
+            <!-- Think 系统列表组件开始 -->
+            <input type="hidden" name='docid' id='docid' value='{#$docid#}'/>
+            <form method="POST" action="" id="form1" enctype="multipart/form-data">
+                <table class="list" cellpadding="5" cellspacing="0" border="1">
+                    <tr>
+                        <td height="5" colspan="6" class="topTd" ></td>
+                    </tr>
+                    <tr class="row" >
+                        <th width="40">编号</th>
+                        <th width="*">当前试题</th>
+                        <th width="50">重复试题1</th>
+                        <th width="50">重复试题2</th>
+                        <th width="80">其他重复试题编号</th>
+                        <th width="45">操作</th>
+                    </tr>
+                    <tr class='appendToHere'>
+                        <td colspan="6" height='20' align="center">
+                        <span style='display:block; width:100%; line-height:20px; height:20px;text-align:center;cursor:pointer'><a href='javascript:;' onclick='return false;'>加载更多试题</a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" align="center">
+                            [
+                            <A HREF="__URL__">返回文档管理列表</A>
+                            ]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[
+                            <A HREF="{#:U('Teacher/DocManager/editTest', array('DocID'=>$docid))#}">下一步试题编辑列表</A>
+                            ]
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="5" colspan="6" class="bottomTd"></td>
+                    </tr>
+                </table>
+                <!-- Think 系统列表组件结束 --> </form>
+        </div>
+        <!--  分页显示区域 -->
+        <div class="page">{#$page#}</div>
+        <!-- 列表显示区域结束 --> </div>
+    <!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Public/ends" /#}

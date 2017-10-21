@@ -1,0 +1,232 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content">
+<!--  功能操作区域  -->
+<div class="title">{#$pageName#} [ <A HREF="__URL__">返回列表</A> ] </div>
+<!-- 功能操作区域结束 -->
+<div id="result" class="result none"></div>
+<!-- 内容显示区域  -->
+<FORM METHOD="POST" action="{#:U('TopicPaper/save')#}" id="form1" onsubmit="return check()">
+<TABLE cellpadding="5" cellspacing="0" class="list" border="1">
+<tr><td height="5" colspan="7" class="topTd" ></td></tr>
+<TR>
+    <TD class="tRight">试卷名称：</TD>
+    <TD class="tLeft" ><INPUT TYPE="TEXT" NAME="TopicPaperName" value="{#$edit.TopicPaperName#}"></TD>
+</TR>
+<TR>
+    <TD class="tRight">试卷描述：</TD>
+    <TD class="tLeft" >
+        <textarea name="TopicPaperDesc" cols="50" rows="5">{#$edit.TopicPaperDesc#}</textarea>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" width="100">所属专题：</TD>
+    <TD class="tLeft" >
+        <SELECT NAME="TopicID">
+            <OPTION VALUE="" subject="0">请选择</OPTION>
+            {#volist name="topic" id="tp"#}
+                <OPTION VALUE="{#$tp.TopicID#}" subject="{#$tp.SubjectID#}" {#eq name="tp.TopicID" value="$edit.TopicID"#}selected="selected"{#/eq#}>{#$tp.TopicName#}</OPTION>
+            {#/volist#}
+        </SELECT>
+    </TD>
+</TR>
+<TR class="subject">
+    <TD class="tRight" width="100">所属学科：</TD>
+    <TD class="tLeft" ><SELECT id="subject" class="large bLeft" NAME="SubjectID">
+    <option value="">请选择</option>
+    {#if condition="$subjectArray"#}
+    {#volist name="subjectArray" id="vo"#}
+        <optgroup label="{#$vo.SubjectName#}">
+        {#if condition="$vo['sub']"#}
+        {#volist name="vo['sub']" id="item"#}
+            <option value="{#$item.SubjectID#}" {#eq name="item.SubjectID" value="$edit.SubjectID"#}selected="selected"{#/eq#}>　　{#$item.SubjectName#}</option>
+        {#/volist#}
+        {#/if#}
+        </optgroup>
+    {#/volist#}
+    {#else/#}
+        <option value="0">请添加学科</option>
+    {#/if#}
+    </SELECT></TD>
+</TR>
+<TR>
+    <TD class="tRight">试卷类型：</TD>
+    <TD class="tLeft" >
+        <LABEL>
+            <INPUT TYPE="radio" NAME="PaperType" {#if condition="($edit.PaperType eq 2) or ($edit.PaperType eq '')"#}checked=checked{#/if#} value="2">试题
+        </LABEL>
+        <LABEL>
+            <INPUT TYPE="radio" NAME="PaperType" {#if condition="$edit.PaperType eq 1"#}checked=checked{#/if#} value="1">文档
+        </LABEL>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight">文理科：</TD>
+    <TD class="tLeft" >
+        <LABEL>
+            <INPUT TYPE="radio" NAME="IfWL" {#if condition="($edit.IfWL eq 0) or ($edit.IfWL eq '')"#}checked=checked{#/if#} value="0">通用
+        </LABEL>
+        <LABEL>
+            <INPUT TYPE="radio" NAME="IfWL" {#if condition="$edit.IfWL eq 1"#}checked=checked{#/if#} value="1">文科
+        </LABEL>
+        <LABEL>
+            <INPUT TYPE="radio" NAME="IfWL" {#if condition="$edit.IfWL eq 2"#}checked=checked{#/if#} value="2">理科
+        </LABEL>
+    </TD>
+</TR>
+<TR class="doc" style="display:none">
+    <TD class="tRight">文档：</TD>
+    <TD class="tLeft" >
+        <INPUT TYPE="text" NAME="DocID" value="{#$edit.DocID|default=0#}">  *此处输入文档编号
+    </TD>
+</TR>
+<TR class="test" style="display:none">
+    <TD class="tRight">试题编号：</TD>
+    <TD class="tLeft" >
+        <textarea name="TestIDs" cols="50" rows="5">{#$edit.TestIDs#}</textarea>  *此处输入试题编号以<label style="color:red">英文逗号</label>连接，例:42,45,48
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight">作答方式：</TD>
+    <TD class="tLeft" >
+        <LABEL>
+            <INPUT TYPE="radio" NAME="IfDown" {#if condition="($edit.IfDown eq 0) or ($edit.IfDown eq '')"#}checked=checked{#/if#} value="0">在线
+        </LABEL>
+        <LABEL>
+            <INPUT TYPE="radio" NAME="IfDown" {#if condition="$edit.IfDown eq 1"#}checked=checked{#/if#} value="1">下载
+        </LABEL>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight">状态：</TD>
+    <TD class="tLeft" >
+        <LABEL>
+            <INPUT TYPE="radio" NAME="Status" {#if condition="($edit.Status eq 1) or ($edit.Status eq '')"#}checked="checked"{#/if#} value="1">正常
+        </LABEL>
+        <LABEL>
+            <INPUT TYPE="radio" NAME="Status" {#if condition="$edit.Status eq 2"#}checked="checked"{#/if#} value="2">锁定
+        </LABEL>
+    </TD>
+</TR>
+{#if condition="$act eq edit"#}
+<TR>
+    <TD class="tRight">添加人：</TD>
+    <TD class="tLeft" >
+        {#$edit.AddUser#}
+    </TD>
+</TR>
+{#/if#}
+<TR>
+    <TD ></TD>
+    <TD class="center"><div style="width:85%;margin:5px">
+        <INPUT TYPE="hidden" name="TopicPaperID" value="{#$edit.TopicPaperID#}">
+        <INPUT TYPE="hidden" name="act" value="{#$act#}">
+    <div class="impBtn fLeft"><INPUT tag='form1' TYPE="button" value="保存" class="save imgButton mysubmit"></div>
+    <div class="impBtn fLeft m-l10"><INPUT TYPE="reset" class="reset imgButton" value="清空" ></div>
+    </div></TD>
+</TR>
+<tr><td height="5" colspan="7" class="bottomTd" ></td></tr>
+</TABLE>
+</FORM>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<script>
+    if("{#$act#}"=='edit'){
+        var paperType='{#$edit.PaperType#}';
+        var subjectData='{#$topicSubject#}';
+        if(subjectData==0){
+            $('.subject').show();
+        }else{
+            $('.subject').hide();
+        }
+        if(paperType==1){
+            $('.doc').show();
+            $('.test').hide();
+        }else{
+            $('.test').show();
+            $('.doc').hide();
+        }
+    }else{
+        if($('input[name="PaperType"]:checked').val()==1){
+            $('.doc').show();
+            $('.test').hide();
+        }else{
+            $('.test').show();
+            $('.doc').hide();
+        }
+        $('.subject').hide();
+    }
+    $('input[name="PaperType"]').live('click',function(){
+        if($(this).val()==1){
+            $('.doc').show();
+            $('.test').hide();
+        }else{
+            $('.test').show();
+            $('.doc').hide();
+        }
+    })
+    $('select[name="TopicID"]').live('change',function(){
+        var subjectID=$(this).find('option:selected').attr('subject');
+        if(subjectID==0){
+            $('.subject').show();
+        }else{
+            $('select[name="SubjectID"]').find('option').each(function(i){
+                if($(this).val()==subjectID){
+                    $(this).attr('selected','selected');
+                }
+            })
+            $('.subject').hide();
+        }
+    })
+    function check(){
+        if($('input[name="TopicPaperName"]').val()==''){
+            alert('试卷名称不能为空');
+            return false;
+        }
+        if($('select[name="TopicID"]').find('option:selected').val()==''){
+            alert('所属专题不能为空');
+            return false;
+        }
+        if($('select[name="SubjectID"]').val()==''){
+            alert('学科不能为空');
+            return false;
+        }
+        if($('input[name="PaperType"]:checked').val()==1 && $('input[name="DocID"]').val()=='0'){
+            alert('文档编号不能为0');
+            return false;
+        }
+        if($('input[name="PaperType"]:checked').val()==2 && $('textarea[name="TestIDs"]').val()==''){
+            alert('试题编号不能为空');
+            return false;
+        }
+        if($('input[name="PaperType"]:checked').val()==1 && isNaN($('input[name="DocID"]').val())){
+            alert('文档编号不能为非数字');
+            return false;
+        }else if($('input[name="PaperType"]:checked').val()==2){
+            var testId=$('textarea[name="TestIDs"]').val();
+            testArray=new Array();
+            if(testId.indexOf(',')>-1){
+                testArray=testId.split(',');
+                for(var i in testArray){
+                    if(isNaN(testArray[i])){
+                        alert('试题编号不能为非数字');
+                        return false;
+                    }
+                }
+            }else{
+                if(isNaN(testId)){
+                    alert('试题编号不能为非数字');
+                    return false;
+                }
+            }
+        }
+    }
+</script>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

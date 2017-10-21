@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>用户资源 - {#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="用户资源,{#$config.Keyword#}"/>
+    <meta name="description" content="用户资源,{#$config.Description#}"/>
+    <link rel="stylesheet" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}"/>
+    <link rel="stylesheet" href="__PUBLIC__/index/css/style.css{#$Think.config.WLN_UPDATE_FILE_DATE#}"/>
+</head>
+<body>
+{#include file="Index@Common/top"/#}
+<!-- 面包屑导航 -->
+<div class="w1000 crumbs-wrap">
+    <div class="g-crumbs"> <b class="now-path">当前位置：</b>
+        <a href="/">首页</a> > <span>用户资源</span>
+    </div>
+</div>
+<!-- 面包屑导航 end-->
+<!-- banner -->
+<div class="banner-area w1000">
+    <img src="__PUBLIC__/index/imgs/in-page/wln-bn.jpg" alt="智慧云题库云平台">
+    <h1>用户资源</h1>
+</div>
+<!-- banner end-->
+
+<div class="w1000">
+    <div class="box">
+        <div class="nr_box testpaper_box">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="testpaperScreening">
+                <tr>
+                    <th width="7%">学科：</th>
+                    <td width="93%">
+                        {#if condition="empty($pageLinks['s']['c'])"#}
+                        <a class='subject this' params='0' href="{#:sprintf($pageLinks['s']['a'], '0')#}">全部</a>
+                        {#else/#}
+                        <a class='subject' params='0' href="{#:sprintf($pageLinks['s']['a'], '0')#}">全部</a>
+                        {#/if#}
+                        {#foreach name='subjects' item='subject' key="val"#}
+                        {#if condition="$pageLinks['s']['c'] eq $val"#}
+                        <a class='subject this' params='{#$val#}' href="{#:sprintf($pageLinks['s']['a'], $val)#}">{#$subject#}</a>
+                        {#else/#}
+                        <a class='subject' params='{#$val#}' href="{#:sprintf($pageLinks['s']['a'], $val)#}">{#$subject#}</a>
+                        {#/if#}
+                        {#/foreach#}
+                    </td>
+                </tr>
+                <tr>
+                    <th>类型：</th>
+                    <td>
+                        {#if condition="empty($pageLinks['t']['c'])"#}
+                        <a class='type this' params='0' href="{#:sprintf($pageLinks['t']['a'], '0')#}">全部</a>
+                        {#else/#}
+                        <a class='type' params='0' href="{#:sprintf($pageLinks['t']['a'], '0')#}">全部</a>
+                        {#/if#}
+                        {#foreach name='dynamicType' item="type" key='val'#}
+                        {#if condition="$pageLinks['t']['c'] eq $val"#}
+                        <a class='type this' params='{#$val#}' href="{#:sprintf($pageLinks['t']['a'], $val)#}">{#$type#}</a>
+                        {#else/#}
+                        <a class='type' params='{#$val#}' href="{#:sprintf($pageLinks['t']['a'], $val)#}">{#$type#}</a>
+                        {#/if#}
+                        {#/foreach#}
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="testpaperlist">
+                <thead>
+                    <tr>
+                        <th width="110" align="center">
+                            <span>|</span>
+                            类别
+                        </th>
+                        <th width="100" align="center">
+                            <span>|</span>
+                            学科
+                        </th>
+                        <th class="sjtit">试卷名称</th>
+                        <th width="100" align="center">上传用户</th>
+                        <th width="100" align="center">更新时间</th>
+                    </tr>
+                </thead>
+                <tbody id='content'>
+                    {#if condition="count($userDynamicResult) eq 0"#}
+                    <tr><td colspan="5"><div class="data-empty" style="padding:80px;"></div></td></tr>
+                    {#else/#}
+                    {#foreach name='userDynamicResult' item="record" key='val'#}
+                    {#if condition="$val % 2 eq 0"#}
+                    <tr>
+                        {#else/#}
+                    <tr>
+                        {#/if#}
+                        <td align="center">{#$dynamicType[$record['Classification']]#}</td>
+                        <td align="center">{#$subjects[$record['SubjectID']]|default="暂无数据"#}</td>
+                        <td class="sjtit">
+                            <a target="_blank" title="{#$record.Title#}" href="{#:U('/Doc/userContent/'.$record['AssociateID'])#}">{#$record.Title#}</a>
+                        </td>
+                        <td align="center">{#:formatString('hiddenUserName',$record['UserName']);#}</td>
+                        <td align="center">{#$record.AddTime|date="Y/m/d",####}</td>
+                    </tr>
+                    {#/foreach#}
+                    {#/if#}
+                </tbody>
+
+            </table>
+            <div class="page-wrap">
+                <div class="page-box">
+                    {#if condition="count($pages) gt 1 "#}
+                    {#foreach name='pages' item="links" key='val'#}
+                    {#if condition="$links.c eq 'c'"#}
+                    <a href="{#$links.a#}" class="current">{#$links.n#}</a>
+                    {#else/#}
+                    <a href="{#$links.a#}">{#$links.n#}</a>
+                    {#/if#}
+                    {#/foreach#}
+                    {#/if#}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="hidden" id='token' value='{#$token#}'/>
+<input type="hidden" id='page' value='1'/>
+{#include file="Index@Common/footer" /#}
+</body>
+</html>

@@ -1,0 +1,91 @@
+{#// 加载头部公共文件 #}
+{#include file="Public/header" /#}
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">{#$pageName#}</div>
+<!--  功能操作区域  -->
+<div class="operate">
+    {#html:imageBtn name="revert" value="刷新" class="btflush" style="impBtn hMargin fLeft shadow" /#}
+
+    <!-- 查询区域 -->
+    <form id="form1" method="POST" action="__URL__">
+    <div class="fRig">
+        <div class="fLeft">
+            <span id="key">
+                <input id="name" type="text" name="Receive" value="{#$Think.request.ReceiveName#}" title="接收方查询" class="medium" >
+            </span>
+        </div>
+        {#html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /#}
+        {#html:imageBtn name="adv" value="高级" id="showText" style="impBtn hMargin fLeft shadow" /#}
+    </div>
+    <!-- 高级查询区域 -->
+    <div id="searchM" class=" none search cBoth">
+        <table border="0" cellpadding="1" cellspacing="3" width="100%">
+        <tr>
+            <td class="tRight" width="60">接收方：</td>
+            <td>
+                <input type="text" name="Receive" class="medium" value="{#$Think.request.Receive#}" >
+            </td>
+            <td class="tRight" width="50">状态：</td>
+            <td>
+                <select class="medium bLeft" name="Status">
+                    <option value="">全部</option>
+                    <option value="0" {#eq name="Think.request.Status" value="0"#}selected="selected"{#/eq#}>发送成功</option>
+                    <option value="1" {#eq name="Think.request.Status" value="1"#}selected="selected"{#/eq#}>发送失败</option>
+                </select>
+            </td>
+            <td class="tRight" width="60">日期：</td>
+            <td width="350">
+                <input type="text" name="Start" class="medium inputTime" value="{#$Think.request.Start#}"> -
+                <input type="text" name="End" class="medium inputTime" value="{#$Think.request.End#}">
+            </td>
+        </tr>
+        </table>
+    </div>
+    </form>
+</div>
+<!-- 功能操作区域结束 -->
+
+<!-- 列表显示区域  -->
+<div class="list" >
+<div id="result" class="result none"></div>
+<!-- Think 系统列表组件开始 -->
+<table id="checkList" class="list" cellpadding="5" cellspacing="0" border="1">
+    <tr><td height="5" colspan="8" class="topTd" ></td></tr>
+    <tr class="row" >
+        <th width="8"><input type="checkbox" id="CheckAll" tag="checkList"></th>
+        <th width="10%">编号</th>
+        <th>用户名</th>
+        <th>验证码</th>
+        <th>接收方</th>
+        <th>时间</th>
+        <th>是否发送成功</th>
+        <th>是否使用</th>
+    </tr>
+    {#volist name="list" id="node" #}
+    <tr class="row lists" jl=''>
+        <td><input type="checkbox" class="key" value="{#$node.SmsID#}"></td>
+        <td>{#$node.SmsID#}</td>
+        <td>{#$node.UserName#}</td>
+        <td>{#$node.CodeNum#}</td>
+        <td>{#$node.Receive#}</td>
+        <td>{#$node.AddTime|date="Y-m-d H:i:s",####}</td>
+        <td>{#eq name="node.Status" value="0"#}是{#else/#}否{#/eq#}</td>
+        <td>{#eq name="node.IfConfirm" value="0"#}否{#else/#}是{#/eq#}</td>
+    </tr>
+    {#/volist#}
+    <tr><td height="5" colspan="8" class="bottomTd"></td></tr>
+</table>
+<!-- Think 系统列表组件结束 -->
+</div>
+<!--  分页显示区域 -->
+<div class="page">{#$page#}</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Public/ends" /#}

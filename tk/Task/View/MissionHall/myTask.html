@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>任务列表 - 用户中心 - {#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="任务列表，{#$config.Keyword#}" />
+    <meta name="description" content="任务列表，{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/user.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/u-task.css" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+</head>
+<body>
+
+    <!--头部-->
+    {#include file="Index@Common/TplUserHeader" /#}
+    <!--头部-end-->
+
+    <!-- 个人中心 -->
+    <div class="w-main">
+        <!-- 面包屑导航 -->
+        {#include file="User@IndexCenter/TplCrumbs" /#}
+
+        <!-- 面包屑导航END -->
+
+        <div class="u-content clearfix">
+            <!-- 左侧导航 -->
+            {#include file="User@IndexCenter/TplPersonalNav" /#}
+            <!-- 左侧导航END -->
+            <div class="u-right-wrap">
+                <div class="u-right">
+                    <!-- 任务大厅任务 -->
+                    <div class="u-record-panel g-panel content">
+                        <div class="panel-head">
+                            <h3 class="head-name">任务大厅任务</h3>
+                        </div>
+                        <div class="panel-func-site taskHall-filter" id="J_Date">
+                            <form action="{#:U('Task/MissionHall/myTask')#}" method='post' class="g-form">
+                                <div class="g-control-group">
+                                    <select class="w100" name="level" id="">
+                                        <option value="">任务等级</option>
+                                        {#foreach name='level' item='val' key='key'#}
+                                            {#if condition="$pagtion['level']['c'] eq $key"#}
+                                            <option value="{#$key#}" selected="selected">{#$val#}</option>
+                                            {#else/#}
+                                            <option value="{#$key#}">{#$val#}</option>
+                                            {#/if#}
+                                        {#/foreach#}
+                                    </select>
+                                    <select class="w100" name="status" id="">
+                                        <option value="-1">任务状态</option>
+                                        {#foreach name='statusList' item='val' key='key'#}
+                                            {#if condition="$pagtion['status']['c'] eq $key"#}
+                                            <option value="{#$key#}" selected="selected">{#$val#}</option>
+                                            {#else/#}
+                                            <option value="{#$key#}">{#$val#}</option>
+                                            {#/if#}
+                                        {#/foreach#}
+                                    </select>
+
+                                    <input class="w100 startDate" type="text" name="startTime" value="{#$Think.request.startTime|default='开始时间'#}" />
+                                    <input class="w100 endDate" type="text" name="endTime" value="{#$Think.request.endTime|default='结束时间'#}" />
+
+                                    <a href="javascript:;" class="g-btn btn-primary searchTask">搜索</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="panel-body">
+                            <table class="g-table g-table-bordered record-table">
+                                <thead>
+                                <tr>
+                                    <th align="center">任务名称</th>
+                                    <th align="center" width="80">奖励</th>
+                                    <th align="center" width="70">状态</th>
+                                    <th align="center" width="80">领取时间</th>
+                                    <th align="center" width="70">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {#if condition='count($list) eq 0'#}
+                                    <tr>
+                                        <td align="center" colspan="5"><div class="no-data-tips">暂无数据</div></td>
+                                    </tr>
+                                {#else/#}
+                                    {#foreach name='list' item='record'#}
+                                        <tr>
+                                            <td align="left">{#$record.Title#}</td>
+                                            <td align="center">
+                                                <span class="red">
+                                                    {#if condition='$record.RewardType eq 1'#}
+                                                    {#:ceil($record['Reward'])#}
+                                                    {#else/#}
+                                                    {#$record['Reward']#}
+                                                    {#/if#}
+                                                </span>
+                                                {#if condition='$record.RewardType eq 1'#}
+                                                金币
+                                                {#else/#}
+                                                现金
+                                                {#/if#}
+                                            </td>
+                                            <td align="center"><span>{#$statusList[$record['Status']]#}</span></td>
+                                            <td align="center"><span class="timer">{#$record.recordAddTime|date="Y-m-d H:i:s",####}</span></td>
+                                            <td align="center">
+                                            {#if condition='$record.Status eq 2'#}
+                                                {#if condition='strpos($record["Url"], "Home") === 1'#}
+                                                    <a href="/Home/Index/main/u/{#:str_replace('/', '_', $record['Url'])#}" class="link" target="_blank">做任务</a>
+                                                {#elseif condition='strpos($record["Url"], "Teacher") === 1'/#}
+                                                    <a href="/Teacher/Index/index/u/{#:str_replace('/', '_', $record['Url'])#}" class="link" target="_blank">做任务</a>
+                                                {#else/#}
+                                                    <a href="{#$record.Url#}" class="link" target="_blank">做任务</a>
+                                                {#/if#}
+                                            {#else/#}
+                                            -
+                                            {#/if#}
+                                            </td>
+                                        </tr>
+                                    {#/foreach#}
+                                {#/if#}
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="u-paginator">
+                            {#$count#} 条记录 {#$page#}/ {#:ceil($count / $prepage)#} 页
+                            {#foreach name="pagtion['pages']" item='record'#}
+                                {#if condition='!empty($record["c"])'#}
+                                    <span class="current">{#$record['n']#}</span>
+                                {#else/#}
+                                    <a href="{#$record['a']#}">{#$record['n']#}</a>
+                                {#/if#}
+                            {#/foreach#}
+                        </div>
+                    </div>
+                    <!-- 任务大厅任务END -->
+                </div>
+            </div>
+        </div>
+
+    <!-- 个人中心END -->
+
+    </div>
+
+<script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/userCenter.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script>
+$(function(){
+    $('.searchTask').click(function(){
+        $(this).parents('form').submit();
+    });
+    var idName = 'myTask';
+    if(idName!='' || idName!='undefined'){
+        $('#'+idName).addClass('active');
+    }
+})
+</script>
+    <!--footer-->
+    {#include file="Index@Common/secondFooter" /#}
+    <!--footer-end-->
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+    <![endif]-->
+</body>
+</html>

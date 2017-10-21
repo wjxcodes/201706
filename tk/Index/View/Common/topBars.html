@@ -1,0 +1,23 @@
+<!--顶部条-->
+<div class="top-bar-wrap clearfix">
+    <div class="top-bar-box w1000">
+        <span class="top-contact">
+
+        </span>
+        <!--未登录-->
+        <span class="top-use topLogin">
+            {#neq name="hideLogin" value="1"#}
+            <a class="tu-login left topLoginButton" href="javaScript:;">登录</a>
+            {#/neq#}
+            <a class="tu-reg left" href="{#:U('User/Index/registerIndex')#}" target="_blank">注册</a>
+        </span>
+        <!--已登录-->
+        <span class="top-use topLoginSuccess" style="display: none">
+            <span class="left">欢迎,</span>
+            <span class="topBarUserName left"></span>
+            <a class="tu-login-out loginOut left" href="javaScript:void (0);" whois="">退出</a>
+            <span class="goToSystem left"></span>
+        </span>
+    </div>
+</div>
+<!--顶部条-end-->

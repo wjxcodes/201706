@@ -1,0 +1,71 @@
+<!--头部-->
+<div class="u-header">
+    <div class="hd-outer clearfix w-main">
+        <div class="left logo"><a href="/" class=""><img src="__PUBLIC__/index/imgs/publ/logo_sub_s.png" alt="题库" title="首页" /></a>
+            <span class="page-title">个人中心</span>
+        </div>
+
+        <!--切换学科-->
+        <div class="left select-subject u-select" id="selSubject"><h4 class="selectBtn"><span>初中物理</span><i class="iconfont">&#xe607;</i></h4>
+            <ul class="selectContent">
+                <li id="1">初中数学</li>
+                <li id="2">初中英语</li>
+                <li id="3">初中语文</li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <ul class="u-quick-nav">
+                <li><a class="root" href="">首页</a></li>
+                <li><a class="root" href="">题库首页</a></li>
+                <li><a class="root" href="">个人主页</a></li>
+                <li class="u-msg-menu">
+                    <a class="root" href="">消息</a><cite class="msg-tips"></cite>
+                    <div class="u-msg-menu-content">
+                        <i class="arrow-top"><em></em></i>
+                        <a href="">标引任务<cite></cite></a>
+                        <a href="">审核任务<cite></cite></a>
+                        <a href="">公式任务<cite></cite></a>
+                    </div>
+                </li>
+                <li class="u-msg-menu">
+                    <a class="root hd-user-photo" href=""><span class="username elli">你好，发到空间该屌丝</span><i class="iconfont">&#xe607;</i><img src="__PUBLIC__/index/imgs/user/photo/user-photo-def.jpg" alt=""/></a>
+                    <div class="u-msg-menu-content">
+                        <i class="arrow-top"><em></em></i>
+                        <a href="">校本试题</a>
+                        <a href="">我的关注</a>
+                        <a href="">帮助中心</a>
+                        <a href="">退出登录</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 切换学科 -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        var selSubject = $("#selSubject");
+        var selTitle = selSubject.find(".selectBtn").find("span");
+        var selContent = selSubject.find(".selectContent");
+        var selItem = selContent.find("li");
+        selTitle.on("click",function(event){
+            var eve = event||window.event;
+            eve.stopPropagation();
+            selContent.show();
+        });
+        selItem.on("click",function(){
+            var e = $(this);
+            var id = e.id;
+            var str = e.html();
+            selTitle.html(str);
+            selContent.hide();
+        })
+        $(document).on("click",function(){
+            selContent.hide();
+        })
+
+    })
+</script>
+<!--头部-end-->

@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#}-用户中心</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/user.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+</head>
+<body>
+<!--头部-->
+{#include file="Index@Common/TplUserHeader" /#}
+<!--头部-end-->
+
+<!-- 个人中心 -->
+<div class="w-main">
+    <!-- 面包屑导航 -->
+    {#include file="IndexCenter/TplCrumbs" /#}
+    <!-- 面包屑导航END -->
+
+    <div class="u-content clearfix">
+        <!-- 左侧导航 -->
+        {#include file="IndexCenter/TplPersonalNav" /#}
+        <div class="u-right-wrap">
+            <div class="u-right">
+                <!-- 我的粉丝 -->
+                <div class="ur-base-panel g-panel content">
+                    <div class="panel-head">
+                        <h3 class="head-name">{#$pageName#}</h3>
+                    </div>
+                    <div class="panel-body">
+                        {#if condition="$result"#}
+                        <ul class="ur-fans-panel-list">
+                            {#volist name='result' id='vo' #}
+                            <li>
+                                <div class="left user-photo-site">
+                                    <a href="" title="{#$vo['Name']#}"><img src="{#$vo['Pic']#}" title="{#$vo['Name']#}头像"/></a>
+                                </div>
+                                <div class="user-info-site">
+                                    <div class="uis-top clearfix">
+                                        <span class="left"><a class="username elli" href="" title="{#$vo['Name']#}">{#$vo['Name']#}</a></span>
+                                        <!--关注状态-->
+                                        {#if condition="$vo['Rel'] eq 1"#}
+                                        <span class="right">
+                                            <a class="g-btn btn-s attention-box unFollowSpace" status="1" href="javascript:;" fid="{#$vo['UID']#}"><i class="iconfont">&#xe61c;</i><cite>相互关注</cite></a>
+                                        </span>
+                                        {#else /#}
+                                        <span class="right">
+                                            <a class="g-btn btn-s attention-box unFollowSpace" status="0" href="javascript:;" fid="{#$vo['UID']#}"><i class="iconfont">-</i><cite>已关注</cite></a>
+                                        </span>
+                                        {#/if#}
+                                    </div>
+                                    <div class="user-id">
+                                        <span class="s-icon"><i class="iconfont">&#xe61e;</i>{#$vo['Status']#}</span>
+                                        {#if condition="$vo['TAuth'] eq 1"#}
+                                        <span class="s-icon"><i class="iconfont">&#xe611;</i>教师认证</span>
+                                        {#/if#}
+                                        <span class="s-icon"><i class="iconfont">&#xe617;</i>{#$vo['Exp']#}</span>
+                                    </div>
+                                    <div class="other-info">
+                                        {#if condition="$vo['School']"#}
+                                        <span class="school">
+                                            {#$vo['School']#}
+                                        </span><br/>
+                                        {#/if#}
+                                        {#if condition="$vo['Grade']"#}
+                                        <span class="subject">
+                                            {#$vo['Grade']#}
+                                        </span>
+                                        {#/if#}
+                                    </div>
+                                </div>
+                            </li>
+                            {#/volist#}
+                        </ul>
+                    </div>
+                    <div class="u-paginator">{#$page#}</div>
+                </div>
+                {#else /#}
+                <div class="no-data-tips">暂无记录...</div>
+                {#/if#}
+            </div>
+        </div>
+    </div>
+    <!-- 个人中心END -->
+
+</div>
+<script type="text/javascript" src="__PUBLIC__/index/js/userCenter.js"></script>
+<script type="text/javascript">
+    var idName='{#$function#}';
+    $(function(){
+        if(idName!='' || idName!='undefined'){
+            $('#'+idName).addClass('active');
+        }
+        $.follow.init();
+    })
+</script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+<script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+<![endif]-->
+{#include file="Index@Common/secondFooter" /#}
+</body>
+</html>

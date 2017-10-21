@@ -1,0 +1,74 @@
+<!--顶部导航-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>教学统计</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta property="qc:admins" content="167741560767461006375" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/index.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link rel="stylesheet" href="__PUBLIC__/index/css/style.css{#$Think.config.WLN_UPDATE_FILE_DATE#}"/>
+	<HEAD>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<TITLE>『{#$Think.config.WLN_WEB_NAME#}管理平台』</TITLE>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/zjadmin/css/style.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" />
+	<script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+	<!--基础文件，分别是jQuery基库和拖拽UI插件-->
+	<script src="__PUBLIC__/plugin/jquery.ui.draggable.js{#$Think.config.WLN_UPDATE_FILE_DATE#}" type="text/javascript"></script>
+	<script src="__PUBLIC__/plugin/testOperation.js{#$Think.config.WLN_UPDATE_FILE_DATE#}" type="text/javascript"></script>
+	<!-- 对话框核心JS文件和对应的CSS文件-->
+	<script src="__PUBLIC__/plugin/alert/jquery.alerts.js{#$Think.config.WLN_UPDATE_FILE_DATE#}" type="text/javascript"></script>
+	<link href="__PUBLIC__/plugin/alert/jquery.alerts.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" type="text/css" media="screen" />
+	<script type="text/javascript" src="__PUBLIC__/plugin/ueditor/ueditor.config.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+	<script type="text/javascript" src="__PUBLIC__/plugin/ueditor/ueditor.all.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+	<script type="text/javascript" src="__PUBLIC__/plugin/editor.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+	<script LANGUAGE="JavaScript">
+//指定当前组模块URL地址 
+var URL = '__URL__';
+var APP     =     '__APP__';
+var PUBLIC = '__PUBLIC__';
+var softdog=0;
+{#if condition="$Think.config.openKeysoft eq 1"#}
+softdog=1;
+{#/if#}
+</script>
+<script type="text/javascript" src="__PUBLIC__/zjadmin/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+</HEAD>
+</head>
+<div class="top-logo-wrap w1000">
+    <a class="top-logo" href="javascript:void(0)">
+        <img src="__PUBLIC__/index/imgs/publ/logo.png" alt="logo"/>
+    </a>
+</div>
+<div class="top-nav-fixed">
+    <div class="top-nav-wrap">
+        <div class="top-nav w1000">
+			<span>
+            <a class="top-nav-item" href="{#:U('Statistics/Index/index')#}">教师列表</a>
+			</span>
+			<span>
+            <a class="top-nav-item" href="{#:U('Statistics/StatisticsB/Teacherzj')#}">教师组卷下载统计</a>
+			</span>
+            <span class="top-nav-item">
+                <a class="tn-link" href="{#:U('Statistics/StatisticsB/studentWorkList')#}">学生做题统计</a>
+            </span>
+            <span class="top-nav-item">
+                <a class="tn-link" href="{#:U('Statistics/StatisticsB/wrongTest')#}">学生错题统计</a>
+            </span>
+			<span class="top-nav-item">
+                <a class="tn-link" href="{#:U('Statistics/StatisticsB/teachercheck')#}">教师批改统计</a>
+            </span>
+			<span class="top-nav-item">
+                <a class="tn-link" href="{#:U('Statistics/StatisticsB/teacherComment')#}">教师评语统计</a>
+            </span>
+			<span class="top-nav-item">
+                <a class="tn-link" href="{#:U('Statistics/StatisticsB/wkvedio')#}">微课(视频)统计</a>
+            </span>
+        </div>
+    </div>
+</div>
+<!--顶部导航-end-->

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>接口测试页面</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div>
+            <h1>接口测试</h1>
+                <table id="paraTable">
+                    <tr  style="background-color:#89d9fd">
+                        <td colspan="2" align="center"><b>固定参数</b></td>
+                    </tr>
+                    <tr>
+                        <td>访问地址：</td>
+                        <td>
+                            <input type="text" name="address" value="AatApi/UnionExam/checkIfHave" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>访问方法：</td>
+                        <td>
+                            <input type="text" name="function" value="shunt"  />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>调用方法：</td>
+                        <td>
+                            <input type="text" name="subFunction" value="<?php echo $subFunction;?>" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>返回数据是否为图片：</td>
+                        <td>
+                            <input type="radio" name="isImg" value="是" /><b>是</b>
+                            <input type="radio" name="isImg" value="否" checked /><b>否</b>
+                        </td>
+                    </tr>
+                    <tr style="background-color:#89d9fd">
+                        <td align="center"><b>动态参数</b></td>
+                        <td align="center"><input type="button" id="addPara" value="添加参数" /></td>
+                    </tr>
+                    <?php foreach($params as $k=>$v): ?>
+                    <tr>
+                        <td>参数键名称：<input type="text" class="subFuncKey" value="<?php echo $k;?>" /></td>
+                        <td>参数键值：<input type="text" class="subFuncVal" value="<?php echo $v;?>" /><input type="button" class="delPara" value="删除" /></td>
+                    </tr>
+                    <?php endforeach;?>
+                </table>
+                
+                    <div>
+                        <input type="submit" id="submit" value=" 确定 "/>
+                        <input type="reset" value=" 重置 " />
+                    </div>
+                
+        </div>
+        <div id="ajaxResult"></div>
+    </body>
+</html>
+
+    <script type="text/javascript" src="/Public/plugin/jquery-1.8.0.min.js?20160712"></script>
+<script type="text/javascript" src="/Public/index/js/wlnBase.js?20160712"></script>
+<script>
+    // 添加参数
+    $("#addPara").click(function(){
+        var file = '<tr><td>参数键名称：<input type="text" class="subFuncKey" /></td><td>参数键值：<input type="text" class="subFuncVal" /><input type="button" class="delPara" value="删除" /></td></tr>';
+        $("#paraTable").append(file);
+    });
+    //删除参数
+    $(document).on('click',".delPara",function(){
+        $(this).parent().parent().remove();
+    });
+    //ajax提交表单
+    $("#submit").click(function(){
+        var submitData={};//提交的数据
+        //submitData["params[]"]=[$("[name='function']").val(),$("[name='subFunction']").val()];//提交的固定参数
+        //处理可选参数
+        var subFuncKey=$(".subFuncKey");
+        var subFuncVal=$(".subFuncVal");
+        var keyArray=[];
+        var valArray=[];
+        var i=0;
+        $(subFuncKey).each(function(){
+           keyArray[i]=$(this).val();
+           i++;
+        })
+        i=0;
+        $(subFuncVal).each(function(){
+           valArray[i]=$(this).val();
+           i++;
+        })
+        for(var i=0;i<keyArray.length;i++){
+            submitData[keyArray[i]]=valArray[i];
+        }
+        //判断是否为图片
+        if($("[name='isImg']").serialize()=='isImg=%E6%98%AF'){
+            var url=U($("[name='address']").val())+'?params%5B%5D='+$("[name='function']").val()+'&params%5B%5D='+$("[name='subFunction']").val();
+            for(var i=0;i<keyArray.length;i++){
+                url+='&'+keyArray[i]+'='+valArray[i];
+            }
+            var img='<img src="'+url+'" />';
+            $("#ajaxResult").html(img);
+        }
+        else{
+//        alert(JSON.stringify(submitData));
+            $.ajax({
+                url:U($("[name='address']").val()),
+                //traditional:true,
+                type:'post',
+                data:submitData,
+                success: function(resultData) {
+                    $("#ajaxResult").html(JSON.stringify(resultData));
+                }
+            });
+        }
+    });
+</script>

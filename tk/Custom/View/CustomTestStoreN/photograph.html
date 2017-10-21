@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#}-用户中心</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/user.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/u-custom.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/u-test.css" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/tips.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/json2.min.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/customTestN.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/uploadify/jquery.uploadify.min.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/imgareaselect/jquery.imgareaselect.pack.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/plugin/uploadify/uploadify.css{#:C(WLN_UPDATE_FILE_DATE)#}" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/plugin/imgareaselect/imgareaselect-animated.css{#:C(WLN_UPDATE_FILE_DATE)#}" />
+    <link href="__PUBLIC__/newAat/css/avatar.css{#:C(WLN_UPDATE_FILE_DATE)#}" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js"></script>
+
+
+</head>
+<body>
+
+<!--头部-->
+{#include file="Index@Common/TplUserHeader" /#}
+<!--头部-end-->
+
+<!-- 个人中心 -->
+<div class="w-main">
+    <!-- 面包屑导航 -->
+    {#include file="User@IndexCenter/TplCrumbs" /#}
+
+    <!-- 面包屑导航END -->
+
+    <div class="u-content clearfix">
+        <!--添加试题-->
+        <div class="build-test-panel content g-panel">
+            <div class="panel-head">
+                <h3 class="head-name">图片拍照上传</h3>
+                <span class="head-handle"><a class="link" href="{#:U('Custom/CustomTestStoreN/customNav')#}">返回</a></span>
+            </div>
+            <div class="panel-body build-test-content">
+                <div class="upload-paizhao-layout clearfix">
+                    <div class="upload-pic-warp left">
+                        <div class="upload-pic-box">
+                            <div class="select-pic f-yahei">
+                                <div id="fileUpload" class="uploadify">
+                                    <a id="fileUpload-button" class="uploadify-btn g-btn"><i class="iconfont">&#xe623;</i>上传图片</a>
+                                </div>
+                                <p class="helper">请上传小于2M的图片，支持：jpg、png、gif格式</p>
+                                <div id="fileUpload-queue" class="uploadify-queue"></div>
+                            </div>
+                            <ul class="upload-pic-list" id="imgTestList">
+                            </ul>
+                            <input type="hidden" id="key" value="{#$key#}"/>
+                            <input type="hidden" id="username" value="{#$username#}"/>
+                        </div>
+                    </div>
+                    <div class="upload-erweima-warp right">
+                        <div class="erweima-warp">
+                            <h5>扫描二维码，拍照上传</h5>
+
+                            <div class="erweima-wrap">
+                                <img src="" alt="扫二维码，拍照上传" class="qrCode"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edit-test-attr-site g-panel">
+                    <div class="panel-head">
+                        <h3 class="head-name">试题属性</h3><a class="link left toggleAttributes" href="javascript:;">隐藏 <i class="iconfont">&#xe607;</i></a>
+                    </div>
+                    <div class="panel-body edit-test-attr-body">
+                        <div class="g-form edit-test-attr-form" action="">
+                            <div class="g-control-group">
+                                <label class="item-title" for="">年级：</label>
+                                <select id="grade" class="w120" name="GradeID">
+                                    <option value="">请选择</option>
+                                </select>
+                                <label class="item-title" for="">题型：</label>
+
+                                <select id="types" class="w120" name="TypesID">
+                                    <option value="">请选择</option>
+                                </select>
+                            </div>
+
+                            <div class="g-control-group">
+                                <label class="item-title" for="">难度：</label>
+                                <span>
+                                    <label class="checked" for="radio1"  title="0.801-0.999"><input name='diff' value='0.801' type="radio" id='radio1'/>容易</label>
+                                    <label for="radio2" title="0.601-0.800"><input  name='diff' value='0.601' type="radio" id='radio2'/>较易</label>
+                                    <label for="radio3" title="0.501-0.600"><input  name='diff' value='0.501' type="radio" id='radio3'/>一般</label>
+                                    <label for="radio4" title="0.301-0.500"><input  name='diff' value='0.301' type="radio" id='radio4'/>较难</label>
+                                    <label for="radio5" title="0.001-0.300"><input  name='diff' value='0.001' type="radio" id='radio5'/>困难</label>
+                                </span>
+
+                            </div>
+
+                            <div class="g-control-group">
+                                <label class="item-title" for="">试卷来源：</label>
+                                <input type="text" name='source' id='source' class='w600'/>
+                            </div>
+
+                            <div class="g-control-group knowledge-select-change-container">
+                                <label class="item-title" for="">知识点：</label>
+                                <select id="knowledge" class="selection bLeft w120">
+                                    <option value="">请选择</option>
+                                </select> 
+                                <a class="g-btn btn-primary btn-m append" >添加</a>
+                            </div>
+                            <div class="g-control-group">
+                                <ul class="lore-context-site knowledge-select-change-container-inputs"></ul>
+                            </div>
+
+                            <div class="g-control-group chapter-select-change-container">
+                                <label class="item-title" for="">章节：</label>
+                                <select id="chapter" class="selection bLeft w120" name="ChapterID">
+                                    <option value="">请选择</option>
+                                </select> 
+                                <a class="g-btn btn-primary btn-m append" >添加</a>
+                            </div>
+                            <div class="g-control-group">
+                                <!--章节容器-->
+                                <ul class="lore-context-site chapter-select-change-container-inputs"></ul>
+                            </div>
+
+                            <div class="g-control-group">
+                                <label class="item-title" for="">备注：</label>
+                                <textarea name="" id="" cols="70" rows="3"></textarea>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="g-controls attr-btn-group">
+                    <a class="g-btn btn-primary btn-l" href="" id='saveImgTest'>立即上传</a>
+                </div>
+
+            </div>
+        </div>
+        <!-- 添加试题END -->
+    </div>
+
+    <!-- 个人中心END -->
+
+</div>
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery.cookie.js"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/wlnBase.js"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/userCenter.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".toggleAttributes").each(function(){
+            var e=$(this);
+            var panelBody = e.closest(".edit-test-attr-site").find(".panel-body");
+            e.click(function(){
+                if(panelBody.is(":visible")){
+                    panelBody.slideUp();
+                    e.html('展开 <i class="iconfont">&#xe607;</i>');
+
+                }else{
+                    panelBody.slideDown();
+                    e.html('收起 <i class="iconfont">&#xe61f;</i>');
+                }
+            });
+        });
+        // $.myTestFav.init();
+        // $.formBeautify.init();
+    })
+    var types = new Object({#$types#});
+
+    $(document).ready(function(){
+        var data = new Object('{#$data#}');
+        var originality = '{#$originality#}';
+        originality = originality?JSON.parse(originality):{'ttID':false};
+        var url = '__URL__';
+        var username = "{#$username#}";
+        var ifImage = true;
+        //因为图片上传不做编辑，所有直接add
+        $.customTestStoreTestAdd.init(data,originality,url,ifImage,'add');
+        $.ImageTest.init(username);
+    });
+</script>
+<!--footer-->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+<script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+<![endif]-->
+{#include file="Index@Common/secondFooter" /#}
+<!--footer-end-->
+
+</body>
+</html>

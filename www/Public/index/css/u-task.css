@@ -1,0 +1,222 @@
+/*!*任务中心*/
+
+/*layout*/
+.arr-l,.arr-r{font-family:"\5b8b\4f53",Helvetica,sans-serif;font-size:0.9em}
+.w1200{max-width:1280px;min-width:980px;padding:0 1em;margin-left:auto;margin-right:auto;transition:width 0.3s}
+@media screen and (max-width:1200px){
+
+/*.w1200{width:1000px}*/}
+.t-base-panel{border:1px solid #EAEAEA;padding:1.8em}
+.t-base-panel .panel-head .head-name{font-size:20px}
+.t-base-panel .panel-head .head-handle{margin-top:0.86em}
+.t-base-panel a.link{display:inline-block;}
+.t-base-panel a.link:hover{color:#e20;text-decoration:underline;}
+/*表格中的试题*/
+.task-base-table .test-body-hd{margin-bottom:0.5em}
+.task-base-table .test-body-hd,.task-base-table .test-body-bd{margin:0 0.5em}
+
+/*表格中的试题END*/
+
+/*加载更多*/
+.bottom-load-more{text-align:center;margin:2em 0}
+.bottom-load-more .g-btn{display:block;padding:0.5em;color:#1774f2}
+
+/*底部操作按钮*/
+.btm-btn-group{text-align:center;padding:1em 0 0}
+.btm-btn-group .g-btn{width:10em;margin:0 0.6em;padding:0.5em 1em}
+
+/*底部操作按钮END*/
+
+/*使用帮助*/
+.t-tips-panel{position:relative;border:1px solid #ffdac1;background-color:#fdf7dc;padding:0.8em 3em;margin-top:1em}
+.t-tips-panel .hide-tips{position:absolute;top:0.86em;right:0.86em;line-height:1;cursor:pointer}
+.t-tips-panel .hide-tips:hover i{color:#e10}
+.t-tips-panel .hide-tips i{font-size:19px;font-weight:100;color:#FF7111}
+.t-tips-panel .panel-context{}
+.t-tips-panel .panel-context{text-indent:2em;font-size:12px;line-height:2;color:#333}
+.t-tips-panel .panel-context .title{text-indent:0}
+
+/*使用帮助END*/
+
+/*任务操作*/
+.t-handle-site{padding:1em 0;text-align:right}
+.t-handle-site .g-btn{margin:0 0.2em}
+.analysis-handle{}
+.analysis-handle .g-btn{padding:0.3em;width:1.2em;height:1.2em;line-height:1.2em;margin:4px 1px;background-color:#e8e9ec;color:#1774f2;font-size:14px}
+
+/*解析任务*/
+.task-base-table .analysis-table{width:100%}
+.task-base-table .g-table .timer{color:#999}
+.task-base-table{background-color:#fff;font-size:13px}
+.task-base-table .g-table th{background-color:#f2f2f2;border-bottom:1px solid #ddd;text-align:center}
+.task-base-table .g-table td{font-size:13px;font-family:Arial,"\5b8b\4f53",Lucida,Verdana,Helvetica,sans-serif}
+
+/*.task-base-table .g-table tr:hover{*/
+
+/*background-color: #eeeeee;*/
+
+/*}*/
+
+/*.task-base-table .g-table tr td:hover{*/
+
+/*background-color: #E2E2E2;*/
+
+/*}*/
+
+/*试题预览*/
+.analysis-table .th1{width:2.5em}
+.analysis-table .th2{min-width:20em}
+.analysis-table .th3{min-width:2.5em}
+.analysis-table .th4{min-width:20em}
+.analysis-table .th5{min-width:5em}
+.analysis-table .th6{min-width:5em}
+
+/*试题去重*/
+.testOverKill-table .th1{width:4em}
+.testOverKill-table .th2{min-width:20em}
+.testOverKill-table .th3{min-width:5em}
+.testOverKill-table .th4{min-width:5em}
+.testOverKill-table .th5{min-width:5em}
+.testOverKill-table .th6{min-width:5em}
+
+/*选择题答案*/
+.ans-is-choice{text-align:center;font-size:16px;font-weight:600}
+
+/*文档上传弹出框*/
+.upload-doc-content{padding:3em 2em}
+.upload-doc-content .g-control-group{margin-bottom:1em}
+.upload-doc-content .g-control-group label{width:6em;margin-right:0.5em;vertical-align:top}
+.upload-doc-content .g-control-group .doc-name-input{max-width:20em}
+
+/*文档上传弹出框END*/
+td.test-item-wrap{padding:0.8em}
+.test-item-wrap .test-body{margin-bottom:1em}
+.test-item-wrap .test-body .test-source{background-color:#eee;padding:0.6em}
+.test-source{font-weight:600;font-size:13px;margin-bottom:0.5em}
+
+/*试题编辑*/
+.editTest-table{}
+.editTest-table .th1{width:2em}
+.editTest-table .th2{width:6em}
+.editTest-table .th3{min-width:10em}
+.editTest-table .th4{width:8em}
+.editTest-table .th5{min-width:10em}
+.editTest-table .th6{min-width:6em}
+.editTest-table .th7{width:3em}
+
+/*试题编辑END*/
+
+/*试题替换*/
+.t-test-replace-content{padding:1.1em;border:1px solid #ddd;margin:1.2em 0}
+.t-test-replace-content .test-item-tit{color:#e10}
+.t-test-handle-content{width:500px;margin:0 auto;padding:1em 0 3em}
+.t-test-handle-content .g-control-group label{vertical-align:top}
+.t-test-handle-content .g-controls .g-btn{width:40px;margin-left:1em}
+
+/*试题替换END*/
+
+/*试题标引*/
+.testIndex-panel{border:none}
+.testIndex-table .th1{width:2em}
+.testIndex-table .th2{width:4em}
+.testIndex-table .th3{width:6em}
+.testIndex-table .th4{width:7em}
+.testIndex-table .th5{width:7em}
+.testIndex-table .th6{width:6em}
+.testIndex-table .th7{width:6em}
+.testIndex-table .th8{min-width:4em}
+.testIndex-table .th9{width:6em}
+
+/*任务详情*/
+
+/*.g-form-aligned .g-control-group label{
+vertical-align: top;
+}*/
+.task-details-table{padding-top:1.5em;padding-bottom:5em}
+.testIndex-content{margin-top:1.5em;border:1px solid #ddd;font-size:13px}
+.TI-edit-site-wrap{float:left;width:100%}
+.TI-edit-site{margin-right:300px;border-right:1px solid #ccc;padding:1em}
+.TI-edit-site .pb-tit,.TI-testAttr .attr-tit{border-bottom:1px solid #ccc;padding:0 0 0.7em}
+.TI-edit-site .pb-tit b,.TI-testAttr .attr-tit b{margin-top:0.25em;line-height:1.2em;font-size:16px;padding-left:0.3em;border-left:2px solid #1774f2}
+.TI-edit-site .editItem-tit{padding:1em 0 0 0.5em}
+.TI-edit-site .test-source-input,.TI-edit-site .textarea{width:90%}
+.tI-func-site{float:right;width:300px;margin-left:-301px;border-left:1px solid #ccc}
+.tI-func-site-inner{padding:1em 0.7em;background-color:#F5F4F4}
+.tI-func-site-inner .TI-testAttr{padding-top:3em}
+.tI-func-site-inner .TI-testAttr .tab-nav{padding:0;width:auto}
+.tI-func-site-inner .TI-testAttr .tab-nav li{cursor:pointer;padding:0.15em 0.5em;margin:0 0.5em 0 0}
+.tI-func-site-inner .TI-testAttr .tab-nav li:hover{color:#448CF1}
+.tI-func-site-inner .TI-testAttr .tab-nav .on,.tI-func-site-inner .TI-testAttr .tab-nav .on:hover{background-color:#448CF1;color:#fff;border-radius:3px}
+.tI-func-site-inner .TI-testAttr:first-child{padding-top:0}
+.TI-testAttr .TA-select{width:280px;padding:0.2em 0.4em}
+.TI-testAttr .attr-content .g-form-stacked label{padding-left:0.5em;font-weight:600}
+.TI-testAttr .attr-content .g-group{margin-top:0.3em;padding-top:0.3em}
+.TI-testAttr .attr-content .lorePointer{position:relative;display:inline-block;font-size:12px;color:#4696f2;padding:0.1em 1.5em 0.1em 0.5em}
+.TI-testAttr .attr-content .lorePointer .del-icon{position:absolute;right:0.2em;top:0;font-size:14px;line-height:1;margin-top:0.15em;margin-left:0.2em;color:#929292;cursor:pointer}
+.TI-testAttr .attr-content .lorePointer .del-icon:hover{color:#333}
+.lorePointer-content{margin-top:0.5em;border-radius:4px;border:1px solid #E0E0E0;background-color:#fff}
+.TG-panel2 .g-control-group{padding-top:2em}
+.TG-panel2 .g-control-group .diff-input{width:70px}
+.TI-save-btn{margin-top:1.5em;padding:0.5em 1em;width:100px}
+
+/*试题标引END*/
+
+/*相似试题*/
+.similarTest-table{margin-top:1.5em;table-layout:fixed}
+
+/*相似试题END*/
+
+/*试题审核*/
+.test-examine-table{margin-top:1.5em;table-layout:fixed}
+.test-examine-table .th1{width:5.2em}
+.test-examine-table .w120{width:120px}
+
+/*试题打分*/
+.TG-grade{padding:0.5em 0 1em 0}
+.TG-grade .tab-nav{padding:0;width:auto}
+.TG-grade .tab-nav li{cursor:pointer;padding:0.15em 0.5em;margin:0 0.5em 0 0}
+.TG-grade .tab-nav li:hover{color:#448CF1}
+.TG-grade .tab-nav .on,.TG-grade .tab-nav .on:hover{background-color:#448CF1;color:#fff;border-radius:3px}
+.TG-grade .g-group{display:inline-block;*display:inline;*zoom:1;width:48%;margin-left:1%}
+.TG-grade .g-group .select{width:100%}
+
+/*校本题库任务*/
+.T-build-test-panel{padding:1.5em}
+.T-build-test-panel .panel-head .head-name{font-size:20px}
+.T-custom-test-panel{border:none;padding:10px 0}
+.T-custom-test-panel .tab-nav{width:600px}
+.T-custom-test-panel .tab-body{margin-top:5px}
+.T-custom-test-panel .search-site{padding-top:8px}
+.T-custom-test-panel .search-site .search-input{width:136px;margin-right:10px}
+.T-custom-test-panel .search-site .g-btn{padding:0.47em 1em;margin-right:10px}
+
+/*高级搜索*/
+.T-search-site{text-align:right;padding:0.8em 0 0}
+.T-search-site select{vertical-align:baseline}
+.T-search-site .date{width:94px}
+.T-search-site .g-btn{padding:0.47em 1em;margin:0 10px}
+
+/*校本题库任务END*/
+
+/*试题审核END*/
+
+/*-------------------dialog---------------------*/
+.change-remark-content{margin:1.5em 1em 1em}
+.change-remark-content .g-control-group label{width:4em;margin-right:0}
+.change-remark-content .textarea{width:25em;height:6em}
+
+/*试题来源*/
+.test-source-content{margin:1.5em 1em 1em}
+.test-source-content .g-control-group label{width:4em;margin-right:0}
+.test-source-content .input{width:27em}
+
+/*-------------------dialog---------------------END*/
+
+/*任务大厅任务*/
+.panel-func-site{padding-top:1.5em}
+.taskHall-filter .w100{width:100px}
+.taskHall-filter select{padding:0.3em 0.6em;vertical-align:middle}
+.taskHall-filter input[type="text"]{padding:0.35em 0.6em;vertical-align:middle}
+.taskHall-filter .g-btn{vertical-align:middle;padding:0.43em 1em}
+
+/*任务大厅任务END*/

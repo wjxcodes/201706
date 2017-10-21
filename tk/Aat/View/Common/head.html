@@ -1,0 +1,48 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit">
+<meta id="_csrf" name="_csrf" content="{#$_csrf#}">
+<title>{#$pageName#} - {#$config.IndexName#}</title>
+<meta name="keywords" content="{#$config.Keyword#}" />
+<meta name="description" content="{#$config.Description#}" />
+<link href="__PUBLIC__/newAat/css/common.css{#:C(WLN_UPDATE_FILE_DATE)#}" rel="stylesheet" type="text/css"/>
+<!--jquery-->
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.11.1.min.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery.cookie.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+<!--模版引擎-->
+<script type="text/javascript" src="__PUBLIC__/plugin/artTemplate-3.0.3.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+<!--jquery-ui-->
+<link type="text/css" href="__PUBLIC__/plugin/jquery-ui/jquery-ui.min.css{#:C(WLN_UPDATE_FILE_DATE)#}" rel="stylesheet"/>
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery-ui/jquery-ui.min.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery.ui.touch-punch.min.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+<!--icheck-->
+<link href="__PUBLIC__/plugin/icheck/minimal/blue.css{#:C(WLN_UPDATE_FILE_DATE)#}" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="__PUBLIC__/plugin/icheck.min.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+<!--slimscroll-->
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery.slimscroll.min.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+<!--placeholder-->
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery.placeholder.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="__PUBLIC__/plugin/png.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+<script>DD_belatedPNG.fix('input,a,img,div,span');</script>
+<![endif]-->
+<script type="text/javascript">
+    //AatCommon类配置文件
+    commonConfig = {
+        urlDepartment:'{#:C(URL_PATHINFO_DEPR)#}',
+        isSub:0,
+        appUrl:'__APP__/',
+        groupName:'{#$Think.const.MODULE_NAME#}',
+        cookiePrefix: '{#:C(WLN_AAT_USER_AUTH_KEY)#}',
+        cookieUserID:'{#:C(WLN_AAT_USER_AUTH_KEY)#}_ID',
+        cookieUsername:'{#:C(WLN_AAT_USER_AUTH_KEY)#}_USER',
+        cookieUserCode:'{#:C(WLN_AAT_USER_AUTH_KEY)#}_CODE',
+        cookieSubjectID:'{#:C(WLN_AAT_USER_AUTH_KEY)#}_SUBJECTID',
+        cookieVersionID:'{#:C(WLN_AAT_USER_AUTH_KEY)#}_VERSIONID',
+        cookieIndexMsg:'{#:C(WLN_AAT_USER_AUTH_KEY)#}_INDEXMSG'
+    };
+    //artTemplate配置开始结束标签避免和Thinkphp模版标签冲突
+    template.config('openTag','{%');
+    template.config('closeTag','%}');
+</script>
+<script type="text/javascript" src="__PUBLIC__/newAat/js/common.js"></script>

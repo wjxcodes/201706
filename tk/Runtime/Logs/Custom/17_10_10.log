@@ -1,0 +1,362 @@
+[ 2017-10-10T08:52:13+08:00 ] 222.134.87.234 /Custom/CustomTestStore/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../tk/Custom/View/Public/bottom.html): failed to open stream: No such file or directory E:\www\www\main\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pagename E:\www\www\tk\Runtime\Cache\Custom\ae294be22791e08a4328128919fffdcd.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-10-10T08:52:13+08:00 ] 222.134.87.234 /Custom/CustomTestStore/getZsdInit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+
+[ 2017-10-10T08:52:14+08:00 ] 222.134.87.234 /Custom/CustomTestStore/getTestList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: width E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 159 行.
+NOTIC: [8] Undefined index: chapter E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 164 行.
+NOTIC: [8] Undefined index: pid E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 165 行.
+NOTIC: [8] Undefined index: abi E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 166 行.
+NOTIC: [8] Undefined index: key E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 167 行.
+NOTIC: [8] Undefined index: time E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 168 行.
+NOTIC: [8] Undefined index: perpage E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 171 行.
+NOTIC: [8] Undefined index: ifInter E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 172 行.
+NOTIC: [8] Undefined index: interLen E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 173 行.
+NOTIC: [8] Undefined variable: lastTime E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 213 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::insertData() should be compatible with Common\Model\BaseModel::insertData($data, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::updateData() should be compatible with Common\Model\BaseModel::updateData($data, $where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::deleteData() should be compatible with Common\Model\BaseModel::deleteData($where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [8] Undefined index: matches E:\www\www\tk\Common\Model\IndexModel.class.php 第 1209 行.
+
+[ 2017-10-10T08:52:17+08:00 ] 222.134.87.234 /Custom/CustomTestStore/getTestList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: width E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 159 行.
+NOTIC: [8] Undefined index: chapter E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 164 行.
+NOTIC: [8] Undefined index: pid E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 165 行.
+NOTIC: [8] Undefined index: abi E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 166 行.
+NOTIC: [8] Undefined index: key E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 167 行.
+NOTIC: [8] Undefined index: time E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 168 行.
+NOTIC: [8] Undefined index: perpage E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 171 行.
+NOTIC: [8] Undefined index: ifInter E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 172 行.
+NOTIC: [8] Undefined index: interLen E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 173 行.
+NOTIC: [8] Undefined variable: lastTime E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 213 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::insertData() should be compatible with Common\Model\BaseModel::insertData($data, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::updateData() should be compatible with Common\Model\BaseModel::updateData($data, $where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::deleteData() should be compatible with Common\Model\BaseModel::deleteData($where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [8] Undefined index: matches E:\www\www\tk\Common\Model\IndexModel.class.php 第 1209 行.
+
+[ 2017-10-10T08:52:17+08:00 ] 222.134.87.234 /Custom/CustomTestStore/getTestList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: width E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 159 行.
+NOTIC: [8] Undefined index: chapter E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 164 行.
+NOTIC: [8] Undefined index: pid E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 165 行.
+NOTIC: [8] Undefined index: abi E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 166 行.
+NOTIC: [8] Undefined index: key E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 167 行.
+NOTIC: [8] Undefined index: time E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 168 行.
+NOTIC: [8] Undefined index: perpage E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 171 行.
+NOTIC: [8] Undefined index: ifInter E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 172 行.
+NOTIC: [8] Undefined index: interLen E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 173 行.
+NOTIC: [8] Undefined variable: lastTime E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 213 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::insertData() should be compatible with Common\Model\BaseModel::insertData($data, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::updateData() should be compatible with Common\Model\BaseModel::updateData($data, $where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::deleteData() should be compatible with Common\Model\BaseModel::deleteData($where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [8] Undefined index: matches E:\www\www\tk\Common\Model\IndexModel.class.php 第 1209 行.
+
+[ 2017-10-10T10:40:02+08:00 ] 222.134.133.242 /Custom/CustomTestStore/customNav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-10T10:48:42+08:00 ] 222.134.133.242 /Custom/CustomTestStore/customNav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-10T10:48:57+08:00 ] 222.134.133.242 /Custom/CustomTestStore/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data E:\www\www\tk\Runtime\Cache\Custom\c878de08cef0d4e157e4d7e883fdc587.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-10T10:48:59+08:00 ] 222.134.133.242 /Custom/CustomTestStore/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 302 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 23 E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1443 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: getAllGrade E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 931 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1205 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1143 行.
+
+[ 2017-10-10T10:49:11+08:00 ] 222.134.133.242 /Custom/CustomTestStore/photograph.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Custom\cd1670e1faacfa6bb2ebb26a16f0d296.php 第 16 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Custom\cd1670e1faacfa6bb2ebb26a16f0d296.php 第 17 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Custom\cd1670e1faacfa6bb2ebb26a16f0d296.php 第 18 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Custom\cd1670e1faacfa6bb2ebb26a16f0d296.php 第 19 行.
+NOTIC: [8] Use of undefined constant WLN_UPDATE_FILE_DATE - assumed 'WLN_UPDATE_FILE_DATE' E:\www\www\tk\Runtime\Cache\Custom\cd1670e1faacfa6bb2ebb26a16f0d296.php 第 20 行.
+NOTIC: [8] Undefined variable: data E:\www\www\tk\Runtime\Cache\Custom\cd1670e1faacfa6bb2ebb26a16f0d296.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-10T10:49:11+08:00 ] 222.134.133.242 /Custom/CustomTestStore/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 302 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 23 E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1443 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: getAllGrade E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 931 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1205 行.
+NOTIC: [8] Undefined variable: gradeID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1143 行.
+
+[ 2017-10-10T10:49:11+08:00 ] 222.134.133.242 /Custom/CustomTestStore/qrCode.html?n=1507603751416&u=zblqzxliuyuzhen
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-10-10T10:49:26+08:00 ] 222.134.133.242 /Custom/CustomTestStore/webImagePoll/n/1507603751416/times/0.4945973565336317.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-10-10T10:49:28+08:00 ] 222.134.133.242 /Custom/CustomTestStore/docList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: status E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 496 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 497 行.
+NOTIC: [8] Undefined index: title E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 503 行.
+NOTIC: [2] array_key_exists(): The first argument should be either a string or an integer E:\www\www\tk\Custom\Model\CustomDocUploadModel.class.php 第 215 行.
+NOTIC: [8] Undefined index: username E:\www\www\tk\Custom\Model\CustomDocUploadModel.class.php 第 221 行.
+NOTIC: [8] Undefined index: subjectid E:\www\www\tk\Custom\Model\CustomDocUploadModel.class.php 第 221 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-10T10:49:31+08:00 ] 222.134.133.242 /Custom/CustomTestStore/docUpload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 582 行.
+NOTIC: [8] Undefined index: sql E:\www\www\tk\Common\Model\LogErrorModel.class.php 第 26 行.
+
+[ 2017-10-10T10:49:47+08:00 ] 222.134.133.242 /Custom/CustomTestStore/docUpload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: id E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 582 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Task\Model\MissionHallRecordsModel.class.php 第 135 行.
+NOTIC: [8] Undefined index: ApplicateUrl E:\www\www\tk\Task\Model\MissionHallRecordsModel.class.php 第 136 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\User\Model\UserExpModel.class.php 第 59 行.
+NOTIC: [2] preg_replace(): No ending delimiter '/' found E:\www\www\tk\Common\Model\ApiDbModel.class.php 第 196 行.
+
+[ 2017-10-10T10:49:48+08:00 ] 222.134.133.242 /Custom/CustomTestStore/docList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: status E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 496 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 497 行.
+NOTIC: [8] Undefined index: title E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 503 行.
+NOTIC: [2] array_key_exists(): The first argument should be either a string or an integer E:\www\www\tk\Custom\Model\CustomDocUploadModel.class.php 第 215 行.
+NOTIC: [8] Undefined index: username E:\www\www\tk\Custom\Model\CustomDocUploadModel.class.php 第 221 行.
+NOTIC: [8] Undefined index: subjectid E:\www\www\tk\Custom\Model\CustomDocUploadModel.class.php 第 221 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+

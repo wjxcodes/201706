@@ -1,0 +1,397 @@
+
+HTML {
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    overflow-y: scroll;
+}
+BODY {
+    margin: 0;
+    padding: 0px;
+}
+a{
+    border:0px;
+}
+:active, *:visited {
+    outline-style: none;
+}
+:link, *:visited, ins {
+    text-decoration: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+audio, video, canvas {
+    display: inline-block;
+}
+DL, DT, DD, UL, OL, LI, H1, H2, H3, H4, H5, H6, PRE, CODE, FORM, FIELDSET, LEGEND, INPUT, BUTTON, SELECT, TEXTAREA, P, BLOCKQUOTE, TH, TD, article, aside, canvas, details, EMBED, figure, figcaption, footer, header, hgroup, MENU, nav, output, RUBY, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+}
+FIELDSET, IFRAME {
+    border: medium none;
+}
+img {
+    border-color: -moz-use-text-color;
+    border-style: none;
+    border-width: 0;
+    vertical-align: middle;
+}
+ADDRESS, CAPTION, CITE, CODE, DFN, EM, TH, VAR, OPTGROUP {
+    font-style: normal;
+    font-weight: normal;
+}
+H1, H2, H3, H4, H5, H6, CODE, KBD, SAMP, TT, SMALL, INPUT, BUTTON, TEXTAREA, SELECT {
+    font-size: 100%;
+}
+ABBR, ACRONYM {
+    border-color: -moz-use-text-color;
+    border-style: none;
+    border-width: 0;
+    font-variant: normal;
+}
+INPUT, BUTTON, TEXTAREA, SELECT, OPTGROUP, OPTION {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+TEXTAREA {
+    overflow: auto;
+    resize: vertical;
+    vertical-align: top;
+}
+OL, UL, MENU {
+    list-style: outside none none;
+}
+caption {
+    text-align: left;
+}
+BLOCKQUOTE::before, BLOCKQUOTE::after, q::before, q::after {
+    content: none;
+}
+input, select, button {
+    vertical-align: middle;
+}
+.fl {
+    display: inline;
+    float: left;
+}
+.fr {
+    display: inline;
+    float: right;
+}
+table th{
+    background: #fff none repeat scroll 0 0;
+}
+/*公共样式结束*/
+
+.box-con{
+    min-height: 500px;
+    padding:10px 0;
+}
+.testpapertitle{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.testpapertitle .tit{
+    color: #333;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 8px;
+    width: 840px;
+}
+.testpapertitle .mintitle {
+    color: #ddd;
+    font-family: "Times New Roman","Hiragino Sans GB",宋体,sans-serif;
+    font-size: 12px;
+}
+.testpapertitle .mintitle span {
+    color: #888;
+    font-family: "微软雅黑";
+    margin:0 5px;
+}
+.testpapertitle .test-comment {
+    margin-top: 10px;
+}
+.testpapertitle .test-comment a {
+    background: #00a0e9 none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    padding: 5px 0;
+    text-align: center;
+    width: 110px;
+}
+.testpapertitle .test-comment a:hover {
+    background: #10aff7;
+}
+.tsetcon-title {
+    background: #e7f5fe;
+    color: #00a0e9;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+.smalltitle{
+    background: #f4f4f4;
+    color: #555;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom:10px;
+    padding: 0 15px;
+}
+.testpaperbody {
+    border: 1px solid #ddd;
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 20px;
+}
+.testpaperbody p span{
+    margin:0 15px;
+}
+.testpaperbody p.tit{
+    margin-bottom: 10px;
+}
+.testpaperbody p {
+    line-height: 28px;
+}
+.testpaperbody:hover{
+    border: 1px solid #4bbfed;
+}
+.testpaperbody .explain{
+    border-top:1px dashed #bdbdbd;
+    margin: 15px 0;
+    padding-top: 15px;
+    line-height: 26px;
+    display: none;
+}
+.testpaperbody .explain th{
+    width: 8%;
+    min-width: 80px;
+    text-align: right;
+    color: #0092ef;
+    vertical-align:top;
+}
+.testpaperbody .explain td{
+    width: 90%;
+}
+.testpaperbody .handle{
+    border-top:1px dashed #bdbdbd;
+    margin: 15px 0;
+    padding-top: 15px;
+}
+.testpaperbody .handle a.explain-btn{
+    background: #0092ef;
+    color: #fff;
+    padding: 5px 20px;
+    float: left;
+}
+.testpaperbody .handle a.explain-btn:hover{
+    background: #0086dc;
+    transition:background 0.2s ease 0s;
+}
+.testpaperbody .handle a.pass{
+    background: #ff7428;
+    color: #fff;
+    padding: 5px 20px;
+}
+.testpaperbody .handle a.pass:hover{
+    background: #ee6215;
+    transition:background 0.2s ease 0s;
+}
+.testpaperbody .handle a{
+    display: inline-block;
+}
+.testpaperbody .handle .shenhe{
+    text-align: center;
+    overflow: hidden;
+}
+.testpaperbody .handle .shenhe .look{
+    color: #0092ef;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.testpaperbody .handle a.nopass{
+    background: #2ab427;
+    color: #fff;
+    padding: 5px 20px;
+    margin-left: 20px;
+}
+.testpaperbody .handle a.nopass:hover{
+    background: #17a414;
+    transition:background 0.2s ease 0s;
+}
+.testpaperbody .handle .result-btn{
+    background: #9f9f9f;
+    color: #fff;
+    padding: 5px 20px;
+}
+.testpaperbody .pass-hide,.testpaperbody .nopass-hide{
+    border-top:1px dashed #bdbdbd;
+    margin: 15px 0;
+    padding-top: 15px;
+    font-size: 12px;
+    display:none;
+}
+.testpaperbody .pass-hide .opinion{
+    border:1px solid #ddd;
+    width: 450px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 6px;
+}
+.testpaperbody a.btn-pass-hide{
+    padding: 8px 20px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.testpaperbody a.hold{
+    background: #0092ef;
+    color: #fff;
+}
+.testpaperbody a.hold:hover{
+    background: #0086dc;
+    transition:background 0.2s ease 0s;
+}
+.testpaperbody a.cancel{
+    background: #e7e7e7;
+    color: #333;
+}
+.testpaperbody a.cancel:hover{
+    background: #dbdbdb;
+    transition:background 0.2s ease 0s;
+}
+.testpaperbody .pass-comment b{
+    color: #0092ef;
+    font-weight: 400;
+    margin-right: 10px;
+}
+.testpaperbody .pass-comment{
+    border-top:1px dashed #bdbdbd;
+    margin: 15px 0;
+    padding-top: 15px;
+    font-size: 12px;
+    display: none;
+}
+.testpaperbody .pass-comment span.revise{
+    display: inline-block;
+    width:80%;
+    line-height: 20px;
+    vertical-align: top;
+}
+.testpaperbody .pass-comment a.revise-btn{
+    color: #0092ef;
+    margin-left: 20px;
+}
+.testpaperbody .pass-hide a.revise-btn:hover{
+    text-decoration: underline;
+}
+
+.testpaperbody .nopass-hide .opinion{
+    border:1px solid #ddd;
+    width: 350px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 6px;
+}
+.testpaperbody .nopass-hide .alternate{
+    display: inline-block;
+    width: 50%;
+    margin-left: 20px;
+    overflow: hidden;
+    vertical-align: top;
+    line-height: 32px;
+}
+.testpaperbody .nopass-hide .alternate a{
+    color:#333;
+    margin-right: 15px;
+    vertical-align: middle;
+    white-space:nowrap;
+}
+.testpaperbody .nopass-hide .choose-btn{
+    height: 32px;
+    margin-left: 54px;
+    margin-top: 10px;
+}
+.testpaperbody .nopass-hide .choose-btn a{
+    display: inline-block;
+}
+
+/*弹出层留言*/
+#sug-box{
+    position: relative;
+    display: none;
+}
+#sug-box .sug-box-bg{
+    background: #000;
+    opacity: 0.2;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+#sug-box .sug-con{
+    background: #fff;
+    width: 500px;
+    height: 220px;
+    z-index: 1000;
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    margin-left: -250px;
+}
+#sug-box .sug-con h4{
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    border:1px solid #ddd;
+    position: relative;
+}
+#sug-box .sug-con h4 .close-btn{
+    position: absolute;
+    right: 15px;
+    font-size: 24px;
+    color:#999;
+}
+#sug-box .sug-con h4 .close-btn:hover{
+    color: #696e78;
+}
+#sug-box .sug-con textarea{
+    width: 420px;
+    height: 70px;
+    margin:20px 20px 30px 30px;
+    padding: 8px;
+}
+#sug-box .sug-con p{
+    text-align: center;
+}
+#sug-box .sug-con .submit-btn{
+    background: #0092ef;
+    padding: 8px 20px;
+    color: #fff;
+    margin-right: 10px;
+}
+#sug-box .sug-con .cancel-btn{
+    background: #e7e7e7;
+    padding: 8px 20px;
+    color: #333;
+}
+
+/* 2015-9-18 后选试题弹框显示 */
+.testContent{
+    padding:5px;
+}
+#sug-box .sug-con .testContent p{
+    text-align: left;
+}
+.testContentTitle{
+    margin-top:10px;
+    height:20px;
+    line-height:20px;
+    border-bottom: 2px solid #ff3300;
+}

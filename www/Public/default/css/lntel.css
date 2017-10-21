@@ -1,0 +1,87 @@
+/* 
+* @description: 智能组卷全局-css 
+* @author demo 
+* @update-整理: (2015-04-16 11:90) 
+*/
+
+/*智能组卷-css*/
+/*试卷生成中*/
+.ico_ddt{background:url(../image/loading.gif) 4px 50% no-repeat;}
+/*开始智能组卷*/
+.znxt{width:130px;overflow:hidden;}
+/*试卷信息标题*/
+.quesresult-title{padding:15px;border:1px solid #cbebff; background-color:#effaff;text-align: center;font-size:16px;}
+.quesresult-title cite{font-style: normal;padding:0 10px;}
+.quesresult-title b{color:#009fe9;}
+/*第三界面*/
+.intelTitle{line-height:50px;height:50px;font-weight:bold;padding-left:20px;}
+
+/*全部选中-btn*/
+#cate_checkall{overflow:hidden;}
+#topapercenter{overflow:hidden;}
+.t_add,.t_remove{cursor:pointer;}
+.t_add:hover,.t_remove:hover{cursor:pointer;color:#999;}
+
+/*选题属性设置*/
+
+/*年级、选题范围-筛选*/
+.gradeList{padding:8px 6px;line-height:24px;}
+.testRound{background-color:#edeef0;line-height:24px;padding:8px 6px}
+.testRound label{color:#00a0e8;}
+
+/*选题中心*/
+#quesnumsetting table td{padding:4px 5px 4px 0;}
+#quesnumsetting table td select{margin-left: 5px;}
+#quesnumsetting span{font-size:16px;border:none;}
+#quesnumsetting span.fs_tit{display:inline-block;width:48px;}
+#quesnumsetting span#totalnum{padding-right:10px}
+#quesnumsetting .t_add{overflow:hidden;line-height:20px;padding:0px 10px;background:url(../image/ico_jj.gif) -2px -3px no-repeat;}
+#quesnumsetting .t_remove{overflow:hidden;line-height:20px;padding:0px 10px;background:url(../image/ico_jj.gif) -27px -3px no-repeat;}
+#quesnumsetting .t_add:hover{background:url(../image/ico_jj.gif) -2px -26px no-repeat;}
+#quesnumsetting .t_remove:hover{background:url(../image/ico_jj.gif) -27px -26px no-repeat;}
+
+/*选择难度*/
+#diff{width:550px;height:200px;padding:30px;}
+
+/*js调用部分-知识点展开*/
+.childkl{cursor:pointer;padding:6px 9px;background:url(../image/ico_J.gif) 4px 50% no-repeat;}
+.childdiv{left:5px;top:20px;width:auto;position:absolute;display:block;vertical-align:top;}
+.childdiv .zz{background:url(../image/ybox_ce_right.png) right repeat-y;padding:0px 25px 0 20px}
+.childdiv .zc{background:url(../image/ybox_ce_left.png) repeat-y;margin-top:25px;}
+.childdiv label{display:block;line-height:22px;background-color:#fff;}
+.childdiv .t{width:100%;height:25px;position:absolute;}
+.childdiv .tr{display:block;position:absolute;right:0px;top:0px;background:url(../image/ybox_top_right.png) top right no-repeat;width:26px;height:25px;}
+.childdiv .tz{display:block;width:auto;margin-left:80px;margin-right:26px;background:url(../image/ybox_top_re.png) repeat-x;height:25px;}
+.childdiv .tl{display:block;position:absolute;left:0px;top:0px;background:url(../image/ybox_top_left.png) top left no-repeat;width:80px;height:25px;}
+.childdiv .b{display:block;width:100%; height:24px;position:absolute}
+.childdiv .br{display:block;position:absolute;right:0px;bottom:0px;background:url(../image/ybox_bot_right.png) no-repeat bottom right;width:26px;height:24px;}
+.childdiv .bz{display:block;margin-left:28px;margin-right:26px;background:url(../image/ybox_bot_re.png) repeat-x bottom;height:24px;}
+.childdiv .bl{display:block;position:absolute;left:0px;bottom:0px;background:url(../image/ybox_bot_left.png) no-repeat bottom left;width:28px;height:24px;}
+
+
+
+/*#rootchoice{display:inline-block;height:20px;color:#000;}
+#rootchoiceicon{display:inline-block;width:8px;height:8px;cursor:pointer;margin-left:1px;background:url(../image/piclist1.gif) -41px -112px no-repeat;}
+#setdefault{display:inline-block;width:10px;height:10px;cursor:pointer;margin-left:5px;background:url(../image/piclist1.gif) -38px -269px no-repeat;}
+#setdefault:hover{background:url(../image/piclist1.gif) -38px -281px no-repeat;}
+*/
+
+/*选择考查范围*/
+.selectRange{margin:10px 0px 0px 15px}
+.selectRange label{margin-right: 10px;}
+.selectRange select{padding: 4px 12px;border:1px solid #ccc;background-color: #F5F5F5;font-size: 14px;}
+/*拖动条*/
+.hk{width: 100%; height: 50px;padding-top:50px;position:relative;}
+.hk .hkbox_nav{width: 100px; height: 50px; float: left; font-weight: bold; font-size: 14px; color: rgb(85, 85, 85); margin-top: -3px;}
+.hk .hkbg{width: 344px; position: relative; height: 50px; float: left; background: url(/Public/default/image/hkbg.jpg) no-repeat;}
+.hk .hkbg .hk_sz{position: absolute; left: 0px; top: -20px; width: 344px;}
+.hk .hkbg .hk_sz span{font-size: 14px; color: rgb(85, 85, 85);}
+.hk .hkbg .hk_sz p{height:25px;overflow: hidden;margin-top: 35px;}
+.hk .hkbg .hk_sz p .scrollnotice{float:left;margin-left:85px;font-size:12px;color:#bbb;margin-top: 4px;}
+.hk .hkbg .hk_sz p .scrollleft{float:left;cursor:pointer;}
+.hk .hkbg .hk_sz p .scrollright{float:right;cursor:pointer;}
+.hk .hkbg .hkline{width: 8px; position: absolute; height: 11px; z-index: 88; background: url(/Public/default/image/hkline.jpg) no-repeat;}
+.hk .hkbg  .hkblock{position: absolute; width: 10px; height: 17px; top: -4px; z-index: 99;}
+.hk .hkbg  .hkbox{width: 62px; height: 30px; text-align: center; line-height: 25px; color: rgb(136, 136, 136); font-size: 14px; position: absolute; top: -35px; left: -22px; z-index: 55; background: url(/Public/default/image/hkbox.jpg) no-repeat;}
+.hk .hkbg .hkbar{position: absolute; left: 0px; top: 0px; width: 344px;height: 10px; z-index: 89; filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity:0;opacity: 0;cursor: pointer;overflow: hidden;}
+.hk .hkbg .hkbar p{height: 10px;margin:0px;padding:0px;}

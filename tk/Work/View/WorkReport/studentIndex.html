@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{#$userID#} - {#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}"/>
+    <meta name="description" content="{#$config.Description#}"/>
+    <link type="text/css" href="__PUBLIC__/default/css/common1.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/default/css/work.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript">
+        var local = "{#:U('WorkReport/studentIndex')#}";
+        var classID='{#$classID#}';
+        var userID='{#$studentID#}';
+    </script>
+</head>
+<body>
+<script type="text/javascript" src="__PUBLIC__/plugin/echarts-plain.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script><!--echarts必须放在body内-->
+<div id="studentDiv" class="homeWorkReportClass">
+    <div id="workBox" class="PublicBox">
+        <div class="classList wLeft">
+            <div class="classTit">班级列表</div>
+            <div class="loadClass">
+                <div class="prev" onselectstart="return false;" oncontextmenu="return false" title="向上滚动">向上移动</div>
+                <div class="bd"></div>
+                <div class="next" onselectstart="return false;" oncontextmenu="return false" title="向下滚动">向下移动</div>
+            </div>
+        </div>
+        <div class="teacher student">
+            <div class="righttop">
+                <div id="categorylocation">
+                    <span class="newPath">当前位置：</span>> 学情评价 > 作业动态学情分析> 个人报告
+                </div>
+            </div>
+            <div id="studentList">
+                <div class="studentTit">学生列表
+                    <div class="message">
+                        提示：灰色姓名是未激活的学生账号
+                    </div>
+                </div>
+                <div class="studentItem"></div>
+            </div>
+            <div class="studentInfo">
+                <div class="studentTit">学生信息</div>
+                <table width="100%" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td width="33%">姓名：<span id="userName">?</span></td>
+                        <td width="33%">性别：<span id="userSex">?</span></td>
+                        <td>电话：<span id="userPhone">?s</span></td>
+                    </tr>
+                    <tr>
+                        <td>班级：<a href="javascript:;" class="back" cid="{#$classID#}" title="返回到班级作业动态学情分析"><span id="userClass">?</span></a></td>
+                        <td>学号：<span id="userOrder">?</span></td>
+                        <td>邮箱：<span id="userEmail">?</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="dataInfo">
+                <div class="infoLeft fl">
+                    <div class="leftTop">考点能力雷达</div>
+                    <div class="leftInfo" id="radarImg"></div>
+                </div>
+                <div class="infoRight fr">
+                    <div class="rightTop">历次作业分数</div>
+                    <div class="rightInfo" id="lineImg"></div>
+                </div>
+            </div>
+          <div class="Publictitle">
+                <h3 class="addTit">考点分析</h3>
+            </div>
+            <div id="zsdInfo" class="klInfo"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery.SuperSlide.2.1.1.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+<script>DD_belatedPNG.fix('a,img,div,span');</script>
+<![endif]-->
+<script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript">
+    $(function(){
+        $.myStudentHomeWork.init();
+        $(window).bind("resize", function () {
+            $.myStudentHomeWork.initDivBoxHeight();
+            $.myStudentHomeWork.classOver(true);
+            if($.myStudentHomeWork.klPolar!=null){
+                $.myStudentHomeWork.klPolar.resize();
+            }
+            if($.myStudentHomeWork.forecastScoreLine!=null){
+                $.myStudentHomeWork.forecastScoreLine.resize();
+            }
+        });
+    });
+    $.myStudentHomeWork={
+        klPolar:null,
+        forecastScoreLine:null,
+        c: $('.homeWorkReportClass'),
+        init:function(){
+            var self = this;
+            self.initDivBoxHeight();
+            //知识点展开操作
+            self.openZsd();
+            self.back();
+            self.changeClass();
+            self.getSingleStudentInfo();
+            self.loadClass();
+            self.classOver(false);
+            $(document).live('selectstart contextmenu',function(){
+                return false;
+            });
+        },
+        initDivBoxHeight:function(){
+            var a = $(window).width();
+            var b = $(window).height();
+            if(a<800) a=800;
+            $("#workBox").height(b).width(a);
+            var e = parseInt(a) - parseInt($('.classList').width()) - 35;
+            if(e<600) e=600;
+            $(".teacher").width(e);
+            var lh=b-$('.classTit').outerHeight(true);
+            $('.loadClass').height(lh);
+            $('.classList').height(b);
+        },
+        //载入班级
+        loadClass:function(){
+            var self = this;
+            $('.loadClass .bd').html($.myCommon.loading());
+            $.post(U('Work/MyClass/getClassList'),{'times':Math.random()},function(data){
+                if($.myCommon.backLogin(data)==false){
+                    $('.loadClass').html('<p style="text-align: center;">班级加载失败</p>');
+                    return false;
+                }
+                var tit='提示信息';
+                if(data['data'][0]=='success'){
+                    var output='<ul>';
+                    var current='';
+                    for(var i in data['data'][1]){
+                        if(classID==data['data'][1][i]['ClassID']){
+                            current=' class="current"';
+                        }else{
+                            current ='';
+                        }
+                        output+='<li'+current+' cid="'+data['data'][1][i]['ClassID']+'" title="'+data['data'][1][i]['ClassName']+'">'+data['data'][1][i]['ClassName']+'</li>';
+                    }
+                    output+='</ul>';
+                    $('.loadClass .bd').html(output);
+                    self.getStudentInfo(userID,classID,1);
+                }else if(data['data'][0]=='add'){
+                    $('.loadClass').html('<p style="text-align: center;">请添加班级</p>');
+                    $.myDialog.normalMsgBox('loadclassmsgdiv',tit,450,'您还未加入任何班级！是否立刻加入？',3);
+                    $('#loadclassmsgdiv .normal_yes').live('click',function(){
+                        location.href=U('MyClass/myClass');
+                    });
+                    return false
+                }
+            });
+        },
+        /**
+         * 班级过多增加点击滚动
+         * @param ifNumChange 班级数目变化引起的班级过载 班级显示高度变化/增加班级/删除班级/解散班级
+         */
+        classOver:function(ifNumChange){
+            if(ifNumChange==true){
+                var ulStr=$('.loadClass .bd .tempWrap').html();
+                $('.loadClass .bd').html(ulStr);
+                $('.loadClass ul').css({'top':0});
+            }
+            //班级数目过载
+            if($('.loadClass ul').height()>$('.loadClass').height()){
+                if($('.prev:visible').length==0) {
+                    $('.prev,.next').slideDown(10);
+                }
+                var lh = $(window).height()-$('.classTit').outerHeight(true)-40;
+
+                //计算班级应显示的个数
+                var num=Math.floor(lh/$('.loadClass ul li').outerHeight());
+                jQuery(".loadClass").slide({mainCell:".bd ul",autoPage:true,type:'slide',effect:"top",autoPlay:false,vis:num,trigger:"click",scroll:num,easing:'swing'});
+            }else{
+                //判断点击条是否显示 显示则隐藏
+                if($('.prev:visible').length>0){
+                    $('.prev,.next').slideUp(10);
+                    $('.loadClass .bd').html('<ul>'+$('.loadClass ul').html()+'</ul>');
+                }
+            }
+        },
+        //返回
+        back:function(){
+            var c=this.c;
+            c.on('click','.back',function(){
+                var cid=$(this).attr('cid');
+                location.href=U('WorkReport/classIndex?&cid='+cid);
+            })
+        },
+        //展开事件绑定
+        openZsd:function(){
+            var c=this.c;
+            c.on('click','#zsdInfo li',function(){
+                $(this).find('.icoZd_01').toggleClass('icoZd_02');
+                var id = $(this).attr('klid');
+                if($(this).find('.icoZd_01').hasClass('icoZd_02')){
+                    $('.sub'+id).slideDown(500);
+                }else{
+                    $('.sub'+id).slideUp(500);
+                }
+            });
+        },
+        //更换班级
+        changeClass:function(){
+            var c=this.c;
+            c.on('click','.loadClass li',function(){
+                location.href = U('WorkReport/classIndex?cid='+$(this).attr('cid'));
+            });
+        },
+        //生成能力雷达
+        klRadar:function(data) {
+            var c=this.c;
+            if(this.klPolar){
+                //this.klPolar.dispose();
+                this.klPolar=null;
+            }
+            if(!data.series.length || !data.indicator.length){
+                c.find('#radarImg').html('<span class="noData">暂无考点能力值数据</span>');
+                return false;
+            }
+            $('#radarImg').html('').removeAttr('_echarts_instance_');
+            this.klPolar= echarts.init(document.getElementById('radarImg'));
+            this.klPolar.showLoading({
+                text: '正在努力的读取数据中...'   //loading话术
+            });
+            var option = {
+                tooltip : {
+                    trigger: 'axis'
+                },
+                legend: {
+                    x : 'center',
+                    selectedMode : true,
+                    data:['最近第1次','最近第2次','最近第3次']
+                },
+                toolbox: {
+                    show : true,
+                    feature : {
+                        saveAsImage : {show: true}
+                    }
+                },
+                calculable : true,
+                polar : [
+                    {
+                        indicator : data.indicator,
+                        radius : 70
+                    }
+                ],
+                series : [
+                    {
+                        name: '知识点掌握情况',
+                        type: 'radar',
+                        itemStyle: {
+                            normal: {
+                                areaStyle: {
+                                    type: 'default'
+                                }
+                            }
+                        },
+                        data : data.series
+                    }
+                ]
+            };
+            this.klPolar.setOption(option,true);
+        },
+        //生成折线图
+        scoreLine:function (data){
+            var c=this.c;
+            if(this.forecastScoreLine){
+                //this.forecastScoreLine.dispose();
+                this.forecastScoreLine=null;
+            }
+            if(data==''){
+                c.find('#lineImg').html('<span class="noData">该学生还没有做过作业</span>');
+                return false;
+            }
+            $('#lineImg').html('').removeAttr('_echarts_instance_');
+            this.forecastScoreLine= echarts.init(document.getElementById('lineImg'));
+            this.forecastScoreLine.showLoading({
+                text: '正在努力的读取数据中...'   //loading话术
+            });
+            var option = {
+                toolbox: {
+                    show: true,
+                    feature: {
+                        saveAsImage: true
+                    }
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                xAxis: [
+                    {
+                        type: 'category',
+                        boundaryGap: false,
+                        data: data.xAxis
+                    }
+                ],
+                yAxis: [
+                    {
+                        type: 'value',
+                        axisLabel: {
+                            formatter: '{value} 分'
+                        },
+                        splitArea: {show: true}
+                    }
+                ],
+                series: [
+                    {
+                        name: '作业分数',
+                        type: 'line',
+                        data: data.series
+                    }
+                ]
+            };
+            this.forecastScoreLine.setOption(option,true);
+        },
+        //处理知识
+        setKnowledge:function(data){
+            var self=this;
+            if(data) {
+                var str = "";
+                str += '<ul class="klList">';
+                str += '<li class="title"><div class="zsdBt fl">考点</div><div title="掌握的不错，还需继续努力！" class="startBox fl">能力评估</div><div class="startBox fl">正确/总量</div><div class="startBox fl">正确率</div></li>';
+                for (var i in data['klList']) {
+                    var temp = data['klList'][i];
+                    str += '<li klid="' + temp.KlID + '">';
+                    str += '<div class="zsdBt fl"><a class="icoZd fl ';
+                    if (temp.sub=='' || temp.sub==null || temp.sub==undefined) {
+                        str += 'icoZd_03';
+                    } else {
+                        str += 'icoZd_01';
+                    }
+                    str += '"></a>' + temp.KlName + '</div>';
+                    str += '<div class="startBox fl">';
+                    str += self.star(temp.rightAmount, temp.allAmount);
+                    str += '</div>';
+                    str += '<div class="rightBox fl"><div class="cenBox">' + temp.rightAmount + '/' + temp.allAmount
+                            + '</div></div>';
+                    str += '<div class="rightBox fl">' + temp.correctRate + '%</div>';
+                    str += '</li>';
+                    str += '<ul style="display:none;" class="sub' + temp.KlID + '">';
+                    for (var j in temp.sub) {
+                        var temp2 = temp.sub[j];
+                        str += '<li class="kl klLf" klid="' + temp2.KlID + '">';
+                        str += '<div class="zsdBt fl"><a class="icoZd icoZd_03 fl"></a>' + temp2.KlName + '</div>';
+                        str += '<div class="startBox fl">';
+                        str += self.star(temp2.rightAmount, temp2.allAmount);
+                        str += '</div>';
+                        str += '<div class="rightBox fl"><div class="cenBox">' + temp2.rightAmount + '/' + temp2.allAmount + '</div></div>';
+                        str += '<div class="rightBox fl">' + temp2.correctRate + '</div>';
+                        str += '</li>';
+                    }
+                    str += '</ul>';
+                }
+                $('#zsdInfo').html(str);
+                return false;
+            }
+            $('#zsdInfo').html('<p style="text-align:center;padding:15px 0px;color:#ccc;">获取知识点失败,请重试!</p>');
+        },
+        //获取学生个人报告
+        getStudentInfo:function(uid,classID,ifFirst){
+            if(lock){
+                return false;
+            }
+            var self=this;
+            //显示学科及属性
+            $('#zsdInfo,#radarImg,#lineImg').html($.myCommon.loading());
+            if(ifFirst){
+                $('.studentItem').html($.myCommon.loading());
+            }
+            lock='studentIndexData';
+            $.post(U('WorkReport/studentIndexData'),{'uid':uid,'cid':classID,'ifFirst':ifFirst},function(e){
+                lock='';
+                if($.myCommon.backLogin(e)==false){
+                    $('#zsdInfo').html('<p style="padding:15px 0px;margin:0px;text-align: center">加载失败!刷新网页试试吧!</p>');
+                    return false;
+                }
+                if(e.status){
+                    self.klRadar(e.data.radarInfo);//雷达图
+                    self.scoreLine(e.data.lineInfo);//折线图
+                    self.setKnowledge(e.data.knowledge);
+                    self.setStudentInfo(e.data.studentInfo);
+                    if(ifFirst){
+                        self.setStudentList(e.data.studentList);
+                    }
+                }
+            });
+            return true;
+        },
+        star:function(right,all){
+            //小星星显示函数
+            var starStr = '', title = '', class01 = 'start_03', class02 = 'start_03', class03 = 'start_03', class04 = 'start_03', class05 = 'start_03';
+            if (!all || all == 0) {//E
+                title = '知识点还没有测试，请进行测试！';
+            } else {
+                var rate = right / all * 100;
+                if(rate==0){
+                    title = '知识点还没有掌握，多加努力！';
+                }else if (rate < 60) {//E
+                    title = '知识点还没有掌握，多加努力！';
+                    class01 = 'start_01';
+                } else if (rate < 70) {//D
+                    title = '知识点还没有掌握，还需努力！';
+                    class01 = class02 = 'start_01';
+                } else if (rate < 80) {
+                    title = '知识点掌握的一般，还需努力！';
+                    class01 = class02 = class03 = 'start_01';
+                } else if (rate < 90) {
+                    title = '知识点掌握的不错，还需努力！';
+                    class01 = class02 = class03 = class04 = 'start_01';
+                } else {
+                    title = '知识点掌握的不错，继续努力！';
+                    class01 = class02 = class03 = class04 = class05 = 'start_01';
+                }
+            }
+            starStr = '<div class="start" title="'+title+'">'+
+            '<span class="'+class01+'"></span>'+
+            '<span class="'+class02+'"></span>'+
+            '<span class="'+class03+'"></span>'+
+            '<span class="'+class04+'"></span>'+
+            '<span class="'+class05+'"></span>'+
+            '</div>';
+            return starStr;
+        },
+        //设置学生信息
+        setStudentInfo:function(studentInfo){
+            if(studentInfo) {
+                $('#userName').text(studentInfo.name);
+                $('#userSex').text(studentInfo.sex);
+                $('#userPhone').text(studentInfo.phone ? studentInfo.phone : '暂无');
+                $('#userClass').text($('.loadClass li.current').text());
+                $('#userOrder').text(studentInfo.order);
+                $('#userEmail').text(studentInfo.email ? studentInfo.email : '暂无');
+            }
+        },
+        //加载班级学生
+        setStudentList:function(studentList){
+            if(studentList) {
+                var str = '';
+                str += '<ul>';
+                for (var i in studentList) {
+                    str += '<li uid="' + studentList[i]['UserID'] + '" title="' + studentList[i]['UserName'] +
+                            '" class="';
+                    if (studentList[i]['RealName']) {
+                        str += 'click ';
+                    }
+                    if(studentList[i]['UserID']==userID){
+                        str += 'hover ';
+                    }
+                    str += '">';
+                    if (studentList[i]['RealName']) {
+                        str += studentList[i]['RealName'] + '(' + studentList[i]['OrderNum'] + ')';
+                    } else {
+                        str += studentList[i]['OrderNum'] + '(未激活)';
+                    }
+                    str += '</li>';
+                }
+                str += '</ul>';
+                $('.studentItem').html(str);
+                return false;
+            }
+            $('.studentItem').html('<p style="text-align:center;">获取班级学生失败!</p>');
+        },
+        //获取单个学生信息
+        getSingleStudentInfo:function(){
+            var self=this;
+            $('#studentList li.click').live('click',function(){
+                var uid=$(this).attr('uid');
+                userID=uid;
+                if(self.getStudentInfo(uid,classID,0)) {
+                    $('#studentList li.click').removeClass('hover');
+                    $(this).addClass('hover');
+                }
+            });
+        }
+    }
+</script>
+{#include file="Public/bottom"/#}
+</body>
+</html>

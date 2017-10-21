@@ -1,0 +1,25 @@
+<TABLE class="list" cellpadding="5" cellspacing="0" border="1">
+<tr><td height="5" colspan="3" class="topTd" ></td></tr>
+<TR>
+    <TD class="tRight" style="width:100px">试题预览：</TD>
+    <TD class="tLeft" colspan="2"><div style="height:200px;width:430px;overflow:auto;">
+    <p>【题文】{#$testData.Test|default='无</p>'#}
+    </div></TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:100px">公式信息：</TD>
+    <TD class="tLeft" colspan="2">
+        <div style="height:200px;width:430px;overflow:auto;">
+            {#if condition="$len==0"#}
+                <div style='width:100%; margin-top:80px;text-align:center;color:red;'>该题未包含可编辑的公式</div>
+            {#else/#}
+                {#for start="0" end="$len"#}
+                    <div style='width:400px;height:80px;margin-bottom:5px;'>【公式{#$i+1#}】<textarea style='width:400px;height:50px;margin-bottom:5px;'>{#$testData['Equation'][$i]|default='无信息'#}</textarea>
+                    </div>
+                {#/for#}
+            {#/if#}
+        </div>
+    </TD>
+</TR>
+<tr><td height="5" colspan="3" class="bottomTd" ></td></tr>
+</TABLE>

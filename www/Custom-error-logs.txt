@@ -1,0 +1,2 @@
+2017-09-19 17:15:18 致命的运行时错误(E_ERROR) Call to undefined method SphinxClient::SetSelect() E:\web\www\tk\Common\Model\IndexModel.class.php 741 
+2017-09-19 17:15:25 致命的运行时错误(E_ERROR) Call to undefined method SphinxClient::SetSelect() E:\web\www\tk\Common\Model\IndexModel.class.php 741 

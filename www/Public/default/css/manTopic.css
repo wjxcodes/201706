@@ -1,0 +1,99 @@
+/* 
+* @description: 手动组卷左侧知识点分类样式 
+* @author: name 
+* @update: demo (2015-04-16 10:20) 
+*/
+
+/*教材版本类型下拉选择*/
+#curcategory{position:relative;cursor:pointer;display:inline-block;}
+#curcategory #othercategories{position:absolute;width:130px;left:0;border:1px solid #333;background:#efefef;padding:0 5px;padding-bottom:5px;}
+#curcategory #othercategories a{text-decoration:none;color:#333;display:block;padding-top:4px;font-weight:normal;display:inline-block;height:18px;line-height:18px;overflow:hidden;}
+#curcategory #othercategories a:hover{text-decoration:underline;color:#f00;}
+#main #leftdiv #categorymore{display:inline-block;width:10px;height:10px;margin-left:2px;background:url(../image/piclist1.gif) 0px -40px no-repeat;}
+#main #leftdiv #categoryremenu{position:absolute;top:4px;right:4px;}
+
+/*章节选题*/
+
+/*课后推荐习题选项*/
+#main #rightdiv #ability{margin:0px 6px;position:relative;border:#ddd solid 1px;border-top:none;background:#FFF;z-index:99;padding:10px 10px;}
+#main #rightdiv #ability .filterbox_li{background:url(../image/fgx_xx.jpg) repeat-x bottom;padding:2px 0px;}
+#main #rightdiv #ability a{color:#005aa0;font-size:14px}
+
+/*试卷出题*/
+
+/* 试卷出题导航 */
+div#papernav{position:relative;}
+div#papernav div#barbg{background:#3399ff;border-bottom:1px solid #000;width:100%;height:25px;}
+div#papernav div#bartitle{width:100%;position:absolute;left:0;top:4px;height:22px;line-height:20px;overflow:hidden;}
+div#papernav .nav{display:inline-block;height:20px;margin:0 3px;padding:0 5px;border:1px solid #000;border-bottom:2px solid #000;background:#D8E8F8;}
+div#papernav .nav_current{display:inline-block;height:20px;margin:0 3px;padding:0 5px;border:1px solid #000;cursor:pointer;background:#ffffff;border-bottom:2px solid #fff;cursor:default;}
+div#papernav a.papericon{display:inline-block;width:13px;height:14px;margin-right:3px;background:url(../image/piclist2.gif) -155px -197px no-repeat;}
+div#papernav a.paperclose{display:inline-block;width:10px;height:10px;margin-left:5px;background:url(../image/piclist2.gif) -155px -183px no-repeat;cursor:pointer;}
+div#papernav span#paperlisthandler{font-weight:bold;color:#234D76;margin-left:15px;padding-right:10px;}
+div#papernav span#paperlisthandler a#paperlisticon{display:inline-block;width:16px;height:14px;margin-right:3px;background:url(../image/piclist2.gif) -155px -166px no-repeat;}
+
+/*容器*/
+div#switchbox{position:relative;width:100%;height:100%;overflow-x:hidden;overflow-y:scroll;}
+
+/* 试卷出题分类筛选 */
+div#paperlist_top div#paperchoice{width:100%;}
+
+/*按钮*/
+div#paperlistbox a.button{display:inline-block;margin:3px;padding:3px;font-size:14px;text-decoration:none;color:#005AA0;}
+div#paperlistbox a.button:hover{display:inline-block;margin:3px;padding:3px;background:#00A0E9;cursor:pointer;color:#fff;font-size:14px;}
+div#paperlistbox a.button_current{display:inline-block;margin:3px;padding:3px;background:#00A0E9;color:#fff;font-size:14px;cursor:default;text-decoration:none;}
+div#paperlistbox a.noclick{display:inline-block;margin:3px;padding:3px;font-size:14px;text-decoration:none;color:#005AA0;}
+
+/*试卷排序-btn*/
+.doc_tr{border-bottom:1px solid #ededed;line-height:26px}
+.doc_tr:hover{background-color:#f4f4f4;}
+
+/*筛选结果*/
+div#list_px div#paperlistinfo{position:absolute;right:5px;top:9px;text-align:center;z-index:100;color:#999;}
+
+/*试卷预览*/
+.paperview{color:#005AA0;}
+div#paperlistbox a.paperview{text-decoration:none;}
+div#paperlistbox a.paperview:hover{text-decoration:underline;color:#f00;}
+
+/*文档容器*/
+div.questablebox{position:relative;}
+div.questablebox table.questable{width:100%;overflow:hidden}
+div.questablebox table.questable col.odd{background-color:#fff;}
+div.questablebox table.questable col.even{background-color:#fff;}
+div.questablebox table.questable th.oddth{font-size:14px;color:#000;font-weight:bold;background:#f7f7f7;}
+div.questablebox table.questable th.eventh{font-size:14px;color:#000;font-weight:bold;background:#f7f7f7;}
+div.questablebox table.questable td,div.questablebox table.questable th{padding:6px 5px;}
+div.questablebox table.questable td.quesline{background:#8BAEDD;padding:0;height:1px;}
+div.questablebox table.questable td.queshanlder{cursor:default;}
+div.questablebox table.questable td.quescontent{width:100%;display:none;position:relative;border:0;}
+
+/*试卷出题 end*/
+
+/*关键词选题*/
+div#searchbox div#searchborder{top:0;left:0;margin:0px 6px;text-align:left;position:relative;background:#fff;padding:5px 10px;color:#555;padding-bottom:8px;border:#ddd solid 1px;border-bottom:none;}
+div.searchcondition{background:url(../image/fgx_xx.jpg) repeat-x bottom;padding-bottom:5px;padding-top:5px;padding-left:3px;}
+div.searchcondition span{font-weight:normal;margin-right:5px}
+a#searchicon{display:inline-block;margin-left:3px;width:24px;height:25px;font-weight:bolder;background:url(../image/piclist2.gif) -181px -166px no-repeat;}
+input#keyword{border:none;font-size:14px;height:30px;width:248px;color:#555;background:transparent;background:url(../image/bg_ss.gif) no-repeat;overflow:hidden;padding-left:35px;line-height:30px;}
+
+/*搜索词提示*/
+div#suggestbox{position:absolute;border:1px solid #1E57B5;background:#EFF6F8;width:345px;height:auto;}
+a.wordlist{display:block;font-family:'宋体';text-decoration:none;cursor:pointer;height:25px;line-height:25px;font-size:14px;font-weight:400;padding-left:5px;}
+a.wordlist_current{background:#00a0ea;color:#fff;font-weight:700;}
+
+/*搜索提示结束*/
+a.singleword{display:inline-block;padding-right:10px;padding-bottom:10px;font-size:16px;font-weight:bold;font-family:'微软雅黑';cursor:pointer;text-decoration:none;}
+a.singleword:hover{color:#f00;font-weight:bold;}
+a.delhostory{color:#f00;text-decoration:none;cursor:pointer;}
+a.delhostory:hover{color:#000;text-decoration:underline;}
+a#searchsubmit{display:inline-block;background:url(../image/bg_ss.gif) no-repeat right top;width:75px;height:27px;line-height:27px;text-align:center;margin-left:5px;color:#fff;font-size:14px;cursor:pointer;}
+a#searchsubmit:hover{color:#efefef;cursor:pointer;}
+div#searchresult{position:relative;z-index:1;}
+
+/*搜索结果*/
+div#searchresult{position:relative;z-index:1;}
+div#searchresult a#keywordtext{font-weight:bold;color:#f00;}
+#searchresult #queslistbox{background-color:#fff;border:10px solid #efefef;padding-top:5px;}
+
+/*关键词选题 end*/

@@ -1,0 +1,30 @@
+{#if condition='count($list) eq 0'#}
+        <div class="data-empty" style="height:350px;"></div>
+{#else/#}
+<table class="tt-bd-list-inner" width='100%'>
+    <thead><th><span>用户名</span></th><th><span>申请次数</span></th><th><span>首次申请时间</span></th></thead>
+    <tbody>
+        {#foreach name='list' item='rs'#}
+            <tr><td>{#:formatString('hiddenUserName',$rs['UserName'])#}</td>
+                <td>{#if condition="$rs['count'] lt 1 "#}1{#else /#}{#$rs.count#}{#/if#}</td>
+                <td>{#$rs.AddTime|date="Y-m-d H:i:s",####}</td></tr>
+        {#/foreach#}
+        {#if condition='count($page) gt 1'#}
+            <tr><td colspan="3">
+                 <div class="page-wrap">
+                       <div class="page-box" id='pagtion'>
+                            {#foreach name='page' item='data'#}
+                                {#if condition='$data.c eq "c"'#}
+                                    <a class='current' href="{#$data.a#}">{#$data.n#}</a>
+                                {#else/#}
+                                    <a href="{#$data.a#}">{#$data.n#}</a>
+                                {#/if#}
+                            {#/foreach#}
+                       </div>
+                 </div>
+             </td>
+             </tr>
+         {#/if#}
+     {#/if#}
+    </tbody>
+</table>

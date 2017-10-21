@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>《教材帮》《一遍过》海量样书等你拿！ - 智慧云题库云平台</title>
+<meta name="keywords" content="{#$config.Keyword#}">
+<meta name="description" content="{#$config.Description#}">
+<meta content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=320,maximum-scale=1.1,user-scalable=no,minimal-ui"/>
+<meta name="aplus-terminal" content="1">
+<meta name="apple-mobile-web-app-title" content="申请开通">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script>
+    var local= "{#:U('Feedback/applyF')#}"; //初始化变量
+    </script>
+<style type="text/css">
+/*reset*/
+* {
+    margin: 0;
+    padding: 0
+}
+a {
+    text-decoration: none
+}
+em {
+    font-style: normal;
+    text-align:center
+}
+body {
+    font-size: 12px
+}
+img {
+    border: none
+}
+input, select, a {
+    outline: none
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse
+}
+.none {
+    display: none
+}
+.bdc {
+    border: 1px solid #ccc
+}
+.bdRed {
+    border: 1px solid #e00!important
+}
+.c {
+    text-align: center
+}
+input[type="text"]:focus {
+    border: 1px solid #00a0e9
+}
+/*layout*/
+.m-form-wrap {
+    font-size: 12px;
+    color: #333;
+    padding: 0 3px;
+    width: 314px;
+    margin: 0 auto
+}
+.sqsy_nr_box {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    font-size: 12px;
+    line-height: 2em
+}
+.sqsy_nr_box td {
+    padding-top: 8px;
+    white-space: nowrap
+}
+.sqsy_nr_box td.wrap {
+    padding-top: 3px;
+    white-space: normal
+}
+.sqsy_nr_box td.radio {
+    padding: 6px 10px
+}
+.sqsy_nr_box td.radio label {
+    display: inline-block
+}
+.formTb {
+    margin: 10px
+}
+.unameTips {
+    padding-top: 6px
+}
+.sqsy_nr_box .ipTips, .unameTips {
+    display: block;
+    line-height: 1.5em;
+    color: #E95800;
+    margin-top: 6px
+}
+.sqsy_nr_box .wbk01 {
+    border: #CCC solid 1px;
+    height: 30px;
+    line-height: 30px;
+    width: 280px
+}
+.sqsy_nr_box .errormsg {
+    display: inline-block;
+    color: #d00;
+    margin-left: 10px;
+    padding-left: 16px;
+    background: #fff url(/Public/index/images/zuJuan/perAttn.png) 0 6px no-repeat;
+    background-size: 12px 12px
+}
+.sqsy_nr_box .fCcc {
+    color: #ccc;
+    text-decoration: none;
+    margin-right: -10px
+}
+.sqsy_nr_box .addstu_downexcel {
+    color: #00A0E9
+}
+#submit01 {
+    background-color: #00a0e9;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 1px;
+    border: none;
+    width: 270px;
+    height: 36px;
+    color: #fff
+}
+#submit01:active {
+    background-color: #0197dc
+}
+.valid-code {
+    position: relative
+}
+.valid-code img {
+    vertical-align: top;
+    width: 80px;
+    height: 32px
+}
+.change-validcode {
+    font-size: 14px;
+    color: #999;
+    margin-left: 3px
+}
+select.select_area, select.school {
+    margin-right: 4px;
+    width: 92px;
+    line-height: 30px;
+    height: 30px;
+    border: #CCC solid 1px;
+    margin-top: 5px
+}
+.wln-tips{
+    color:#d00;
+    margin:0 10px;
+}
+.timer-wrap {
+    padding: 0 30px
+}
+.timer {
+    color: #008BED;
+    padding: 5px 20px;
+    font-size: 13px
+}
+.timer span {
+    font-weight: 600;
+    margin: 0 2px
+}
+</style>
+</head>
+<body>
+<div class="m-form-wrap"> 
+  <!-- 开通流程-申请试用 --> 
+  <script>
+            $(document).ready(function () {
+                    var formValid={
+                        companyChecked:true,
+                        userNameChecked:true,
+                        phoneChecked:true,
+                        emailChecked:true,
+                        show:function(dom){
+                            dom.parent().find(".errormsg").show();
+                            dom.removeClass("bdc").addClass("bdRed");
+                        },
+                        hide:function(dom){
+                            dom.parent().find(".errormsg").hide();
+                            dom.removeClass("bdRed").addClass("bdc");
+                        },
+                        checkCompany:function(){
+                            $('#id-company-input').focusin(function(){
+                                if($(this).val().indexOf('请输入您的机构名或者学校名称')!=-1) $(this).val('');
+                            }).focusout(function(){
+                                if($(this).val()=='') {
+                                    $(this).val('请输入您的机构名或者学校名称');
+                                }else if(!($(this).val().replace(/[ ]/g, "").match(/^[\（\(a-zA-Z\u4e00-\u9fa5\)\）\-&.。‘']{2,45}$/))){
+                                    formValid.show($(this));
+                                    formValid.companyChecked=false;
+                                }else{
+                                    formValid.hide($(this));
+                                    formValid.companyChecked=true;
+                                }
+                            });
+                        },
+                        checkUserName:function(){
+                            $('#id-contact-input').focusin(function(){
+                                if($(this).val().indexOf('请输入您的姓名')!=-1) $(this).val('');
+                            }).focusout(function(){
+                                if($(this).val()==''){
+                                    $(this).val('请输入您的姓名');
+                                }else if(!($(this).val().replace(/[ ]/g, "").match(/^[\u4E00-\u9FA5]{2,6}$/))){
+                                    formValid.show($(this));
+                                    formValid.userNameChecked=false;
+                                }else{
+                                    formValid.hide($(this));
+                                    formValid.userNameChecked=true;
+                                }
+                            });
+                        },
+                        checkPhone:function(){
+                            $('#id-phone-input').focusin(function(){
+                                if($(this).val().indexOf('请输入您的手机号')!=-1){
+                                    $(this).val('');
+                                }else if($(this).val()==''){
+                                    $(this).val('请输入您的手机号');
+                                }
+                            }).focusout(function(){
+                                if($(this).val()==''){
+                                    $(this).val('请输入您的手机号');
+                                }else if(!($(this).val().replace(/[ ]/g, "").match(/^0?1[3|4|5|7|8][0-9]\d{8}$/))){
+                                    formValid.show($(this));
+                                    formValid.phoneChecked=false;
+                                }else{
+                                    formValid.hide($(this));
+                                    formValid.phoneChecked=true;
+                                }
+                            });
+                        },
+                        checkEmail:function(){
+                            $('#id-email-input').focusin(function(){
+                                if($(this).val().indexOf('请输入您的邮箱')!=-1){
+                                    $(this).val('');
+                                }else if($(this).val()==''){
+                                    $(this).val('请输入您的邮箱');
+                                }
+                            }).focusout(function(){
+                                if($(this).val()=='') {
+                                    $(this).val('请输入您的邮箱');
+                                    formValid.hide($(this));//email可以不填写
+                                }else if(!($(this).val().replace(/[ ]/g, "").match(/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/))){
+                                    formValid.show($(this));
+                                    formValid.emailChecked=false;
+                                }else{
+                                    formValid.hide($(this));
+                                    formValid.emailChecked=true;
+                                }
+                            });
+                        },
+                        checkAddr:function(){
+                            $('#id-address-input').focusin(function(){
+                                if($(this).val().indexOf('请输入您的详细地址')!=-1) {
+                                    $(this).val('');
+                                }
+                                else if($(this).val()==''){
+                                    $(this).val('请输入您的详细地址');
+                                }
+                            }).focusout(function(){
+                                if($(this).val()=='') $(this).val('请输入您的详细地址');
+                            });
+                        },
+                        selectArea:function(){
+                            var output;
+                            $('.select_area').live('change', function () {
+                                $(this).nextAll("select").remove();
+                                var tt = $(this);
+                                if (tt.val() == '') return;
+                                change(tt,tt.val());
+                            });
+                            //select框change事件
+                            function change(tt,id){
+                                $.get(U('Index/getArea?id='+id+'&times='+Math.random()) , function (msg) {
+                                    output = '';
+                                    var data=msg['data'];
+                                    if (data[0]=='area') {
+                                        output += '<option value="">请选择地区</option>';
+                                        for (datan in data[1]) {
+                                            output += '<option value="' + data[1][datan]['AreaID'] + '">' + data[1][datan]['AreaName'] + '</option>';
+                                        }
+                                        tt.after('<select style="color:#666;" class="select_area">' + output + '</select>');
+                                    }else{
+                                        output += '<option value="">请选择学校</option>';
+                                        for (datan in data[1]) {
+                                            output += '<option value="' + data[1][datan]['AreaID'] + '">' + data[1][datan]['AreaName'] + '</option>';
+                                        }
+                                        tt.after('<select style="color:#666;" class="school">' + output + '</select>');
+                                        // 学校名自动填写
+                                        $(".school").change(function () {
+                                            var schoolName ;
+                                            if($('.school').find("option:selected").text().replace('请选择学校', "")){
+                                                schoolName = $('.school').find("option:selected").text();
+                                            }
+                                            $('#id-company-input').val(schoolName);
+                                            formValid.hide($('#id-company-input'));
+                                            formValid.companyChecked=true;
+                                        });
+                                    }
+                                }, 'json');
+                            }
+                        },
+                        chooseOpenType:function(){
+                            $('input[name="usetype"]').click(function(){
+                                var type = $('input[name="usetype"]:checked').val();
+                                if(type == 'personal'||'recvbook'){
+                                    $('.uip').hide();
+                                    $('.uname').hide();
+                                }
+                                if(type == 'ip'){
+                                    $.get(U('Index/getIP') , function (data) {
+                                        $('#ip').val(data.data);
+                                    });
+                                    $('.uip').show();
+                                    $('.uname').hide();
+                                }
+                                if(type == 'name'){
+                                    $('.uip').hide();$('.uname').show();
+                                }
+                            });
+                            $(".ip").blur(function(){
+                                if (!$(this).val().replace(/[ ]/g, "").match(/^((25[0-5]|2[0-4]\d|[01]?\d\d?)($|(?!\.$)\.)){4}$/)) {
+                                    $(this).removeClass("bdc").addClass("bdRed");
+                                    $(this).parent().find(".errormsg").show();
+                                }
+                            });
+                            $('.addstu_downexcel').live('click',function(){
+                                location.href=U('Index/excelUser');
+                            });
+                        },
+                        captcha:function(){
+                            $("#id-code-input").focus(function () {
+                                $(".myDisplay").hide();
+                                $("#submit01").removeAttr('disabled');
+                            });
+                        },
+                        keepData:function(){
+                            //显示提交失败前的值
+                            $.get(U('Index/getInfo'),function(data){
+                                if(data){
+                                    //载入input
+                                    if(data.data.school){//学校名
+                                        $("#id-company-input").val(data.data.school);
+                                    }
+                                    if(data.data.userName){//联系人
+                                        $("#id-contact-input").val(data.data.userName);
+                                    }
+                                    if(data.data.phone){//电话
+                                        $("#id-phone-input").val(data.data.phone);
+                                    }
+                                    if(data.data.email) {
+                                        $("#id-email-input").val(data.data.email);//邮箱
+                                    }
+                                    if(data.data.address) {
+                                        $("#id-address-input").val(data.data.address);//地址
+                                    }
+                                }
+                            });
+                        },
+                        onSubmit:function(){
+                            var self=this;
+                            $("#submit01").click(function() {
+                                if($('.select_area').last().val()==''){
+                                    formValid.show($('.select_area'));
+                                    return false;
+                                }
+                                var province = $('#sf').find("option:selected").text().replace('请选择省份', "");
+                                $("#province").val(province);
+                                var city = $('#sf').next().find("option:selected").text().replace('请选择地区', "");
+                                $("#city").val(city);
+                                if($('#sf').next().next().attr('class')=='select_area'){
+                                    var country = $('#sf').next().next().find("option:selected").text().replace('请选择地区', "");
+                                    $("#country").val(country);
+                                }
+
+                                if (!self.companyChecked || $('#id-company-input').val().indexOf('请输入您的机构名或者学校名称')!=-1) {
+                                    $("#id-company-input").focus();
+                                    formValid.show($('#id-company-input'));
+                                    return false;
+                                }
+
+                                if (!self.userNameChecked || $('#id-contact-input').val().indexOf('请输入您的姓名')!=-1) {
+                                    $("#id-contact-input").focus();
+                                    formValid.show($('#id-contact-input'));
+                                    return false;
+                                }
+                                if (!self.phoneChecked || $('#id-phone-input').val().indexOf('请输入您的手机号')!=-1) {
+                                    $("#id-phone-input").focus();
+                                    formValid.show($('#id-phone-input'));
+                                    return false;
+                                }
+                                if($('#usename').is(':checked')){
+                                    if($('#uploads').val()==''){
+                                        alert('请上传教师名单');
+                                        $('#uploads').focus();
+                                        return false;
+                                    }
+                                }
+                                var captcha = $("#id-code-input").val();
+                                var subject=$('#select_subject').val();
+                                if(!subject){
+                                    formValid.show($('#select_subject'));
+                                    return false;
+                                }else{
+                                    formValid.hide($('#select_subject'));
+                                }
+                                var section=$('#select_section').val();
+                                if(!section){
+                                    formValid.show($('#select_section'));
+                                    return false;
+                                }else{
+                                    formValid.hide($('#select_section'));
+                                }
+                                var edition=$('#select_edition').val();
+                                if(!edition){
+                                    formValid.show($('#select_edition'));
+                                    return false;
+                                }else{
+                                    formValid.hide($('#select_edition'));
+                                }
+                                if (!captcha) {
+                                    $(".myDisplay").show().html("请填写验证码");
+                                    $("#id-code-input").removeClass("bdc").addClass("bdRed");
+                                    return false;
+                                }else{
+                                    $.post(U('Feedback/applyF'),{'verify':captcha,'m':Math.random()},function(e) {
+                                        if (e.data == "verify") {
+                                            $("#id-code-input").removeClass("bdc").addClass("bdRed");
+                                            $(".myDisplay").show().html('验证码错误');
+                                            return false;
+                                        } else{
+                                            $(".myDisplay").hide();
+                                            //如果邮箱和详细地址为空过滤掉
+                                            if($("#id-address-input").val().indexOf('请输入您的详细地址')!=-1){
+                                                $("#id-address-input").val('');
+                                            }
+                                            $("#form").submit();
+                                        }
+                                    });
+                                };
+                            })
+                        },
+                        init:function(){
+                            var self=this;
+                            $("input[type='text']").css({'paddingLeft':'5px'});
+                            self.checkCompany();
+                            self.checkUserName();
+                            self.checkPhone();
+                            self.checkEmail();
+                            self.checkAddr();
+                            self.selectArea();
+                            self.chooseOpenType();
+                            self.captcha();
+                            self.keepData();
+                            self.onSubmit();
+                        }
+                    }
+                    formValid.init();
+                }             ;
+                SPT="请选择您所教的科目";SCT="请选择您所教的学段";SAT="请选择您需要的版本";ShowT=1;PCAD="语文$必修1,人教版,苏教版,粤教版|必修2,人教版,苏教版,粤教版|必修3,人教版,苏教版,粤教版|必修4,人教版,苏教版,粤教版|必修5,人教版,苏教版,粤教版|中国古代诗歌散文欣赏,人教版#数学$必修1,人教A版,人教B版,北师大版,苏教版|必修2,人教A版,人教B版,北师大版,苏教版|必修3,人教A版,人教B版,北师大版,苏教版|必修4,人教A版,人教B版,北师大版,苏教版|必修5,人教A版,人教B版,北师大版,苏教版|选修1-1,人教A版,人教B版,北师大版,苏教版|选修2-1,人教A版,人教B版,北师大版,苏教版|选修1-2,人教A版,人教B版,北师大版,苏教版|选修2-2,人教A版,人教B版,北师大版,苏教版|选修2-3,人教A版,人教B版,北师大版,苏教版#英语$必修1,人教版,外研版,译林牛津版,北师版|必修2,人教版,外研版,译林牛津版,北师版|必修3,人教版,外研版,译林牛津版,北师版|必修4,人教版,外研版,译林牛津版,北师版|必修5,人教版,外研版,译林牛津版,北师版|选修6,人教版,外研版,译林牛津版,北师版|选修7,人教版,外研版,译林牛津版,北师版|选修8,人教版,外研版,译林牛津版,北师版#物理$必修1,人教版,粤教版,鲁科版,沪科版,教科版|必修2,人教版,粤教版,鲁科版,沪科版,教科版|选修3-1,人教版,粤教版,鲁科版,沪科版,教科版|选修3-2,人教版,粤教版,鲁科版,沪科版,教科版|选修3-4,人教版|选修3-5,人教版#化学$必修1,人教版,苏教版,鲁科版|必修2,人教版,苏教版,鲁科版|选修4,人教版,苏教版,鲁科版|选修3,人教版,鲁教版|选修5,人教版,鲁教版#生物$必修1,人教版,苏教版|必修2,人教版,苏教版|必修3,人教版,苏教版|选修1,人教版|选修3,人教版#政治$必修1,人教版|必修2,人教版|必修3,人教版|必修4,人教版#历史$必修1,人教版,岳麓版,人民版|必修2,人教版,岳麓版,人民版|必修3,人教版,岳麓版,人民版|选修1,人教版|选修4,人教版#地理$必修1,人教版,鲁科版,湘教版,中图版|必修2,人教版,鲁科版,湘教版,中图版|必修3,人教版,鲁科版,湘教版,中图版|选修5,人教版|选修6,人教版";
+if (ShowT) PCAD = SPT + "$" + SCT + "," + SAT + "#" + PCAD;
+PCAArea = [];
+PCAP = [];
+PCAC = [];
+PCAA = [];
+PCAN = PCAD.split("#");
+for (i = 0; i < PCAN.length; i++) {
+    PCAA[i] = [];
+    TArea = PCAN[i].split("$")[1].split("|");
+    for (j = 0; j < TArea.length; j++) {
+        PCAA[i][j] = TArea[j].split(",");
+        if (PCAA[i][j].length == 1) PCAA[i][j][1] = SAT;
+        TArea[j] = TArea[j].split(",")[0]
+    }
+    PCAArea[i] = PCAN[i].split("$")[0] + "," + TArea.join(",");
+    PCAP[i] = PCAArea[i].split(",")[0];
+    PCAC[i] = PCAArea[i].split(',')
+}
+function PCAS() {
+    this.SelP = document.getElementsByName(arguments[0])[0];
+    this.SelC = document.getElementsByName(arguments[1])[0];
+    this.SelA = document.getElementsByName(arguments[2])[0];
+    this.DefP = this.SelA ? arguments[3] : arguments[2];
+    this.DefC = this.SelA ? arguments[4] : arguments[3];
+    this.DefA = this.SelA ? arguments[5] : arguments[4];
+    this.SelP.PCA = this;
+    this.SelC.PCA = this;
+    this.SelP.onchange = function() {
+        PCAS.SetC(this.PCA)
+    };
+    if (this.SelA) this.SelC.onchange = function() {
+        PCAS.SetA(this.PCA)
+    };
+    PCAS.SetP(this)
+};
+PCAS.SetP = function(PCA) {
+    for (i = 0; i < PCAP.length; i++) {
+        PCAPT = PCAPV = PCAP[i];
+        if (PCAPT == SPT) PCAPV = "";
+        PCA.SelP.options.add(new Option(PCAPT, PCAPV));
+        if (PCA.DefP == PCAPV) PCA.SelP[i].selected = true
+    }
+    PCAS.SetC(PCA)
+};
+PCAS.SetC = function(PCA) {
+    PI = PCA.SelP.selectedIndex;
+    PCA.SelC.length = 0;
+    if (PCA.SelP.value && ShowT) {
+        PCA.SelC.options.add(new Option(SCT, ""))
+    }
+    for (i = 1; i < PCAC[PI].length; i++) {
+        PCACT = PCACV = PCAC[PI][i];
+        if (PCACT == SCT) PCACV = "";
+        PCA.SelC.options.add(new Option(PCACT, PCACV));
+        if (PCA.DefC == PCACV) PCA.SelC[PCA.SelP.value && ShowT ? i: i - 1].selected = true
+    }
+    if (PCA.SelA) PCAS.SetA(PCA)
+};
+PCAS.SetA = function(PCA) {
+    PI = PCA.SelP.selectedIndex;
+    CI = PCA.SelC.selectedIndex;
+    PCA.SelA.length = 0;
+    if (PCA.SelC.value == "" && ShowT) {
+        PCA.SelA.options.add(new Option(SAT, ""));
+        return
+    }
+    if (ShowT) {
+        PCA.SelA.options.add(new Option(SAT, ""));
+        CI -= 1
+    }
+    for (i = 1; i < PCAA[PI][CI].length; i++) {
+        PCAAT = PCAAV = PCAA[PI][CI][i];
+        if (PCAAT == SAT) PCAAV = "";
+        PCA.SelA.options.add(new Option(PCAAT, PCAAV));
+        if (PCA.DefA == PCAAV) PCA.SelA[ShowT ? i: i - 1].selected = true
+    }
+}
+        </script>
+  <div class="nr_box sqsy_nr_box">
+    <form action="{#:U('Feedback/applyF')#}" id="form" method="post" enctype="multipart/form-data" autocomplete="off">
+      <input type="hidden" name="province" id="province" />
+      <input type="hidden" name="city" id="city" />
+      <input type="hidden" name="country" id="country" />
+      <table class="formTb">
+        <tbody>
+          <tr>
+            <td class="wrap" width="200"><select id="sf" class="select_area" style="color:#666;" check='Require' warning="省份不能为空">
+                <option value="">选择省份</option>
+                
+                                    {#volist name="areaArray" id="sub"#}
+                                    
+                <option value="{#$sub.AreaID#}">{#$sub.AreaName#}</option>
+                
+                                    {#/volist#}
+                                
+              </select>
+              <s class="fCcc" style="color:#ccc;">*</s> <br>
+              <em class="errormsg" style="display:none;">您还没有选择具体地址！</em></td>
+          </tr>
+          <tr>
+            <td><input id="id-company-input" name="school" type="text" value="请输入您的机构名或者学校名称" class="wbk01" style="color:#666;"/>
+              <s class="fCcc">*</s><br>
+              <em class="errormsg" style="display:none;">学校名为2-25个汉字或字母</em></td>
+          </tr>
+          <tr>
+            <td><input id="id-contact-input" name="username" type="text" value="请输入您的姓名" class="wbk01" style="color:#666;"/>
+              <s class="fCcc">*</s><br>
+              <em class="errormsg" style="display:none;">联系人为2-6个汉字</em></td>
+          </tr>
+          <tr>
+            <td><input id="id-phone-input" name="phone" type="text" value="请输入您的手机号" class="wbk01" style="color:#666;"/>
+              <s class="fCcc">*</s><br>
+              <em class="errormsg" style="display:none;">请输入有效的11位手机号码</em></td>
+          </tr>
+          <tr>
+            <td><select class="wbk01" style="color:#666; width:287px" name="select_subject" id="select_subject">
+              </select>
+              <s class="fCcc" style="color:#ccc;">*</s> <br>
+              <em class="errormsg" style="display:none;">您还没有选择科目</em></td>
+          </tr>
+          <tr>
+            <td><select class="wbk01" style="color:#666; width:287px" name="select_section" id="select_section">
+              </select>
+              <s class="fCcc" style="color:#ccc;">*</s> <br>
+              <em class="errormsg" style="display:none;">您还没有选择学段</em></td>
+          </tr>
+          <tr>
+            <td><select class="wbk01" style="color:#666; width:287px" name="select_edition" id="select_edition">
+              </select>
+              <s class="fCcc" style="color:#ccc;">*</s> <br>
+              <em class="errormsg" style="display:none;">您还没有选择版本</em></td>
+          </tr>
+
+          <tr>
+            <td><input id="id-address-input" type="text" value="请输入您的详细地址" name="address" class="wbk01 address" style="color:#666;"/></td>
+          </tr>
+          <tr>
+            <td class="wrap radio" align="left" style="display:none">开通方式：
+              <label for="recvbook">
+                <input  type="radio" name="usetype" id="recvbook" value="recvbook" checked />
+                送书</label>
+              <label for="personal">
+                <input  type="radio" name="usetype" id="personal" value="personal"/>
+                个人开通</label>
+              <label for="useip">
+                <input  type="radio" name="usetype" id="useip" value="ip"/>
+                公网IP</label>
+              <label for="usename">
+                <input  type="radio" name="usetype" id="usename" value="name"/>
+                教师名单开通</label></td>
+          </tr>
+          <tr>
+            <td class="uip wrap" style="display:none;"><input type="text" id="ip" name="ip" value="" class="wbk01 ip" />
+              <s class="fCcc" style="color:#fff;">*</s><em class="errormsg" style="display:none;">请填写正确的IP地址</em> <span class="ipTips">请核对您的公网IP是否正确，开通后所有在此公网IP内的用户均可使用我们的系统，如不确定请上传名单</span></td>
+            <td class="uname wrap" style="display:none;"><input class="file-btn" TYPE="file" name="userinfo" id="uploads"/>
+              <div id="queues" class="none"></div>
+              <span class="unameTips">请按下面模板格式，上传小于1M后缀名为 .xls  .xlsx的文件，审核通过后，我们将直接为您上传的名单开通账号</span>
+              <div><b>参考模板：</b><span class="addstu_downexcel">点此下载excel模板</span></div>
+              <input type="hidden" name="teachexcel" id="teachexcel" /></td>
+          </tr>
+          <tr>
+            <td class="valid-code"><input style="width:80px;color:#666;" name="verify" type="text" id="id-code-input" class="wbk01"/>
+              <img src="{#:U('Index/Index/verify')#}" height="28" width="60"/> <a href="javascript:;" class="change-validcode">换一张</a><br>
+              <em class="myDisplay errormsg" style="display:none;">验证码错误</em></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="wln-tips">特别提醒：请老师们认真填写以上内容，以确保我们的赠书能够准确送达到您的手中。</div>
+      <div class="timer-wrap"><em class="timer"></em></div>
+      <div class="c">
+        <input type="button" id="submit01" value="提交申请" />
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery.cookie.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/wlnBase.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="tex       /javascript">
+        new PCAS('select_subject', 'select_section'     'select_edition');
+    </script>
+</html>

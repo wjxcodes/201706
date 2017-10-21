@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="expires" CONTENT="0">
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <title>智慧云题库云平台</title>
+    <meta content="题库" name="keywords">
+    <meta content="题库" name="description">
+    <link rel="stylesheet" href="__PUBLIC__/default/css/mobileUpload.css{#$Think.config.WLN_UPDATE_FILE_DATE#}">
+    <script src="__PUBLIC__/plugin/exif.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script src="__PUBLIC__/plugin/compressUploadImage.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+</head>
+<body>
+<div class="custom-header">
+    <!-- header -->
+    <span class="logo"><img src="" alt="题库"></span>
+    <span class="tit">上传试题</span>
+</div>
+<!-- header -->
+<!-- 上传照片site -->
+<div class="submit-pic-wrap">
+    <canvas id="canvas" style="display: none;"></canvas>
+    <input name="camera" id="cameraInput" type="file" accept="image/*" capture="camera" value="" style="display: none;" />
+    <!-- 照片预览-上传按钮 -->
+
+    <!-- 图片居中 -->
+    <div class="valigh-wrap border-show">
+        <a id="camera" class="valign-center" style="height:220px;">
+            <span id="loading" class="loading loadRound" style="display: none;"><b class="loader"></b></span>
+            <img id="image" style="display: none;"/>
+        </a>
+    </div>
+    <div id="fileInfo" class="pic-info-box" style="display: none;">
+        <h4>文件：<span id="filename"></span></h4>
+        <div class="pic-info">
+            <div class="info-box">
+                <p>压缩前： <em id="fileOriginSize"></em></p>
+                <p>压缩后： <em id="fileNewSize"></em></p>
+            </div>
+            <a id="uploadAgain" href="javascript:" class="select-btn" style="display: none;">重选</a>
+        </div>
+    </div>
+    <!-- 图片居中-end -->
+    <!-- 使用帮助 -->
+    <div class="sp-tips wrap">
+        <div class="sp-tips-container">
+            提示：<br>拍照时尽量选择光线较好（或开启闪光灯）
+            <br>大于1M的图片自动压缩，需要3-5s等待
+        </div>
+    </div>
+    <!-- 按钮 -->
+    <div id="uploadDiv" class="footer-handle">
+        <input id="upload" type="button" class="sp-btn unable" value="上传">
+    </div>
+    <div id="progressDiv" class="footer-handle" style="display: none;">
+        <div class="sp-btn-wrap">
+            <input id="progressValue" type="button" class="sp-btn" value="0 %">
+            <span id="progress" class="sending-progress"></span>
+        </div>
+    </div>
+    <!-- 按钮-end-->
+</div>
+<!-- 上传照片site-end -->
+<footer class="footer wrap">
+    <div class="tel">客服电话：<a href="tel:0371-55555555">0371-55555555</a><span class="time">（周一至周五09:00-17:00）</span></div>
+    <div class="msg">官方微信：<span>题库</span></div>
+    <div class="weibo">官方微博：<a href="http://weibo.com/tk">@题库</a></div>
+    <div class="copyright">&copy; 2017 智慧云题库云平台 All rights reserved</div>
+</footer>
+<script>
+    window.onload = function(){
+        var compressUploadImage = window.compressUploadImage;
+        var imagePreview = document.getElementById('image'),
+                uploadDiv = document.getElementById('uploadDiv'),
+                uploadButton = document.getElementById('upload'),
+                uploadAgainButton = document.getElementById('uploadAgain'),
+                fileInfo = document.getElementById('fileInfo'),
+                filename = document.getElementById('filename'),
+                fileOriginSize = document.getElementById('fileOriginSize'),
+                fileNewSize = document.getElementById('fileNewSize'),
+                loading = document.getElementById('loading'),
+                progressDiv = document.getElementById('progressDiv'),
+                no = compressUploadImage.getUrlParam('n'),
+                nextNo = parseInt(no) + 1,
+                username = compressUploadImage.getUrlParam('u'),
+                baseUrl = '{#:U("Custom/CustomTestStore/mobile")#}',
+                nextUrl = baseUrl+'?u='+username+'&n='+nextNo;
+        compressUploadImage.setParam('cameraInput','canvas',1280,0.7,baseUrl);
+        compressUploadImage.compressApply();
+        compressUploadImage.onCompressComplete =function(e){
+        //预览
+        fileInfo.style.display = 'block';//图片信息显示
+        fileOriginSize.innerHTML = e.originSize;
+        filename.innerHTML = e.filename;
+        if(e.gt1M==1){
+            fileNewSize.innerHTML = e.newSize;
+        }else{
+            fileNewSize.innerHTML = '未压缩';
+        }
+        imagePreview.style.display = 'inline-block';
+        imagePreview.setAttribute('src', compressUploadImage.imageBase64);
+        uploadButton.setAttribute('class','sp-btn able');//上传按钮可以点击
+        uploadButton.value = '上传';
+        uploadAgainButton.style.display = 'block';//重新上传现实
+        loading.style.display = 'none';
+    };
+
+    var compressImageStart = function(){
+        //检测如果是上传成功状态，提示扫描二维码重新上传
+//        if(uploadButton.getAttribute('class').indexOf(' done')!==-1){
+//            alert('扫描页面二维码继续上传');return false;
+//        }
+        document.getElementById('cameraInput').click();
+        loading.style.display = 'block';
+    };
+    compressUploadImage.onUploadProgress = function(e){
+        if (e.lengthComputable) {
+            uploadDiv.style.display = 'none';
+            progressDiv.style.display = 'block';
+            var percentComplete = Math.round(e.loaded * 100 / e.total).toString() + '%';
+            document.getElementById('progressValue').setAttribute('value',percentComplete);
+            document.getElementById('progress').style.width = percentComplete;
+        }else{
+            document.getElementById('progressValue').setAttribute('value','正在上传中');
+        }
+    };
+    compressUploadImage.onUploadError = function(e){
+        uploadDiv.style.display = 'block';
+        progressDiv.style.display = 'none';
+        uploadButton.value = '上传出错，点击重试';
+        uploadButton.setAttribute('class','sp-btn error');
+    };
+    compressUploadImage.onUploadComplete =function(ee){
+        var e = JSON.parse(ee.target.response);
+        uploadDiv.style.display = 'block';
+        progressDiv.style.display = 'none';
+        if(e.status==1){
+            uploadButton.value = '上传完成';
+            uploadButton.setAttribute('class','sp-btn done');
+            if (confirm('继续上传？')) {
+                location.href = nextUrl;
+            }
+        }else{//出错
+            uploadButton.value = e.data;
+            uploadButton.setAttribute('class','sp-btn error');
+        }
+    };
+    //下面绑定事件
+    //绑定添加图片
+    document.getElementById('camera').onclick = function(){
+        compressImageStart();
+    };
+    //绑定上传按钮
+    uploadButton.addEventListener('click',function(e){
+        var buttonClass = this.getAttribute('class');
+        if(buttonClass.indexOf(' done')!==-1){//上传成功
+            if (confirm('继续上传？')) {
+                location.href = nextUrl;
+            }
+            return false;
+        }
+        if(buttonClass.indexOf(' unable')!==-1){//没有添加图片
+            alert('请先添加图片');return false;
+        }
+        compressUploadImage.uploadApply([
+            {name:'u',value:'{#$username#}'},
+            {name:'token',value:'{#$token#}'},
+            {name:'n',value:no}
+        ]);
+    },false);
+    //绑定重新上传
+    uploadAgainButton.onclick = function(){
+        compressImageStart();
+    };
+};
+
+</script>
+</body>
+</html>

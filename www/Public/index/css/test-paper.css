@@ -1,0 +1,48 @@
+/*试卷预览*/
+.testPaper-content .TD-test-panel{border:1px solid #eee;margin-bottom:8px;}
+.testPaper-content .TD-test-panel:hover{border-color:#4B88E6;}
+
+/*试题操作*/
+.testPaper-content .TD-test-panel .TD-footer{background-color:#f4f4f4;padding:15px;}
+
+/*试卷预览-END*/
+.TD-test-panel .TD-body i,.TD-test-panel .TD-body em{font-style:italic;}
+.TD-test-content{padding-top:25px;}
+.TD-test-content .show-ans-site{text-align:center;margin-bottom:30px;}
+.TD-test-panel{border:1px solid #ddd;margin-bottom:20px}
+.TD-test-panel .TD-head{background-color:#e5f2ff;padding:10px 15px;}
+.TD-test-panel .TD-body{padding:10px;}
+.TD-test-panel .TD-footer{background-color:#f6f6f6;padding:15px 15px 13px;}
+.TD-test-panel .TD-footer .btn-group .g-btn{margin-right:10px;}
+.TD-test-panel .TD-footer .test-attr-site{margin-top:3px;}
+.TD-test-panel .TD-footer .test-attr-site .test-attr{margin-right:5px;}
+
+/*查看解析*/
+.showTestAns{padding:0.6em 2em;}
+
+/*查看解析END*/
+
+/*相似试题*/
+.similarTest-func .link{margin-left:10px;}
+.similarTest-func .helper{color:#999;}
+.similarTest-func .bright{color:#F3642C;}
+.similarTest-func .link:hover{color:#e10;}
+
+/*相似试题END*/
+
+/* 试题反馈 */
+.TD-comment-panel{margin:0 80px;}
+.TD-comment-panel .ct-textarea textarea{width:718px;vertical-align:text-top;}
+.TD-comment-panel .form-ctrl-item-tit{display:inline-block;width:5em;text-align:right;}
+.TD-comment-panel .ct-score{padding:10px 8px 0 72px;}
+.TD-comment-panel .ct-score .g-btn{}
+.TD-comment-panel .g-form{width:800px;margin:0 auto;padding:1em 0 3em;}
+.TD-comment-panel .ct-panel-list li{padding:1em 1.4em;font-size:13px;}
+
+/*.TD-comment-panel .ct-panel-list .ct-item-context{}*/
+.TD-comment-panel .test-score-icon{vertical-align:-3px;}
+.TD-comment-panel .username{width:160px;}
+.TD-comment-panel .ct-item-info{}
+.TD-comment-panel .ct-item-info .timer{color:#999;margin-left:10px;}
+
+/* 试题反馈END */

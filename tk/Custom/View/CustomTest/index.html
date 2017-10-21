@@ -1,0 +1,130 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">{#$pageName#} </div>
+<!--  功能操作区域  -->
+<div class="operate">
+    {#html:imageBtn name="revert" value="刷新" class="btflush" style="impBtn hMargin fLeft shadow" /#}
+    {#html:imageBtn name="delete" value="删除" class="btdelete" style="impBtn hMargin fLeft shadow" /#}
+    <!-- 查询区域 -->
+    <FORM METHOD="POST" ACTION="__URL__">
+    <div class="fRig">
+        <div class="fLeft"><span id="key"><INPUT id="name" TYPE="text" NAME="name" value="{#$Think.request.name#}" title="试题编号查询" class="medium" ></span></div>
+        {#html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /#}
+        {#html:imageBtn name="adv" value="高级" id="showText" style="impBtn hMargin fLeft shadow" /#}
+    </div>
+    <!-- 高级查询区域 -->
+    <div id="searchM" class=" none search cBoth">
+        <TABLE border="0" cellpadding="1" cellspacing="3" width="100%">
+        <TR><TD class="tRight" width="80">试题编号：</TD>
+            <TD><INPUT TYPE="text" NAME="TestID" class="small" value="{#$Think.request.TestID#}" ></TD>
+            <TD class="tRight" width="80">文档编号：</TD>
+            <TD><INPUT TYPE="text" NAME="docid" class="small" value="{#$Think.request.docid#}" ></TD>
+            <TD class="tRight" width="80">所属学科：</TD>
+            <TD><SELECT id="subject" class="normal bLeft" NAME="SubjectID" check='Require' warning="所属学科不能为空">
+            <option value="">请选择</option>
+            {#if condition="$subjectArray"#}
+            {#volist name="subjectArray" id="vo"#}
+                <optgroup label='{#$vo.SubjectName#}'>
+                {#if condition="$vo['sub']"#}
+                {#volist name="vo['sub']" id="item"#}
+                    <option value="{#$item.SubjectID#}" {#eq name="item.SubjectID" value="$edit.SubjectID"#}selected="selected"{#/eq#}>　　{#$item.SubjectName#}</option>
+                {#/volist#}
+                {#/if#}
+                </optgroup>
+            {#/volist#}
+            {#else/#}
+                <option value="0">请添加学科</option>
+            {#/if#}
+            </SELECT></TD><TD class="tRight" width="50">状态：</TD>
+            <TD><SELECT class="w90px bLeft" NAME="Status">
+            <option value="">—请选择—</option>
+            {#volist name='testStatus' id='vo' #}
+            <option value="{#$key#}">{#$vo#}</option>
+            {#/volist#}
+            </SELECT></TD>
+            <TD class="tRight" width="100">原创模板试题：</TD>
+            <TD>
+                <SELECT class="w90px bLeft" NAME="IsTpl">
+                    <option value="">全部</option>
+                    <option value="0">否</option>
+                    <option value="1">是</option>
+                </SELECT>
+            </TD>
+        </tr>
+        </TABLE>
+    </div>
+        </FORM>
+</div>
+<!-- 功能操作区域结束 -->
+
+<!-- 列表显示区域  -->
+<div class="list" >
+<div id="result" class="result none"></div>
+<!-- Think 系统列表组件开始 -->
+<table id="checkList" class="list" cellpadding="5" cellspacing="0" border="1">
+    <tr><td height="5" colspan="9" class="topTd" ></td></tr>
+    <tr class="row" style='text-align:center'>
+        <th width="8"><input type="checkbox" id="CheckAll" tag="checkList"></th>
+        <th width="40">编号</th>
+        <th width="350">试题内容</th>
+        <th width="50">试题状态/是否模板试题</th>
+        <th width="200">学科/题型/类型/难度/年级/用户名</th>
+        <th width="100">技能/能力</th>
+        <th width="60">添加时间</th>
+        <th width="60">操作</th>
+    </tr>
+    {#volist name="list" id="node" #}
+        <tr class="row lists" jl=''>
+        <td><input type="checkbox" class="key" value="{#$node.TestID#}"></td>
+        <td>
+        {#$node.TestID#}
+        </td>
+        <td width="400">
+            <div class="text_source">来源：<a href="" title="">{#$node.Source#}</a></div>
+            <div class="testdivbak" style="height:120px; width:500px; overflow-Y:scroll">
+                <a href="javascript:void(0);" class="" thisid="{#$node.TestID#}"><p>{#$node.Test|default="无</p>"#}</a>
+            </div>
+        </td>
+        <td id="error{#$node.TestID#}">
+            <font color="red">{#$node.Status#}</font><br>
+            {#if condition="$node.IsTpl gt 0"#}
+            是
+            {#else/#}
+            否
+            {#/if#}
+        </td>
+        <td>{#$node.SubjectName|default="<font color='red'>无</font>"#}<br/>
+            <span id="types{#$node.TestID#}">{#$node.TypesName|default="<font color='red'>无</font>"#}</span><br/>
+            <span id="choose{#$node.TestID#}">{#eq name="node.IfChoose" value="0"#}非选择题{#/eq#}{#eq name="node.IfChoose" value="1"#}复合题{#/eq#}{#eq name="node.IfChoose" value="2"#}多选题{#/eq#}{#eq name="node.IfChoose" value="3"#}单选题{#/eq#}</span><br/>
+            <span id="diff{#$node.TestID#}">{#$node.Diff|default="<font color='red'>无</font>"#}</span><br/>
+            <span id="grade{#$node.TestID#}">【{#$node.GradeName|default="<font color='red'>无</font>"#}】</span><br>
+            <span >【{#$node.UserName#}】</span>
+        </td>
+        <td id="knowledge{#$node.TestID#}">{#$node.haveSkill|default="<font color='red'>未标注技能</font>"#}<br>{#$node.haveCap|default="<font color='red'>未标注能力</font>"#}</td>
+        <td id="knowledge{#$node.TestID#}">{#$node.AddTime||date="Y-m-d H:i:s",####}</td>
+        <td>
+            <a href="{#:U('Custom/CustomTest/edit',array('id'=>$node[TestID]))#}" class="showmsg" thisid="{#$node.PaperID#}">编辑</a>&nbsp;
+            <a href="{#:U('Custom/CustomTest/delete',array('id'=>$node[TestID]))#}" class="" thisid="{#$node.PaperID#}">删除</a>&nbsp;
+        </td>
+        </tr>
+    {#/volist#}
+    <tr><td height="5" colspan="9" class="bottomTd"></td></tr>
+</table>
+<!-- Think 系统列表组件结束 -->
+</div>
+<!--  分页显示区域 -->
+<div class="page">{#$page#}</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<form id="hiddenform" action="?" method="post" style="display:none">
+<input name="id" id="testidlist" value=""/>
+</form>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

@@ -1,0 +1,126 @@
+<table width="100%"  cellpadding="15" cellspacing="0" class="table f-roman" >
+    <tbody>
+    {#if condition="$banben eq '0'"#}
+    <tr>
+        <td align="center"><b>Word版本</b></td>
+
+        <td>
+            <span class="checkspan"><input type="radio" name="docversion" class="docversion" value=".docx" checked="checked"/>Microsoft Office Word 2010，扩展名<span class="red">docx</span>(公式可编辑)</span>
+            <br/><span class="checkspan"><input type="radio" name="docversion" class="docversion" value=".doc"/>Microsoft Office Word 2003，扩展名<span class="red">doc</span></span>
+        </td>
+    </tr>
+    {#else /#}
+    <tr style="display:none;">
+        <td colspan="2">
+            <input type="radio" name="docversion" class="docversion" value=".docx" checked="checked"/>
+        </td>
+    </tr>
+    {#/if#}
+    {#if condition="$zhizhang eq '0'"#}
+    <tr>
+        <td align="center" width="100px"><b>纸张大小</b></td>
+        <td>
+            <table class="paperTypeTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+
+                <tr>
+                    <td>
+
+                        <span class="checkspan"><a id="p_A4"></a><input type="radio" name="papersize" class="papersize" checked="checked" value="A4"/>A4</span>
+                    </td>
+                    <td>
+
+                        <span class="checkspan"><a id="p_A4H"></a><input type="radio" name="papersize" class="papersize" value="A4H"/>A4横(双栏)</span>
+                    </td>
+                    <td>
+
+<span class="checkspan"><a id="p_B4H"></a>
+<input type="radio" name="papersize" class="papersize" value="B4H"/>B4横(双栏)
+</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <span class="checkspan"><a id="p_B5"></a><input type="radio" name="papersize" class="papersize" value="B5"/>B5</span>
+                        <!--<span class="checkspan"><a id="p_16K"></a><input type="radio" name="papersize" class="papersize" value="16K"/>16K</span>-->
+                    </td>
+                    <td>
+                        <span class="checkspan"><a id="p_A3H"></a><input type="radio" name="papersize" class="papersize" value="A3H"/>A3横(双栏)</span>
+                    </td>
+                    <td>
+                        <span class="checkspan"><a id="p_8KH"></a><input type="radio" name="papersize" class="papersize" value="8KH"/>8K横(双栏)</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    {#elseif condition="$zhizhang eq '1'" /#}
+    <tr>
+        <td align="center" width="100px"><b>纸张大小</b></td>
+        <td>
+            <table class="paperTypeTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                <tr>
+                    <td>
+                        <span class="checkspan" style="float:none;display:inline-block;width:90px;"><a id="p_A4"></a><input type="radio" name="papersize" class="papersize" checked="checked" value="A4"/>A4</span>
+                    </td>
+                    <!-- <td>
+                        <span class="checkspan" style="float:none;display:inline-block;width:90px;"><a id="p_A4F"></a><input type="radio" name="papersize" class="papersize" value="A4F"/>A4F(表格)</span>
+                    </td> -->
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    {#else /#}
+    <tr style="display:none;"><td colspan="2">
+        <input type="radio" name="papersize" class="papersize" checked="checked" value="A4"/>
+    </td></tr>
+    {#/if#}
+    {#if condition="$leixing eq '0'"#}
+    <tr>
+        <td align="center">
+            <b>试卷类型</b>
+        </td>
+        <td>
+            <span class="checkspan"><input type="radio" name="papertype" class="papertype" checked="checked" value="normal"/>普通用卷（答案集中在卷尾）</span>
+            <br/>
+            <span class="checkspan"><input type="radio" name="papertype" class="papertype" value="teacher"/>教师用卷（每题后面跟答案）</span>
+            <br/>
+            <span class="checkspan"><input type="radio" name="papertype" class="papertype" value="student"/>学生用卷（无答案）</span>
+            <br/>
+            {#if condition="$tikaheyi eq '0'"#}
+            <span class="checkspan"><input type="radio" name="papertype" class="papertype" value="week"/>题卡合一（周练专用）</span>
+            <br/>
+            {#/if#}
+        </td>
+    </tr>
+    {#else /#}
+    <tr style="display:none;"><td colspan="2">
+        <input type="radio" name="papertype" class="papertype" value="student"/>
+    </td></tr>
+    {#/if#}
+    </tbody></table>
+<div class="verify c">
+    <div class="verifyInput">
+        <div>
+            <b>验证码</b>
+            <input id="verifyCode" type="text" style="width:50px;padding:4px;font-size:14px;font-weight:bold;margin-left: 8px;" maxlength="4"/>
+        </div>
+        <div class="verifyImgbox">
+            <img id="verifyImg" height="30" title="点击刷新" url="{#:U('Home/Index/verify')#}" src="{#:U('Home/Index/verify')#}" alt="验证码" style="cursor:pointer;"/>
+        </div>
+        <div style="color:#777;font-size:11px;margin-left:5px;line-height:1.2">不区分<br /> 大小写</div>
+    </div>
+    {#if condition="$jilu eq '0'"#}
+    <div style="display:inline-block;*display:inline;zoom:1;vertical-align:top; font-size:12px;padding:5px 0px;margin-bottom:-10px;overflow: hidden;" title="分享以后，如被其他用户下载可获得1金币。">
+        <label class="pointer" for="saverecord"><input style="vertical-align:middle;" type="checkbox" id="saverecord" checked="checked"/>保存历史下载</label>
+        <label class="pointer" for="shareto"><input style="vertical-align:middle;" type="checkbox" id="shareto" checked=""/>分享可获得 <b class="blue"> 金币</b></label>
+    </div>{#/if#}
+    <div id="koudiantishi"></div>
+</div>
+<div class="normal_btn"><span class="normal_yes bgbt an01"><span class="an_left"></span><a id="submitbtn">确定</a><span class="an_right"></span></span><span class="normal_no bgbt an02" idName="downdiv"><span class="an_left"></span><a id="closebtn">取消</a><span class="an_right"></span></span></div>
+<div style="display:none;">
+    <img src="__PUBLIC__/default/image/loading.gif"/>
+</div>

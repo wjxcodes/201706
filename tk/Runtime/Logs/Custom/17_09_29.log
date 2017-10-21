@@ -1,0 +1,678 @@
+[ 2017-09-29T10:39:43+08:00 ] 115.60.61.8 /Custom/CustomTestStore/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../tk/Custom/View/Public/bottom.html): failed to open stream: No such file or directory E:\www\www\main\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pagename E:\www\www\tk\Runtime\Cache\Custom\ae294be22791e08a4328128919fffdcd.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-29T10:39:43+08:00 ] 115.60.61.8 /Custom/CustomTestStore/getZsdInit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+
+[ 2017-09-29T10:39:43+08:00 ] 115.60.61.8 /Custom/CustomTestStore/getTestList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: width E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 159 行.
+NOTIC: [8] Undefined index: chapter E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 164 行.
+NOTIC: [8] Undefined index: pid E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 165 行.
+NOTIC: [8] Undefined index: abi E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 166 行.
+NOTIC: [8] Undefined index: key E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 167 行.
+NOTIC: [8] Undefined index: time E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 168 行.
+NOTIC: [8] Undefined index: perpage E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 171 行.
+NOTIC: [8] Undefined index: ifInter E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 172 行.
+NOTIC: [8] Undefined index: interLen E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 173 行.
+NOTIC: [8] Undefined variable: lastTime E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 213 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::insertData() should be compatible with Common\Model\BaseModel::insertData($data, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::updateData() should be compatible with Common\Model\BaseModel::updateData($data, $where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::deleteData() should be compatible with Common\Model\BaseModel::deleteData($where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [8] Undefined index: matches E:\www\www\tk\Common\Model\IndexModel.class.php 第 1209 行.
+
+[ 2017-09-29T10:53:13+08:00 ] 115.60.61.8 /Custom/CustomTestTaskStatus/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 25 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 25 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 35 行.
+NOTIC: [8] Undefined index: Start E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 43 行.
+NOTIC: [8] Undefined index: End E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 44 行.
+NOTIC: [8] Undefined index: SubjectID E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 61 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 65 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestTaskStatusModel::insertData() should be compatible with Common\Model\BaseModel::insertData($data, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestTaskStatusModel.class.php 第 195 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestTaskStatusModel::deleteData() should be compatible with Common\Model\BaseModel::deleteData($where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestTaskStatusModel.class.php 第 195 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 75 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Custom\19e809cf53ecd95b104dcb2672f3f1c8.php 第 44 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Custom\19e809cf53ecd95b104dcb2672f3f1c8.php 第 53 行.
+NOTIC: [8] Undefined index: Start E:\www\www\tk\Runtime\Cache\Custom\19e809cf53ecd95b104dcb2672f3f1c8.php 第 55 行.
+NOTIC: [8] Undefined index: End E:\www\www\tk\Runtime\Cache\Custom\19e809cf53ecd95b104dcb2672f3f1c8.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-29T14:25:29+08:00 ] 115.60.61.8 /Custom/CustomTestTaskList/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 25 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 25 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 35 行.
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 44 行.
+NOTIC: [8] Undefined index: SubjectID E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 48 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 52 行.
+NOTIC: [8] Undefined index: Start E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 56 行.
+NOTIC: [8] Undefined index: End E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 57 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestTaskListModel::insertData() should be compatible with Common\Model\BaseModel::insertData($data, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestTaskListModel.class.php 第 130 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestTaskListModel::updateData() should be compatible with Common\Model\BaseModel::updateData($data, $where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestTaskListModel.class.php 第 130 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestTaskListModel::deleteData() should be compatible with Common\Model\BaseModel::deleteData($where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestTaskListModel.class.php 第 130 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestTaskListModel::findData() should be compatible with Common\Model\BaseModel::findData($field, $where, $order = '', $modelName = '') E:\www\www\tk\Custom\Model\CustomTestTaskListModel.class.php 第 130 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 79 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Custom\a3dfb860a7c174905846b97c8ff05f6f.php 第 43 行.
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Runtime\Cache\Custom\a3dfb860a7c174905846b97c8ff05f6f.php 第 52 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Custom\a3dfb860a7c174905846b97c8ff05f6f.php 第 54 行.
+NOTIC: [8] Undefined index: Start E:\www\www\tk\Runtime\Cache\Custom\a3dfb860a7c174905846b97c8ff05f6f.php 第 56 行.
+NOTIC: [8] Undefined index: End E:\www\www\tk\Runtime\Cache\Custom\a3dfb860a7c174905846b97c8ff05f6f.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-29T14:25:31+08:00 ] 115.60.61.8 /Custom/CustomTestCopy/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestCopyManage.class.php 第 25 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestCopyManage.class.php 第 25 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Custom\Manage\CustomTestCopyManage.class.php 第 31 行.
+NOTIC: [8] Undefined index: SubjectID E:\www\www\tk\Custom\Manage\CustomTestCopyManage.class.php 第 35 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Custom\Manage\CustomTestCopyManage.class.php 第 39 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Custom\Manage\CustomTestCopyManage.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 438 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 446 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\f062fdf86834c772abbc23d0df81ff7e.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-09-29T14:25:32+08:00 ] 115.60.61.8 /Custom/CustomTest/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 31 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 31 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 37 行.
+NOTIC: [8] Undefined index: docid E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 45 行.
+NOTIC: [8] Undefined index: SubjectID E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 49 行.
+NOTIC: [8] Undefined index: IsTpl E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 53 行.
+NOTIC: [8] Undefined index: IsTpl E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 54 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 61 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::insertData() should be compatible with Common\Model\BaseModel::insertData($data, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::updateData() should be compatible with Common\Model\BaseModel::updateData($data, $where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::deleteData() should be compatible with Common\Model\BaseModel::deleteData($where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 70 行.
+NOTIC: [8] Undefined index: CustomTestSkill E:\www\www\tk\Common\Common\function.php 第 475 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 156 行.
+NOTIC: [8] Undefined index: CustomTestCapacity E:\www\www\tk\Common\Common\function.php 第 475 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 156 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 44 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 52 行.
+NOTIC: [8] Undefined index: docid E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 54 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-29T14:25:45+08:00 ] 115.60.61.8 /Custom/CustomTestTaskStatus/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 25 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 25 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 35 行.
+NOTIC: [8] Undefined index: Start E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 43 行.
+NOTIC: [8] Undefined index: End E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 44 行.
+NOTIC: [8] Undefined index: SubjectID E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 61 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 65 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestTaskStatusModel::insertData() should be compatible with Common\Model\BaseModel::insertData($data, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestTaskStatusModel.class.php 第 195 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestTaskStatusModel::deleteData() should be compatible with Common\Model\BaseModel::deleteData($where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestTaskStatusModel.class.php 第 195 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Custom\Manage\CustomTestTaskStatusManage.class.php 第 75 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Custom\19e809cf53ecd95b104dcb2672f3f1c8.php 第 44 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Custom\19e809cf53ecd95b104dcb2672f3f1c8.php 第 53 行.
+NOTIC: [8] Undefined index: Start E:\www\www\tk\Runtime\Cache\Custom\19e809cf53ecd95b104dcb2672f3f1c8.php 第 55 行.
+NOTIC: [8] Undefined index: End E:\www\www\tk\Runtime\Cache\Custom\19e809cf53ecd95b104dcb2672f3f1c8.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-29T14:25:48+08:00 ] 115.60.61.8 /Custom/CustomTestTaskLog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestTaskLogManage.class.php 第 137 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestTaskLogManage.class.php 第 137 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Custom\Manage\CustomTestTaskLogManage.class.php 第 147 行.
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Custom\Manage\CustomTestTaskLogManage.class.php 第 155 行.
+NOTIC: [8] Undefined index: Start E:\www\www\tk\Custom\Manage\CustomTestTaskLogManage.class.php 第 159 行.
+NOTIC: [8] Undefined index: End E:\www\www\tk\Custom\Manage\CustomTestTaskLogManage.class.php 第 160 行.
+NOTIC: [8] Undefined index: SubjectID E:\www\www\tk\Custom\Manage\CustomTestTaskLogManage.class.php 第 177 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Custom\Manage\CustomTestTaskLogManage.class.php 第 181 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Custom\Manage\CustomTestTaskLogManage.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Custom\5616f93266b7a1d2dc87279e915ecec1.php 第 46 行.
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Runtime\Cache\Custom\5616f93266b7a1d2dc87279e915ecec1.php 第 55 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Custom\5616f93266b7a1d2dc87279e915ecec1.php 第 57 行.
+NOTIC: [8] Undefined index: Start E:\www\www\tk\Runtime\Cache\Custom\5616f93266b7a1d2dc87279e915ecec1.php 第 59 行.
+NOTIC: [8] Undefined index: End E:\www\www\tk\Runtime\Cache\Custom\5616f93266b7a1d2dc87279e915ecec1.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-29T14:25:49+08:00 ] 115.60.61.8 /Custom/CustomTestTaskList/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 25 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 25 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 35 行.
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 44 行.
+NOTIC: [8] Undefined index: SubjectID E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 48 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 52 行.
+NOTIC: [8] Undefined index: Start E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 56 行.
+NOTIC: [8] Undefined index: End E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 57 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestTaskListModel::insertData() should be compatible with Common\Model\BaseModel::insertData($data, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestTaskListModel.class.php 第 130 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestTaskListModel::updateData() should be compatible with Common\Model\BaseModel::updateData($data, $where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestTaskListModel.class.php 第 130 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestTaskListModel::deleteData() should be compatible with Common\Model\BaseModel::deleteData($where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestTaskListModel.class.php 第 130 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestTaskListModel::findData() should be compatible with Common\Model\BaseModel::findData($field, $where, $order = '', $modelName = '') E:\www\www\tk\Custom\Model\CustomTestTaskListModel.class.php 第 130 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Custom\Manage\CustomTestTaskListManage.class.php 第 79 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Custom\a3dfb860a7c174905846b97c8ff05f6f.php 第 43 行.
+NOTIC: [8] Undefined index: UserName E:\www\www\tk\Runtime\Cache\Custom\a3dfb860a7c174905846b97c8ff05f6f.php 第 52 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Custom\a3dfb860a7c174905846b97c8ff05f6f.php 第 54 行.
+NOTIC: [8] Undefined index: Start E:\www\www\tk\Runtime\Cache\Custom\a3dfb860a7c174905846b97c8ff05f6f.php 第 56 行.
+NOTIC: [8] Undefined index: End E:\www\www\tk\Runtime\Cache\Custom\a3dfb860a7c174905846b97c8ff05f6f.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-29T14:25:50+08:00 ] 115.60.61.8 /Custom/CustomTest/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\www\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 31 行.
+NOTIC: [8] Undefined index: name E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 31 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 37 行.
+NOTIC: [8] Undefined index: docid E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 45 行.
+NOTIC: [8] Undefined index: SubjectID E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 49 行.
+NOTIC: [8] Undefined index: IsTpl E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 53 行.
+NOTIC: [8] Undefined index: IsTpl E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 54 行.
+NOTIC: [8] Undefined index: Status E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 61 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::insertData() should be compatible with Common\Model\BaseModel::insertData($data, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::updateData() should be compatible with Common\Model\BaseModel::updateData($data, $where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::deleteData() should be compatible with Common\Model\BaseModel::deleteData($where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\www\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\www\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\www\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\www\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\www\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\www\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+NOTIC: [8] Undefined index: p E:\www\www\tk\Custom\Manage\CustomTestManage.class.php 第 70 行.
+NOTIC: [8] Undefined index: CustomTestSkill E:\www\www\tk\Common\Common\function.php 第 475 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 156 行.
+NOTIC: [8] Undefined index: CustomTestCapacity E:\www\www\tk\Common\Common\function.php 第 475 行.
+NOTIC: [8] Undefined offset: 1 E:\www\www\tk\Common\Controller\CommonController.class.php 第 156 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\www\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 44 行.
+NOTIC: [8] Undefined index: TestID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 52 行.
+NOTIC: [8] Undefined index: docid E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 54 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Undefined variable: edit E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 59 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 126 行.
+NOTIC: [8] Use of undefined constant TestID - assumed 'TestID' E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+NOTIC: [8] Undefined index: PaperID E:\www\www\tk\Runtime\Cache\Custom\29d0e0f56a378e06c7884ef8e65d9438.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-09-29T18:16:49+08:00 ] 222.134.133.242 /Custom/CustomTestStore/index?session=E40C48ECBC43DBBD1C8586F403981&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-29T18:29:21+08:00 ] 222.134.133.242 /Custom/CustomTestStore/index?session=71B708A54526A75B9F021F52750&device=androidPadCKL
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../tk/Custom/View/Public/bottom.html): failed to open stream: No such file or directory E:\www\www\main\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined variable: pagename E:\www\www\tk\Runtime\Cache\Custom\ae294be22791e08a4328128919fffdcd.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-09-29T18:29:22+08:00 ] 222.134.133.242 /Custom/CustomTestStore/getZsdInit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 373 行.
+NOTIC: [8] Undefined index:  E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 373 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 373 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1504 行.
+NOTIC: [8] Undefined variable: pID E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1094 行.
+NOTIC: [8] Undefined offset: 0 E:\www\www\tk\Common\Model\ApiCacheModel.class.php 第 1106 行.
+
+[ 2017-09-29T18:29:22+08:00 ] 222.134.133.242 /Custom/CustomTestStore/getTestList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\www\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: width E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 159 行.
+NOTIC: [8] Undefined index: chapter E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 164 行.
+NOTIC: [8] Undefined index: pid E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 165 行.
+NOTIC: [8] Undefined index: abi E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 166 行.
+NOTIC: [8] Undefined index: key E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 167 行.
+NOTIC: [8] Undefined index: time E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 168 行.
+NOTIC: [8] Undefined index: perpage E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 171 行.
+NOTIC: [8] Undefined index: ifInter E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 172 行.
+NOTIC: [8] Undefined index: interLen E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 173 行.
+NOTIC: [8] Undefined variable: lastTime E:\www\www\tk\Custom\Controller\CustomTestStoreController.class.php 第 213 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::insertData() should be compatible with Common\Model\BaseModel::insertData($data, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::updateData() should be compatible with Common\Model\BaseModel::updateData($data, $where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [2048] Declaration of Custom\Model\CustomTestModel::deleteData() should be compatible with Common\Model\BaseModel::deleteData($where, $modelName = '') E:\www\www\tk\Custom\Model\CustomTestModel.class.php 第 1223 行.
+NOTIC: [8] Undefined index: matches E:\www\www\tk\Common\Model\IndexModel.class.php 第 1209 行.
+

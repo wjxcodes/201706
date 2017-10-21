@@ -1,0 +1,97 @@
+2017-09-23 15:06:22 致命的运行时错误(E_ERROR) Call to undefined method stdClass::uploadExcelAndCheck() E:\web\www\tk\Common\Model\BaseModel.class.php 46 
+2017-09-23 17:52:27 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot redeclare Doc\Manage\WlnDocManage::savexls() E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 687 
+2017-09-23 17:52:53 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot redeclare Doc\Manage\WlnDocManage::savexls() E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 687 
+2017-09-23 17:53:05 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot redeclare Doc\Manage\WlnDocManage::savexls() E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 687 
+2017-09-25 17:27:48 编译时语法解析错误(E_PARSE) syntax error, unexpected '=' E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 105 
+2017-09-25 17:28:09 致命的运行时错误(E_ERROR) Call to a member function where() on a non-object E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 105 
+2017-09-25 17:42:59 编译时语法解析错误(E_PARSE) syntax error, unexpected ')' E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 177 
+2017-09-25 17:43:36 编译时语法解析错误(E_PARSE) syntax error, unexpected ')' E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 179 
+2017-09-25 17:51:13 编译时语法解析错误(E_PARSE) syntax error, unexpected '}', expecting variable (T_VARIABLE) or '$' E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 172 
+2017-09-25 18:12:14 编译时语法解析错误(E_PARSE) syntax error, unexpected '{' E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 185 
+2017-09-25 18:44:08 致命的运行时错误(E_ERROR) Cannot use [] for reading E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 180 
+2017-09-25 19:06:26 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 168 
+2017-09-26 18:48:13 编译时语法解析错误(E_PARSE) syntax error, unexpected 'if' (T_IF) E:\web\www\tk\Common\Controller\CommonController.class.php 447 
+2017-09-27 13:44:38 编译时语法解析错误(E_PARSE) syntax error, unexpected ')' E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 1351 
+2017-09-27 14:27:35 编译时语法解析错误(E_PARSE) syntax error, unexpected 'if' (T_IF) E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 953 
+2017-09-27 14:28:02 编译时语法解析错误(E_PARSE) syntax error, unexpected 'if' (T_IF) E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 953 
+2017-09-27 14:28:33 编译时语法解析错误(E_PARSE) syntax error, unexpected 'if' (T_IF) E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 953 
+2017-09-27 14:29:02 编译时语法解析错误(E_PARSE) syntax error, unexpected 'if' (T_IF) E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 953 
+2017-09-27 16:31:40 编译时语法解析错误(E_PARSE) syntax error, unexpected '"v2"' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 1378 
+2017-09-28 13:40:10 编译时语法解析错误(E_PARSE) syntax error, unexpected 'dump' (T_STRING) E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 1487 
+2017-09-28 13:40:55 编译时语法解析错误(E_PARSE) syntax error, unexpected 'dump' (T_STRING) E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 1488 
+2017-09-28 13:40:55 编译时语法解析错误(E_PARSE) syntax error, unexpected 'dump' (T_STRING) E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 1488 
+2017-09-28 14:24:32 编译时语法解析错误(E_PARSE) syntax error, unexpected ']' E:\web\www\tk\Doc\Model\DocModel.class.php 695 
+2017-09-28 15:48:11 编译时语法解析错误(E_PARSE) syntax error, unexpected 'if' (T_IF) E:\web\www\tk\Doc\Model\DocModel.class.php 721 
+2017-09-28 15:48:56 编译时语法解析错误(E_PARSE) syntax error, unexpected 'if' (T_IF) E:\web\www\tk\Doc\Model\DocModel.class.php 721 
+2017-09-28 15:49:25 编译时语法解析错误(E_PARSE) syntax error, unexpected 'if' (T_IF) E:\web\www\tk\Doc\Model\DocModel.class.php 722 
+2017-09-28 15:55:12 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Doc\Model\DocModel.class.php 705 
+2017-09-28 15:55:36 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Doc\Model\DocModel.class.php 705 
+2017-09-28 16:00:14 编译时语法解析错误(E_PARSE) syntax error, unexpected 'die' (T_EXIT) E:\web\www\tk\Doc\Model\DocModel.class.php 708 
+2017-09-28 17:28:37 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Doc\Model\DocModel.class.php 725 
+2017-09-29 18:06:40 编译时语法解析错误(E_PARSE) syntax error, unexpected '$v' (T_VARIABLE) E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 1481 
+2017-09-29 18:35:44 编译时语法解析错误(E_PARSE) syntax error, unexpected 'if' (T_IF) E:\web\www\tk\Common\Controller\CommonController.class.php 478 
+2017-10-09 13:13:07 非致命的运行时错误(E_WARNING) POST Content-Length of 15593156 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 13:24:28 非致命的运行时错误(E_WARNING) POST Content-Length of 16472247 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 13:25:25 非致命的运行时错误(E_WARNING) POST Content-Length of 16472247 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 13:28:07 非致命的运行时错误(E_WARNING) POST Content-Length of 16472247 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 13:30:40 非致命的运行时错误(E_WARNING) POST Content-Length of 16472247 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 13:33:24 非致命的运行时错误(E_WARNING) POST Content-Length of 16472558 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 13:34:43 非致命的运行时错误(E_WARNING) POST Content-Length of 16472247 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 13:36:53 非致命的运行时错误(E_WARNING) POST Content-Length of 16472247 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 13:37:53 非致命的运行时错误(E_WARNING) POST Content-Length of 16472247 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 13:39:33 非致命的运行时错误(E_WARNING) POST Content-Length of 16472247 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 13:41:21 非致命的运行时错误(E_WARNING) POST Content-Length of 16472557 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 13:43:20 非致命的运行时错误(E_WARNING) POST Content-Length of 16472247 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 13:46:53 非致命的运行时错误(E_WARNING) POST Content-Length of 16472247 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 13:48:10 非致命的运行时错误(E_WARNING) POST Content-Length of 16472232 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 13:52:58 非致命的运行时错误(E_WARNING) POST Content-Length of 16472247 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 13:53:40 非致命的运行时错误(E_WARNING) POST Content-Length of 16472230 bytes exceeds the limit of 8388608 bytes Unknown 0 
+2017-10-09 14:55:38 致命的运行时错误(E_ERROR) Allowed memory size of 134217728 bytes exhausted (tried to allocate 139319125 bytes) E:\web\www\tk\Common\Tool\PHPExcel\PHPExcel\Reader\Excel2007.php 323 
+2017-10-09 15:37:20 编译时语法解析错误(E_PARSE) syntax error, unexpected ':' E:\web\www\tk\Common\Model\BaseModel.class.php 458 
+2017-10-09 15:37:36 编译时语法解析错误(E_PARSE) syntax error, unexpected ':' E:\web\www\tk\Common\Model\BaseModel.class.php 458 
+2017-10-09 15:37:37 编译时语法解析错误(E_PARSE) syntax error, unexpected ':' E:\web\www\tk\Common\Model\BaseModel.class.php 458 
+2017-10-09 15:37:38 编译时语法解析错误(E_PARSE) syntax error, unexpected ':' E:\web\www\tk\Common\Model\BaseModel.class.php 458 
+2017-10-09 15:37:38 编译时语法解析错误(E_PARSE) syntax error, unexpected ':' E:\web\www\tk\Common\Model\BaseModel.class.php 458 
+2017-10-09 15:39:45 致命的运行时错误(E_ERROR) Out of memory (allocated 384827392) (tried to allocate 24 bytes) E:\web\www\tk\Common\Tool\PHPExcel\PHPExcel\Worksheet.php 1136 
+2017-10-09 15:39:45 致命的运行时错误(E_ERROR) Out of memory (allocated 2621440) (tried to allocate 1792 bytes) E:\web\www\tk\Common\Model\ApiDbModel.class.php 2314 
+2017-10-09 15:39:45 致命的运行时错误(E_ERROR) Out of memory (allocated 3932160) (tried to allocate 167976 bytes) E:\web\www\main\Library\Think\Cache\Driver\File.class.php 98 
+2017-10-09 15:43:46 致命的运行时错误(E_ERROR) Out of memory (allocated 7340032) (tried to allocate 83771348 bytes) E:\web\www\tk\Common\Tool\PHPExcel\PHPExcel\Reader\Excel2007.php 323 
+2017-10-09 15:43:54 致命的运行时错误(E_ERROR) Out of memory (allocated 395837440) (tried to allocate 14 bytes) E:\web\www\tk\Common\Tool\PHPExcel\PHPExcel\CachedObjectStorage\Memory.php 54 
+2017-10-09 15:43:54 致命的运行时错误(E_ERROR) Out of memory (allocated 2621440) (tried to allocate 1536 bytes) E:\web\www\tk\Common\Model\ApiDbModel.class.php 2321 
+2017-10-09 15:43:54 致命的运行时错误(E_ERROR) Out of memory (allocated 2621440) (tried to allocate 1536 bytes) E:\web\www\tk\Common\Model\ApiDbModel.class.php 2321 
+2017-10-09 15:43:54 致命的运行时错误(E_ERROR) Out of memory (allocated 2621440) (tried to allocate 1536 bytes) E:\web\www\tk\Common\Model\ApiDbModel.class.php 2321 
+2017-10-09 15:43:54 致命的运行时错误(E_ERROR) Out of memory (allocated 2621440) (tried to allocate 1536 bytes) E:\web\www\tk\Common\Model\ApiDbModel.class.php 2321 
+2017-10-09 15:43:54 致命的运行时错误(E_ERROR) Out of memory (allocated 2621440) (tried to allocate 1536 bytes) E:\web\www\tk\Common\Model\ApiDbModel.class.php 2321 
+2017-10-09 15:45:11 致命的运行时错误(E_ERROR) Out of memory (allocated 425984000) (tried to allocate 24 bytes) E:\web\www\tk\Common\Tool\PHPExcel\PHPExcel\Worksheet.php 1136 
+2017-10-09 15:46:49 致命的运行时错误(E_ERROR) Out of memory (allocated 737411072) (tried to allocate 134217728 bytes) E:\web\www\tk\Common\Tool\PHPExcel\PHPExcel\Worksheet.php 1136 
+2017-10-09 15:47:47 致命的运行时错误(E_ERROR) Out of memory (allocated 279707648) (tried to allocate 7 bytes) E:\web\www\tk\Common\Tool\PHPExcel\PHPExcel\Cell.php 538 
+2017-10-09 15:47:48 致命的运行时错误(E_ERROR) Out of memory (allocated 2359296) (tried to allocate 262144 bytes) E:\web\www\main\Library\Think\Think.class.php 168 
+2017-10-09 15:59:22 致命的运行时错误(E_ERROR) Out of memory (allocated 737411072) (tried to allocate 134217728 bytes) E:\web\www\tk\Common\Tool\PHPExcel\PHPExcel\Worksheet.php 1136 
+2017-10-09 16:03:30 致命的运行时错误(E_ERROR) Out of memory (allocated 737411072) (tried to allocate 134217728 bytes) E:\web\www\tk\Common\Tool\PHPExcel\PHPExcel\Worksheet.php 1136 
+2017-10-09 17:00:54 编译时语法解析错误(E_PARSE) syntax error, unexpected '$realPath' (T_VARIABLE) E:\web\www\tk\Common\Model\UploadModel.class.php 588 
+2017-10-09 17:13:53 致命的运行时错误(E_ERROR) Call to a member function uploadExcel() on a non-object E:\web\www\tk\Common\Controller\UploadLayerController.class.php 122 
+2017-10-09 17:20:07 致命的运行时错误(E_ERROR) Call to a member function uploadExcel() on a non-object E:\web\www\tk\Common\Controller\UploadLayerController.class.php 122 
+2017-10-09 17:21:07 致命的运行时错误(E_ERROR) Call to a member function uploadExcel() on a non-object E:\web\www\tk\Common\Controller\UploadLayerController.class.php 122 
+2017-10-09 17:26:07 致命的运行时错误(E_ERROR) Call to undefined function http://127.0.0.1:9006() E:\web\www\tk\Common\Model\UploadModel.class.php 55 
+2017-10-09 18:01:17 致命的运行时错误(E_ERROR) Call to undefined function /Uploads/excel/2017/1009/59db37371044e.xlsx() E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 1451 
+2017-10-09 18:01:51 致命的运行时错误(E_ERROR) Function name must be a string E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 1451 
+2017-10-09 18:29:08 致命的运行时错误(E_ERROR) Cannot use object of type Doc\Model\DocModel as array E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 1484 
+2017-10-10 09:24:01 编译时语法解析错误(E_PARSE) syntax error, unexpected '/' E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 1454 
+2017-10-10 10:12:49 编译时语法解析错误(E_PARSE) syntax error, unexpected ';' E:\web\www\tk\Common\Model\UploadModel.class.php 63 
+2017-10-10 10:14:08 编译时语法解析错误(E_PARSE) syntax error, unexpected ')' E:\web\www\tk\Common\Model\UploadModel.class.php 67 
+2017-10-10 10:15:07 编译时语法解析错误(E_PARSE) syntax error, unexpected ';' E:\web\www\tk\Common\Model\UploadModel.class.php 60 
+2017-10-10 10:15:53 编译时语法解析错误(E_PARSE) syntax error, unexpected ';' E:\web\www\tk\Common\Model\UploadModel.class.php 60 
+2017-10-10 10:16:26 编译时语法解析错误(E_PARSE) syntax error, unexpected ';' E:\web\www\tk\Common\Model\UploadModel.class.php 61 
+2017-10-10 13:04:14 非致命的运行时错误(E_WARNING) Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. Unknown 0 
+2017-10-10 13:09:22 非致命的运行时错误(E_WARNING) Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. Unknown 0 
+2017-10-10 13:09:46 非致命的运行时错误(E_WARNING) Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. Unknown 0 
+2017-10-10 13:11:25 非致命的运行时错误(E_WARNING) Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. Unknown 0 
+2017-10-10 13:11:39 非致命的运行时错误(E_WARNING) Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. Unknown 0 
+2017-10-10 13:25:14 非致命的运行时错误(E_WARNING) Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. Unknown 0 
+2017-10-10 13:39:48 非致命的运行时错误(E_WARNING) Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. Unknown 0 
+2017-10-10 13:41:12 非致命的运行时错误(E_WARNING) Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. Unknown 0 
+2017-10-10 14:01:47 非致命的运行时错误(E_WARNING) Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. Unknown 0 
+2017-10-11 14:13:25 编译时语法解析错误(E_PARSE) syntax error, unexpected ')' E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 1378 
+2017-10-20 09:17:51 编译时语法解析错误(E_PARSE) syntax error, unexpected 'public' (T_PUBLIC) E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 1617 
+2017-10-20 09:18:25 编译时语法解析错误(E_PARSE) syntax error, unexpected 'public' (T_PUBLIC) E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 1617 
+2017-10-20 09:18:28 编译时语法解析错误(E_PARSE) syntax error, unexpected 'public' (T_PUBLIC) E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 1617 

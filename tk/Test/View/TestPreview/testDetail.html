@@ -1,0 +1,660 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$result.title#} - {#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$result.title#}" />
+    <meta name="description" content="{#$result.description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/style.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/test-paper.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/u-test.css" rel="stylesheet" />
+    <style>
+        .relevantTest{
+            margin-bottom:20px;
+            width:100%;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+   {#include file="Index@Common/top"/#}
+    <input type="hidden" id='testid' value='{#$result.testid#}'/>
+    <input type="hidden" id='docid' value='{#$docid#}'/>
+    <input type="hidden" id='docSubejctId' value='{#$result.subjectid#}'/>
+    <input type="hidden" id='typename' value='{#$typename#}'/>
+
+    <!-- 试卷中心 -->
+    <div class="w1000">
+        <!-- 面包屑导航 -->
+        <div class="w1000 crumbs-wrap">
+            <div class="g-crumbs">
+                <b class="now-path">当前位置：</b>
+                <a href="/">首页</a>>
+                <a href="javascript:;">试卷详情</a>
+            </div>
+        </div>
+        <!-- 面包屑导航END -->
+
+        <!-- banner -->
+        <div class="banner-area w1000">
+            <img src="__PUBLIC__/index/imgs/in-page/wln-bn.jpg" alt="智慧云题库云平台">
+            <h1>试题详情</h1>
+        </div>
+        <!-- banner END-->
+
+        <!-- 试题详情 -->
+        <div class="TD-test-content">
+            <div class="relevantTest">
+                {#foreach name='relevantTest' item='node' key='k'#}
+                    {#if condition='$node eq $result["testid"]'#}
+                        {#if condition="$k neq 0"#}
+                            <a href="{#:U('/Test/'.$relevantTest[$k-1])#}" class='g-btn btn-primary'>上一题</a>
+                        {#/if#}
+                        {#if condition="isset($relevantTest[$k+1])"#}
+                            <a href="{#:U('/Test/'.$relevantTest[$k+1])#}" class='g-btn btn-primary'>下一题</a>
+                        {#/if#}
+                    {#/if#}
+                {#/foreach#}
+                <a href="#" class='g-btn btn-second testpaperdown'>下载试卷</a>
+            </div>
+            <div class="TD-test-panel">
+                <div class="TD-head clearfix">
+                <p class="left">{#$result.typesname#}</p><p class="right">来源：<span id="docname">{#$result.docname|default="暂无信息"#}</span></p>
+                </div>
+
+                <div class="test-item-body TD-body f-roman">
+                    {#$result.test#}
+                </div>
+
+                <div class="TD-footer clearfix">
+                    <div class="left btn-group">
+                        <a class="g-btn btn-primary collect" href="javascript:;" id='collect'>收藏试题</a>
+                        <a class="g-btn btn-primary commentTestBtn" href="javascript:;">评价试题</a>
+                        <a class="g-btn btn-primary reportErrorTestBtn" href="javascript:;" testid='{#$result.testid#}'>试题纠错</a>
+                    </div>
+
+                    <div class="right">
+                        <div class="test-attr-site">
+                            <span class="test-attr"><b>题号：</b>{#$result.testid#}</span>
+                            <span class="test-attr"><b>题型：</b>{#$result.typesname#}</span>
+                            <span class="test-attr"><b>难度：</b><i class="test-diff-icon i-star-s">{#$result.diffxing#}</i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 答案解析 -->
+            <div class="TD-test-panel">
+                <div class="TD-head clearfix">
+                    <p class="left">答案解析</p>
+                </div>
+
+                <div class="test-item-body TD-body f-roman">
+                    <div class="test-answer-content hidden" id='analyze'></div>
+                    <!-- 未登录显示内容 -->
+                    <div class="test-answer-content">
+                        <div class="answer-item">
+                            <h3 class="tit"> <b>知识点</b>
+                            </h3>
+                            <div class="answer-context f-roman">{#$result.kllist#}</div>
+                        </div>
+                        <div class="show-ans-site f-yahei">
+                            <a href="" class="showTestAns g-btn btn-second" id='seeAnalyze' testid='{#$result.testid#}'>查看答案解析</a>
+                        </div>
+                    </div>
+                    <!-- 未登录显示内容 END-->
+                </div>
+            </div>
+            <!-- 答案解析 END-->
+            <div class="relevantTest">
+                {#foreach name='relevantTest' item='node' key='k'#}
+                    {#if condition='$node eq $result["testid"]'#}
+                        {#if condition="$k neq 0"#}
+                            <a href="{#:U('/Test/'.$relevantTest[$k-1])#}" class='g-btn btn-primary'>上一题</a>
+                        {#/if#}
+                        {#if condition="isset($relevantTest[$k+1])"#}
+                            <a href="{#:U('/Test/'.$relevantTest[$k+1])#}" class='g-btn btn-primary'>下一题</a>
+                        {#/if#}
+                    {#/if#}
+                {#/foreach#}
+                <a href="#" class='g-btn btn-second testpaperdown'>下载试卷</a>
+            </div>
+            <!-- 相似试题 -->
+            <div class="TD-test-panel">
+                <input type="hidden" id='similarityId' value='{#$similarity['testid']|default="0"#}'/>
+                <div class="TD-head clearfix">
+                    <p class="left">相似试题</p><p class="right similarTest-func"><!-- <span class="pager"><span class="bright">3</span><i class="helper">/</i>5</span> --><a href="{#:U('/Test/'.$similarity['testid'])#}" class="link" title="查看试题" target='_blank' id='similarityTestDetail'>查看详情</a><a href="" class="link" id='nextSimilarity' title="换一题">换一题</a></p>
+                </div>
+                
+                <div class="test-item-body TD-body f-roman" id='similarityTest'>
+                    {#if condition="!empty($similarity)"#}
+                        {#$similarity['test']#}
+                    {#else/#}
+                        <div style='text-align:center;'>暂无相似题</div>
+                    {#/if#}
+                </div>
+            </div>
+            <!-- 相似试题 END-->
+
+            <!-- 评价试题 -->
+            <div class="TD-test-panel">
+                <div class="TD-head clearfix">
+                    <p class="left">评价试题</p>
+                </div>
+            
+                <div class="TD-comment-panel">
+                    <form class="g-form" action="">
+                        <div class="g-control-group ct-test-num">
+                            <label class="form-ctrl-item-tit" for="">试题编号：</label>
+                            <span>{#$result.testid#}</span>
+                        </div>
+                        <div class="g-control-group ct-textarea">
+                            <label class="form-ctrl-item-tit" for="">评论内容：</label>
+                            <textarea id="testCommmentTextarea" name="" id="" cols="60" rows="4"></textarea>
+                        </div>
+                        <div class="g-control-group ct-score clearfix">
+                            <div class="comment-score-site left">
+                                <b class="tit">评分：</b>
+                                <span class="scorebox icon-star">
+                                </span>
+                                <span id='score' style='margin-left:10px;'></span>
+                                <input type="hidden" name='' id='scoreValue'/>
+                            </div>
+                            <input class="right g-btn btn-primary btn-xl" type="submit" id='addComment' testid='{#$result.testid#}' value="发表评论"/>
+                        </div>
+                    </form>
+                    评价记录
+                    <div class="comment-list-content1">
+                        <ul class="ct-panel-list" id='commentList'>
+                            {#if condition="$comments['count'] eq 0"#}
+                                <li><div class="clearfix">暂无评论</div></li>
+                            {#else/#}
+                                {#foreach name="comments['data']" item='record'#}
+                                    <li>
+                                        <div class="clearfix">
+                                            <p class="left username elli">
+                                                <a class="user" href="javascript:;">{#$record.UserName#}</a>
+                                            </p>
+                                            <div class="left ct-item-info">
+                                                <i class="test-score-icon i-star-s commentList" score='{#$record.Score#}'>
+                                                </i>
+                                                <cite class="timer">{#$record.LoadDate|date="Y/m/d H:i:s",####}</cite>
+                                            </div>
+                                        </div>
+                                        <div class="ct-item-context">{#$record.Content#}</div>
+                                    </li>
+                                {#/foreach#}
+                            {#/if#}
+                        </ul>
+                    </div>
+                    {#if condition="$comments['count'] gt 0"#}
+                        <div class="u-paginator" id='pagtion'>
+                            {#$comments['count']#} 条记录 {#$comments['page']#}/{#$comments['countPage']#} 页
+                            {#foreach name='pagtion' item='record'#}
+                                {#if condition="$record['c'] eq 'c'"#}
+                                    <span class="current">{#$record.n#}</span>
+                                {#else/#}
+                                    <a href="{#$record.a#}">{#$record.n#}</a>
+                                {#/if#}
+                            {#/foreach#}
+                        </div>
+                    {#/if#}
+                    <!-- 评价记录END -->
+                </div>
+            </div>
+            <!-- 评价试题 END-->
+        </div>
+        <!-- 试题详情 END-->
+    <!-- 试卷中心END -->
+    </div>
+<!-- 弹出框 -->
+
+<!--纠错试题-->
+<div id="tplErrorTest" class="hide" style='z-index:9999;'>
+    <div class="submit-error-content">
+        <form class="g-form" action="">
+            <div class="g-control-group se-test-num">
+                <label class="form-ctrl-item-tit" for="">试题编号：</label>
+                <span class='contentTestId'></span>
+            </div>
+            <div class="g-control-group se-error-type">
+                <label class="form-ctrl-item-tit" for="">错误类型：</label>
+                <label class="err-type-opt" for="errType1">
+                    <input type="checkbox" name="errType" id='errType1' value="1"/>
+                    试题内容
+                </label>
+                <label class="err-type-opt" for="errType2">
+                    <input type="checkbox" name="errType" id='errType2' value="2"/>
+                    答案解析
+                </label>
+                <label class="err-type-opt" for="errType3">
+                    <input type="checkbox" name="errType" id='errType3' value="3"/>
+                    所属章节
+                </label>
+                <label class="err-type-opt" for="errType4">
+                    <input type="checkbox" name="errType" id='errType4' value="4"/>
+                    知识点属性
+                </label>
+                <label class="err-type-opt" for="errType5">
+                    <input type="checkbox" name="errType" id='errType5' value="5"/>
+                    其他
+                </label>
+            </div>
+            <div class="g-control-group se-textarea">
+                <label class="form-ctrl-item-tit" for="">错误描述：</label>
+                <div class='editor'></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id='analyzeContainer' class='hidden'>
+    <div class="answer-item">
+        <h3 class="tit"> <b>答案</b>
+        </h3>
+        <div class="answer-context f-roman">%answer%</div>
+    </div>
+    <div class="answer-item">
+        <h3 class="tit"> <b>解析</b>
+        </h3>
+        <div class="answer-context f-roman">%analytic%</div>
+    </div>
+
+    <!-- <div class="answer-item">
+        <h3 class="tit">
+            <b>知识点</b>
+        </h3>
+        <div class="answer-context f-roman">
+            <div>
+                %knowledge%
+            </div>
+        </div>
+    </div> -->
+
+    <div class="answer-item">
+        <h3 class="tit">
+            <b>备注</b>
+        </h3>
+        <div class="answer-context f-roman">%remark%</div>
+    </div>    
+</div>
+<!--纠错试题END-->
+
+<div id="favorites" class="hidden">
+    <div class="Fav-contents">
+        <form class="g-form" action="">
+            <input type="hidden" name='favname' value='{#$result.docname#}'/>
+            <input type="hidden" name='id' value='{#$result.testid#}'/>
+            <input type="hidden" name='catalogid' value=''/>
+            <input type="hidden" name='times' value=''/>
+            <div class="g-control-group fav">
+                %content%
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- 评论数据 -->
+<div id='commentContainer' class='hidden'>
+    <li>
+        <div class="clearfix">
+            <p class="left username elli">
+                <a class="user" href="javascript:;">%username%</a>
+            </p>
+            <div class="left ct-item-info">
+                <i class="test-score-icon i-star-s commentListAsy" score='%score%'></i>
+                <cite class="timer">%loaddate%</cite>
+            </div>
+        </div>
+        <div class="ct-item-context">%content%</div>
+    </li>
+</div>
+<!-- 弹出框 END-->
+    <!--footer-->
+{#include file="Index@Common/footer" /#}
+    <script type="text/javascript" src="__PUBLIC__/plugin/ueditor/ueditor.config.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script src="__PUBLIC__/plugin/ueditor/ueditor.all.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script src="__PUBLIC__/plugin/editor.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script src="__PUBLIC__/default/js/paper.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/scoreBox.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/index/js/testPreviewDetail.js"></script>
+    
+    <script>
+        $(function(){
+            $('#seeAnalyze').click(function(){
+                var that = $(this);
+                var analyze = $('#analyze');
+                if(analyze.hasClass('hidden')){
+                    that.html('隐藏答案解析');
+                    analyze.removeClass('hidden');
+                }else{
+                    that.html('查看答案解析');
+                    analyze.addClass('hidden');
+                }
+                if(analyze.html() == ''){
+                    analyze.html('<div style="text-align:center;">加载中....</div>');
+                    var params = {
+                        id : that.attr('testid'),
+                        width : 500,
+                        s : Math.random()
+                    }
+                    $.post(U('Test/TestPreview/getOneTestById'), params, function(response){
+                        $.Basis.ajaxResponse(response, {
+                            doResponded : function(data, statusCode, ok){
+                                if(!ok){
+                                    if('30205' == statusCode || '30835' == statusCode){
+                                        analyze.html('').addClass('hidden');
+                                        that.html('查看答案解析');
+                                        $('.topLoginButton').trigger('click');
+                                    }else{
+                                        alert(data);
+                                    }
+                                    return true;
+                                }
+                                var html = $('#analyzeContainer').html();
+                                var kl = '';
+                                data = data[1][0][0];
+                                html = html.replace('%analytic%', getValue(data['analytic']));
+                                html = html.replace('%answer%', getValue(data['answer']));
+                                html = html.replace('%remark%', getValue(data['remark']));
+                                // html = html.replace('%knowledge%', getValue(data['kllist']));
+                                analyze.html(html);
+                                return true;
+                            }
+                        })
+                    });
+                }
+                return false;
+            });
+
+            $(".commentTestBtn").live("click",function(){
+                var commentSite = $(".TD-comment-panel").offset().top;
+                $("html,body").animate({
+                    "scrollTop":commentSite
+                },600,function(){
+                    $("#testCommmentTextarea").focus();
+                })
+            })
+            //收藏试题
+            $('.collect').live('click', function(){
+                $.post(U('User/Home/getCanUseCata'), {'times':Math.random()}, function(data){
+                    $.Basis.ajaxResponse(data, {
+                        doResponded : showFavorites
+                    })
+                });
+            });
+            $('.bank').live('click', function(){
+                $(this).addClass('bank_current').removeClass('bank').siblings('a').removeClass('bank_current').addClass('bank');
+                return false;
+            });
+
+            $('#nextSimilarity').click(function(){
+                var test = $('#similarityTest');
+                test.html('<div style="text-align:center;">加载中...</div>');
+                $.get(U('Test/TestPreview/nextSimilarlyTest/id/'+$('#testid').val()), function(response){
+                    $.Basis.ajaxResponse(response, {
+                        doResponded : function(result, statusCode, ok){
+                            if(!ok){
+                                if('30205' == statusCode || '30835' == statusCode){
+                                    $('.topLoginButton').trigger('click');
+                                }else{
+                                    alert(result);
+                                }
+                                return true;
+                            }
+                            $('#similarityTestDetail').attr('href', '/Test/'+result.testid);
+                            test.html(result.test);
+                            return true;
+                        }
+                    });
+                });
+                return false;
+            });
+
+            $('.scorebox').ScoreBox({
+                callback : function(score, current){
+                    $('#score').html(score+'分');
+                    $('#scoreValue').val(score);
+                },
+            });
+
+            $('.commentList').each(function(){
+                var that = $(this);
+                $(this).ScoreBox({
+                    'def' : parseInt(that.attr('score')),
+                    'isBindEvent' : false,
+                    'classes' : {
+                        'full' : 'star-a',
+                        'half' : 'star-b',
+                        'none' : 'star-c'
+                    },
+                    'former' : ''
+                });
+            });
+
+             $('.testpaperdown').click(function(){
+                $.get('{#:U("Home/Base/isLoginCheck")#}', function(result){
+                    if('only' == result['data']){
+                        alert('该试卷仅能教师用户下载');
+                        return;
+                    }else if(result['data'] != 'success'){
+                        $('.topLoginButton').trigger('click');
+                        $.indexCommon = $.extend($.indexCommon, {
+                            loginCallBack : function(status, user){
+                                if(1 == status){
+                                    if(user.Whois != 1){
+                                        alert('该试卷仅能教师用户下载');
+                                        return;
+                                    }
+                                    callback();
+                                }
+                            }
+                        });
+                    }else{
+                        callback();
+                    }
+                });
+                return false;
+            });
+
+            $('#addComment').click(function(){
+                var data = {
+                    comment : $('#testCommmentTextarea').val(),
+                    quesid : $(this).attr('testid'),
+                    quesscore : $('#scoreValue').val(),
+                    times : Math.random()
+                }
+                if(!data.comment){
+                    alert('评论内容不能为空！');
+                    return false;
+                }
+                $.post(U('Home/Index/comment'), data, function(response){
+                    $.Basis.ajaxResponse(response, {
+                        doResponded : function(result, statusCode, ok){
+                            if(!ok){
+                                if('30205' == statusCode || '30835' == statusCode){
+                                    $('.topLoginButton').trigger('click');
+                                }else{
+                                    alert(result);
+                                }
+                                return true;
+                            }
+                            if('true' == result){
+                                alert('评论成功！');
+                            }else{
+                                alert(result);
+                            }
+                            return true;
+                        }
+                    });
+                });
+                return false;
+            });
+            $('#pagtion a').live('click', function(){
+                $.get($(this).attr('href'), function(response){
+                    $.Basis.ajaxResponse(response, {
+                        doResponded : function(result, statusCode, ok){
+                            if(!ok){
+                                if('30205' == statusCode || '30835' == statusCode){
+                                    $('.topLoginButton').trigger('click');
+                                }else{
+                                    alert(result);
+                                }
+                                return true;
+                            }
+                            var html = '', string = $('#commentContainer').html();
+                            var comments = result['comments']['data'];
+                            for(var comment in comments){
+                                comment = comments[comment];
+                                html += string.replace('%username%', comment.UserName)
+                                                .replace('%loaddate%', comment.LoadDate)
+                                                .replace('%content%', comment.Content)
+                                                .replace('%score%', comment.Score);
+                            }
+                            $('#commentList').html(html).find('.commentListAsy').each(function(){
+                                var that = $(this);
+                                $(this).ScoreBox({
+                                    'def' : parseInt(that.attr('score')),
+                                    'isBindEvent' : false,
+                                    'classes' : {
+                                        'full' : 'star-a',
+                                        'half' : 'star-b',
+                                        'none' : 'star-c'
+                                    },
+                                    'former' : ''
+                                });
+                            });
+                            html = result['comments']['count'] +' 条记录 '+result['comments']['page']+'/'+result['comments']['countPage']+' 页 ';
+                            for(var page in result['pagtion']){
+                                page = result['pagtion'][page];
+                                if(page.c == 'c'){
+                                    html += '<span class="current">'+page.n+'</span>';
+                                }else{
+                                    html += '<a href="'+page.a+'">'+page.n+'</a>';
+                                }
+                            }
+                            $('#pagtion').html(html);
+                            return true;
+                        }
+                    });
+                });
+                return false;
+            });
+            $.TestPreviewDetail.init({#$result.subjectid#});
+        })
+        //试题收藏
+        function showFavorites(data, statusCode, ok){
+            if(!ok){
+                if('30205' == statusCode || '30835' == statusCode){
+                    $('.topLoginButton').trigger('click');
+                }else{
+                    alert(statusCode);
+                }
+                return true;
+            }
+            var str = '<a class="bank_current" cid="0" title="收藏到该目录">未分类</a>';
+            for(var i in data){
+                if(data[i]['deep']){
+                    for(var j=0;j<data[i]['deep'].length;j++){
+                        str += '<a class="bank" cid="'+data[i]['deep'][j]['CatalogID']+
+                        '" title="收藏到该目录">'+data[i]['deep'][j]['CatalogName']+'</a>';
+                    }
+                }else{
+                    str +='<a class="bank" cid="'+data[i]['CatalogID']+'" title="收藏到该目录">'+data[i]['CatalogName']+'</a>';
+                }
+            }
+            var favorites = $('#favorites');
+            favorites.find('.fav').html(str);
+            var html = favorites.html();
+            layer.open({
+                type: 1,
+                title: "收藏到",
+                area: ["500px", "300px"],
+                shift:5,
+                btn : ['收藏', '取消'],
+                shadeClose: true,
+                yes : function(index){
+                    var form = favorites.find('form');
+                    form.find('input[name="times"]').val(Math.random());
+                    form.find('input[name="catalogid"]').val(form.find('.bank_current').attr('cid'));
+                    var data = form.serialize();
+                    $.post(U('Home/Index/favSave'), data, function(response){
+                        $.Basis.ajaxResponse(response, {
+                            doResponded : function(result, statusCode, ok){
+                                if(!ok){
+                                    if('30205' == statusCode || '30835' == statusCode){
+                                        $('.topLoginButton').trigger('click');
+                                    }else{
+                                        alert(result);
+                                    }
+                                    return true;
+                                }
+                                if('true' == result){
+                                    alert('收藏成功！');
+                                }else{
+                                    alert(result);
+                                }
+                                layer.close(index);
+                                return true;
+                            }
+                        });
+                    })
+                },
+                content: html
+            });
+            return true;
+        }
+
+        function getValue(val){
+            if(val.replace(/<.*?[^>]>|\s+/g, '') == ''){
+                return '无';
+            }
+            return val;
+        }
+
+        var Types = new Object({#$types#});
+
+        function callback(){
+            $.post(U('Doc/Doc/loadTestByDocId'),{
+                'docid' : $('#docid').val()
+            },function(result){
+                    var data = result['data'];
+                    var title = $('#docname').html();
+                    var attachmentTitle = $('#typename').val();
+                    var str = 'maintitle@$@1@$@'+title+'@#@subtitle@$@1@$@'+attachmentTitle+'@#@parthead1@$@1@$@第I卷（选择题）@$@请点击修改第I卷的文字说明@#@parthead2@$@1@$@第II卷（非选择题）@$@请点击修改第II卷的文字说明';
+                    editData.clear();
+                    editData.set('init', str);
+                    var subjectid = $('#docSubejctId').val();
+                    Cookie.Set("SubjectId", subjectid, 7);
+                    var types = Types[subjectid];
+
+                    var typesArr='|';
+                    for(var value in data){
+                        value = data[value];
+                        for(var i=0; i<types.length; i++){
+                            if(types[i]['TypesID'] == value['typesid']){
+                                value['TypeName'] = types[i]['TypesName'];
+                                value['Volume'] = types[i]['Volume'];
+                                value['DScore'] = types[i]['DScore'];
+                                break;
+                            }
+                        }
+                        if(typesArr.indexOf('|'+value['typesid']+'|')==-1){
+                            typesArr+=value['typesid']+'|';
+                            editData.addtype(value['Volume'], value['TypeName'], '（题型注释）', 0, value['DScore']);
+                        }
+                        if(value['testnum'] == 0){
+                            value['testnum'] = 1;
+                        }
+                        editData.addtest(value['testid'], value['testnum'], value['TypeName'], value['typesid']);
+                    }
+                    window.location.href= '/Home/Index/main/u/Index_zuJuan';
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1285 @@
+[ 2017-10-19T10:24:12+08:00 ] 127.0.0.1 /Doc/DocInner/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: t E:\web\www\tk\Doc\Manage\DocInnerManage.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2017-10-19T10:40:08+08:00 ] 127.0.0.1 /Doc/DocInner/auto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: t E:\web\www\tk\Doc\Manage\DocInnerManage.class.php 第 215 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000935s ]
+
+[ 2017-10-19T10:40:11+08:00 ] 127.0.0.1 /Doc/DocInner/auto/t/excel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000803s ]
+
+[ 2017-10-19T10:40:12+08:00 ] 127.0.0.1 /Doc/DocInner/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: t E:\web\www\tk\Doc\Manage\DocInnerManage.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2017-10-19T10:40:15+08:00 ] 127.0.0.1 /Doc/DocInner/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: grade E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 94 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 124 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 124 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: grade E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 155 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 185 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 185 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2017-10-19T10:40:33+08:00 ] 127.0.0.1 /Doc/DocInner/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: t E:\web\www\tk\Doc\Manage\DocInnerManage.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2017-10-19T10:40:35+08:00 ] 127.0.0.1 /Doc/DocInner/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: grade E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 94 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 124 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 124 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: grade E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 155 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 185 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 185 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001777s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2017-10-19T13:14:33+08:00 ] 127.0.0.1 /Doc/WlnDoc/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 55 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 65 行.
+NOTIC: [8] Undefined variable: chapterArray E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 77 行.
+NOTIC: [8] Undefined variable: ability E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 87 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 95 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 117 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 117 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 117 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 117 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 117 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 117 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 117 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 117 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 117 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 117 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 117 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 127 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 128 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 154 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 154 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 157 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 157 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 165 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 171 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 172 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 178 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 178 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 181 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 189 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 189 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 192 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 195 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 198 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 205 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 205 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 206 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 214 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 214 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 214 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 214 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 223 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 225 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 246 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 248 行.
+NOTIC: [8] Undefined variable: chapterParentStr E:\web\www\tk\Runtime\Cache\Doc\af57adc86255fbdc9d8b0a47ffbcc1da.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2017-10-19T13:14:46+08:00 ] 127.0.0.1 /Doc/WlnDoc/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: gradeID E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 302 行.
+NOTIC: [8] Undefined variable: gradeID E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: getAllGrade E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 931 行.
+NOTIC: [8] Undefined offset: 33 E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 934 行.
+NOTIC: [8] Undefined variable: gradeID E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 35 E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 48 行.
+
+[ 2017-10-19T13:14:49+08:00 ] 127.0.0.1 /Doc/WlnDoc/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: haveLayer E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 304 行.
+
+[ 2017-10-19T13:14:51+08:00 ] 127.0.0.1 /Doc/WlnDoc/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: haveLayer E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 304 行.
+
+[ 2017-10-19T13:14:58+08:00 ] 127.0.0.1 /Doc/WlnDoc/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined variable: gradeID E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: pID E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 302 行.
+NOTIC: [8] Undefined variable: gradeID E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: getAllGrade E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 931 行.
+NOTIC: [8] Undefined variable: gradeID E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined variable: idList E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 714 行.
+NOTIC: [8] Undefined offset: 22 E:\web\www\tk\Common\Model\ApiCacheModel.class.php 第 48 行.
+
+[ 2017-10-19T14:18:20+08:00 ] 127.0.0.1 /Doc/DocInner/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 74 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 83 行.
+NOTIC: [8] Undefined variable: grade E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 94 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 102 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 124 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 124 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 135 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 144 行.
+NOTIC: [8] Undefined variable: grade E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 155 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 163 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 185 行.
+NOTIC: [8] Undefined variable: edit E:\web\www\tk\Runtime\Cache\Doc\0a9c065d9803d15e1399ce21baa108cc.php 第 185 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2017-10-19T15:02:40+08:00 ] 127.0.0.1 /Doc/WlnDoc/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 32 行.
+NOTIC: [8] Undefined index: Admin E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 39 行.
+NOTIC: [8] Undefined index: DocName E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 47 行.
+NOTIC: [8] Undefined index: GradeID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 51 行.
+NOTIC: [8] Undefined index: DocID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 55 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 63 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 71 行.
+NOTIC: [8] Undefined index: TypeID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 75 行.
+NOTIC: [2] current() expects parameter 1 to be array, null given E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 79 行.
+NOTIC: [8] Undefined index: Status E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 83 行.
+NOTIC: [8] Undefined index: IfIntro E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 87 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 91 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 99 行.
+NOTIC: [8] Undefined index: p E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 105 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\web\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\web\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\web\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\web\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\web\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\web\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\web\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\web\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+NOTIC: [8] Undefined offset: 0 E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 131 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\web\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\web\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Undefined index: name E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 52 行.
+NOTIC: [8] Undefined index: DocName E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 63 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: Admin E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 76 行.
+NOTIC: [8] Undefined index: Status E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 81 行.
+NOTIC: [8] Undefined index: Status E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 82 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 97 行.
+NOTIC: [8] Undefined index: IfIntro E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 127 行.
+NOTIC: [8] Undefined index: IfIntro E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 128 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 135 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 136 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 137 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2017-10-19T15:02:40+08:00 ] 127.0.0.1 /Doc/WlnDoc/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 32 行.
+NOTIC: [8] Undefined index: Admin E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 39 行.
+NOTIC: [8] Undefined index: DocName E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 47 行.
+NOTIC: [8] Undefined index: GradeID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 51 行.
+NOTIC: [8] Undefined index: DocID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 55 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 63 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 71 行.
+NOTIC: [8] Undefined index: TypeID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 75 行.
+NOTIC: [2] current() expects parameter 1 to be array, null given E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 79 行.
+NOTIC: [8] Undefined index: Status E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 83 行.
+NOTIC: [8] Undefined index: IfIntro E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 87 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 91 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 99 行.
+NOTIC: [8] Undefined index: p E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 105 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\web\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\web\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\web\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\web\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\web\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\web\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\web\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\web\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+NOTIC: [8] Undefined offset: 0 E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 131 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\web\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\web\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined index: name E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 52 行.
+NOTIC: [8] Undefined index: DocName E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 63 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: Admin E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 76 行.
+NOTIC: [8] Undefined index: Status E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 81 行.
+NOTIC: [8] Undefined index: Status E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 82 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 97 行.
+NOTIC: [8] Undefined index: IfIntro E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 127 行.
+NOTIC: [8] Undefined index: IfIntro E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 128 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 135 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 136 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 137 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000878s ]
+
+[ 2017-10-19T15:02:48+08:00 ] 127.0.0.1 /Doc/WlnDoc/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 32 行.
+NOTIC: [8] Undefined index: Admin E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 39 行.
+NOTIC: [8] Undefined index: DocName E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 47 行.
+NOTIC: [8] Undefined index: GradeID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 51 行.
+NOTIC: [8] Undefined index: DocID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 55 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 63 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 71 行.
+NOTIC: [8] Undefined index: TypeID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 75 行.
+NOTIC: [2] current() expects parameter 1 to be array, null given E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 79 行.
+NOTIC: [8] Undefined index: Status E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 83 行.
+NOTIC: [8] Undefined index: IfIntro E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 87 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 91 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 99 行.
+NOTIC: [8] Undefined index: p E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 105 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\web\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\web\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\web\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\web\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\web\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\web\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\web\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\web\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+NOTIC: [8] Undefined offset: 0 E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 131 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\web\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\web\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined index: name E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 52 行.
+NOTIC: [8] Undefined index: DocName E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 63 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 69 行.
+NOTIC: [8] Undefined index: Admin E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 76 行.
+NOTIC: [8] Undefined index: Status E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 81 行.
+NOTIC: [8] Undefined index: Status E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 82 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 89 行.
+NOTIC: [8] Undefined index: DocID E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 97 行.
+NOTIC: [8] Undefined index: IfIntro E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 127 行.
+NOTIC: [8] Undefined index: IfIntro E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 128 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 135 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 136 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 137 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\5339a4a834ea63236ed54f3db948c62a.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2017-10-19T16:37:56+08:00 ] 127.0.0.1 /Doc/WlnDoc/xlslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: name E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 202 行.
+NOTIC: [8] Undefined index: Admin E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 209 行.
+NOTIC: [8] Undefined index: DocName E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 217 行.
+NOTIC: [8] Undefined index: GradeID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 221 行.
+NOTIC: [8] Undefined index: DocID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 225 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 233 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 241 行.
+NOTIC: [8] Undefined index: TypeID E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 245 行.
+NOTIC: [2] current() expects parameter 1 to be array, null given E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 249 行.
+NOTIC: [8] Undefined index: Status E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 253 行.
+NOTIC: [8] Undefined index: IfIntro E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 257 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 261 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 269 行.
+NOTIC: [8] Undefined index: p E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 275 行.
+NOTIC: [2] Missing argument 3 for WLNPage::init() E:\web\www\tk\Common\Tool\WLNPage.class.php 第 50 行.
+NOTIC: [8] Undefined variable: thirdPram E:\web\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\web\www\tk\Common\Tool\WLNPage.class.php 第 51 行.
+NOTIC: [2] extract() expects parameter 1 to be array, null given E:\web\www\tk\Common\Tool\WLNPage.class.php 第 52 行.
+NOTIC: [8] Undefined variable: parameter E:\web\www\tk\Common\Tool\WLNPage.class.php 第 54 行.
+NOTIC: [8] Undefined index: phone E:\web\www\tk\Common\Tool\WLNPage.class.php 第 63 行.
+NOTIC: [8] Undefined variable: type E:\web\www\tk\Common\Tool\WLNPage.class.php 第 88 行.
+NOTIC: [8] Undefined variable: type E:\web\www\tk\Common\Tool\WLNPage.class.php 第 89 行.
+NOTIC: [8] Undefined offset: 0 E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 298 行.
+NOTIC: [8] Undefined offset: 0 E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 298 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: class E:\web\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+NOTIC: [8] Undefined index: class E:\web\www\main\Library\Think\Template\TagLib\Html.class.php 第 78 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined index: name E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 54 行.
+NOTIC: [8] Undefined index: DocName E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 65 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: SubjectID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 71 行.
+NOTIC: [8] Undefined index: Admin E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 78 行.
+NOTIC: [8] Undefined index: Status E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 83 行.
+NOTIC: [8] Undefined index: Status E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 84 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocYear E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 91 行.
+NOTIC: [8] Undefined index: DocID E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 99 行.
+NOTIC: [8] Undefined index: IfIntro E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 129 行.
+NOTIC: [8] Undefined index: IfIntro E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 130 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 137 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 138 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 139 行.
+NOTIC: [8] Undefined index: ShowWhere E:\web\www\tk\Runtime\Cache\Doc\6da14b2d4e80b75db7110bcbe145c0bb.php 第 140 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001170s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001248s ]
+
+[ 2017-10-19T16:37:58+08:00 ] 127.0.0.1 /Doc/WlnDoc/testsavexls/DocID/60342.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): Unknown modifier 'f' E:\web\www\main\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\SystemLayerController.class.php 第 24 行.
+NOTIC: [8] Undefined index: Manage E:\web\www\tk\Common\Controller\DefaultController.class.php 第 24 行.
+NOTIC: [8] Undefined index: key E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 1504 行.
+NOTIC: [8] Undefined index: id E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 1507 行.
+NOTIC: [8] Undefined variable: buffer E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 1559 行.
+NOTIC: [8] Undefined variable: buffer E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 1564 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 1564 行.
+NOTIC: [8] Undefined offset: -2 E:\web\www\tk\Common\Model\UploadModel.class.php 第 814 行.
+NOTIC: [8] Undefined offset: -1 E:\web\www\tk\Common\Model\UploadModel.class.php 第 814 行.
+NOTIC: [8] Undefined variable: pageName E:\web\www\tk\Doc\Manage\WlnDocManage.class.php 第 1603 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001801s ]
+

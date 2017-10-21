@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>{#$buffer.NewTitle#} - {#$config.IndexName#}</title>
+    <meta name="keywords" content="公告内容页" />
+    <meta name="description" content="公告内容页" />
+    <style></style>
+    <link type="text/css" href="__PUBLIC__/default/css/common1.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/default/css/index.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script>var local='{#:U('Index/main')#}';</script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+</head>
+<body>
+<div id="righttop">
+    <div id="categorylocation">
+        <span class="nowPath">当前位置：</span>
+        >
+            <span id="loca_text">
+                <a href="{#:U('Index/newsList')#}">系统公告</a>
+                > {#$buffer.NewTitle#}
+            </span>
+    </div>
+</div>
+
+<div id="divbox" style="overflow-x: hidden; overflow-y: auto; height: 500px;">
+
+    <div style="height:1px;"/>
+    <div class="content_01" id="xtgg" style="margin-bottom:10px">
+        <div class="title">
+            <span style="float:left">系统公告</span>
+                <span style="float:right; margin-right:15px; font-weight:normal">
+                    <a href="{#:U('Index/newsList')#}" style="font-size:14px">返回</a>
+                </span>
+        </div>
+        <div class="newnr_box">
+            <div class="tit">
+                {#$buffer.NewTitle#}
+                <p>
+                    时间：{#$buffer.LoadDate|date="Y-m-d H:i:s",####}&nbsp;&nbsp;来源：智慧云题库云平台&nbsp;&nbsp;作者：{#$buffer.Admin#}&nbsp;&nbsp;浏览：{#$buffer.Hits#}
+                </p>
+            </div>
+            {#$buffer.NewContent|stripslashes#}
+        </div>
+    </div>
+</div>
+<div style="display:none;">
+    <iframe id="paperurl" src="#" width="0" height="0" frameborder="0"></iframe>
+</div>
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $.post(U('Index/newHits'),{NewID:'{#$NewID#}','times':Math.random()});
+    });
+    function InitDivXdBox(){
+        $("#divbox").height($(window).height()-$('#righttop').height()-30);
+    }
+    $(window).resize(function(){
+        InitDivXdBox();
+    });
+    InitDivXdBox();
+</script>
+{#include file="Public/bottom"/#}
+</body>
+</html>

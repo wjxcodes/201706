@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>重置密码 - {#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/default/css/index.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <style type="text/css">
+        body{margin:0;padding:0;background-color:#e5e5e5;font-family:宋体,微软雅黑;}
+        body,a,span,div,td{font-size:14px;}
+        a{color:#00f;text-decoration:none;}
+        a:hover{color:#f00;text-decoration:underline;}
+        .input{width:160px;}
+        .red{color:#ff0000;}
+        .b{font-weight:bold;}
+        div.box{width:800px;text-align:left;position:relative;}
+        div.item{font-size:16px;font-weight:bold;}
+        div.itemcontent{line-height:25px;}
+        div#banner{background:url();width:877px;height:220px;}
+        div#sitefoot a{color:#1E5494;text-decoration:none;}
+        div#sitefoot a:hover{color:#f00;text-decoration:underline;}
+        span.qqonline{display:inline-block;width:100px;text-align:right;color:#4B94CB;font-size:13px;}
+        .header{background-color:#32393d;height:75px;border-bottom:1px solid #18212b;z-index:100;}
+        .header .logo{float:left;background:url(__PUBLIC__/default/image/logo.jpg) no-repeat;font-size:0px;text-indent:-1000px;height:75px;width:355px;margin-top:8px;}
+        .top,.login,.footer{width:960px;margin:0px auto;}
+        .top .nav{float:right;line-height:75px; color:#fff}
+        .top .nav a{ color:#fff}
+        .main{ width:100%; background:url(__PUBLIC__/default/image/index_bj.jpg) no-repeat top center; height:550px}
+        .mtop{ padding-top:100px}
+        .login{background:url(__PUBLIC__/default/image/login_bj.png) right no-repeat;width:432px; height:351px;}
+        .login .t{width:432px; height:351px;}
+        .login .t div{}
+        .footer{margin-top:5px;padding-top:5px;line-height:25px; color:#FFF; padding-top:15px; font-family:Arial, Helvetica, sans-serif}
+        .footer a{color:#fff; font-size:12px;}
+        .footer .ftop{text-align:center; font-size:12px;}
+        .footer .fbottom{text-align:center; font-size:12px;}
+        
+        fieldset{border: 0;padding: 0;margin: 0;}        
+        #login{width:267px; z-index: 0; margin:0 auto; padding-top:20px;}
+        .login_box{ padding-bottom:50px}
+        .wjmm a{ font-size:14px; color:#0074d9}
+        #inputs .wbk01{background: #f1f1f1 url(__PUBLIC__/default/image/login-sprite.png) no-repeat;font-size:14px;}
+        #inputs .wbk01:focus{background-color: #fff;border-color: #e8c291;outline: none;-moz-box-shadow: 0 0 0 1px #e8c291 inset;-webkit-box-shadow: 0 0 0 1px #e8c291 inset;box-shadow: 0 0 0 1px #e8c291 inset;}
+        #UserName{background-position: 5px -5px !important;}
+        .Password{background-position: 5px -54px !important;}
+        .wbk01,.wbk02{
+            height:40px;
+            margin: 0 0 10px 0;
+            width:265px; 
+            border:1px solid #c5c8cd;
+            -moz-border-radius:3px;
+            -webkit-border-radius:3px;
+            border-radius:3px;
+            -moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+            -webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+            box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+            background-color: #ebebeb;
+            font-size:14px;
+            color:#898989;
+            padding-left:24px;
+            line-height:40px
+        }
+        .wbk02{
+            width:155px; 
+        }
+        #loginSubmit{ border:none; background:url(__PUBLIC__/default/image/an_dl.jpg) no-repeat;width:74px; height:28px; color:#fff;cursor:pointer}
+        #zcsubmit{ background:url(__PUBLIC__/default/image/an_zc.jpg) no-repeat; border:none; width:86px;color:#fff;cursor:pointer}
+        .wjmm{ float:left; padding-top:50px;}
+        .bd{ width:290px; border-top:#ccc dashed 1px; padding-top:20px; margin:0 auto}
+        #inputs #Email{background:url(__PUBLIC__/default/image/email.jpg) 3px 12px no-repeat;}
+        #inputs #verify{background:url(__PUBLIC__/default/image/yzm.jpg) 3px 12px no-repeat;}
+        .none{display:none;}
+    </style>
+    <script>
+        var local='{#:U('Index/main')#}';
+        var mark='setPass';
+        var invit='{#$invit#}';
+        var u='{#$Think.request.u#}';
+        var k='{#$Think.request.k#}';
+    </script>
+</head>
+<body>
+    {#include file="header"/#}
+    <div class="main">
+        <div class="mtop">
+            <div class="login">
+                <div class="t">
+                    <div style="padding:35px 0px 10px 0px; width:290px; margin:0 auto;font-weight:bold;"> <font style="font-size:24px" face="微软雅黑,黑体" color="#666666">重置密码</font>
+                    </div>
+                    <div class="bd">
+                        <div id="loginMsg" style="color:#555555; text-align:left; padding-top:80px; font-size:18px; font-family:微软雅黑,黑体; display:none"></div>
+                        <form id="loginform">
+                            <fieldset id="inputs" >
+                                <div style="line-height:30px;">用户名：{#$userName#}</div>
+                                <input id="Password" type="password" class="wbk01 Password none"  value="">
+                                <input id="Passworda" type="text" class="wbk01 Password"  value="请填写6-18位密码">
+                                <input id="Password1" type="password" class="wbk01 Password none"  value="">
+                                <input id="Password1a" type="text" class="wbk01 Password"  value="请再次填写6-18位密码">
+                                <div style="width:290px; padding-top:10px; height:30px;">
+                                    <div style="float:right">
+                                        <input type="button" id="loginSubmit" value="修改密码"></div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {#include file="footer"/#}
+    </div>
+
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/index.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('input,a,img,div,span');</script>
+    <![endif]-->
+</body>
+</html>

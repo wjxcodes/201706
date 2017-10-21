@@ -1,0 +1,65 @@
+/*教师节专题*/
+
+/*字体图标*/
+@font-face{font-family:'iconfont';src:url('../font/iconfont.eot');src:url('../font/iconfont.eot?#iefix') format('embedded-opentype'),url('../font/iconfont.woff') format('woff'),url('../font/iconfont.ttf') format('truetype'),url('../font/iconfont.svg#iconfont') format('svg');}
+.iconfont{font-family:"iconfont"!important;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:0}
+
+/*layout*/
+body{color:#000;background-color:#fff}
+.w100pct{width:100%;}
+
+/*100% 有最小宽度居中显示*/
+.laymp{position:relative;height:644px;overflow:hidden;min-width:874px;background-color:#FFD782;}
+.laym{position:absolute;margin-left:-960px;left:50%;top:0;text-align:center;}
+.laymp .join-btn{position:absolute;bottom:273px;left:50%;z-index:100;width:226px;height:56px;line-height:56px;border-radius:5px;background-color:#eccf0f;box-shadow:0 2px 3px rgba(0,0,0,.4);-webkit-border-radius:5px;margin-left:-113px;opacity:.9;filter:alpha(opacity=90);transition:all .2s;-webkit-transition:all .2s;}
+.laymp .join-btn:hover{opacity:1;filter:alpha(opacity=100)}
+.f-heiti{font-family:'黑体',sans-serif;}
+.w874{width:874px;margin:0 auto;}
+
+/*section1*/
+.section1 .zhongqiu-tit{height:44px;line-height:44px;font-size:16px;color:#333;padding-left:170px;background:#fff url(../imgs/special/zhongqiu/active-tit.jpg) 0 0 no-repeat;}
+.section-wrap1{position:relative;z-index:10;margin-top:-154px;height:154px;}
+.section1{height:124px;background-color:#fff;padding-top:30px;}
+
+/*section3*/
+.intro-content1{padding:50px 67px 0;}
+.intro-content1 h2{text-align:center;}
+.intro-content1 h2 span{display:inline-block;padding-left:1.4em;font-size:28px;color:#c50100;background:url(../imgs/special/1201/notice-icon.png) left 60% no-repeat;}
+.intro-content1 .content-inner{font-size:16px;line-height:1.8;text-indent:2em}
+.intro-content1 .content-inner p{margin:1em 0;}
+.intro-content1 .content-inner .red{color:#c50100;}
+.intro-content1 .content-inner .nor-btn{color:#fff;text-align:center;padding:0 0.5em;text-indent:0;background-color:#ff3852;border-color:#ff3852;}
+.section-wrap3{padding-bottom:80px;background:#ffd782 url(../imgs/special/1201/body-bg.jpg)  50% 0 no-repeat;}
+
+/*价格*/
+.active-price{margin:0 auto;width:866px;table-layout:fixed;font-size:16px;border-color:#fff;text-align:center;}
+.active-price th,.active-price td{border-color:#fff;padding:0.8em 1em;}
+.active-price th{background-color:#ff4b57;color:#fff;text-align:center;}
+.active-price .red{color:#c50100;font-weight:600;}
+.active-price td{background-color:#ffde97;padding:1em;}
+
+/*价格END*/
+.section3{padding-bottom:70px;background:url(../imgs/special/1201/main-bg.png) repeat;}
+.section3 .vip-intro{position:relative;z-index:11;}
+.section3 .vip-intro h1{font-size:28px;color:#c50100;text-align:center;padding:40px 0 15px 0;}
+
+/*vip权限介绍表格部分*/
+.vip-intro-table-box{color:#222;width:876px;margin:0 auto;}
+.vip-intro-table-box table{width:100%;line-height:42px;table-layout:fixed;text-align:center}
+.vip-intro-table-box .vip-cite{padding-top:1.5em;font-size:20px;text-align:center}
+.vip-intro-table-box .vip-cite .red{color:#c50100;text-decoration:underline}
+.vip-intro-table-box table .table-menu p{line-height:25px;padding:0 20px;}
+.vip-intro-table-box table th{background-color:#ffe4a9;text-align:center;font-weight:600;padding:5px 0;}
+.vip-intro-table-box table,.vip-intro-table-box tr,.vip-intro-table-box th,.vip-intro-table-box td{border:1px solid #ffde97;}
+.vip-intro-table-box table{border:1px solid #c8c8c8;}
+.vip-intro-table-box td{text-align:center;line-height:42px;}
+.vip-intro-table-box tr td:first-child{text-align:right;background-color:#ffe4a9}
+.vip-intro-table-box td .iconfont{display:inline-block;width:22px;height:22px;margin-top:10px}
+.vip-intro-table-box td i.true{background:url(../imgs/special/zhongqiu/true-icon.jpg) 0 0 no-repeat;}
+.vip-intro-table-box td i.false{background:url(../imgs/special/zhongqiu/false-icon.jpg) 0 0 no-repeat;}
+
+/*底部二维码*/
+.section3-footer{margin-top:40px;}
+.section3-footer .erweima{float:left;width:200px;padding-left:268px;}
+.section3-footer .text{float:left;font-size:16px;color:#333;padding-top:60px;}
+.section3-footer .text cite{color:#ff1717}

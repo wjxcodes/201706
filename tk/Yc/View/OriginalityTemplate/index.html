@@ -1,0 +1,323 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+<style>
+    button{
+        cursor:pointer;
+        padding:2px 2px;
+        border:1px outset #999; 
+        background-color:#cde;
+    }
+    .pagtion{
+        margin-right:10px;
+    }
+    .pagtion a{
+        background-color:#cde;
+        border:1px solid #ccc;
+        padding:2px 5px;
+        text-decoration: none;
+        font-size:13px;
+        color:#000;
+    }
+    .pagtion a:hover{
+        background-color:#fff;
+    }
+</style>
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">{#$pageName#}  |  <a href="{#:U('Yc/OriginalityStage/index')#}" title="模板期次管理" tabindex="-1">模板期次管理</a></div>
+<!--  功能操作区域  -->
+<div class="operate">
+    <!-- {#html:imageBtn name="add" value="新增" class="mybtadd" style="impBtn hMargin fLeft shadow" /#} -->
+    <!-- {#html:imageBtn name="delete" value="删除" class="mybtdelete" style="impBtn hMargin fLeft shadow" /#} -->
+    {#html:imageBtn name="revert" value="刷新" class="btflush" style="impBtn hMargin fLeft shadow" /#}
+
+    <!-- 查询区域 -->
+    <FORM id="form1" METHOD="POST" ACTION="__URL__">
+    <div class="fRig">
+        <!-- <div class="fLeft"><span id="key"><INPUT id="name" TYPE="text" NAME="name" value="{#$Think.request.name#}" title="用户名查询" class="medium" ></span></div>
+        {#html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /#}
+        {#html:imageBtn name="adv" value="高级" id="showText" style="impBtn hMargin fLeft shadow" /#} -->
+    </div>
+    <!-- 高级查询区域 -->
+    <div id="searchM" class=" none search cBoth">
+        <TABLE border="0" cellpadding="1" cellspacing="3" width="100%">
+        <TR>
+            <TD class="tRight" width="60">用户名：</TD>
+            <TD><INPUT TYPE="text" NAME="UserName" class="small" value="{#$Think.request.UserName#}" ></TD>
+            <TD class="tRight" width="80">内容：</TD>
+            <TD ><INPUT TYPE="text" NAME="Content" class="small" value="{#$Think.request.Content#}"></TD>
+            <TD class="tRight" width="50">状态：</TD>
+            <TD><SELECT class="medium bLeft" NAME="IfAdmin">
+            <option value="">全部</option>
+            <option value="0" {#eq name="Think.request.IfAdmin" value="0"#}selected="selected"{#/eq#}>普通用户</option>
+            <option value="1" {#eq name="Think.request.IfAdmin" value="1"#}selected="selected"{#/eq#}>管理员</option>
+            </SELECT></TD>
+            <TD class="tRight" width="60">日期：</TD>
+            <TD width="200"><INPUT TYPE="text" NAME="Start" class="small inputDate" value="{#$Think.request.Start#}"> - 
+            <INPUT TYPE="text" NAME="End" class="small inputDate" value="{#$Think.request.End#}">
+            </TD>
+        </TR>
+        </TABLE>
+    </div>
+        </FORM>
+</div>
+<!-- 功能操作区域结束 -->
+
+<!-- 列表显示区域  -->
+<div class="list">
+<div id='addAudit' style='display:none;'>
+    <form>
+        <input type="hidden" id='pkid'/>
+        <table class="list" cellpadding="5" cellspacing="0" border="1">
+           <tr>
+               <td width='60' align='right'>查询用户</td>
+               <td width="250">
+                    <input type="text" id="username"/>&nbsp;&nbsp;<button type='button' id='selectForm'>查询</button>
+               </td>
+               <td width='*' align="right" class='userListPagtion'>
+                   
+               </td>
+            </tr>
+            <tr>
+                <td colspan="3" id='userList'>
+                    
+                </td>
+            </tr>
+            <tr>
+               <td colspan="3">
+                    <button type='button' id='saveForm'>保存</button>
+                    <button type='button' id='cancelForm'>取消</button>
+               </td>
+           </tr>
+       </table> 
+    </form>
+</div>
+<div id='doSomeThing' style='display:none;'>
+    <form>
+        <input type="hidden" name='id' id='primaryKeyId'>
+       <table class="list" cellpadding="5" cellspacing="0" border="1">
+           <tr>
+               <td width='120' align='right'>所在期次</td>
+               <td width="*">
+                    <select name="SID" id='stage' class='formElement'>
+                        <option value="">请选择</option>
+                    </select>
+               </td>
+           </tr>
+           <tr>
+               <td align='right'>试卷类型</td>
+               <td id='doctype'>
+               </td>
+           </tr>
+           <tr>
+               <td colspan="2">
+                    <button type='button' id='saveForm'>保存</button>
+                    <button type='button' id='cancelForm'>取消</button>
+               </td>
+           </tr>
+       </table> 
+    </form>
+</div>
+<div id="result" class="result none"></div>
+<!-- Think 系统列表组件开始 -->
+<table id="checkList" class="list" cellpadding="5" cellspacing="0" border="1">
+    <tr><td height="5" colspan="10" class="topTd" ></td></tr>
+    <tr class="row" >
+        <th width="8"><input type="checkbox" id="CheckAll" tag="checkList"></th>
+        <th width="50">编号</th>
+        <th width="30%">所在期次<br>模板名称</th>
+        <th width="100">学科</th>
+        <th width='80'>试卷类型</th>
+        <th width='100'>管理员</th>
+        <th width='80'>审核状态</th>
+        <th>最后修改时间</th>
+        <th>添加时间</th>
+        <th>操作</th>
+    </tr>
+    {#volist name="list" id="node" #}
+        <tr class="row lists" jl=''>
+        <td><input type="checkbox" class="key" value="{#$node.TID#}"></td>
+        <td>{#$node.TID#}</td>
+        <td>{#$node.StageTitle#}<br/>{#$node.Title#}</td>
+        <td>{#$subjects[$node['SubjectID']]#}</td>
+        <td>{#$docType[$node['DocType']]['TypeName']#}</td>
+        <td>{#$node.AdminName#}</td>
+        <td>
+            {#if condition="empty($node['Status'])"#}
+            审核待分配
+            {#elseif condition="$node.Status eq 1"/#}
+            审核中
+            {#elseif condition="$node.Status eq 2"/#}
+            审核完成
+            {#elseif condition="$node.Status eq 3"/#}
+            审核通过
+            {#/if#}
+        </td>
+        <td>
+            {#if condition="$node.ModifiedTime eq 0"#}
+            无
+            {#else/#}
+            {#$node.ModifiedTime|date="Y-m-d",####}
+            {#/if#}
+        </td>
+        <td>{#$node.AddTime|date="Y-m-d H:i:s",####}</td>
+        <td>
+            <a href="{#:U('Yc/OriginalityTemplateTest/index',array('tid'=>$node['TID']))#}">查看模板试题</a><br/>
+            {#if condition="empty($node['Status'])"#}
+            <a href="#" pkid='{#$node.TID#}' class="addAuditTask" pkid="{#$node.TID#}">添加审核任务</a>
+            {#elseif condition="$node.Status eq 1 or $node.Status eq 2"/#}
+            <a href="#" pkid='{#$node.TID#}' class="auditTask" pkid="{#$node.TID#}">查看审核任务</a>
+            {#/if#}
+            <!-- <a href="#" class="edit" pkid='{#$node.TID#}'>编辑</a>
+            <a href="#" class="delete" pkid='{#$node.TID#}'>删除</a> -->
+        </td>
+        </tr>
+    {#/volist#}
+    <tr><td height="5" colspan="10" class="bottomTd"></td></tr>
+</table>
+<!-- Think 系统列表组件结束 -->
+</div>
+<!--  分页显示区域 -->
+<div class="page">{#$page#}</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<script type='text/javascript' src="__PUBLIC__/zjadmin/js/originalityTpl.js"></script>
+<script>
+    var page = 1;
+    //查看审核任务
+    $('.auditTask').live('click', function(){
+        var that = $(this);
+        that.attr('href', U('Yc/OriginalityAudit/index?tid='+that.attr('pkid')));
+        return true;
+    });
+    //添加审核任务
+    $('.addAuditTask').live('click', function(){
+        var that = $(this);
+        var id = that.attr('pkid');
+        $.get(U('Yc/OriginalityTemplate/createAuditTask?id='+id), function(result){
+            //权限验证
+            if(checkPower(result)=='error'){
+                return false;
+            }
+            config = $.extend(config,{
+                'formId' : '#addAudit',
+                'editZone' : '<tr class="editForm"><td colspan="10"></td></tr>'
+            });
+            var data = result['data'];
+            page = 1;
+            $('#userList').html(loadUserList(data));
+            showForm(that);
+            $('#pkid').val(id);
+        });
+        return false;
+    });
+
+    //按用户名查询
+    $('#selectForm').click(function(){
+        page = 1;
+        var username = $('#username');
+        var val = username.val();
+        if(val == ''){
+            alert('用户名不能为空！');
+            return false;
+        }
+        var tid = $(this).parents('tr').prev().find('.addAuditTask').attr('pkid');
+        $.get(U('Yc/OriginalityTemplate/getUserList?tid='+tid+'&p='+page+'&name='+val+'&r='+Math.random()), function(result){
+            //权限验证
+            if(checkPower(result)=='error'){
+                return false;
+            }
+            var data = result['data'];
+            $('#userList').html(loadUserList(data));
+        });
+    });
+
+    //选择用户
+    $('.userList input').live('click', function(){
+        $(this).parents('tr').siblings().each(function(){
+            $(this).find('input').attr('checked', false);
+        });
+    });
+
+    //分页按钮
+    $('.pagtion a').live('click', function(){
+        var that = $(this);
+        var total = that.attr('totalPage');
+        var currentPage = parseInt(that.attr('page'));
+        if(total){
+            if(currentPage > total){
+                return false;
+            }
+        }else{
+            if(currentPage == 0){
+                return false;
+            }
+        }
+        page = currentPage;
+        var tid = that.parents('tr').prev().find('.addAuditTask').attr('pkid');
+        var url = 'tid='+tid+'&p='+page;
+        var username = $('#username');
+        if(username.val() != ''){
+            url += '&name='+username.val()
+        }
+        $.get(U('Yc/OriginalityAudit/getUserList?'+url), function(result){
+            //权限验证
+            if(checkPower(result)=='error'){
+                return false;
+            }
+            var data = result['data'];
+            $('#userList').html(loadUserList(data));
+        });
+    });
+
+    //添加审核任务
+    $('#saveForm').live('click', function(){
+        var that = $(this);
+        var userList = $('.userList').find('input[name="userid"]:checked');
+        if(userList.length == 0){
+            alert('请选择用户');
+            return false;
+        }
+        var tid = $('#pkid').val();
+        $.post(U('Yc/OriginalityTemplate/saveAuditTask'), {
+            'tid' : tid,
+            'userid' : userList.val()
+        }, function(result){
+            //权限验证
+            if(checkPower(result)=='error'){
+                return false;
+            }
+            that.parents('.editForm').prev().find('.addAuditTask').html('查看审核任务').attr('class', 'auditTask');
+            hideForm();
+            alert('添加审核任务成功！');
+        });
+    });
+    $('#cancelForm').click(function(){
+        hideForm();
+    });
+   
+    //加载用户数据
+    function loadUserList(data){
+        var count = data[0];
+        var data = data[1] || [];
+        $('.userListPagtion').html('<span class="pagtion">'+getPagtionHtml(count, 20)+'</span>');
+        html = '<table class="list userList" cellpadding="5" cellspacing="0" border="1">';
+        html += "<tr><th width='40'>选择</th><th width='100'>标号</th><th width='*'>用户名</th></tr>";
+        for(var i=0; i<data.length; i++){
+            var id = data[i]['UserID'];
+            html += '<tr>';
+            html += '<td><input type="checkbox" name="userid" value="'+id+'"/></td>';
+            html += '<td>'+id+'</td>';
+            html += '<td>'+data[i]['UserName']+'</td>';
+            html += '</tr>';
+        }
+        return html+="</table>";
+    }
+</script>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

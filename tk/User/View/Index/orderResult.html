@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}"/>
+    <link rel="stylesheet" href="__PUBLIC__/index/css/register.css{#$Think.config.WLN_UPDATE_FILE_DATE#}"/>
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+</head>
+<body class="bg-white">
+    <!--首页头部-->
+{#include file="Index@Common/secondTop" /#}
+    <!--首页头部-end-->
+    <div class="form-wrap bg-f8f8f8">
+        <div class="form-container w1000 clearfix">
+            <!-- 注册反馈信息 -->
+            <div class="feedback-msg-container">
+                {#if condition="$orderStatus eq 1"#}
+                    <div class="fb-msg-title">
+                        <i class="iconfont">&#xe631;</i>
+                        <span class="msg">支付成功！</span>
+                    </div>
+                {#else /#}
+                    <div class="fb-msg-title fail">
+                        <i class="iconfont">&#xe634;</i>
+                        <span class="msg">支付失败！</span>
+                    </div>
+                {#/if#}
+                <div class="fb-msg-content">
+                    <div class="fb-msg-btn">
+                        <a href="{#:U('Home/Index/main',array('u'=>'User_Home_checkOrder'))#}" class="nor-btn smler-btn light-btn">
+                            查看订单</a>
+                        <a href="{#:U('/Home','',false)#}" class="nor-btn smler-btn">组卷中心</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 注册反馈信息 -->
+            <!-- 订单 -->
+            <div class="order-info-site">
+                <table class="g-table g-table-bordered">
+                    <thead>
+                        <tr>
+                            <th width="160">订单号</th>
+                            <th>产品</th>
+                            <th width="90">金额</th>
+                            <th width="150">完成时间</th>
+                            <th width="90">状态</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="center">{#$orderID#}</td>
+                            <td><span class="order-name">{#$orderName
+                                #}<cite>{#$orderPowerName#}</cite><cite>X{#$orderPowerTime#}</cite></span></td>
+                            <td align="center"><span class="money">{#$totalFee#}元</span></td>
+                            <td align="center"><span class="time">{#$orderTime#}</span></td>
+                            <td align="center">{#if condition="$orderStatus eq 1"#}支付成功{#else
+                                /#}支付失败$nbsp;<a id="goToPay" oid="{#$orderID#}" href="javascript:">再支付</a>{#/if#}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 订单END -->
+        </div>
+    </div>
+    <!--footer-->
+    <script type="text/javascript" src="__PUBLIC__/index/js/pingtai.js"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+    <![endif]-->
+    <script type="text/javascript">
+        $(document).on('click','#goToPay',function(){
+            var oid = $(this).attr('oid');
+            window.location.href = U('User/Home/goToPay?oid='+oid);
+        });
+    </script>
+    {#include file="Index@Common/secondFooter" /#}
+    

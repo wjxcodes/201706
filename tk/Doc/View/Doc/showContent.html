@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head>
+        <title>{#$doc['docname']#} - {#$config.IndexName#}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="keywords" content="{#$doc['docname']#},"/>
+        <meta name="description" content="{#$doc['docname']#},{#$config.Description#}"/>
+        <link rel="stylesheet" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}"/>
+        <link rel="stylesheet" href="__PUBLIC__/index/css/test-paper.css{#$Think.config.WLN_UPDATE_FILE_DATE#}"/>
+        <link rel="stylesheet" href="__PUBLIC__/index/css/u-test.css{#$Think.config.WLN_UPDATE_FILE_DATE#}"/>
+        <link rel="stylesheet" href="__PUBLIC__/index/css/style.css{#$Think.config.WLN_UPDATE_FILE_DATE#}"/>
+    </head>
+    <body>
+        {#include file="Index@Common/top"/#}
+        <!-- 面包屑导航 -->
+        <div class="w1000 crumbs-wrap">
+            <div class="g-crumbs"> <b class="now-path">当前位置：</b>
+                <a href="/">首页</a>
+                >
+                <a href="{#:U('Doc/Doc/show')#}">试卷资源</a>
+                >
+                <span>{#$doc['docname']#}</span>
+            </div>
+        </div>
+        <!-- 面包屑导航 end-->
+        <!-- banner -->
+        <div class="banner-area w1000">
+            <img src="__PUBLIC__/index/imgs/in-page/wln-bn.jpg" alt="智慧云题库云平台">
+            <h1>试卷出题</h1>
+        </div>
+        <!-- banner end-->
+        <div class='w1000'>
+            <div class='box'>
+                <!-- 试卷内容 -->
+                <div class="testpapercontent testPaper-content">
+                    <div class="testpaper-top clearfix">
+                        <div class="left testpaper-title">
+                            <h1 id="docname">{#$doc['docname']#}</h1>
+                            <div class="explain">
+                                <span>试卷类型：{#$doc['typename']#}</span>
+                                |
+                                <span>适用省份：{#$doc['areaname']#}</span>
+                                |
+                                <span>试卷年份：{#$doc['docyear']#}年</span>
+                                |
+                                <span>上传日期:{#$doc['loadtime']#}</span>
+                                |
+                                <span>题数：{#$doc['testCount']#}</span>
+                            </div>
+                        </div>
+                        <div class="right testpaperdown">
+                            <a class="nor-btn" href="javascript:;">下载试题</a>
+                            <input type="hidden" value="{#$doc['testCount']#}" id="testCount"/>
+                            <input type="hidden" name="docid" id="docid" value="{#$doc['docid']#}"/>
+                            <input type="hidden" name='subjectid' value="{#$doc['subjectid']#}" id='docSubejctId'/>
+                            <form id="toTestCenter" action="{#:U('/Home/Index/main')#}" method="post">
+                                <input type="hidden" name="loadMode" value="zujuan"/>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="classification">
+                        {#if condition='empty($test)'#}
+                        <div class="classificationtit">正在处理中的试卷，试题暂不会被显示！</div>
+                        {#else/#}
+                      {#assign name='partOrder' value='1'/#}
+                      {#assign name='testOrder' value='1'/#}
+                      {#foreach name='test' item='partValue' key='part'#}
+                          {#if condition="$doc['subjectid'] neq 12"#}
+                              {#if condition='$part eq 1'#}
+                        <div class="classificationtit">第{#:formatString('num2Chinese',$partOrder++)#}部分（选择题）</div>
+                        {#elseif condition="$part eq 2"/#}
+                        <div class="classificationtit">第{#:formatString('num2Chinese',$partOrder++)#}部分（非选择题）</div>
+                        {#/if#}
+                          {#/if#}
+                        <div class="smallclassification">
+                            {#foreach name='partValue' item='typeValue' key='type'#}
+                            <div class="smalltitle">{#:formatString('num2Chinese',$testOrder++)#}、{#$type#}</div>
+                            {#foreach name='typeValue' item='test'#}
+                            <div class="testpaperbody-wrap TD-test-panel">
+                                <div class="testpaperbody TD-body f-roman">{#$test.testold#}</div>
+                                <div class="testpaperfooter TD-footer clearfix">
+                                    <div class="left btn-group">
+                                        <a class="g-btn btn-primary seeAnalyze" href="{#:U('/Test/'.$test['testid'])#}" target='_blank'>查看解析</a>
+                                        <a class="g-btn btn-primary reportErrorTestBtn" href="javascript:;" testid='{#$test.testid#}'>试题纠错</a>
+                                    </div>
+                                    <div class="right">
+                                        <div class="test-attr-site">
+                                            <span class="test-attr"> <b>题号：</b>
+                                                {#$test.testid#}
+                                            </span>
+                                            <span class="test-attr">
+                                                <b>难度：</b> <i class="test-diff-icon i-star-s">{#$test.diffxing#}</i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {#/foreach#}
+                          {#/foreach#}
+                        </div>
+                        {#/foreach#}
+                    {#/if#}
+                    </div>
+                </div>
+                <!-- 试卷内容 end --> </div>
+        </div>
+
+        <!--纠错试题-->
+        <div id="tplErrorTest" class="hide" style='z-index:9999;'>
+            <div class="submit-error-content">
+                <form class="g-form" action="">
+                    <div class="g-control-group se-test-num">
+                        <label class="form-ctrl-item-tit" for="">试题编号：</label>
+                        <span class='contentTestId'></span>
+                    </div>
+                    <div class="g-control-group se-error-type">
+                        <label class="form-ctrl-item-tit" for="">错误类型：</label>
+                        <label class="err-type-opt" for="errType1">
+                            <input type="checkbox" name="errType" id='errType1' value="1"/>
+                            试题内容
+                        </label>
+                        <label class="err-type-opt" for="errType2">
+                            <input type="checkbox" name="errType" id='errType2' value="2"/>
+                            答案解析
+                        </label>
+                        <label class="err-type-opt" for="errType3">
+                            <input type="checkbox" name="errType" id='errType3' value="3"/>
+                            所属章节
+                        </label>
+                        <label class="err-type-opt" for="errType4">
+                            <input type="checkbox" name="errType" id='errType4' value="4"/>
+                            知识点属性
+                        </label>
+                        <label class="err-type-opt" for="errType5">
+                            <input type="checkbox" name="errType" id='errType5' value="5"/>
+                            其他
+                        </label>
+                    </div>
+                    <div class="g-control-group se-textarea">
+                        <label class="form-ctrl-item-tit" for="">错误描述：</label>
+                        <div class='editor'></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    {#include file="Index@Common/footer" /#}
+        <script src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+        <script src="__PUBLIC__/default/js/paper.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+        <script type="text/javascript" src="__PUBLIC__/plugin/ueditor/ueditor.config.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+        <script src="__PUBLIC__/plugin/ueditor/ueditor.all.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+        <script src="__PUBLIC__/plugin/editor.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+        <script type="text/javascript" src="__PUBLIC__/plugin/scoreBox.js"></script>
+        <script src="__PUBLIC__/index/js/testPreviewDetail.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+        <!--纠错试题END-->
+        <script> 
+        var Types = {#$types#};
+        $(document).ready(function(){
+            $.TestPreviewDetail.init($('#docSubejctId').val());
+            $('.testpaperdown').click(function(){
+                $.get('{#:U("Home/Base/isLoginCheck")#}', function(result){
+                    if('only' == result['data']){
+                        alert('该试卷仅能教师用户下载');
+                        return;
+                    }else if(result['data'] != 'success'){
+                        $('.topLoginButton').trigger('click');
+                        $.indexCommon = $.extend($.indexCommon, {
+                            loginCallBack : function(status, user){
+                                if(1 == status){
+                                    if(user.Whois != 1){
+                                        alert('该试卷仅能教师用户下载');
+                                        return;
+                                    }
+                                    callback();
+                                }
+                            }
+                        });
+                    }else{
+                        callback();
+                    }
+                });
+            });
+        });
+    
+        function _open(href){
+            window.location.href = href;
+            // window.open(href, '_blank');
+        }
+
+        function callback(){
+            $.post(U('Doc/Doc/loadTestByDocId'),{
+                'docid' : $('#docid').val()
+            },function(result){
+                    var data = result['data'];
+                    var title = $('#docname').html();
+                    var attachmentTitle = ($('.explain span').eq(0).html().replace('试卷类型：', ''));
+                    var str = 'maintitle@$@1@$@'+title+'@#@subtitle@$@1@$@'+attachmentTitle+'@#@parthead1@$@1@$@第I卷（选择题）@$@请点击修改第I卷的文字说明@#@parthead2@$@1@$@第II卷（非选择题）@$@请点击修改第II卷的文字说明';
+                    editData.clear();
+                    editData.set('init', str);
+                    var subjectid = $('#docSubejctId').val();
+                    Cookie.Set("SubjectId", subjectid, 7);
+                    var types = Types[subjectid];
+
+                    var typesArr='|';
+                    for(var value in data){
+                        value = data[value];
+                        for(var i=0; i<types.length; i++){
+                            if(types[i]['TypesID'] == value['typesid']){
+                                value['TypeName'] = types[i]['TypesName'];
+                                value['Volume'] = types[i]['Volume'];
+                                value['DScore'] = types[i]['DScore'];
+                                break;
+                            }
+                        }
+                        if(typesArr.indexOf('|'+value['typesid']+'|')==-1){
+                            typesArr+=value['typesid']+'|';
+                            editData.addtype(value['Volume'], value['TypeName'], '（题型注释）', 0, value['DScore']);
+                        }
+                        if(value['testnum'] == 0){
+                            value['testnum'] = 1;
+                        }
+                        editData.addtest(value['testid'], value['testnum'], value['TypeName'], value['typesid']);
+                    }
+                    window.location.href= '/Home/Index/main/u/Index_zuJuan';
+            });
+        }
+    </script>
+</body>
+</html>

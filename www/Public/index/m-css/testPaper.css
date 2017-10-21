@@ -1,0 +1,35 @@
+
+.testPaper-screen{margin-top:1em;}
+.testPaper-screen th{width:4em}
+.testPaper-screen th,.screening th{text-align:right}
+.testPaper-screen td{padding:0.3em 0;}
+.testPaper-screen td a,.screening td a{padding:0.2em 0.4em;margin:0.1em 0;float:left;color:#333;}
+.testPaper-screen td a:hover,.screening td a:hover{color:#ff7f02}
+.testPaper-screen td a.this,.screening td a.this{background:#ff7f02;color:#fff;border-radius:3px}
+
+/*试卷*/
+.testPaper-content{padding:0 0.6em;}
+.testPaper-content th:last-child{width:6em;}
+.testPaper-list{margin-top:2em;}
+.testPaper-list th{background-color:#eee;padding:0.8em 0;}
+.testPaper-list a{color:#000;line-height:1.5;}
+.testPaper-list td{padding:0.5em;}
+.testPaper-list .bg-light{background-color:#f6f6f6;}
+.testPaper-list .paper-tit{}
+.testPaper-list .timer{color:#999;}
+
+/*试卷预览*/
+.testpaperbody td{vertical-align:top;}
+.testpaper-top{padding:20px 15px;}
+.testpaper-top .explain{font-size:12px;color:#ddd;line-height:18px;}
+.testpaper-top .explain span{font-size:13px;color:#888;vertical-align:text-top;}
+.testpaper-top .testpaperdown{margin-top:10px;}
+.testpaper-top .testpaperdown a{padding:5px 0;width:110px;font-size:16px;}
+.testpaper-top .testpaperdown a:hover{background:#4B88E6;}
+.classificationtit{text-align:center;font-size:20px;color:#4B88E6;}
+.smallclassification{padding-bottom:5px}
+.smalltitle{height:36px;background:#5D9DFF;font-size:16px;color:#fff;line-height:36px;padding:0 15px;margin:15px 0;}
+.testpaperbody-wrap{padding:0.3em 0.6em;}
+.testpaperbody{overflow:hidden;}
+
+/*试卷预览END*/

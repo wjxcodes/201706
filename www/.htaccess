@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+	
+RewriteRule ^(.*)$ index.php?/$1 [QSA,PT,L]
+RewriteRule ^(.*)/home$ $1/Home [QSA,PT,L]
+RewriteRule ^(.*)/aat$ $1/Aat [QSA,PT,L]
+RewriteCond %{DOCUMENT_ROOT}/Uploads/word/$2web/$3 -f
+RewriteRule ^(.*)Uploads/word/(.*)(image[0-9]+.*)$ /Uploads/word/$2web/$3 [L]
+</IfModule>

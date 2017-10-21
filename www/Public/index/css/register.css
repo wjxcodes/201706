@@ -1,0 +1,224 @@
+/*字体图标*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{font-family:"iconfont"!important;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:0}
+
+/*页面标题*/
+.usercenter-page-title{float:left;margin:5px 0 0 15px;padding-left:15px;border-left:2px solid #ddd;font-size:26px;color:#888;}
+.has-account{float:right;padding:36px 10px 0 0;margin-bottom:-10px;color:#666;}
+
+/*左右基础结构*/
+.form-left-bd{float:left;width:619px;border-right:1px solid #ddd}
+.form-right-bd{}
+.form-center-bd{float:none;margin:0 auto;}
+.reg-right-container{float:right;width:380px;}
+
+/*注册表单*/
+.form-wrap{padding:20px 0 70px;}
+.form-container{padding:50px 0;border:1px solid #eee;background-color:#fff;min-height:420px;}
+.form-bd-wrap{padding-top:30px;}
+
+.form-item{overflow:hidden;padding-top:22px;}
+.form-item .item-tit{float:left;height:44px;line-height:44px;width:135px;padding-right:8px;text-align:right;}
+.form-item .item-tit s{font-size:16px;text-decoration:none;color:#e00;margin-right:4px;vertical-align:-3px}
+.form-item .item-content{float:left;max-width:276px;overflow:hidden;}
+
+/*身份*/
+.form-item .select-id{line-height:42px;}
+.form-item .select-id .id-option{float:left;width:128px;height:42px;border:1px solid #ccc;font-size:16px;text-align:center;cursor:pointer;}
+.form-item .select-id .id-option:hover{border-color:#ff9a60;}
+.form-item .select-id .id-option .iconfont{font-size:20px;line-height:20px;margin-right:7px;color:#999;}
+.form-item .select-id .io-left{margin-right:16px;}
+.form-item .select-id .on{height:40px;line-height:40px;width:126px;border:2px solid #ff652a;color:#ff652a;background:#fff url(../imgs/user/current-id.jpg) 109px 23px no-repeat;cursor:default;}
+.form-item .select-id .on i.iconfont{color:#ff652a;}
+
+/*select框*/
+.form-item .normal-select,.form-item .short-select{float:left;height:44px;width:276px;padding-left:10px;border:1px solid #ccc;}
+.form-item .short-select{margin-right:10px;width:100px;}
+
+/*input框*/
+.form-item .normal-input-wrap{float:left;height:42px;width:274px;border:1px solid #ccc;}
+.form-item .short-input-wrap{display:block;height:42px;width:154px;border:1px solid #ccc;}
+.form-item .normal-input{float:left;width:254px;border:none;padding:6px 10px;height:30px;line-height:30px;}
+.form-item .short-input{float:left;width:134px;border:none;padding:6px 10px;height:30px;line-height:30px;}
+.form-item .verification-btn{float:left;width:108px;height:42px;font-size:12px;letter-spacing:1px;border:1px solid #ccc;background-color:#fff;margin-left:12px;}
+.form-item .verification-btn:hover{border-color:#4f8ee6;color:#4f8ee6;}
+
+/*提示信息*/
+.form-item .item-msg{float:left;height:44px;line-height:40px;color:#555;font-size:12px;padding-left:10px;display:none;}
+.form-item .item-msg .iconfont{font-size:14px;margin-right:5px;text-shadow:0 1px 1px rgba(0,0,0,.1);}
+.form-item .item-msg .true{color:#5fba39;}
+.form-item .item-msg .false{color:#ed5b5e;font-size:14px;}
+
+/*密码提示*/
+.form-item .item-msg .password-msg{overflow:hidden;}
+.form-item .item-msg .password-msg b{float:left;font-weight:400;}
+.form-item .item-msg .password-msg .level{float:left;font-size:12px;padding-top:13px;overflow:hidden;color:#888;}
+.form-item .item-msg .password-msg .level cite{float:left;width:24px;height:14px;line-height:14px;border-right:1px solid #fff;background-color:#c4c4c4;text-align:center;font-size:12px;color:#fff;}
+.form-item .item-msg .password-msg .level cite.on-weak{background-color:#f7686c;}
+.form-item .item-msg .password-msg .level cite.on-medium{background-color:#f79100;}
+.form-item .item-msg .password-msg .level cite.on-high{background-color:#7ccb5a;}
+
+/*同意并注册*/
+.form-item .nor-btn{width:274px;height:42px;line-height:42px;font-size:16px;}
+
+/*注册说明（老师）*/
+.quick-login-site{font-size: 22px;line-height: 3em;margin-left: 20px;margin-bottom: 2em;}
+.reg-right-container .rr-container-inner{padding:15px 50px 80px 20px;}
+.reg-right-container .reg-help .title{font-size:16px;font-weight:600;}
+.rh-context{padding-top:10px;line-height:2em;}
+
+/*注册说明（学生）*/
+.studentHelp .studentWay{cursor:pointer;}
+
+/*注册反馈信息*/
+.feedback-msg-container{margin:0 auto;padding:40px 200px 50px;}
+.feedback-msg-container .fb-msg-title{padding-left:184px;overflow:hidden}
+.feedback-msg-container .fb-msg-title .iconfont{float:left;font-size:50px;color:#74b846;}
+.feedback-msg-container .fb-msg-title .msg{float:left;padding:10px 10px 0 15px;font-size:36px;color:#74b846;}
+.feedback-msg-container .fail .iconfont,.feedback-msg-container .fail .msg{color:#e00;}
+.feedback-msg-container .fb-msg-title .msg-tips{font-size:14px;color:#666;padding-top:4px;}
+.feedback-msg-container .fb-msg-title .msg-cite{float:left;padding-top:11px;}
+.feedback-msg-container .fb-msg-content{margin-top:10px;}
+.feedback-msg-container .fb-msg-content-border{padding:35px 100px 45px;background-color:#fbfbfb;border:1px solid #ddd;}
+.feedback-msg-container .fb-msg-content .fb-msg-conext{text-align:center;}
+.feedback-msg-container .fb-msg-content .fb-msg-btn{padding-top:35px;text-align:center;}
+.feedback-msg-container .fb-msg-content  .fb-msg-btn .nor-btn{width:174px;height:40px;line-height:40px;font-size:16px;margin:0 8px;}
+.feedback-msg-container .fb-msg-content .fb-msg-btn .smler-btn{width:134px;height:34px;line-height:34px;font-size:14px;}
+.feedback-msg-container .fb-msg-content .fb-msg-tips{padding:45px 0 0 120px;}
+
+/*教师认证*/
+
+/*流程*/
+.form-process-wrap{padding:10px 0 32px 0;}
+.form-process-wrap .fp-area{width:664px;height:46px;margin:0 auto;background:url(../imgs/user/liucheng.png) 50% 0 no-repeat;}
+.form-process-wrap .fp-step1{background-position:50% 0;}
+.form-process-wrap .fp-step2{background-position:50% -56px;}
+.form-process-wrap .fp-step3{background-position:50% -112px;}
+.form-process-wrap .fp-area .fp-area-three{float:left;width:33.333%;height:28px;line-height:28px;padding-top:50px;text-align:center;font-size:16px;}
+.form-process-wrap .fp-area .on{color:#4f8ee6;}
+
+/*原件上传*/
+.upload-files-area{float:left;width:274px;padding-top:20px;}
+.upload-files-area .uf-choose-files{font-size:12px;color:#666;}
+.upload-files-area .uf-choose-files .upload-btn{padding:0 6px;margin-right:10px;width:auto;height:24px;line-height:24px;font-size:12px;background:#ededed;border-color:#bbb;color:#555;}
+.upload-files-area .uf-choose-files .upload-btn:hover{color:#333;background-color:#fafafa;background:-webkit-linear-gradient(#fafafa,#ededed); /* Safari 5.1 - 6.0 */background:-o-linear-gradient(#fafafa,#ededed); /* Opera 11.1 - 12.0 */background:-moz-linear-gradient(#fafafa,#ededed); /* Firefox 3.6 - 15 */background:linear-gradient(#fafafa,#ededed);}
+.upload-files-area .uf-choose-files .upload-btn .iconfont{font-size:16px;margin-right:4px;}
+.upload-files-area .file-list{padding-top:10px;}
+.upload-files-area .file-list li{margin:4px 5px 0;position:relative;}
+.upload-files-area .file-list .file-name{color:#4f8ee6;font-size:12px;cursor:default;}
+.upload-files-area .file-list .del-btn{position:absolute;right:0;top:0;color:#bbb;}
+.upload-files-area .file-list .del-btn:hover{color:#666;}
+
+/*等待审核-信息明细表*/
+.msg-table td{padding:4px;}
+.msg-table .link{margin:0 4px;}
+.tb-item-tit{text-align:right;color:#888;}
+
+/*教师认证-end*/
+
+/*--------------弹出框--------------*/
+
+/*输入验证码-弹框*/
+.verification-code-msg{height:40px;margin:15px 0 0 0;}
+.verification-code-msg .item-tit{float:left;padding-right:10px;padding-left:30px;line-height:38px;}
+.verification-code-msg .normal-input{float:left;width:130px;height:26px;line-height:36px;padding:5px 8px;border:1px solid #ddd;}
+.verification-code-msg .verification-image{float:left;width:80px;height:36px;border:1px solid #eee;margin-left:15px;cursor:pointer}
+.sendMsg{height:30px;line-height:30px;color:#FF0000;text-indent:15px;}
+.sendYes{padding-top:10px;margin-left:160px;}
+.sendYesBtn,#skipYesBtn{width:60px;height:30px;display:block;text-align:center;color:#FFF;line-height:30px;cursor:pointer;}
+
+/*--------------弹出框-end--------------*/
+
+/*找回密码-start*/
+.gpContent{margin-top:80px;padding-left:130px;border:none;width:820px;}
+.style{width:274px;height:42px;border:1px solid #ccc}
+.getPasswordAlert{height:100px;}
+.getPasswordAlert .gp-msg-title{width:100%;height:30px;color:#74b846;font-size:18px;text-align:center;line-height:30px;margin:15px 0;}
+.getPasswordAlert .gp-msg-title i{margin:0 15px;}
+.getPasswordAlert .skipYse{display:inline-block;margin:20px 170px 0 170px;}
+#goBack{padding-left:340px;margin:10px 0;color:#4584DD;cursor:pointer;}
+
+/*找回密码-end*/
+
+/*登录方式选择*/
+.other-use-id-content .use-id{overflow:hidden;text-align:center;padding-top:25px;}
+.other-use-id-content .use-id-item{transition:all 0.5s;color:#888;display:inline-block;width:90px;text-align:center;}
+.other-use-id-content .use-id-item:hover{border-color:#ff7403;color:#ff7403;}
+.other-use-id-content .use-id-item .iconfont{transition:all 1.5s;display:block;*display:none;opacity:0;filter:alpha(opacity=0);width:70px;height:70px;border-radius:50%;border:1px solid #888;font-size:40px;line-height:70px;}
+.other-use-id-content .use-id-item .id-name{transition:all 0.5s;display:block;border:1px solid #fff;border-radius:4px;font-size:16px;color:#333;margin-top:1.5em;}
+.other-use-id-content .use-id-item .id-name:hover{color:#ff7403;}
+.other-use-id-content .use-id .use-id-item .teac-icon{margin-left:5px;transition:all .5s;}
+.other-use-id-content .use-id .use-id-item .stud-icon{margin-left:10px;transition:all .5s;}
+.other-use-id-content .use-id .selected{color:#ff7403;transition:all 0.5s;}
+.other-use-id-content .use-id .selected .iconfont{*display:block;transition:all 1.5s;opacity:1;filter:alpha(opacity=100);border-color:#ff7403;color:#ff7403}
+.other-use-id-content .use-id .selected .id-name{background-color:#ff7403;color:#fff;}
+.other-use-id-content .use-id .selected .teac-icon{margin-left:58px;transition:all .5s;}
+.other-use-id-content .use-id .selected .stud-icon{margin-left:-36px;*margin-left:-94px;transition:all .5s;}
+.other-use-id-content .use-id-help,.other-use-id-content .tips{color:#999;text-align:center;margin:1em 0 0;}
+.other-use-id-content .use-id-btn{color:#999;text-align:center;}
+.other-use-id-content .use-id-btn .nor-btn{width:200px;height:40px;line-height:40px;}
+.other-use-id-content .lf-login-msg{width:248px;}
+.other-use-id-content .lf-login-wrap{margin-top:43px;width:250px;margin:43px auto 0}
+.other-use-id-content .lf-login-btn{margin-top:30px;}
+
+/*手机短信验证-弹出框*/
+.sms-msg-wrap .form-item{overflow: hidden;padding:10px 0 0 60px;}
+.sms-msg-wrap .form-item .normal-input-wrap{display:block;width:230px;}
+.sms-msg-wrap .form-item .short-input-wrap{width:110px;}
+.sms-msg-wrap .form-item .normal-input{width:210px;}
+.sms-msg-wrap .form-item .short-input{width:80px;}
+.sms-msg-wrap .item-content{float: left;line-height:40px;}
+.sms-msg-wrap .tips{font-size:12px;color:#333;text-align:left;padding: 20px 0 0 60px}
+
+/*qq登录*/
+.other-qq-id-content{float: left;width:200px;margin-top:180px;padding-left:70px;}
+.other-qq-id-content .qq-id-info .user{font-size:13px;color:#666;margin-top:15px;}
+.other-qq-id-content .qq-id-info .user span{color:#444;}
+.other-qq-id-content .qq-id-info .qq-pic-wrap{width:60px;height:60px;border:1px solid #ccc;-webkit-border-radius: 3px;border-radius: 3px;}
+.other-qq-id-content .qq-id-info .qq-pic-wrap{width:60px;height:60px;}
+
+/*qq-login-content*/
+.qq-login-content{width: 300px;margin:0 auto;padding:80px 0 150px;}
+.qq-login-content h1{font-size:30px;margin-bottom:0.7em;margin-left:16px;color:#ff7403;}
+.qq-login-content .tips{color:#999;margin:0 0 1.3em 1em;}
+.qq-login-content .qq-id-box{overflow:hidden;padding:6px;border:1px solid #ddd;background-color:#F3F3F3;-webkit-border-radius: 3px;border-radius: 3px}
+.qq-login-content .qq-id-box img{float: left;border:1px solid #ddd;-webkit-border-radius: 3px;border-radius: 3px;}
+.qq-login-content .qq-username {float: left;margin:25px 0 0 10px;color:#222;}
+.qq-login-content .btn-site{text-align: center;margin-top:40px;}
+.qq-login-content .btn-site .nor-btn{width:120px;line-height:34px;margin-right:20px;}
+
+/*手机短信验证-弹出框-END*/
+
+
+/*购买权限*/
+.order-info-site{width:950px;margin:0 auto;}
+.order-info-site .g-table{width:100%;}
+.order-info-site .g-table th{text-align: center;}
+.order-info-site .g-table .time{font-size:13px;color:#888;}
+.order-info-site .g-table .money{font-size:13px;color:#ff7403;}
+.order-info-site .g-table .order-name{color:#4f8ee6;}
+.order-info-site .g-table .order-name cite{color:#888;font-size:13px;letter-spacing: 3px;margin-left:15px;}
+.order-info-site .g-table .red{color:#e00;}
+
+/*购买权限END*/
+
+/*支付页面*/
+.pay-right-container{width:768px;float:right;padding-top:80px;}
+.pay-left-container{width:230px;float:left;border-right:1px solid #ccc;margin-bottom:30px}
+.show-selected-vip{padding-top:50px;height:100%;text-align:center;min-height:430px;}
+.show-selected-vip .vip-detail{padding-top:10px;line-height:2em;font-size:18px;}
+.show-selected-vip .vip-detail .money{font-size:14px;}
+.show-selected-vip .vip-detail .money span{color:#ff7109;font-weight:700;}
+.pay-right-container .form-item .short-input-wrap{width:100px;}
+.pay-right-container .form-item .short-input{width:80px;}
+.pay-right-container .form-item .kt-optime{float:left;height:44px;line-height:44px;margin-left:10px;}
+.pay-right-container .item-content .money{color:#ff7002;font-size:20px;font-weight:600;line-height:44px}
+.pay-right-container .form-item .nor-btn{width:180px;}
+/*支付页面-END*/

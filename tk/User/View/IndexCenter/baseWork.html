@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#} - 用户中心 - {#$pageName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/user.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+</head>
+<body>
+<!--头部-->
+{#include file="Index@Common/TplUserHeader" /#}
+<!--头部-end-->
+
+<!-- 个人中心 -->
+<div class="w-main">
+    <!-- 面包屑导航 -->
+    {#include file="IndexCenter/TplCrumbs" /#}
+    <!-- 面包屑导航END -->
+
+    <div class="u-content clearfix">
+        <!-- 左侧导航 -->
+        {#include file="IndexCenter/TplPersonalNav" /#}
+        <!-- 左侧导航END -->
+        <div class="u-right-wrap">
+            <div class="u-right">
+                <!-- 基本信息 -->
+                <div class="u-record-panel g-panel content">
+                    <div class="panel-head">
+                        <h3 class="head-name">{#$titleName#}</h3>
+                        <span class="head-handle">
+                            您目前为：【{#if condition="$buffer.IfAuth eq 0"#}非{#/if#}认证教师】
+                            {#if condition="$buffer.IfAuth eq 0"#}<a class="g-btn btn-second btn-s" href="{#:U('User/Index/authTeacher')#}">去认证</a>{#/if#}
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <table class="g-table g-table-bordered">
+                            <thead>
+                                <tr>
+                                    <th align="center">
+                                        <span>任务名称</span>
+                                    </th>
+                                    <th align="center" width="30">
+                                        <span>经验</span>
+                                    </th>
+                                    <th align="center" width="60">
+                                        <span>认证经验</span>
+                                    </th>
+                                    <th align="center" width="60">
+                                        <span>频率</span>
+                                    </th>
+                                    <th align="center" width="60">
+                                        <span>状态</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {#volist name="explist" id="value"#}
+                                <tr>
+                                    <td>
+                                        <span>{#$value.ExpDesc#}</span>
+                                    </td>
+                                    <td align="center">
+                                        <span>{#$value.ExpPoint#}</span>
+                                    </td>
+                                    <td align="center">
+                                        <span>{#$value.ExpAuthPoint#}</span>
+                                    </td>
+                                    <td align="center">
+                                        <span>
+                                            {#if condition='$value.ExpTime eq "0"'#}仅一次{#/if#}
+                                                    {#if condition='$value.ExpTime eq "1"'#}每天一次{#/if#}
+                                                    {#if condition='$value.ExpTime eq "2"'#}每天多次{#/if#}
+                                        </span>
+                                    </td>
+                                    <td align="center">
+                                        <span class="task-handle-group">
+                                            {#if condition='$value.done eq "1"'#}
+                                            <span class="helper">已完成</span>
+                                            {#else/#}
+                                                        {#if condition='$value.open eq "1"'#}
+                                            <a {#eq name="value.target" value="1"#}target="_blank"{#/eq#} href="{#$value.indexUrl#}" class="link">做任务</a>
+                                            {#else/#}
+                                            <span class="red">未开启</span>
+                                            {#/if#}
+                                                     {#/if#}
+                                        </span>
+                                    </td>
+                                </tr>
+                                {#/volist#}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 个人中心END -->
+</div>
+<script type="text/javascript">
+    var idName='{#$function#}';
+    $(function(){
+        if(idName!='' || idName!='undefined'){
+            $('#'+idName).addClass('active');
+        }
+    });
+</script>
+<!--footer-->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+<script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+<![endif]-->
+{#include file="Index@Common/secondFooter" /#}
+<!--footer-end-->
+</body>
+</html>

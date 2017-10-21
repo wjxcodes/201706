@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#}-用户中心</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/user.css" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+</head>
+<body>
+
+    <!--头部-->
+    {#include file="Index@Common/TplUserHeader" /#}
+    <!--头部-end-->
+
+    <!-- 个人中心 -->
+    <div class="w-main">
+        <!-- 面包屑导航 -->
+        {#include file="IndexCenter/TplCrumbs" /#}
+        <!-- 面包屑导航END -->
+
+        <div class="u-content clearfix">
+            <!-- 左侧导航 -->
+            {#include file="IndexCenter/TplPersonalNav" /#}
+            <!-- 左侧导航END -->
+
+            <div class="u-right-wrap">
+                <div class="u-right">
+                <!-- 基本信息 -->
+                    <div class="ur-info-site content clearfix">
+                        <span class="u-photo"><img src="{#$userMsg.UserPic#}" width="120" height="120" alt="用户头像" /></span>
+                        <div class="ur-info-content">
+                            <div class="info-site-top">
+                                <span class="username elli left">{#$userMsg.UserName#}</span>
+                                <span class="uservip left years-service"> <i class="icon"></i>
+                                    <span class="groupName">{#$userMsg.UserGroup#}</span>
+                                </span>
+                                <span class="u-s-icon left">
+                                    {#if condition='$userMsg.Whois eq 1'#}<span class="s-icon"><i class="iconfont">&#xe61e;</i>教师</span>{#/if#}
+                                    {#if condition='$userMsg.IfAuth eq 1'#}<span class="s-icon"><i class="iconfont">&#xe611;</i>教师认证</span>{#/if#}
+                                    <span class="s-icon"><i class="iconfont">&#xe617;</i>{#$levelMsg[0]['LevelName']#}</span>
+                                </span>
+                            </div>
+                            <div class="info-site-bottom">
+                                <div class="info-size-bottom-left left">
+                                    <div class="up-level-next">
+                                        <!-- level-进度条 -->
+                                        <p class="ul-process">
+                                            <span class="ul-level-top f-yahei">
+                                                <s class="left">{#$levelMsg[0]['LevelName']#}</s>
+                                                <span class="process-wrap">
+                                                    <span class="process-pct" style="width:{#$levelMsg.baifen#}%"></span>
+                                                </span>
+                                                <s class="left">{#$levelMsg[1]['LevelName']#}<a class="link" href="{#:U('User/IndexCenter/levelPower')#}">（等级特权）</a></s>
+                                            </span>
+                                            <span class="ul-tips">
+                                                <i></i>
+                                                <b class="">{#$userMsg['ExpNum']#}/{#$levelMsg[0]['LevelExpMax']#}</b> 今天 <a class="orange" href="{#:U('User/IndexCenter/baseWork')#}">做任务</a> 可领取 <em>{#$expTotal#}</em> 经验值
+
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="award-site">
+                                        <span class="award-item">积分<cite>{#$userMsg['Points']#}</cite></span>
+                                        <span class="award-item">金币<cite>{#$userMsg['Cz']#}</cite></span>
+                                        <span class="award-item">经验值<cite>{#$userMsg['ExpNum']#}</cite></span>
+                                    </div>
+                                </div>
+                                <div class="info-size-bottom-right left">
+                                    <div class="state-num-site">
+                                         <a class="state-item" href="{#:U('User/IndexCenter/getMyFollowing')#}"><cite>{#$followNum#}</cite><br />关注</a>
+                                        <a class="state-item" href="{#:U('User/IndexCenter/getMyFollower')#}"><cite>{#$fansNum#}</cite><br />粉丝</a>
+                                        <a class="state-item"><cite>{#$docNum#}</cite><br />试卷</a>
+                                        <a class="state-item"><cite>{#$downNum#}</cite><br />下载</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ur-func-site">
+                        <a href="{#:U('Home/Index/main',array('u'=>'Manual_Index_zsd'))#}" target='_blank'class="func-btn func1"><i class="iconfont">&#xe612;</i>手动组卷</a>
+                        <a href="{#:U('Home/Index/main',array('u'=>'Ga_Index_index'))#}"  target='_blank'class="func-btn func2"><i class="iconfont">&#xe621;</i>智能组卷</a>
+                        <a href="{#:U('Home/Index/main',array('u'=>'Dir_Index_index'))#}" target='_blank' class="func-btn func3"><i class="iconfont">&#xe616;</i>模板选题</a>
+                        <a href="{#:U('Home/Index/main',array('u'=>'Custom_CustomTestStore_index'))#}" target='_blank' class="func-btn func4"><i class="iconfont">&#xe621;</i>校本题库</a>
+                    </div>
+                    <div class="ur-state-panel g-panel content">
+                        <div class="panel-head"><h3 class="head-name">最近动态</h3><span class="head-handle"><a href="{#:U('User/IndexCenter/myDynamic')#}" class="link">更多></a></span></div>
+                        <div class="panel-body">
+                            <ul class="ur-state-panel-list dynamicList">
+                                {#if condition="$dynamics"#}
+                                {#volist name='dynamics' id='vo' #}
+                                <li class="clearfix">
+                                    <p class="left">
+                                        <span class="ur-user"><img class="ur-user-photo" src="{#$userMsg.UserPic#}" alt="头像" width="42" height="42" /></span>
+                                        <span class="state-context">{#$vo.Content#}</span>
+                                    </p>
+                                    <cite class="timer">{#$vo.LoadTime#}</cite>
+                                </li>
+                                {#/volist#}
+                                {#else /#}
+                                <li class="clearfix"><div class="no-data-tips">暂无记录</div></li>
+                                {#/if#}
+                            </ul>
+                            <div class="u-more"><a href="{#:U('User/IndexCenter/myDynamic')#}" class="btn">查看更多</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- 个人中心END -->
+    </div>
+    <script>
+        var idName='{#$function#}';
+        $(function(){
+            if(idName!='' || idName!='undefined'){
+                 $('#'+idName).addClass('active');
+            }
+            //我的动态
+        })
+    </script>
+    <!--footer-->
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+    <![endif]-->
+
+
+    {#include file="Index@Common/secondFooter" /#}
+    <!--footer-end-->
+
+</body>
+</html>

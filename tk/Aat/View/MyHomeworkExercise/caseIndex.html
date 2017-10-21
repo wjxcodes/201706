@@ -1,0 +1,903 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {#include file="Common:head"/#}
+    <link href="__PUBLIC__/newAat/css/teachPlan.css{#:C(WLN_UPDATE_FILE_DATE)#}" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/plugin/ueditor/themes/default/css/ueditor.css{#:C(WLN_UPDATE_FILE_DATE)#}" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="__PUBLIC__/plugin/ueditor/ueditor.config.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/newAat/js/ueditor.aat.config.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/ueditor/ueditor.all.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/bigImage.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+</head>
+
+<body>
+<!-- loading... -->
+<div class="loadingBig" style="display: none;"><span class="loadingImgBox"><i>loading...</i><br>正在加载作业，请稍候...</span></div>
+<!-- loading... -->
+<div id="wrapper">
+    {#include file="Common:header"/#}
+    <div id="content" class="w980 mc pt90 pb20">
+        <div class="box02 mb20">
+            <!--标题-->
+            <div class="zt_title">
+                <div class="fl pt20 pl20">正在加载作业，请稍候...</div>
+                {#if condition='$ifAnswer eq 1' #}
+                <a class="an01 fr" href="{#:U('MyHomework/index')#}" style="margin-top: 15px;margin-right: 20px;">
+                    <span class="an_left"></span>
+                    <div class="an_cen">
+                        <span style=" float:left; margin-top:5px; margin-right:5px;">
+                            <img src="__PUBLIC__/newAat/images/ico_jj.png">
+                        </span>返回我的作业
+                    </div>
+                    <span class="an_right"></span>
+                </a>
+                {#/if#}
+            </div>
+            <!--信息栏-->
+            {#if condition='$ifAnswer neq 1'#}
+            <div class="kzt_title" style="display: none;">
+                <div class="time_box fl"><span class="ico_time fl"></span><span class="sz_time fl">00:00</span>
+                    <span id="parse_btn" class="an_time01 fl" style="cursor: pointer;"></span>
+                </div>
+                <div class="zttj_text fl">加载中...</div>
+                <div class="kz_an_box">
+                    <a href="#" class="an01 fr"><span class="an_left"></span>
+                        <div id="testSubmit" class="an_cen"><span style=" float:left; margin-top:5px; margin-right:5px;"><img
+                                src="__PUBLIC__/newAat/images/ico_jj.png"/></span>点击交卷
+                        </div>
+                        <span class="an_right"></span></a>
+                    <a id="test_next_submit" href="javascript:;" class="an02 fr mr7"><span class="an_left"></span><span class="an_cen" style="color: #7e7e7e;">
+                下次再做</span><span class="an_right"></span></a>
+                </div>
+            </div>
+            {#/if#}
+            <!--一以下为试题-->
+            <div id="test">
+            </div>
+            <!--右侧快捷按钮-->
+            <div class="fixedBox">
+                <div class="fixedBtn">
+                    <div id="" class="db_dh_box">
+                        <a class="an_go_top" href="javascript:"></a>
+                        <a class="an_ctb02" href="javascript:" style="display: none;">答题卡</a>
+                    </div>
+                </div>
+            </div>
+            <!--以下是答题卡-->
+            <div class="answerCard" style="display: none;">
+
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        {#include file="Common:footer"/#}
+    </div>
+</div>
+<div id="dialog_pause" title="暂停做题" style="display: none;">
+    <p>累了，休息一下吧！</p>
+
+    <p>（ 暂停期间停止计时）</p>
+</div>
+<div id="dialog_submit" title="提交试卷" style="display: none;">
+    <p id="do_amount"></p>
+</div>
+<div id="dialog_next_submit" title="下次再做" style="display: none;">
+    <p id="next_do_amount"></p>
+
+    <p>已经保存做题记录，现在您可以关闭页面？</p>
+</div>
+<div id="dialog_force_submit" title="提交试卷" style="display: none;">
+    <p id="force_do_amount"></p>
+
+    <p>答题时间已到，请提交试卷！</p>
+</div>
+<div id="correction" title="试题纠错" style="display:none;">
+    <p id="errorDoAmount"></p>
+</div>
+<!--试题列表模板-->
+<script type="text/html" id="listTpl">
+    <div class="dir">
+        <div class="guide_preview">
+            <div class="tempname">{%tempName%}</div>
+            <div class="tempdesc">{%tempDesc%}</div>
+            {%each forum as iForum iForumIndex%}
+            <div class="temp">
+                <!--专题名-->
+                <div class="temphead">
+                    <div class="tempforum locate-forum-{%iForumIndex%}">
+                        <span>{%iForum.title%}（{%iForum.subTitle%}）</span>
+                    </div>
+                </div>
+                {%each iForum.menu as iMenu iMenuIndex%}
+                <div class="tempbox">
+                    <!--栏目名-->
+                    <div class="tempmemu">{%iMenu.title%}</div>
+                    {%if iMenu.isTest==0%}
+                        <!--知识-->
+                        {%if iMenu.content%}
+                        <div class="lorecontent">
+                            {%each iMenu.content as iLore iLoreIndex%}
+                                {%if iLore.lore%}
+                                <div class="temptext">
+                                    <span class="icoNum">{%iLore.number%}.</span>{%#iLore.lore%}
+                                </div>
+                                {%/if%}
+                                {%if iLore.loreAnswer%}
+                                <div class="temptext-ans-box">
+                                    {%if ifAnswer==0%}<div class="temptextHandle"><a href="javascript:;" class="ans-btn">看答案</a></div>{%/if%}
+                                    <div class="temptext-ans {%ifAnswer==0?'hide':''%}"><span class="ans-icon">答案：</span>{%#iLore.loreAnswer%}</div>
+                                </div>
+                                {%/if%}
+                            {%/each%}
+                        </div>
+                        {%/if%}
+                    {%else%}
+                        <!--试题-->
+                        {%if iMenu.content%}
+                        <div class="lorequestion">
+                            {%each iMenu.content as iTest iTestIndex%}
+                            {%if iTest.doAnswer%}
+                            <div class="temptext st_box">
+                                <div class="st_tm_box">
+                                    <div class="title">
+                                        <!--题号-->
+                                        {%if iTest.ifChoose!=1%}
+                                            <span class="icoNum locate-{%iTest.doAnswer[0].answerID%}">{%iTest.doAnswer[0].number%}.</span>
+                                        {%/if%}
+                                        <!--题干-->
+                                        <span class="tit">{%#iTest.test.title%}</span>
+                                        <div class="bjjt"></div>
+                                    </div>
+                                </div>
+                                {%if iTest.ifChoose==1%}
+                                <!--1复合题-->
+                                <div class="subTest">
+                                    {%each iTest.test.sub as subTest j%}
+                                        <!--小题为subTest，序号j-->
+                                        <!--复合题小题题干-->
+                                        <div class="st_tm_box">
+                                            <div class="title">
+                                                <span class="icoNum locate-{%iTest.doAnswer[j].answerID%}">{%iTest.doAnswer[j].number%}.</span>
+                                                <span class="tit">{%#subTest.title?subTest.title:'请作答：'%}</span>
+                                                <div class="bjjt"></div>
+                                            </div>
+                                        </div>
+                                        {%if iTest.doAnswer[j].ifChoose==0%}
+                                            <!--1.1复合题中非选择-->
+                                            {%if ifAnswer==1%}
+                                                {%#answerInfo(iTest.doAnswer[j])%}
+                                            {%else%}
+                                                {%#testTextArea(iTest.doAnswer[j].answerID,iTest.doAnswer[j].userAnswer)%}
+                                            {%/if%}
+                                        {%else%}
+                                            <!--1.2复合题中选择-->
+                                            {%#formatOptions(subTest.options)%}
+                                            {%if ifAnswer==1%}
+                                                <!--复合题中选择题答案-->
+                                                <div class="dt_box dt_box_xzt">
+                                                    {%#answerInfo(iTest.doAnswer[j])%}
+                                                    <div class="clear"></div>
+                                                </div>
+                                            {%else%}
+                                                {%#generalOptions(subTest.options,iTest.TestID,iTest.doAnswer[j])%}
+                                            {%/if%}
+                                        {%/if%}
+                                    {%/each%}
+                                </div>
+                                {%else if iTest.ifChoose==0%}
+                                <!--2非选择题-->
+                                    {%if ifAnswer==1%}
+                                        <!--2.2答案-->
+                                        {%#answerInfo(iTest.doAnswer[0])%}
+                                    {%else%}
+                                        <!--2.1 答题-->
+                                        {%#testTextArea(iTest.doAnswer[0].answerID,iTest.doAnswer[0].userAnswer)%}
+                                    {%/if%}
+                                {%else%}
+                                <!--3单选、多选-->
+                                    <!--3.1选项文字-->
+                                    {%#formatOptions(iTest.test.options)%}
+                                    {%if ifAnswer==1%}
+                                    {%else%}
+                                        <!--3.2选项option-->
+                                        {%#generalOptions(iTest.test.options,iTest.TestID,iTest.doAnswer[0])%}
+                                    {%/if%}
+                                {%/if%}
+                                <div class="dt_box dt_box_xzt">
+                                    {%if iTest.ifChoose>1&&ifAnswer==1%}
+                                        <!--3.3 如果是单选或者多选，显示答案-->
+                                        {%#answerInfo(iTest.doAnswer[0])%}
+                                    {%/if%}
+                                    <!--收藏 纠错 解析-->
+                                   <div class="fr cz_an_box">
+                                       <a data="{%iTest.testID%}" href="javascript:" class="an_jc">我要纠错</a>
+                                       <a data="{%iTest.testID%}" href="javascript:" class="an_sc collect_test">收藏本题</a>
+                                       {%if ifAnswer==1%}
+                                       <a href="javascript:" data-testID="{%iTest.testID%}" class="an02 fr an_jx seeAnalytic">
+                                           <span class="an_left"></span>
+                                           <div class="an_cen">
+                                               <font color="#7e7e7e" class="fl mr5">查看解析</font>
+                                               <span class="fl" style="margin-top:3px">
+                                                   <img src="__PUBLIC__/newAat/images/ico_jt01.png"></span>
+                                           </div>
+                                           <span class="an_right"></span>
+                                       </a>
+                                       {%/if%}
+                                   </div>
+                                   <div class="clear"></div>
+                               </div>
+                                <!-- 解析 -->
+                                <div style="display: none;" class="dan_box" id="analytic-{%iTest.testID%}">
+                                    <div class="dan_box_nr">
+                                        <div class="title">
+                                            <span class="an_left"></span>
+                                            <span class="an_cen">答案解析</span>
+                                            <span class="an_right"></span>
+                                        </div>
+                                        {%#iTest.analytic%}
+                                    </div>
+                                    <div style="display:block;" class="dan_box_nr dan_box_kd">
+                                        <div class="title">
+                                            <span class="an_left"></span>
+                                            <span class="an_cen">考察考点</span>
+                                            <span class="an_right"></span>
+                                        </div>
+                                        <p>{%#iTest.klList%}</p>
+                                    </div>
+                                    <div class="dan_box_nr">
+                                        <div class="title">
+                                            <span class="an_left"></span>
+                                            <span class="an_cen">试题来源</span>
+                                            <span class="an_right"></span>
+                                        </div>
+                                        {%#iTest.docName%}
+                                    </div>
+                                </div>
+                                <!-- 试题答案模版-end -->
+                            </div>
+                            {%/if%}
+                            {%/each%}
+                        </div>
+                        {%/if%}
+                    {%/if%}
+                </div>
+                {%/each%}
+            </div>
+            <!-- 答题表 -->
+
+            <!-- 答题表 end -->
+            {%/each%}
+        </div>
+    </div>
+</script>
+<!--非选择题模板-->
+<script id="testTextAreaTpl" type="text/html">
+    <div class="dt_box dt_box_wdt">
+        <div class="xx_wdt box_{%answerID%}" style="display: {%userAnswer===''?'block':'none'%};">
+             <textarea id="text_{%answerID%}" class="bd_hdk" name="{%answerID%}" placeholder="请输入您的答案">
+                 {%#userAnswer%}
+             </textarea>
+        </div>
+        <div id="text_view_{%answerID%}" style="display: {%userAnswer===''?'none':'block'%};width:930px;overflow:auto"
+             class="xx_wdt_da s_test_view">{%#userAnswer%}</div>
+        <div class="an_box_wdt">
+            <div class="fl xx_wd_an" style="display: {%userAnswer===''?'block':'none'%}">
+                <a class="an01 fl test_ok" href="javascript:" data="{%answerID%}">
+                    <span class="an_left"></span><div class="an_cen">确定</div><span class="an_right"></span>
+                </a>
+            </div>
+            <div style="display: {%userAnswer===''?'none':'block'%}" class="fl xx_wd_an">
+                <a class="an02 fr an_jx test_ok_edit" href="javascript:" data="{%answerID%}">
+                    <span class="an_left"></span>
+                    <div class="an_cen">
+                        <font color="#7e7e7e">修改答案</font><span style=" float:right; margin-top:4px; margin-left:5px;"></span>
+                    </div>
+                    <span class="an_right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</script>
+<!--答题卡模板-->
+<script id="answerCardTpl" type="text/html">
+    <div class="ansBox">
+        {%each exerciseInfo as iForum iForumIndex%}
+        <div class="threePart">
+            <h3 class="tit" data-locate="forum-{%iForumIndex%}">{%iForum.name%}</h3>
+            <div class="th_box inBox">
+                {%if iForum.test%}
+                    {%each iForum.test as test testIndex%}
+                    {%if test.ifRight==0%}
+                    <a class="th_yz" href="javascript:" data-locate="{%test.answerID%}">{%test.number%}</a>
+                    {%else if test.ifRight==1%}
+                    <a class="th_cw" href="javascript:" data-locate="{%test.answerID%}">{%test.number%}</a>
+                    {%else if test.ifRight==2%}
+                    <a class="th_zq" href="javascript:" data-locate="{%test.answerID%}">{%test.number%}</a>
+                    {%else%}
+                    <a href="javascript:" data-locate="{%test.answerID%}">{%test.number%}</a>
+                    {%/if%}
+                    {%/each%}
+                {%else%}
+                    <span class="noData"><i class="iconEmpty iconfont">&#xe601;</i>没有内容</span>
+                {%/if%}
+            </div>
+        </div>
+        {%/each%}
+        <div class="th_sm">
+                    <span class="fl">
+                        总共 <strong>{%exerciseAmount.all%}</strong>
+                        小题，正确 <strong><font color="#69BE83">{%exerciseAmount.right%}</font></strong>
+                        道题，错误
+                        <strong><font color="#FE7676">{%exerciseAmount.wrong%}</font></strong>
+                        道题，未做
+                        <strong>
+                            <font color="#AAAAAA">{%exerciseAmount.undo%}</font>
+                        </strong>
+                        道题，无法判断对错
+                        <strong>
+                            <font color="#00A0E9">{%exerciseAmount.not%}</font>
+                        </strong>
+                        道题
+                    </span>
+                    <span class="fr sm_ys">
+                        <span> <b class="ys_lv"></b>
+                            <font>做对</font>
+                        </span>
+                        <span> <b class="ys_hong"></b>
+                            <font>做错</font>
+                        </span>
+                        <span>
+                            <b class="ys_hui"></b>
+                            <font>未做</font>
+                        </span>
+                        <span>
+                            <b class="ys_lan"></b>
+                            <font>无法判断对错</font>
+                        </span>
+                    </span>
+        </div>
+    </div>
+</script>
+<script type="text/javascript">
+    var MyHomeworkCaseExercise = {
+        sendID:'{#$sendID#}',//测试记录sendID
+        ifAnswer:'{#$ifAnswer#}',//是否是解析界面
+        /**
+         * 初始化数据；调用首部和内容
+         * showTop|showContent
+         * @author demo
+         */
+        initData:function(){
+            var self = this;
+            $.post(U('MyHomeworkExercise/getCaseContent'),{sendID:self.sendID,ifAnswer:self.ifAnswer,times:Math.random()}, function (e) {
+                if (e.status == 1) {
+                    self.showTop(e);
+                    self.showContent(e);
+                    if(self.ifAnswer == 1){//看解析界面
+                        self.answerCard(e);
+                    }else{//练习界面
+                        self.showLoreAnswer();
+                    }
+                } else {
+                    $('.zt_title>div').html(e.data);
+                }
+            });
+            $('#test').on('click','.st_box img',function(){
+                $(this).bigImage();
+            });
+        },
+        /**
+         * 首部信息
+         * 页面显示|查看留言|返回顶部
+         * @param e ajax返回数据
+         * @author demo
+         */
+        showTop:function(e){
+            var name = '';
+            if(this.ifAnswer==1){
+                name = e.data.workName+ ' （审批时间：'+e.data.checkTime+' 分数：'+e.data.score+'分）';
+            }else{
+                //时间赋值
+                window.gTime = Number(e.data.doTime);
+                //作业留言查看
+                var msgButton = '';
+                if(e.data.message){
+                    $('#footer').after('<div id="msgDialog" style="display:none;overflow-y:auto;" title="'+
+                    ' 作业留言">'+ e.data.message+'</div>');
+                    msgButton = ' <a id="workMsgButton" href="javascript:" style="color: #069;">查看备注</a>';
+                    $('.zt_title').on('click','#workMsgButton',function(){
+                        $('#msgDialog').dialog();
+                    });
+                }
+                name = e.data.workName + ' （结束时间：'+ e.data.endTime+'） ' + msgButton;
+            }
+            $('.zt_title>div').html(name);
+            $('.kzt_title').show();
+            //返回顶部
+            $('.an_go_top').click(function () {
+                $('html,body').animate({scrollTop: 0}, 300);
+            });
+        },
+        /**
+         * 内容信息
+         * @param e ajax返回数据
+         * @author demo
+         */
+        showContent:function(e){
+            var self = this;
+            template.helper('testTextArea',function(answerID,userAnswer){
+                return template('testTextAreaTpl',{'answerID':answerID,'userAnswer':userAnswer});
+            });
+            template.helper('formatOptions',function(options){
+                //格式化选项为A.XXX的形式
+                var result = '';
+                if (options[0] != 'A') {
+                    result += '<div class="st_wt_box">';
+                    $.each(options, function (i, iOptions) {
+                        var tempArr = [iOptions.substr(0, 1), iOptions.substr(2)];
+                        result += '<p><span class="st_wt_bt">' + tempArr[0] + '.</span>' + tempArr[1] + '</p>';
+                    });
+                    result += '</div>';
+                }
+                return result;
+            });
+            template.helper('generalOptions',function(options,testID,doAnswer){
+                //生成选项radio或者checkbox
+                var answerID = doAnswer.answerID;
+                var ifChoose = doAnswer.ifChoose;
+                var userAnswer = doAnswer.userAnswer;
+                var result = '';
+                result += '<div class="dt_box dt_box_xzt">' +
+                            '<div class="fl xx_xzt">';
+                $.each(options,function(i,iOptions){
+                    var inputValue = iOptions.substr(0,1);
+                    var inputType = ifChoose==3?'radio':'checkbox';
+                    var inputName = ifChoose==3?answerID:answerID+'[]';
+                    var ifSelected = userAnswer.toUpperCase().indexOf(inputValue.toUpperCase())==-1?'':'checked';
+                    result += '<label><input id="' +  answerID + '_' + inputValue + '" type="' + inputType + '" name="' + inputName +
+                    '" class="' + answerID + '" value="' + inputValue + '" '+ifSelected+' />&nbsp;&nbsp;'+inputValue+'</label>';
+                });
+                result +=   '</div>'+
+                            '<div class="clear"></div>'+
+                        '</div>';
+                return result;
+            });
+            template.helper('answerInfo',function(doAnswerArr){
+                //答案HTML
+                var userAnswer = doAnswerArr['userAnswer'];//用户答案
+                var rightAnswer = doAnswerArr['rightAnswer'];//正确答案
+                var ifChoose = doAnswerArr['ifChoose'];//小题的ifChoose
+                var ifRight = doAnswerArr['ifRight'];//是否正确
+                var result = '';
+                if(ifChoose==0){
+                    //非选择题
+                    result =
+                    '<div class="dt_box dt_box_wdt">'+
+                        '<div class="xx_wdt_da"> <font color="#27a152">正确答案：</font>'+rightAnswer+'</div>'+
+                        '<div class="xx_wdt_da">'+
+                            '<font color="#00a0e9">你的答案：</font>'+(userAnswer?userAnswer:'空')+
+                        '</div>'+
+                    '</div>';
+                }else{
+                    //选择题
+                    result =
+                    '<div class="fl xx_xzt_da">'+
+                    '正确答案： <font color="#27a152">'+rightAnswer+'</font>'+
+                    '，你的答案： <font color="#00a0e9">'+(userAnswer?userAnswer:'空')+'</font>，'+
+                    (ifRight==2?'<font color="#69be83"><strong>回答正确！</strong></font>':'<font color="#fe7676"><strong>回答错误！</strong></font>')+
+                    '</div>';
+                }
+                return result;
+            });
+            var listTpl = template('listTpl', e.data);
+            $('#test').html(listTpl);
+            $('div.temptext-ans-box:last-child').css({border:'none'});//知识的虚线最后一个不显示
+            self.doAmount();
+            self.initInput();
+        },
+        /**
+         * 答题操作
+         * @author demo
+         */
+        doAnswer:function(){
+            var self = this;
+            var test = $('#test');
+            //单选
+            test.on('ifChecked','input:radio',function () {
+                var thisInput = $(this);
+                var ajaxData = {
+                    'answer_id':thisInput.attr('class'),
+                    times:Math.random(),
+                    'answer':[$('.' + thisInput.attr('class') + ':checked').val()]//这里为数组，默认一个元素
+                };
+                $.ajax({
+                    type: 'POST',
+                    cache: false,
+                    data: ajaxData,
+                    url: U('MyHomeworkExercise/doAnswer'),
+                    success: function (e) {
+                        if (e.status == 0) {
+                            thisInput.iCheck('uncheck');
+                            alert(e.data);
+                        }else{
+                            self.doAmount();
+                        }
+                    }
+                });
+            });
+            //多选
+            test.on('ifToggled','input:checkbox', function () {
+                var thisInput = $(this);
+                var answer = [];//答案数组
+                $('.' + thisInput.attr('class') + ':checked').each(function (i, k) {
+                    answer[i] = k.value;
+                });
+                var ajaxData = {
+                    'answer_id':thisInput.attr('class'),
+                    'answer':answer,
+                    times:Math.random()
+                };
+                $.ajax({
+                    type: 'POST',
+                    cache: false,
+                    data: ajaxData,
+                    url: U('MyHomeworkExercise/doAnswer'),
+                    success: function (e) {
+                        if (e.status == 0) {
+                            thisInput.iCheck('uncheck');
+                            alert(e.data);
+                        }else{
+                            //提交成功
+                            self.doAmount();
+                        }
+                    }
+                });
+            });
+            //大题focus时初始化ueditor
+            test.on('focusin','.bd_hdk',function(){
+                var thisInput = $(this);
+                UE.getEditor(thisInput.attr('id'),ueditorAatConfig.config).ready(function(){
+                    $('div.bd_hdk').css({border:'none',padding:'0px'});
+                    $('textarea[class='+thisInput.attr('id')+']').hide();
+                });
+            });
+            //大题确定答案
+            test.on('click','.test_ok',function(){
+                var thisInput = $(this);
+                var textID = 'text_'+$(this).attr('data');//输入框ID
+                var text = UE.getEditor(textID,ueditorAatConfig.config).getContent();
+                if(text == ''){
+                    alert('请输入试题答案！');
+                    return;
+                }
+                var answerID = $(this).attr('data');
+                var ajaxData = {
+                    'answer_id':answerID,
+                    'answer':[text],
+                    times:Math.random()
+                };
+                $.ajax({
+                    type: 'POST',
+                    cache: false,
+                    data: ajaxData,
+                    url: U('MyHomeworkExercise/doAnswer'),
+                    success: function (e) {
+                        if (e.status == 0) {
+                            alert(e.data);
+                        }else{
+                            UE.getEditor(textID,ueditorAatConfig.config).setHide();
+                            $('.box_'+ answerID).hide();//隐藏编辑框载体
+                            $('#text_view_'+ answerID).html(text).show();//显示预览
+                            thisInput.parent().hide();//隐藏确定
+                            thisInput.parent().next().show();//显示编辑
+                            //更新统计数据
+                            self.doAmount();
+                        }
+                    }
+                });
+            });
+            //大题修改答案
+            test.on('click','.test_ok_edit',function(){
+                var thisInput = $(this);
+                var textID = $(this).attr('data');
+                UE.getEditor('text_'+ textID,ueditorAatConfig.config).ready(function(){
+                    $('#text_view_'+ textID).hide();//隐藏预览DOM
+                    this.show();
+                    $('.box_'+ textID).show();//显示输入框载体
+                    $('div.bd_hdk').css({border:'none',padding:'0px'});
+                    thisInput.parent().hide();//隐藏"编辑"按钮
+                    thisInput.parent().prev().show();//显示"确定"按钮
+                });//初始化编辑器
+            });
+        },
+        /**
+         * 提交试题
+         * @author demo
+         */
+        submit:function(){
+            var self = this;
+            var ajaxSubmit = function(style) {
+                var data = {};
+                data['do_time'] = window.gTime;
+                data['send_id'] = self.sendID;
+                var url = style=='normal'? U('MyHomeworkExercise/doSubmit'): U('MyHomeworkExercise/doClose');
+                $.ajax({
+                    type: 'POST',
+                    cache: false,
+                    data: data,
+                    url: url,
+                    success: function (e) {
+                        if(style=='normal'){
+                            if (e.status !== 1) {
+                                alert(e.data);
+                            } else {
+                                location.href = U('MyHomeworkAnswer/caseIndex','id=' + e.data);
+                            }
+                        }
+                    }
+                });
+            };
+            var submitForm  = function(style) {
+                self.endTime();
+                var dialog = '';//dialog名称
+                var buttons = {};//按钮
+                if(style == 'normal') {
+                    dialog = '#dialog_submit';
+                    buttons = {
+                        "提交试卷": function () {
+                            $(this).dialog({title: '数据正在提交'});
+                            $('#dialog_submit').html('<div id="progressbar" style="position: relative;"><div style="position: ' +
+                            'absolute;left: 40%;top: 5px;">请稍候...</div></div><p></p>');
+                            $("#progressbar").progressbar({
+                                value: false
+                            });
+                            ajaxSubmit('normal');
+                        },
+                        '继续做题': function () {
+                            $(this).dialog("close");
+                            self.startTime();
+                        }
+                    };
+                }else if(style == 'next') {
+                    dialog = '#dialog_next_submit';
+                    buttons = {
+                        '下次再做': function () {
+                            location.href = '__APP__/Aat';
+                        },
+                        '继续做题': function () {
+                            $(this).dialog("close");
+                            self.startTime();
+                        }
+                    };
+                }
+                $(dialog).dialog({
+                    modal: true,
+                    buttons: buttons,
+                    open: function () {
+                        $('.ui-dialog-titlebar-close', $(this).parent()).hide();
+                        $('#do_amount').html($('.zttj_text').html());
+                    }
+                });
+            };
+            //提交表单信息
+            $('#testSubmit').on('click', function () {
+                submitForm('normal');
+            });
+            //下次再做
+            $('#test_next_submit').on('click',function(){
+                submitForm('next');
+            });
+            //关闭页面
+            $(window).on('beforeunload', function () {
+                ajaxSubmit('close');
+            });
+        },
+        /**
+         * 试题操作包含：收藏|纠错
+         * @author demo
+         */
+        testOperate: function () {
+            //试题纠错
+            $(document).on('click','.an_jc',function(){
+                var testID = $(this).attr('data');
+                AatCommon.correction(testID, true);
+            });
+            $(document).on('click', '.collect_test', function () {
+                var testID = $(this).attr('data');
+                AatCommon.testCollectSave(testID);
+            })
+        },
+        /**
+         * 时间控制
+         * @author demo
+         */
+        controlTime:function(){
+            var self = this;
+            this.startTime();
+            $("#parse_btn").click(function () {
+                self.endTime();
+                $("#dialog_pause").dialog({
+                    modal: true,
+                    buttons: {
+                        "继续做题": function () {
+                            self.startTime();
+                            $(this).dialog('close');
+                        }
+                    },
+                    open: function () {
+                        $('.ui-dialog-titlebar-close', $(this).parent('')).hide();
+                    }
+                });
+            });
+        },
+        /**
+         * 开始计时private
+         * @author demo
+         */
+        startTime:function(){
+            setTimeout(function(){
+                window.timeFunction = setInterval(function () {
+                    window.gTime += 1;
+                    var m = String(parseInt(window.gTime / 60)).length == 1 ? ('0' + String(parseInt(window.gTime / 60)))
+                            : parseInt(window.gTime / 60);
+                    var s = String(window.gTime % 60).length == 1 ? ( '0' + String(window.gTime % 60)) : window.gTime % 60;
+                    $('.sz_time').text(m + ':' + s);
+                }, 1000);
+            },3000);
+        },
+        /**
+         * 结束计时
+         * @author demo
+         */
+        endTime:function(){
+            clearInterval(window.timeFunction);
+        },
+        /**
+         * 初始化checkbox radio teatarea(富文本输入框)
+         */
+        initInput:function(){
+            // 初始化iCheck
+            var checkRadio = $('input:checkbox,input:radio');
+            checkRadio.iCheck({
+                checkboxClass: 'icheckbox_minimal-blue',
+                radioClass: 'iradio_minimal-blue',
+                increaseArea: '20%'
+            });
+            checkRadio.on({
+                'ifChecked':function(){$(this).attr({'checked':'checked'})},
+                'ifUnchecked':function(){$(this).removeAttr('checked')}
+            });
+            //初始化textArea focus时初始化UEditor
+            $('#test').on('focusin','.bd_hdk',function(){
+                var self = $(this);
+                UE.getEditor(self.attr('id'),ueditorAatConfig.config).ready(function(){
+                    $("div.bd_hdk").css({border:'none',padding:'0'});
+                    $('textarea[class='+self.attr('id')+']').hide();
+                });
+            });
+
+        },
+        /**
+         * 统计做题数量
+         * @author demo
+         */
+        doAmount:function() {
+            var arrayUnique = function(res) {
+                var json = {},result = [];
+                $.each(res, function (i, k) {
+                    if (!json[k]) {
+                        result.push(k);
+                        json[k] = 1;
+                    }
+                });
+                return result;
+            };
+            var getAmount = function(){
+                var doTest = [],allTest = [];
+                $('#test input').each(function (i, k) {//选择题
+                    if (k.checked === true) {//作答题目
+                        doTest.push(k.name);
+                    }
+                    allTest.push(k.name);//全部题目
+                });
+                $('#test .s_test_view').each(function (i, k) {//大题
+                    if ($(this).html() !== '') {//作答题目
+                        doTest.push(k.id);
+                    }
+                    allTest.push(k.id);//全部题目
+                });
+                var doAmount = arrayUnique(doTest).length;
+                var allAmount = arrayUnique(allTest).length;
+                return {
+                    'do':doAmount,
+                    'undo':allAmount-doAmount,
+                    'all':allAmount
+                };
+            };
+            var refreshAmount = function(){
+                var amount = getAmount();
+                var str = '已做 <strong style="color:#00a0e9">'+amount['do']+'</strong> 题 / 共 <strong>'+amount['all']+
+                        '</strong> 小题&nbsp;&nbsp;&nbsp;&nbsp;剩余'+
+                        '<strong style="color:#00a0e9"> '+amount['undo']+'</strong> 题未作答';
+                $('.zttj_text').html(str);
+            };
+            refreshAmount();
+        },
+        /**
+        * 查看知识答案
+        */
+        showLoreAnswer:function(){
+            $('div.temptext-ans-box').on('click','a.ans-btn',function(){
+                $(this).toggleClass('on');
+                $(this).parents('div.temptext-ans-box').find('div.temptext-ans').toggle(300);
+            })
+        },
+        /**
+         * 答题卡
+         * @author demo
+         */
+        answerCard:function(e){
+            //查看解析
+            $('#test').on('click','.seeAnalytic',function(){
+                var str = $(this).children('.an_cen').children('font');
+                str.text(str.text()=='隐藏解析'?'查看解析':'隐藏解析');
+                $('#analytic-'+$(this).attr('data-testID')).toggle(300);
+            });
+            //答题卡
+            var listTpl = template('answerCardTpl', e.data);
+            $('.answerCard').html(listTpl);
+            //点击跳转到答题卡
+            $('.an_ctb02').show().click(function(){
+                var answerCard = $('.answerCard'),content = $('#content');
+                var answerCardHeight = answerCard.height();
+                if(answerCard.is(':hidden')){//如果当前隐藏，则增加marginBottom
+                    content.css('margin-bottom',answerCardHeight-120);//减去footer高度，如果底部修改了，这里需要修改
+                }else{//如果当前显示，则减少marginBottom
+                    content.css('margin-bottom',0);
+                }
+                answerCard.toggle(300);
+            });
+            //答题卡跳转
+            var locateAnimate = function(locate){
+                var locateClass = 'locate-'+locate;
+                $('html,body').animate({scrollTop:$('.'+locateClass).offset().top-87},500);//需要减去顶部高度73和半个行高
+            };
+            $(document).on('click','.answerCard a',function(){
+                locateAnimate($(this).attr('data-locate'));
+            });
+            $(document).on('click','.tit',function(){
+                locateAnimate($(this).attr('data-locate'));
+            });
+        },
+        playVideo:function(){
+            $('body').on('click','.videolist',function(){
+                var kID = $(this).attr('kid');
+                var tID = $(this).attr('tid');
+                var videoContent = '<div style="margin: 5px;"><iframe frameborder="0" frameborder="0" scrolling="no" width="640" height="480" ' +
+                        'src="'+U('KnowledgeStudy/video?kID='+kID+'&tID='+tID)+'"></iframe></div>';
+                $.aDialog({
+                    'width': 650,
+                    'height': 560,
+                    'title': '视频解析—'+$(this).html(),
+                    'content': videoContent});
+            });
+        },
+        init: function () {
+            this.initData();
+            if(this.ifAnswer == 0){//答题界面
+                this.controlTime();
+                this.doAnswer();
+                this.submit();
+            }else{//解析界面
+                this.playVideo();
+            }
+            this.testOperate();
+        }
+    };
+    $(document).ready(function () {
+        MyHomeworkCaseExercise.init();
+    });
+</script>
+</body>
+</html>

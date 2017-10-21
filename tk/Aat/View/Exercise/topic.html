@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {#include file="Common:head"/#}
+<!--    <link href="__PUBLIC__/plugin/ueditor/themes/default/css/ueditor.css{#:C(WLN_UPDATE_FILE_DATE)#}" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="__PUBLIC__/plugin/ueditor/ueditor.config.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/newAat/js/ueditor.aat.config.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/ueditor/ueditor.all.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/bigImage.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>-->
+</head>
+
+<body>
+<div id="wrapper">
+{#include file="Common:header"/#}
+<div id="content" class="w980 mc pt90 pb20">
+    <div class="box02 mb20">
+        <!--标题-->
+        <div class="zt_title">
+            <div class="fl pt20 pl20" id='msg'>正在加载试题，请稍候...</div>
+        </div>
+        <div class="this_tab_title" style="display: none;">
+            <div>
+                请输入订单号：<input type="text" id='code' style="width:200px; line-height:25px;"/>
+                <button id='verifySubmit'>提交</button>&nbsp;&nbsp;
+                <font color='red' id='errorMsg'></font>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    {#include file="Common:footer"/#}
+</div>
+</div>
+<script type="text/javascript">
+    var tpid = '{#$tpid#}';
+    var params = '{#$params#}';
+    if(tpid){
+        $.post(U('Aat/Default/ajaxGetTest'), {
+            'id': 8,
+            'tpid' : tpid,
+            'SubjectID': AatCommon.getSubjectID(),
+            times:Math.random()
+        }, function (e) {
+            if (e.status == 1) {
+                window.location.href = U('Aat/Exercise/index?id=' + e.data.record_id+'&'+params);
+            } else {
+//                if(e.data == 'noToken'){
+//                    e.data = '您需要输入订单号才能作答';
+//                    $('.this_tab_title').show();
+//                }
+                $('#msg').html(e.data);
+            }
+        });
+    }else{
+        alert('专题试卷编号不能为空！');
+    }
+
+    $('#verifySubmit').click(function(){
+        var obj = $('#code');
+        var code = obj.val();
+        if('' == code){
+            alert('验证码不能为空！');
+            obj.focus();
+            return false;
+        }
+        code = code.replace(/\s/g, '');
+        if(/[^a-zA-Z0-9]/.test(code)){
+            alert('验证码只能为数字和字母！');
+            obj.focus();
+            return false;
+        }
+        $.post(U('Aat/Exercise/veirfyOrderNo'), {'no':code,times:Math.random()}, function(e){
+            if (e.status == 1) {
+                window.location.href=U('Aat/Exercise/topic?topicPaperID='+tpid+'&'+params);
+            }else{
+                if('noExist' == e.data){
+                    msg = '订单号不存在';
+                }else if('failure' == e.data){
+                    msg = '验证失败，请稍后再试，或者联系管理员';
+                }else if('used' == e.data){
+                    msg = '订单号已使用！';
+                }else{
+                    msg = e.data;
+                }
+                $('#errorMsg').html(msg);
+            }
+        });
+    });
+</script>
+</body>
+</html>

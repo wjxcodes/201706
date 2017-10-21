@@ -1,0 +1,151 @@
+<TABLE cellpadding="5" cellspacing="0" class="list" border="1">
+    <tr><td height="5" colspan="7" class="topTd" ></td></tr>
+    <TR>
+        <TD class="tRight" width="100">编号：</TD>
+        <TD class="tLeft" >{#$edit.LoreID#}
+        </TD>
+    </TR>
+    <TR>
+        <TD class="tRight tTop">知识：</TD>
+        <TD class="tLeft">
+            <div class="popupnr loreEditor"></div>
+        </TD>
+    </TR>
+    <TR>
+        <TD class="tRight tTop">答案：</TD>
+        <TD class="tLeft">
+            <div class="popupnr anwserEditor"></div>
+        </TD>
+    </TR>
+    <TR>
+        <TD class="tRight tTop">学科：</TD>
+        <TD class="tLeft">
+            {#$edit.SubjectName#}
+        </TD>
+    </TR>
+    <TR>
+        <TD class="tRight" width="100" height="35">所在板块：</TD>
+        <TD class="tLeft" ><SELECT class="bLeft" id="forumsMenu">
+            <option value="">请选择</option>
+            {#volist name="forums" id="me" key="k"#}
+            <option value="{#$k#}" {#eq name="k" value="$edit.ForumID"#}selected=selected{#/eq#}>{#$me.name#}</option>
+            {#/volist#}
+        </SELECT> <div class="impBtn" style="display:inline;padding:3px 0px;"></div>
+
+        </TD>
+    </TR>
+    <TR>
+        <TD class="tRight" width="100" height="35">所属栏目：</TD>
+        <TD class="tLeft" ><SELECT class="bLeft" NAME="MenuID" id="caseMenu">
+            <option value="">请先选择板块</option>
+        </SELECT> <div class="impBtn" style="display:inline;padding:3px 0px;"></div>
+
+        </TD>
+    </TR>
+    <TR>
+        <TD class="tRight" style="width:80px">章节：</TD>
+        <TD class="tLeft" ><SELECT id="chapter" class="chapter bLeft selectChapter" NAME="ChapterID">
+            <option value="">请选择</option>
+        </SELECT> <div class="impBtn" style="display:inline;padding:3px 0px;"><input id="addcp" name="addcp" class="add imgButton" type="button" value="添加"/></div>
+            <div class="cpinput" id='chapterList'></div>
+        </TD>
+    </TR>
+    <TR>
+        <TD></TD>
+        <TD class="center"><div style="width:85%;margin:5px">
+            <input TYPE="hidden" name="LoreID" class="loreID" value="{#$edit.LoreID#}">
+            <div class="impBtn fLeft"><INPUT tag='form1' u="{#:U('Guide/CaseMyLore/save')#}" TYPE="button" value="保存" class="save imgButton mysubmit"></div>
+        </div></TD>
+    </TR>
+</TABLE>
+
+
+<script>
+    //设置对话框和内容区域的宽度
+    var w = $(window).width()-100;
+    $('.loreContent').each(function(){
+        $(this).width(w-180);
+    });
+    $('#popup_overlay').css('z-index','9');
+    $('#popup_container').width(w).css('z-index',10);
+    //加载编辑器
+    var uploadUrl=U('Index/upload?dir=lore')
+    $.Editor.init(uploadUrl);
+    var data = {
+        'Lore' : '{#$edit.Lore#}',
+        'Answer' : '{#$edit.Answer#}'
+    }
+    addEditorContent(data);
+    //通过menuArray加载栏目信息
+    var editMenuId = '{#$edit.MenuID#}';
+    var forumsId = '{#$edit.ForumID#}';
+    var caseMenu = $('#caseMenu');
+    addMenu(caseMenu, editMenuId, forumsId);
+
+    var chapterParentStr="{#$chapterParentStr#}";
+    $('#chapter').chapterSelectLoad('__URL__',chapterParentStr);
+    var chapID='{#$edit.ChapterID#}';
+    var subjectID='{#$edit.SubjectID#}';
+    $('#chapter').allSelectLoad('__URL__',{"style":"getMoreData","list":"chapterList,chapter","subjectID":subjectID,"idList":{
+    "chapterList":chapID,"chapter":"0"}})
+    //添加章节考点
+    $('#addcp').live('click',function(){
+        if($('.selectChapter').last().val().indexOf('c')==-1){
+            alert('请选择正确的数据');
+            return false;
+        }
+
+        var cid=$('.selectChapter').last().val().replace('c','');
+        var xx_s="";
+        $('.selectChapter').each(function(){
+            xx_s+=' >> '+$(this).find("option:selected").text();
+        });
+        var inputcp='<div>#str# <span class="delhang">x</span><input class="cp" name="cp[]" type="hidden" value="#value#"/></div>';
+        var xx=inputcp.replace('#value#',cid).replace('#str#',xx_s.replace(/┉/g,'').replace('┝',''));
+
+        if($('.cpinput').html().indexOf('value="'+cid+'"')==-1 && $('.cpinput').html().indexOf('value='+cid+'')==-1){
+            $('.cpinput').append(xx);
+            $('.delhang').css({'padding':'0px 5px','cursor':'pointer','color':'#f00'});
+        }
+    });
+    $('.delhang').live('click',function(){
+        $(this).parent().remove();
+    });
+    $('.delhang').live('mouseover',function(){
+        $(this).css({'background-color':'#f00','color':'#fff'});
+    });
+    $('.delhang').live('mouseout',function(){
+        $(this).css({'background-color':'#fff','color':'#f00'});
+    });
+
+    //板块联动
+    $('#forumsMenu').change(function(){
+        caseMenu.find('option').eq(0).nextAll().remove();
+        addMenu(caseMenu, '', $(this).val());
+    });
+
+    //添加编辑器内容
+    function addEditorContent(data){
+        var opt = {
+            toolbars: [[
+             'source', 'bold', 'italic', 'underline', '|', 'fontsize', 'forecolor', '|', 'simpleupload', 'scrawl'
+            ]],
+            initialFrameWidth : '100%'
+        };
+        $.Editor.container = $('.loreEditor');
+        $.Editor.createContent(data.Lore, $.extend({
+          'textarea' : 'Lore',
+          'title' : '知识'
+        },opt)); 
+        $.Editor.container = $('.anwserEditor');
+        $.Editor.createAnalyze(data.Answer,  $.extend({
+          'textarea' : 'Answer',
+          'title' : '答案'
+        },opt));
+    }
+
+
+</script>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

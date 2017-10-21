@@ -1,0 +1,40 @@
+{#// 加载头部公共文件 #}
+{#include file="Public/header" /#}
+<!-- 菜单区域  -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+//-->
+</SCRIPT>
+<div class="main" >
+<div class="content">
+<TABLE id="checkList" class="list" cellpadding="5" cellspacing="0" border="1">
+<tr><td height="5" colspan="2" class="topTd" ></td></tr>
+<TR class="row" ><th colspan="2" class="space">欢迎信息</th></tr>
+{#if condition="$DocManager eq '1'"#}
+    <TR class="row lists" jl=''><TD colspan="2" width="15%">欢迎登录·试题属性编辑系统·，请在 <a href='{#:U('Teacher/DocManager/index')#}'>文档管理</a> 中对试题进行编辑，在您确认无误后提交任务！</TD></TR>
+    <TR class="row lists" jl=''><TD width="15%">您有未下载的解析任务：</td><td><font color="red">{#$docfile#}个</font></td></tr>
+{#/if#}
+{#if condition="$IfTeacher eq '1'"#}
+<TR class="row lists" jl=''><TD colspan="2" width="15%">欢迎登录·试题属性编辑系统·，请在 <a href='{#:U('Teacher/Task/index')#}'>未完成标引任务</a> 中对试题进行编辑，在您确认无误后提交任务！</TD></TR>
+<TR class="row lists" jl=''><TD width="15%">您有未完成标引任务：</td><td><font color="red">{#$data[0]['a']#}个</font></td></tr>
+<TR class="row lists" jl=''><TD width="15%">您有待审核标引任务：</td><td>{#$data[0]['b']#}个</td></tr>
+<TR class="row lists" jl=''><TD width="15%">您有已完成标引任务：</td><td>{#$data[0]['c']#}个</td></tr>
+<TR class="row lists" jl=''><TD width="15%">您有失败标引任务：</td><td><font color="red">{#$data[0]['d']#}个</font></td></tr>
+{#/if#}
+
+{#if condition="$IfChecker eq '1'"#}
+<TR class="row lists" jl=''><TD colspan="2" width="15%">欢迎登录·试题属性编辑系统·，请在 <a href='{#:U('Teacher/Check/index')#}'>未完成审核任务</a> 中对试题进行审核，在您确认无误后提交任务！</TD></TR>
+<TR class="row lists" jl=''><TD width="15%">您有未完成审核任务：</td><td><font color="red">{#$data[1]['a']#}个</font></td></tr>
+<TR class="row lists" jl=''><TD width="15%">您有已提交审核任务：</td><td>{#$data[1]['b']#}个</td></tr>
+<TR class="row lists" jl=''><TD width="15%">您有已完成审核任务：</td><td>{#$data[1]['c']#}个</td></tr>
+{#/if#}
+
+<tr><td height="5" colspan="2" class="bottomTd"></td></tr>
+</TABLE>
+</div>
+</div> 
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Public/ends" /#}
+ 

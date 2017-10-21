@@ -1,0 +1,4 @@
+2017-07-05 16:07:07 致命的运行时错误(E_ERROR) Maximum execution time of 30 seconds exceeded E:\www\www\main\Library\Think\Db\Driver.class.php 103 
+2017-07-05 16:07:09 致命的运行时错误(E_ERROR) Maximum execution time of 30 seconds exceeded E:\www\www\main\Library\Think\Db\Driver.class.php 103 
+2017-07-05 16:07:39 致命的运行时错误(E_ERROR) Maximum execution time of 30 seconds exceeded E:\www\www\main\Library\Think\Db\Driver.class.php 765 
+2017-10-09 15:47:48 致命的运行时错误(E_ERROR) Out of memory (allocated 1310720) (tried to allocate 262144 bytes) E:\web\www\main\Library\Think\Think.class.php 168 

@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>用户信息</title>
+    <meta name="keywords" content="在线组卷系统,用户信息,升级,宣传赚点" />
+    <meta name="description" content="在线组卷系统用户信息升级宣传赚点" />
+    <link type="text/css" href="__PUBLIC__/default/css/common.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/default/css/user.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js"></script>
+    <script>
+        var local='{#:U('Index/main')#}';
+        var areaParent="{#$areaParent#}";
+    </script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+</head>
+<body>
+<div id="rightdiv">
+    <div id="righttop">
+        <div id="categorylocation">
+            <span style="width:65px;">当前位置：</span>> <span id="loca_text"> 用户档案 > 用户信息 </span>
+        </div>
+    </div>
+
+    <div id="main">
+                <!-- 用户等级奖励信息 -->
+            <div class="user-info-content">
+                <div class="ls-user-info-box clearfix">
+                    <span class="ls-user-photo">
+                        <img class="userPic" height="64" width="64" src="__PUBLIC__/default/image/user/photo.jpg" alt="头像">
+                        <span class="photo-wrapper"></span>
+                    </span>
+                    <span class="ls-user-info">
+                        <a class="head elli f-yahei" href="javascript:;">
+                            {#if condition="$user.Nickname neq ''"#}
+                                {#$user.Nickname#}
+                            {#else/#}
+                                {#$user.OkName#}
+                            {#/if#}
+                        </a>
+                        <div class="ls-user-level">
+                            <span class="ls-user-cite years-service f-song"> <i class="icon"></i>
+                                <span class="groupName">{#$user.UserGroup#}</span>
+                            </span>
+                            <span class="level-name">{#$levelMsg[0].LevelName#}<cite class="level-num"></cite></span>
+                        </div>
+                    </span>
+                    <div class="up-level">
+                        <div class="up-level-next">
+                            <!-- level-进度条 -->
+                            <p class="ul-process">
+                                <span class="ul-level-top f-yahei">
+                                    <s class="left"> {#$levelMsg[0].LevelName#}</s>
+                                    <s class="right">{#$levelMsg[1].LevelName#} </s>
+                                </span>
+                                <span class="process-wrap">
+                                    <span class="process-pct" style="width:{#$levelMsg.baifen#}%"></span>
+                                </span>
+
+                                <span class="ul-tips">升级还需<em>{#$levelMsg.expCha#}</em>点经验值  <a class="blue" href="{#:U('Home/userExpList')#}">做任务</a></span>
+                            </p>
+                            <cite class="next-level-name f-yahei"><a href="{#:U('User/Home/levelInfo')#}">（等级特权）</a></cite>
+                        </div>
+                    </div>
+                </div>
+                <!-- 奖励值 -->
+                <div class="award-site"><span class="award-item">经验值<cite>{#$user.ExpNum#}</cite></span><span class="award-item">金币<cite>{#$user.Cz|default="0"#}</cite><a href="{#:U('Home/recordList')#}" class="helper f-yahei">（收入记录）</a></span></div>
+                <!-- 奖励值 END-->
+            </div>
+            <!-- 用户等级奖励信息 -->
+        <div class="contentbox" style="position:relative;">
+            <div class="contentbox_title">基本信息</div>
+            <div>
+                <span class="item">用 户 ID：</span>
+                <strong style="color:#029fe8">{#$user.UserName#}</strong>
+                <span id="savelogin" style="display:none">（
+                    您已在本机设置自动登录，
+                    <a href="javascript:CloseAutoLogin();">点击这里可以取消</a>。）
+                </span>
+            </div>
+            <div><span class="item">登录次数：</span>{#$user.Logins#}</div>
+            <div><span class="item">上次登录时间：</span>{#$user.LastTime#}</div>
+            <div><span class="item">上次登录IP：</span>{#$user.LastIP#}</div>
+            <div class="fgx"></div>
+            {#if condition="$user.UserJZRQ neq ''"#}
+            <div><span class="item">有效期截止：</span>{#$user.UserJZRQ#}</div>
+            <div><span class="item">剩余：</span>{#$user.UserJZSY#}天</div>
+            {#/if#}
+            <div>
+                <span class="item">用户权限组：</span>
+                {#$user.UserGroup#}{#if condition="$user.nowPowerName neq ''"#}【{#$user.nowPowerName#}】{#/if#}
+                    &nbsp;<a href="{#:U('Home/userLevelIntro')#}" style="cursor: pointer;text-decoration:none;">所有权限</a>
+                    &nbsp;<a target="_top" href="{#:U('Index/operOrder')#}"
+                             style="cursor: pointer;text-decoration:none;">
+                购买权限</a>
+            </div>
+            {#if condition="$user.IpUserGroup neq ''"#}
+                <div><span class="item">ip权限组：</span>{#$user.IpUserGroup#}</div>
+            {#/if#}
+            <div><span class="item">组卷下载次数：</span>{#$user.Times|default="0"#}</div>
+        </div>
+        <div class="contentbox" style="position:relative;background-color:#fff;">
+            <div class="contentbox_title">详细信息 <a id="change" class="pointer">修改</a></div>
+            <div style="position:relative;">
+                <form method="post" action="{#:U('Home/info')#}">
+                    <div class="con">
+                        <span class="item">姓　　名：</span>
+                        <span>
+                           {#$user.RealName#}
+                        </span>
+                    </div>
+                    <div class="con">
+                        <span class="item">教师身份认证：</span>
+                        <span>
+                           {#$user.authTitle#}
+                           {#if condition="in_array($user['IfAuth'],array(1,2,3))"#}
+                           <a href="{#:U('User/Index/showAuthInfo',array('status'=>$user['IfAuth']))#}" target="_blank" alt="查看认证信息">
+                            查看认证信息</a>
+                           {#elseif condition="$user['Whois'] == 1" /#}
+                           <a href ="{#:U('User/Index/authTeacher')#}" target="_blank" alt="查看认证信息">
+                           去认证</a>
+                           {#/if#}
+                        </span>
+                    </div>
+                    <div class="auth-info-content" id="showAuthInfo" style="display:none;">
+                     <table class="g-table g-table-bordered">
+                        <thead>
+                            <tr>
+                                <th>身份证号</th>
+                                <th>教师资格证号</th>
+                                <th>教师等级证号</th>
+                                <th>认证时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr jl=''>
+                                <td>{#$authData.IDNumber#}</td>
+                                <td>{#$authData.Qualification#} <a href="{#$authData.QuaPicSrc#}" target="_blank" class="link">查看图片</a></td>
+                                <td>{#$authData.Grade#} <a href="{#$authData.GradePicSrc#}" target="_blank" class="link">查看图片</a></td>
+                                <td>{#$authData.AuthTime|date="Y-m-d H:i:s",####}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="showinput none">
+                        <span class="item">姓　　名：</span>
+                        <input name="RealName" id="RealName" type="text" size="50" value="{#$user.RealName#}"/>
+                        <span id="RealNameerr"></span>
+                    </div>
+                    <div class="con">
+                        <span class="item">密　　码：</span>
+                        <span>******</span>
+                    </div>
+                    <div class="showinput pwd none">
+                        <span class="item">原 密 码：</span>
+                        <input name="Passwordy" id="Passwordy" type="password" size="50"/>
+                        * 不修改请留空<span id="Passwordyerr"></span>
+                    </div>
+                    <div class="showinput pwd none">
+                        <span class="item">新 密 码：</span>
+                        <input name="Password" id="Password" type="password" size="50"/>
+                        <span id="Passworderr"></span>
+                    </div>
+                    <div class="showinput pwd none">
+                        <span class="item">确认新密码：</span>
+                        <input name="Password2" id="Password2" type="password" size="50"/>
+                        <span id="Password2err"></span>
+                    </div>
+                    <div class="con">
+                        <span class="item">地　　区：</span>
+                        <span>{#$user.AreaStr#}</span>
+                    </div>
+                    <div class="showinput none">
+                        <span class="item">地　　区：</span>
+                        <select name="AreaID[]" class="AreaID selectArea" id="sf">
+                            {#volist name="arrArea" id="sub"#}
+                            <option value="{#$sub.AreaID#}" last="{#$sub.Last#}">{#$sub.AreaName#}</option>
+                            {#/volist#}
+                        </select>
+                    </div>
+                    <div class="con">
+                        <span class="item">学　　校：</span>
+                        <span>{#$user.SchoolName#}</span>
+                    </div>
+                    <div class="showinput none">
+                        <span class="item">学　　校：</span>
+                            <select name="SchoolID" id="school">
+                                <option value="">请选择地区</option>
+                                {#volist name='schoolList' id='list'#}
+                                    <option value="{#$list.SchoolID#}" {#eq name="user.SchoolID" value="$list.SchoolID"#}selected="selected"{#/eq#}>{#$list.SchoolName#}</option>
+                                {#/volist#}
+                            </select>
+                        <span id="SchoolIDerr"></span>
+                    </div>
+                    <div class="con">
+                        <span class="item">年　　级：</span>
+                        <span>{#$user.GradeName#}</span>
+                    </div>
+                    <div class="showinput none">
+                        <span class="item">年　　级：</span>
+                        <select class="normal bLeft" id='GradeID' name="GradeID">
+                                    <option value="0">请选择学科</option>
+                                    {#if condition="$gradeList"#}
+                                        {#volist name="gradeList" id="vo"#}
+                                            <optgroup label="{#$vo.GradeName#}">
+                                            {#if condition="$vo['sub']"#}
+                                                {#volist name="vo['sub']" id="item"#}
+                                                    <option value="{#$item.GradeID#}" {#eq name="item.GradeID" value="$user.GradeID"#}selected="selected"{#/eq#}>　　{#$item.GradeName#}</option>
+                                                {#/volist#}
+                                            {#/if#}
+                                            </optgroup>
+                                        {#/volist#}
+                                    {#else/#}
+                                        <option value="0">请添加学科</option>
+                                    {#/if#}
+                        </select>
+                        <span id="GradeIDerr"></span>
+                    </div>
+                    <div class="con">
+                        <span class="item">学　　科：</span>
+                        <span>{#$user.SubjectName#}</span>
+                    </div>
+                    <div class="showinput none">
+                        <span class="item">学　　科：</span>
+                        <select name="SubjectID" id="SubjectID">
+                            <option value="">请选择年级</option>
+                            {#volist name='subjectArray' id='list'#}
+                                <option value="{#$list.SubjectID#}" {#eq name="user.SubjectName" value="$list.SubjectName"#}selected="selected"{#/eq#}>{#$list.SubjectName#}</option>
+                            {#/volist#}
+                            
+                        </select>
+                        <span id="SubjectIDerr"></span>
+                    </div>
+                    <div class="con">
+                        <span class="item">地　　址：</span>
+                        <span>{#$user.Address#}</span>
+                    </div>
+                    <div class="showinput none">
+                        <span class="item">地　　址：</span>
+                        <input name="Address" id="Address" type="text" size="50" value="{#$user.Address#}"/>
+                        <span id="Addresserr"></span>
+                    </div>
+                    <div class="con">
+                        <span class="item">手　　机：</span>
+                        <span id="phoneCodeValue">{#$user.Phonecode#}</span>
+                        <div class="ifCheckPhone">
+                            {#if condition="$user.CheckPhone neq '0'"#}
+                            <span> * 已验证</span><span class="pointer blue checkPhone" status="edit">[修改]</span>
+                            {#elseif condition="$user.Phonecode eq ''"/#}
+                            <span class="pointer blue checkPhone" status="set">设置手机</span>
+                            {#else/#}
+                            <span class="pointer blue checkPhone" status="check">验证手机</span>
+                            {#/if#}
+                        </div>
+                    </div>
+                    <div class="con">
+                        <span class="item">邮　　箱：</span>
+                        <span id="emailValue">{#$user.Email#}</span>
+                        <div class="ifCheckEmail">
+                            {#if condition="$user.CheckEmail neq '0'"#}
+                            <span> * 已验证</span><span class="pointer blue checkEmail" status="edit">[修改]</span>
+                            {#elseif condition="$user.Email eq ''"/#}
+                            <span class="pointer blue checkEmail" status="set">设置邮箱</span>
+                            {#else/#}
+                            <span class="pointer blue checkEmail" status="check">更改/验证邮箱</span>
+                            {#/if#}
+                        </div>
+                    </div>
+                    <div class="showinput none" style="margin-left:20px; padding-top:20px;line-height:30px;">
+                        <div class="showinput none"><span id="SaveIDerr"></span></div>
+                        <input name="UserID" value="{#$user.UserID#}" type="hidden"/>
+                        <input class="" type="button" value="修改" id="uniteditsubmit"/>
+                        <input class="" type="button" value="取消" id="reset"/>
+                    </div>
+                </form>
+                <p>&nbsp;</p><p>&nbsp;</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="__PUBLIC__/default/js/user.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/default/js/getSelectData.js{#$Think.config.UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript">
+    //用户
+    $.myUser.init({#$user.GradeID#});
+</script>
+</body>
+</html>

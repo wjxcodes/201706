@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#}-用户中心</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/user.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js"></script>
+</head>
+<body>
+<!--头部-->
+{#include file="Index@Common/TplUserHeader" /#}
+<!--头部-end-->
+<!-- 个人中心 -->
+<div class="w-main">
+    <!-- 面包屑导航 -->
+    {#include file="IndexCenter/TplCrumbs" /#}
+    <!-- 面包屑导航END -->
+
+    <div class="u-content clearfix">
+        <!-- 左侧导航 -->
+        {#include file="IndexCenter/TplPersonalNav" /#}
+        <!-- 左侧导航END -->
+        <div class="u-right-wrap">
+            <div class="u-right" id="myInfo">
+                <!-- 奖励记录 -->
+                <div class="u-record-panel content g-tab">
+                    <div class="tab-head">
+                        <h3 class="tab-title">个人资料</h3>
+                    </div>
+                    <div class="tab-nav-wrap">
+                        <ul class="tab-nav">
+                            <li data-href=".record-l-panel1" class="on">
+                                <a href="javascript:;">基本资料</a>
+                                <i class="active-icon"></i>
+                            </li>
+                            <li data-href=".record-l-panel2">
+                                <a href="javascript:;">修改密码</a>
+                                <i class="active-icon"></i>
+                            </li>
+                            <li data-href=".record-l-panel3" class="hidden">
+                                <a href="javascript:;">绑定授权</a>
+                                <i class="active-icon"></i>
+                            </li>
+                            <li data-href=".record-l-panel4" class="hidden">
+                                <a href="javascript:;">冻结</a>
+                                <i class="active-icon"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-body">
+                        <div class="tab-panel record-l-panel1 on" >
+                            <!--基本资料-->
+                            <div class="u-base-data">
+                                <div class="clearfix">
+                                    <div class="user-photo left">
+                                        <img src="{#$userData.UserPic#}" width="110" height="110" alt="用户头像">
+                                    </div>
+                                    <div class="left data-form-site">
+                                        <form class="g-form g-form-aligned" action="">
+                                            <div class="g-control-group data-item">
+                                                <label for="">姓名：</label><span class="data-context">{#$userData.RealName#}</span>
+                                            <span class="data-form-ipt-item">
+                                                <input class="w174" type="text" value="{#$userData.RealName#}" id="realName"/>
+                                            </span>
+                                                <a class="data-handle editMyData link" href="javascript:;">编辑资料</a>
+                                            </div>
+                                            <div class="g-control-group data-item">
+                                                <label for="">地区：</label>
+                                                <span class="data-context">{#$userData.AreaStr#}</span>
+                                            <span class="data-form-ipt-item">
+                                                {#$userData.InitArea#}
+                                            </span>
+                                            </div>
+                                            <div class="g-control-group data-item">
+                                                <label for="">学校：</label>
+                                                <span class="data-context">{#$userData.SchoolName#}</span>
+                                            <span class="data-form-ipt-item">
+                                                <select name="SchoolID" class="selectSchool">
+                                                    <option value="">请选择地区</option>
+                                                    {#volist name='schoolList' id='list'#}
+                                                    <option value="{#$list.SchoolID#}" {#eq name="userData.SchoolID" value="$list.SchoolID"#}selected="selected"{#/eq#}>{#$list.SchoolName#}</option>
+                                                    {#/volist#}
+                                                </select>
+                                                <span class="g-form-msg-in">
+                                                    <a class="helper" href="javascript:;">未找到学校？</a>
+                                                </span>
+                                            </span>
+                                            </div>
+                                            <div class="g-control-group data-item">
+                                                <label for="">年级：</label>
+                                                <span class="data-context">{#$userData.GradeName#}</span>
+                                            <span class="data-form-ipt-item">
+                                                <select class="w85 gradeSelect" name="" id="">
+                                                    {#if condition="$gradeList"#}
+                                                    {#volist name="gradeList" id="vo"#}
+                                                    <optgroup label="{#$vo.GradeName#}">
+                                                        {#if condition="$vo['sub']"#}
+                                                        {#volist name="vo['sub']" id="item"#}
+                                                        <option value="{#$item.GradeID#}" {#eq name="item.GradeID" value="$userData.GradeID"#}selected="selected"{#/eq#}>　　{#$item.GradeName#}</option>
+                                                        {#/volist#}
+                                                        {#/if#}
+                                                    </optgroup>
+                                                    {#/volist#}
+                                                    {#/if#}
+                                                </select>
+                                            </span>
+                                            </div>
+                                            <div class="g-control-group data-item">
+                                                <label for="">学科：</label>
+                                                <span class="data-context">{#$userData.SubjectName#}</span>
+                                            <span class="data-form-ipt-item">
+                                                <select class="w85 subjectSelect" name="subjectSelect">
+                                                    {#volist name='subjectList' id='list'#}
+                                                    <option value="{#$list.SubjectID#}" {#eq name="userData.SubjectName" value="$list.SubjectName"#}selected="selected"{#/eq#}>{#$list.SubjectName#}</option>
+                                                    {#/volist#}
+                                                </select>
+                                            </span>
+                                            </div>
+                                            <div class="g-control-group edit-btn-group editBtnGroup">
+                                                <label for=""></label>
+                                                <input class="g-btn btn-xl btn-primary submit" type="button" value="保存"/>
+                                                <input class="g-btn btn-xl unEdit" type="button" value="取消"/>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                <!--邮箱信息-->
+                                <div class="data-bind-site">
+                                    <form class="g-form g-form-aligned" action="">
+                                        <div class="g-control-group data-item">
+                                            <label for="">手机：</label>
+                                            <span class="data-context" id="myPhone">{#$userData.Phonecode#}</span>
+
+                                            {#if condition="$userData.CheckPhone neq '0'"#}
+                                            <span class="helper"><i class="iconfont green">&#xe619;</i>已验证</span>
+                                            <a class="data-handle link checkPhone" status="edit" href="javascript:;">修改</a>
+                                            {#elseif condition="$userData.Phonecode eq ''"/#}
+                                            <span class="pointer blue checkPhone" status="set">设置手机</span>
+                                            {#else/#}
+                                            <a class="data-handle link checkPhone" href="javascript:;" status="check">验证</a>
+                                            {#/if#}
+                                        </div>
+                                        <div class="g-control-group data-item">
+                                            <label for="">邮箱：</label>
+                                            <span class="data-context" id="myEmail">{#$userData.Email#}</span>
+                                            {#if condition="$userData.CheckEmail neq '0'"#}
+                                            <span class="helper"><i class="iconfont green">&#xe619;</i>已验证</span>
+                                            <a class="data-handle link" href="javascript:;">修改</a>
+                                            {#elseif condition="$user.Phonecode eq ''"/#}
+                                            <span class="pointer blue checkEmail" status="set">设置</span>
+                                            {#else/#}
+                                            <span class="pointer blue checkEmail" status="check">验证</span>
+                                            {#/if#}
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-panel  record-l-panel2">
+                            <div class="u-change-password">
+                                <form class="g-form g-form-aligned" action="">
+                                    <div class="g-control-group data-item">
+                                        <label for="">当前密码：</label>
+                                        <input class="w174" type="password" value="叫我第一名" placeholder="输入原密码">
+                                        <span class="g-form-msg-in"><i class="iconfont true">&#xe619;</i><i class="iconfont false">&#xe61a;</i>原密码不能为空</span>
+                                    </div>
+                                    <div class="g-control-group data-item">
+                                        <label for="">新密码：</label>
+                                        <input class="w174" type="password" value="叫我第一名" placeholder="输入新密码">
+                                    <span class="password-msg">
+                                        <span class="level">
+                                            <cite class="on-weak">弱</cite>
+                                            <cite>中</cite>
+                                            <cite>强</cite>
+                                        </span>
+                                    </span>
+                                        <span class="g-form-msg-in"><i class="iconfont false">&#xe61a;</i>请输入新密码</span>
+                                    </div>
+                                    <div class="g-control-group data-item">
+                                        <label for="">确认密码：</label>
+                                        <input class="w174" type="password" value="叫我第一名" placeholder="重复新密码">
+                                        <span class="g-form-msg-in"><i class="iconfont false">&#xe61a;</i>两次密码不一致</span>
+                                    </div>
+                                    <div class="g-control-group edit-btn-group editBtnGroup" style="display: block;">
+                                        <label for=""></label>
+                                        <input class="g-btn btn-xl btn-primary" type="submit" value="保存">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="tab-panel  record-l-panel3">
+                            <div class="u-binding-info">
+                                <div class="help-msg">绑定的第三方帐号，可用于直接登录题库网站</div>
+                                <div class="bind-third">
+
+                                    <div class="bind-third-item clearfix">
+                                        <div class="left">
+                                            <span class="icon-third"></span>
+                                            <b class="name">QQ</b>
+                                            <span class="status-bind bound"><i class="iconfont true">&#xe619;</i>已绑定</span>
+                                        </div>
+                                        <div class="right">
+                                            <a class="g-btn btn-l unbindBtn" href="javascript:;">解除绑定</a>
+                                        </div>
+                                    </div>
+                                    <div class="bind-third-item clearfix">
+                                        <div class="left">
+                                            <span class="icon-third"></span>
+                                            <b class="name">QQ</b>
+                                            <span class="status-bind"><i class="iconfont false">&#xe61a;</i>未绑定</span>
+                                        </div>
+                                        <div class="right">
+                                            <a class="g-btn btn-primary btn-l bindBtn" href="javascript:;">立即绑定</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 个人中心END -->
+
+    <!--绑定授权弹出框-->
+    <div class="tplUnbindWln hidden">
+        <div class="third-unbind-content">
+            <div class="icon-bind icon-QQ"></div>
+            <div class="third-bind-userinfo">
+                <p class="bind-third-account">新浪微博</p>
+                <p class="bind-third-nickname">河南屌丝青年</p>
+            </div>
+            <p class="msg-context">即将解除<span class="bind-third-account">新浪微博</span>帐号的绑定，解绑后将无法继续使用此<span class="bind-third-account">新浪微博</span>快速登录题库网站。</p>
+            <div class="unbind-btn-group">
+                <a id="btn-status-del" class="g-btn btn-primary" href="javascript:;" title="解除绑定">解除绑定</a>
+                <a class="g-btn" href="javascript:;" title="返回">返回</a>
+            </div>
+        </div>
+        <div class="error-msg"></div>
+    </div>
+    <!--绑定授权弹出框END-->
+
+
+
+
+
+</div>
+<script type="text/javascript" src="__PUBLIC__/index/js/userCenter.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var idName='{#$function#}';
+        if(idName!='' || idName!='undefined'){
+            $('#'+idName).addClass('active');
+        }
+        $.userInfo.init();
+    })
+</script>
+<!--footer-->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+<script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+<![endif]-->
+
+
+{#include file="Index@Common/secondFooter" /#}
+<!--footer-end-->
+
+</body>
+</html>

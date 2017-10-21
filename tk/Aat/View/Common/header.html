@@ -1,0 +1,244 @@
+<div id="leftsub">
+    <div class="leftsub_box">
+        <div id="xk_box">
+            <ul class="xk_list">
+
+            </ul>
+        </div>
+        <div id="cd_box">
+            <div class="groove-hor"></div>
+            <ul class="cd_list">
+                <li><a href="{#:U('Aat/PersonalReport/index')#}"><span class="cd_ico01 fl"></span><span class="fl cd_text">学情评估</span></a></li>
+                <li><a href="{#:U('Aat/MyExercise/index')#}"><span class="cd_ico02 fl"></span><span class="fl cd_text">我的练习</span></a></li>
+                <li><a href="{#:U('Aat/MyHomework/index')#}"><span class="cd_ico02 fl"></span><span class="fl cd_text">我的作业</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="leftsub_an02" style="position: fixed;z-index: 95;">
+    <a class="leftsub_an_off" href="javascript:;"></a>
+    <a class="leftsub_an_no" style="display:none;" href="javascript:;"></a>
+</div>
+<div id="header" style="position: fixed;z-index: 90;">
+    <div class="head_logo mc">
+        <img src="__PUBLIC__/newAat/images/logo02.png"/>
+    </div>
+    <div class="head_right">
+        <div class="an_shouye fr"><a href="{#:U('Aat/Default/index')#}"></a></div>
+        <div class="phoneapp02 fr"><a href="javascirpt:alert('请下载提分APP端！')" title="请下载提分APP端!"></a></div>
+        <!--登录后显示首页用户登录信息-->
+        <div class="dlxx02 dlxx fr pr15 pl15">
+            <span class="userid fl pr5" style="position: relative;">加载中...</span><span class="ico_jt01 fl" style="position: relative;"></span>
+            <div id="dlxx_box02" style="display:none;">
+                <ul>
+                    <li class="li01"><a href="{#:U('User/Aat/index')#}"><span class="ico_01 dlxx_ico"></span><span class="text">个人中心</span></a>
+                    </li>
+                    <!--<li class="li02"><a href="#"><span class="ico_02 dlxx_ico"></span><span class="text">购买续费</span></a>-->
+                    <!--</li>-->
+                
+                    <li class="li04"><a href="javascript:;" class="user_logout"><span class="ico_04 dlxx_ico"></span><span class="text">退出登陆</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="dialogCheckSubject" title="切换学科" style="display:none;">
+    <p id="checkSubject" style="padding-top:15px;"></p>
+</div>
+<script type="text/javascript">
+var redirect = '';
+$(document).ready(function(){
+    var AatHeader = {
+        userName : '',
+        init:function(){
+            this.userName = AatCommon.getUserName();
+            this.exEffectUser(this.userName);
+            //左侧选择学科
+            this.exEffectLeft();
+            //顶部固定不动
+            this.exEffectTop();
+        },
+        exEffectUser:function(userName){
+            //截取用户昵称或者用户名
+            var userNameLength = userName.replace(/[^\x00-\xff]/g, 'xx').length;
+            if(userNameLength>20){
+                userName = userName.substring(0,17)+'...';
+            }else{
+                var left = (20-userNameLength)/2*5;
+                $('#header .userid').css('left',left);
+                $('#header .userid').next().css('left',left);
+            }
+            $('#header .userid').html(userName);
+            $('#header .dlxx02').stop().hover(
+                    function () {
+                        $('#header .ico_jt01').switchClass('ico_jt01', 'ico_jt02', 10);
+                        $('#header #dlxx_box02').show('blind', 200);
+                    },
+                    function () {
+                        $('#header .ico_jt02').switchClass('ico_jt02', 'ico_jt01', 10);
+                        $('#header #dlxx_box02').hide('blind', 200);
+                    }
+            );
+            $('#header .user_logout').click(function(){
+                $.get(U('Aat/Default/logout'),{times:Math.random()},function(e){
+                    if(e.status==1){
+                        AatCommon.setMsg(e.data);
+                        window.location = U('User/Index/passport');
+                    }else{
+                        alert('退出失败请重试！');
+                    }
+                })
+            });
+        },
+        exEffectLeft:function(){
+            var self = this;
+            //学科添加
+            $.post(U('Aat/Default/ajaxSubject'),{times:Math.random()},function(e){
+                var subjectID = AatCommon.getSubjectID();
+                var str = '';
+                if(e.status == 1){
+                    $.each(e.data,function(i,k){
+                        var class_this = '';
+                        if(k.subject_id == subjectID){
+                            class_this = 'xk_this';
+                        }
+                        str += '<li id="subject_'+ k.subject_id+'" data="'+ k.subject_id+'" class="'+class_this+'"><a>'+ k.subject_name+'</a></li>';
+                    });
+                }else{
+                    str = '<li id="subject_12" data="12"><a>语文</a></li>'+
+                            '<li id="subject_13" data="13"><a>数学</a></li>'+
+                            '<li id="subject_14" data="14"><a>英语</a></li>'+
+                            '<li id="subject_15" data="15"><a>物理</a></li>'+
+                            '<li id="subject_16" data="16"><a>化学</a></li>'+
+                            '<li id="subject_17" data="17"><a>生物</a></li>'+
+                            '<li id="subject_18" data="18"><a>政治</a></li>'+
+                            '<li id="subject_19" data="19"><a>历史</a></li>'+
+                            '<li id="subject_20" data="20"><a>地理</a></li>';
+                }
+                $('#leftsub .xk_list').html(str);
+            });
+            var left = $('#leftsub');
+            //left高度
+            left.height($(window).height()<575?575:$(window).height());
+            $('#xk_box').height($(window).height()-190);
+            $('.xk_list').slimScroll({
+                height:'auto',
+                size:'5px',
+                wheelStep:15,
+                touchScrollStep:15
+            });
+            $(window).resize(function(){
+                if($(window).height()<575){
+                    left.height(575);
+                }else{
+                    left.height($(window).height());
+                }
+                $('#xk_box').height($(window).height()-190);
+                $('.xk_list').slimScroll({
+                    height:'auto',
+                    size:'7px',
+                    wheelStep:5,
+                    touchScrollStep:200,
+                    distance:'2px',
+                    railVisible:true,   //滚动条背景轨迹,默认false
+                    railOpacity:1    //滚动条背景轨迹透明度,默认0.2
+                });
+            });
+            // $(window).scroll(function(){
+            //     left.css('top',$(window).scrollTop());
+            // });
+            var leftsubAn  = $('.leftsub_an02');
+            $('.leftsub_an_no').click(function(){
+                left.toggle('slide',{ direction: "left" }, 500);
+                leftsubAn.toggleClass('effect_left',500);
+                $(this).hide();
+                $('.leftsub_an_off').show();
+
+            });
+            $('.leftsub_an_off').on('click',function(){
+                left.toggle('slide',{ direction: "left" }, 500);
+                leftsubAn.toggleClass('effect_left',500);
+                $(this).hide();
+                $('.leftsub_an_no').show();
+            });
+            var subject_id = AatCommon.getSubjectID();
+            $('#subject_'+subject_id).addClass('xk_this');
+            $('.xk_list').on('click','li',function(){
+                var newSubjectID=$(this).attr('data');
+                if(typeof(redirect) === 'string' && redirect !== ''){
+                    if(redirect.indexOf('/') !== 0){
+                        redirect = '/'+redirect;
+                    }
+                    window.location.href = redirect;
+                    return false;
+                }else if($('#test_submit').html()!=undefined || $('.an_jc').html()!=undefined){//首先判断是否跳转到首页
+                    self.checkSubject('1',newSubjectID);
+                }else if($('.zt_title .fl').html().indexOf('测试报告')!=-1){//其次判断是否跳转到我的练习页面
+                    self.checkSubject('2',newSubjectID);
+                }else{//最后判断是否刷新本页面
+                    $('.xk_list li').removeClass('xk_this');
+                    $(this).addClass('xk_this');
+                    AatCommon.setSubjectID(newSubjectID);
+                    location.reload();
+                }
+            });
+            //点击左侧下面的链接，学科如果未选择，则提示
+            $('.cd_list').on('click','li',function(){
+                if(typeof(AatCommon.getSubjectID()) == 'undefined'){
+                    AatCommon.setMsg('请先选择学科！');
+                    AatCommon.showMsg();
+                    return false;
+                }
+            });
+        },
+        exEffectTop:function(){
+            $(window).scroll(function(){
+                // $('#header').css('top',$(window).scrollTop());
+                // $('.leftsub_an02').css('top',$(window).scrollTop());
+            });
+        },
+//在与测试相关页面切换学科时的提示及操作
+        checkSubject:function(style,newSubjectID){
+            var dialog= '#dialogCheckSubject';
+            var buttons = {};
+            var contentStr='';//提示信息
+            var hrefStr='';//跳转路径
+            if(style=='1'){
+                if($('.an_cen .fl').html()=='查看解析'){
+                    contentStr='您正在查看测试的答案和解析，切换学科将跳转到首页！您可以进行其他测试';
+                }else{
+                    contentStr='您正在试题操作界面，切换学科将跳转到首页！您可以进行其他测试';
+                }
+                hrefStr='Default/index';
+            }else{
+                contentStr='您正在测试分析界面，切换学科将跳转到我的练习！';
+                hrefStr='MyExercise/index';
+            }
+            buttons = {
+                "切换": function () {//点击确定跳转到首页
+                    $('.xk_list li').removeClass('xk_this');
+                    $('#subject_'+newSubjectID).addClass('xk_this');
+                    AatCommon.setSubjectID(newSubjectID);
+                    location.href=U(hrefStr);
+                },
+                '取消': function () {//点击取消继续做题
+                    $(this).dialog("close");
+                }
+            };
+            $(dialog).dialog({
+                modal: true,
+                draggable: false,
+                height:150,
+                width:500,
+                buttons: buttons,
+                open: function () {
+                    $('#checkSubject').html(contentStr);
+                }
+            });
+        }
+    };
+    AatHeader.init();
+});
+
+</script>

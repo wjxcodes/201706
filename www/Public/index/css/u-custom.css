@@ -1,0 +1,109 @@
+/*新校本题库*/
+.ur-base-panel .upload-content{padding:60px 0 150px 0;}
+.upload-table-layout{margin:0 auto;width:96%;}
+.upload-box{width:180px;height:260px;padding:20px 10px;border:1px solid #F1F1F1;border-radius:3px;cursor:default;margin:0 auto;}
+.upload-box:hover{border-color:#4B88E6;}
+.upload-box .upload-title{text-align:center;font-weight:300;font-size:24px;padding:12px 0 20px;}
+.upload-box .icon{width:100%;height:139px;}
+.upload-box .icon-xie{background:url(../imgs/custom/icon/custom-icon-xie.png) 50% 50% no-repeat;}
+.upload-box .icon-paizhao{background:url(../imgs/custom/icon/custom-icon-paizhao.png) 50% 50% no-repeat;}
+.upload-box .icon-doc{background:url(../imgs/custom/icon/custom-icon-doc.png) 50% 50% no-repeat;}
+.upload-box .upload-btn{display:none;text-align:center;}
+.upload-box .upload-btn .nor-btn{text-align:center;width:150px;line-height:38px;font-size:16px;font-family:\5FAE\8F6F\96C5\9ED1,sans-serif;}
+.upload-box .ua-context{text-align:center;height:4.5em;overflow:hidden;color:#888;font-family:\5FAE\8F6F\96C5\9ED1,sans-serif;}
+
+/*校本试题*/
+
+/*试题审核状态*/
+.my-test-check-state{width:278px}
+.my-test-check-state .state-progress{width:198px;height:12px;margin-left:40px;background:url(../imgs/custom/test-state.png) 0 0 no-repeat;}
+.my-test-check-state .state2{background-position:-235px 0;}
+.my-test-check-state .state3{background-position:-470px 0;}
+.check-state-item{white-space:nowrap;margin-top:5px;}
+.check-state-item span{display:inline-block;width:32%;text-align:center;font-size:12px;color:#aaa;}
+.check-state-item .current{color:#4b88e6;}
+
+/*校本试题END*/
+
+/*单题上传*/
+.build-test-content{}
+
+/*试题编辑容器*/
+.build-test-content{padding-top:1.5em;}
+.build-test-content .test-edit-item{padding:0.5em 1.5em;}
+.build-test-content .test-edit-item .item-title{float:left;font-size:15px;font-weight:600;margin-top:15px;}
+.build-test-content .test-edit-item .test-edit-content{float:left;}
+
+/*试题属性设置*/
+.edit-test-attr-site{border:1px solid #eee;margin-top:30px;border-radius:3px}
+.edit-test-attr-site .panel-head{background-color:#f4f4f4;border-bottom:none}
+.edit-test-attr-site .panel-head .head-name{font-size:16px;margin-left:10px;}
+.edit-test-attr-site .panel-head .link{line-height:1;margin:2px 0 0 2em;}
+.edit-test-attr-body{padding:1em 0 0 0;}
+.edit-test-attr-body .g-control-group{margin-bottom:1em}
+.edit-test-attr-body .item-title{display:inline-block;width:5em;padding-left:2em;text-align:right;}
+.edit-test-attr-body .radio{}
+.edit-test-attr-body .radio label{padding:0 0.2em;margin:0 0.5em;}
+.edit-test-attr-body .radio .checked{padding:0 0.2em;margin:0 0.5em;background-color:#ddd;}
+.edit-test-attr-body .radio input{width:0;height:0;padding:0;margin:0;visibility:hidden;}
+.edit-test-attr-form .w600{width:600px;}
+.edit-test-attr-form .w120{width:120px;}
+.edit-test-attr-form .w120{width:120px;}
+.build-test-content .attr-btn-group{margin: 30px 0 60px;text-align: center;}
+.build-test-content .attr-btn-group .g-btn{padding:0.7em 5em;}
+.lore-context-site{padding-left:7.5em}
+.lore-context-site li{margin-bottom:5px;}
+.lore-context-site .del-btn{color:#4B88E6;cursor:pointer;}
+.lore-context-site .del-btn:hover{color:#e20;}
+
+/*单题上传END*/
+
+/*文档上传*/
+.add-doc-site{padding:5em 0;text-align:center;}
+.add-doc-site .file-input{border:#ddd solid 1px;padding:6px;width:300px;margin-right:20px;border-radius:3px;}
+.add-doc-site .g-btn{width:6em;padding:0.5em 1em;vertical-align:top}
+.upload-record-panel{border:none;}
+.upload-record-panel .tab-nav{width:640px}
+.upload-record-panel .search-site{padding-top:11px}
+.upload-record-panel .search-site .search-input{width:170px}
+.upload-record-panel .search-site .g-btn{width:3em;padding:6px 10px;margin-left:10px;}
+
+/*编辑文档弹出框*/
+.edit-doc-content{padding:2em;}
+.edit-doc-content .g-control-group{margin-bottom:1em}
+.edit-doc-content .g-control-group label{width:6em;margin-right:0.5em;}
+.edit-doc-content .g-control-group .doc-name-input{max-width:20em;}
+
+/*文档上传END*/
+
+/*拍照上传*/
+.upload-test-pic-site{}
+.upload-paizhao-layout{padding:20px 0 50px 0}
+.upload-paizhao-layout .td-name{vertical-align:top;padding-top:10px;padding-right:10px;text-align:right;}
+.upload-pic-warp{width:660px;}
+.upload-pic-box .del-btn{position:absolute;top:10px;right:10px;color:#999;}
+.upload-pic-box .del-btn:hover{color:#444;}
+.upload-pic-box .select-pic{width:320px;text-align:center;margin:60px auto;color:#999;}
+.upload-pic-box .select-pic .uploadify-btn{width:150px;background-color:#ff7f02;line-height:30px;color:#fff;}
+.upload-pic-box .select-pic .uploadify-btn .iconfont{font-size:24px;margin-right:10px;vertical-align:middle;}
+.upload-pic-box .select-pic .uploadify{margin-bottom:1em;}
+.upload-pic-box .upload-btn{text-align:center;}
+.upload-pic-box .upload-btn .uploadify-btn{width:180px;height:40px;line-height:40px;}
+.upload-pic-list{padding:5px 0 20px;*padding-top:20px;}
+.upload-pic-list li{position:relative;vertical-align:top;background-color:#f4f4f4;padding:20px 38px 20px 20px;border-bottom:1px solid #ddd;margin-top:15px;}
+.upload-pic-list li .img-intro{margin-left:305px;}
+.textarea-wrap{margin:5px 8px;border:1px solid #ddd;background-color:#fff;display:inline-block;width:75%;}
+.upload-pic-list li .img-intro textarea{height:68px;width:100%;border:none;}
+
+/*二维码*/
+.upload-erweima-warp{vertical-align:top;margin-right:60px;}
+.erweima-warp{width:160px;padding:20px 20px 20px;border:1px solid #ddd;background-color:#f3f3f3;}
+.erweima-warp h5{padding-bottom:20px;}
+.erweima-warp img{width:160px;height:160px;}
+
+/*校本题库拍照上传*/
+.img-btn{width:80px;height:30px;margin:0 0 15px 8px;line-height:30px;cursor:pointer;border:1px solid #ccc;background-color:#00A0E9;text-align:center;float:right;}
+.cut-box{margin-bottom:15px;}
+
+/*校本题库拍照上传结-end
+/*拍照上传END*/

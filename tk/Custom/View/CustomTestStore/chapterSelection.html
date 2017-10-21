@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>{#$pagename#} - {#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <link type="text/css" href="__PUBLIC__/default/css/content.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/tree.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('a,img,div,span');</script>
+    <![endif]-->
+    <script>
+    var local='{#:U('Index/zsd')#}';
+    </script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/paper.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/customTestList.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+</head>
+<body>
+<div id="main">
+    <div id="leftdiv" class="ui-resizable">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+            <tbody>
+                <tr>
+                    <td valign="top" style="border:0;">
+                    <div id="category">
+                        <div id="categorytop">
+                        <div class="tit">知识点目录</div>
+                        </div>
+                        <div id="categorytreebox">
+                            <div id="treeContainer">
+                            <ul id="treecon"><p class="list_ts" style="color:#fff">数据加载中请稍候...</p>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </td>
+                    <td id="bar"/>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ui-resizable-handle ui-resizable-e"/>
+    </div>
+    <div id="rightdiv" style="overflow-y: auto; width: 290px; height: 291px;">
+        <div id="righttop">
+            <div id="categorylocation"><span class="nowPath">当前位置：</span>> <span id="loca_text"></span></div>
+        </div>
+        <div id="filterbox"></div>
+        <div id="list_px" p='order'><span>排序：</span><a href="#" class="button target button_current" val="def">默认</a><a href="#" val="hotDesc" class="button target">人气<b></b></a><a href="#" val="diffDesc" class="button target">难易度<b></b></a><a href="#" val="saveTimeDesc" class="button target">上传时间<b></b></a>
+            <div id="pagediv">共<a id="quescount">？</a>道题
+                <a class="prev_page pageTarget" title="上一页" p='page' val='1'></a><span id="pagebox" class="tspan">
+                <a id="curpage">？</a>
+                <a id="selectpageicon" style="display: inline-block;"></a>
+                /<a id="pagecount">？</a></span>
+                <a class="next_page pageTarget" title="下一页" p='page' val='1'></a></div>
+        </div>
+        <div></div>
+        <div id="queslistbox">
+        </div>
+        <div id="pagelistbox" p='page'></div>
+    </div>
+</div>
+<script type='text/html' id='template'>
+    <% 
+        for(var k in datas){
+            var data = datas[k];
+    %>
+        <div id="quesbox<%= data["testid"] %>" class="quesbox">
+            <div class="quesbox_inner">
+                <div class="quesinfobox">
+                    <div class="quesinfo_tit">标题/来源：<span class="questitle"><%= data['docname'] %></span></div>
+                    <div>
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <td>题号：<%= data['testid'] %>，题型：<%= data['typesname'] %>，难度：</td>
+                                    <td><%= data['diffxing'] %></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="quesmenu">&nbsp;&nbsp;日期：<%= data['firstloadtime'] %>&nbsp;&nbsp;</div>
+                </div>
+                <div style="-moz-user-select:none;" oncopy="return false;" onselectstart="return false;" id="quesdiv<%= data['testid'] %>" class="quesdiv">
+                    <div class="quesbody">
+                        <p><%=data['test']%></p>
+                    </div>
+                    <div show="0" tid="<%= data['testid'] %>" class="quesanswer">
+                        <p class="list_ts">
+                            <span class="ico_dd">载入数据请稍候...</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="quesinfobox">
+                    <div class="quesother">
+                        <a title="修改试题" class="correction" href='__URL__/edit/testid/<%= data['testid'] %>'></a>
+                    </div>
+                    <% 
+                        var css='',classname='addquessel';
+                        if(editData.ifhavetest(data['testid'])){
+                            classname='delques';
+                            css='style="display:none;"';
+                        }
+                    %> 
+                    <div class="quesmenu">
+                        <a qdname="<%= data['diffname'] %>" qdid="<%= data['diff'] %>" qyisselect="undefined" qyname="<%= data['typesname'] %>" qyid="<%= data['typesid'] %>" childnum="<%= data['testnum'] %>" quesid="<%= data['testid'] %>" class="<%= classname %>" id="quesselect<%= data['testid'] %>"></a><span testid="<%= data['testid'] %>" id="selmore<%= data['testid'] %>" qyid="<%= data['typesid'] %>" childnum="<%= data['testnum'] %>" class="selmore"<%= css %>></span><span id="selpicleft<%= data['testid'] %>" class="selpicleft"<%= css %>></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <% } %>
+</script>
+<script type='text/html' id='selectionTemplate'>
+    <div class="filterbox_li" p="types">
+        <table border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td width="45">题型</td>
+                    <td>
+                        <span id="questypeselect">
+                            <a href="javascript:void(0);" class="button target button_current" val="0">全部</a>
+                            <%
+                                var data = datas['data'][1];  
+                                for(var i in data){ 
+                            %>
+                                    <a href="javascript:void(0);" class="button target" val="<%=data[i]['TypesID'] %>"><%=data[i]['TypesName'] %></a>
+                            <%  } %>
+                        </span>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="filterbox_li" p="diff">
+        <table  border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td width="65">难度系数</td>
+                    <td>
+                        <span id="quesdiffselect">
+                            <a href="javascript:void(0);" class="button target button_current" val="0">全部</a>
+                            <% var data = datas['data'][2]; %>
+                            <% for(var i in data){ %>
+                                <a href="javascript:void(0);" class="button target" val="<%=data[i]['DiffID']%>" title="<%=data[i]['DiffArea']%>"><%=data[i]['DiffName']%></a>
+                            <% } %>
+                        </span>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</script>
+<script type='text/html' id='treeTemplate'>
+    <% 
+        for(var i=0;i<datas['data'][3].length;i++){
+            var data = datas['data'][3][i];
+    %>
+        <li><span></span><a href="#" class="zsd target" p="knowledge" val="<%=data['KlID']%>"><%=data['KlName']%></a>
+        <% if(data['sub']){  %>
+            <ul>
+                <% 
+                    for(var j=0;j<data['sub'].length;j++){ 
+                %>
+                    <li><span></span><a href="#" class="zsd target" p="knowledge" val="<%=data['sub'][j]['KlID']%>"><%=data['sub'][j]['KlName']%></a>
+                        <% if(data['sub'][j]['sub']){ %>
+                            <ul>
+                                <% 
+                                    for(var k=0;k<data['sub'][j]['sub'].length;k++){
+                                %>
+                                    <li><span></span><a href="#" class="zsd target" p="knowledge" val="<%=data['sub'][j]['sub'][k]['KlID']%>"><%=data['sub'][j]['sub'][k]['KlName']%></a></li>
+                                <% } %>
+                            </ul>
+                        <% } %>
+                    </li>
+                <% } %>
+            </ul>
+        <% } %>
+        </li>
+    <% } %>
+</script>
+<script>
+
+var page=1;
+var lock='load'; //锁定ajax
+$(document).ready(function(){
+    $(document).bind("selectstart",function(){return false;});
+    //默认科目
+    var subjectID=Cookie.Get("SubjectId");
+    Types=parent.Types;
+    if(subjectID){
+        var str='';
+        //显示学科及属性
+        $.post(U('Index/getZsdInit'),{'id':subjectID,'m':Math.random()},function(data){
+            if(backLogin(data)==false){
+                lock='';
+                return false;
+            }
+            $('#loca_text').html(data['data'][0]);
+            $('#categorytop').append('('+data['data'][0]+')');
+            var template = new Template();
+            $('#filterbox').html(template.render($('#selectionTemplate').html(),data));
+            $('#treecon').html(template.render($('#treeTemplate').html(),data));
+
+            $('#treecon').tree({
+                expanded: 'li:first'
+            });
+
+            $.Searcher.addElements('.filterbox_li,#list_px');
+            $.Searcher.addElements('#treecon',{
+                'selectedClassName' : '.treeSelected'
+            });
+            $.Searcher.addElements('#pagediv',{
+                'selectedClassName' : '.pageSelected',
+                'target' : '.pageTarget',
+                'beforeHandle' : function(current,other){
+                    var currentPage = parseInt($('#curpage').html());
+                    if(current.hasClass('prev_page')){
+                        if(currentPage > 2){
+                            current.attr('val',page-1);
+                        }
+                    }else{
+                        var total = parseInt($('#pagecount').html());
+                        if(currentPage < total-1){
+                            current.attr('val',page+1);
+                        }
+                    }
+                    
+                }
+            });
+            $.Searcher.targetElements[0]['obj'].find('.target').eq(0).trigger('click');
+        });
+    }
+    $(window).bind("resize",function() {InitDivBoxHeight();});
+    InitDivBoxHeight();
+    function InitDivBoxHeight() {
+        var a = $(window).width();
+        var b = $(window).height();
+        var c = 0;
+        $(".mleft,.mright").height(b - c - 2);
+        $("#rightdiv").width(a-$("#leftdiv").outerWidth());
+        $("#leftdiv").height(b - c-2);
+        $("#rightdiv").height(b - c-2);
+        $("#categorytreebox").height(b - c - $('#categorytop').outerHeight());
+    }
+    $('.ui-resizable-e').mousedown(function(e){
+        var x = e.pageX;
+        var z =$('#leftdiv').width();
+        $(document).bind('mousemove', function(e){
+            var c = parseInt(z) + (e.pageX - x);
+            if(c<200) c=200;
+            if(c>400) c=400;
+            $('#leftdiv').css('width',c+"px");
+            $('#rightdiv').css('left',c+"px");
+            $("#rightdiv").width($(window).width()-$("#leftdiv").outerWidth());
+        });
+        $(document).mouseup(function(a) {
+            $(document).unbind('mousemove');
+        });
+    });
+
+    $("#selectpageicon").live('mouseenter',function() {
+        var page = parseInt($("#curpage").text());
+        var pagecount = parseInt($("#pagecount").text());
+        if (pagecount <= 1) { return; }
+
+        html = [];
+        html.push("<div id=\"quicktopage\" p='page' style=\"top:" + ($(this).height() - 1) + "px;\">");
+        var i; var max = 20;
+        var spacing = (pagecount > max) ? parseInt(pagecount / max) : 1;
+        for (i = 1; i <= pagecount; i += spacing) {
+            html.push("<a val='"+i+"' class=\"" + ((page == i) ? "current" : "") + "\">No." + i + "</a>");
+        }
+        if (i - spacing < pagecount) {
+            html.push("<a class=\"" + ((page == pagecount) ? "current" : "") + "\">No." + pagecount + "</a>");
+        }
+        html.push("</div>");
+        $(this).append(html.join(""));
+        $.Searcher.addElements('#quicktopage',{
+            'selectedClassName' : '.current',
+            'target' : 'a'
+        });
+    }).live('mouseleave',function() {
+         $("#quicktopage").empty().remove();
+    });
+    $('#quicktopage a').live('click',function(){
+        $('#quicktopage a').removeClass('current');
+        $(this).addClass('current');
+        var nowpage=$(this).html().replace('No.','');
+        $("#quicktopage").empty().remove();
+        nowpage=parseInt(nowpage);
+        GotoPage(nowpage);
+    });
+});
+</script>
+{#include file="Public/bottom"/#}
+</body>
+</html>

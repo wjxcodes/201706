@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-size:100%;
+}
+html,body {
+    font: 16px/1.5 "Microsoft Yahei", verdana;
+}
+a {
+    text-decoration: none;
+}
+/*lay*/
+
+.down-btn {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight:600;
+    color: #149eed;
+    border: 0.13rem solid #00a1eb;
+    background-color: #fff;
+    line-height: 1.8rem;
+    height: 1.8rem;
+    padding: 0 3rem;
+    -webkit-border-radius: 2rem;
+    border-radius: 2rem
+}
+.down-btn:active {
+    background-color: #149eed;
+    color: #fff;
+}
+
+/* 右侧导航 */
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background:#44CDFF;
+}
+#fullPage{
+    max-width:480px;
+    margin:0 auto;
+}
+.section {
+    position: relative;
+    overflow: hidden;
+}
+.section .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.section .title {
+    margin-top: 100px;
+    width:100%;
+    text-align: center;
+}
+.section .title h1 {
+    font-weight: 400;
+    color: #00a1eb;
+    font-size: 1.4rem;
+}
+.section .title .down {
+    margin-bottom: 1.3rem;
+}
+.section .title .down cite {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0.18rem 0.3rem;
+    margin-bottom: 0 0.5rem 0.3rem 0;
+    background-color: #00a1eb;
+    color: #fff;
+    border-radius:0.2rem
+}
+.section .title p {
+    line-height: 1.1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+/*new CSS*/
+.absolute {
+    position: absolute;
+    top: 50%;
+}
+
+/*section1*/
+.section1 .bg {
+    background: url(../images/mobile/page1.png) 50% 15% no-repeat;
+    -webkit-background-size: 85%;
+    background-size: 85%;
+}
+.section1 .title {
+    margin-top: 5rem;
+    width:100%;
+    text-align: center;
+}
+.section1 .title .ver {
+    margin-bottom: 1rem;
+}
+.section1 .title h1{
+    font-size: 1.3rem
+}
+.section1 .title h1 sup {
+    line-height: 1rem;
+    margin-left:0.3rem;
+    color: #FFC52B;
+    border-radius: 0.2rem;
+    vertical-align:0.3rem
+}
+.section1 .title p {
+    line-height: 1.1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+/*section2*/
+.section2 .bg2 {
+    background: url(../images/mobile/page2.png) 50% 20% no-repeat;
+    -webkit-background-size: 75%;
+    background-size: 75%;
+}
+
+/*section2-END*/
+
+/*section3*/
+.section3 .bg3 {
+    background: url(../images/mobile/page3.png) 50% 20% no-repeat;
+    -webkit-background-size: 75%;
+    background-size: 75%;
+}
+
+/*section3-END*/
+
+/*section4*/
+.section4 .bg4 {
+    background: url(../images/mobile/page4.png?v20160513) 50% 20% no-repeat;
+    -webkit-background-size: 75%;
+    background-size: 75%;
+}
+
+/*section4-END*/
+
+/*section5*/
+.section5 .bg5 {
+    background: url(../images/mobile/page5.png) 50% 20% no-repeat;
+    -webkit-background-size: 75%;
+    background-size: 75%;
+}
+
+/*section5-END*/
+
+/*section6*/
+.section6 .bg6 {
+    background: url(../images/mobile/page6.png?v20160513) 50% 20% no-repeat;
+    -webkit-background-size: 75%;
+    background-size: 75%;
+}
+.section6 .title{
+    margin-top:4rem;
+}
+.section6 .title .down{
+    margin-bottom:1rem;
+}
+.section6 .title p{
+    margin-top:0.2rem;
+}
+
+/*footer*/
+.footer{
+    width:100%;
+    margin-top:2rem;
+    text-align: center;
+    color:#ccc;
+}
+.section6 .down-btn{
+    border:0.1rem solid #149eed;
+    font-weight:500;
+}
+.footer .link{
+    padding:0.3rem;
+    color:#4ab9f3;
+
+}
+.section6 .footer p{
+    font-size:0.7rem;
+    color:#ccc;
+}
+.section6 .title .copyright {
+    box-sizing:border-box;
+    width: 100%;
+    text-align: center;
+    font-size:0.6rem;
+    color:#bbb;
+    margin-top:0.2rem;
+    padding:0 1rem;
+}
+.section6 .title .copyright a, .copyright span {
+    margin: 0 0.4rem;
+    font-size: 0.65rem;
+    color: #cccccc;
+}
+
+/*footer-END*/
+
+/*动画*/
+@-webkit-keyframes start {
+    0%, 30% {
+        opacity: 0.2;
+        -webkit-transform: translate(0, 10px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0.2;
+        -webkit-transform: translate(0, -5px);
+    }
+}
+@keyframes start {
+    0%, 30% {
+        opacity: 0.2;
+        transform: translate(0, 10px);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0.2;
+        transform: translate(0, -5px);
+    }
+}
+.start {
+    position: fixed;
+    left: 50%;
+    margin-left: -1rem;
+    bottom: 10%;
+    width: 2rem;
+    height: 2rem;
+    z-index: 111
+}
+.start b {
+    position: absolute;
+    left: 50%;
+    top: 0.625rem;
+    margin-left: -0.625rem;
+    width: 1.3rem;
+    height: 0.75rem;
+    background: url(../images/mobile/arrow.png);
+    background-size: 100% 100%;
+    -webkit-animation: fadeInUp 1.5s infinite ease-in-out;
+    animation: fadeInUp 1.5s infinite ease-in-out;
+}
+
+/*现在弹出框*/
+
+.app-down-layer{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index: 1000;
+    background-color: #fff;
+}
+.close-layer-btn{
+    display: block;
+    position: absolute;
+    top:0;
+    right:0;
+    color:#aaa;
+    font-size:40px;
+    text-align: center;
+    width:55px;
+    height:55px;
+    line-height: 50px;
+    font-weight:100;
+    cursor:pointer;
+}
+.close-layer-btn:active{
+    background-color:#f1f1f1
+}
+.app-down-layer .btn-erweima{
+    height:220px;
+    width:320px;
+    text-align: center;
+    margin-left: -160px;
+    margin-top: -110px;
+    left: 50%;
+    top: 50%;
+}
+.app-down-layer .btn-erweima .erweima img{
+    width:140px;
+}
+.app-down-layer .btn-area{
+    display: inline-block;
+    width:155px;
+}
+.app-down-layer .btn-area .app-down-btn img{
+    width:100%;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+/*动画-END*/
+.section1.active .bg{
+    -webkit-animation-name:fadeInUp;
+    animation-name:fadeInUp;
+    -webkit-animation-delay:0.4s;
+    animation-delay:0.4s;
+    -webkit-animation-duration:2s;
+    animation-duration:2s;
+}
+.section1.active .down{
+    -webkit-animation-name:fadeInUp;
+    animation-name:fadeInUp;
+    -webkit-animation-delay:1.3s;
+    animation-delay:1.3s;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+}
+.section1.active .down .down-btn{
+    /*background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);*/
+    -webkit-background-clip: text;
+    /*-webkit-text-fill-color: transparent;*/
+    color:#00a1eb;
+   /* -webkit-animation: hue 60s infinite linear;*/
+}
+.section1.active .title h1{
+    -webkit-animation-name:fadeInUp;
+    animation-name:fadeInUp;
+    -webkit-animation-delay:1.3s;
+    animation-delay:1.3s;
+}
+.section1.active .title .func{
+    -webkit-animation-name:fadeInUp;
+    animation-name:fadeInUp;
+    -webkit-animation-delay:1.3s;
+    animation-delay:1.3s;
+}
+
+.section2.active .bg{
+    -webkit-animation-name:fadeInDown;
+    animation-name:fadeInDown;
+    -webkit-animation-delay:0.7s;
+    animation-delay:0.7s;
+}
+.section2.active .title h1{
+    -webkit-animation-name:fadeInDown;
+    animation-name:fadeInDown;
+    -webkit-animation-delay:1s;
+    animation-delay:1s;
+}
+.section2.active .title .func{
+    -webkit-animation-name:fadeInDown;
+    animation-name:fadeInDown;
+    -webkit-animation-delay:1.2s;
+    animation-delay:1.2s;
+}
+
+
+.section3.active .bg{
+    -webkit-animation-name:fadeIn;
+    animation-name:fadeIn;
+    -webkit-animation-delay:0.7s;
+    animation-delay:0.7s;
+}
+.section3.active .title h1{
+    -webkit-animation-name:fadeInUp;
+    animation-name:fadeInUp;
+    -webkit-animation-delay:0.8s;
+    animation-delay:0.8s;
+}
+.section3.active .title .func{
+    -webkit-animation-name:fadeInUp;
+    animation-name:fadeInUp;
+    -webkit-animation-delay:1s;
+    animation-delay:1s;
+}
+
+
+
+.section4.active .bg{
+    -webkit-animation-name:fadeInLeft;
+    animation-name:fadeInLeft;
+    -webkit-animation-delay:0.7s;
+    animation-delay:0.7s;
+}
+.section4.active .title h1{
+    -webkit-animation-name:fadeInLeft;
+    animation-name:fadeInLeft;
+    -webkit-animation-delay:0.8s;
+    animation-delay:0.8s;
+}
+.section4.active .title .func{
+    -webkit-animation-name:fadeInLeft;
+    animation-name:fadeInLeft;
+    -webkit-animation-delay:1s;
+    animation-delay:1s;
+}
+
+
+.section5.active .bg{
+    -webkit-animation-name:fadeInRight;
+    animation-name:fadeInRight;
+    -webkit-animation-delay:0.7s;
+    animation-delay:0.7s;
+}
+.section5.active .title h1{
+    -webkit-animation-name:fadeInRight;
+    animation-name:fadeInRight;
+    -webkit-animation-delay:0.8s;
+    animation-delay:0.8s;
+}
+.section5.active .title .func{
+    -webkit-animation-name:fadeInRight;
+    animation-name:fadeInRight;
+    -webkit-animation-delay:1s;
+    animation-delay:1s;
+}
+
+
+
+.section6.active .bg{
+    -webkit-animation-name:pulse;
+    animation-name:pulse;
+    -webkit-animation-delay:0.7s;
+    animation-delay:0.7s;
+}
+.section6.active .down{
+    -webkit-animation-name:pulse;
+    animation-name:pulse;
+    -webkit-animation-delay:0.8s;
+    animation-delay:0.8s;
+}
+.section6.active .title h1{
+    -webkit-animation-name:pulse;
+    animation-name:pulse;
+    -webkit-animation-delay:0.9s;
+    animation-delay:0.9s;
+}
+.section6.active .title .func{
+    -webkit-animation-name:pulse;
+    animation-name:pulse;
+    -webkit-animation-delay:1s;
+    animation-delay:1s;
+}
+

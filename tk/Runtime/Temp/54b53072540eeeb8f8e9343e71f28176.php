@@ -1,0 +1,3 @@
+<?php
+//000000000000a:3:{s:5:"Index";a:6:{s:8:"SiteName";s:21:"知慧云题库官网";s:9:"IndexName";s:24:"知慧云题库云平台";s:7:"Keyword";s:24:"知慧云题库云平台";s:11:"Description";s:24:"知慧云题库云平台";s:7:"PrePath";s:6:"/Index";s:7:"OldName";s:15:"知慧云题库";}s:4:"Home";a:6:{s:8:"SiteName";s:24:"知慧云题库云平台";s:9:"IndexName";s:39:"题库系统 - 智慧云题库云平台";s:7:"Keyword";s:13:"组卷,题库";s:11:"Description";s:13:"组卷,题库";s:7:"PrePath";s:5:"/Home";s:7:"OldName";s:9:"原组卷";}s:3:"Aat";a:6:{s:8:"SiteName";s:27:"知慧云题库提分系统";s:9:"IndexName";s:39:"提分系统 - 智慧云题库云平台";s:7:"Keyword";s:6:"提分";s:11:"Description";s:6:"提分";s:7:"PrePath";s:4:"/Aat";s:7:"OldName";s:9:"原解题";}}
+?>

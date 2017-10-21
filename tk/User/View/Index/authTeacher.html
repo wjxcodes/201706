@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/register.css{#$Think.config.UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js"></script>
+        <script>
+        var local='{#:U('User/authTeacher')#}';
+        var mark='register';
+        var invit='{#$invit#}';
+        var authInfo ='{#$authStatus#}';
+    </script>
+    <script type="text/javascript" src="__PUBLIC__/index/js/authTeacher.js{#$Think.config.UPDATE_FILE_DATE#}"></script>
+</head>
+<body class="bg-white">
+    <!--首页头部-->
+    {#include file="Index@Common/secondTop" /#}
+    <!--首页头部-end-->
+    <div class="form-wrap bg-f8f8f8">
+        <div class="form-container w1000">
+            <!-- 认证流程 -->
+            <div class="form-process-wrap">
+                <div class="fp-area fp-step2">
+                    <span class="fp-area-three on" style="text-align: left;">提交资料</span>
+                    <span class="fp-area-three on">等待审核</span>
+                    <span class="fp-area-three" style="text-align: right;">认证成功</span>
+                </div>
+            </div>
+            <!-- 认证流程 end-->
+            <div class="form-bd-wrap clearfix">
+                <div class="form-left-bd">
+                <form action="{#:U('User/Index/addAuthData')#}" id="form" method="post" enctype="multipart/form-data">
+                    <div class="form-item">
+                        <span class="item-tit"><s>*</s>真实姓名：</span>
+                        <span class="item-content">
+                            <span class="normal-input-wrap">
+                                <input id="id-realName-input" name="realName" type="text" class="normal-input" style="color:#666;" value="{#$realName#}"/>
+                            </span>
+                        </span>
+                        <span class="item-msg"></span>
+                    </div>
+                    <div class="form-item">
+                        <span class="item-tit"><s>*</s>身份证号：</span>
+                        <span class="item-content">
+                            <span class="normal-input-wrap">
+                                <input id="id-idnumber-input" name="idnumber" type="text" class="normal-input" style="color:#666;" value="{#$data.IDNumber#}"/>
+                            </span>
+                        </span>
+                        <span class="item-msg"></span>
+                    </div>
+                    <div class="form-item">
+                        <span class="item-tit"><s>*</s>教师资格证编号：</span>
+                        <span class="item-content" style="max-width:277px;">
+                            <span class="normal-input-wrap">
+                                <input id="id-qualification-input" name="qualification" type="text" class="normal-input" style="color:#666;" value="{#$data.Qualification#}"/>
+                            </span>
+                            <span class="upload-files-area">
+                                <p class="uf-choose-files">
+                                <input id="id-quaPicSrc-file" type="file" name="quaPicSrc" style="display:none;"/>
+                                <a href="javascript:;" class="nor-btn upload-btn"><i class="iconfont">&#xe633;</i>上传文件</a>
+                                格式支持JPG、GIF、PNG</p>
+                                <ul class="file-list">
+                                    <li><span class="file-name link" title="教师资格证"></span><a href="javaScript:;" class="del-btn" title="删除"><i class="iconfont">&#xe632;</i></a></li>
+                                </ul>
+                            </span>
+                        </span>
+                        <span class="item-msg"></span>
+                    </div>
+                    <div class="form-item">
+                        <span class="item-tit"><s>*</s>教师等级证编号：</span>
+                        <span class="item-content" style="max-width:277px;">
+                            <span class="normal-input-wrap">
+                                <input id="id-grade-input" name="grade" type="text"  class="normal-input" style="color:#666;" value="{#$data.Grade#}"/>
+                            </span>
+                            <span class="upload-files-area">
+                                <p class="uf-choose-files">
+                                <input id="id-gradePic-file" type="file" name="gradeImg" style="display:none;"/>
+                                <a href="javascript:;" class="nor-btn upload-btn"><i class="iconfont">&#xe633;</i>上传文件</a>
+                                格式支持JPG、GIF、PNG</p>
+                                <ul class="file-list">
+                                    <li><span class="file-name link" title="教师资格证"></span><a href="javaScript:;" class="del-btn" title="删除"><i class="iconfont">&#xe632;</i></a></li>
+                                </ul>
+                            </span>
+                        </span>
+                        <span class="item-msg"></span>
+                    </div>
+                    <div class="form-item">
+                        <span class="item-tit"></span>
+                        <span class="item-content"><input class="nor-btn" type="button" id="submit01" value="提交申请" /></span>
+                        <span class="item-msg"></span>
+                    </div>
+                </form>
+            </div>
+            <div class="form-right-bd reg-right-container">
+                <div class="rr-container-inner reg-help">
+                    <h3 class="title">教师认证审核说明</h3>
+                    <div class="rh-context">
+                        1、请您确保提交审核资料真实有效；
+                        <br />
+                        2、证件要求清晰完整，大小不超过2M；
+                        <br />
+                        3、资料审核时间一般为3个工作日；
+                        <br />
+                        4、审核期间有任何问题，请及时联系客服人员。
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/index/js/pingtai.js{#$Think.config.UPDATE_FILE_DATE#}"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+    <![endif]-->
+    {#include file="Index@Common/secondFooter" /#}
+    <!--footer-end-->
+    

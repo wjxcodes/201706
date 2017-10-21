@@ -1,0 +1,290 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content">
+<!--  功能操作区域  -->
+<div class="title">{#$pageName#} [ <A HREF="__URL__">返回列表</A> ]   [ <A HREF="javascript:history.go(-1);">返回上一页</A> ]</div>
+<!-- 功能操作区域结束 -->
+<div id="result" class="result none"></div>
+<!-- 内容显示区域  -->
+
+<TABLE cellpadding="5" cellspacing="0" class="list" border="1">
+<tr><td height="5" colspan="7" class="topTd" ></td></tr>
+<TR>
+    <TD class="tRight" >上传用户名单：</TD>
+    <TD class="tLeft" ><INPUT TYPE="file" NAME="userinfo" id="uploads"/><br/><a class="adduser_downexcel">点此下载excel模板</a>
+    </TD>
+</TR>
+<TR class="userInfo" style="display:none">
+    <TD class="tRight" >上传用户信息：</TD>
+    <TD>
+        <table cellpadding="7" cellspacing="0" class="list uploadInfo" border="1">
+            <tr>
+                <th>序号</th>
+                <th>用户名</th>
+                <th>密码</th>
+                <th>真实姓名</th>
+                <th>错误提示</th>
+                <th>操作</th>
+            </tr>
+        </table>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight">所在地区：</TD>
+    <TD class="tLeft">
+        <SELECT class="medium bLeft selectArea" NAME="AreaID[]" id='area' >
+            <option value="">——请省份——</option>
+            {#volist name="area_array" id="vo"#}
+            <option value="{#$vo.AreaID#}" >{#$vo.AreaName#}</option>
+            {#/volist#}
+        </SELECT>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" >所属学校：</TD>
+    <TD class="tLeft" >
+        <SELECT class="medium bLeft" NAME="areaid_school" id='school'>
+            <option value="">——请选择上级——</option>
+        </SELECT>
+        <div id="schooladd" style="display:none"><input type="text" name='SchoolName' value=''>&nbsp;&nbsp;&nbsp;(<font style="color:red">没有搜到学校，请手动添加学校</font>)</div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight tTop">用户身份：</TD>
+    <TD class="tLeft">
+        <label><INPUT TYPE="radio" class="bLeft" NAME="Whois" value="0"> 学生</label>
+        <label><INPUT TYPE="radio" class="bLeft" NAME="Whois" value="1"> 教师</label>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" width="100">所属学科：</TD>
+    <TD class="tLeft" ><SELECT id="subject" class="large bLeft" NAME="SubjectID">
+        <option value="">请选择</option>
+        {#if condition="$subjectArray"#}
+        {#volist name="subjectArray" id="vo"#}
+        <optgroup label="{#$vo.SubjectName#}">
+            {#if condition="$vo['sub']"#}
+            {#volist name="vo['sub']" id="item"#}
+            <option value="{#$item.SubjectID#}">　　{#$item.SubjectName#}</option>
+            {#/volist#}
+            {#/if#}
+        </optgroup>
+        {#/volist#}
+        {#else/#}
+        <option value="0">请添加学科</option>
+        {#/if#}
+    </SELECT></TD>
+</TR>
+<TR>
+    <TD class="tRight" width="100">所属年级：</TD>
+    <TD class="tLeft" >
+        <select name="GradeID" id='grade' class="GradeID">
+            <option value="">请先选择学科</option>
+            {#volist name="grade" id='gvo'#}
+            <option value="{#$gvo.GradeID#}">{#$gvo.GradeName#}</option>
+            {#/volist#}
+        </select>
+    </TD>
+</TR>
+{#if condition="$edit eq ''"#}
+{#volist name="userPower" id="userPowerTmp" key="num"#}
+<TR>
+    <TD class="tRight tTop">{#$powerName[$num]#}：</TD>
+    <TD class="tLeft">
+        {#if condition="$num neq 3"#}
+        {#volist name="userPowerTmp" id="vi"#}
+        <label><INPUT TYPE="radio" class="bLeft" name="groupname_{#$num#}" value="{#$vi.PUID#}" {#range name="vi.PUID" value="$default" type="in"#}checked="checked"{#/range#}>{#$vi.UserGroup#}&nbsp&nbsp</label>
+        {#/volist#}
+        {#else /#}
+        {#volist name="userPowerTmp" id="vi"#}
+        <label><INPUT TYPE="checkbox" class="bLeft" name="groupname_{#$num#}[]" value="{#$vi.PUID#}" {#range name="vi.PUID" value="$default" type="in"#}checked="checked"{#/range#}>{#$vi.UserGroup#}&nbsp&nbsp</label>
+        {#/volist#}
+        {#/if#}
+    </TD>
+</TR>
+{#/volist#}
+{#/if#}
+<TR>
+    <TD class="tRight" >到期日期：</TD>
+    <TD class="tLeft" ><INPUT TYPE="text" class="bLeft inputDate" NAME="EndTime" value=""  check="Require" warning="请填写日期" /></TD>
+</TR>
+{#if condition="$customGroup"#}
+<TR>
+    <TD class="tRight tTop">自定义分组：</TD>
+    <TD class="tLeft">    
+        {#volist name="customGroup" id="vi"#}
+        <label><INPUT TYPE="radio" class="bLeft" name="customGroup" value="{#$vi.GroupID#}">{#$vi.GroupName#}&nbsp&nbsp</label>
+        {#/volist#}
+    </TD>
+</TR>
+{#/if#}
+<TR>
+    <TD ></TD>
+    <TD class="center"><div style="width:85%;margin:5px">
+        <INPUT TYPE="hidden" name="UserID" value="{#$edit.UserID#}">
+        <INPUT TYPE="hidden" name="act" value="{#$act#}">
+        <div class="impBtn fLeft"><INPUT tag='form1' TYPE="button" value="提交" class="upload imgButton mysubmit"></div>
+        <div class="impBtn fLeft m-l10"><INPUT TYPE="reset" class="reset imgButton" value="清空" ></div>
+    </div></TD>
+</TR>
+<tr><td height="5" colspan="7" class="bottomTd" ></td></tr>
+</TABLE>
+
+    <!-- 列表显示区域结束 -->
+</div>
+    <!-- 主体内容结束 -->
+</div>
+<script type="text/javascript" src="__PUBLIC__/plugin/uploadify/jquery.uploadify.min.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/plugin/uploadify/uploadify.css">
+<script>
+ $('.selectArea').areaSelectChange("__URL__",1);
+$('#subject').subjectSelectChange('__URL__',{'style':'getMoreData','list':'grade'});
+    $(function(){
+        $("#uploads").uploadify({
+            'formData'    : {'z':Math.random()},
+            'swf'     : '__PUBLIC__/plugin/uploadify/uploadify.swf',
+            'uploader'      : U('User/User/uploadify'),
+            'queueID'       : 'queues',
+            'buttonText'    : '上传excel名单',
+            'fileTypeExts'  : '*.xls; *.xlsx', //允许文件上传类型,和fileDesc一起使用.
+            'fileTypeDesc'  : 'excel file',  //将不允许文件类型,不在浏览对话框的出现.
+            'method'        : 'post',
+            'auto'          : true,
+            'multi'         : false,
+
+            'onUploadSuccess':function(file, data, response){
+                if(data.indexOf('Warning')!=-1 && data.indexOf('Content-Length')!=-1){
+                    alert('文件大小超出限制');
+                    return false;
+                }else if(data.indexOf('Warning')!=-1){
+                    alert(data);
+                    return false;
+                }else if(data=='type error' || data==''){
+                    alert('您上传的文件类型有误！请上传*.xls,*.xlsx;文件');
+                    return false;
+                }else if(data.indexOf('filesize exceeds')!=-1){
+                    alert('文件大小超出限制');
+                    return false;
+                }else if(data.indexOf('file not upload')!=-1){
+                    alert('文件无法上传');
+                    return false;
+                }else if(data.indexOf('success')!=-1){
+                    var userData=eval('('+data+')');
+                    var userStr = '';
+                    for(var i in userData.data){
+                        if(i=='serial' || i=='return'){
+                            continue;
+                        }
+                        if(userData['data'][i][2]==null | userData['data'][i][2]==''){
+                            userData['data'][i][2] = '空';
+                        }
+                        if(userData['data'][i]['error']){
+                            userStr += '<tr style="color:red">';
+                        }else{
+                            userStr += '<tr>';
+                            userData['data'][i]['message']='';
+                        }
+                        userStr += '<td>'+userData['data'][i]['order']+'</td>' +
+                                '<td>'+userData['data'][i][0]+'</td>'+
+                                '<td>'+userData['data'][i][1]+'</td>'+
+                                '<td>'+userData['data'][i][2]+'</td>'+
+                                '<td>'+userData['data'][i]['message']+'</td>'+
+                                '<td><a href="#" class="deluser">删除</a></td></tr>';
+                    }
+                    userStr += '<tr><td style="display:none" class="serialData">'+userData['data']['serial']+'</td></tr>';
+                    $('.uploadInfo').find('td').remove();
+                    $('.userInfo').show();
+                    $('.uploadInfo').append(userStr);
+                }else{
+                    alert(data);
+                    return false;
+                }
+            },
+            'onUploadError':function(file, errorCode, errorMsg, errorString){
+                alert(errorMsg);
+            }
+        });
+    })
+    var delOrder ='';
+    //删除错误用户数据
+    $('.deluser').live('click',function(){
+        delOrder+=','+$(this).parent().parent().find('td').eq(0).html();
+        $(this).parent().parent().remove();
+    })
+
+    //下载excel模板
+    $('.adduser_downexcel').live('click',function(){
+        location.href=U('User/User/excelUser');
+    });
+
+    //批量上传用户提交
+    $('.upload').live('click',function(){
+        var userName = new Array();
+        var userInfo = new Array();
+        if($('.uploadInfo').find('tr[style="color:red"]').length>0){
+            var errorStr='';
+            $('.uploadInfo').find('tr[style="color:red"]').each(function(i){
+                errorStr+='第'+$(this).find('td').eq(0).html()+'行用户信息:'+$(this).find('td').eq(4).html()+'\n';
+            })
+            alert(errorStr);
+            return false;
+        }
+
+        $('.uploadInfo').find('tr').each(function(i){
+            var userTmp = new Array();
+            $(this).find('td').each(function(j){
+                if(j==4){
+                    return true;
+                }
+                userTmp[j] = $(this).html();
+            });
+            if(userTmp==''){
+                return true;
+            }
+            userInfo[i] = userTmp;
+        });
+        var powerInfo = new Array();
+        if($("input[name='Whois']:checked").length>0){
+            powerInfo[4] = $("input[name='Whois']:checked").val();
+        }else{
+            alert('请选择用户身份');
+            return false;
+        }
+        if($("#subject").val()){
+            powerInfo[5] = $("#subject").val();
+        }
+        if($(".GradeID").val()){
+            powerInfo[6] = $(".GradeID").val();
+        }
+        if($('input[name="EndTime"]').val()){
+            powerInfo[7] = $('input[name="EndTime"]').val();
+        }
+        if($('select[name="areaid_school"]').val()){
+            powerInfo[8] = $('select[name="areaid_school"]').val();
+        }
+        powerInfo[9] = $('.selectArea[name="AreaID[]"]').last().val();
+        powerInfo[1]=$("input[name='groupname_1']:checked").val();
+        powerInfo[2]=$("input[name='groupname_2']:checked").val();
+        powerInfo[3] = '';
+        if($("input[name='groupname_3[]']:checked").val()){
+            $("input[name='groupname_3[]']:checked").each(function(){
+                powerInfo[3]+=$(this).val()+',';
+            })
+        }
+        var lastIndex = powerInfo[3].lastIndexOf(',');
+        powerInfo[3] = powerInfo[3].substring(0,lastIndex);
+        var serialData = $('.serialData').html();
+        delOrder = delOrder.substring(1);
+        var groupID = $("input[name='customGroup']:checked").val();
+        $.post(U('User/User/addUsers'),{'serialData':serialData,'powerInfo':powerInfo,'delOrder':delOrder,'groupID':groupID},function(data){
+            if(checkPower(data)=='error'){
+                return false;
+            }
+            alert('添加成功');
+            window.location.href=U("User/User/index");
+        })
+    })
+</script>

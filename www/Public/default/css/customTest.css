@@ -1,0 +1,274 @@
+@description:校本试题
+* @author demo  
+* @update-整理:(2015-04-16 11:20) 
+*/
+
+/*reset*/
+
+/****-globals-功能: 重设浏览器默认样式****/
+
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html{color:#333;background:#EFEFEF;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0;}
+
+/*定义字体*/
+body,button,input,select,textarea{font:14px/1.5 \5fae\8f6f\96c5\9ed1,Arial,tahoma,Helvetica,sans-serif}
+input,select,textarea{font-size:100%;}
+
+/*表单元素Reset*/
+textarea{resize:vertical;overflow:auto;vertical-align:top}
+input[type="text"]:focus,input[type="password"]:focus,textarea:focus{border-color:#4B88E6;outline:none;transition:border-color .1s;}
+button,input,select,textarea{vertical-align:baseline;*vertical-align:middle}
+button,input{line-height:normal}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;vertical-align:middle;*height:13px;*width:13px}
+input[type="search"]{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;-webkit-appearance:textfield}
+input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none}
+input:-webkit-autofill,textarea:-webkit-autofill,select:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px white inset;-webkit-text-fill-color:#333; /*这个私有属性是有效的 */}
+input:-webkit-autofill:hover{    /* style code */}
+input:-webkit-autofill:focus{    /* style code */}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+
+/* HTML5 媒体文件跟 img 保持一致 */
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
+
+/* 去掉各Table  cell 的边距并让其边重合 */
+table{border-collapse:collapse;border-spacing:0;}
+
+/* IE bug fixed: th 不继承 text-align*/
+th{text-align:inherit;}
+
+/* 去除默认边框 */
+fieldset,img{border:0;}
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe{display:block;}
+
+/* 去掉 firefox 下此元素的边框 */
+abbr,acronym{border:0;font-variant:normal;}
+del{text-decoration:line-through;}
+address,caption,cite,code,dfn,em,th,var,i{font-style:normal;font-weight:500;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500;}
+q:before,q:after{content:'';}
+select{vertical-align:middle;}
+.unselect{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;}
+
+/* 统一上标和下标 */
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+
+/* 清理浮动 */
+.clear{clear:both;height:0;overflow:hidden;display:block;line-height:0}
+.clearfix:after{clear:both;font-size:0;height:0;display:block;visibility:hidden;content:" ";line-height:0}
+.clearfix{zoom:1}
+
+/* for IE6 IE7 */
+
+/* 左浮动 */
+.left{float:left;}
+.right{float:right;}
+.hide{display:none}
+
+/*字号*/
+.f12{font-size:12px}
+.f14{font-size:14px}
+.f16{font-size:16px}
+.f18{font-size:18px}
+.f20{font-size:20px}
+.f-yahei{font-family:arial,\5fae\8f6f\96c5\9ed1,sans-serif;}
+
+/*试题部分使用*/
+.f-song{font-family:arial,\5b8b\4f53,sans-serif}
+.f-roman{font:14px/1.9 'Times New Roman',\5b8b\4f53,Arial,tahoma,Helvetica,sans-serif}
+
+/*文本超出添加省略号*/
+.elli{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.justify{text-align:justify;text-justify:inter-ideograph}
+a:link{text-decoration:none}
+a.link{color:#00A0E9;}
+a.link:hover{color:#00A0E9;opacity:0.9;filter:alpha(opacity=90)}
+a:visited{text-decoration:none}
+a:hover{text-decoration:none}
+a:active{opacity:0.9;filter:alpha(opacity=90)}
+
+/*common*/
+
+/*小标签*/
+.s-tag{display:inline-block;padding:3px 5px;border-radius:2px;color:#fff;font-size:12px;font-family:'Simsun',sans-serif;font-weight:400;margin-right:5px;line-height:1}
+
+/*通用按钮*/
+.nor-btn{display:inline-block;border-radius:3px;font-size:14px;color:#fff;border:#0ba1e9 1px solid;text-align:center;background:#00A0E9;cursor:pointer;}
+.nor-btn:hover{text-decoration:none;background-color:#0da3e9;border-color:#049ee9;transition:all .1s;}
+.nor-btn:active{-webkit-box-shadow:inset 0 2px 4px rgba(0,0,0,0.18);box-shadow:inset 0 2px 4px rgba(0,0,0,0.18)}
+.nor-btn:focus{outline:0}
+a.sml-btn{padding:3px 6px;border-radius:2px;font-size:12px;color:#fff;border:#08AAF5 1px solid;text-align:center;background:#009FE9;cursor:pointer;vertical-align:text-top;}
+a.sml-btn:hover{opacity:0.85;filter:alpha(opacity=85);transition:all .2s;}
+.light-btn{background-color:#ff7f02;border-color:#ff7f02;}
+.light-btn:hover{background-color:#F77A00;border-color:#F77A00;}
+
+/*添加试题*/
+.button{text-decoration:none;}
+.button:hover{color:#fff;}
+.append{padding:2px 10px;background-color:#00A0E9;border:1px solid #0091e9;border-radius:2px;color:#fff;margin-left:5px;cursor:pointer;}
+.append:hover{opacity:.85;filter:alpha(opacity=85)}
+#test-form table tr td{padding:5px 0;}
+#divbox{background:#FFF;margin:0px 10px;border:#dcdcdc solid 1px;padding:10px 60px;overflow:auto;min-height:350px;max-height:600px;}
+#divbox .title{background:#f6f6f6;border-bottom:#e2e1e1 solid 1px;height:40px;line-height:40px;overflow:hidden;margin-bottom:10px}
+#divbox .title span{font-size:14px;font-weight:bold;padding-left:15px}
+.selItem select{width:150px;margin-right:5px;line-height:24px;height:24px;padding-left:5px;border:1px solid #bbb;font-size:14px;}
+
+/*来源*/
+#source{padding:0 0 0 5px;line-height:24px;height:24px;width:90%;}
+#MName{padding:0 0 0 5px;line-height:24px;height:24px;width:90%;}
+
+/*选知识点*/
+.inputs div{clear:both;float:left;line-height:22px;height:22px;padding:2px;border:1px solid #6699ff;width:auto;margin:5px 0px 0px 0px;}
+.inputs div:hover{border:1px solid #0033ff;}
+.inputs span{float:left;padding-right:5px;}
+.inputs a{float:left;display:block;width:14px;line-height:14px;height:14px;margin:4px;text-decoration:none;background-color:#00A0E9;color:#fff;text-align:center;}
+
+/*编辑器-容器*/
+.editContainers{position:relative;top:0;padding:5px;}
+.editorContainer{position:relative;margin:5px 5px 5px 5px;padding:2px;border:1px solid #fff;}
+.editorContainerTop{position:relative;width:90%;height:30px;line-height:30px;background-color:#ececec;border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;}
+.editorContainerTop span{height:30px;line-height:30px;color:#00A0E9;}
+.editorContainerTop .containerTitle{position:absolute;left:10px;}
+.editorContainerTop .containerTitleAct{position:absolute;right:10px;}
+.editorContainerTop .containerTitleAct span{cursor:pointer;font-size:12px;margin:0px 3px;}
+.editorContainerTop .containerTitleAct span:hover{color:red;}
+
+/*试题优化进度*/
+.testState{width:278px;position:absolute;right:0px;top:11px;}
+.testState .stateProgress{width:198px;height:12px;margin-left:40px;background:url(../image/testState.png) 0 0 no-repeat;}
+.testState .state2{background-position:-235px 0;}
+.testState .state3{background-position:-470px 0;}
+.stateItem{white-space:nowrap;margin-top:6px;}
+.stateItem span{display:inline-block;width:32%;text-align:center;font-size:12px;color:#aaa;}
+.stateItem .stateCurt{color:#00a0e9;}
+
+/*试题编辑-按钮*/
+a.customTestEdit{display:inline-block;width:29px;height:28px;margin-left:5px;background:url(../image/piclist2.gif) -643px 0px no-repeat;cursor:pointer;}
+a.customTestEditDisable{display:inline-block;width:29px;height:28px;margin-left:5px;background:url(../image/piclist2.gif) -643px 0px no-repeat;cursor:pointer;}
+a.deletion{background:url(../image/piclist2.gif) -643px -68px no-repeat;cursor:pointer;display:inline-block;height:28px;margin-left:5px;width:29px;}
+a.deletionDisable{background:url(../image/piclist2.gif) -643px -68px no-repeat;cursor:pointer;display:inline-block;height:28px;margin-left:5px;width:29px;}
+a.deletion:hover{display:inline-block;width:29px;height:28px;background:url(../image/piclist2.gif) -677px -68px no-repeat;cursor:pointer;}
+
+/*试题属性显示隐藏按钮*/
+.test-type-btn-wrap{border-top:1px #e2e1e1 solid;border-bottom:1px #e2e1e1 solid;margin:40px 0 15px 0;background-color:#f6f6f6;padding:7px 15px 7px 15px}
+.test-type-btn-wrap .tt-tit{margin-right:20px;font-weight:600}
+.test-type-btn-wrap .tt-btn{display:inline-block;padding:3px 15px;border-radius:2px;border:1px solid #ccc;background-color:#fff;color:#333;-webkit-transition:all .2s;transition:all .2s}
+.test-type-btn-wrap .tt-btn:hover{background-color:#00a0e9;border-color:#00a0e9;color:#fff}
+
+/*校本试题-原创投稿-弹出框*/
+/*按钮*/
+.quesother a.submission{color:#666;vertical-align:9px;margin-left:5px;}
+.quesother a.submission:hover{color:#00a0e9}
+.quesother a.submission .iconfont{font-size:15px;margin-right:4px;}
+.submission-content{height:360px;min-height:200px;overflow:hidden;overflow-y: auto}
+.submission-table{width:680px;margin:0 auto;table-layout: fixed;font-size:13px;}
+.submission-table th{font-weight:600;text-align: center;}
+.submission-table .join{text-align:center;}
+.submission-table .join .g-radio{font-size:13px;text-align:center;color:#f2732b;}
+.submission-table .join-check{font-size:14px;margin-top:5px;text-align:center;}
+.submission-table .join-num{font-size:12px;}
+
+/*2015-10-28*/
+
+/*试题上传首页*/
+.custom-content{background-color:#fff;height:100%}
+.upload-table-layout{width:100%;margin:0 auto;max-width:1000px;height:100%;}
+.upload-box{width:220px;height:260px;padding:20px 10px;border:2px solid #ddd;font-family:\5FAE\8F6F\96C5\9ED1,sans-serif;cursor:default;margin:0 auto;}
+.upload-box:hover{border-color:#00A0E9;}
+.upload-box .upload-title{text-align:center;font-weight:500;font-size:24px;padding:12px 0 20px;font-family:\5FAE\8F6F\96C5\9ED1,sans-serif;}
+.upload-box .icon{width:100%;height:139px;}
+.upload-box .icon-xie{background:url(../image/icon/custom-icon-xie.jpg) 50% 50% no-repeat;}
+.upload-box .icon-paizhao{background:url(../image/icon/custom-icon-paizhao.jpg) 50% 50% no-repeat;}
+.upload-box .icon-doc{background:url(../image/icon/custom-icon-doc.jpg) 50% 50% no-repeat;}
+.upload-box .upload-btn{display:none;text-align:center;}
+.upload-box .upload-btn .nor-btn{text-align:center;width:190px;line-height:38px;font-size:16px;font-family:\5FAE\8F6F\96C5\9ED1,sans-serif;}
+.upload-box .ua-context{height:4.5em;overflow:hidden;color:#888;font-family:\5FAE\8F6F\96C5\9ED1,sans-serif;}
+
+/*试题上传首页*/
+.no-float{float:none;clear:both;}
+button{    /*padding: 3px 5px;*/
+background-color:#cde;border-top:1px outset #ccc;border-left:1px outset #ccc;border-right:1px outset #ccc;border-bottom:1px outset #999;}
+
+/*校本题库-我的文档-top*/
+.my-doc-top{background-color:#fff;border-bottom:1px solid #ccc;padding:0 20px;}
+.my-doc-top .area-tit{float:left;line-height:30px;}
+.my-doc-top .search-area,.my-doc-top  .upload-area{line-height:28px;padding:15px 0;}
+.my-doc-top .upload-area .file-input,.my-doc-top .search-area .search-input{float:left;width:200px;padding:4px;height:20px;*height:28px;border:1px solid #ddd;font-size:12px;margin-right:10px;}
+.my-doc-top .upload-area .nor-btn{float:left;width:70px;height:28px;background-color:#019fe9;}
+.my-doc-top .search-area .search-input{width:200px;height:18px;line-height:18px;}
+.my-doc-top .search-area .search-btn{float:left;height:28px;width:80px;border:1px solid #ddd;color:#888;font-size:16px;background-color:#eee;}
+.my-doc-top .search-area .search-btn:hover{color:#666;border-color:#ccc;}
+.my-doc-body{border-top:1px solid #ddd;background-color:#fff;margin:20px 10px 0 10px;}
+.content-list-top{position:relative;z-index:10;background-color:#f6f6f6;}
+.content-list-top .right{position:absolute;right:15px;top:10px;}
+.page-area-wrap{display:inline;}
+.content-list-area{border:1px solid #ddd;border-top:none;}
+.my-doc-body .list-area{padding:10px;background-color:#fff;overflow-y:auto;}
+.my-doc-body .list-area tr{}
+.my-doc-body .list-area-table{table-layout:fixed;width:100%;}
+.my-doc-body .list-area-header{height:36px;background-color:#eee;font-weight:600;}
+.my-doc-body .list-area-content{border-bottom:1px solid #eee;height:50px;}
+.my-doc-body .list-area-content:hover{background-color:#E7F7FF;}
+.my-doc-body .list-area-content .nor-btn{}
+.my-doc-body .list-area-content .submit-handle .nor-btn{line-height:24px;padding:0 8px;color:#fff;}
+.my-doc-body .list-area-content .submit-handle .nor-btn:hover{background-color:#16b1e9;border-color:#16b1e9;}
+.my-doc-body .list-area-content .other-handle .nor-btn{background-color:transparent;color:#00A0E9;border:none;}
+.my-doc-body .list-area-content .other-handle .nor-btn:hover{color:#e00}
+.my-doc-body .list-area tr td a{color:#333;}
+.my-doc-body .list-area tr td a:hover{color:red;}
+.content-list-top .event-target{width:100%;border-bottom:1px solid #ddd;}
+.content-list-top .event-target li{float:left;width:120px;height:45px;line-height:45px;text-align:center;border-right:1px solid #ddd;background-color:#F6F6F6;cursor:pointer;}
+.content-list-top .event-target .event-target-this{background-color:#fff;color:#00A0E9;border-top:3px solid #00A0E9;margin:-1px 0;height:44px;}
+.content-list-top .event-target li:hover{background-color:#fff;color:#00A0E9}
+.content-list-top #pagtion{float:right;line-height:30px;color:#bbb;}
+.content-list-top #pagtion a{display:inline-block;text-align:center;color:#333;width:55px;height:22px;line-height:23px;font-size:13px;border:1px solid #ccc;background-color:#fff;cursor:default;}
+.content-list-top #pagtion a.unable{color:#999;background-color:#f1f1f1;}
+.content-list-top #pagtion .num{margin:0 10px;color:#333;}
+.content-list-top #pagtion .num b{padding:0 4px;color:#00A0E9;}
+.content-list-top #pagtion .page-nav{vertical-align:0;padding:0 0 0 5px;font-size:13px;line-height:24px;height:24px;}
+.content-list-top #pagtion a.able:hover{background-color:#fff;color:#00A0E9;border-color:#00A0E9;cursor:pointer;}
+.modityTitleText{height:22px;line-height:22px;width:70%;}
+.modityTitleSave{margin-left:5px;}
+
+/*拍照上传*/
+.upload-paizhao-layout{table-layout:auto;width:100%;overflow:auto;}
+.upload-paizhao-layout .td-name{vertical-align:top;padding-top:10px;padding-right:10px;text-align:right;}
+.upload-pic-warp{padding-right:30px;}
+.upload-pic-box{}
+.upload-pic-box .del-btn{position:absolute;top:10px;right:10px;color:#999;}
+.upload-pic-box .del-btn:hover{color:#444;}
+.upload-pic-box .select-pic{color:#999;}
+.upload-pic-box .select-pic .nor-btn{width:112px;height:36px;line-height:36px;color:#eee;background-color:#999;border-color:#999;margin-right:15px;}
+.upload-pic-box .select-pic .nor-btn:hover{color:#fff;background-color:#aaa;border-color:#aaa;}
+.upload-pic-box .upload-btn{text-align:center;}
+.upload-pic-box .upload-btn .nor-btn{width:180px;height:40px;line-height:40px;}
+.upload-pic-list{padding:5px 0 20px;*padding-top:20px;}
+.upload-pic-list li{position:relative;background-color:#f4f4f4;padding:20px 38px 20px 20px;border-bottom:1px solid #ddd;margin-top:15px;}
+.upload-pic-list li .img-intro{margin-left:305px;}
+.textarea-desc{padding-left:10px;display:block;height:30px;margin-bottom:15px;}
+.textarea-wrap{margin:5px 8px;border:1px solid #ddd;background-color:#fff;display:block;width:100%;}
+.upload-pic-list li .img-intro textarea{height:200px;width:100%;border:none;}
+
+/*二维码*/
+.upload-erweima-warp{vertical-align:top;margin-right:60px;}
+.erweima-warp{width:240px;padding:20px 30px 30px;border:1px solid #ddd;background-color:#f3f3f3;}
+.erweima-warp h5{padding-bottom:20px;}
+
+/*校本题库拍照上传*/
+.img-btn{width:80px;height:30px;display:block;margin:15px auto; margin-top:0px;line-height:30px;cursor:pointer;border:1px solid #ccc;background-color:#00A0E9;text-align:center;}
+.imgContent #prevImg{display:block;border:1px solid #ccc;}
+.cut-box{margin-bottom:15px;}
+/*校本题库拍照上传结-end

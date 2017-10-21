@@ -1,0 +1,92 @@
+2017-10-08 09:47:25 编译时语法解析错误(E_PARSE) syntax error, unexpected ';' E:\web\www\tk\Statistics\Controller\IndexController.class.php 15 
+2017-10-08 14:00:25 编译时语法解析错误(E_PARSE) syntax error, unexpected '<', expecting ']' E:\web\www\tk\Runtime\Cache\Statistics\13872c5a1c19a98270524ceddae8d340.php 44 
+2017-10-10 11:24:54 编译时语法解析错误(E_PARSE) syntax error, unexpected '=' E:\web\www\tk\Runtime\Cache\Statistics\061933b078d1477852b6d11bdea602be.php 59 
+2017-10-10 11:27:23 编译时语法解析错误(E_PARSE) syntax error, unexpected ';' E:\web\www\tk\Runtime\Cache\Statistics\061933b078d1477852b6d11bdea602be.php 59 
+2017-10-10 11:27:36 编译时语法解析错误(E_PARSE) syntax error, unexpected ';', expecting ')' E:\web\www\tk\Runtime\Cache\Statistics\061933b078d1477852b6d11bdea602be.php 59 
+2017-10-10 11:28:09 编译时语法解析错误(E_PARSE) syntax error, unexpected 'SendID' (T_STRING), expecting ')' E:\web\www\tk\Runtime\Cache\Statistics\061933b078d1477852b6d11bdea602be.php 59 
+2017-10-10 13:30:48 编译时语法解析错误(E_PARSE) syntax error, unexpected 'TestList' (T_STRING) E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 254 
+2017-10-10 14:07:18 编译时语法解析错误(E_PARSE) syntax error, unexpected ';', expecting '(' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 272 
+2017-10-10 14:24:51 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot redeclare Statistics\Manage\StatisticsBManage::teacherComment() E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 985 
+2017-10-10 14:25:37 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot redeclare Statistics\Manage\StatisticsBManage::teacherComment() E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 985 
+2017-10-10 16:14:27 编译时语法解析错误(E_PARSE) syntax error, unexpected '；' (T_STRING), expecting ',' or ';' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 997 
+2017-10-10 16:28:08 编译时语法解析错误(E_PARSE) syntax error, unexpected '$sub' (T_VARIABLE) E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 178 
+2017-10-10 16:29:00 编译时语法解析错误(E_PARSE) syntax error, unexpected '$sub' (T_VARIABLE) E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 178 
+2017-10-10 16:37:13 编译时语法解析错误(E_PARSE) syntax error, unexpected ';' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 181 
+2017-10-10 16:43:25 编译时语法解析错误(E_PARSE) syntax error, unexpected 'SubjectID' (T_STRING) E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 180 
+2017-10-10 16:48:20 编译时语法解析错误(E_PARSE) syntax error, unexpected '$sub' (T_VARIABLE) E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 179 
+2017-10-10 16:52:46 编译时语法解析错误(E_PARSE) syntax error, unexpected '$sub' (T_VARIABLE) E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 180 
+2017-10-11 17:58:27 编译时语法解析错误(E_PARSE) syntax error, unexpected ')' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 131 
+2017-10-11 18:25:50 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 131 
+2017-10-11 18:42:27 编译时语法解析错误(E_PARSE) syntax error, unexpected '}' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 142 
+2017-10-11 18:42:29 编译时语法解析错误(E_PARSE) syntax error, unexpected '}' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 142 
+2017-10-11 18:42:32 编译时语法解析错误(E_PARSE) syntax error, unexpected '}' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 142 
+2017-10-12 10:13:17 编译时语法解析错误(E_PARSE) syntax error, unexpected ')', expecting variable (T_VARIABLE) or '$' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 188 
+2017-10-12 10:17:40 编译时语法解析错误(E_PARSE) syntax error, unexpected '.' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 184 
+2017-10-12 10:17:51 编译时语法解析错误(E_PARSE) syntax error, unexpected ')', expecting variable (T_VARIABLE) or '$' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 192 
+2017-10-12 15:46:43 编译时语法解析错误(E_PARSE) syntax error, unexpected ';', expecting ')' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 1137 
+2017-10-12 15:46:57 编译时语法解析错误(E_PARSE) syntax error, unexpected '$this' (T_VARIABLE) E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 1139 
+2017-10-13 14:13:15 编译时语法解析错误(E_PARSE) syntax error, unexpected ''Statistics/StatisticsB/index'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' E:\web\www\tk\Common\Controller\PowerLayerController.class.php 114 
+2017-10-13 15:57:34 编译时语法解析错误(E_PARSE) syntax error, unexpected ';' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 155 
+2017-10-15 10:39:44 编译时语法解析错误(E_PARSE) syntax error, unexpected ''Statistics/StatisticsB/teache' (T_CONSTANT_ENCAPSED_STRING), expecting ']' E:\web\www\tk\Common\Controller\PowerLayerController.class.php 124 
+2017-10-15 15:07:58 编译时语法解析错误(E_PARSE) syntax error, unexpected ')' E:\web\www\tk\Statistics\Controller\IndexController.class.php 27 
+2017-10-15 15:48:48 编译时语法解析错误(E_PARSE) syntax error, unexpected ',' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 384 
+2017-10-15 15:49:00 编译时语法解析错误(E_PARSE) syntax error, unexpected ',' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 384 
+2017-10-15 15:49:22 编译时语法解析错误(E_PARSE) syntax error, unexpected ',' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 384 
+2017-10-15 15:49:30 编译时语法解析错误(E_PARSE) syntax error, unexpected ',' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 384 
+2017-10-15 15:49:53 编译时语法解析错误(E_PARSE) syntax error, unexpected ',' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 384 
+2017-10-15 16:28:39 编译时语法解析错误(E_PARSE) syntax error, unexpected 'dump' (T_STRING) E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 1095 
+2017-10-15 16:28:52 编译时语法解析错误(E_PARSE) syntax error, unexpected '}' E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 1096 
+2017-10-15 16:36:25 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:37:04 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:38:00 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:38:26 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:38:58 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:39:33 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:39:58 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:40:17 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:41:00 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:41:18 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:42:49 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:45:20 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:48:05 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:48:30 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:48:54 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:49:18 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:49:37 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:51:48 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:52:07 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:52:30 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:52:53 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:53:37 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:55:16 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:55:35 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:55:53 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:56:12 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:57:33 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:57:52 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:59:23 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 16:59:43 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 17:00:05 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 17:00:58 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 17:02:01 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 17:05:16 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 17:06:35 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot use [] for reading E:\web\www\tk\Statistics\Controller\IndexController.class.php 29 
+2017-10-15 17:21:48 编译时语法解析错误(E_PARSE) syntax error, unexpected ';', expecting ')' E:\web\www\tk\Statistics\Controller\IndexController.class.php 34 
+2017-10-15 17:35:22 编译时语法解析错误(E_PARSE) syntax error, unexpected ')', expecting ';' E:\web\www\tk\Statistics\Controller\IndexController.class.php 33 
+2017-10-15 17:35:34 编译时语法解析错误(E_PARSE) syntax error, unexpected ',' E:\web\www\tk\Statistics\Controller\IndexController.class.php 54 
+2017-10-15 17:38:50 编译时语法解析错误(E_PARSE) syntax error, unexpected '=>' (T_DOUBLE_ARROW) E:\web\www\tk\Statistics\Controller\IndexController.class.php 55 
+2017-10-15 17:39:14 编译时语法解析错误(E_PARSE) syntax error, unexpected '=>' (T_DOUBLE_ARROW) E:\web\www\tk\Statistics\Controller\IndexController.class.php 56 
+2017-10-15 18:12:57 致命的运行时错误(E_ERROR) Class 'Think\Page' not found E:\web\www\tk\Statistics\Controller\IndexController.class.php 30 
+2017-10-17 11:45:43 致命的运行时错误(E_ERROR) Call to undefined function Statistics\Manage\getLastSql() E:\web\www\tk\Statistics\Manage\StatisticsBManage.class.php 1210 
+2017-10-17 17:59:27 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot redeclare Statistics\Controller\IndexController::index() E:\web\www\tk\Statistics\Controller\IndexController.class.php 126 
+2017-10-17 17:59:47 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot redeclare Statistics\Controller\IndexController::index() E:\web\www\tk\Statistics\Controller\IndexController.class.php 126 
+2017-10-17 17:59:49 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot redeclare Statistics\Controller\IndexController::index() E:\web\www\tk\Statistics\Controller\IndexController.class.php 126 
+2017-10-17 18:00:22 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot redeclare Statistics\Controller\IndexController::index() E:\web\www\tk\Statistics\Controller\IndexController.class.php 126 
+2017-10-17 18:01:21 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot redeclare Statistics\Controller\IndexController::index() E:\web\www\tk\Statistics\Controller\IndexController.class.php 126 
+2017-10-17 18:01:22 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot redeclare Statistics\Controller\IndexController::index() E:\web\www\tk\Statistics\Controller\IndexController.class.php 126 
+2017-10-17 18:01:22 Zend脚本引擎内部错误(E_COMPILE_ERROR) Cannot redeclare Statistics\Controller\IndexController::index() E:\web\www\tk\Statistics\Controller\IndexController.class.php 126 
+2017-10-17 18:02:00 编译时语法解析错误(E_PARSE) syntax error, unexpected 'public' (T_PUBLIC) E:\web\www\tk\Statistics\Controller\IndexController.class.php 148 
+2017-10-18 16:49:02 编译时语法解析错误(E_PARSE) syntax error, unexpected ')' E:\web\www\tk\Statistics\Controller\IndexController.class.php 41 
+2017-10-18 18:18:18 Zend脚本引擎内部错误(E_COMPILE_ERROR) Can't use function return value in write context E:\web\www\tk\Statistics\Controller\IndexController.class.php 14 
+2017-10-18 18:18:32 Zend脚本引擎内部错误(E_COMPILE_ERROR) Can't use function return value in write context E:\web\www\tk\Statistics\Controller\IndexController.class.php 14 
+2017-10-18 18:19:36 Zend脚本引擎内部错误(E_COMPILE_ERROR) Can't use function return value in write context E:\web\www\tk\Statistics\Controller\IndexController.class.php 14 

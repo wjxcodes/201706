@@ -1,0 +1,513 @@
+<?php if (!defined('THINK_PATH')) exit();?><div class="testPaperC" style="display: none;">
+    <div class="tab">
+        <div class="tabnav01">
+            <a id="tabDefined" class="this" data=".tabPanelDefined">自定义</a>
+        </div>
+        <div class="tabPanel">
+            <div class="tabPanelDefined">
+                <div class="definedStepOne">
+                    <div class="title_bz">
+                        <div class="fl bz_title_box"><span class="bz_txt mr10">第一步</span>
+                            <div class="tit">选择考查范围</div>
+                        </div>
+                        <a class="an02 fr selectAll" href="javascript:;" flag="0"><span class="an_left"></span><span class="an_cen">全部选择</span><span class="an_right"></span></a>
+                        <div class="clear"></div>
+                    </div>
+                    <ul class="list_zsd">
+
+                    </ul>
+                    <div class="errorMsg"></div>
+                    <div class="an03 pt10 pb10 mc next"><a href="javascript:;">下一步</a></div>
+                </div>
+                <div class="definedStepTwo" style="display: none;">
+                    <div class="title_bz">
+                        <div class="fl bz_title_box"><span class="bz_txt mr10">第二步</span>
+                            <div class="tit">设置选题数量</div>
+                        </div>
+                        <a class="an02 fr mr5 default_checkbox" href="javascript:;"><span class="an_left"></span><span class="an_cen">默认设置</span><span class="an_right"></span></a>
+                        <div class="clear"></div>
+                    </div>
+                    <ul class="szxt_box">
+                        试题类型加载中，请稍候...
+                    </ul>
+                    <div class="errorMsg"></div>
+                    <div>
+                        <div class="an03 pt10 pb10 mc prev fl ml85 mr20"><a href="javascript:;">上一步</a></div>
+                        <div class="an03 pt10 pb10 mc next fl"><a href="javascript:;">下一步</a></div>
+                        <div style="clear: both"></div>
+                    </div>
+
+                </div>
+                <div class="definedStepThree" style="display: none;">
+                    <div class="title_bz">
+                        <div class="fl bz_title_box"><span class="bz_txt mr10">第三步</span>
+                            <div class="tit">设置试题难度及考点覆盖率</div>
+                        </div>
+                        <a class="an02 fr mr5" href="javascript:;"><span class="an_left"></span><span class="an_cen set_default">默认设置</span><span class="an_right"></span></a>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="diff">
+                        <div class="hk">
+                            <div class="hkbox_nav">难度系数：</div>
+                            <div id="hkbg" class="hkbg">
+                                <div class="hk_sz">
+                                    <span style="float:left">0.0</span>
+                                    <span style="float:right">1.0</span>
+                                    <p>
+                                        <span style="float:left">易</span>
+                                        <span style="float:left; font-size:12px; color:#888888; margin-left:95px;">合理区间为[0.25-0.75]</span>
+                                        <span style="float:right">难</span>
+                                    </p>
+                                </div>
+                                <div class="slider_diff"></div>
+                                <div id="slider_diff_num" class="hkbox">0.50</div>
+                            </div>
+                        </div>
+                        <div class="hk">
+                            <div class="hkbox_nav">考点覆盖率：</div>
+                            <div id="hkbg" class="hkbg">
+                                <div class="hk_sz">
+                                    <span style="float:left">0%</span>
+                                    <span style="float:right">100%</span>
+                                    <p>
+                                        <span style="float:left">低</span>
+                                        <span style="float:left; font-size:12px; color:#888888; margin-left:95px;">合理区间为[25%-75%]</span>
+                                        <span style="float:right">高</span>
+                                    </p>
+                                </div>
+                                <div class="slider_cover"></div>
+                                <div id="slider_cover_num" class="hkbox">50%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="errorMsg"></div>
+                    <div>
+                        <div class="an03 pt10 pb10 mc prev fl ml85 mr20"><a href="javascript:;">上一步</a></div>
+                        <div class="an03 pt10 pb10 mc next fl"><a href="javascript:;">完成</a></div>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="submitMsg" style="display: none;">
+        <div style="position: absolute;left: 30%;top: 5px;">正在为您智能组卷，请稍候...</div>
+    </div>
+    <!--以下为模版-->
+    <script id="testPaperTabTpl" type="text/html">
+        {%each docType%}
+        <a id="tab{%$value.typeID%}" data=".tabPanel{%$value.typeID%}" key="{%$value.typeID%}">{%$value.typeName%}</a>
+        {%/each%}
+    </script>
+    <script id="testPaperTabPanelTpl" type="text/html">
+        {%each docType%}
+        <div class="tabPanel{%$value.typeID%}"></div>
+        {%/each%}
+    </script>
+    <script id="testPaperKnowledgeTpl" type="text/html">
+        {%each knowledge%}
+        <li>
+            <div class="zsd_bt fl" style="cursor: pointer">
+                <a class="ico_zd {%if $value.sub%}ico_zd_01{%else%}ico_zd_03{%/if%} fl"></a>{%$value.klName%}
+            </div>
+            <div class="fr checkbox">
+                <input type="checkbox" value="{%$value.klID%}" style="display: none;">
+            </div>
+        </li>
+        <ul style="display: none;">
+            {%each $value.sub as j%}
+            <li class="lidj02">
+                <div class="zsd_bt fl">
+                    <a class="ico_zd ico_zd_03 fl"></a>{%j.klName%}
+                </div>
+                <div class="fr checkbox">
+                    <input class="subInput{%$value.klID%}" type="checkbox" value="{%j.klID%}" style="display: none;">
+                </div>
+            </li>
+            {%/each%}
+        </ul>
+        {%/each%}
+    </script>
+    <script id="testPaperTypeTpl" type="text/html">
+        {%each data%}
+        <li><span class="ico_time"></span>
+            <span class="text01">计划选取</span>
+            <span>
+                <select class="typeNum">{%#selectOptions%}</select>
+                <input name="typesID[]" type="hidden" value="{%$value.TypesID%}"/>
+                <input name="dScore[]" type="hidden" value="{%$value.DScore%}"/>
+                <input name="typesScore[]" type="hidden" value="{%$value.TypesScore%}"/>
+            </span>
+            <span class="text02">{%$value.TypesName%}</span>
+        </li>
+        {%/each%}
+    </script>
+    <script id="testPaperTpl" type="text/html">
+        <div class="ss_box">
+            <select class="fl wbk01">
+                {%#select(year)%}
+            </select>
+            <input type="text" class="fl wbk01 sswbk" value="{%searchKey%}">
+            <div class="an_box fl"><a class="an01 search_button" href="javascript:;"><span class="an_left"></span><span class="an_cen">搜索</span><span class="an_right"></span></a></div>
+        </div>
+        <div class="stlb01">
+            <ul class="list_stlb01">
+                {%each list%}
+                <li>
+                    <div class="st_bt_box fl">
+                    <div class="st_bt">{%$value.DocName%}</div>
+                    <p>{%if $value.AatTestTimes%}本卷共被测试了{%$value.AatTestTimes%}次{%else%}本卷还没有被测试过{%/if%}</p>
+                    </div>
+                    <div class="an_box fr start_exercise">
+                    <a class="an01 fr mr5" href="javascript:;" docid="{%$value.DocID%}">
+                        <span class="an_left"></span><span class="an_cen">开始测试</span><span class="an_right"></span>
+                    </a>
+                    </div>
+                </li>
+                {%/each%}
+            </ul>
+        </div>
+        <div class="pagination">
+            {%#show%}
+        </div>
+        <div class="errorMsg"></div>
+    </script>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        AatTestPaperDialog = {
+            c:$('.testPaperC'),
+            //初始化打开后第一屏数据
+            _getInitData: function () {
+                var c = this.c;
+                $.post(U('PushTest/getTestPaperInit'),{times:Math.random()}, function (e) {
+                    $('#dialogAat .contentLoading').hide();
+                    c.show();
+                    if (e.status == 1) {
+                        var tabTpl = template('testPaperTabTpl', e.data);//tab
+                        var tabPanelTpl = template('testPaperTabPanelTpl', e.data);//tabPanel
+                        var knowledgeTpl = template('testPaperKnowledgeTpl', e.data);//list_zsd
+                        c.find('.tabnav01').append(tabTpl);
+                        c.find('.tabPanel').append(tabPanelTpl);
+                        c.find('.list_zsd').html(knowledgeTpl);
+                        //初始化icheck
+                        c.find('input').iCheck({
+                            checkboxClass: 'icheckbox_minimal-blue',
+                            radioClass: 'iradio_minimal-blue'
+                        });
+                    } else {
+                        alert(e.data);
+                    }
+                });
+            },
+            //初始化第一屏显示
+            initDisplay:function(){
+                var c = this.c;
+                var self = this;
+                //填充数据
+                this._getInitData();
+                //绑定tab事件
+                c.find('.tab').aTab({
+                    afterClick:function(item){
+                        if(item.attr('data')!='.tabPanelDefined'){
+                            var tab = item.attr('data');
+                            var data = {
+                                'p': 1,
+                                'SubjectID': AatCommon.getSubjectID(),
+                                'style': item.attr('key'),
+                                'search': '',
+                                'year': 0
+                            };
+                            self._getDoc(tab,data);
+                        }
+                    }
+                });
+                //绑定滚动事件
+                c.find('.list_zsd').slimScroll({
+                    height:c.find('.list_zsd').height(),
+                    alwaysVisible: true
+                });
+                //绑定知识点树事件
+                c.on('click', '.zsd_bt', function () {
+                    $(this).parent().find('.ico_zd_01').switchClass('ico_zd_01', 'ico_zd_02', 1);
+                    $(this).parent().find('.ico_zd_02').switchClass('ico_zd_02', 'ico_zd_01', 1);
+                    $(this).parent().next('ul').toggle('blind');
+                });
+                //自定义-第一步-知识点全选事件
+                c.on('click','.selectAll',function(){
+                    if($(this).attr('flag')== 0){
+                        $(this).attr('flag',1);
+                        c.find('input').iCheck('check');
+                        $(this).find('.an_cen').html('全部取消');
+                    }else if($(this).attr('flag') == 1){
+                        $(this).attr('flag',0);
+                        c.find('input').iCheck('uncheck');
+                        $(this).find('.an_cen').html('全部选择');
+                    }
+                });
+                //自定义-第一步-点击父级checkbox子级事件
+                c.on('ifChecked','input',function(){
+                    c.find('.subInput'+$(this).val()).iCheck('check');
+                });
+                c.on('ifUnchecked','input',function(){
+                    c.find('.subInput'+$(this).val()).iCheck('uncheck');
+                });
+            },
+            //用户自定义事件
+            userDefined: function () {
+                var c = this.c;
+                var stepOne = function () {
+                    c.find('.definedStepOne').hide('slide', {direction: 'right'}, 300, function () {
+                        c.find('.definedStepOne .errorMsg').hide();
+                        //自定义-第二步-显示
+                        $.post(U('Default/ajaxType'),{times:Math.random()}, function (e) {
+                            if (e.status == 1) {
+                                template.helper('selectOptions', function () {
+                                    var selectOptions = '';
+                                    for (var i = 0; i <= 10; i++) {
+                                        selectOptions += '<option value="' + i + '"> ' + i + ' 个 </option>';
+                                    }
+                                    return selectOptions;
+                                });
+                                var testTypeTpl = template('testPaperTypeTpl', e);
+                                c.find('.szxt_box').html(testTypeTpl);
+                                //绑定滚动事件
+                                c.find('.szxt_box').slimScroll({
+                                    height: c.find('.szxt_box').height(),
+                                    alwaysVisible: true
+                                });
+                            } else {
+                                c.find('.szxt_box').html(e.data);
+                            }
+                        });
+                        c.find('.definedStepTwo').show();
+                    });
+                };
+                var stepTwo = function () {
+                    c.find('.definedStepTwo .errorMsg').hide();
+                    //进入第三步
+                    c.find('.definedStepTwo').hide('slide', {direction: 'right'}, 300, function () {
+                        c.find('.slider_diff').slider({
+                            min: 1, max: 100, range: 'min', value: 50, slide: function (e, ui) {
+                                c.find('#slider_diff_num').html(ui.value / 100).css('left', 3.4 * ui.value - 30);
+                            }
+                        });
+                        c.find('.slider_cover').slider({
+                            min: 1, max: 100, range: 'min', value: 50, slide: function (e, ui) {
+                                c.find('#slider_cover_num').html(ui.value + '%').css('left', 3.4 * ui.value - 30);
+                            }
+                        });
+                        c.find('.definedStepThree').show();
+                        c.find('.definedStepThree .set_default').click(function () {
+                            c.find('.slider_cover,.slider_diff').slider("option", "value", 50);
+                            c.find('#slider_cover_num').html('50%').css('left', 140);
+                            c.find('#slider_diff_num').html('0.50').css('left', 140);
+                        });
+                    });
+                };
+                //自定义-第一步
+                c.on('click', '.definedStepOne .next', function () {
+                    if (c.find('.definedStepOne input:checkbox[checked=checked]').length < 1) {
+                        c.find('.definedStepOne .errorMsg').html('至少选择一个知识点！').show().effect('shake');
+                        return false;
+                    } else {
+                        //进入下一步
+                        stepOne();
+                    }
+                });
+                //自定义-第二步
+                c.on('click', '.definedStepTwo .next', function () {
+                    var allAmount = 0;
+                    c.find('.typeNum option:selected').each(function () {
+                        allAmount += parseInt($(this).val());
+                    });
+                    //检查第二步是否选择试题
+                    if (allAmount < 1) {
+                        c.find('.definedStepTwo .errorMsg').html('至少选择1道试题！').show().effect('shake');
+                        return false;
+                    }
+                    if (allAmount > 50) {
+                        c.find('.definedStepTwo .errorMsg').html('至多选择50道试题！').show().effect('shake');
+                    }
+                    //进入第三步
+                    stepTwo();
+                });
+                //自定义-第二步-上一步
+                c.on('click', '.definedStepTwo .prev', function () {
+                    c.find('.definedStepTwo .errorMsg').hide();
+                    //进入第一步
+                    c.find('.definedStepTwo').hide('slide', {direction: 'left'}, 300, function () {
+                        c.find('.definedStepOne').show();
+                    });
+                });
+                //自定义-第二步-设置默认值事件
+                c.find('.definedStepTwo .default_checkbox').click(function () {
+                    c.find('.definedStepTwo .typeNum').val('0');
+                });
+                //自定义-第三步-上一步
+                c.on('click', '.definedStepThree .prev', function () {
+                    c.find('.definedStepThree .errorMsg').hide();
+                    c.find('.definedStepThree').hide('slide', {direction: 'left'}, 300, function () {
+                        c.find('.definedStepTwo').show();
+                    });
+                });
+                //自定义-第三步-完成
+                c.on('click', '.definedStepThree .next', function () {
+                    //隐藏错误信息
+                    c.find('.definedStepThree .errorMsg').hide();
+                    //隐藏出题按钮
+                    c.find('.definedStepThree').hide();
+                    //显示进度条
+                    c.find('.submitMsg').show();
+                    c.find('.submitMsg').progressbar({
+                        value: false
+                    });
+                    var kl_id = '';
+                    c.find('.definedStepOne input:checkbox[checked=checked]').each(function () {
+                        kl_id += $(this).val() + ','
+                    });
+                    kl_id = kl_id.substring(0, kl_id.length - 1);
+                    var types_num = '';
+                    var types_id = '';
+                    var dscore = '';
+                    var types_score = '';
+                    c.find('.typeNum option:selected').each(function () {
+                        if ($(this).val() != 0) {
+                            types_num += $(this).val() + ',';
+                            types_id += $(this).parent().next().val() + ',';
+                            dscore += $(this).parent().next().next().val() + ',';
+                            types_score += $(this).parent().next().next().next().val() + ',';
+                        }
+                    });
+                    types_num = types_num.substring(0, types_num.length - 1);
+                    types_id = types_id.substring(0, types_id.length - 1);
+                    dscore = dscore.substring(0, dscore.length - 1);
+                    types_score = types_score.substring(0, types_score.length - 1);
+                    var diff = c.find('.slider_diff').slider('value') / 100;
+                    var cover = c.find('.slider_cover').slider('value');
+                    $.post(U('Default/ajaxGetTest'),
+                            {
+                                'id': 4,
+                                'SubjectID': AatCommon.getSubjectID(),
+                                'KlID': kl_id,
+                                'TypesNum': types_num,
+                                'TypesID': types_id,
+                                'DScore': dscore,
+                                'TypesScore': types_score,
+                                'Diff': diff,
+                                'Cover': cover,
+                                times:Math.random()
+                            }, function (e) {
+                                if (e.status == 1) {
+                                    window.location.href = U('Exercise/index?id=' + e.data.record_id);
+                                } else {
+                                    //隐藏进度条
+                                    c.find('.submitMsg').hide();
+                                    //显示出题按钮
+                                    c.find('.definedStepThree').show();
+                                    //显示错误信息
+                                    c.find('.definedStepThree .errorMsg').html(e.data).show().effect('shake');
+                                }
+                            });
+                });
+
+            },
+            //tab点击事件，获取试题列表
+            _getDoc:function(tab,data) {
+                var c = this.c;
+                c.find(tab).html('试卷加载中，请稍候...');
+                data['times'] = Math.random();
+                $.post(U('Default/ajaxDoc'), data, function (e) {
+                    if (e.status == 1) {
+                        template.helper('select',function(selectedYear){
+                            var option_str = '<option value="0">不限</option> ';
+                            var myDate = new Date();
+                            var year = myDate.getFullYear();
+                            for(var i=year;i>=2007;i--){
+                                var select = selectedYear==i?' selected="selected"':'';
+                                option_str += '<option '+select+' value="'+i+'">'+i+'年</option>';
+                            }
+                            return option_str;
+                        });
+                        var tpl = template('testPaperTpl', e.data);
+                        c.find(tab).html(tpl);
+                    } else {
+                        c.find(tab).html(e.data);
+                    }
+                });
+            },
+            //整卷练习事件
+            testPaper:function(){
+                var c = this.c;
+                var self = this;
+                var subjectID = AatCommon.getSubjectID();
+                var startDocExercise = function(tab,doc_id) {
+                    //隐藏错误信息
+                    $(tab+' .errorMsg').hide();
+                    //隐藏出题按钮
+                    $(tab).hide();
+                    //显示进度条
+                    c.find('.submitMsg').progressbar({
+                        value: false
+                    }).show();
+                    $.post(U('Default/ajaxGetTest'), {'id':3,'SubjectID':subjectID,'DocID': doc_id}, function (e) {
+                        if (e.status == 1) {
+                            window.location.href = U('Exercise/index?id=' + e.data.record_id);
+                        } else {
+                            //隐藏进度条
+                            c.find('.submitMsg').hide();
+                            //显示出题按钮
+                            c.find(tab).show();
+                            //显示错误信息
+                            c.find(tab+' .errorMsg').html(e.data).show().effect('shake');
+                        }
+                    });
+                };
+                //ajax分页事件
+                c.on('click','.ajax_page_class',function(){
+                    var tab = c.find('.tabnav01').children('.this');//当前选项卡tab的class
+                    var tabClass = tab.attr('data');
+                    var tabStyle = tab.attr('key');
+
+                    var data_p = {
+                        'p': $(this).attr('data'),
+                        'SubjectID': subjectID,
+                        'style': tabStyle,
+                        'search': c.find(tabClass+' input').val(),
+                        'year': c.find(tabClass+' select').val()
+                    };
+                    self._getDoc(tabClass,data_p);
+                });
+                //搜索
+                c.on('click','.search_button',function(){
+                    var tab = c.find('.tabnav01').children('.this');//当前选项卡tab的class
+                    var tabClass = tab.attr('data');
+                    var tabStyle = tab.attr('key');
+                    var data = {
+                        'p': 1,
+                        'SubjectID': subjectID,
+                        'style': tabStyle,
+                        'search': c.find(tabClass+' input').val(),
+                        'year': c.find(tabClass+' select').val()
+                    };
+                    self._getDoc(tabClass,data);
+                });
+
+                //开始做题
+                c.on('click','.start_exercise',function(){
+                    tab = c.find('.tabnav01').children('.this').attr('data');//当前选项卡tab的class
+                    var doc_id = $(this).find('a').attr('docid');
+                    startDocExercise(tab,doc_id);
+                });
+            },
+            init:function(){
+                this.c.unbind();
+                this.initDisplay();
+                this.userDefined();
+                this.testPaper();
+            }
+        };
+        AatTestPaperDialog.init();
+    });
+</script>

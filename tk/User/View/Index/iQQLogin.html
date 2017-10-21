@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}"/>
+    <link rel="stylesheet" href="__PUBLIC__/index/css/register.css{#$Think.config.WLN_UPDATE_FILE_DATE#}"/>
+    <style>
+         .has-account{display:none!important;}
+         .topLogin .topLoginButton{display:none;}
+    </style>
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('a,img,div,span');</script>
+    <![endif]-->
+    <style>
+    html,body{height:100%;background-color: #f8f8f8;}
+
+    .other-use-id-wrap{width: 100%;min-height:100%;position:relative;margin-top:-120px;}
+    .other-use-id-content{width:100%;position:absolute;top:45%;left:0;margin-top:-200px;}
+    .other-use-id-content .w1000{width:992px;border:4px solid #eee;padding:20px 0 80px;}
+    .second-footer-wrap{margin-top:-138px;}
+    .lf-login-wrap{float: left;padding-left:180px;}
+    .lf-login-wrap h1{font-size:28px;text-align: center;margin-bottom: 1em}
+    .lf-login-wrap .lf-login-item{margin-top:2em;}
+    .other-use-id-content .lf-login-btn{margin-top:3em;}
+
+    .right-helper{
+        float: right;
+        width:270px;
+        border-left:1px solid #ccc;
+        margin:71px 50px 0 0;
+        padding:26px 30px 48px 30px;
+    }
+    .right-helper .helper{color:#999;margin-bottom:1em;}
+    .right-helper .qq-login{line-height:3em;margin-bottom:3em;}
+    </style>
+</head>
+<body class="bg-f8f8f8">
+{#include file="Index@Common/secondTop" /#}
+    <!-- 其它登录方式选择身份 -->
+    <div class="other-use-id-wrap">
+            <!-- 绑定已有帐号 -->
+            <div class="other-use-id-content login-page-content">
+                <div class="w1000 bg-white clearfix">
+                    <form action="" class="lf-login-wrap" id="login">
+                    <div class="lf-login-item">
+                        <i class="iconfont"></i>
+                        <input type="text" name="userName" id="userName" placeholder="用户名/邮箱/手机号">
+                    </div>
+                    <div class="lf-login-item">
+                        <i class="iconfont"></i>
+                        <input type="password" name="password" id="passWord" placeholder="登录密码">
+                    </div>
+                        <div class="lf-login-msg" style="display:none">
+                            <i class="iconfont"></i>
+                            <span class="errorMsg"></span>
+                        </div>
+                    <div class="lf-login-other clearfix" style="margin-top:10px">
+                        <label class="auto-login" for="ifSave">
+                            <input type="checkbox" name="ifSave" id="ifSave">
+                            记住密码
+                        </label>
+                        <a class="find-password" id="zuJuan" href="{#:U('Index/Index/getPassword')#}">忘记密码？</a>
+                    </div>
+                    <div class="lf-login-btn">
+                        <input class="login-big-btn nor-btn iQQLogin" type="button" value="登录" id="loginSubmit">
+                    </div>
+
+                </form>
+
+                <!-- right-helper -->
+                <div class="right-helper">
+                    <p class="helper">还没有帐号？ <a href="{#:U('User/Index/registerIndex')#}" class="link">免费注册</a></p>
+                    <p class="qq-login">您还可以使用腾讯QQ登录<br />
+                    <a class="QQLogin" href="javascript:" style="color:#4f8ee6;"><img
+                            src="__PUBLIC__/index/imgs/icon/Connect_logo_4.png" alt=""></a>
+                    </p>
+                    <p>
+                    需要帮助请  <a class="link" href="{#:U('Index/Index/about',array('param'=>'aboutOnlineS')#}" target="_blank">联系客服</a>。
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    <!-- 其它登录方式选择身份 END-->
+{#include file="Index@Common/secondFooter" /#}

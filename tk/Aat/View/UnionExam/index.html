@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {#include file="Common:head"/#}
+</head>
+
+<body>
+<div id="wrapper">
+{#include file="Common:header"/#}
+    <div id="content" class="w980 mc pt90 pb20">
+        <div class="box02 mb20 mylx_box">
+            <!--题目-->
+            <div class="zt_title">
+                <div class="fl pt20 pl20">我的练习</div>
+            </div>
+            <!--测试记录-->
+            <div id="s_record" class="mysc_box">
+                <!--试卷收藏-->
+                <div class="stlb01">
+                    <ul class="list_stlb01">
+                        {#volist name="list" id="node" #}
+                        <li><div class="st_bt_box fl">
+                                <div class="st_bt">{#$node.PaperName#}</div>
+                                <p>编号： {#$node.PaperID#}&nbsp;&nbsp; 类型：{#$node.IfWL#}&nbsp;&nbsp;类别：{#$node.TypeName#}&nbsp;&nbsp;</p>
+                            </div>
+                            <div class="an_box fr">
+                                <a class="an02 fr mr5" target="_blank" href="{#:U('Aat/UnionExam/downPaper',array('paperID'=>$node['PaperID']))#}"><span class="an_left"></span><span class="an_cen">下载试卷</span><span class="an_right"></span></a>
+                            </div>
+                        </li>
+                        {#/volist#}
+                    </ul>
+                    <div class="pagination" style="display: block;"></div>
+                </div>
+                <!--试卷收藏 END-->
+            </div>
+            <!--右侧快捷按钮-->
+            <div id="db_dh_box" style="display: none;">
+                <a class="an_go_top" href="javascript:;"></a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        {#include file="Common:footer"/#}
+    </div>
+</div>
+</body>
+</html>

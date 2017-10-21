@@ -1,0 +1,46 @@
+<form method='post' id='form1'>
+    <TABLE class="list" cellpadding="5" cellspacing="0" border="1">
+    <tr><td height="5" colspan="3" class="topTd" ></td></tr>
+    <TR>
+        <TD class="tRight" style="width:100px">试题预览：</TD>
+        <TD class="tLeft" colspan="2"><div style="height:150px;width:430px;overflow:auto;">
+        <p>【题文】{#$testData.Test|default='无'#}</p>
+        </div></TD>
+    </TR>
+    <TR>
+        <TD class="tRight" style="width:100px">公式信息：</TD>
+        <TD class="tLeft" colspan="2">
+            <div id='equationDiv' size='{#$len#}'>
+                {#if condition="$len==0"#}
+                    <div style='width:100%; margin-top:140px;text-align:center;color:red;'>该题未包含可编辑的公式</div>
+                {#else/#}
+                    {#for start="0" end='$len'#}
+                        <div class='equationInput'>
+                            <span class='equationInputDel'>删除</span>
+                            <span class='equationTitle'>【公式{#$i+1#}】</span>
+                            <textarea name='equation[]'>{#$testData['Equation'][$i]|default=''#}</textarea>
+                        </div>
+                    {#/for#}
+                {#/if#}
+            </div>
+        </TD>
+    </TR>
+    <TR>
+        <TD class="tLeft" colspan="3"><div style="width:100%; text-align:center;">
+        <p>共有&nbsp;<strong style='color:red;' id='equationSize'>{#$len#}</strong>&nbsp;个公式。<a href="#" class='addEquation'>新增公式</a></p>
+        </div></TD>
+    </TR>
+    <TR>
+        <TD ></TD>
+        <TD class="center"><div style="width:85%;margin:5px">
+            <input type="hidden" name='verify' value='{#$verify#}'>
+            <INPUT TYPE="hidden" name="workid" value="{#$workid#}">
+            <INPUT TYPE="hidden" name="testid" value="{#$testid#}">
+            <INPUT TYPE="hidden" name="classify" value="{#$classify#}">
+        <div class="impBtn fLeft"><INPUT tag='form1' u='{#:U('Teacher/StudentWork/save')#}' TYPE="button" value="保存" class="save imgButton mysubmit"></div>
+        <div class="impBtn fLeft m-l10"><INPUT TYPE="reset" class="reset imgButton" value="重置" ></div>
+        </div></TD>
+    </TR>
+    <tr><td height="5" colspan="3" class="bottomTd" ></td></tr>
+    </TABLE>
+</form>

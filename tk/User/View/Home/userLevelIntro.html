@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>用户信息</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="在线组卷系统,用户信息,升级,宣传赚点" />
+    <meta name="description" content="在线组卷系统用户信息升级宣传赚点" />
+    <link type="text/css" href="__PUBLIC__/default/css/common.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/default/css/user.css" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script>
+    var local='{#:U('Index/main')#}';
+    </script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/common.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/getSelectData.js"></script>
+</head>
+<body>
+<div id="rightdiv">
+    <div id="rightTop" class="crumbs-wrap">
+        <div id="categorylocation" class="g-crumbs">
+            <span class="now-path">当前位置：</span>
+            <span id="local_text"></span>
+            >  用户档案 > 权限介绍
+        </div>
+    </div>
+    <div id="main">
+    <div class="user-level">
+    <!-- 用户权限分类 -->
+        <div class="ul-index-container clearfix">
+            <span class="ul-item-group">
+                <span class="ul-item-group-tit">
+                    <h4>集体用户：</h4>
+                </span>
+                {#volist name='group["team"]' id='up'#}
+                    {#if condition="$up['belong']"#}
+                        <span class="ul-item ul-used">
+                            <span class="ul-used-tips">
+                              您当前的账号权限是 ：
+                              <span class="red">{#$userGroup.name#}</span> <b></b>
+                            </span>
+                            <i class="iconfont">&#xe60b;</i>
+                            <cite>{#$up.name#}</cite>
+                        </span>
+                    {#else /#}
+                        <span class="ul-item">
+                            <i class="iconfont">&#xe60c;</i>
+                            <cite>{#$up.name#}</cite>
+                        </span>
+                                      {#/if#}
+                {#/volist#}
+            </span>
+            <span class="ul-item-group">
+                <span class="ul-item-group-tit">
+                    <h4>个人用户：</h4>
+                </span>
+                {#volist name='group["person"]' id='up'#}
+                    {#if condition="$up['belong']"#}
+                        <span class="ul-item ul-used">
+                            <span class="ul-used-tips">
+                                                      您当前的账号权限是 ：
+                              <span class="red">{#$up.name#}</span> <b></b>
+                            </span>
+                            <i class="iconfont">&#xe60b;</i>
+                            <cite>{#$up.name#}
+                                {#if condition="$up.name eq 'VIP专享用户'"#}
+                                <a class="goToBuy" href="javascript:">购买</a>
+                                {#elseif condition="$up.name eq 'VIP至尊用户'"/#}
+                                <a class="goToBuy" href="javascript:">购买</a>
+                                {#/if#}
+                            </cite>
+                        </span>
+                    {#else /#}
+                        <span class="ul-item">
+                            <i class="iconfont">&#xe611;</i>
+                            <cite>{#$up.name#}
+                                {#if condition="$up.name eq 'VIP专享用户'"#}
+                                <a class="goToBuy" href="javascript:">购买</a>
+                                {#elseif condition="$up.name eq 'VIP至尊用户'"/#}
+                                <a class="goToBuy" href="javascript:">购买</a>
+                                {#/if#}
+                            </cite>
+                        </span>
+                    {#/if#}
+                {#/volist#}
+            </span>
+            <div class="f-yahei" style="font-size:16px;text-align:center;color:#f00;padding-top:15px;">{#$slogan#}</div>
+        </div>
+        <!-- 用户权限分类 end-->
+           <!-- 用户权限详情 -->
+        <div class="ul-table-container">
+            <table class="ul-table" id="userLevelTable">
+                <thead>
+                <tr>
+                        <th><span>网站功能</span></th>
+                        <th><span>{#$header[1]#}</span></th>
+                        <th><span>{#$header[2]#}</span></th>
+                        <th><span>{#$header[3]#}</span></th>
+                        <th><span>{#$header[4]#}</span></th>
+                        <th><span>{#$header[5]#}</span></th>
+                        <th><span>{#$header[6]#}</span></th>
+                </tr>
+                </thead>
+                <tbody>
+                    {#foreach name='list' item='record'#}
+                        <tr>
+                            <td>
+                                <span>
+                                    {#if condition="$record[0] eq 'Y'"#}
+                                        <i class="iconfont true"></i>&nbsp;
+                                    {#elseif condition="$record[0] eq 'N'"/#}
+                                        <i class="iconfont false"></i>&nbsp;
+                                    {#else/#}
+                                            {#$record[0]#}
+                                    {#/if#}
+                                </span>
+                            </td>
+                            <td>
+                                <span>
+                                    {#if condition="$record[1] eq 'Y'"#}
+                                        <i class="iconfont true"></i>&nbsp;
+                                    {#elseif condition="$record[1] eq 'N'"/#}
+                                        <i class="iconfont false"></i>&nbsp;
+                                    {#else/#}
+                                            {#$record[1]#}
+                                    {#/if#}
+                                </span>
+                            </td>
+                            <td>
+                                <span>
+                                    {#if condition="$record[2] eq 'Y'"#}
+                                        <i class="iconfont true"></i>&nbsp;
+                                    {#elseif condition="$record[2] eq 'N'"/#}
+                                        <i class="iconfont false"></i>&nbsp;
+                                    {#else/#}
+                                            {#$record[2]#}
+                                    {#/if#}
+                                </span>
+                            </td>
+                            <td>
+                                <span>
+                                    {#if condition="$record[3] eq 'Y'"#}
+                                        <i class="iconfont true"></i>&nbsp;
+                                    {#elseif condition="$record[3] eq 'N'"/#}
+                                        <i class="iconfont false"></i>&nbsp;
+                                    {#else/#}
+                                            {#$record[3]#}
+                                    {#/if#}
+                                </span>
+                            </td>
+                            <td>
+                                <span>
+                                    {#if condition="$record[4] eq 'Y'"#}
+                                        <i class="iconfont true"></i>&nbsp;
+                                    {#elseif condition="$record[4] eq 'N'"/#}
+                                        <i class="iconfont false"></i>&nbsp;
+                                    {#else/#}
+                                            {#$record[4]#}
+                                    {#/if#}
+                                </span>
+                            </td>
+                            <td>
+                                <span>
+                                    {#if condition="$record[5] eq 'Y'"#}
+                                        <i class="iconfont true"></i>&nbsp;
+                                    {#elseif condition="$record[5] eq 'N'"/#}
+                                        <i class="iconfont false"></i>&nbsp;
+                                    {#else/#}
+                                            {#$record[5]#}
+                                    {#/if#}
+                                </span>
+                            </td>
+                            <td>
+                                <span>
+                                    {#if condition="$record[6] eq 'Y'"#}
+                                        <i class="iconfont true"></i>&nbsp;
+                                    {#elseif condition="$record[6] eq 'N'"/#}
+                                        <i class="iconfont false"></i>&nbsp;
+                                    {#else/#}
+                                            {#$record[6]#}
+                                       {#/if#}
+                                   </span>
+                            </td>
+                        </tr>
+                    {#/foreach#}
+                    <tr class="ul-table-price">
+                        <td><span>价格</span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td>0</td>
+                        <td><span><s>原价:50 元/月</s><br />优惠价:{#$vipPrice#}元/月</span></td>
+                        <td><span><s>原价:100 元/月</s><br />优惠价:{#$superVipPrice#}元/月</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>操作</span></td>
+                        <td><span>咨询电话：400-0383-483 或联系QQ： 5686547852</span></td>
+                        <td><span>咨询电话：400-0383-483 或联系QQ： 5686547852</span></td>
+                        <td><span>咨询电话：400-0383-483 或联系QQ： 5686547852</span></td>
+                        <td></td>
+                        <td><a class="goToBuy nor-btn" href="javascript:">购买</a><br /><span class="red">{#$slogan#}</span></td>
+                        <td><a class="goToBuy nor-btn" href="javascript:">购买</a><br /><span class="red">{#$slogan#}</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- 用户权限详情 end-->
+    </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="__PUBLIC__/default/js/user.js"></script>
+<script type="text/javascript">
+    $(function(){
+        //当前用户等级对应权限高亮
+        $("#userLevelTable tr th:nth-child({#$eq#}),#userLevelTable tr td:nth-child({#$eq#})").addClass("used-on");
+        //支付链接跳转
+        $(document).on('click','.goToBuy',function(){
+            window.open(U('User/Index/operOrder'));
+        });
+        $('#main').height($(window).height()-52);
+        $.myUser.init({#$user.GradeID#});
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+<?php
+//000000000000a:5:{i:1;a:4:{s:6:"TypeID";s:1:"1";s:8:"TypeName";s:12:"标准试卷";s:12:"DefaultStyle";s:1:"1";s:7:"OrderID";s:2:"99";}i:2;a:4:{s:6:"TypeID";s:1:"2";s:8:"TypeName";s:12:"期中期末";s:12:"DefaultStyle";s:1:"2";s:7:"OrderID";s:2:"99";}i:3;a:4:{s:6:"TypeID";s:1:"3";s:8:"TypeName";s:12:"单元测试";s:12:"DefaultStyle";s:1:"2";s:7:"OrderID";s:2:"99";}i:4;a:4:{s:6:"TypeID";s:1:"4";s:8:"TypeName";s:12:"课时训练";s:12:"DefaultStyle";s:1:"2";s:7:"OrderID";s:2:"99";}i:11;a:4:{s:6:"TypeID";s:2:"11";s:8:"TypeName";s:12:"测试模板";s:12:"DefaultStyle";s:1:"1";s:7:"OrderID";s:2:"99";}}
+?>

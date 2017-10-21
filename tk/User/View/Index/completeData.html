@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/register.css{#$Think.config.UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js"></script>
+    <script>
+        var local='{#:U('Home/Index/main')#}';
+    </script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('a,img,div,span');</script>
+    <![endif]-->
+    <script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/tcompleteData.js{#$Think.config.UPDATE_FILE_DATE#}"></script>
+</head>
+<body class="bg-white">
+    <!--首页头部-->
+    {#include file="Index@Common/secondTop" /#}
+    <!--首页头部-end-->
+    <div class="form-wrap bg-f8f8f8">
+        <div class="form-container w1000">
+            <div class="form-bd-wrap clearfix">
+                <div class="form-left-bd">
+                    <form action="{#:U('User/Index/completeInfo')#}" method="post" id="complete">
+                        <div class="form-item" >
+                            <span class="item-tit">
+                                <s>*</s>
+                                地区：
+                            </span>
+                            <span class="item-content select-area" style="max-width:330px;">
+                                <select class="short-select io-left AreaID" id="province">
+                                    <option value="">加载中..</option>
+                                </select>
+                            </span>
+                            <span class="item-msg"><i class="false iconfont">&#xe634;</i>请选地区</span>
+                        </div>
+                        <div class="form-item">
+                            <span class="item-tit">
+                                <s>*</s>
+                                学校：
+                            </span>
+                            <span class="item-content">
+                                <select class="normal-select SchoolID" name="SchoolID">
+                                    <option value="">请选择学校</option>
+                                </select>
+                            </span>
+                            <span class="item-msg">
+                                <i class="false iconfont">&#xe634;</i>
+                                请选择学校
+                            </span>
+                        </div>
+                        <div class="form-item">
+                            <span class="item-tit">
+                                <s>*</s>
+                                年级：
+                            </span>
+                            <span class="item-content">
+                                <select class="normal-select GradeID" name="GradeID">
+                                    <option value="">--请选择年级--</option>
+                                {#foreach name="classGrade" item="cg"#}
+                                    <optgroup label="{#$cg.GradeName#}">
+                                    {#foreach name="cg.sub" item="subcg"#}
+                                        <option value="{#$subcg.GradeID#}">{#$subcg.GradeName#}</option>
+                                    {#/foreach#}
+                                    </optgroup>
+                                {#/foreach#}
+                                </select>
+                            </span>
+                            <span class="item-msg">
+                                <i class="false iconfont">&#xe634;</i>
+                                请选择年级
+                            </span>
+                        </div>
+                        <div class="form-item">
+                            <span class="item-tit">
+                                <s>*</s>
+                                学科：
+                            </span>
+                            <span class="item-content">
+                                <select class="normal-select SubjectID" name="SubjectID">
+                                    <option value="">--请选择--</option>
+                                {#foreach name="subject" item="sj"#}
+                                    <optgroup label="{#$sj.SubjectName#}">
+                                    {#foreach name="sj.sub" item="subsj"#}
+                                        <option value="{#$subsj.SubjectID#}">{#$subsj.SubjectName#}</option>
+                                    {#/foreach#}
+                                    </optgroup>
+                                {#/foreach#}
+                                </select>
+                            </span>
+                            <span class="item-msg">
+                                <i class="false iconfont">&#xe634;</i>
+                                请选择学科
+                            </span>
+                        </div>
+                        <div class="form-item">
+                            <span class="item-tit">
+                                <s>*</s>
+                                邮箱：
+                            </span>
+                            <span class="item-content">
+                                <span class="normal-input-wrap">
+                                    <input class="normal-input Email" type="text" value="" name="Email"/>
+                                </span>
+                            </span>
+                            <span class="item-msg">
+                                <i class="false iconfont">&#xe634;</i>
+                                请输入邮箱
+                            </span>
+                        </div>
+                        <div class="form-item">
+                            <span class="item-tit">
+                                地址：
+                            </span>
+                            <span class="item-content">
+                                <span class="normal-input-wrap">
+                                    <input class="normal-input Address" type="text" value="" name="Address"/>
+                                </span>
+                            </span>
+                            <span class="item-msg">
+                                <i class="true iconfont">&#xe631;</i>
+                            </span>
+                        </div>
+                        <div class="form-item">
+                            <span class="item-tit"></span>
+                            <span class="item-content">
+                                <a href="javascript:;" class="nor-btn normal_yes">完 成</a>
+                            </span>
+                            <span class="item-msg"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-right-bd reg-right-container">
+                    <div class="rr-container-inner reg-help">
+                        <h3 class="title">完善信息说明</h3>
+                        <div class="rh-context">
+                        1、请输入真实的地区、学校、姓名。<br />
+2、没有您的学校请 <a class="link" href="{#:U('Index/Index/about',array('param'=>aboutOnlineS))#}">联系客服</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    <!--footer-->
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/index/js/pingtai.js{#$Think.config.UPDATE_FILE_DATE#}"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+    <![endif]-->
+    {#include file="Index@Common/secondFooter" /#}
+    <!--footer-end-->
+    

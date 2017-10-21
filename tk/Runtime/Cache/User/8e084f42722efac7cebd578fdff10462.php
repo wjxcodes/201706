@@ -1,0 +1,142 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title><?php echo ($pageName); ?> - <?php echo ($config["IndexName"]); ?></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="组卷,题库">
+    <meta name="description" content="组卷,题库">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="/Public/default/css/common.css<?php echo (C("WLN_UPDATE_FILE_DATE")); ?>" rel="stylesheet" />
+    <link type="text/css" href="/Public/default/css/user.css<?php echo (C("WLN_UPDATE_FILE_DATE")); ?>" rel="stylesheet" />
+    <script type="text/javascript" src="/Public/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="/Public/default/js/common.js<?php echo (C("WLN_UPDATE_FILE_DATE")); ?>"></script>
+</head>
+<body>
+<div id="righttop">
+    <div id="categorylocation">
+        <span class="newPath">当前位置：</span>
+        &gt; 查看订单
+    </div>
+</div>
+<div id="divbox">
+    <div id="orderBox" class="PublicBox" style="overflow:hidden;overflow-y:auto">
+        <div class="PublicBoxnr orderContentBox">
+            <div class="workHistory"></div>
+        </div>
+    </div>
+    <div id="pagelistbox">
+        <div class="pagebox">
+            <span class="disabled">首页</span>
+            <span class="current">1</span>
+            <span class="disabled">末页</span>
+        </div>
+    </div>
+</div>
+
+<script>
+        jQuery.checkOrder = {
+             init:function(){
+                 this.initBoxHeight();
+                 this.bindEvent();
+                 this.loadOrder(1);
+             },
+             initBoxHeight:function(){
+                 var a = $(window).width();
+                 var b = $(window).height();
+                 var c = $("#pagelistbox").outerHeight();
+                 var h = b - $('#righttop').outerHeight(true)-c-10;
+                 if(a<790) a=790;
+                 $("#orderBox").width(a).height(h);
+             },
+             initEmpty:function(){
+                 var tmpStr='<div class="emptyBox">'+
+                         '<div class="emptyWrap">'+
+                         '<h1>您还没有购买过会员服务!</h1>'+
+                         '<div class="buyNow"><a href="javascript:">现在购买</a></div></div></div>';
+                 $('.orderContentBox').html(tmpStr);
+                 var b = $(window).height();
+                 var h = b - $('#righttop').outerHeight(true)-20;
+                 var h1= $('.emptyWrap').height();
+                 $('.emptyBox').height(h);
+                 $('.emptyWrap').css({'paddingTop':(h-h1)/3+'px'});
+             },
+             bindEvent:function(){
+                 $("#pagelistbox a").live("click",function(){
+                     $.checkOrder.loadOrder($(this).attr('page'));
+                 });
+                 $('.delOrder').live('click',function(){
+                      var oid = $(this).attr('oid');
+                      $.myDialog.normalMsgBox('delOrderDiv','订单删除',450,'确认删除编号为:'+'【<span id="delOrderID" oid="'+oid+'">'+$(this).parent().parent().find('.orderID').html()+"</span>】的订单?",3);
+                 });
+                 $('#delOrderDiv .normal_yes').live('click',function(){
+                     var oid=$('#delOrderID').attr('oid');
+                     $.myDialog.normalMsgBox('delOrderDiv','删除订单',450,'正在删除订单,请稍候...');
+                     $.post(U('User/Home/delOrder'),{ 'oid': oid,'times':Math.random()}, function(data) {
+                         $('#delOrderDiv .tcClose').click();
+                         if(data['data'][0]!='success'){
+                             alert(data['data'][1]);
+                             return false;
+                         }
+                         $('#tr'+oid).fadeOut();
+                         $.checkOrder.loadOrder(1);
+                     });
+                 });
+                 $('.goToPay').live('click',function(){
+                     var oid = $(this).attr('oid');
+                     window.parent.location.href = U('User/Home/goToPay?oid='+oid);
+                 });
+                 $('.buyNow').live('click',function(){
+                     window.parent.location.href = U('User/Index/operOrder');
+                 });
+             },
+             loadOrder:function(page){
+                 $('.workHistory').html($.myCommon.loading());
+                 $.post(U('User/Home/getOrderList'),{'page':page,'times':Math.random()}, function(data) {
+                     if(data['data'][0]!='success'){
+                         $.checkOrder.initEmpty();
+                         return false;
+                     }
+                     var tmpStr='<table class="g-table g-table-bordered">'+
+                                '<thead><tr>'+
+                                '<th width="40">编号</th>'+
+                                '<th width="130">订单号</th>'+
+                                '<th>订单名称</th>'+
+                                '<th width="85">金额</th>'+
+                                '<th width="80">下单时间</th>'+
+                                '<th width="70">订单状态</th>'+
+                                '<th width="120">操作</th>'+
+                                '</tr></thead>'+
+                                '<tbody>';
+                     for(var i in data['data'][1]){
+                         var temp = data['data'][1][i];
+                         tmpStr+='<tr id="tr'+(parseInt(i)+1)+'">';
+                         tmpStr+='<td align="center">'+(parseInt(i)+1)+'</td>'+
+                                 '<td class="orderID"><span class="order-num">'+temp['OrderID']+'</span></td>'+
+                                 '<td><span class="order-name f-yahei">'+temp['OrderName']+'</span></td>'+
+                                 '<td><span class="red f-yahei">￥'+temp['TotalFee']+'</span></td>'+
+                                 '<td align="center" class="order-time">'+temp['OrderTime']+'</td>';
+                                 if(temp['OrderStatus'] == 0 ){
+                                     tmpStr+='<td align="center" class="red f-yahei">待付款</td>'+
+                                     '<td align="right" class="lastOperate"><a class="nor-btn td_btn goToPay" oid="'+temp['OrderID']+'">去支付</a>&nbsp;<a href="javascript:;" class="btn_normal delOrder" oid="'+temp['OrderID']+'">删除</a href="javascript:;"></td>';
+                                 }else{
+                                     tmpStr+='<td align="center" class="f-yahei">已付款</td>'+
+                                             '<td align="right" class="lastOperate"><a class="btn_normal delOrder" href="javascript:;" oid="'+temp['OrderID']+'">删除</a></td>';
+                                 }
+                         tmpStr+='</tr>';
+                     }
+                     tmpStr+='</tbody></table>';
+                     $('.workHistory').html(tmpStr);
+                     $.myPage.showPage(data['data'][2],data['data'][3],page,0);
+                 });
+             }
+        }
+        $(function(){
+            $.checkOrder.init();
+            $(window).on('resize',function(){
+                $.checkOrder.initBoxHeight();
+            });
+        });
+</script>
+</body>
+</html>

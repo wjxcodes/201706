@@ -1,0 +1,40 @@
+                        {#if condition="empty($result)"#}
+                        <!-- 没有任务 -->
+                        <div class="tl-item-empty data-empty"></div>
+                        {#/if#}
+                        {#foreach name='result' item='rs'#}
+                        <div class="tl-item" onclick="window.location.href='{#:U('MissionHall/taskDetails',array('id'=>$rs['MHTID']))#}'">
+                                <div class="tl-intro-container">
+                                    <h3 class="tl-item-title">
+                                    <a href="{#:U('MissionHall/taskDetails',array('id'=>$rs['MHTID']))#}">
+                                {#$rs.Title#}
+                                {#if condition='$rs.Hot neq 0'#}
+                                <font color='red'>【置顶】</font>
+                                {#/if#}</a></h3>
+                                    <div class="tli-context"><img class="tl-item-img" src="{#$rs.Img#}"
+                                                                  alt=""/>
+                                                                  {#$rs.Description#}
+                                    </div>
+                                </div>
+                            <div class="tl-handle">
+                            <span class="reward"><b>{#$rs.Reward#}</b></span>
+                                <span class="status">
+                                    <span>
+                                        <i class="iconfont">&#xe61e;</i>
+                                        {#$rs.Num#}人
+                                    </span>
+                                    <span>
+                                        <i class="iconfont">&#xe628;</i>
+                                        {#$rs.EndDay#}
+                                    </span>
+                                </span><br>
+                                （{#$rs.subjectName#}&nbsp;{#$rs.levelName#}&nbsp;）
+                                <a href="{#:U('MissionHall/taskDetails',array('id'=>$rs['MHTID']))#}" class="pure-button pure-button-primary">查看详情</a>
+                            </div>
+                        </div>
+                        {#/foreach#}
+                        {#if condition="$pages"#}
+                        <div class="page-wrap    >
+                               <a href="javascript:;" class="list-show-more" id="showMore">    看更多</a>
+                           </div>
+                        {#/if#}

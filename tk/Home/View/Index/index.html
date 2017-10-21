@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>{#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <link type="text/css" href="__PUBLIC__/default/css/common1.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/default/css/index.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <!--<script>var local='{#:U('Index/index')#}';</script>-->
+    <script>
+        var local='{#:U('Index/index')#}';
+        var mark='login';
+        var useAction='{#$useAction#}';
+    </script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('input,a,img,div,span');</script>
+    <![endif]-->
+    <script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/index.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+</head>
+<body>
+    {#include file="header"/#}
+    <div class="main">
+        <div class="mtop">
+            <div class="login">
+                <div class="t">
+                    <div style="padding:35px 0px 10px 0px; width:290px; margin:0 auto;font-weight:bold;"> <font style="font-size:24px" face="微软雅黑,黑体" color="#666666">用户登录</font>
+                    </div>
+                    <div class="bd">
+                        <div id="loginMsg" style="color:#555555; text-align:left; padding-top:80px; font-size:18px; font-family:微软雅黑,黑体; display:none"></div>
+                        <form id="loginform">
+                            <fieldset id="inputs" >
+                                <div class="formUser"><input id="UserName" type="text"  class="wbk01"  value="">
+                                <input id="Password" type="password" class="wbk01 Password"  value=""></div>
+                                <div style="width:290px; padding-top:10px; height:30px;overflow:hidden;">
+                                    <div style="float:left;margin-top:5px;">
+                                        <label>
+                                            <input type="checkbox" id="saveLogin" />&nbsp;记住密码
+                                        </label>
+                                    </div>
+                                    <div style="float:right">
+                                        <input type="button"  value="开通注册" id="zcsubmit"/>
+                                        <input type="button" id="loginSubmit" value="登录"></div>
+                                </div>
+                                <div class="wjmm">
+                                    <a href="{#:U('User/Index/getPassword')#}">忘记密码</a>
+                                </div>
+                                <div class="showPpt form-show-ppt"><a href="/ppt/题库介绍.ppt">1.介绍手册</a><a href="/ppt/题库使用手册.ppt">2.操作手册</a><a href="/ppt/题库开通步骤.ppt">3.开通步骤</a></div>
+                                <div style="display:none;">
+                                    <img src="__PUBLIC__/default/image/loading.gif"/>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {#include file="footer"/#}
+    </div>
+</body>
+</html>

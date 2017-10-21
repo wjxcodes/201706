@@ -1,0 +1,166 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+<style>
+    button{
+        cursor:pointer;
+        padding:2px 2px;
+        border:1px outset #999; 
+        background-color:#cde;
+    }
+</style>
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">{#$pageName#}</div>
+<!--  功能操作区域  -->
+<div class="operate">
+    {#html:imageBtn name="edit" value="提取" class="btextract" style="impBtn hMargin fLeft shadow" /#}
+    {#html:imageBtn name="delete" value="删除" class="btdelete" style="impBtn hMargin fLeft shadow" /#}
+    {#html:imageBtn name="revert" value="刷新" class="btflush" style="impBtn hMargin fLeft shadow" /#}
+    
+    <!-- 查询区域 -->
+    <FORM METHOD="POST" ACTION="__URL__">
+    <div class="fRig">
+        <div class="fLeft"><span id="key"><INPUT id="name" TYPE="text" NAME="name" value="{#$Think.request.name#}" title="题型查询" class="medium" ></span></div>
+        {#html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /#}
+        {#html:imageBtn name="adv" value="高级" id="showText" style="impBtn hMargin fLeft shadow" /#}
+    </div>
+    <!-- 高级查询区域 -->
+    <div id="searchM" class=" none search cBoth">
+        <TABLE border="0" cellpadding="1" cellspacing="3" width="100%">
+        <TR>
+            <TD class="tRight" width="60">题型：</TD>
+            <TD><INPUT TYPE="text" NAME="TypesName" class="small" value="{#$Think.request.TypesName#}" ></TD>
+            <TD class="tRight" width="80">所属学科：</TD>
+            <TD><SELECT class="medium bLeft" NAME="SubjectID">
+            <option value="">选择</option>
+                {#volist name="subjectArray" id="vo"#}
+                    <optgroup label='{#$vo.SubjectName#}'>
+                    {#if condition="$vo['sub']"#}
+                    {#volist name="vo['sub']" id="item"#}
+                        <option value="{#$item.SubjectID#}" {#eq name="item.SubjectID" value="$edit.PID"#}selected="selected"{#/eq#}>　　{#$item.SubjectName#}</option>
+                    {#/volist#}
+                    {#/if#}
+                    </optgroup>
+                {#/volist#}
+            </SELECT></TD>
+        </TR>
+        </TABLE>
+    </div>
+        </FORM>
+</div>
+<!-- 功能操作区域结束 -->
+
+<!-- 列表显示区域  -->
+<div class="list" >
+<div id="result" class="result none"></div>
+<!-- Think 系统列表组件开始 -->
+<table id="checkList" class="list" cellpadding="5" cellspacing="0" border="1">
+    <tr><td height="5" colspan="11" class="topTd" ></td></tr>
+    <tr class="row" >
+        <th width="8"><input type="checkbox" id="CheckAll" tag="checkList"></th>
+        <th width="10%">编号</th>
+        <th>文档名称</th>
+        <th>作者</th>
+        <th>所属学科</th>
+        <th>审核用户</th>
+        <th>添加时间</th>
+        <th>用户修改时间</th>
+        <th>最后审核时间</th>
+        <th>文档状态</th>
+        <th width='80'>操作</th>
+    </tr>
+    {#volist name="list" id="node" #}
+        <tr class="row lists" jl=''>
+        <td><input type="checkbox" class="key" value="{#$node.DUID#}"></td>
+        <td>{#$node.DUID#}</td>
+        <td>{#$node.Title#}</td>
+        <td>{#$node.UserName#}</td>
+        <td>{#$node.SubjectName#}</td>
+        <td>{#$node.AdminName#}</td>
+        <td>{#if condition="$node.AddTime neq 0"#}{#$node.AddTime|date="Y-m-d H:i:s",####}{#/if#}</td>
+        <td>{#if condition="$node.ModifiedTime neq 0"#}{#$node.ModifiedTime|date="Y-m-d H:i:s",####}{#/if#}</td>
+        <td>{#if condition="$node.LastAuditTime neq 0"#}{#$node.LastAuditTime|date="Y-m-d H:i:s",####}{#/if#}</td>
+        <td>{#$node.Status#}</td>
+        <td>
+            <a href="{#:U('Custom/CustomDocUpload/notadopt',array('duID'=>$node[DUID]))#}" >审核不通过</a><br/>
+            <a href="{#:U('Custom/CustomDocUpload/Adopt',array('duID'=>$node[DUID]))#}">审核通过</a><br/>
+            <a href="{#:U('Custom/CustomDocUpload/showWord',array('docID'=>$node[DUID],'style'=>1))#}">下载文档</a><br/>
+            <a href="{#:U('Custom/CustomDocUpload/uploadWord',array('docid'=>$node[DUID],'style'=>1))#}" title='标引后的word' class='upload' docid='{#$node.DUID#}'>上传文档</a>
+            {#if condition="!empty($node['DocPath'])"#}
+            <br/><a href="{#:U('Custom/CustomDocUpload/extractTest',array('docid'=>$node[DUID]))#}" class='extract'>提取试题</a>
+            <br/><a href="{#:U('Custom/CustomTest/index',array('docid'=>$node[DUID]))#}" class='extract'>查看试题</a>
+            {#/if#}
+        </td>
+        </tr>
+    {#/volist#}
+    <tr><td height="5" colspan="11" class="bottomTd"></td></tr>
+</table>
+<!-- Think 系统列表组件结束 -->
+</div>
+<!--  分页显示区域 -->
+<div class="page">{#$page#}</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<div id='doSomeThing' style='display:none;'>
+    <form action="{#:U('Custom/CustomDocUpload/uploadWord')#}" target="uploadFrame" method="post" enctype="multipart/form-data">
+        <input type="hidden" name='id' id='primaryKeyId'>
+        <input type="hidden" name='docid'/>
+        <table class="list" cellpadding="5" cellspacing="0" border="1">
+            <tr>
+                <td width='120' align='right'>选择文档</td>
+                <td width="*">
+                    <input type="file" name='doc' class="formElement"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align='right'>
+                    <button type='submit' id='saveForm' class='mulitOperate'>保存</button>
+                    <button type='button' class='cancelForm'>取消</button>
+                </td>
+            </tr>
+        </table> 
+    </form>
+    <iframe src="" frameborder="0" scrolling="no" style='display:none;' name='uploadFrame'></iframe>
+</div>
+<script src='__PUBLIC__/zjadmin/js/originalityTpl.js'></script>
+<script>
+    var obj = 0;
+    config = $.extend(config, {
+        'editZone' : '<tr class="editForm"><td colspan="11"></td></tr>'
+    });
+    $('.upload').live('click', function(){
+        var that = $(this);
+        obj = that;
+        showForm(that);
+        var form = $('#doSomeThing form');
+        form.find('input[name="docid"]').val(that.attr('docid'));
+        form.find('input[name="doc"]').val('');
+        return false;
+    });
+    $('.cancelForm').click(function(){
+        hideForm();
+    });
+    $('#doSomeThing form').submit(function(){
+        jInfo('上传中请稍候.....','上传数据');
+    });
+    function uploadCb(info){
+        jClose();
+        if(info != 'success'){
+            alert(info);
+        }else{
+            var id = obj.attr('docid');
+            if(obj.siblings('.extract').length == 0)
+                var extractUrl=U('Custom/CustomDocUpload/extractTest?docid='+id);
+                obj.after($('<br/><a href="'+extractUrl+'") >提取试题</a>'));
+            hideForm();
+            alert('保存成功！');
+        }
+    }
+</script>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

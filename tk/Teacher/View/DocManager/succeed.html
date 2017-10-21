@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html>
+  <head>
+    <title>页面提示</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href ="__PUBLIC__/teacher/css/style.css" />
+  </head>
+  <body>
+    <div class="message">
+      <TABLE class="message"  cellpadding=0 cellspacing=0 >
+          <tr>
+              <td height='5'  class="topTd" ></td>
+          </tr>
+          <TR class="row" >
+              <th class="tCenter space">&nbsp;&nbsp;&nbsp;{#$msgTitle#}&nbsp;&nbsp;&nbsp;</th>
+          </TR>
+          {#if condition='$link neq ""'#}
+            <tr height='60' align="center">
+              <td><img src='__PUBLIC__/teacher/images/loading.gif' height="60" id='loading'/></td>
+            </tr>
+          {#/if#}
+          <TR class="row">
+              <TD style="color:red">&nbsp;&nbsp;&nbsp;{#$message#}&nbsp;&nbsp;&nbsp;</TD>
+          </TR>
+          {#if condition='$seconds gt 0'#}
+            <tr>
+              <TD>页面将在 <span id="spanSeconds" style="color:blue;font-weight:bold">{#$seconds#}</span> 秒后自动跳转,如果不想等待,直接点击 <A HREF="{#$link#}">这里</A> 跳转</TD>
+            </tr>
+          {#/if#}
+          <tr>
+              <td height='5' class="bottomTd"></td>
+          </tr>
+      </TABLE>
+    </div>
+
+    <script language="JavaScript">
+    <!--
+    var seconds = {#$seconds#};
+    var link = '{#$link#}';
+    window.onload = function(){  
+        if(seconds > 0){
+            window.setInterval(redirection, 1000);
+        }else if(link != ''){
+            window.location.href = '{#$link#}';
+        }   
+    }
+
+    function redirection(){
+        if (seconds <= 0){
+            window.clearInterval();
+            return;
+        }
+        seconds --;
+        document.getElementById('spanSeconds').innerHTML = seconds;
+        if (seconds == 0){
+            window.clearInterval();
+            window.location.href = '{#$link#}';
+        }
+    }
+    //-->
+    </script>
+  </body>
+</html>

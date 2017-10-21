@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<head>
+    <title>updata</title>
+    <!--@todo修改为本地的-->
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.11.1.min.js{#:C(WLN_UPDATE_FILE_DATE)#}"></script>
+</head>
+<body>
+<div>保存中2...
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        alertTest();
+        function alertTest() {
+            var str = window.oa_main.getcutpicFoo();
+            var url = "{#:U('ApiUser/uploadPic')#}";
+            $.post(url,{pic:str,times:Math.random()}, function (data) {
+                if (data.status == 1) {
+                    window.oa_main.userphototFoo();
+                } else {
+                    window.oa_main.alertFoo(data.data);
+                    window.oa_main.userphotofFoo();
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">{#$pageName#}</div>
+<!--  功能操作区域  -->
+<div class="operate">
+    {#html:imageBtn name="add" value="新增" class="btadd" style="impBtn hMargin fLeft shadow" /#}
+    {#html:imageBtn name="edit" value="编辑" class="btedit" style="impBtn hMargin fLeft shadow" /#}
+    {#html:imageBtn name="delete" value="删除" class="btdelete" style="impBtn hMargin fLeft shadow" /#}
+    {#html:imageBtn name="revert" value="刷新" class="btflush" style="impBtn hMargin fLeft shadow" /#}
+
+    <!-- 查询区域 -->
+    <FORM METHOD="POST" ACTION="__URL__">
+    <div class="fRig">
+        <div class="fLeft"><span id="key"><INPUT id="versionName" TYPE="text" NAME="VersionName" value="{#$Think.request.VersionName#}" title="版本号查询" placeholder="版本号查询如2.0.0" class="medium" ></span></div>
+        {#html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /#}
+        {#html:imageBtn name="adv" value="高级" id="showText" style="impBtn hMargin fLeft shadow" /#}
+    </div>
+    <!-- 高级查询区域 -->
+    <div id="searchM" class=" none search cBoth">
+        <TABLE border="0" cellpadding="1" cellspacing="3" width="100%">
+        <TR>
+            <TD class="tRight" width="50">类型：</TD>
+            <TD><SELECT class="small bLeft" NAME="AppType">
+            <option value="">选择</option>
+            <option value="1" {#eq name="Think.request.AppType" value="1"#}selected="selected"{#/eq#}>AndroidPhone</option>
+            <option value="3" {#eq name="Think.request.AppType" value="3"#}selected="selected"{#/eq#}>IPhone</option>
+            <option value="2" {#eq name="Think.request.AppType" value="2"#}selected="selected"{#/eq#}>AndroidPad</option>
+            <option value="4" {#eq name="Think.request.AppType" value="4"#}selected="selected"{#/eq#}>IPad</option>
+            </SELECT></TD>
+        </TR>
+        </TABLE>
+    </div>
+    </FORM>
+</div>
+<!-- 功能操作区域结束 -->
+
+<!-- 列表显示区域  -->
+<div class="list" >
+<div id="result" class="result none"></div>
+<!-- Think 系统列表组件开始 -->
+<table id="checkList" class="list" cellpadding="5" cellspacing="0" border="1">
+    <tr><td height="5" colspan="11" class="topTd" ></td></tr>
+    <tr class="row" >
+        <th width="8"><input type="checkbox" id="CheckAll" tag="checkList"></th>
+        <th width="10%">编号</th>
+        <th>类型</th>
+        <th>版本号（版本Code）</th>
+        <th>升级类型</th><!--添加-->
+        <th>作用版本Code范围</th>
+        <th>安装包地址</th>
+        <th>更新内容</th>
+        <th>创建时间和用户</th>
+        <th>更新时间和用户</th>
+        <th>操作</th>
+    </tr>
+    {#volist name="list" id="node" #}
+        <tr class="row lists" jl=''>
+        <td><input type="checkbox" class="key" value="{#$node.VersionID#}"></td>
+        <td>{#$node.VersionID#}</td>
+        <td>{#if condition="($node.AppType eq '1')"#}AndroidPhone{#elseif condition="($node.AppType eq '2')"/#}AndroidPad{#elseif condition="($node.AppType eq '3')"/#}Iphone{#elseif condition="($node.AppType eq '4')"/#}Ipad{#else/#}{#$node.Types#}{#/if#}</td>
+        <td>{#$node.VersionName#}（{#$node.VersionCode#}）</td>
+        <td>{#if condition="($node.UpdateType eq '0')"#}不主动弹出{#elseif condition="($node.UpdateType eq '1')"/#}弹出提醒{#elseif condition="($node.UpdateType eq '2')"/#}强制更新{#/if#}</td><!--添加-->
+        <td>{#$node.NeedUpdateCodeStart#}-{#$node.NeedUpdateCodeEnd#}</td>
+        <td>{#$node.FileUrl#}</td>
+        <td>{#$node.UpdateContent#}</td>
+        <td>{#$node.CreateUserName#}({#$node.CreateTime|date="Y-m-d H:i:s",####})</td>
+        <td>{#$node.EditUserName#}({#$node.EditTime|date="Y-m-d H:i:s",####})</td>
+        <td><a href="#" class="btedit" thisid="{#$node.VersionID#}">编辑</a>&nbsp;</td>
+        </tr>
+    {#/volist#}
+    <tr><td height="5" colspan="11" class="bottomTd"></td></tr>
+</table>
+<!-- Think 系统列表组件结束 -->
+</div>
+<!--  分页显示区域 -->
+<div class="page">{#$page#}</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

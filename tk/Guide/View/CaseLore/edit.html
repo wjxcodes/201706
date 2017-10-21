@@ -1,0 +1,101 @@
+<TABLE cellpadding="5" cellspacing="0" class="list" border="1">
+<tr><td height="5" colspan="7" class="topTd" ></td></tr>
+<TR>
+    <TD class="tRight" width="100">编号：</TD>
+    <TD class="tLeft" >{#$edit.LoreID#}
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight tTop">知识预览：</TD>
+    <TD class="tLeft">
+        <div style="width:450px;overflow:auto;"><p><font color="blue">【题文】</font>{#$edit.Lore|default="<font color='red'>无</font>"#}
+            <p><font color="blue">【答案】</font>{#$edit.Answer|default="<font color='red'>无</font>"#}
+        </div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight tTop">学科：</TD>
+    <TD class="tLeft">
+        {#$edit.SubjectName#}
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" width="100" height="35">所属栏目：</TD>
+    <TD class="tLeft" ><SELECT class="bLeft" NAME="MenuID" id="caseMenu">
+        <option value="">请选择</option>
+        {#volist name="menuArray" id="me"#}
+        <option value="{#$me.MenuID#}" {#eq name="me.MenuID" value="$edit.MenuID"#}selected=selected{#/eq#}>{#$me.MenuName#}</option>
+        {#/volist#}
+    </SELECT> <div class="impBtn" style="display:inline;padding:3px 0px;"></div>
+
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">章节：</TD>
+    <TD class="tLeft" ><SELECT id="chapter" class="chapter bLeft selectChapter" NAME="ChapterID">
+        <option value="">请选择</option>
+    </SELECT> <div class="impBtn" style="display:inline;padding:3px 0px;"><input id="addcp" name="addcp" class="add imgButton" type="button" value="添加"/></div>
+        <div class="cpinput" id='chapterList'></div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight tTop">是否入库：</TD>
+    <TD class="tLeft">
+        <label><input type="radio" name='IfIntro' value='1' {#if condition="$edit.IfIntro eq 1"#}checked=checked{#/if#}>是</label>
+        <label><input type="radio" name='IfIntro' value='0' {#if condition="($edit.IfIntro eq 0) or ($edit.IfIntro eq '')"#}checked=checked{#/if#}>否</label>
+    </TD>
+</TR>
+    <TR>
+        <TD></TD>
+        <TD class="center"><div style="width:85%;margin:5px">
+            <input TYPE="hidden" name="LoreID" class="loreID" value="{#$edit.LoreID#}">
+            <div class="impBtn fLeft"><INPUT tag='form1' u="{#:U('CaseLore/save')#}" TYPE="button" value="保存" class="save imgButton mysubmit"></div>
+        </div></TD>
+    </TR>
+</TABLE>
+
+
+<script>
+    var chapterParentStr="{#$chapterParentStr#}";
+
+    $('#chapter').chapterSelectLoad('__URL__',chapterParentStr);
+    var chapID='{#$edit.ChapterID#}';
+    var subjectID='{#$edit.SubjectID#}';
+    $('#chapter').allSelectLoad('__URL__',{"style":"getMoreData","list":"chapterList,chapter","subjectID":subjectID,"idList":{
+    "chapterList":chapID,"chapter":"0"}})
+    //添加章节考点
+    $('#addcp').live('click',function(){
+        if($('.selectChapter').last().val().indexOf('c')==-1){
+            alert('请选择正确的数据');
+            return false;
+        }
+
+        var cid=$('.selectChapter').last().val().replace('c','');
+        var xx_s="";
+        $('.selectChapter').each(function(){
+            xx_s+=' >> '+$(this).find("option:selected").text();
+        });
+        var inputcp='<div>#str# <span class="delhang">x</span><input class="cp" name="cp[]" type="hidden" value="#value#"/></div>';
+        var xx=inputcp.replace('#value#',cid).replace('#str#',xx_s.replace(/┉/g,'').replace('┝',''));
+
+        if($('.cpinput').html().indexOf('value="'+cid+'"')==-1 && $('.cpinput').html().indexOf('value='+cid+'')==-1){
+            $('.cpinput').append(xx);
+            $('.delhang').css({'padding':'0px 5px','cursor':'pointer','color':'#f00'});
+        }
+    });
+    $('.delhang').live('click',function(){
+        $(this).parent().remove();
+    });
+    $('.delhang').live('mouseover',function(){
+        $(this).css({'background-color':'#f00','color':'#fff'});
+    });
+    $('.delhang').live('mouseout',function(){
+        $(this).css({'background-color':'#fff','color':'#f00'});
+    });
+
+
+
+</script>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

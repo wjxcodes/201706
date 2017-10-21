@@ -1,0 +1,68 @@
+.webuploader-container {
+	position: relative;
+}
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+.webuploader-pick {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	background: #00b7ee;
+	padding: 10px 15px;
+	color: #fff;
+	text-align: center;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.webuploader-pick-hover {
+	background: #00a2d4;
+}
+
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+
+.webuploader-container {
+	position: relative;
+}
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+.webuploader-pick {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	background: #00b7ee;
+	padding: 10px 15px;
+	color: #fff;
+	text-align: center;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.webuploader-pick-hover {
+	background: #00a2d4;
+}
+
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+
+#uploader .item{overflow:hidden;clear:both;}
+#uploader .item .info{float:left;width:auto;}
+#uploader .item .state{float:left;width:auto;margin-left:20px;}
+#picker{float:left;width:atuo;}
+#ctlBtn{float:left;width:auto;width:86px;height:41px;}
+.progress{ float:left;position: relative; width: 200px;
+    /* 宽度 */ border: 1px solid #B1D632; padding: 1px; } 
+.progress .progress-bar{ display: block; position: relative;
+ background:#336699;/* 进度条背景颜色 */ color: #333333;
+ height: 20px; /* 高度 */ line-height: 20px;}
+ #uploader .beizhu{clear:both;overflow:hidden}
+ #uploader .delHang{color:#f00;cursor:pointer;}

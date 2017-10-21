@@ -1,0 +1,262 @@
+<style>
+{#if condition="$edit.DfStyle eq 1"#}
+.kgdf{display:none;}
+{#else/#}
+.zgdf{display:none;}
+{#/if#}
+</style>
+<TABLE cellpadding="5" cellspacing="0" class="list" border="1">
+<tr><td height="5" colspan="2" class="topTd" ></td></tr>
+<TR>
+    <TD class="tRight" style="width:100px">试题预览：</TD>
+    <TD class="tLeft"><div style="height:200px;width:430px;overflow:auto;">
+    <p>【题文】{#$edit.Test|default='无</p>'#}
+    <p><font color="red">【答案】</font>{#$edit.Answer|default='无</p>'#}
+    <p><font color="red">【解析】</font>{#$edit.Analytic|default='无</p>'#}
+    <p><font color="red">【备注】</font>{#$edit.Remark|default='无</p>'#}
+    </div></TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">题型：</TD>
+    <TD class="tLeft" ><SELECT id="types" class="large bLeft" NAME="TypesID" check='Require' warning="所属题型不能为空">
+    <option value="">请选择</option>
+    </SELECT></TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">知识点：</TD>
+    <TD class="tLeft" ><SELECT id="knowledge" class="knowledge bLeft selectKnowledge" NAME="KlID">
+    <option value="">请选择</option>
+    </SELECT> <div class="impBtn" style="display:inline;padding:3px 0px;"><input id="addkl" name="addkl" class="add imgButton" type="button" value="添加"></div>
+    <div id="knowledgeList" class="klinput"></div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">章节：</TD>
+    <TD class="tLeft" ><SELECT id="chapter" class="chapter bLeft selectChapter" NAME="ChapterID">
+    <option value="">请选择</option>
+    </SELECT> <div class="impBtn" style="display:inline;padding:3px 0px;"><input id="addcp" name="addcp" class="add imgButton" type="button" value="添加"/></div> <div class="impBtn" style="display:inline;padding:3px 0px;"><a id="adddcp" style="cursor:pointer;">载入默认章节</a></div>
+    <div id="chapterList" class='cpinput'></div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">专题：</TD>
+    <TD class="tLeft" ><SELECT id="special" class="large bLeft " NAME="SpecialID">
+    <option value="">请选择</option>
+    </SELECT></TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">测试类型：</TD>
+    <TD class="tLeft" >
+        <label><INPUT TYPE="radio" class="choose bLeft"  check='raido' warning="请选择测试类型" NAME="IfChoose" value="0" {#if condition="($edit.IfChoose eq '0') or ($edit.IfChoose eq '')"#}checked="checked"{#/if#}> 非选择题</label>
+        <label><INPUT TYPE="radio" class="choose bLeft" NAME="IfChoose" value="3" {#eq name="edit.IfChoose" value="3"#}checked="checked"{#/eq#}> 单选题</label> 
+        <label><INPUT TYPE="radio" class="choose bLeft" NAME="IfChoose" value="2" {#eq name="edit.IfChoose" value="2"#}checked="checked"{#/eq#}> 多选题</label> 
+        <label><INPUT TYPE="radio" class="choose bLeft" NAME="IfChoose" value="1" {#eq name="edit.IfChoose" value="1"#}checked="checked"{#/eq#}> 复合题（带小题）</label> 
+        <div id="showxt" style="display:none">
+            <input name="addt" id="addt" type="button" value="增加小题" style="cursor:pointer" /> <input name="delt" id="delt" type="button" value="删除小题" style="cursor:pointer" /> <input name="deltall" id="deltall" type="button" value="清空小题" style="cursor:pointer" />
+            <div id="xt" style="width:100%;overflow-y:auto;max-height:100px;"><p>小题1：<label><INPUT TYPE="radio" class="choose1 bLeft" check='raido' warning="请选择测试类型" NAME="IfChoose1" value="0" checked="checked"> 非选择题</label>
+            <label><INPUT TYPE="radio" class="choose1 bLeft" NAME="IfChoose1" value="3"> 单选题</label> 
+            <label><INPUT TYPE="radio" class="choose1 bLeft" NAME="IfChoose1" value="2"> 多选题</label> 
+            </p></div>
+        </div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">选项宽度：<br/><a id="getWidth" style="cursor:pointer;">计算宽度</a><br/><span id="widthCon"></span></TD>
+    <TD class="tLeft" >
+        <div id="showwidth" >
+            <div id="wd" style="width:100%;overflow-y:auto;max-height:100px;">
+                {#volist name="optionWidth" id="ow" key="j"#}
+                <p class="optionwidth_{#$j#} optionwidth">{#if condition="$edit.IfChoose eq '1'"#}小题{#$j#}：{#/if#}<label><INPUT TYPE="text" class="optionwidth{#$j#} bLeft"  warning="请填入选项宽度" size="2" NAME="optionwidth{#$j#}" value="{#$ow#}" ></label> </p>
+                {#/volist#}
+            </div>
+        </div>
+    </TD>
+</TR>
+<TR>
+    <TD class="tRight" style="width:80px">选项数量：</TD>
+    <TD class="tLeft" >
+        <div id="shownum" >
+            <div id="num" style="width:100%;overflow-y:auto;max-height:100px;">
+                {#volist name="optionNum" id="onum" key="k"#}
+                <p class="optionnum_{#$k#} optionnum">{#if condition="$edit.IfChoose eq '1'" #}小题{#$k#}：{#/if#}<label><INPUT TYPE="text" class="optionnum{#$k#} bLeft"  warning="请填入选项宽度" NAME="optionnum{#$k#}" size="2" value="{#$onum#}" ></label> </p>
+                 {#/volist#}
+            </div>
+        </div>
+    </TD>
+</TR>
+
+{#if condition="$send==1"#}
+<TR>
+    <TD class="tRight tTop" style="width:80px">状态：</TD>
+    <TD class="tLeft"><label><INPUT TYPE="radio" class="status bLeft"  check='raido' warning="请选择状态" NAME="Status" value="0" {#if condition="($edit.Status eq '0') or ($edit.Status eq '')"#}checked="checked"{#/if#}> 正常</label> <label><INPUT TYPE="radio" class="status bLeft" NAME="Status" value="1" {#eq name="edit.Status" value="1"#}checked="checked"{#/eq#}> 锁定</label> </TD>
+</TR>
+{#/if#}
+<TR>
+    <TD class="tRight tTop" style="width:80px">打分模式：</TD>
+    <TD class="tLeft"><label><INPUT TYPE="radio" id="kg" class="DfStyle bLeft" check='raido' warning="请选择打分模式" NAME="DfStyle" value="0" {#if condition="($edit.DfStyle eq '0') or ($edit.DfStyle eq '')"#}checked="checked"{#/if#}> 客观打分</label> <label><INPUT id="zg" TYPE="radio" class="DfStyle bLeft" NAME="DfStyle" value="1" {#eq name="edit.DfStyle" value="1"#}checked="checked"{#/eq#}> 主观打分</label> </TD>
+</TR>
+<TR style="background-color:#efefef;font-weight:bold;" class="zgdf">
+    <TD class="tCenter tTop" colspan='2'>
+    试题打分
+    </TD>
+</TR>
+<TR class="zgdf">
+    <TD class="tRight" style="width:80px">难度值：</TD>
+    <TD class="tLeft" ><INPUT type="text" value="{#$edit.Diff#}" name="Diff" id="Diff" /> （0-1之间 最多4位小数）</TD>
+</TR>
+
+{#if condition="$markArray"#}
+<TR style="background-color:#efefef;font-weight:bold;" class="kgdf">
+    <TD class="tCenter tTop" colspan='2'>
+    <input name="xttimes" id="xttimes" value="{#$times#}" type="hidden"/>
+    {#if condition="$times>1"#}
+        {#for start="1" end="$times+1"#}
+            <span id="xt{#$i#}" {#eq name="i" value="1"#} class="xtcurrent xt_title" {#else/#} class="xt xt_title"{#/eq#}>小题{#$i#}打分</span>
+        {#/for#}
+    {#else/#}
+    试题打分
+    {#/if#}
+    </TD>
+</TR>
+        {#for start="1" end="$times+1" name="ii"#}
+{#volist name="markArray" id="vo" key="j"#}
+<tr class="kgdf xt_con_{#$ii#} xt_con {#neq name="ii" value="1"#}none{#/neq#}">
+    <TD class="tRight" style="width:80px">{#$vo.MarkName#}：</TD>
+    <TD class="tLeft" ><SELECT id="xt_select_{#$ii#}_{#$j#}" class="mark large bLeft" NAME="Mark[]">
+    <option value="">请选择</option>
+    {#volist name="vo.MarkListx" id="item"#}
+    <option value="{#$item[3]#}" {#volist name="edit.Markx.$ii" id="mk"#}{#if condition="$mk eq $item[3]"#}selected="selected"{#/if#}{#/volist#}>{#$item[1]#}</option>
+    {#/volist#}
+    </SELECT>{#eq name="vo.Style" value="1"#}(辅助参数){#else/#}(主要参数){#/eq#}</TD>
+</tr>
+{#/volist#}
+        {#/for#}
+{#/if#}
+<TR>
+    <TD style="width:80px">&nbsp;</TD>
+    <TD class="center"><div style="width:85%;margin:5px">
+        <INPUT TYPE="hidden" id="DocID" name="DocID" value="{#$edit.DocID#}">
+        <INPUT TYPE="hidden" id="TestID" name="TestID" value="{#$edit.TestID#}">
+        <INPUT TYPE="hidden" name="act" value="{#$act#}">
+        <INPUT TYPE="hidden" id="real" name="real" value="{#$real#}">
+    <div class="impBtn fLeft"><INPUT tag='form1' id="datasave" u="{#:U('Test/Test/save')#}" TYPE="button" value="保存" class="save imgButton mysubmit"></div>
+    <div class="impBtn fLeft m-l10"><INPUT TYPE="reset" class="reset imgButton" value="清空" ></div>
+    </div></TD>
+</TR>
+<tr><td height="5" colspan="2" class="bottomTd" ></td></tr>
+</table>
+<script language="javascript">
+$(document).bind("selectstart",function(){return false;});
+$(document).ready(function(){
+    var subjectID='{#$edit.SubjectID#}';
+    var specialID='{#$edit.SpecialID#}';
+    var typeID='{#$edit.TypesID#}';
+    var knowID='{#$edit.KlID#}';
+    var chapID='{#$edit.ChapterID#}';
+    if("{#$act#}"=='edit'){
+        $('#knowledge').allSelectLoad('__URL__',{"style":"getMoreData","list":"knowledgeList,chapterList,special,types,knowledge,chapter","subjectID":subjectID,"idList":{
+        "knowledgeList":knowID,"chapterList":chapID,"special":specialID,"types":typeID,"knowledge":"0","chapter":"0""skill":"0","capacity":"0"}});
+    }
+    //写入小题结构
+    if("{#$edit.IfChoose#}"==1){
+        $('#showxt').css({'display':'block'});
+        var str='';
+        var tmp_i=1;
+        {#volist name="chooseList" id="vo"#}
+            str+='<p>小题'+tmp_i+'：<label><INPUT TYPE="radio" class="choose'+tmp_i+' bLeft"  check="raido" warning="请选择测试类型" NAME="IfChoose'+tmp_i+'" value="0" {#if condition="($vo.IfChoose eq '0') or ($vo.IfChoose eq '')"#}checked="checked"{#/if#}> 非选择题</label> '+
+        '<label><INPUT TYPE="radio" class="choose'+tmp_i+' bLeft" NAME="IfChoose'+tmp_i+'" value="3" {#eq name="vo.IfChoose" value="3"#}checked="checked"{#/eq#}> 单选题</label> '+
+        '<label><INPUT TYPE="radio" class="choose'+tmp_i+' bLeft" NAME="IfChoose'+tmp_i+'" value="2" {#eq name="vo.IfChoose" value="2"#}checked="checked"{#/eq#}> 多选题</label> '+
+        '</p>';
+        tmp_i++;
+        {#/volist#}
+        $('#xt').empty().html(str);
+    }
+});
+var input='<div>#str# <span class="delhang">x</span><input class="kl" name="kl[]" type="hidden" value="#value#"/></div>';
+var inputcp='<div>#str# <span class="delhang">x</span><input class="cp" name="cp[]" type="hidden" value="#value#"/></div>';
+        $('#addt').click(function(){
+            var tmp_i=(parseInt($('#xt p').length)+1);
+            if($('#xt p').length==0){
+                $('#wd').find('p').eq(0).html('小题1：<label><INPUT TYPE="text" class="optionwidth1 bLeft"  warning="请填入选项宽度" size="2" NAME="optionwidth1" value="{#$optionwidth.0#}" ></label>');
+                $('#num').find('p').eq(0).html('小题1：<label><INPUT TYPE="text" class="optionnum1 bLeft"  warning="请填入选项宽度" size="2" NAME="optionnum1" value="{#$optionnum.0#}" > </label>');
+            }else{
+                $('#wd').append('<p class="optionwidth_'+tmp_i+' optionwidth">小题'+tmp_i+'：<label><INPUT TYPE="text" class="optionwidth'+tmp_i+' bLeft"  warning="请填入选项宽度" size="2" NAME="optionwidth'+tmp_i+'" value="0" ></lable> </p>');
+                $('#num').append('<p class="optionnum_'+tmp_i+' optionnum">小题'+tmp_i+'：<label><INPUT TYPE="text" class="optionnum'+tmp_i+' bLeft"  warning="请填入选项数量" size="2" NAME="optionnum'+tmp_i+'" value="0" ></label></p> ');
+            }
+            $('#xt').append('<p>小题'+tmp_i+'：<label><INPUT TYPE="radio" class="choose'+tmp_i+' bLeft"  check="raido" warning="请选择测试类型" NAME="IfChoose'+tmp_i+'" value="0" checked="checked"> 非选择题</label> '+
+            '<label><INPUT TYPE="radio" class="choose'+tmp_i+' bLeft" NAME="IfChoose'+tmp_i+'" value="3"> 单选题</label> '+
+            '<label><INPUT TYPE="radio" class="choose'+tmp_i+' bLeft" NAME="IfChoose'+tmp_i+'" value="2"> 多选题</label> '+
+            '</p>');
+
+            var height=0;
+            $('#xt p').each(function(){
+                height+=$(this).height();
+            });
+            $('#xt').scrollTop(height);
+        });
+        
+        $('#delt').click(function(){
+            var tmp_i=parseInt($('#xt p').length)-1;
+            if(tmp_i<0){
+                return false;
+            }
+            $('#xt p:eq('+tmp_i+')').remove();
+           
+            $('#wd p:eq('+tmp_i+')').remove();
+            $('#num p:eq('+tmp_i+')').remove();
+           if(tmp_i==0){
+                $('#wd').html('');
+                $('#wd').append('<p class="optionwidth_1 optionwidth"><label><INPUT TYPE="text" class="optionwidth1 bLeft"  warning="请填入选项宽度" size="2" NAME="optionwidth1" value="{#$optionwidth.0#}" > ');
+                $('#num').html('');
+                $('#num').append('<p class="optionnum_1 optionwidth"><label><INPUT TYPE="text" class="optionnum1 bLeft"  warning="请填入选项数量" size="2" NAME="optionnum1"     value="{#$optionnum.0#}" > ');
+            }
+            var height=0;
+            $('#xt p').each(function(){
+                height+=$(this).height();
+            });
+            $('#xt').scrollTop(height);
+        });
+        
+        $('#deltall').click(function(){
+            if(confirm('确定清除下面所有的小题！')){
+                $('#xt p').each(function(){
+                    $(this).remove();
+                });
+                $('#wd').html('');
+                $('#wd').append('<p class="optionwidth_1 optionwidth"><label><INPUT TYPE="text" class="optionwidth1 bLeft"  warning="请填入选项宽度" size="2" NAME="optionwidth1" value="{#$optionwidth.0#}" > ');
+                $('#num').html('');
+                $('#num').append('<p class="optionnum_1 optionwidth"><label><INPUT TYPE="text" class="optionnum1 bLeft"  warning="请填入选项数量" size="2" NAME="optionnum1"     value="{#$optionnum.0#}" > ');
+            }
+        });
+        
+        $('.choose').click(function(){
+            var i;
+            if($(this).val()==1){
+                $('#wd p').show();
+                $('#num p').show();
+                $('.optionwidth_1').html('小题1：<label><INPUT TYPE="text" class="optionwidth1 bLeft"  warning="请填入选项宽度" size="2" NAME="optionwidth1" value="{#$optionwidth.0#}" >');
+                $('.optionnum_1').html('小题1：<label><INPUT TYPE="text" class="optionnum1 bLeft"  warning="请填入选项宽度" size="2" NAME="optionnum1" value="{#$optionnum.0#}" >');
+                $('#showxt').css({'display':'block'});
+            }else{
+                var tmp_i=(parseInt($('#xt p').length)+1);
+                
+                $('#xt').find('p').each(function(i){
+                    
+                    if(i>0){
+                        $('.optionwidth_'+(i+1)+'').hide();
+                        $('.optionnum_'+(i+1)+'').hide();
+                    }else{
+                        $('.optionwidth_'+(i+1)+'').html('<label><INPUT TYPE="text" class="optionwidth1 bLeft"  warning="请填入选项宽度" size="2" NAME="optionwidth1" value="{#$optionwidth.0#}" >');
+                        $('.optionnum_'+(i+1)+'').html('<label><INPUT TYPE="text" class="optionnum1 bLeft"  warning="请填入选项宽度" size="2" NAME="optionnum1" value="{#$optionnum.0#}" >');
+                    }
+                })
+                if($('#xt p').length==0){
+                        $('.optionwidth_1').html('<label><INPUT TYPE="text" class="optionwidth1 bLeft"  warning="请填入选项宽度" size="2" NAME="optionwidth1" value="{#$optionwidth.0#}" >');
+                        $('.optionnum_1').html('<label><INPUT TYPE="text" class="optionnum1 bLeft"  warning="请填入选项宽度" size="2" NAME="optionnum1" value="{#$optionnum.0#}" >');
+                        
+                }
+                $('#showxt').css({'display':'none'});
+            }
+        });
+
+</script>

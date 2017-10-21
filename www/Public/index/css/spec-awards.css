@@ -1,0 +1,51 @@
+/*教师节专题*/
+
+/*layout*/
+body{background-color:#fff}
+.w1200at{width:1200px;margin-left:auto;margin-right:auto;}
+.w100pct{width:100%;}
+/*字体图标*/
+@font-face{font-family:'iconfont';src:url('../font/iconfont.eot');src:url('../font/iconfont.eot?#iefix') format('embedded-opentype'),url('../font/iconfont.woff') format('woff'),url('../font/iconfont.ttf') format('truetype'),url('../font/iconfont.svg#iconfont') format('svg');}
+.iconfont{font-family:"iconfont"!important;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:0}
+
+/*100% 有最小宽度居中显示*/
+.laymp{position:relative;height:849px;overflow:hidden;min-width:874px;background-color:#F37543;background:-webkit-linear-gradient(#E35F38,#FFF0D3); /* Safari 5.1 - 6.0 */background:-o-linear-gradient(#E35F38,#FFF0D3); /* Opera 11.1 - 12.0 */background:-moz-linear-gradient(#E35F38,#FFF0D3); /* Firefox 3.6 - 15 */background:linear-gradient(#E35F38,#FFF0D3);}
+.laym{position:absolute;margin-left:-960px;left:50%;top:0;text-align:center;}
+.f-heiti{font-family:'黑体',sans-serif;}
+.w1000{width:1000px;margin:0 auto;}
+
+/*section1*/
+.section-wrap3{background-color:#fff0d3}
+.section .title{color:#04a272;font-size:35px;padding-top:50px;font-family:'黑体',sans-serif;}
+
+/*注册盒子*/
+.reg-intro-box{margin-top:80px;}
+.reg-intro-box h1{font-size:40px}
+.reg-intro-box h2{font-size:18px;color:#222;margin-top:2px;}
+.reg-intro-box .td-reg-btn-box{margin-top:30px;}
+.reg-intro-box .td-reg-btn-box cite{margin-left:20px;color:#888;font-size:13px}
+.reg-intro-box .td-reg-btn-box a{font-size:18px;letter-spacing:3px;padding:5px 30px;}
+.reg-intro-box .td-reg-btn-box a:hover{color:#fff;}
+
+/*section3*/
+.section3{padding-bottom:70px;}
+.section3 .vip-intro{padding-top:50px;}
+.section3 .vip-intro h1{height:60px;line-height:60px;font-size:28px;color:#fffc00;text-align:center;background-color:#fe3a3c;border-top-right-radius:15px;border-top-left-radius:15px;}
+.section3 .vip-intro h1 span{color:#fff;font-size:16px;}
+.section3 .vip-intro .big-size{border:none;margin-left:300px;}
+.section3 .vip-intro .big-size td{border:none;font-size:20px;height:45px;line-height:45px;}
+
+/*vip权限介绍表格部分*/
+.vip-intro-table-box{padding:30px 0;color:#222;border:10px solid #fe3a3c;background-color:#fff0d3;border-top:none;overflow:hidden;}
+.vip-intro-table-box table{float:left;line-height:34px;height:34px;table-layout:fixed;text-align:center}
+.vip-intro-table-box table .table-menu p{line-height:25px;padding:0 20px;}
+.vip-intro-table-box table th{text-align:center;font-size:16px;background-color:#ffd88e;}
+.vip-intro-table-box table,.vip-intro-table-box td{border-bottom:1px dashed #e4d0a9;}
+.vip-intro-table-box table{}
+.vip-intro-table-box td{text-align:center;line-height:34px;}
+.vip-intro-table-box tr td:first{text-align:right;padding-right:20px;}
+.vip-intro-table-box td .iconfont{display:inline-block;width:22px;height:22px;margin-top:10px}
+.section3-footer{height:165px;padding-top:50px;border-top-right-radius:15px;border-top-left-radius:15px;background-color:#fe3a3c;margin-top:40px;}
+.section3-footer .erweima{float:left;padding-left:166px;margin-right:50px;}
+.section3-footer .text{float:left;font-size:24px;color:#fff;padding-top:40px;}
+.section3-footer .text cite{font-size:28px;color:#fffc00}

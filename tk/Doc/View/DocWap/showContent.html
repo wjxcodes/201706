@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="{#$keywords#}" />
+    <meta name="description" content="{#$description#}">
+    <title>{#$doc['docname']#}-{#$config.IndexName#}</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="__PUBLIC__/index/m-css/base.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/index/m-css/testPaper.css"/>
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="__PUBLIC__/index/m-css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]>
+    <!-->
+    <link rel="stylesheet" href="__PUBLIC__/index/m-css/layouts/side-menu.css">
+    <!--<![endif]-->
+
+</head>
+<body>
+    <div id="layout">
+        {#include file="Index@Common/wapSideNav" /#}
+        <div id="main" class="">
+            {#include file="Index@Common/wapHeader" /#}
+            <!-- 试卷内容 -->
+            <div class="testPaper-content">
+                <div class="testpaper-top clearfix">
+                    <div class="left testpaper-title">
+                        <h2 id="docname">{#$doc['docname']#}</h2>
+                        <div class="explain">
+                            <span>试卷类型：{#$doc['typename']#}</span>
+                            |
+                            <span>适用省份：{#$doc['areaname']#}</span>
+                            |
+                            <span>试卷年份：{#$doc['docyear']#}年</span>
+                            |
+                            <span>上传日期:{#$doc['loadtime']#}</span>
+                            |
+                            <span>题数：{#$doc['testCount']#}</span>
+                        </div>
+                    </div>
+                    <div class="right testpaperdown">
+                        <a class="nor-btn g-btn btn-primary" href="javascript:;">下载试题</a>
+                        <input type="hidden" value='{#$doc['testCount']#}' id='testCount'/>
+                        <input type="hidden" name='docid' id='docid' value='{#$doc['docid']#}'/>
+                        <input type="hidden" name='subjectid' value='{#$doc['subjectid']#}' id='docSubejctId'/>
+                        <form id='toTestCenter' action='/Home/Index/main' method="post">
+                            <input type="hidden" name='loadMode' value='zujuan'/>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="classification f-roman">
+                    {#if condition='empty($test)'#}
+                    <div class="classificationtit">正在处理中的试卷，试题暂不会被显示！</div>
+                    {#else/#}
+                  {#assign name='partOrder' value='1'/#}
+                  {#assign name='testOrder' value='1'/#}
+                  {#foreach name='test' item='partValue' key='part'#}
+                      {#if condition="$doc['subjectid'] neq 12"#}
+                          {#if condition='$part eq 1'#}
+                    <div class="classificationtit">第{#:formatString('num2Chinese',$partOrder++)#}部分（选择题）</div>
+                    {#elseif condition="$part eq 2"/#}
+                    <div class="classificationtit">第{#:formatString('num2Chinese',$partOrder++)#}部分（非选择题）</div>
+                    {#/if#}
+                      {#/if#}
+                    <div class="smallclassification">
+                        {#foreach name='partValue' item='typeValue' key='type'#}
+                        <div class="smalltitle">{#:formatString('num2Chinese',$testOrder++)#}、{#$type#}</div>
+                        {#foreach name='typeValue' item='test'#}
+                        <div class="testpaperbody-wrap">
+                            <div class="testpaperbody f-roman">{#$test.testold#}</div>
+                        </div>
+                        {#/foreach#}
+                      {#/foreach#}
+                    </div>
+                    {#/foreach#}
+                {#/if#}
+                </div>
+            </div>
+            <!-- 试卷内容 end -->
+        </div>
+        {#include file="Index@Common/wapFooter" /#}
+    </div>
+    <div class="side-bar">
+        <a href="{#:U('Doc/Doc/show')#}" class="back-listpage" style="display:block">返回<br>列表</a>
+    </div>
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $.indexCommon.indexInit();
+    });
+</script>
+
+    <script> 
+        var Types = {#$types#};
+        $('.testpaperdown').click(function(){
+            $.get('{#:U("Home/Base/isLoginCheck")#}', function(result){
+                if(result['data'] != 'success'){
+                    $.indexCommon.baseLogin();
+                    $.indexCommon = $.extend($.indexCommon, {
+                        loginCallBack : function(status){
+                            if(1 == status){
+                                callback();
+                            }
+                        }
+                    });
+                }else{
+                    callback();
+                }
+            });
+        });
+
+        function callback(){
+            $.post(U('Doc/Doc/loadTestByDocId'),{
+                'docid' : $('#docid').val()
+            },function(result){
+                var data = result['data'];
+                var title = $('#docname').html();
+                var attachmentTitle = ($('.explain span').eq(0).html().replace('试卷类型：', ''));
+                var str = 'maintitle@$@1@$@'+title+'@#@subtitle@$@1@$@'+attachmentTitle+'@#@parthead1@$@1@$@第I卷（选择题）@$@请点击修改第I卷的文字说明@#@parthead2@$@1@$@第II卷（非选择题）@$@请点击修改第II卷的文字说明';
+                editData.clear();
+                editData.set('init', str);
+                var subjectid = $('#docSubejctId').val();
+                Cookie.Set("SubjectId", subjectid, 7);
+                var types = Types[subjectid];
+
+                var typesArr='|';
+                for(var value in data){
+                    value = data[value];
+                    for(var i=0; i<types.length; i++){
+                        if(types[i]['TypesID'] == value['typesid']){
+                            value['TypeName'] = types[i]['TypesName'];
+                            value['Volume'] = types[i]['Volume'];
+                            value['DScore'] = types[i]['DScore'];
+                            break;
+                        }
+                    }
+                    if(typesArr.indexOf('|'+value['typesid']+'|')==-1){
+                        typesArr+=value['typesid']+'|';
+                        editData.addtype(value['Volume'], value['TypeName'], '（题型注释）', 0, value['DScore']);
+                    }
+                    if(value['testnum'] == 0){
+                        value['testnum'] = 1;
+                    }
+                    editData.addtest(value['testid'], value['testnum'], value['TypeName'], value['typesid']);
+                }
+                window.location.href= '/Home/Index/main/u/Index_zuJuan';
+            });   
+        }
+      </script>
+
+
+
+<script src="__PUBLIC__/index/m-js/ui.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script src="__PUBLIC__/default/js/paper.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/unionSearch.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/testPreview.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery.cookie.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/wlnBase.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>

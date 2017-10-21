@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/register.css" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js"></script>
+</head>
+<body class="bg-white">
+    <!--首页头部-->
+    {#include file="Index@Common/secondTop" /#}
+    <!--首页头部-end-->
+    <div class="form-wrap bg-f8f8f8">
+        <div class="form-container w1000">
+            <!-- 认证流程 -->
+            <div class="form-process-wrap">
+                <div class="fp-area fp-step3">
+                    <span class="fp-area-three on" style="text-align: left;">提交资料</span>
+                    <span class="fp-area-three on">等待审核</span>
+                    <span class="fp-area-three on" style="text-align: right;">认证成功</span>
+                </div>
+            </div>
+            <!-- 认证流程 end-->
+            <!-- 教师认证反馈信息 -->
+            <div class="feedback-msg-container">
+                <div class="fb-msg-title">
+                    <i class="iconfont" style="font-size:50px">&#xe631;</i>
+                    <span class="msg">认证成功！</span>
+                </div>
+                <div class="fb-msg-content fb-msg-content-border">
+                    <div class="fb-msg-area">
+                        <table class="msg-table" style="margin:0 auto">
+                            <tbody>
+                                <tr>
+                                    <td class="tb-item-tit">真实姓名：</td>
+                                    <td>{#$realName#}</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="tb-item-tit">身份证号：</td>
+                                    <td>{#$authInfo.IDNumber#}</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="tb-item-tit">教师资格证编号：</td>
+                                    <td>
+                                        {#$authInfo.Qualification#}
+                                        <a href="{#$authInfo.QuaPicSrc#}" target="_blank" class="link">查看图片</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tb-item-tit">教师等级证编号：</td>
+                                    <td>
+                                        {#$authInfo.Grade#}
+                                        <a href="{#$authInfo.GradePicSrc#}" target="_blank" class="link">查看图片</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="fb-msg-btn">
+                        <a href="{#:U('Home/Index/main',array('u'=>'User_Home_info'))#}" class="nor-btn smler-btn">进入个人中心</a>
+                        <a href="{#:U('/Home','',false)#}" class="nor-btn smler-btn light-btn">进入组卷中心</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 教师认证反馈信息 -->
+            </div>
+        </div>
+    </div>
+<!--参加任务列表-->
+<script type="text/javascript">
+    $(function(){
+        var VerificationCodeDialog = function(){
+            layer.open({
+                    area: ['400px', '240px'],//弹出框宽高
+                    title: '请输入验证码',
+                    shade: 0.6, //遮罩透明度
+                    shadeClose: true,//点击遮罩层关闭
+                    shift: 0, //0-6的动画形式，-1不开启
+                    content: '<div class="verification-code-msg"><span class="item-tit">验证码：</span><input class="normal-input" type="text" /><span class="verification-image"><img src="" alt="验证码" /></span></div>'
+                });
+        };
+        // 验证码弹出框
+        // VerificationCodeDialog();
+    })
+</script>
+    <!--footer-->
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/index/js/pingtai.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/common.js"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+    <![endif]-->
+    {#include file="Index@Common/secondFooter" /#}
+    <!--footer-end-->
+    

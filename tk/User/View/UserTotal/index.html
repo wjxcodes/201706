@@ -1,0 +1,41 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">{#$pageName#} </div>
+<!--  功能操作区域  -->
+<!-- 功能操作区域结束 -->
+
+<!-- 列表显示区域  -->
+<div class="list" >
+<div id="result" class="result none"></div>
+<!-- Think 系统列表组件开始 -->
+<table id="checkList" class="list" cellpadding="5" cellspacing="0" border="1">
+    <tr><td height="5" colspan="10" class="topTd" ></td></tr>
+    <tr class="row" >
+        <th width="4%">统计指标</th>
+        <th width="8%">上周</th>
+        <th width="8%">本周</th>
+        <th width="8%">增量</th>
+    </tr>
+    {#volist name="list" id="node" #}    
+        <tr class="row lists" jl=''>
+        <td>{#$node.totalName#}</td>
+        <td>{#$node.lastLastNum#}</td>
+        <td>{#$node.lastNum#}</td>
+        <td>{#$node.addNum#}</td>
+        </tr>
+    {#/volist#}
+    <tr><td height="5" colspan="10" class="bottomTd"></td></tr>
+</table>
+<!-- Think 系统列表组件结束 -->
+</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

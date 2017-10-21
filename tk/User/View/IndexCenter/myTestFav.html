@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+    <title>{#$config.IndexName#}-用户中心</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link type="text/css" href="__PUBLIC__/index/css/u-test.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/wln-base.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/index/css/user.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js"></script>
+
+</head>
+<body>
+
+    <!--头部-->
+    {#include file="Index@Common/TplUserHeader" /#}
+    <!--头部-end-->
+
+    <!-- 个人中心 -->
+    <div class="w-main">
+        <!-- 面包屑导航 -->
+        {#include file="IndexCenter/TplCrumbs" /#}
+        <!-- 面包屑导航END -->
+
+        <div class="u-content clearfix">
+            <!-- 左侧导航 -->
+            {#include file="IndexCenter/TplPersonalNav" /#}
+            <!-- 左侧导航END -->
+            <div class="u-right-wrap">
+                <div class="u-right" id="myTestFavC">
+                <!-- 历史下载 -->
+                    <div class="u-fav-test-panel content g-panel">
+                        <div class="panel-head">
+                            <h3 class="head-name">试题收藏</h3>
+                        </div>
+                        <div class="u-test-fav-menu">
+                            <div class="fav-menu-head clearfix">
+                                <span class="right fav-handle">
+                                    <a class="handle-icon" href="javascript:;" title="添加组" id='addFavGroup'><i class="iconfont">&#xe600;</i>添加组</a>
+                                    <a class="handle-icon" href="javascript:;" title="编辑" id='editFavInfo'><i class="iconfont">&#xe601;</i><span>编辑</span></a>
+                                </span>
+                            </div>
+                            <div class="fav-item-content clearfix">
+                                <ul class="fav-menu-nav" id='favTree'>
+                                </ul>
+                            </div>
+                            <div class="fav-group-child hide" id='favChildGroup'>
+                                <ul class="group-child-item">
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="u-test-content-wrap" id="myTestFavList">
+                        </div>
+
+                        <div class="u-paginator" id="pagelistbox"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- 个人中心END -->
+
+    </div>
+
+
+    <!--文件夹操作弹出框-->
+    <!--添加分组-->
+    <div id="tplAddGroupTest" class="hidden">
+        <div class="add-group-content">
+            <form class="g-form" action="">
+                <div class="g-control-group">
+                    <label for="">分组名称：</label>
+                    <input type="text" name="" id="" placeholder="分组名"/>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+    <!--重命名分组-->
+
+    <div id="tplRenameGroupTest" class="hidden">
+
+    </div>
+
+
+
+    <!--文件夹操作弹出框END-->
+
+    <!--试题操作弹出框-->
+        <!--移动试题-->
+
+
+
+        <!--评论试题-->
+    <div id="tplCommentTest" class="hidden">
+        <div class="comment-test-content">
+            <form class="g-form" action="">
+                <div class="g-control-group ct-test-num">
+                    <label class="form-ctrl-item-tit" for="">试题编号：</label>
+                    <span class='commentTestId'></span>
+                </div>
+                <div class="g-control-group ct-textarea">
+                    <label class="form-ctrl-item-tit" for="">评论内容：</label>
+                    <textarea name="" class="commentContent" cols="60" rows="4"></textarea>
+                </div>
+                <div class="g-control-group ct-score clearfix">
+                    <div class="comment-score-site left">
+                        <b class="tit">评分：</b>
+                    <span class="scorebox icon-star">
+                    </span>
+                        <span class="star-score"><span class="quesscore" val="5">5</span>分</span>
+                    </div>
+                    <input class="right g-btn btn-primary btn-l addComment" type="button" value="提交"/>
+                </div>
+            </form>
+            <!--评价记录-->
+            <div class="comment-list-content">
+                <ul class="ct-panel-list commentListPanel">
+                </ul>
+            </div>
+            <div class="u-paginator paginator">
+            </div>
+            <!--评价记录END-->
+        </div>
+    </div>
+
+    <div id='commentList' class='hidden'>
+        <li class="clearfix">
+            <img class="user-photo" src="%SRC%" alt="头像" width="42" height="42">
+            <div class="ct-right">
+                <div class="clearfix">
+                    <p class="left elli">
+                        <a class="user" href="javascript:;">%NAME%</a>
+                    </p>
+                    <cite class="right">%TIME%</cite>
+                </div>
+
+                <div class="ct-item-context">%DES%</div>
+            </div>
+        </li>
+    </div>
+
+
+        <!--纠错试题-->
+    <div id="tplErrorTest" class="hide" style='z-index:9999;'>
+    <div class="submit-error-content">
+        <form class="g-form" action="">
+            <div class="g-control-group se-test-num">
+                <label class="form-ctrl-item-tit" for="">试题编号：</label>
+                <span class='contentTestId'>%ID%</span>
+            </div>
+            <div class="g-control-group se-error-type">
+                <label class="form-ctrl-item-tit" for="">错误类型：</label>
+                <label class="err-type-opt" for="errType1">
+                    <input type="checkbox" name="errType" id='errType1' value="1"/>
+                    试题内容
+                </label>
+                <label class="err-type-opt" for="errType2">
+                    <input type="checkbox" name="errType" id='errType2' value="2"/>
+                    答案解析
+                </label>
+                <label class="err-type-opt" for="errType3">
+                    <input type="checkbox" name="errType" id='errType3' value="3"/>
+                    所属章节
+                </label>
+                <label class="err-type-opt" for="errType4">
+                    <input type="checkbox" name="errType" id='errType4' value="4"/>
+                    知识点属性
+                </label>
+                <label class="err-type-opt" for="errType5">
+                    <input type="checkbox" name="errType" id='errType5' value="5"/>
+                    其他
+                </label>
+            </div>
+            <div class="g-control-group se-textarea">
+                <label class="form-ctrl-item-tit" for="">错误描述：</label>
+                <div class='editor'></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+        <!--加入试卷-->
+    <div id="tplAddTest" class="hidden">
+        <div class="add-test-content">
+            <form class="g-form" action="">
+                <div class="g-control-group">
+                    <label for="">加入试题至：</label>
+                    <select name="" id="">
+                        <option value="">文件夹1</option>
+                        <option value="">文件夹2</option>
+                        <option value="">文件夹3</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="__PUBLIC__/plugin/ueditor/ueditor.config.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/default/js/paper.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script src="__PUBLIC__/plugin/ueditor/ueditor.all.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script src="__PUBLIC__/plugin/editor.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/plugin/scoreBox.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript" src="__PUBLIC__/index/js/myTestAbout.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+    <script type="text/javascript">
+        var Types = new Object({#$types#});
+        $(document).ready(function(){
+            var idName='{#$function#}';
+            if(idName!='' || idName!='undefined'){
+                $('#'+idName).addClass('active');
+            }
+            $.indexMyTestAbout.myTestFavInit();
+        })
+
+        function res(data, ctpl, ptpl){
+            var html = '';
+            for(var i=0; i<data.length; i++){
+                var str = ptpl;
+                if(data[i]['FatherID'] > 0){
+                    str = ctpl;
+                }
+                html += str.replace('%NAME%', data[i]['CatalogName'])
+                                .replace('%ID%', data[i]['CatalogID']);
+                if(data[i].child){
+                    if(ctpl)
+                        html += res(data[i].child, ctpl, ptpl);
+                }
+            }
+            return html;
+        }
+    </script>
+    <!--试题操作弹出框END-->
+    <!--footer-->
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+    <script>DD_belatedPNG.fix('a,div,span,img,i');</script>
+    <![endif]-->
+
+
+    {#include file="Index@Common/secondFooter" /#}
+    <!--footer-end-->
+
+</body>
+</html>

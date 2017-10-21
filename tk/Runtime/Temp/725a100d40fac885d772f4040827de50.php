@@ -1,0 +1,3 @@
+<?php
+//000000000000a:2:{s:4:"time";i:1508477389;s:4:"data";a:4:{s:4:"last";a:4:{s:9:"StatVisit";s:4:"1039";s:8:"StatTest";i:3090768;s:7:"StatDoc";i:212082;s:6:"StatZj";i:736;}s:5:"month";a:3:{s:8:"StatTest";i:36;s:7:"StatDoc";i:4;s:6:"StatZj";i:32;}s:4:"week";a:3:{s:8:"StatTest";i:3;s:7:"StatDoc";i:1;s:6:"StatZj";i:2;}s:9:"yesterday";a:3:{s:8:"StatTest";i:0;s:7:"StatDoc";i:0;s:6:"StatZj";i:1;}}}
+?>

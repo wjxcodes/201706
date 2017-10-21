@@ -1,0 +1,184 @@
+{#// 加载头部公共文件 #}
+{#include file="Manage@Public/header" /#}
+<style>
+/*任务记录列表*/
+li{
+    list-style-type:none;
+}
+.task-tab-container {
+    padding: 15px
+}
+.task-tab-container .task-tab-hd {
+    border: 1px solid #ddd;
+}
+.task-tab-container .task-tab-hd ul {
+    background-color: #f7f7f7;
+    height: 40px;
+}
+.task-tab-container .task-tab-hd li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 100px;
+    border-right: 1px solid #e2e2e2;
+    float: left;
+    cursor: pointer;
+}
+.task-tab-container .task-tab-hd li:hover {
+    color: #4F8EE6;
+}
+.task-tab-container .task-tab-hd li.on {
+    color: #4F8EE6;
+    margin-top: -1px;
+    border-top: 2px solid #4F8EE6;
+    background-color: #fff;
+    cursor: default;
+}
+.task-tab-bd .tt-bd-list {
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    line-height:35px;
+    height:35px;
+}
+.task-tab-bd .tt-bd-list th {
+    background-image: none;
+    color: #4F8EE6;
+    font-size: 16px;
+    padding: 2px;
+}
+.task-tab-bd .tt-bd-list th:first-child span {
+    border: none;
+}
+.task-tab-bd .tt-bd-list th span {
+    display: block;
+    width: 100%;
+    line-height: 1em;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    margin-right: -1px;
+}
+.task-tab-bd .tt-bd-list th b {
+    cursor:pointer;
+}
+.task-tab-bd .tt-bd-list tr:nth-child(2n) {
+    background-color: #f1f1f1;
+}
+.task-tab-bd .tt-bd-list tr:hover {
+    background-color: #CCFFCC;
+}
+.operate-btn{
+    padding:5px;
+    line-height: 25px;
+    height:25px;
+}
+.operate-btn a{
+    cursor: pointer;
+}
+</style>
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+    <!-- 主体内容  -->
+    <div class="content">
+        <!--  功能操作区域  -->
+        <div class="title">
+            {#$pageName#} [
+            <A HREF="__URL__">返回列表</A>
+            ]   [
+            <A HREF="javascript:history.go(-1);">返回上一页</A>
+            ]
+        </div>
+        <!-- 功能操作区域结束 -->
+        <div id="result" class="result none"></div>
+        <!-- 内容显示区域  -->
+        <TABLE cellpadding="5" cellspacing="0" class="list" border="1">
+            <TR>
+                <TD class="tRight topTd" width="100" height="50" >任务标题：</TD>
+                <TD class="tLeft topTd" colspan="3">{#$edit.Title#} &nbsp;&nbsp; {#$edit.Hot#}</TD>
+            </TR>
+            <TR>
+                <TD class="tRight tTop">任务学科：</TD>
+                <TD class="tLeft">{#$edit.SubjectName#}</TD>
+                <TD class="tRight tTop">章节版本：</TD>
+                <TD class="tLeft">{#$edit.chapterName#}</TD>
+            </TR>
+            <TR>
+                <TD class="tRight" >任务详情：</TD>
+                <TD class="tLeft" colspan="3">
+                    <div>{#$edit.Description#}</div>
+                </TD>
+            </TR>
+            <TR>
+                <TD class="tRight tTop" width='150'>开始时间：</TD>
+                <TD class="tLeft">{#$edit.BeginTime#}</TD>
+                <TD class="tRight tTop" width='150'>结束时间：</TD>
+                <TD class="tLeft">{#$edit.EndTime#}</TD>
+            </TR>
+            <TR>
+                <TD class="tRight" >任务类型：</TD>
+                <TD class="tLeft" >{#$edit.Type#}</TD>
+                <TD class="tRight tTop">参与限制：</TD>
+                <TD class="tLeft">{#$edit.Limit#}</TD>
+            </TR>
+            <TR>
+                <TD class="tRight" >任务级别：</TD>
+                <TD class="tLeft">{#$level[$edit['Level']]#}</TD>
+                <TD class="tRight" >参与人数：</TD>
+                <TD class="tLeft">{#$edit.Num#} 人</TD>
+            </TR>
+            <TR>
+                <TD class="tRight tTop">任务地址：</TD>
+                <TD class="tLeft">{#$edit.Url|default=''#}</TD>
+                <TD class="tRight tTop">领取次数：(用户/次)</TD>
+                <TD class="tLeft" colspan="3">{#$edit.ReceiveTimes#}</TD>
+            </TR>
+            <TR>
+                <TD class="tRight tTop">奖励类型：</TD>
+                <TD class="tLeft">{#$edit.RewardType#}</TD>
+                <TD class="tRight">奖励数量：</TD>
+                <TD class="tLeft">{#$edit.Reward#}</TD>
+            </TR>
+            <TR>
+                <TD class="tRight tTop">后台统计地址：</TD>
+                <TD class="tLeft">{#$module.JumpUrl#}</TD>
+                <TD class="tRight tTop">最终确认地址：</TD>
+                <TD class="tLeft">{#$module.ApplicateUrl#}</TD>
+
+            </TR>
+            <TR>
+                <TD class="tRight">附加参数：</TD>
+                <TD class="tLeft">{#$module.Name#}</TD>
+                <TD class="tRight">实际金额：</TD>
+                <TD class="tLeft">{#$module.RealReward#}</TD>
+            </TR>
+            <TR>
+                <TD class="tRight tTop">领取规则：</TD>
+                <TD class="tLeft" colspan='3'>{#$module.PromoteTime#}</TD>
+            </TR>
+            <TR>
+                <TD ></TD>
+                <TD class="center"  colspan="3">
+                    <div style="width:85%;margin:5px">
+                        <INPUT TYPE="hidden" name="act" value="{#$act#}">
+                        <a href="{#:U('Task/MissionHallB/edit',array('id'=>$edit['MHTID']))#}">编辑</a>
+                        &nbsp;
+                    </div>
+                </TD>
+            </TR>
+            <tr>
+                <td height="5" colspan="7" class="bottomTd" ></td>
+            </tr>
+        </TABLE>
+
+        <!-- 列表显示区域结束 -->
+        </div>
+    </div>
+    <!-- 主体内容结束 -->
+</div>
+<script>
+$('#subject').subjectSelectChange('__URL__',{'style':'getMoreData','list':'grade'});
+</script>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Manage@Public/ends" /#}

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>{#$pageName#} - {#$config.IndexName#}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="{#$config.Keyword#}" />
+    <meta name="description" content="{#$config.Description#}" />
+    <link type="text/css" href="__PUBLIC__/default/css/common.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <link type="text/css" href="__PUBLIC__/default/css/zjwork.css{#$Think.config.WLN_UPDATE_FILE_DATE#}" rel="stylesheet" />
+    <script>
+        var local='{#:U('Work/checkWork')#}';
+        var key='{#$key#}';
+        var classID='{#$classID#}';
+    </script>
+</head>
+<body>
+<div id="workDiv">
+    <div id="workBox" class="check-work">
+        <div class="w-left class-list">
+            <div class="class-tit f-yahei">班级列表</div>
+            <div class="load-class">
+                <div class="prev" title="向上滚动" onselectstart="return false;" oncontextmenu="return false">向上移动</div>
+                <div class="bd"></div>
+                <div class="next" title="向下滚动" onselectstart="return false;" oncontextmenu="return false" title="向上滚动">向下移动</div>
+            </div>
+        </div>
+        <div class="w-right">
+            <div id="rightTop" class="crumbs-wrap">
+                <div id="categorylocation" class="g-crumbs">
+                    <span class="now-path">当前位置：</span><span id="local_text"></span> > 作业模块 > 批改作业
+                </div>
+            </div>
+            <!--批改作业标题-->
+            <div class="public-title">
+                <h3 class="tit f-yahei">批改作业</h3>
+                <div class="add-work-info">
+                    <div class="info">
+                        留作业流程：
+                        <a href="{#:U('Manual/Index/zj')#}">手工出题</a>
+                        （
+                        <a href="{#:U('Ga/Index/index')#}">智能组卷</a>
+                        ）
+                        <cite>></cite>
+                        <a href="{#:U('Home/Index/zuJuan')#}">试卷预览</a>
+                        <cite>></cite>
+                        <a href="{#:U('Home/Index/zuJuan')#}">创建作业</a>
+                        <cite>></cite>
+                        <a href="{#:U('Work/Work/addWork')#}">分配作业</a>
+                        <cite>></cite>
+                        <a href="{#:U('Work/Work/checkWork')#}">批改作业</a>
+                    </div>
+                </div>
+            </div>
+            <div class="result-filter resultFilter">
+                <div id="pagediv">共<a id="quescount">？</a>次作业
+                    <a class="prev_page" title="上一页"></a><span id="pagebox" class="tspan">
+                <a id="curpage">？</a>
+                <a id="selectpageicon" style="display: inline-block;"></a>
+                /<a id="pagecount">？</a></span>
+                    <a class="next_page" title="下一页"></a></div>
+            </div>
+            <!--学生作业列表-->
+            <div class="mg-jc-li" id="assignedWork"></div>
+            <div id="pagelistbox">
+            </div>
+        </div>
+    </div>
+</div>
+<!--JS-->
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery.SuperSlide.2.1.1.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="__PUBLIC__/plugin/png.js"></script>
+<script>DD_belatedPNG.fix('a,img,div,span');</script>
+<![endif]-->
+<script type="text/javascript" src="__PUBLIC__/default/js/common.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/default/js/paper.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/default/js/workdown.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>\
+<script type="text/javascript" src="__PUBLIC__/default/js/setWork.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>\
+<script type="text/javascript" src="__PUBLIC__/default/js/work.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>\
+<script>
+$(function(){
+    var subjectID=Cookie.Get("SubjectId");
+    $('#local_text').html(parent.jQuery.myMain.getQuesBank(subjectID)['SubjectName']);
+    $.myWorkCheck.init();
+});
+</script>
+</body>
+</html>

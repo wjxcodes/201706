@@ -1,0 +1,211 @@
+ /* @description: 智能组卷-组卷中心-css 
+* @author demo  
+* @update-整理: (2015-04-20 13:20) 
+*/
+
+/*组卷中心-css*/
+*{overflow-wrap:break-word;}
+.s_element{color:#fff;}
+#paperstruct_head a{font-size:12px;}
+.red{color:#f00;font-weight:bold;text-decoration:underline;}
+.checkspan{cursor:pointer;}
+td.id{width:1px;}
+td.time{width:100px;}
+td.line{height:1px;line-height:1px;padding:0;background:#999;}
+
+/*左侧试卷结构导航*/
+
+/*结构导航-试卷结构*/
+#main #leftdiv #paperstruct_head{background:url(../image/zsd_tit_bj.png) -2px 44px no-repeat;height:44px; line-height:44px;color:#fff;padding:6px;font-size:12px;margin-left:17px}
+#paperstruct_head{_position:static!important;zoom:1;}
+#main #leftdiv #paperstruct_title{color:#fff;font-weight:bold;float:left;background:url(../image/ml_ico.gif) no-repeat center left;float:left;font-weight:bold;font-size:14px;padding-left:23px}
+#main #leftdiv #paperstruct_body{overflow-x:hidden;overflow-y:auto;padding:3px 5px;position:relative;color:#fff;}
+#main #leftdiv #paperstruct_body span{color:#fff;}
+#main #leftdiv #paperstruct_body #s_paperheaditem div{padding-top:4px;}
+#main #leftdiv #paperstruct div.s_questypehead{margin-left:10px;}
+#main #leftdiv #paperstruct div.s_questypebody{min-height:5px;position:relative;}
+#main #leftdiv #paperstruct div.s_quesdiv{margin:2px 10px 2px 15px;background-color:#3366ff;border:1px solid #3E5061;color:#000;height:18px;line-height:20px;padding:3px;overflow:hidden;cursor:move;}
+/*结构导航-右侧菜单*/
+#main #leftdiv #paperstruct{border-right:2px solid #000;height:100%;cursor:default;}
+#main #leftdiv #paperstruct a.s_itemicon{display:inline-block;width:12px;height:15px;background:url(../image/piclist1.gif) -40px -125px no-repeat;}
+
+/*结构导航-眼睛开*/
+#main #leftdiv #paperstruct a.s_display_open{display:inline-block;width:15px;height:15px;cursor:pointer;background:url(../image/piclist1.gif) -13px -245px no-repeat;}
+
+/*结构导航-眼睛闭*/
+#main #leftdiv #paperstruct a.s_display_close{display:inline-block;width:15px;height:15px;cursor:pointer;background:url(../image/piclist1.gif) -13px -263px no-repeat;-moz-opacity:0.5;opacity:0.5;filter:alpha(opacity=50);}
+
+/*结构导航-修改*/
+#main #leftdiv #paperstruct a.s_edit{display:inline-block;width:15px;height:15px;cursor:pointer;background:url(../image/piclist1.gif) -35px -246px no-repeat;}
+#main #leftdiv #paperview_title{position:absolute;right:0;top:0;background:#fff;border-left:2px solid #000;border-bottom:2px solid #000;padding:5px;display:none;}
+
+/*结构导航-设置，重置*/
+#main #leftdiv #papersettings,#main #leftdiv #paperreset{margin-left:5px;cursor:pointer;color:#fff;}
+#main #leftdiv #papersettings:hover,#main #leftdiv #paperreset:hover{text-decoration:none;color:#00a0e9;text-decoration:underline}
+
+/*结构导航-快捷样式设置*/
+#main #leftdiv #paperstylelist{display:inline-block;padding-right:10px;text-decoration:none;color:#fff;background:url(../image/piclist1.gif) 28px -580px no-repeat;position:relative;z-index:9;/*ie7*/}
+#main #leftdiv #paperstylelist #quickstyles{position:absolute;background:#fff;border:1px solid #333;left:0;_top:20px;}
+#main #leftdiv #paperstylelist #quickstyles a{display:block;width:80px;padding:3px;color:#333;font-weight:bold;height:30px;line-height:30px;}
+#main #leftdiv #paperstylelist #quickstyles a:hover{display:block;background:#00a0e9;color:#fff;}
+
+/*左侧试卷结构导航-end*/
+
+/*卷面结构*/
+#pui_box{padding-left:10px;}
+#pui_root{width:93%;position:relative;}
+#pui_main{margin-left:105px;position:relative;border:1px solid #fff;background-color:#fff;}
+#pui_body{position:relative;padding-bottom:50px;margin-bottom:50px;}
+
+/*卷面结构-装订线*/
+#pui_seal{width:570px;height:98px;position:absolute;top:12px;left:-13px;left:-8px;cursor:default;overflow:hidden;text-align:center;border:1px solid #000;filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);/*ie*/-ms-transform:translate(-226px,226px) rotate(-90deg);/*ie10*/-moz-transform:translate(-226px,226px) rotate(-90deg);/*firefox*/-webkit-transform:translate(-226px,226px) rotate(270deg);/*safari*/-o-transform:translate(-226px,226px) rotate(-90deg);/*chrome*/background:#ECECEC;_font-family:Arial,"Microsoft Yahei";}
+#pui_seal #pui_sealinput{border:1px solid #000;border-left:0;border-right:0;height:55px;line-height:55px;background:#fff;overflow:hidden;}
+#pui_sealinputtext{font-size:12px;}
+#pui_seal td.pui_sealblock{width:50px;background:#999;}
+.pui_sealline{font-size:11px;height:20px;line-height:20px;_overflow: hidden;}
+/*卷面结构-卷头*/
+#pui_head{position:relative;margin-left:5px;border:1px solid #fff;background-color:#fff;cursor:default;}
+#pui_testinfo,#pui_studentinput,#pui_score{text-align:center;margin-top:5px;}
+#pui_title{text-align:center;}
+#pui_notice{margin-top:5px;}
+#pui_marktag{font-weight:bold;}
+#pui_maintitle{font-size:20px;font-weight:bold;}
+#pui_subtitle{font-size:20px;font-weight:bold;}
+#pui_scoretable{border:1px solid #666;cursor:pointer;}
+#pui_scoretable td{border:1px solid #666666;width:50px;height:25px;text-align:center;cursor:pointer;}
+
+/*联考标记*/
+#iconExam{cursor:pointer;position:absolute;right:0px;top:0px;width:80px;height:70px;} /*联考标记*/
+.iconExam{background:url(../image/icon_test_pcenter.gif) no-repeat;} /*联考标记*/
+.iconExamNo{background:url(../image/icon_test_pcenter_no.gif) no-repeat;} /*联考标记*/
+#examDiv a.f12{font-size:12px; text-decoration: underline;}
+#examDiv a.f12:hover{color:#aaa; text-decoration:underline;}
+
+
+/*卷面结构-卷体*/
+#pui_body div.paperpart{position:relative;border:1px solid #fff;zoom:1;}
+#pui_body div.parthead{padding:5px 0;border:1px solid #fff;background-color:#fff;position:relative;cursor:default;zoom:1;}
+#pui_body div.partheadbox,#pui_body div.questypeheadbox{cursor:pointer;zoom:1;}
+#pui_body div.partname{text-align:center;}
+
+/*卷面结构-分卷*/
+
+
+/*卷面结构-选做题说明*/
+ #pui_body div.choosetext{font-weight:bold;}
+
+/*题型菜单*/
+#pui_body div.partmenu{display:none;cursor:pointer;position:absolute;right:0;top:0;color:#fff;padding:3px 2px 4px 2px;background:#990000;border-left:1px solid #FFCC00;border-bottom:1px solid #FFCC00;}
+#pui_body div.partmenu a{color:#fff;}
+#pui_body div.partmenu a.editpart{display:inline-block;width:30px;height:15px;padding-left:16px;padding-top:3px;font-size:12px;background:url(../image/piclist2.gif) -783px -64px no-repeat;}
+#pui_body div.partmenu a.addquestype{display:inline-block;width:65px;height:15px;padding-left:16px;padding-top:3px;font-size:12px;font-weight:bold;background:url(../image/piclist2.gif) -783px -10px no-repeat;}
+#pui_body div.partname{font-size:14px;font-weight:bold;}
+#pui_body div.questypetext{font-size:14px;}
+#pui_body div.questype{border:1px solid #fff;height:100%;position:relative;}
+#pui_body div.questypehead{border:1px solid #fff;background-color:#fff;position:relative;padding-left:5px;padding-top:2px;padding-bottom:2px;cursor:default;}
+#pui_body div.questypescore table td{border:1px solid #666;}
+#pui_body div.questypetitle{padding-top:3px;padding-bottom:3px;font-size:14px;}
+
+/*试题菜单*/
+#pui_body div.questypemenu{display:none;cursor:pointer;haslayout:0; position:absolute;right:0;top:0;color:#fff;padding:3px 2px 4px 2px;background:#990000;border-left:1px solid #FFCC00;border-bottom:1px solid #FFCC00;}
+#pui_body div.questypemenu a{display:inline-block;width:30px;height:15px;padding-left:16px;padding-top:3px;font-size:12px;color:#fff;}
+#pui_body div.questypemenu a.add{background:url(../image/piclist2.gif) -783px -10px no-repeat;}
+#pui_body div.questypemenu a.editscore{background:url(../image/piclist2.gif) -783px -64px no-repeat;}
+#pui_body div.questypemenu a.empty{background:url(../image/piclist2.gif) -783px -28px no-repeat;}
+#pui_body div.questypemenu a.del{background:url(../image/piclist2.gif) -783px -46px no-repeat;}
+#pui_body div.questypemenu a.edit{background:url(../image/piclist2.gif) -783px -64px no-repeat;}
+#pui_body div.questypemenu a.moveup{background:url(../image/piclist2.gif) -783px -82px no-repeat;}
+#pui_body div.questypemenu a.movedn{background:url(../image/piclist2.gif) -783px -100px no-repeat;}
+
+/*小题菜单*/
+div.quesbox{position:relative;-moz-user-select:none;-khtml-user-select:none;-webkit-user-select:ignore;}
+div.quesopmenu{display:none;cursor:pointer;position:absolute;z-index:999;/*太大了在firefox下有点问题，firefox下的z-index机制与ie还是有差别的*/top:0;right:0;color:#fff;padding:3px 2px 4px 2px;background:#789AD2;border-left:1px solid #069;border-bottom:1px solid #069;}
+div.quesopmenu a{display:inline-block;width:30px;height:17px;padding-left:16px;font-size:12px;color:#fff;padding-top:0px;}
+div.quesopmenu a.detail{background:url(../image/piclist2.gif) -783px -170px no-repeat;}
+div.quesopmenu a.setscore{background:url(../image/piclist2.gif) -783px -260px no-repeat;}
+div.quesopmenu a.choosetest{background:url(../image/piclist2.gif) -783px -260px no-repeat;}
+div.quesopmenu a.del{background:url(../image/piclist2.gif) -783px -188px no-repeat;}
+div.quesopmenu a.replace{background:url(../image/piclist2.gif) -783px -152px no-repeat;}
+div.quesopmenu a.moveup{background:url(../image/piclist2.gif) -783px -206px no-repeat;}
+div.quesopmenu a.movedn{background:url(../image/piclist2.gif) -783px -224px no-repeat;}
+div.quesopmenu a.quickmove{background:url(../image/piclist2.gif) -783px -242px no-repeat;}
+
+/*卷面结构-end*/
+
+/*右侧浮动菜单*/
+#main #rightmenu{position:absolute;right:20px;width:60px;top:10px;z-index:200;text-align:center; background:#3399ff;
+border-radius: 5px; 
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px;
+padding:5px 0px}
+#main #rightmenu a{display:block;cursor:pointer;-moz-opacity:0.8;opacity:0.8;filter:alpha(opacity=80);width:60px;height:23px;color:#fff;padding-top:35px;border-bottom:1px solid #15171b;border-top:1px solid #41464f; font-size:12px;}
+#main #rightmenu a:hover{-moz-opacity:1;opacity:1;filter:alpha(opacity=100);display:block;width:60px;height:23px;}
+#main #rightmenu a#paperdownload{background:url(../image/piclist2.gif) 17px -100px no-repeat;border-top:0px;}
+#main #rightmenu a#answersheet{background:url(../image/piclist2.gif) -39px -40px no-repeat;}/*答题卡*/
+#main #rightmenu a#paperanalyze{background:url(../image/piclist2.gif) 19px -40px no-repeat;}
+#main #rightmenu a#papersave{background:url(../image/piclist2.gif) -39px -98px no-repeat;}
+#main #rightmenu a#paperrecycle{background:url(../image/piclist2.gif) 17px -158px no-repeat;}/*回收站*/
+#main #rightmenu a#paperwork{background:url(../image/piclist2.gif) -39px -40px no-repeat;}/*留作业*/
+#main #rightmenu a#paperslide{background:url(../image/piclist2.gif) -55px -90px no-repeat;}
+#main #rightmenu a#switchmenu{background:url(../image/piclist2.gif) -40px -218px no-repeat; border-bottom:none}/*收起展开*/
+#main #rightmenu a#replace{background:url(../image/piclist2.gif) -86px -39px no-repeat;}/*试卷重组*/
+
+/*右侧浮动菜单-end*/
+
+/*试卷设置-弹出框*/
+#setdiv .setmain{height:346px;padding:6px;background:#fff;overflow-y:auto;border:1px solid #ccc;}
+#setdiv .setbox{border:0;background:#efefef;margin-bottom:12px;}
+#setdiv .setbox table table tr td{padding:2px;}
+#setdiv .setbox table table tr td,#setdiv .setbox table table tr td span{font-size:12px;}
+
+#setdiv .box_current{background:#f5fbfe;border:#95d6f6 solid 1px;}
+#setdiv .setbox{transition:all 0.2s;}
+#setdiv .setbox:hover{box-shadow:0px 1px 8px rgba(0,0,0,0.4)}
+#setdiv td.settitle{width:94px;text-align:right;font-weight:bold;font-size:14px;color:#000;background:#fff;padding-right:8px;}
+#setdiv input ,#setdiv textarea{font-size:12px}
+#setdiv input[type="radio"]{margin:0px;padding:2px;margin-left:5px;}
+#setdiv .text{width:338px;margin-top:0px;padding:3px;text-indent:0;}
+#setdiv textarea{height:60px;overflow:auto;resize:vertical;}
+#setdiv .show{display:inline-block;width:15px;height:15px;background:url(../image/piclist1.gif) -13px -248px no-repeat;cursor:pointer;}
+#setdiv .hide{display:inline-block;width:15px;height:15px;background:url(../image/piclist1.gif) -13px -266px no-repeat;cursor:pointer;}
+#setdiv span.radiospan1,span.radiospan2{cursor:pointer;}
+
+
+/*修改试题分值*/
+.setscorelist>div{margin-top:5px;}
+.setscorelist{width:296px;max-height:297px;overflow:hidden;overflow-y:auto;padding:6px;}
+.setscoreall{position: fixed;_position:absolute;width: 288px;padding-bottom: 8px;padding:0 10px 12px;background: #fff;border-bottom: 1px solid #ccc;}
+.mt40{margin-top: 40px;*padding-top: 46px;}
+/*生成答题卡-表格预览*/
+#sheetviewbox{border:1px solid #7F9DB9;margin-top:5px;position:relative;width:250px;height:200px;overflow:hidden;text-align:center;}
+#icon{position:absolute;top:0px;right:0px;width:40px;height:40px;background:url(../image/piclist2.gif) -150px -245px no-repeat;}
+.sheet1{display:inline-block;width:226px;height:185px;background:url(../image/piclist2.gif) 0px -314px no-repeat;}
+.sheet2{display:inline-block;width:226px;height:185px;background:url(../image/piclist2.gif) -230px -314px no-repeat;}
+.sheet3{display:inline-block;width:226px;height:185px;background:url(../image/piclist2.gif) -460px -314px no-repeat;}
+.sheeta3{display:inline-block;width:226px;height:185px;background:url(../image/piclist2.gif) 0px -500px no-repeat;}
+.sheeta4{display:inline-block;width:226px;height:185px;background:url(../image/piclist2.gif) -230px -500px no-repeat;}
+#dtktishi{line-height:1.8;font-size:13px;text-align: center}
+#dtktishi a{font-size:13px;color:#e00;}
+#dtktishi a:hover{text-decoration: underline}
+/*试卷分析*/
+.analydiv{height:400px;overflow:hidden;overflow-y:scroll;border:1px #aaa solid;padding:4px;}
+/*存档、留作业-备注*/
+#explain{border:2px solid #C1D3FB;background:#EFF6F8;width:370px;padding:5px;color:#f00;font-size:14px;line-height:18px;}
+
+/*试题回收站*/
+#recquesbox{border:3px solid #666;width:558px;height:370px;overflow:hidden;overflow-y:scroll;background:#F1F1F1;}
+
+/*未发现*/
+a.cicon{background:url(../image/piclist2.gif) -485px -68px no-repeat;display:inline-block;width:15px;height:14px;}
+a.usericon{background:url(../image/piclist2.gif) -505px -66px no-repeat;display:inline-block;width:20px;height:20px;text-align:center;color:#fff;font-weight:bold;padding-top:7px;font-size:9px;}
+a.good{background:url(../image/piclist2.gif) -528px -68px no-repeat;display:inline-block;width:18px;height:18px;}
+a.bad{background:url(../image/piclist2.gif) -550px -68px no-repeat;display:inline-block;width:18px;height:18px;}
+span.goodpost,span.badpost{cursor:pointer;color:#999;}
+
+
+/*#dianoques{font-size:15px;color:#ccc;margin-top:10px;font-weight:bold;text-align:center;}
+#diarefresh{color:#ccc;}
+#diarefresh:hover{color:#f00;}*/
+
+.paperStyleAnswer{text-align:center;}
+.paperStyleAnswer .paperStyleBtn{margin:10px;display: inline-block;}

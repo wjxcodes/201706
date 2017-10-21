@@ -1,0 +1,48 @@
+ /*教师节专题*/
+  /*layout*/
+  body{background-color:#fff }
+.w1200at{width:1200px;margin-left:auto;margin-right:auto;}
+.w100pct{width:100%;}
+/*100% 有最小宽度居中显示*/
+.laymp{position:relative;height:584px;overflow:hidden;min-width:874px;border-bottom:4px #2d2242 solid;background-color: #5BD3EE;
+background: -webkit-linear-gradient(#5BD3EE, #A0DDEB); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#5BD3EE, #A0DDEB); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#5BD3EE, #A0DDEB); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#5BD3EE, #A0DDEB);}
+.laym{position:absolute;margin-left:-960px;left:50%;top:0; text-align:center;}
+.f-heiti{font-family:'黑体',sans-serif;}
+.w874{width:874px;margin:0 auto;}
+/*section1*/
+.section-wrap1{background-color:#f2faeb;}
+.section-wrap2{height:208px;background-color:#fff;}
+.section-wrap3{background-color:#f2faeb}
+.section1{background:url('../images/Special/jiaoshijie/teachersDay_man.jpg') right bottom no-repeat;}
+.section1{height:473px;}.section1 p.txt,.section2 p.txt{padding-top:15px;}
+.section .title{color:#04a272;font-size:35px;padding-top:50px;font-family:'黑体',sans-serif;}
+/*注册盒子*/
+.reg-intro-box{margin-top:80px;}
+.reg-intro-box h1{font-size:40px}
+.reg-intro-box h2{font-size:18px;color:#222;margin-top:2px;}
+.reg-intro-box .td-reg-btn-box{margin-top:30px;}
+.reg-intro-box .td-reg-btn-box cite{margin-left:20px;color:#888;font-size:13px}
+.reg-intro-box .td-reg-btn-box a{font-size:18px;letter-spacing: 3px; padding:5px 30px;}
+.reg-intro-box .td-reg-btn-box a:hover{color:#fff;}
+/*section3*/
+.section3{padding-top:50px;padding-bottom:70px;}
+.section3 .vip-intro h1{font-size:40px;color:#e00;text-align: center;padding-bottom:20px;}
+/*vip权限介绍表格部分*/
+.vip-intro-table-box{color:#222;width:94%;}
+.vip-intro-table-box table{width:100%;line-height:42px;table-layout: fixed;text-align: center}
+.vip-intro-table-box table .table-menu p{line-height:25px;padding:0 20px;}
+.vip-intro-table-box table th{text-align: center;font-size:16px;padding:5px 0;}
+.vip-intro-table-box table,.vip-intro-table-box tr,.vip-intro-table-box th,.vip-intro-table-box td{border:1px solid #ddd;}
+.vip-intro-table-box table{border:2px solid #e00;border-right-width:3px;border-left-width:3px;}
+.vip-intro-table-box td{text-align: center;line-height:42px;}
+.vip-intro-table-box tr td:first{text-align: right;padding-right:20px;}
+.vip-intro-table-box td .iconfont{display: inline-block;width:22px;height:22px;margin-top:10px}
+.vip-intro-table-box td i.true{background:url(../images/Special/jiaoshijie/iconfont-duihao.png) 0 0 no-repeat;}
+.vip-intro-table-box td i.false{background:url(../images/Special/jiaoshijie/iconfont-chahao.png) 0 0 no-repeat;}
+.section3-footer{margin-top:40px;}
+.section3-footer .erweima{float: left;width:130px;padding-left:66px;}
+.section3-footer .text{float: left;font-size:24px;color:#666;padding-top:20px;}
+.section3-footer .text cite{color:#27AF93}

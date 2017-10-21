@@ -1,0 +1,346 @@
+ /**@description: 生成导学案-css 
+* @author demo  
+date: 2015.05.08
+*/
+
+/*导学案公用*/
+
+/*reset*/
+h5,h6,p{margin:0;padding:0;}
+h5{font-size:14px;}
+
+/*生成导学案step1*/
+.typeval select{height:24px;width:160px;font-size:14px;margin-right:4px;}
+.typeval select option{height:24px;}
+
+/*导学案、模版组卷公用*/
+#wizardbox h1{font-size:15px;color:#9a9a9a;margin:5px 0 5px 0;float:left;border-top:#b3b7b8 solid 7px;width:32%;padding-top:8px;}
+.difflineSelect{background:#edeef0;overflow:hidden;}
+.difflineSelect select{font-size:14px;}
+.diffline select{font-size:14px;}
+
+/*遮罩层*/
+.lightBox{position:fixed;top:0;left:0;width:100%;height:100%;z-index:100;opacity:0.3;filter:alpha(opacity=30);background:#000;}
+
+/*弹窗*/
+.dialogPlan{position:fixed;z-index:1000;}
+
+/*模板操作按钮*/
+.tempSetBtn{position:absolute;right:-1px;top:-1px;z-index:10; padding-left:6px;background-color:#aa0000;border:1px solid #F6C863;border-right:none;}
+.tempSetBtnB{background:none;border:none;padding-top:25px}
+.tempSetBtn .btnBgBox{display:block;}
+.tempSetBtn .btnBgBox a{display:inline-block;font-size:12px;font-weight:bold;color:#e6e6e6;line-height:18px;height:18px;float:left;text-indent:25px;margin:3px 10px 3px 0}
+.tempSetBtnB .btnBgBox a{font-weight:normal;color:#333;background-color:#fff;border:1px solid #bbb;border-radius:3px;vertical-align:middle;margin:0;margin-left:10px;padding:2px 5px;text-indent:0;font-size:12px;opacity:.9;filter:alpha(opacity=90);}
+.tempSetBtn .btnBgBox a:hover{opacity:1;filter:alpha(opacity=100);color:#fff}
+.tempSetBtnB .btnBgBox a:hover{opacity:1;filter:alpha(opacity=100);border-color:#999;color:#000;}
+.tempSetBtn .btnBgBox a.unAble,.tempSetBtn .btnBgBox a.unAble:hover{opacity:0.4;filter:alpha(opacity=40);}
+.tempSetBtn .btnBgBox a.unAble:hover{opacity:0.4;filter:alpha(opacity=40);cursor:default;color:#fff}
+.tempSetBtnB .btnBgBox a.unAble:hover{opacity:0.4;filter:alpha(opacity=40);cursor:default;color:#333;border-color:#bbb;}
+.btnBgBox .addMenu{background:url(../image/piclist2.gif) no-repeat -780px -10px #990000;}
+.btnBgBox .editTitle{background:url(../image/piclist2.gif) no-repeat -780px -64px #990000;}
+.td .tempSetBtnB{padding-top:12px;margin:0px auto;white-space:nowrap;table-layout:fixed;margin-right:10px}
+.td .tempSetBtnB a{float:left;margin-left:5px}
+
+/*导学案公用-end*/
+
+/*鼠标经过*/
+.tempModel .tempHeadBox:hover,.tempTop:hover{color:#d17151;border-color:#f6c863;}
+
+/*导学案制作步骤*/
+.stepBtmBtn{width:100%;height:45px;position:fixed;bottom:0;left:0;padding-top:8px;border-top:1px #ccc solid;background:#f5f5f5;}
+.stepBtmBtn .btnTable{margin-left:15px;}
+
+/*导学案容器*/
+.planCon{margin:40px 10px 80px;background:#fff;}
+
+/*导学案头部*/
+.tempTop{border:1px #ccc dashed;background:#fff; padding:10px}
+.tempPath{ background:#edeef0; font-weight:bold; color:#555; height:45px; line-height:45px; text-align:left; padding-left:10px;margin-bottom:20px; }
+.tempTop:hover .tempDesc,.tempTop:hover .tempName{color:#d17151;}
+.tempTop .tempHeadName,.tempTop .tempName{font-size:24px;font-weight:bold;color:#333; }
+.tempTop .tempHeadName{color:#666;}
+.tempTop .tempDesc{font-size:14px;color:#666;margin-right:15px;padding-top:15px;}
+
+/*导学案模块*/
+.tempModel{margin-top:40px;border:1px solid #F6C863;margin-bottom:10px;zoom:1;position:relative;}
+.tempModel .tempHeadBox{position:relative;padding:8px 0px 0px 0px;background:#FDF8EC;}
+.tempModel .tempHead{color:#ca5600;text-align:center;padding-bottom:10px}
+.tempModel .tempHead .editTitle{font-size:14px;font-weight:bold;}
+.tempHeadDesc,.tempMenuTit h6{font-weight:normal;font-size:14px;color:#d17100;margin-top:4px;text-align:left;padding-left:10px}
+
+/*导学案栏目*/
+.tempModel .tempMenuBox{position:relative;margin-top:20px;padding:0 12px 10px;zoom:1;background:#fff}
+.tempModel .tempMenu{position:relative;border-bottom:none;zoom:1;}
+.tempModel .tempMenuBox .tempMenuTit{padding:25px 0px;border:none;text-align: left}
+.tempMenuTit h5{font-size:14px;color:#333;display: inline-block}
+
+/*栏目内容列表*/
+.tempMenuConList{width:100%;table-layout:fixed}
+.tempMenuConList,.tempMenuConList tr.hang,.tempMenuConList tr.hang td.td{border:1px solid #c1c1c1;}
+.tempMenuConList tr.hang td.td{min-height:36px;border:none;border-left:1px solid #c1c1c1;*border:1px solid #c1c1c1;/*ie7*/}
+.tempMenuConList .hang .menuCon{padding:8px 6px;max-height:300px;overflow-y:auto;cursor:default}
+.tempMenuConList .hang .lAnswerCon{padding:8px 6px;max-height:300px;line-height:1.5em;color:#555;overflow-y:auto;}
+.tempMenuConList .hang .quesbody{text-align:left;min-height:30px;margin:2px 0}
+.tempMenuConList .hang .titMenuB{margin-right:10px;color:#333;}
+.tempMenuConList .handle{position:relative;border-top:none;border-right:none;width:220px}
+.tempMenuConList .menuNum{width:60px;text-align:center;vertical-align:middle}
+.tempMenuConList .loreAnswer{text-align:center;vertical-align:middle;}
+.tempMenuConList .loreAnswer .seeAnswer{font-size:12px;}
+.tempMenuConList .loreAnswer .seeAnswer:hover{color:#c32900;}
+
+/*添加内容按钮*/
+.tempSetBtn .btnBgBox a.temp-add-btn{border-color:#ff652a;background-color: #ff652a;color:#fff;opacity:1;filter:alpha(opacity=100);padding:2px 10px;font-family:"Microsoft Yahei",sans-serif}
+.tempSetBtn .btnBgBox a.temp-add-btn:hover{border-color:#ff652a;background-color: #ff652a;color:#fff;opacity:.9;filter:alpha(opacity=90)}
+/*导学案容器-end*/
+
+/* 导学案弹窗*/
+.normal_msg{padding:10px;}
+.boxlist_sel input{font-size:14px;height:24px;line-height:24px;}
+
+/*导学案设置弹框*/
+.tempSet{height:356px;border:1px #ccc solid;overflow:hidden;overflow-y:auto;}
+.tempSetItem{margin:15px 8px;}
+.tempSetItem:hover{outline:1px #2DABFF dashed;}
+.tempSetItem .tit{background:#E7EAEC;padding:15px 8px;text-align:right;font-size:14px;line-height:18px}
+.tempSetItem .tit span{text-align:center;font-weight:normal;color:#999;font-size:12px;}
+.tempSetItem .con{background:#F3F5F7;padding-left:8px;}
+.tempSetItem .con input,.tempSetItem .con textarea{width:320px;border-radius:2px;font-size:14px;padding:2px}
+.tempSetItem .con input.long,.tempSetItem .con textarea{width:380px;}
+.tempSetItem .con textarea,.tempEditItem .con textarea{min-height:3em;}
+.itemCurt .tit{background:#D7EEFF;}
+.itemCurt .con{background:#EAF5FF;}
+.tempSetItem h5{float:left;width:100px;}
+.tempSetItem .tempSetItemCon{float:left;width:400px;margin:6px 0;}
+.tempSetItem .tempSetItemCon p{margin:6px 0;}
+.tempSetItem .tempSetItemCon p span{display:inline-block;width:52px;text-align:right;padding-right:8px;}
+
+/*编辑栏目弹框*/
+.tempMenuEdit{margin-bottom:15px}
+.tempEditItem{margin-top:8px;clear:both;}
+.tempEditItem:after{content:"";clear:both;display:table;}
+.tempEditItem .tit{float:left;margin-top:3px;font-weight:bold;width:80px;padding-right:8px;text-align:right;font-size:14px}
+.tempEditItem .con{float:left;}
+.tempEditItem .con input.text,.tempEditItem .con textarea{width:280px;border-radius:2px;font-size:14px;padding:2px}
+.tempEditItem .con select{width:157px;height:24px;font-size:14px;padding:2px;text-indent:5px;*text-indent:5px}
+.tempEditItem .con input.radio{vertical-align:top;}
+.tempEditItem .beforeAfter{display:inline-block;}
+.tempEditItem .beforeAfter label{margin-left:10px;}
+
+/*修改、编辑栏目内容*/
+.tempMenuConEdit{height:350px;border:1px #ccc solid;overflow:hidden;overflow-y:auto;padding:15px;}
+.conEditItem h5{margin-left:10px;}
+.conEditItem .editor{}
+.conEditItem .editor img{width:723px;}
+.conEditItem .editor .saveBtn a{padding:0 25px;}
+
+/*替换试题弹出框*/
+#addLoreDiv #righttop{padding:10px 8px;position:relative;line-height:30px;}
+.jump-chapter-box{position:absolute;right:20px;top:12px;}
+#addLoreDiv #righttop .button{cursor:pointer;margin-left:15px;display: inline-block;line-height:1.1em;border-radius:3px;background-color: #00a0e9;border:1px solid #1b9ae9;color:#fff;padding:5px 15px;}
+#addLoreDiv #righttop .button:hover{opacity:.9;filter:alpha(opacity=90)}
+#leftdiv{width:260px;position:relative;height:100px;background:#3e5061;z-index:90;}
+#rightdiv{background-color:#fff;overflow-x:hidden;overflow-y:auto;height:auto;}
+#rightdiv #filterbox{margin:0px 6px;position:relative;border:#ddd solid 1px;border-bottom:none;background:#FFF;z-index:100;padding:2px 10px;}
+#rightdiv #filterbox .filterbox_li,#rightdiv #paperchoice .filterbox_li{padding:2px 0px;border-bottom:1px dotted #ccc;}
+#rightdiv #filterbox a{color:#005aa0;font-size:14px}
+#rightdiv #filterbox a.button,#rightdiv #ability a.button{display:inline-block;margin:3px;padding:3px;font-size:14px;text-decoration:none;}
+#rightdiv #filterbox a.button:hover,#rightdiv #ability a.button:hover{display:inline-block;margin:3px;padding:3px;background:#00A0E9;cursor:pointer;color:#fff;font-size:14px;}
+#rightdiv #filterbox a.button_current,#rightdiv #ability a.button_current{display:inline-block;margin:3px;padding:3px;background:#00A0E9;color:#fff;font-size:14px;cursor:default;text-decoration:none;}
+#rightdiv #pagediv{position:absolute;right:12px;color:#999999;top:5px;border-left:#ddd solid 1px;height:20px;padding-top:3px;padding-left:10px}
+#rightdiv #pagediv a{color:#00a0e9;}
+
+/*选项卡*/
+.testConCurt{border:1px #ccc solid;border-top:none;margin:0 10px 15px;}
+.testTab{height:37px;border:1px solid #ccc;background:#f5f5f5;font-family:"Microsoft Yahei";margin:5px 10px 0;}
+.testTab a{float:left;width:160px;height:37px;line-height:37px;background:#f5f5f5;color:#666;text-align:center;margin-top:-1px;border-right:1px #ccc solid;border-top:1px solid #ccc;}
+.testTab a.curt{color:#00A0E9;background:#fff;border:none;border-top:2px solid #00A0E9;border-right:1px solid #ccc;border-bottom:1px solid #fff;height:36px;cursor:pointer;}
+.testTab a:hover{color:#00A0E9;}
+
+/*加入导学案*/
+a.addCase{background:url(../image/piclist2.gif) no-repeat -397px -273px transparent;cursor:pointer;display:inline-block;height:28px;width:100px;margin-right:6px}
+a.delCase{background:url(../image/piclist2.gif) no-repeat -507px -273px transparent;cursor:default;display:inline-block;height:28px;width:100px;margin-right:6px}
+a.editLoreButton{background:url(../image/editKnow.gif) no-repeat transparent;cursor:pointer;display:inline-block;height:28px;width:100px;margin-right:6px}
+a.addCase:hover,a.editLoreButton:hover{-moz-opacity:0.8;opacity:.8;filter:alpha(opacity=80);}
+
+/*添加知识、试题*/
+#pagelistbox .loadMore,#pagelistbox .list_ts,#pagelistbox .pageboxNo{margin-bottom:20px;padding:0;}
+#pagelistbox .loadMore a,#pagelistbox .pageboxNo a{font-size:14px;display:block;background:#f2f2f2;border:none;text-align:center;cursor:pointer;padding:8px}
+#pagelistbox .loadMore a:hover{background:#E2F6FF;color:#00A0E9;}
+#pagelistbox .pageboxNo a{cursor:default;}
+#queslistbox .emptyLore{font-family:"Microsoft YaHei";text-align:center;padding-top:140px;font-size:18px;}
+.mylore_table{table-layout:fixed;}
+#addLoreDiv .addLoreButton,#addLoreDiv .back{text-align:right;margin-bottom:10px;margin-left:8px;}
+.pagelistbox .list_ts{text-align:center;}
+#addLoreDiv .addLoreButton,#addLoreDiv .back,.saveLore{text-align: right;margin:6px 15px;}
+#addLoreDiv .addLoreButton a,.saveLore a,#addLoreDiv .back a{width:120px;}
+#addLoreDiv .addLoreButton a:hover,.saveLore a:hover,#addLoreDiv .back a:hover{-moz-opacity: 0.8;opacity: .8;filter:alpha(opacity=80);}
+#addLoreDiv .back{display:none;}
+/*搜索内容-搜索框*/
+#keywords{border:none;font-size:14px;height:30px;width:248px;color:#555;background:transparent;background:url(../image/bg_ss.gif) no-repeat;overflow:hidden;padding-left:35px;line-height:30px;}
+#keywordBtn{border:none;display:inline-block;background:url(../image/bg_ss.gif) no-repeat right top;width:75px;height:27px;line-height:27px;vertical-align:-1px;text-align:center;margin-left:5px;color:#fff;font-size:14px;cursor:pointer;}
+/* 导学案弹窗 end*/
+
+/*导学案预览*/
+.guide_preview .tempname{text-align:center;font-size:24px;font-weight:bold;padding:15px 10px 10px 10px}
+.guide_preview .temphead{margin:20px 0px 15px 0px;background:#f1f1f1;padding:10px 0px}
+.guide_preview .temphead .tempforum{text-align:left;}
+.guide_preview .temphead .tempforum span{font-size:22px;font-family:"黑体";font-weight:bold;background:#e1e1e1;border-left:#ccc solid 5px;padding:10px;}
+.guide_preview .tempdesc{text-align:center;padding:10px;line-height:22px}
+.guide_preview .lorecontent{padding:15px 10px;line-height:28px;border:#ccc dashed 1px;margin-bottom:20px;text-align:left}
+.guide_preview .lorequestion{padding:0px 10px;line-height:28px}
+.guide_preview .lorequestion  p{padding:0px;line-height:26px;margin:0px}
+.guide_preview .loreanswer .title{margin:10px 0px;}
+.guide_preview .loreanswer .title span{background:#e1e1e1;padding:6px 10px;border-right:#eee solid 5px}
+.guide_preview .temptext{margin-bottom:5px;overflow:auto;overflow-y:hidden}
+.guide_preview .temptext .title{font-weight:bold;margin-bottom:8px;}
+.guide_preview .tempbox .tempmemu{background:#f1f1f1;padding:4px 0px 0px 10px;font-weight:bold;line-height:24px;margin-bottom:15px;text-align:left;}
+
+/*分发导学案弹窗*/
+#addCaseDiv .caseTit{line-height:28px;font-size:16px;font-weight:bold;font-family:"Microsoft YaHei";margin-top:10px;margin-bottom:5px;padding-left:16px;}
+#addCaseDiv .classList{padding-left:15px;line-height:30px;width:480px;height:50px;overflow-y:auto;}
+#addCaseDiv .classList .classUnit{line-height:25px;height:25px;margin-right:10px;overflow:hidden;display:inline-block;}
+#addCaseDiv .classList .classUnit .classCheckBox{float:left;margin-top:6px;}
+#addCaseDiv .classList .classUnit .className{float:left;cursor:pointer;margin-left:-16px;padding-left:16px;}
+#addCaseDiv .chBox{padding-left:15px;clear:both;overflow:hidden;}
+#addCaseDiv .chBox .chItem{cursor:pointer;height:32px;line-height:32px;float:left;width:210px;font-size:16px;border-radius:16px;padding:0 10px; border:1px solid #999;color:#444;-webkit-transition:all .2s;transition:all .2s;}
+#addCaseDiv .chBox .chItem:hover{border-color:#00a0e9;color:#00a0e9}
+#addCaseDiv .byOnline, #addCaseDiv .allSame{margin-right:10px;}
+#addCaseDiv .chBox .checked{color:#00a0e9;border-color:#00a0e9}
+#addCaseDiv .chBox .checked:hover{cursor:default}
+#addCaseDiv .chBox .iconfont{font-size:20px;margin-right:7px}
+#addCaseDiv .chBox .chItem input{display:none;}
+#addCaseDiv .assignTime{padding-left:15px;clear:both;overflow:hidden;}
+#addCaseDiv .assignTime .startTimeBox,#addCaseDiv .assignTime .endTimeBox{float:left;width:240px;line-height:30px;}
+#addCaseDiv .assignTime .startTime,#addCaseDiv .assignTime .endTime{width:120px;height:16px;line-height:16px}
+#addCaseDiv .description{padding-left:15px;clear:both;overflow:hidden;}
+#addCaseDiv .description .desContent{margin:0px;padding:5px;width:466px;height:70px;}
+#userDiv .normal_msg span{cursor:pointer;}
+#changeNameDiv #editCaseName{height:22px;width:310px;line-height:22px;font-size:14px}
+#caseDiv .emptyCase{background-color:#FFF;margin:0px 10px 8px 10px;}
+#caseDiv .emptyCase .emptyWrap{margin:0px auto;width:500px;text-align:center;}
+#caseDiv .emptyCase .emptyWrap h1{font-family:"Microsoft YaHei";margin:0;font-weight:normal}
+#caseDiv .emptyCase .emptyWrap .createCase{margin-top:10px}
+#caseDiv .emptyCase .emptyWrap .createCase a{display:inline-block;width:110px;text-align:center;background:#009FE9;height:29px;line-height:29px;color:#FFF;border-radius:3px;}
+#caseDiv .emptyCase .emptyWrap .createCase a:hover{background-color:#10AFF7;}
+.addPlanMsgCon{width:532px;height:340px;overflow:hidden;overflow-y:scroll;margin:0 auto;padding-bottom:15px}
+
+/*修改导学案名称*/
+.changeNameDivMsgCon{padding:6px 0;text-align:center}
+
+/*批改导学案*/
+#checkcaseBox .emptyCase{margin:0;}
+
+/*作业详情*/
+.cwNav{height:50px;line-height:50px;padding:10px 30px;}
+.cwNav .fl div{float:left;margin-right:15px;}
+.cwNav .fl div b{float:left;width:10px;height:10px;margin-top:18px;margin-right:5px;}
+.cwNav .fl div b.cwHui{border:#ddd 2px solid;}
+.cwNav .fl div b.cwHong{border:#F00 2px solid;}
+.cwNav .fl div b.cwLan{border:#57c2f2 2px solid;}
+.cwNav .fl div b.cwLv{border:#69be83 2px solid;}
+.cwNav .fl div span{float:left;}
+.cwNav .fr{padding-left:40px;margin-right:20px;overflow:hidden;border-left:1px solid #ccc;}
+.cwNav .fr a{padding:8px 10px;background-color:#009FE9;color:#FFF;border-radius:3px;cursor:pointer;}
+.cwNav .fr a:hover{background-color:#10AFF7;}
+.workSpan{text-align:center;padding-top:10px;}
+.workSpan span{font-size:10px;margin-right:10px;vertical-align:text-top;display:inline-block;height:20px;width:20px;line-height:20px;margin-bottom:10px;text-align:center;}
+.num_red{border:2px solid #fe7676;}
+.num_normal{border:2px solid #69be83;}
+.num_gray{border:2px solid #DDDDDD;}
+.num_blue{border:2px solid #57C2F2;}
+.commentCon{text-align:center;margin-bottom:25px;}
+.commentCon table{border:none;width:100%;}
+.line{color:#CCC;}
+.CommentArea{color:#333;padding:10px;font-size:14px;border:1px solid #CCC;height:120px;}
+.commentTit{padding:0px 10px;font-size:16px;}
+.commentTit b{color:#009FE9;}
+#commentdiv .normal_btn{overflow:hidden;}
+.oneComment{text-align:left;}
+.oneComment div{padding-left:16px;}
+.oneComment .commentTit{font-size:16px;font-weight:bold;font-family:"Microsoft YaHei";margin-top:10px;margin-bottom:10px;}
+.oneComment ul{height:50px;overflow-y:auto;margin:0px;padding:0px;}
+.oneComment li{display:inline-block;*display:inline;zoom:1;padding:2px;margin-right:5px;cursor:pointer;margin-left:-5px;}
+.oneComment li.disable{filter:alpha(opacity=38);-moz-opacity:0.38;-khtml-opacity:0.38;opacity:0.38;}
+.oneComment li input{vertical-align:bottom;}
+.workList .dataInfo{display:none;background-color:#FFF;border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;margin-top:-1px;}
+.workList .tableInfo .error{padding:5px 30px;font-size:16px;text-align:left;}
+.workList .dataInfo2{padding-top:30px;}
+.workInfo .workInfoTit{text-align:center;padding-bottom:10px;}
+.workInfo table{border:1px solid #ccc;margin:0px auto;}
+.workInfo table td{border:1px solid #ddd;text-align:center;padding:7px 5px;text-align:center;}
+.workInfo table td.workInfoContent{text-align:left;padding-left:20px;}
+.workInfo table td.workInfoContent .workSpan{text-align:left;}
+.workStudentList{padding:15px 20px 10px 20px;margin-bottom:15px;border-bottom:1px solid #ccc;}
+.workStudentList ul{padding:0px;margin:0px;}
+.workStudentList li{display:inline-block;*display:inline;zoom:1;background-color:#DFF1FB;color:#009FE9;padding:5px 10px;margin:0px 10px 10px 0px;border-radius:2px;border:1px solid #FFF;cursor:pointer;transition:all 0.3s;}
+.workStudentList li.undo{background-color:#FFD8D8;color:#F00;cursor:auto;cursor:not-allowed;}
+.workStudentList li.comment{background-color:#D3FFE9;color:#00BA57;}
+.workStudentList li:hover{filter:alpha(opacity=70);-moz-opacity:0.7;-khtml-opacity:0.7;opacity:0.7;}
+.studentWorkDetail{padding:0px 20px 10px 20px;}
+.studentWorkDetail .noExist{text-align:left;font-size:16px;}
+
+/*作业内容*/
+.workbox{margin-bottom:10px;border:1px solid #ccc;padding:10px;}
+.workbox:hover{border-color:#00a0e9}
+.workbox .workbody{line-height:22px;}
+.workbox .workanswer{margin-top:10px;line-height:22px;}
+.workbox .workanswer  p{margin:15px 0}
+.workbox .workanalytic{line-height:22px;}
+.right_answer{border-bottom:1px dashed #DDD;padding:15px 0;}
+.student_answer{border-bottom:1px dashed #DDD;padding:15px 0;background:#E5E5E5;}
+.workindex{color:#57c2f2;}
+.checkCaseTable{table-layout:fixed}
+.checkCaseTable .checkCaseItem1{width:20%;}
+.checkCaseTable .checkCaseItem2{width:20%;}
+.checkCaseTable .checkCaseItem3{width:60px;}
+.checkCaseTable .checkCaseItem4{width:15%;}
+.checkCaseTable .checkCaseItem5{width:80px;}
+.checkCaseTable .checkCaseItem6{width:90px;}
+.checkCaseTable .checkCaseItem7{width:100px;}
+.checkCaseTable .checkCaseItem8{width:90px;}
+
+/*批改导学案结束*
+
+/*导学案弹框应用*/
+.loreMsgCon{overflow-y:auto;margin:10px;margin-bottom:10px;border:1px solid #bbb;}
+.addStudivCon{height:336px;overflow:hidden;overflow-y:auto;border:1px solid #bbb;padding:10px;}
+.popupbox{padding:0 15px 15px 15px;overflow:hidden;}
+#lorePreview .normal_msg{max-height:none;}
+#addStudiv .normal_msg{max-height:none;}
+
+/*知识详情*/
+.loreContentShowCon{margin:10px;overflow:hidden;overflow-y:auto;border:1px solid #bbb;border-left:none}
+.loreContentShowCon .loreContentTable{width:100%;table-layout:fixed;line-height:1.8}
+.loreContentShowCon .loreContentTable .tr,.loreContentShowCon .loreContentTable .td1,.loreContentShowCon .loreContentTable .td2{border:1px solid #bbb}
+.loreContentShowCon .loreContentTable .td1{width:10%;padding:5px;}
+.loreContentShowCon .loreContentTable .td2{padding-left:10px;padding:5px;}
+#saveForm,.popupbox{*zoom:1;}
+.popupbox .popupnr select{line-height:22px;font-size:14px;width:120px;margin-right:4px;margin-bottom:6px;}
+
+/*作业信息详细-弹框*/
+.workInfo table{table-layout:fixed}
+.workInfo .workInfoTbTd1{width:80px;}
+.workInfo .workInfoTbTd2{width:80%;}
+
+/*导学案弹框应用 end*/
+
+/*发布导学案弹框*/
+.releasePlanMsgCon{padding-bottom:10px;}
+
+/*知识管理*/
+.mylore_table td .loreCon{min-height:100%;max-height:130px;padding:6px 20px 6px 6px;overflow-y:auto}
+.mylore_table{table-layout:fixed}
+.mylore_table td.td{border-right:1px solid #ddd;}
+.mylore_table .tr .loreItem1{width:37%;}
+.mylore_table .tr .loreItem2{width:16%;}
+.mylore_table .tr .loreItem3{width:50px;}
+.mylore_table .tr .loreItem4{min-width:100px;max-width:150px}
+.mylore_table .tr .loreItem5{width:7%;}
+.mylore_table .tr .loreItem6{width:8%;}
+.mylore_table .tr .loreItem7{max-width:150px;min-width:80px}
+.mylore_table .tr .loreConParent{padding:2px 0}
+.mylorebox .loreSearch select{line-height:26px;margin-right:4px;font-size:14px;width:120px;}
+.mylorebox .loreSearch{line-height:34px;padding:10px 30px;}
+.popupnr select{width:230px;}
+
+/*知识管理 end

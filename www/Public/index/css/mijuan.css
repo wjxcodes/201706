@@ -1,0 +1,339 @@
+/*quicklayout*/
+.is-center {
+    text-align: center;
+}
+.is-left {
+    text-align: left;
+}
+.is-right {
+    text-align: right;
+}
+.auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.bg-color {
+    background-color: #FBFBFB;
+}
+.dib{
+    display: inline-block;
+}
+
+/*quicklayout-END*/
+.u-header {
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+.u-header .logo {
+    padding: 10px 0 10px 10px;
+}
+.u-header .logo img {
+    vertical-align: middle;
+}
+.u-header .page-title {
+    margin-top: 15px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+.hd-outer {
+    max-width: 940px
+}
+
+/*导航*/
+.u-quick-nav {
+    padding-top: 14px;
+}
+.u-quick-nav li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+}
+.u-quick-nav li a.root {
+    padding: 0 8px;
+    color: #333;
+    font-size: 16px;
+}
+.u-quick-nav li a:hover {
+    color: #5b97f1;
+}
+
+/*banner*/
+
+/*100% 有最小宽度居中显示*/
+.laymp {
+    position: relative;
+    height: 545px;
+    overflow: hidden;
+    background-color: transparent;
+}
+.laym {
+    position: absolute;
+    margin-left: -960px;
+    left: 50%;
+    top: 0;
+    z-index: 0;
+    text-align: center;
+}
+.f-heiti {
+    font-family: '黑体', sans-serif;
+}
+
+/*banner-END*/
+
+/*学科*/
+.subject-content {
+    width: 1000px;
+    margin: 0 auto;
+}
+.subject-content .helper-msg {
+    padding: 30px 10px;
+    font-size: 16px;
+}
+
+/*切换*/
+.subject-tab-wrap {
+    text-align: center;
+}
+.subject-tab {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 0px 0 20px;
+    text-align: center;
+}
+.subject-tab li {
+    float: left;
+    width: 208px;
+    line-height: 46px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+.subject-tab li:hover {
+    background-color: #fff;
+    color: #ff4e4b;
+}
+.subject-tab li:last-child {
+    border-radius: 0 4px 4px 0;
+}
+.subject-tab li:first-child {
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+}
+.subject-tab li.on, .subject-tab li.on:hover {
+    background-color: #ff4e4b;
+    border-color: #ff4e4b;
+    color: #fff;
+    cursor: default;
+}
+
+/*学科*/
+.subject-list {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.subject-list li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 265px;
+    padding: 20px 20px;
+    text-align: center;
+}
+.subject-list li a {
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #4fc3f7;
+    border-radius: 27px;
+    box-shadow:0 1px 2px rgba(0,0,0,.3)
+}
+.subject-list li img{
+    width:148px;
+}
+.subject-list li a:hover{
+    opacity:0.9;
+    filter:alpha(opacity=90);
+}
+.subject-list li a.title1 {
+    background-color: #4fc3f7;
+}
+.subject-list li a.title2 {
+    background-color: #879efb;
+}
+.subject-list li a.title3 {
+    background-color: #fab958;
+}
+.subject-list li a.title4 {
+    background-color: #34b87e;
+}
+.subject-list li a.title5 {
+    background-color: #eb7696;
+}
+.subject-list li a.title6 {
+    background-color: #ff8a66;
+}
+.subject-list li .icon {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    line-height: 50px;
+    vertical-align: -11px;
+    *vertical-align:middle;
+    margin-right: 4px;
+    background: url(../imgs/special/mijuan160425/mijuan_icon1.png) 50% 50% no-repeat;
+}
+.subject-list li .icon1 {
+    background-image: url(../imgs/special/mijuan160425/mijuan_icon1.png);
+}
+.subject-list li .icon2 {
+    background-image: url(../imgs/special/mijuan160425/mijuan_icon2.png);
+}
+.subject-list li .icon3 {
+    background-image: url(../imgs/special/mijuan160425/mijuan_icon3.png);
+}
+.subject-list li .icon4 {
+    background-image: url(../imgs/special/mijuan160425/mijuan_icon4.png);
+}
+.subject-list li .icon5 {
+    background-image: url(../imgs/special/mijuan160425/mijuan_icon5.png);
+}
+.subject-list li .icon6 {
+    background-image: url(../imgs/special/mijuan160425/mijuan_icon6.png);
+}
+.subject-list li .icon7 {
+    background-image: url(../imgs/special/mijuan160425/mijuan_icon7.png);
+}
+.subject-list li .icon8 {
+    background-image: url(../imgs/special/mijuan160425/mijuan_icon8.png);
+}
+.subject-list li .icon9 {
+    background-image: url(../imgs/special/mijuan160425/mijuan_icon9.png);
+}
+.tab-content {
+    padding-bottom: 40px;
+}
+
+/*返回顶部*/
+.backTop {
+    position: fixed;
+    right: 0.5em;
+    bottom: 1em;
+    background-color: #fff;
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+    width: 2em;
+    padding: 0 5px 8px;
+    border-radius: 0.3em
+}
+.backTop .arr {
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 9px;
+    margin: 0 auto;
+    border-color: transparent transparent #aaa transparent;
+    border-style: dashed dashed solid dashed;
+}
+.backTop .line {
+    display: block;
+    width: 3px;
+    height: 8px;
+    margin: 0 auto;
+    background-color: #aaa;
+}
+.backTop:hover .arr {
+    border-color: transparent transparent #333 transparent;
+}
+.backTop:hover .line {
+    background-color: #333;
+}
+
+/*返回顶部END*/
+
+/*footer*/
+.footer {
+    background-color: #fff;
+    border-top: #eee solid 1px;
+    padding: 0.8em 0 1em;
+    font-size: 12px
+}
+.footer-nav {
+    text-align: center;
+}
+.footer-nav a {
+    display: inline-block;
+}
+.footer a {
+    margin: 0 .3em;
+    color: #888
+}
+.copyright {
+    text-align: center;
+}
+.copyright, .copyright a {
+    color: #ccc
+}
+
+/*footer-END*/
+
+/* 回到顶部 */
+.side-bar, .gotop-bar {
+    position: fixed;
+    right: .8em;
+    bottom: 6em;
+    z-index: 100;
+}
+.side-bar a, .gotop-bar a {
+    display: block;
+    width: 2.2em;
+    height: 2.2em;
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.2em;
+    text-align: center;
+    background-color: rgba(0, 120, 231, .7);
+    border-radius: 50%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+    padding: 1em;
+}
+.gotop-bar {
+    bottom: 2.5em;
+}
+
+
+@media screen and (max-width:1023px){
+    .subject-content .helper-msg{
+        font-size:14px;
+        padding:10px 0 10px;
+    }
+.subject-content{
+    width:auto;
+}
+.subject-tab{
+    padding:10px 0 0;
+}
+.subject-tab li{
+    width:145px;
+    line-height:34px;
+    height:34px;
+}
+.subject-list{
+    width:auto;
+}
+.subject-list li{
+    padding:20px 20px 0;
+}
+.subject-list li a{
+    line-height:40px;
+    height:40px;
+}
+}

@@ -1,0 +1,6 @@
+ .visible-xs{display:none;visibility: hidden}
+
+/*for IE6/7*/
+@media screen\9{
+   
+}

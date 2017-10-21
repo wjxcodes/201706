@@ -1,0 +1,110 @@
+/**
+ * 试题编辑样式
+ * @date 2015/6/17
+ */
+.main_right{
+    min-width:200px;
+    background:#ececec;
+    border-left:#cfcfcf solid 1px;/* min-height:600px;height:auto!important; _height:600px;*/
+    padding:0px;
+    float:right;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.main_right_title{
+    font-size:16px;
+    font-weight:bold;
+    color:#000;
+    margin-bottom:14px;
+    width:100%;
+    border-bottom:#bebebe solid 1px;
+    padding-bottom:10px;
+    overflow:auto;
+    padding-top:15px
+}
+.main_right_title span{
+    float:left;
+    height:16px;
+    width:5px;
+    background:#6292c1;
+    margin-right:7px;
+    margin-top:2px;
+    margin-left:12px
+}
+ .top_nr_box{
+    position: absolute;
+    width:96%;
+    overflow: hidden;
+}
+table.zgdf{width:350px; margin:0px auto; background:none}
+table.zgdf td{ padding:2px 0px; line-height:24px; background:none}
+
+table.listFrame{width:350px; margin:0px auto; background:none;overflow:hidden;}
+table.listFrame td{ padding:2px 0px; line-height:24px; background:none}
+
+.dfms_box{ float:right; font-weight:normal; font-size:14px; padding-right:12px}
+.an_box{ background:none}
+.an_box td{ padding-top:15px; background:none; padding-left:60px}
+
+.main_left{min-width: 360px;}
+.styl_box{ overflow-y:scroll;overflow-x:hidden; }
+.styl_box table{ width:98%; margin:0px auto}
+.styl_box table td{
+    border: #CCC solid 1px;
+    padding: 10px;
+    line-height: 24px;
+}
+.styl_box table th{
+    background:#6292c1;
+    color:#fff;
+    line-height:40px;
+    text-indent:15px;
+}
+.bottom_nr_box{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    background:#e0e0e0;
+    border-top:#b5b5b5 solid 1px;
+    padding-top: 2px;
+    max-height: 60px;
+}
+.bottom_nr_box .title{
+    background:none;
+    border:none;
+    border-bottom:#bdbdbd solid 1px;
+    padding-bottom:10px;
+}
+.d_nr_box a{
+    float:left;
+    display:block;
+    border-bottom:none;
+    border:#acacac solid 1px;
+    padding:4px 10px;
+    background:#FFF;
+    -moz-border-radius: 10px;            /* Gecko browsers */
+    -webkit-border-radius: 10px;     /* Webkit browsers */
+    border-radius:10px;
+    margin-left:5px;
+    font-family:"宋体";
+    color:#666;
+    text-decoration:none;
+    font-weight:bold;
+}
+.xt_title{
+    white-space: nowrap;
+    margin:0px 5px;
+}
+#defChapterPanel p{
+    margin-bottom:5px;
+}
+select{
+    max-width:200px;
+}
+#popup_content{padding:5px;}
+#popup_message{overflow: hidden;}
+
+
+
+

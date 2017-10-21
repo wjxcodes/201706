@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="{#$keywords#}" />
+    <meta name="description" content="{#$description#}">
+    <title>试卷出题 - {#$config.IndexName#}</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="__PUBLIC__/index/m-css/task.css">
+    <link rel="stylesheet" href="__PUBLIC__/index/m-css/base.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/index/m-css/testPaper.css"/>
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="__PUBLIC__/index/m-css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="__PUBLIC__/index/m-css/layouts/side-menu.css">
+    <!--<![endif]-->
+
+  </head>
+  <body>
+  <div id="layout">
+{#include file="Index@Common/wapSideNav" /#}
+<div id="main" class="">
+{#include file="Index@Common/wapHeader" /#}
+    <div class="testPaper-content">
+                <table class="testPaper-screen">
+                    <tr>
+                        <th>学科：</th>
+                        <td>
+                            {#if condition="empty($pageLinks['sid']['c'])"#}
+                            <a class='subject this' params='0' href="{#:sprintf($pageLinks['sid']['a'], '0')#}">全部</a>
+                            {#else/#}
+                            <a class='subject' params='0' href="{#:sprintf($pageLinks['sid']['a'], '0')#}">全部</a>
+                            {#/if#}
+                            {#foreach name='data.subjects' item='subject' key='id'#}
+                                {#if condition="$pageLinks['sid']['c'] eq $id"#}
+                                <a class='subject this' params='{#$val#}' href="{#:sprintf($pageLinks['sid']['a'], $id)#}">{#$subject#}</a>
+                                {#else/#}
+                                <a class='subject' href="{#:sprintf($pageLinks['sid']['a'], $id)#}">{#$subject#}</a>
+                                {#/if#}
+                            {#/foreach#}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>年级：</th>
+                        <td>
+                            {#if condition="empty($pageLinks['grade']['c'])"#}
+                            <a class='grade this' href="{#:sprintf($pageLinks['grade']['a'], '0')#}">全部</a>
+                            {#else/#}
+                            <a class='grade' href="{#:sprintf($pageLinks['grade']['a'], '0')#}">全部</a>
+                            {#/if#}
+                            {#foreach name='data.grade' item='grade'#}
+                                {#if condition="$pageLinks['grade']['c'] eq $grade['GradeID']"#}
+                                <a class='grade this' params='{#$val#}' href="{#:sprintf($pageLinks['grade']['a'], $grade['GradeID'])#}">{#$grade['GradeName']#}</a>
+                                {#else/#}
+                                <a class='grade' href="{#:sprintf($pageLinks['grade']['a'], $grade['GradeID'])#}">{#$grade['GradeName']#}</a>
+                                {#/if#}
+                            {#/foreach#}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>类型：</th>
+                        <td>
+                            {#if condition="empty($pageLinks['tid']['c'])"#}
+                            <a class='type this' href="{#:sprintf($pageLinks['tid']['a'], '0')#}">全部</a>
+                            {#else/#}
+                            <a class='type' href="{#:sprintf($pageLinks['tid']['a'], '0')#}">全部</a>
+                            {#/if#}
+                            {#foreach name='data.docAttr' item='attr'#}
+                                {#if condition="$pageLinks['tid']['c'] eq $attr['TypeID']"#}
+                                <a class='type this' href="{#:sprintf($pageLinks['tid']['a'], $attr['TypeID'])#}">{#$attr['TypeName']#}</a>
+                                {#else/#}
+                                <a class='type' href="{#:sprintf($pageLinks['tid']['a'], $attr['TypeID'])#}">{#$attr['TypeName']#}</a>
+                                {#/if#}
+                            {#/foreach#}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>地区：</th>
+                        <td>
+                            {#if condition="empty($pageLinks['area']['c'])"#}
+                            <a class='area this' href="{#:sprintf($pageLinks['area']['a'], '0')#}">全部</a>
+                            {#else/#}
+                            <a class='area' href="{#:sprintf($pageLinks['area']['a'], '0')#}">全部</a>
+                            {#/if#}
+                            {#foreach name='data.area' item='attr'#}
+                                {#if condition="$pageLinks['area']['c'] eq $attr['AreaID']"#}
+                                <a class='area this' href="{#:sprintf($pageLinks['area']['a'], $attr['AreaID'])#}">{#$attr['AreaName']#}</a>
+                                {#else/#}
+                                <a class='area' href="{#:sprintf($pageLinks['area']['a'], $attr['AreaID'])#}">{#$attr['AreaName']#}</a>
+                                {#/if#}
+                            {#/foreach#}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>年份：</th>
+                        <td>
+                            {#if condition="empty($pageLinks['year']['c'])"#}
+                            <a class='year this' href="{#:sprintf($pageLinks['year']['a'], '0')#}">全部</a>
+                            {#else/#}
+                            <a class='year' href="{#:sprintf($pageLinks['year']['a'], '0')#}">全部</a>
+                            {#/if#}
+                            {#foreach name='data.years' item='attr'#}
+                                {#if condition="$pageLinks['year']['c'] eq $attr"#}
+                                <a class='year this' href="{#:sprintf($pageLinks['year']['a'], $attr)#}">{#$attr#}</a>
+                                {#else/#}
+                                <a class='year' href="{#:sprintf($pageLinks['year']['a'], $attr)#}">{#$attr#}</a>
+                                {#/if#}
+                            {#/foreach#}
+                        </td>
+                    </tr>
+                </table>
+                <table class="testPaper-list table-w">
+                    <thead>
+                        <tr>
+                            <th class="paper-tit">试卷名称</th>
+                            <th align="center">更新时间</th>
+                        </tr>
+                    </thead>
+                    <tbody id='content'>
+                        {#if condition="count($result) eq 0"#}
+                            <tr class="bg-light"><td colspan="2" align="center">暂无数据</td></tr>
+                        {#else/#}
+                            {#volist name='result' id='data' key='val'#}
+                            {#if condition="$val % 2 eq 0"#}
+                            <tr class="bg-light">
+                            {#else/#}
+                            <tr class="">
+                            {#/if#}
+                                <td class="paper-tit"><a href="/Doc/{#$data['docid']#}.html" title="{#$data.docname#}">{#$data.docname#}</a></td>
+                                <td align="center" class="timer">{#$data.introtime#}</td>
+                            </tr>
+                            {#/volist#}
+                        {#/if#}
+                    </tbody>
+                </table>
+                <div class="paginator-wrap">
+                    <div class="g-paginator">
+                        {#if condition="count($pages) gt 1 "#}
+                            {#foreach name='pages' item="links" key='val'#}
+                                {#if condition="$links.c eq 'c'"#}
+                                  <a href="{#$links.a#}" class="current">{#$links.n#}</a>
+                                {#else/#}
+                                  <a href="{#$links.a#}">{#$links.n#}</a>
+                                {#/if#}
+                            {#/foreach#}
+                        {#/if#}
+                    </div>
+                </div>
+        </div>
+    </div>
+    {#include file="Index@Common/wapFooter" /#}
+</div>
+    <input type="hidden" id='token' value='{#$token#}'/>
+    <input type="hidden" id='page' value='1'/>
+
+
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery-1.8.0.min.js"></script>
+<script src="__PUBLIC__/index/m-js/ui.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/unionSearch.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/testPreview.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/jquery.cookie.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/layer/layer.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+<script type="text/javascript" src="__PUBLIC__/index/js/wlnBase.js{#$Think.config.WLN_UPDATE_FILE_DATE#}"></script>
+</body>
+</html>

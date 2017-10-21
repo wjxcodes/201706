@@ -1,0 +1,136 @@
+{#// 加载头部公共文件 #}
+{#include file="Public/header" /#}
+        <script>
+            var local='{#:U('Index/main')#}';
+        </script>
+        <script type="text/javascript" src="__PUBLIC__/default/js/common.js"></script>
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+    <!-- 主体内容  -->
+    <div class="content" >
+        {#volist name="output" id="list" #}
+        <div class="title">问卷调查详情--来源：{#$list.UserName#}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<a href="javascript:history.go(-1);">返回上一页</a>]</div>
+        <div class="list" >
+            <div id="result" class="result none"></div>
+            <table id="checkList" class="list" cellpadding="5" cellspacing="0" border="1">
+                <tr><td height="5" colspan="9" class="topTd" ></td></tr>
+                <tr class="row" >
+                    <th width="30%">问题名称</th>
+                    <th>反馈信息</th>
+                    <th width="40%">建议</th>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>1.您认为组卷系统的网站界面如何</td>
+                    <td>{#switch name="list.Visual"#} {#case value="0"#}美观大方{#/case#} {#case value="1"#}视觉一般{#/case#} {#case value="2"#}效果较差{#/case#}{#default /#}无{#/switch#}</td>
+                    <td></td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>2.您登录后，首页显示内容是否有效？</td>
+                    <td>{#switch name="list.DisplayValid"#} {#case value="0"#}是{#/case#} {#case value="1"#}不全是{#/case#} {#case value="2"#}全部不是{#/case#}{#default /#}无{#/switch#}</td>
+                    <td>{#$list.DisplayValidSugg#}</td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>3.组卷的各选题方式中，您认为哪个较实用？（多选）</td>
+                    <td>
+                    {#volist name="list.SearchMethods" id="search" #}&nbsp;&nbsp;&nbsp;{#$search#}、
+                        {#switch name="search"#} 
+                            {#case value="0"#}按知识点选题{#/case#}
+                            {#case value="1"#}按章节选题{#/case#}
+                            {#case value="2"#}按试卷出题{#/case#}
+                            {#case value="3"#}按关键词选题{#/case#}
+                            {#case value="4"#}智能组卷{#/case#}
+                            {#case value="5"#}双向细目表模板选题{#/case#}
+                        {#/switch#}
+                    {#/volist#}
+                    </td>
+                    <td></td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>4.您认为根据最新考试大纲划分系统的知识点目录是否合理？</td>
+                    <td>{#switch name="list.KLCatalog"#} {#case value="0"#}合理{#/case#} {#case value="1"#}不合理，不够满意{#/case#}{#default /#}无{#/switch#}</td>
+                    <td>{#$list.KLCatalogSugg#}</td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>5.章节选题中，能否满足同步教学课时训练的需求?</td>
+                    <td>{#switch name="list.MeetDemand"#} {#case value="0"#}能{#/case#} {#case value="1"#}不能{#/case#}{#default /#}无{#/switch#}</td>
+                    <td>{#$list.MeetDemandSugg#}</td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>6.智能组卷中，可以分题设分、可以添加选做试题，您认为实用吗？</td>
+                    <td>{#switch name="list.SetScore"#} {#case value="0"#}实用{#/case#} {#case value="1"#}不实用{#/case#}{#default /#}无{#/switch#}</td>
+                    <td>{#$list.SetScoreSugg#}</td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>7.您对智能组卷的等待时间满意吗？</td>
+                    <td>{#switch name="list.WaitTime"#} {#case value="0"#}满意{#/case#} {#case value="1"#}有点慢{#/case#} {#case value="2"#}太慢了{#/case#}{#default /#}无{#/switch#}</td>
+                    <td></td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>8.按照往年各种测试类型的试题难度、考点、题型等排序，提供相对应的双向细目表模板组卷，您认为有必要吗？</td>
+                    <td>{#switch name="list.TwoTemp"#} {#case value="0"#}很有必要{#/case#} {#case value="1"#}无所谓{#/case#} {#case value="2"#}没有必要{#/case#}{#default /#}无{#/switch#}</td>
+                    <td>{#$list.TwoTempSugg#}</td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>9.您对试卷预览中版式满意吗？</td>
+                    <td>{#switch name="list.TypeSet"#} {#case value="0"#}满意{#/case#} {#case value="1"#}不满意{#/case#}{#default /#}无{#/switch#}</td>
+                    <td></td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>10.您在下载时，遇到什么问题了吗?</td>
+                    <td>{#switch name="list.DownProblem"#} {#case value="0"#}很流畅{#/case#} {#case value="1"#}不知道怎么下载{#/case#} {#case value="2"#}无法下载{#/case#}{#default /#}无{#/switch#}</td>
+                    <td></td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>11.您对系统生成的试题分析结果满意吗？</td>
+                    <td>{#switch name="list.TestAnalysis"#} {#case value="0"#}满意{#/case#} {#case value="1"#}不满意{#/case#}{#default /#}无{#/switch#}</td>
+                    <td>{#$list.TestAnalysisSugg#}</td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>12.您对系统生成的答题卡满意吗？</td>
+                    <td>{#switch name="list.AnswerCard"#} {#case value="0"#}满意{#/case#} {#case value="1"#}不满意{#/case#}{#default /#}无{#/switch#}</td>
+                    <td>{#$list.AnswerCardSugg#}</td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>13.您对系统留作业的流程满意吗？</td>
+                    <td>{#switch name="list.HomeWork"#} {#case value="0"#}满意{#/case#} {#case value="1"#}不满意{#/case#}{#default /#}无{#/switch#}</td>
+                    <td>{#$list.HomeWorkSugg#}</td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>14.您一天最多能下载多少次已组好的试卷？</td>
+                    <td>{#switch name="list.DownNum"#} {#case value="0"#}1-5次{#/case#} {#case value="1"#}5-10次{#/case#} {#case value="2"#}10次以上{#/case#}{#default /#}无{#/switch#}</td>
+                    <td></td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>15.如果提供按整套试卷下载的功能，您愿意使用吗？</td>
+                    <td>{#switch name="list.CompleteDown"#} {#case value="0"#}愿意{#/case#} {#case value="1"#}即使付费也愿意{#/case#} {#case value="2"#}不愿意{#/case#}{#default /#}无{#/switch#}</td>
+                    <td>{#$list.CompDownSugg#}</td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>16.原创试题，您认为有时效性吗？</td>
+                    <td>{#switch name="list.OrigPre"#} {#case value="0"#}有{#/case#} {#case value="1"#}无所谓{#/case#} {#case value="2"#}没有{#/case#}{#default /#}无{#/switch#}</td>
+                    <td></td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>17.如果提供个人免费校本题库的功能，你愿意校本题库吗?</td>
+                    <td>{#switch name="list.PerQuesBank"#} {#case value="0"#}愿意{#/case#} {#case value="1"#}不愿意{#/case#}{#default /#}无{#/switch#}</td>
+                    <td>{#$list.PerQuesBankSugg#}</td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>18.您是否愿意有偿为本系统及时提供名校考试资源，建立长期合作关系？</td>
+                    <td>{#switch name="list.DownNum"#} {#case value="0"#}愿意{#/case#} {#case value="1"#}不愿意{#/case#}{#default /#}无{#/switch#}</td>
+                    <td>{#$list.LongTimeCoopSugg#}</td>
+                </tr>
+                <tr class="row lists" jl=''>
+                    <td>19.综合意见</td>
+                    <td></td>
+                    <td>{#$list.CompreSugg#}</td>
+                </tr>
+                <tr><td height="5" colspan="9" class="bottomTd"></td></tr>
+            </table>
+        </div>
+        {#/volist#}
+    </div>
+</div>
+<!-- 主页面结束 -->
+{#// 加载尾部公共文件 #}
+{#include file="Public/ends" /#}
